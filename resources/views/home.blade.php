@@ -1,0 +1,1141 @@
+@extends('layouts.main')
+@section('title')
+   {{__('National Rabies Control Programme (NRCP)')}}
+@endsection
+@section('pageTitle')
+{{ __('Home') }}
+@endsection
+@section('breadcrumbs')
+{{ __('Home') }}
+@endsection
+@section('content')
+<?php //dd($menu) ?>
+<div class="main-content">
+   <!-- Slider Section Start -->
+   <div class="rs-slider style1">
+      <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0" data-autoplay="true"
+         data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false"
+         data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1"
+         data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="1"
+         data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="1"
+         data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
+         data-md-device-dots="false">
+         <div class="slider-content">
+            <div class="container-fluid px-0">
+               <div class="row align-item-center">
+                  <div class="col-lg-6 order-last p-0">
+                     <div class="img-part banner-image">
+                        <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}" alt="">
+                     </div>
+                  </div>
+                  <div class="col-lg-6 pr-0">
+                     <div class="banner-content alignment-center">
+                        <div>
+                           <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="3000ms">
+                              National Rabies Control Program
+                           </h1>
+                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="2000ms">is a public health initiative in India that aims to
+                              prevent and control the spread of rabies,
+                              a deadly viral disease that is transmitted to humans through the bite of an
+                              infected animal.
+                           </div>
+                           <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                              data-wow-duration="2000ms">
+                              <a class="readon green-banner" href="{{ route('about-us') }}">Read More <i
+                                 class="fa fa-angle-right pl-2"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slider-content">
+            <div class="container-fluid px-0">
+               <div class="row">
+                  <div class="col-lg-6 order-last p-0">
+                     <div class="img-part banner-image">
+                        <img class="" src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}" alt="">
+                     </div>
+                  </div>
+                  <div class="col-lg-6 pr-0">
+                     <div class="banner-content alignment-center">
+                        <div class="">
+                           <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="3000ms">
+                              Publications
+                           </h1>
+                           {{-- 
+                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="2000ms">is a public health initiative in India that aims to
+                              prevent and control the spread of rabies,
+                              a deadly viral disease that is transmitted to humans through the bite of an
+                              infected animal.
+                           </div>
+                           --}}
+                           <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                              data-wow-duration="2000ms">
+                              <a class="readon green-banner" href="https://ncdc.gov.in/WriteReadData/linkimages/GuidelinesforRabiesProphylaxis.pdf" target="_blank">Read More <i
+                                 class="fa fa-angle-right pl-2"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slider-content">
+            <div class="container-fluid px-0">
+               <div class="row">
+                  <div class="col-lg-6 order-last p-0">
+                     <div class="img-part banner-image">
+                        <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}" alt="">
+                     </div>
+                  </div>
+                  <div class="col-lg-6 pr-0">
+                     <div class="banner-content alignment-center">
+                        <div class="">
+                           <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="3000ms">
+                              Events
+                           </h1>
+                           {{-- 
+                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="2000ms">is a public health initiative in India that aims to
+                              prevent and control the spread of rabies,
+                              a deadly viral disease that is transmitted to humans through the bite of an
+                              infected animal.
+                           </div>
+                           --}}
+                           <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                              data-wow-duration="2000ms">
+                              <a class="readon green-banner" href="{{ route('event') }}">Read More <i
+                                 class="fa fa-angle-right pl-2"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="slider-content">
+            <div class="container-fluid px-0">
+               <div class="row">
+                  <div class="col-lg-6 order-last p-0">
+                     <div class="img-part banner-image">
+                        <img class="" src="{{ asset('assets/Nrcp_img/event/event5.jpg') }}" alt="">
+                     </div>
+                  </div>
+                  <div class="col-lg-6 pr-0">
+                     <div class="banner-content alignment-center">
+                        <div class="">
+                           <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="3000ms">
+                              Upcoming Activities
+                           </h1>
+                           {{-- 
+                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="2000ms">is a public health initiative in India that aims to
+                              prevent and control the spread of rabies,
+                              a deadly viral disease that is transmitted to humans through the bite of an
+                              infected animal.
+                           </div>
+                           --}}
+                           <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                              data-wow-duration="2000ms">
+                              <a class="readon green-banner" href="{{ route('activitie') }}">Read More <i
+                                 class="fa fa-angle-right pl-2"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Banner Section End -->
+   <!-- Card Section Start -->
+   <div class="container">
+      <marquee style="padding:13px 0 3px;">
+         <a href="javascript:void();" style="color: red; font-weight: bold;">
+            World Rabies Day is going to be celebrated on <b>28th September 2023 </b>.</span>
+      </marquee>
+   </div>
+   {{-- <div id="rs-features" class="rs-features main-home ">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-3 col-md-12 md-mb-30 ml-auto">
+            <a href="{{ route('human-health') }}">
+            <div class="features-wrap">
+               <div class="icon-part c-card">
+                  <img src="{{ asset('assets/Nrcp_img/human.png') }}" alt="" class="animal-rotate human h-40">
+               </div>
+         <div class="content-part">
+            <h4 class="title">
+               <span class="watermark">8,53,99,928</span>
+            </h4>
+            <p class="dese red-text">Human Health</p>
+            <a href="{{ route('human-health') }}">Read More <i class="fa fa-angle-right pl-2"></i></a>
+         </div>
+      </div>
+      </a>
+   </div>
+         <div class="col-lg-3 col-md-12 md-mb-30 mr-auto">
+            <a href="{{ route('anumal-health') }}">
+               <div class="features-wrap">
+                  <div class="icon-part c-card">
+                     <img src="{{ asset('assets/Nrcp_img/animal.png') }}" alt="" class="animal-rotate h-40">
+                  </div>
+                  <div class="content-part">
+                     <h4 class="title"><span class="watermark">27,18,00,060</span></h4>
+                     <p class="dese deep-purple-text">Animal Health</p>
+                     <a href="{{ route('anumal-health') }}">Read More <i class="fa fa-angle-right pl-2"></i></a>
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+   </div>
+</div> --}}
+<!-- Card Section End -->
+   {{-- 
+   <div class="ministers-memories">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-4 bg-min">
+               <h1 class="sl-title wow fadeInLeft text-white minister-h1" data-wow-delay="300ms"
+                  data-wow-duration="3000ms"
+                  style="visibility: visible; animation-duration: 3000ms; animation-delay: 300ms; animation-name: fadeInLeft;">
+                  From Director's <br> Desk
+               </h1>
+            </div>
+            <div class="col-md-6 bg-design">
+               <div class="box-min">
+                  <div class="min-post">
+                     <div class="post-img">
+                        <img src="{{ asset('assets/Nrcp_img/Prof_Atul_Goel.png') }}" alt="">
+                     </div>
+                     <div class="post-item">
+                        <div class="post-desc min-heading">
+                           <a href="javascript:void();">PROF (DR.) ATUL GOEL</a>
+                        </div>
+                        <p class="sub-title-head"> DGHS & DIRECTOR NCDC </p>
+                     </div>
+                  </div>
+                  <div class="min-post">
+                     <div class="post-img">
+                        <img src="assets/Nrcp_img/pk.png" alt="">
+                     </div>
+                     <div class="post-item">
+                        <div class="post-desc min-heading">
+                           <a href="#">DR P K SEN</a>
+                        </div>
+                        <p class="sub-title-head"> PRINCIPAL ADVISOR </p>
+                     </div>
+                  </div>
+                  <div class=" bg-button text-center">
+                     <a class="readon2" href="javascript:void();">View All <i class="fa fa-angle-right pl-2"></i></a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-2 bg-button text-center">
+               <a class="readon2" href="javascript">View All <i class="fa fa-angle-right pl-2"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   --}}
+   <!-- About Section Start -->
+   <div id="rs-about" class="rs-about style8 pt-60 pb-60">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-12">
+               <div class="main-content">
+                  {{-- 
+                  <div class="img-part img-top-about">
+                     <img src="{{ asset('assets/Nrcp_img/about2.png') }}" alt="">
+                  </div>
+                  --}}
+                  <div class="row">
+                     <div class="col-lg-5 p-0">
+                        <div class="images-title md-mb-40">
+                           <img src="{{ asset('assets/Nrcp_img/event/event5.jpg') }}" alt="" class="w-100">
+                           {{-- <img src="{{ asset('assets/Nrcp_img/about-bg-top.png') }}" alt=""
+                              class="about-img-top">
+                           <img src="{{ asset('assets/Nrcp_img/about-bd-left.svg') }}" alt=""
+                              class="about-image-bottom"> --}}
+                        </div>
+                     </div>
+                     <div class="col-lg-4 mb-4">
+                        <div class="sec-title3 pl-10 wow fadeInUp" data-wow-delay="300ms"
+                           data-wow-duration="2000ms">
+                           <h2 class="title">About NRCP</h2>
+                           <div class="desc mb-30 about-t">
+                              Rabies is responsible for extensive morbidity and mortality in India. The disease is endemic throughout the country. With the exception of Andaman & Nicobar and Lakshadweep Islands, human cases of rabies are reported from all over the country. The cases occur throughout the year. About 96% of the mortality and morbidity is associated with dog bites. Cats, wolf, jackal, mongoose and monkeys are other important reservoirs of rabies in India. Bat rabies has not been conclusively reported from the country.
+                              To address the issue of rabies in the country, National Rabies Control Programme....
+                           </div>
+                           <div class="btn-part wow fadeInUp" data-wow-delay="400ms"
+                              data-wow-duration="2000ms">
+                              <a class="readon2" href="{{ route('about-us') }}">Read More <i
+                                 class="fa fa-angle-right pl-2"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-3">
+                        <div class="pdf-image">
+                           <a href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}" target="_blank"
+                              title="National Action Plan">
+                           <img src="{{ asset('assets/Nrcp_img/pdf-frtontpage.PNG') }}"
+                              alt="National Action Plan" title="National Action Plan" />
+                           </a>
+                           <div class="btn-part wow fadeInUp mt-4" data-wow-delay="400ms"
+                              data-wow-duration="2000ms">
+                              <a class="readon2" href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}"
+                                 target="_blank" title="National Action Plan">View PDF <i
+                                 class="fa fa-angle-right pl-2"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- About Section End -->
+   <!--<div id="rs-categories" class="rs-categories style1 pt-60 pb-60">
+      <div class="container">
+          <div class="row y-middle mb-30">
+              <div class="col-md-6 sm-mb-30">
+                  <div class="sec-title">
+                      <h2 class="title mb-0">Media Alerts / Action Taken </h2>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="btn-part text-right sm-text-left">
+                      <a href="#" class="readon">View All</a>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+      
+              <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
+                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                  <a class="categories-item" href="#">
+                      <div class="content-part text-center">
+                          <div class="date-text"> 15 Feb 2023</div>
+                          <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                              Nonumy Eirmod Tempor</h4>
+                          <span class="courses course-icon pt-3"><img
+                                  src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="400ms" data-wow-duration="2000ms"
+                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                  <a class="categories-item" href="#">
+                      <div class="content-part text-center">
+                          <div class="date-text"> 15 Feb 2023</div>
+                          <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                              Nonumy Eirmod Tempor</h4>
+                          <span class="courses course-icon pt-3"><img
+                                  src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="500ms" data-wow-duration="2000ms"
+                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                  <a class="categories-item" href="#">
+                      <div class="content-part text-center">
+                          <div class="date-text"> 15 Feb 2023</div>
+                          <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                              Nonumy Eirmod Tempor</h4>
+                          <span class="courses course-icon pt-3"><img
+                                  src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                      </div>
+                  </a>
+              </div>
+      
+              <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
+                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                  <a class="categories-item" href="#">
+                      <div class="content-part text-center">
+                          <div class="date-text"> 15 Feb 2023</div>
+                          <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                              Nonumy Eirmod Tempor</h4>
+                          <span class="courses course-icon pt-3"><img
+                                  src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="400ms" data-wow-duration="2000ms"
+                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                  <a class="categories-item" href="#">
+                      <div class="content-part text-center">
+                          <div class="date-text"> 15 Feb 2023</div>
+                          <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                              Nonumy Eirmod Tempor</h4>
+                          <span class="courses course-icon pt-3"><img
+                                  src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                      </div>
+                  </a>
+              </div>
+              <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="500ms" data-wow-duration="2000ms"
+                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                  <a class="categories-item" href="#">
+                      <div class="content-part text-center">
+                          <div class="date-text"> 15 Feb 2023</div>
+                          <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                              Nonumy Eirmod Tempor</h4>
+                          <span class="courses course-icon pt-3"><img
+                                  src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                      </div>
+                  </a>
+              </div>
+      
+      
+          </div>
+      </div>
+      </div>-->
+   <div id="rs-popular-courses" class="rs-popular-courses style1 modify1 pt-60 pb-60">
+      <div class="container">
+         <div class="sec-title6 text-center mb-40">
+            <h2 class="title">Quick Links</h2>
+         </div>
+         <div class="sec-bg-white">
+            <div class="gridFilter style2 text-left mb-40">
+               <button data-filter=".filter1" class="active">What's New</button>
+               <button data-filter=".filter2" class="btn2">Budget and Finance</button>
+               <button data-filter=".filter3" class="btn3">Rabies Clinic</button>
+               <button data-filter=".filter4" class="btn4">ID Hospitals</button>
+            </div>
+            <div class="row grid">
+               <div class="col-lg-12 col-md-12 grid-item filter1">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="img-part">
+                           <img src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}" alt="Image">
+                        </div>
+                     </div>
+                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <div class="content">
+                           <div class="sec-title mb-10">
+                              {{-- 
+                              <div class="desc">
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                 voluptua.
+                                 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                 gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                              </div>
+                              <div class="desc display-pdf">
+                                 <img src="{{ asset('assets/Nrcp_img/pdf.png') }}" />
+                                 <span>
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                 </span>
+                              </div>
+                              <div class="desc display-pdf">
+                                 <img src="{{ asset('assets/Nrcp_img/pdf.png') }}" />
+                                 <span>
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                 </span>
+                              </div>
+                              --}}
+                              <h4 class="coming_soon">Content Coming Soon </h4>
+                           </div>
+                           {{-- 
+                           <div class="btn-part">
+                              <a class="readon banner-style" href="#">Read More <i
+                                 class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                           </div>
+                           --}}
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-12 col-md-12 grid-item filter2 d-none">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="img-part">
+                           <img src="{{ asset('assets/Nrcp_img/Updated_images/DSC_3631.jpg') }}" alt="Image">
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="content">
+                           <div class="sec-title mb-10">
+                              {{-- 
+                              <div class="desc">
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                 voluptua.
+                                 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                 gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                              </div>
+                              <div class="desc display-pdf">
+                                 <img src="{{ asset('assets/Nrcp_img/pdf.png') }}" />
+                                 <span>
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                 </span>
+                              </div>
+                              <div class="desc display-pdf">
+                                 <img src="{{ asset('assets/Nrcp_img/pdf.png') }}" />
+                                 <span>
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                 </span>
+                              </div>
+                              --}}
+                              <h4 class="coming_soon">Content Coming Soon </h4>
+                           </div>
+                           {{-- 
+                           <div class="btn-part">
+                              <a class="readon banner-style" href="#">Read More <i
+                                 class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                           </div>
+                           --}}
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-12 col-md-12 grid-item filter3 d-none">
+                  <div class="row align-item-center">
+                     {{-- 
+                     <div class="col-lg-6">
+                        <div class="img-part">
+                           <img src="{{ asset('assets/Nrcp_img/Updated_images/GDS_4013.jpg') }}" alt="Image">
+                        </div>
+                     </div>
+                     --}}
+                     <div class="col-lg-12">
+                        <div class="content">
+                           <div class="sec-title mb-10">
+                              {{-- 
+                              <div class="desc">
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                 voluptua.
+                                 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                 gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                              </div>
+                              <div class="desc display-pdf">
+                                 <img src="{{ asset('assets/Nrcp_img/pdf.png') }}" />
+                                 <span>
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                 </span>
+                              </div>
+                              <div class="desc display-pdf">
+                                 <img src="{{ asset('assets/Nrcp_img/pdf.png') }}" />
+                                 <span>
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                 </span>
+                              </div>
+                              --}}
+                              {{-- 
+                              <h4 class="coming_soon">Content Coming Soon </h4>
+                              --}}
+                              <div class="blog-button">
+                                 <a class="blog-btn" href="{{ asset('assets/Nrcp_img/Model_Anti_rabies_Clinic.pdf') }}" target="_blank">View PDF</a>
+                              </div>
+                           </div>
+                           {{-- 
+                           <div class="btn-part">
+                              <a class="readon banner-style" href="{{ asset('assets/Nrcp_img/Model_Anti_rabies_Clinic.pdf') }}" target="_blank">Read More <i
+                                 class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                           </div>
+                           --}}
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-12 col-md-12 grid-item filter4 d-none">
+                  <div class="row">
+                     {{-- 
+                     <div class="col-lg-6">
+                        <div class="img-part">
+                           <img src="{{ asset('assets/Nrcp_img/Updated_images/DSC_3712.jpg') }}" alt="Image">
+                        </div>
+                     </div>
+                     --}}
+                     <div class="col-lg-12">
+                        <div class="content">
+                           <div class="sec-title mb-10">
+                              {{-- 
+                              <div class="desc">
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                 eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                                 voluptua.
+                                 At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                                 gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                              </div>
+                              <div class="desc display-pdf">
+                                 <img src="{{ asset('assets/Nrcp_img/pdf.png') }}" />
+                                 <span>
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                 </span>
+                              </div>
+                              <div class="desc display-pdf">
+                                 <img src="{{ asset('assets/Nrcp_img/pdf.png') }}" />
+                                 <span>
+                                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                 nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                                 </span>
+                              </div>
+                              --}}
+                              {{-- 
+                              <h4 class="coming_soon">Content Coming Soon </h4>
+                              --}}
+                              <div class="blog-button">
+                                 <a class="blog-btn" href="{{ asset('assets/Nrcp_img/ID_Hospitals.pdf') }}" target="_blank">View PDF</a>
+                              </div>
+                           </div>
+                           {{-- 
+                           <div class="btn-part">
+                              <a class="readon banner-style" href="{{ asset('assets/Nrcp_img/ID_Hospitals.pdf') }}" target="_blank">Read More <i
+                                 class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                           </div>
+                           --}}
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   {{-- 
+   <div class="rs-cta bg-cta pt-20 pb-10">
+      <div class="container">
+         <div class="sec-title6 text-center pt-60 mb-40">
+            <h2 class="title text-white">Technical Documents and Guidelines</h2>
+         </div>
+         <div class="row rs-blog home9-style pt-20 pb-50">
+            <div class="col-md-4">
+               <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms"
+                  data-wow-duration="2000ms"
+                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                  <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" />
+                  <div class="content-part">
+                     <p class="txt">
+                        Rabies General Aspects & Laboratory Diagnostic Techniques 2022
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms"
+                  data-wow-duration="2000ms"
+                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                  <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" />
+                  <div class="content-part">
+                     <p class="txt">
+                        National Guidelines on Diagnosis Case Management and Prevention and Control of
+                        Leptospirosis
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms"
+                  data-wow-duration="2000ms"
+                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                  <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" />
+                  <div class="content-part">
+                     <p class="txt">
+                        NCDC notified as National Coordinating Centre for Surveillance of Antimicrobial
+                        Resistance
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   --}}
+   <div class="gallery-section pt-60 pb-60 bg-light-white">
+      <div class="container-fluid pr-0">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="content">
+                  <div class="sec-title text-center mb-40 ">
+                     <h2 class="title mb-20">Our Gallery</h2>
+                  </div>
+               </div>
+               <div class="col-md-12">
+                  <div class="rs-carousel owl-carousel nav-style2 gallery-carausel" data-loop="true"
+                     data-items="4" data-margin="10" data-autoplay="true" data-hoverpause="true"
+                     data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false"
+                     data-nav-speed="false" data-center-mode="false" data-mobile-device="1"
+                     data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2"
+                     data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2"
+                     data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="4"
+                     data-md-device-nav="false" data-md-device-dots="false">
+                     <div class="team-item">
+                        <div class="gallery-box">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/11.jpg') }}" alt="">
+                           <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 169</div>
+                           <div class="text-gallery">
+                              Event 1
+                           </div>
+                        </div>
+                     </div>
+                     <div class="team-item">
+                        <div class="gallery-box">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
+                           <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 129</div>
+                           <div class="text-gallery">
+                              Event 2
+                           </div>
+                        </div>
+                     </div>
+                     <div class="team-item">
+                        <div class="gallery-box">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
+                           <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 169</div>
+                           <div class="text-gallery">
+                              Event 3
+                           </div>
+                        </div>
+                     </div>
+                     <div class="team-item">
+                        <div class="gallery-box">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/44.jpeg') }}" alt="">
+                           <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 139</div>
+                           <div class="text-gallery">
+                              State Level ToT for NRCP (Kerala)
+                           </div>
+                        </div>
+                     </div>
+                     <div class="team-item">
+                        <div class="gallery-box">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/55.jpg') }}" alt="">
+                           <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 139</div>
+                           <div class="text-gallery">
+                              Event 5
+                           </div>
+                        </div>
+                     </div>
+                     <div class="team-item">
+                        <div class="gallery-box">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/66.jpg') }}" alt="">
+                           <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 139</div>
+                           <div class="text-gallery">
+                              Event 6
+                           </div>
+                        </div>
+                     </div>
+                     <div class="team-item">
+                        <div class="gallery-box">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/about.jpg') }}" alt="">
+                           <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 139</div>
+                           <div class="text-gallery">
+                              Event 7
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Faq Section Start -->
+      <div class="rs-faq-part style1 pt-80 pb-80">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 padding-0 col-md-12 md-mb-40">
+                  <div class="main-part new-style">
+                     <div class="title mb-20">
+                        <h2 class="text-part">Frequently Asked Questions</h2>
+                     </div>
+                     <div class="faq-content">
+                        <div id="accordion" class="accordion">
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link" data-toggle="collapse" href="#collapseOne">Q 1: What is
+                                 rabies?</a>
+                              </div>
+                              <div id="collapseOne" class="collapse " data-parent="#accordion">
+                                 <div class="card-body">
+                                    Rabies is a disease transmitted from animals to humans, which is caused
+                                    by a virus. There are two clinical manifestations of rabies – frantic
+                                    and paralytic. Frantic rabies is most common form of human rabies.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo"
+                                    aria-expanded="false">Q 2: How is rabies transmitted?</a>
+                              </div>
+                              <div id="collapseTwo" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    The rabies virus invades the nervous system of mammals. It is primarily
+                                    transmitted from the rabid animal’s saliva when it bites or scratches
+                                    someone. Licks to wounds or grazed and broken skin, or to the lining of
+                                    the mouth and nose, can also transmit the disease.
+                                    Dogs are responsible for 96% of human rabies cases in South-East Asia,
+                                    but there are also reports
+                                    of human rabies due to bites of cats, mongooses, jackals, foxes, wolves
+                                    and other carnivorous animals.
+                                    Rabies due to monkey and rat bites are rare. Horses and donkeys get
+                                    aggressive and bite ferociously when they are rabid. Cattle and
+                                    buffaloes do not bite when they are rabid, but precautions should be
+                                    taken while examining sick animals that are salivating.
+                                    Sometimes livestock owners confuse rabies with foot-and-mouth disease,
+                                    haemorrhagic septicaemia or choking and may attempt to administer drugs
+                                    by hand, and thus get infected with rabies virus.
+                                    There are no evidence-based reports of human rabies occurring due to
+                                    consumption of milk.
+                                    Individuals or professionals who slaughter rabiesinfected animals and
+                                    handle brain and other infected material may be at risk, but there are
+                                    no human cases due to consumption of cooked meat.
+                                    Human-to-human transmission of rabies through corneal or other organ
+                                    transplantation is rare but possible. Such transmission has occurred
+                                    among recipients of transplanted corneas and recently among recipients
+                                    of solid organs and vascular tissue.
+                                    Therefore corneas or organs should not be collected from a patient who
+                                    died due to rabies encephalitis or any undiagnosed neurological disease.
+                                    Although rabies patients are extremely unlikely to bite other people,
+                                    caregivers should be watchful and alert when looking after them, and
+                                    avoid contact with the patient’s saliva.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree"
+                                    aria-expanded="false">Q 3: How does one treat an animal bite?</a>
+                              </div>
+                              <div id="collapseThree" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    <ul>
+                                       If a person is bitten by an animal:
+                                       <li> ●● Wounds should be washed and flushed immediately with soap and water
+                                          for 10–15 minutes. If soap is not available, flush with water alone.
+                                       </li>
+                                       This is the most effective first-aid treatment against rabies.</li>
+                                       <li> ●● Wounds should be cleaned thoroughly with 70% alcohol/ethanol or
+                                          povidone-iodine, if available.
+                                       <li> ●● As soon as possible, take the person to a healthcare facility for
+                                          further treatment.
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseFour"
+                                    aria-expanded="false">Q 4: What should not be done with an animal bite
+                                 wound?</a>
+                              </div>
+                              <div id="collapseFour" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    Avoid:
+                                    <ul>
+                                       <li>   ●● Applying irritants to the wound such as chilli powder, plant juices,
+                                          acids or alkalis.
+                                       </li>
+                                       <li> ●● Covering the wound with dressings or bandages.</li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseFive"
+                                    aria-expanded="false">Q 5: How does rabies develop in humans?</a>
+                              </div>
+                              <div id="collapseFive" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    After entering the human body, the rabies virus progresses from the
+                                    innermost layer of tissue below the human skin (called subcutaneous
+                                    tissue), or from muscle, into peripheral nerves (i.e. the nerves in the
+                                    body which are outside the brain or spinal cord).
+                                    The virus migrates along nerves to the spinal cord and brain at an
+                                    estimated speed of 12–24 mm a day.
+                                    The infected person exhibits behavioural changes and clinical signs when
+                                    the virus reaches the brain. The incubation period ranges from a few
+                                    days to several months, and can be as long as 1 year.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseSix"
+                                    aria-expanded="false">Q 6: How long does it take for dogs and cats to
+                                 develop rabies, and how long does a rabid animal survive?</a>
+                              </div>
+                              <div id="collapseSix" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    The incubation period ranges from a few days to several months, whereas
+                                    the duration of illness – until death – varies from 1 to 7 days.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseSeven"
+                                    aria-expanded="false">Q 7: What are the clinical features of rabies in
+                                 dogs?</a>
+                              </div>
+                              <div id="collapseSeven" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    Dog rabies is characterized by changes to its normal behaviour, such as:
+                                    <ul>
+                                       <li> ●● biting without any provocation</li>
+                                       <li>  ●● eating abnormal items such as sticks, nails, faeces, etc.</li>
+                                       <li> ●● running for no apparent reason</li>
+                                       <li> ●● a change in sound e.g. hoarse barking and growling or inability to
+                                          make a sound
+                                       </li>
+                                       <li> ●● excessive salivation or foaming at the angles of
+                                          the mouth – but not hydrophobia (fear of water).
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseEight"
+                                    aria-expanded="false">Q 8: What are the signs and symptoms of rabies in
+                                 humans?</a>
+                              </div>
+                              <div id="collapseEight" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    Human rabies has the following signs and symptoms:
+                                    <ul>
+                                       <li> ●● pain or itching at the site of the bite wound (in 80% of cases)</li>
+                                       </li>
+                                       <li> ●● fever, malaise, headache lasting for 2–4 days.</li>
+                                       <li> ●● hydrophobia (fear of water)</li>
+                                       <li> ●● intolerance to noise, bright light or air</li>
+                                       <li> ●● fear of impending death</li>
+                                       <li> ●● anger, irritability and depression</li>
+                                       <li> ●● hyperactivity</li>
+                                       <li> ●● at a later stage the mere sight of water may provoke spasms in the
+                                          neck and throat
+                                       </li>
+                                       <li> ●● the duration of illness is usually 2–3 days, but
+                                          might stretch to 5–6 days or more when receiving intensive care support.
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseNine"
+                                    aria-expanded="false">Q 9: Is there any specific treatment for a rabies
+                                 patient?</a>
+                              </div>
+                              <div id="collapseNine" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    There is no specific treatment once rabies develops. There is almost
+                                    nothing that can be done apart from keeping the patient comfortable, and
+                                    free from physical pain and emotional upset.
+                                    <ul>
+                                       <li>   ●● Precautions should be taken by the caregiver to avoid bites and
+                                          saliva contamination of mucous membranes and wounds by using personal
+                                          protection equipment.
+                                       </li>
+                                       <li> ●● Keep the patient in a quiet room with subdued light and protect them
+                                          from stimuli (e.g. loud noises, cold air) that are likely to increase
+                                          spasms and convulsions. 
+                                       </li>
+                                       <li>  ●● Sedation with diazepam 10 mg every 4–6 hours, supplemented by
+                                          chlorpromazine 50–100 mg, or intravenous morphine if necessary, will
+                                          help to control muscular spasms and excitability.
+                                       </li>
+                                       <li>  ●● Feeding orally is usually impossible. Fluids should be given
+                                          intravenously.
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseTen"
+                                    aria-expanded="false">Q 10: Is rabies always fatal?</a>
+                              </div>
+                              <div id="collapseTen" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    Human rabies caused by the classical rabies virus continues to be almost
+                                    100% fatal, with no specific treatment available anywhere in the world.
+                                    There are only seven recorded cases of human rabies survivors in the
+                                    world, who received intensive nursing care. Almost all of them received
+                                    preventive/pre-exposure rabies vaccination that might have modified the
+                                    course of illness. Only one case of human rabies caused by a bat bite
+                                    did not receive pre-exposure vaccination but survived. However, this
+                                    case was not caused by the classical rabies virus.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseEleven"
+                                    aria-expanded="false">Q 11: Do you have to take vaccination against
+                                 rabies if a vaccinated dog bites you?</a>
+                              </div>
+                              <div id="collapseEleven" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    No, not if the dog is properly vaccinated against rabies and the
+                                    efficacy of the vaccine is confirmed by laboratory evidence. Otherwise
+                                    an appropriate post-exposure prophylaxis (PEP) should be given.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseTweleve"
+                                    aria-expanded="false">Q 12: If I am bitten by a rat do I require
+                                 postexposure prophylaxis (PEP)?</a>
+                              </div>
+                              <div id="collapseTweleve" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    Rat rabies has been reported from some Asian countries but is extremely
+                                    rare. It is not necessary to take PEP in bite cases by house rats.
+                                    However, it is prudent to take PEP in consultation with an infectious
+                                    disease physician when bitten by wild rats/rodents.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseThirteen"
+                                    aria-expanded="false">Q 13: Is there a single-dose human rabies vaccine
+                                 which will provide life-long immunity?</a>
+                              </div>
+                              <div id="collapseThirteen" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                                    No. There is no single-dose rabies vaccine available anywhere in the
+                                    world which can provide lifelong immunity. Single-dose vaccines are
+                                    available, but they only provide immunity for a limited period of time.
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card">
+                              <div class="card-header">
+                                 <a class="card-link collapsed" data-toggle="collapse" href="#collapseFourtin"
+                                    aria-expanded="false">Q 14: What is the rabies vaccination schedule for
+                                 pet dogs?</a>
+                              </div>
+                              <div id="collapseFourtin" class="collapse" data-parent="#accordion" style="">
+                                 <div class="card-body">
+                                    Puppies are often obtained from reliable dog breeders where bitches are
+                                    vaccinated against rabies. These puppies get maternal antibodies against
+                                    rabies for 3 months and therefore it is recommended to vaccinate at 3
+                                    months of age, then at 9 months of age and revaccinate annually. Puppies
+                                    and dogs must be given anthelmintic drugs regularly before vaccination.
+                                    If the puppies adopted are street dogs, the first vaccination should be
+                                    given as the same protocol (at 3 months of age, 9 months, and yearly
+                                    boosters).
+                                    Alternately, first vaccination can be given as early as 2 months of age.
+                                    Precautions should be taken in first 3 months of age.
+                                    If adult street dogs are adopted, then the first vaccination should be
+                                    given as soon as possible, and a local veterinarian should be consulted.
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- faq Section END -->
+      <!-- Partner Start -->
+      <div class="rs-partner pt-40 pb-40 gray-bg-color">
+         <div class="container">
+            <div class="rs-carousel owl-carousel" data-loop="true" data-items="6" data-margin="15"
+               data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
+               data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false"
+               data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="false"
+               data-ipad-device="3" data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="3"
+               data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6"
+               data-md-device-nav="true" data-md-device-dots="false">
+               <div class="partner-item">
+                  <a href="http://pgportal.gov.in/" target="_blank" role="link"><img  src="{{ asset('assets/Nrcp_img/clients/pg-portal.png') }}" alt="PORTAL FOR PUBLIC GRIEVANCES" title="PORTAL FOR PUBLIC GRIEVANCES"></a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://notto.gov.in/" target="_blank" role="link">
+                  <img src="{{ asset('assets/Nrcp_img/clients/logo-(1)_0_0.png') }}" alt="NOTTO" title="NOTTO">
+                  </a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://www.nhp.gov.in/" target="_blank" role="link">
+                  <img src="{{ asset('assets/Nrcp_img/clients/nhp-india.png') }}"
+                     alt="National Health Portal" title="National Health Portal">
+                  </a>
+               </div>
+               <div class="partner-item">
+                  <a href="http://nhm.gov.in/" target="_blank" role="link">
+                  <img src="{{ asset('assets/Nrcp_img/clients/RashtriyaBalSwasthyaKaryakram.jpg') }}"
+                     alt="Rashtriya Bal Swasthya Karyakram (RBSK)" title="Rashtriya Bal Swasthya Karyakram (RBSK)">
+                  </a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://www.nikshay.in" target="_blank" rel="noopener noreferrer" role="link">
+                  <img  src="{{ asset('assets/Nrcp_img/clients/nikshay.png') }}"
+                     alt="Nikshay, External link that will open in a new window" title="Nikshay, External link that will open in a new window"></a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://cgewho.in/" target="_blank" rel="noopener noreferrer" >
+                  <img src="{{ asset('assets/Nrcp_img/clients/CENTRALGOVERNMENTEMPLOYEES.jpg') }}"
+                     alt="CENTRAL GOVERNMENT EMPLOYEES, External link that will open in a new window" title="CENTRAL GOVERNMENT EMPLOYEES, External link that will open in a new window"></a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://main.mohfw.gov.in/major-programmes/poor-patients-financial-support" target="_blank"
+                     role="link"><img src="{{ asset('assets/Nrcp_img/clients/poor.png') }}"
+                     alt="Poor Patients-Financial Support" title="Poor Patients-Financial Support"></a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://www.nhp.gov.in/quit-tobacco" target="_blank" role="link">
+                  <img src="{{ asset('assets/Nrcp_img/clients/quittobacco.jpg') }}"
+                     alt="Quit Tabacoo, External link that will open in a new window" title="Quit Tabacoo, External link that will open in a new window">
+                  </a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://www.incometaxindia.gov.in/Pages/income-declaration-scheme.aspx" target="_blank" role="link">
+                  <img src="{{ asset('assets/Nrcp_img/clients/IncomeTaxDepartment.jpg') }}"
+                     alt="Income Tax Department, External link that will open in a new window" title="Income Tax Department, External link that will open in a new window">
+                  </a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://www.mygov.in/group-issue/inviting-ideas-pm-narendra-modis-mann-ki-baat-august-2016/"
+                     target="_blank" rel="noopener noreferrer" role="link">
+                  <img src="{{ asset('assets/Nrcp_img/clients/8956354581471930117.jpg') }}"
+                     alt="mann ki baat" title="mann ki baat"></a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://main.mohfw.gov.in/my-hospital" target="_blank" role="link">
+                  <img src="{{ asset('assets/Nrcp_img/clients/mera_aspatal.png') }}"
+                     alt="My Hospital, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window.">
+                  </a>
+               </div>
+               <div class="partner-item">
+                  <a href="https://www.mygov.in/" target="_blank" rel="noopener noreferrer" role="link">
+                  <img src="{{ asset('assets/Nrcp_img/clients/mygov_2.png') }}"
+                     alt="My Gov, External Link That Will Open in a New Window." title="External Link That Will Open in a New Window."></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Partner End -->
+   </div>
+
+
+@endsection
