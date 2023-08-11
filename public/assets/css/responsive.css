@@ -1304,7 +1304,7 @@
 @media only screen and (max-width: 991px) {
     .order-last {
         -ms-flex-order: unset;
-        order: unset;
+        order: 2;
     }
     .hidden-md {
         display: none;
@@ -2434,13 +2434,19 @@
         margin-top: 30%;
     }
 
+    .row.banner-mobile {
+        flex-wrap: inherit;
+    }
+
+
+
     .img-part.banner-image {
         min-height: auto;
     }
 
     .main-content .p-0 {
         padding-right: 15px !important;
-        padding-left: 15px !important;
+        padding-left: 0px !important;
     }
 
     .pdf-image img {
@@ -2933,9 +2939,9 @@
     }
 
     .banner-content {
-        padding: 45px 20px;
+        padding: 20px 15px;
         padding-right: 20px !important;
-        min-height: 422px;
+        min-height: 250px;
     }
 
     .rs-slider.style1 .slider-content .sl-sub-title {
@@ -3637,10 +3643,11 @@
         width: 65px;
     }
     .readon.green-banner {
-        font-size: 13px;
-        line-height: 33px;
+        font-size: 10px;
+        line-height: 20px;
         font-weight: 700;
-        padding: 6px 25px;
+        padding: 4px 12px !important;
+        margin-top: 8px;
     }
     .rs-banner.style10 .banner-content .sl-sub-title {
         font-size: 17px;
@@ -4036,10 +4043,13 @@
         font-size: 12px;
     }
     .rs-slider.style1 .slider-content .sl-sub-title {
-        font-size: 20px;
+        font-size: 10px;
+        line-height: 14px;
     }
     .rs-slider.style1 .slider-content .sl-title {
-        font-size: 33px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        line-height: 18px;
     }
     .rs-testimonial.home1-style .owl-dots {
         margin-top: 30px;
