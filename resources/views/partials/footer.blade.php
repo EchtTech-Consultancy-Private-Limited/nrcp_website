@@ -32,7 +32,7 @@
 
                 <div class="col-md-5">
                     <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12 pl-20 md-pl-20 footer-widget md-mb-50">
+                        <div class="col-lg-6 col-md-12 col-sm-12 pl-20 md-pl-20 footer-widget md-mb-50 width-sm-50 mt-s-40">
                             <h3 class="widget-title">Links</h3>
                             <ul class="site-map border-right-white">
                                 <li><a href="{{ route('coming-soon') }}">Disclaimer</a></li>
@@ -43,7 +43,7 @@
                             </ul>
                         </div>
 
-                        <div class="col-lg-6 col-md-12 col-sm-12 pl-50 md-pl-15 footer-widget md-mb-50 p-0">
+                        <div class="col-lg-6 col-md-12 col-sm-12 pl-50 md-pl-15 footer-widget md-mb-50 p-0 width-sm-50">
                             <ul class="site-map footer-link-withput-h border-right-white">
                                 <li><a href="{{ route('coming-soon') }}">Website Policies,</a></li>
                                 <li><a href="{{ route('coming-soon') }}">Accessibility Statement</a></li>
@@ -106,7 +106,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row y-middle">
-                <div class="col-lg-6 md-mb-20">
+                <div class="col-lg-6 md-mb-10">
                     <div class="copyright">
                         <p>© Copyright {{date('Y')}} National Centre for Disease control.</p>
                     </div>

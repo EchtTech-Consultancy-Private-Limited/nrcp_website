@@ -1627,7 +1627,7 @@ ul.listing-style.modify li:before {
 
 .sec-title3 .title {
   font-size: 36px;
-  line-height: 35px;
+  line-height: 30px;
   font-weight: 800;
   color: #031a3d;
 }
@@ -6033,16 +6033,17 @@ body .modal-backdrop {
   color: #505050;
 }
 
-.rs-breadcrumbs .breadcrumbs-text ul li a:before,
+/* .rs-breadcrumbs .breadcrumbs-text ul li a:before, */
 .rs-breadcrumbs .breadcrumbs-text ul li a:after {
-  background-color: #505050;
-  content: "";
+  background-color: transparent !important;
+  content: "\f101";
   height: 15px;
-  width: 2px;
+  /* width: 2px; */
   position: absolute;
   right: 7px;
-  top: 2px;
-  transform: rotate(26deg);
+  top: -2px;
+  /* transform: rotate(26deg); */
+  font-family: 'FontAwesome';
 }
 
 .rs-breadcrumbs .breadcrumbs-text ul li a:before {
@@ -15233,7 +15234,7 @@ span.courses.course-icon img {
   background: #F8F9FF;
   color: #000;
 
-  font: normal normal normal 18px/73px Poppins;
+  font: normal normal normal 18px/66px Poppins;
 letter-spacing: 0px;
 color: #171717;
 }
@@ -17660,6 +17661,7 @@ color: #171717;
 .rs-footer.home9-style.main-home .footer-bottom .copyright p {
   margin-bottom: 0;
   color: #f3f8f9;
+  font-size: 12px;
 }
 
 .rs-footer.home9-style.main-home .footer-bottom .copyright a {
@@ -19143,7 +19145,7 @@ ul.site-map.footer-link-withput-h {
 .visitors-sec h5 {
   margin-bottom: 0;
   color: #fff;
-  font: normal normal normal 16px/24px Poppins;
+  font: normal normal normal 12px/14px Poppins;
 }
 span.number-visitor {
   background: #5568D2;
@@ -19182,12 +19184,14 @@ span.number-visitor {
 }
 
 .img-part.banner-image {
-  height: 466px;
+  min-height: 466px;
+  height: 100%;
 }
 
 .img-part.banner-image img {
   height: 100%;
   width: 100%;
+  height: 466px;
 }
 
 li.menu-item-has-children ul.sub-menu li{
@@ -19294,6 +19298,9 @@ li.rs-mega-menu.current-menu-item span.rs-menu-parent {
   margin: 0;
 }
 
+.breadcrumbs-text li a:hover {
+  color: #fbb47e !important;
+}
 
 h3.sub-title {
   margin: 0 !important;
@@ -19363,8 +19370,7 @@ h3.sub-title {
     margin-bottom: 15px;
   }
   .table td {
-    padding-left: 50%;
-    text-align: left;
+    text-align: center;
     position: relative;
   }
   .table td::before {
@@ -19377,4 +19383,9 @@ h3.sub-title {
     font-weight: bold;
     text-align: left;
   }
+}
+
+.rs-menu.rs-menu-close{
+
+text-align: right;
 }
