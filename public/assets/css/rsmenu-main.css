@@ -560,6 +560,8 @@
     .rs-menu {
         position: absolute;
         z-index: 999;
+		top: 35%;
+
     }
     .rs-menu .row [class*="col-"] {
         float: left!important;

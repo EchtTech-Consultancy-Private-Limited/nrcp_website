@@ -22,13 +22,13 @@
          data-md-device-dots="false">
          <div class="slider-content">
             <div class="container-fluid px-0">
-               <div class="row align-item-center">
+               <div class="row banner-mobile">
                   <div class="col-lg-6 order-last p-0">
                      <div class="img-part banner-image">
                         <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}" alt="">
                      </div>
                   </div>
-                  <div class="col-lg-6 pr-0">
+                  <div class="col-lg-6 pr-0 banner-mobile">
                      <div class="banner-content alignment-center">
                         <div>
                            <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
@@ -54,7 +54,7 @@
          </div>
          <div class="slider-content">
             <div class="container-fluid px-0">
-               <div class="row">
+               <div class="row banner-mobile">
                   <div class="col-lg-6 order-last p-0">
                      <div class="img-part banner-image">
                         <img class="" src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}" alt="">
@@ -88,7 +88,7 @@
          </div>
          <div class="slider-content">
             <div class="container-fluid px-0">
-               <div class="row">
+               <div class="row banner-mobile">
                   <div class="col-lg-6 order-last p-0">
                      <div class="img-part banner-image">
                         <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}" alt="">
@@ -122,7 +122,7 @@
          </div>
          <div class="slider-content">
             <div class="container-fluid px-0">
-               <div class="row">
+               <div class="row banner-mobile">
                   <div class="col-lg-6 order-last p-0">
                      <div class="img-part banner-image">
                         <img class="" src="{{ asset('assets/Nrcp_img/event/event5.jpg') }}" alt="">
