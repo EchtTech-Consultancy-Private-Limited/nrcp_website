@@ -747,12 +747,14 @@
             </div>
          </div>
       </div>
+   </div>
+</div>
       <!-- Faq Section Start -->
       <div class="rs-faq-part style1 pt-80 pb-80">
          <div class="container">
             <div class="row">
-               <div class="col-lg-12 padding-0 col-md-12 md-mb-40">
-                  <div class="main-part new-style">
+               <div class="col-lg-12 padding-0 col-md-12">
+                  <div class="main-part new-style padding-sm-0">
                      <div class="title mb-20">
                         <h2 class="text-part">Frequently Asked Questions</h2>
                      </div>
@@ -1063,7 +1065,7 @@
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="6" data-margin="15"
                data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
                data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false"
-               data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="false"
+               data-mobile-device="2" data-mobile-device-nav="true" data-mobile-device-dots="false"
                data-ipad-device="3" data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="3"
                data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6"
                data-md-device-nav="true" data-md-device-dots="false">
