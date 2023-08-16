@@ -2521,6 +2521,12 @@
 
     .readon2{
         margin-bottom: 20px;
+        padding: 6px 25px;
+        font-size: 15px;
+    }
+
+    .modal-dialog .readon2{
+        margin-bottom: 0px;
     }
 
     .top-menu-box ul {
@@ -2928,7 +2934,7 @@
     }
     
     .img-part.banner-image img {
-        height:250px;
+        height:235px;
         width: 100%;
         object-fit: cover;
     }
@@ -2941,7 +2947,7 @@
     .banner-content {
         padding: 20px 15px;
         padding-right: 20px !important;
-        min-height: 250px;
+        min-height: 235px;
     }
 
     .rs-slider.style1 .slider-content .sl-sub-title {
@@ -4336,6 +4342,9 @@
 
     .sec-bg-white {
         padding: 30px 22px;
+    }
+   .rs-popular-courses .sec-bg-white {
+        padding: 0px 22px 15px;
     }
 
     .rs-popular-courses.course-view-style .course-search-part {
