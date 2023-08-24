@@ -93,16 +93,16 @@
                            <a href="{{ url('/') }}">Home</a>
                         </li>
                         <li class="menu-item-has-children">
-                           <a href="{{ route('about-us') }}">About</a>
+                           <a href="{{ route('about-us') }}" class="main-anchor">About</a>
                            <ul class="sub-menu">
                               <li><a href="{{ route('about-us') }}">About NRCP</a> </li>
                               <li class=""><a href="{{ route('activitie') }}">Activities</a> </li>
                               <li class="border-none"><a href="{{ route('who-who') }}">Who's Who</a> </li>
                            </ul>
                         </li>
-                        <li class="menu-item-has-children">
-                           <a href="{{url('/publications')}}"> Publications</a>
-                           <ul class="sub-menu">
+                        <li class="">
+                           <a href="{{url('/publications')}}" class="main-anchor"> Publications</a>
+                           {{-- <ul class="sub-menu">
                               <li><a href="https://ncdc.gov.in/WriteReadData/linkimages/GuidelinesforRabiesProphylaxis.pdf"
                                  target="_blank">Technical Document and Guidelines </a> </li>
                               <li class=""><a href="https://ncdc.mohfw.gov.in/showfile.php?lid=435"
@@ -118,11 +118,11 @@
                                  target="_blank">Guidance Note for Addressing Anti Rabies
                                  Vaccine and Anti Rabies Serum Shortage</a> 
                               </li>
-                           </ul>
+                           </ul> --}}
                         </li>
-                        <li class="menu-item-has-children">
-                           <a href="{{url('/downloads')}}"> Downloads</a>
-                           <ul class="sub-menu">
+                        <li class="">
+                           <a href="{{url('/downloads')}}" class="main-anchor"> Downloads</a>
+                           {{-- <ul class="sub-menu">
                               <li class="menu-item-has-children">
                                  <a href="javascript:void();">Committees</a>
                                  <ul class="sub-menu">
@@ -189,10 +189,10 @@
                                     </li>
                                  </ul>
                               </li>
-                           </ul>
+                           </ul> --}}
                         </li>
                         <li class="menu-item-has-children">
-                           <a href="javascript:void();"> IEC</a>
+                           <a href="javascript:void();" class="main-anchor"> IEC</a>
                            <ul class="sub-menu">
                               <li><a href="https://ncdc.mohfw.gov.in/WriteReadData/linkimages/RabiesBillboard.pdf"
                                  target="_blank">Bill board </a> </li>
