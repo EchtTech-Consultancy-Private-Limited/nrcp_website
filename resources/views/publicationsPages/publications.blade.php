@@ -148,23 +148,129 @@
                                             <span class="view">View</span><span class="size">(17kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
                                         </div>
 
-                                        <div class="download">
-                                        <span>Accessible Version:</span> <span class="view">View</span><span class="size">(17kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                        </div>
-                                        
                                        </td>
                                     </tr>
                                 </table>
                             </div>
                              </div>
                             <div class="tab-pane fade" id="research-papers" role="tabpanel" aria-labelledby="research-papers-tab">
-                                profile... 
+                              <div class="table">
+                                <table>
+                                    <tr>
+                                    <h2 class="title">Technical Document and Guideline</h2>
+                                    </tr>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Date</th>
+                                        <th>View/Download</th>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td></td>
+                                       <td>
+                                        <!-- <div class="download ">
+                                            <span class="view"></span><span class="size"></span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                        </div> -->
+
+                                        
+                                        <!-- <div class="accessible-version">
+                                        <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                        </div> -->
+                                       </td>
+                                    </tr>
+                                  
+
+                                </table>
+                            </div>
                             </div>
                             <div class="tab-pane fade" id="annual-report" role="tabpanel" aria-labelledby="annual-report-tab">
-                                messages...
+                               <div class="table">
+                                <table>
+                                    <tr>
+                                    <h2 class="title">Technical Document and Guideline</h2>
+                                    </tr>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Date</th>
+                                        <th>View/Download</th>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td></td>
+                                       <td>
+                                        <!-- <div class="download ">
+                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                        </div> -->
+
+                                        
+                                        <!-- <div class="accessible-version">
+                                        <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                        </div> -->
+                                       </td>
+                                    </tr>
+                                  
+
+
+                                    <tr>
+                                    <td>	 </td>
+
+                                       <td></td>
+                                       <td>
+                                        <!-- git -->
+
+                                        
+                                        
+                                       </td>
+                                    </tr>
+
+                               
+                                </table>
+                            </div>
                             </div>
                             <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-                                settings...
+                              <div class="table">
+                                <table>
+                                    <tr>
+                                    <h2 class="title">Technical Document and Guideline</h2>
+                                    </tr>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Date</th>
+                                        <th>View/Download</th>
+                                    </tr>
+                                    <tr>
+                                       <td></td>
+                                       <td></td>
+                                       <td>
+                                        <!-- <div class="download ">
+                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                        </div> -->
+
+                                        
+                                        <!-- <div class="accessible-version">
+                                        <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                        </div> -->
+                                       </td>
+                                    </tr>
+                                  
+
+
+                                    <tr>
+                                    <td>	</td>
+
+                                       <td></td>
+                                       <td>
+                                        <!-- <div class="download ">
+                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                        </div> -->
+
+                                        
+                                        
+                                       </td>
+                                    </tr>
+
+                                </table>
+                            </div>
                             </div>
                         </div>
                     </div>
