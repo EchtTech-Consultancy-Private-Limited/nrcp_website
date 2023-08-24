@@ -53,7 +53,7 @@
                      </ul>
                   </li>
                   <li class="menu-item-has-children">
-                     <a href="javascript:void();"> Publications</a>
+                     <a href="{{url('/publications')}}"> Publications</a>
                      <ul class="sub-menu">
                         <li><a href="https://ncdc.gov.in/WriteReadData/linkimages/GuidelinesforRabiesProphylaxis.pdf"
                            target="_blank">Technical Document and Guidelines </a> </li>
@@ -73,7 +73,7 @@
                      </ul>
                   </li>
                   <li class="menu-item-has-children">
-                     <a href="javascript:void();"> Downloads</a>
+                     <a href="{{url('/downloads')}}"> Downloads</a>
                      <ul class="sub-menu">
                         <li class="menu-item-has-children">
                            <a href="javascript:void();">Committees</a>

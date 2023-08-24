@@ -25,3 +25,7 @@ Route::get('/about-us',[HomeController::class,'aboutUS'])->name('about-us');
 Route::get('/activitie',[HomeController::class,'activities'])->name('activitie');
 Route::get('/media-alerts',[HomeController::class,'mediaalerts'])->name('media-alerts');
 Route::get('/vaccination_dose',[HomeController::class,'vaccination_dose'])->name('vaccination-dose');
+
+
+Route::get('/downloads',[HomeController::class,'downloads'])->name('downloads');
+Route::get('/publications',[HomeController::class,'publications'])->name('publications');

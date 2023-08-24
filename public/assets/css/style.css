@@ -19363,7 +19363,7 @@ h3.sub-title {
   .table tbody,
   .table tr,
   .table td {
-    display: block;
+  
     width: 100%;
   }
   .table tr {
@@ -19389,3 +19389,92 @@ h3.sub-title {
 
 text-align: right;
 }
+
+
+
+/* publications start  */
+.rs-publications-main .rs-breadcrumbs .breadcrumbs-text{
+  position: relative !important;
+  top: 20px;
+ text-align: left;
+}
+
+.rs-publications-main .publication-sociol-icon img{
+ width: 46px;
+ padding: 10px;
+}
+
+
+.rs-publications-main .nav-pills .nav-link.active, .rs-publications-main .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #2b3b93;
+  border-radius: 5px;
+}
+
+.rs-publications-main .nav-pills .nav-link:hover {
+  background: #2b3b93;
+  /* transform: scaleX(1.01); */
+  color: #fff;
+  border-radius: 5px;
+}
+.rs-publications-main .nav-pills .nav-link {
+  /* border-radius: 0.25rem; */
+  border: none;
+  color: #000;
+  transition: .2s ease-in-out;
+  padding: 10px 10px;
+  text-align: left;
+  border-bottom: 1px solid #a4a0a0;
+  background-color: #fff;
+  border-radius: 0;
+}
+.rs-publications-main table{
+  width: 100%;
+}
+.rs-publications-main table td{
+text-align: left;
+}
+.rs-publications-main .table .download .view{
+  color: #ff0000;
+}
+.rs-publications-main .table .download .fa-download{
+  color: #ff0000;
+}
+.rs-publications-main .table .download {
+  padding: 5px 5px;
+  font-size: 14px;
+    white-space: nowrap;
+}
+.rs-publications-main .table .download *{
+  padding: 5px;
+}
+
+.rs-publications-main .table td, .rs-publications-main .table th {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.rs-publications-main .nav {
+  
+  /* background: red; */
+  padding: 17px;
+  border-radius: 10px;
+}
+
+.rs-publications-main .nav:hover {
+  box-shadow: 0px 2px 5px 0px #BFBEBB;
+}
+
+@media (max-width: 500px){
+  .rs-publications-main .table, .rs-publications-main .table tbody,.rs-publications-main .table tr, .table td {
+    display: block;
+    width: 100%;
+    overflow: scroll;
+}
+}
+
+/* 
+/* publications end */
