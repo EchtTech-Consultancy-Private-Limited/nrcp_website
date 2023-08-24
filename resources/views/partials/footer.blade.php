@@ -2,7 +2,7 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-12 col-sm-12 footer-widget">
+                {{-- <div class="col-lg-2 col-md-12 col-sm-12 footer-widget">
                     <div class="footer-logo mb-10">
                         <a href="{{ url('/') }}">
                             <img src="{{ asset('assets/Nrcp_img/nrcp_white.png') }}" alt="">
@@ -26,11 +26,10 @@
                             <a href="# " target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
                         </li>
 
-
                     </ul>
-                </div>
+                </div> --}}
 
-                <div class="col-md-5">
+                <div class="col-md-6">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 pl-20 md-pl-20 footer-widget md-mb-50 width-sm-50 mt-s-40">
                             <h3 class="widget-title">Links</h3>
@@ -54,7 +53,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                <div class="col-lg-4 col-md-12 col-sm-12 footer-widget md-mb-50">
                     <h3 class="widget-title">Contact Us</h3>
                     <ul class="address-widget">
                         <li>
@@ -93,7 +92,7 @@
                 </div>
 
                 <div class="col-lg-2 col-md-12 col-sm-12 footer-widget p-0">
-                    <h3 class="widget-title">Recent Posts</h3>
+                    <h3 class="widget-title">Reach Us</h3>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.343413096401!2d77.22101037444737!3d28.67937218195402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfda49c63895b%3A0xf42dc723f30a63d2!2sNATIONAL%20CENTRE%20FOR%20DISEASE%20CONTROL%2C%20CSU%20INTEGRATED%20DISEASE%20SURVEILLANCE%20PROGRAMME%2C%20Civil%20Lines%2C%20Delhi%2C%20110054!5e0!3m2!1sen!2sin!4v1689766036308!5m2!1sen!2sin"
                         width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
