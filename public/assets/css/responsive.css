@@ -254,7 +254,7 @@
 
 @media only screen and (max-width: 1366px) {
     .container {
-        max-width: 1170px;
+        max-width: 1230px;
         width: 100%;
     }
     .rs-footer .footer-bottom::before {
@@ -2359,6 +2359,11 @@
         padding-left: 0px;
         padding-right: 40px;
     }
+
+    .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{
+        color: #333 !important;
+    }
+
     .rs-banner.style11 .icons-spiner .squre-img {
         right: 49%;
     }
@@ -2415,13 +2420,21 @@
         height: 55px !important;
     }
 
+    img.logo.logo1.extra-logo.d-none.d-xs-block {
+        height: 50px !important;
+    }
+
+    .top-header-logo{
+        display: none;
+    }
+
     h5.sub-text-l {
         text-align: left;
         font: normal normal normal 13px/16px Tahoma;
     }
 
     .top-menu-box a.text-vaccination{
-        padding: 8px 40px;
+        padding: 8px 25px;
         font: normal normal 14px/20px Poppins;
         text-align: center;
     }
@@ -4343,6 +4356,7 @@
     .sec-bg-white {
         padding: 30px 22px;
     }
+    
    .rs-popular-courses .sec-bg-white {
         padding: 0px 22px 15px;
     }

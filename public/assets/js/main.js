@@ -392,3 +392,103 @@
     
 
 })(jQuery);
+
+$(document).ready(function(){
+  $(".rs-menu li.menu-item-has-children > a").focus(function(){
+    // $(".rs-menu li.menu-item-has-children > a").addClass('main-anchor');
+    $(".rs-menu li.menu-item-has-children > a.main-anchor.show").removeClass('show');      
+    // $(".rs-menu li.menu-item-has-children.multi-menu > a.main-anchor.show").removeClass('show');
+    // $(".rs-menu li.menu-item-has-children.multi-menu > a.main-anchor").addClass('show');
+
+    $(this).addClass('show');
+  });
+
+});
+
+// Font-Increment
+
+function increaseFontSize() {
+  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li, button,.about-t, .copyright-text');
+
+  elements.forEach((element) => {
+    // Get the current font size and convert it to a number
+    let currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
+
+    // Check if the current font size is less than the maximum size (25px)
+    if (currentFontSize < 20) {
+      // Increase the font size by 1px
+      currentFontSize += 1;
+      // Set the new font size
+      element.style.fontSize = currentFontSize + 'px';
+    }
+  });
+}
+
+
+function normaltext() {
+  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li, button, .copyright-text');
+
+  elements.forEach((element) => {
+       // Check if the current font size is less than the maximum size (25px)
+    element.style.fontSize ='';
+  });
+}
+
+
+function decreaseFontSize() {
+  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li, button, .copyright-text');
+
+  elements.forEach((element) => {
+    // Get the current font size and convert it to a number
+    let currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
+
+    // Check if the current font size is less than the maximum size (25px)
+    if (currentFontSize > 12) {
+      // Increase the font size by 1px
+      currentFontSize -=2;
+      // Set the new font size
+      element.style.fontSize = currentFontSize + 'px';
+    }
+  });
+}
+
+
+
+// Tabindex js
+
+$(document).ready(function(){
+    // $(".dropdown-toggle.focus-open-add").click(function(){
+    //     $(".dropdown-toggle.focus-open-add.show").removeClass('show');
+    //     $(".dropdown-menu.add-class-focus.show").removeClass('show');
+    // });
+
+    $("p, h1, h2, h3, h4, h5, h6,span,button, .copyright-text").attr('tabindex' , '0');
+
+    $(".text-assesbility ").focus(function(){
+        $(".text-assesbility-button").addClass('d-block');
+    });
+
+    $(".theme-btn-light").focus(function(){
+        $(".text-assesbility-button").removeClass('d-block');
+    });
+
+    // $(".banner").focus(function(){
+    //     $(".text-assesbility-button").removeClass('d-block');
+    // });
+
+});
+
+
+// Dark mode button
+
+ // enable dark mode and light mode
+// function setTheme(theme) {
+//     const linkElement = document.getElementById('theme-style');
+//     linkElement.href = `${theme}.css`;
+  
+//     // Store the theme preference in local storage
+//     localStorage.setItem('theme', theme);
+//   }
+//   // Set the initial theme based on local storage or default to 'light'
+//   const initialTheme = localStorage.getItem('theme') || 'light';
+//   setTheme(initialTheme);

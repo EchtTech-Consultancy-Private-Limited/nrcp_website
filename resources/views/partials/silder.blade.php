@@ -6,7 +6,7 @@
          data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
          data-md-device-dots="false">
          <div class="slider-content">
-            <div class="container-fluid px-0">
+            <div class="container px-0">
                <div class="row align-item-center">
                   <div class="col-lg-6 order-last p-0">
                      <div class="img-part banner-image">
