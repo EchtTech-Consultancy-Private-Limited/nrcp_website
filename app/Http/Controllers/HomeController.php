@@ -54,4 +54,14 @@ class HomeController extends Controller
     {
         return view('vaccination_dose'); 
     }
+
+
+    public function downloads()
+    {
+        return view('downloadPages.downloads'); 
+    }
+    public function publications()
+    {
+        return view('publicationsPages.publications'); 
+    }
 }

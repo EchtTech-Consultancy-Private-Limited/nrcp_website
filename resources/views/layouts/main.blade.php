@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="menu-area menu-sticky">
-                    <div class="container-fluid">
+                    <div class="container">
                         @include('partials.menu-header')
                     </div>
                 </div>
