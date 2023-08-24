@@ -560,9 +560,11 @@
     .rs-menu {
         position: absolute;
         z-index: 999;
-		top: 35%;
+		top: -50%;
 
     }
+
+	.full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li{margin-left: 0px;}
     .rs-menu .row [class*="col-"] {
         float: left!important;
         width: 100%!important;
