@@ -157,7 +157,7 @@
                               <div class="table">
                                 <table>
                                     <tr>
-                                    <h2 class="title">Research-Papers</h2>
+                                    <h2 class="title">Research Papers</h2>
                                     </tr>
                                     <tr>
                                         <th>Title</th>
@@ -211,17 +211,6 @@
                                   
 
 
-                                    <tr>
-                                    <td>	 </td>
-
-                                       <td></td>
-                                       <td>
-                                        <!-- git -->
-
-                                        
-                                        
-                                       </td>
-                                    </tr>
 
                                
                                 </table>
