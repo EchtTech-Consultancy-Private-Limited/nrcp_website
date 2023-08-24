@@ -19574,7 +19574,7 @@ a.top-logo img {
 }
 
 .rs-publications-main .publication-sociol-icon img{
- width: 46px;
+ width: 36px;
  padding: 10px;
 }
 
@@ -19642,6 +19642,9 @@ text-align: left;
   box-shadow: 0px 2px 5px 0px #BFBEBB;
 }
 
+.rs-publications-main .publication-sociol-icon li .slash{
+line-height: 0;
+}
 @media (max-width: 500px){
   .rs-publications-main .table, .rs-publications-main .table tbody,.rs-publications-main .table tr, .table td {
     display: block;

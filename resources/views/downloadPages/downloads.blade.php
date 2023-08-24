@@ -34,7 +34,7 @@
                     <div class="publication-sociol-icon">
                         <ul class="d-flex justify-content-end">
                             <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/printer.png') }}"
-                                        alt="printer Image" aria-label="printer">/</a></li>
+                                        alt="printer Image" aria-label="printer" class="slash">/</a></li>
                             <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/share.png') }}"
                                         alt="share Image" aria-label="share"></a></li>
                             <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/facebook.png') }}"
@@ -86,6 +86,7 @@
                            
                             <div class="table">
                                 <table>
+                                     <tr> <h2 class="title">SOPs</h2></tr>
                                     <tr>
                                         <th>Title</th>
                                         <th>Date</th>
@@ -155,6 +156,7 @@
                             <div class="tab-pane fade" id="reporting-formate" role="tabpanel" aria-labelledby="reporting-formate-tab">
                             <div class="table">
                                 <table>
+                                <tr> <h2 class="title">Reporting Format under NRCP</h2></tr>
                                     <tr>
                                         <th>Title</th>
                                         <th>Date</th>
@@ -237,6 +239,7 @@
                             <div class="tab-pane fade" id="list-of-laboratories" role="tabpanel" aria-labelledby="list-of-laboratories-tab">
                             <div class="table">
                                 <table>
+                                <tr> <h2 class="title">List of laboratories</h2></tr>
                                     <tr>
                                         <th>Title</th>
                                         <th>Date</th>
@@ -281,6 +284,8 @@
                             <div class="tab-pane fade" id="rabbies-case-management" role="tabpanel" aria-labelledby="rabbies-case-management-tab">
                             <div class="table">
                                 <table>
+
+                                <tr> <h2 class="title">Rabies Case Management facilities</h2></tr>
                                     <tr>
                                         <th>Title</th>
                                         <th>Date</th>
@@ -324,6 +329,7 @@
                             <div class="tab-pane fade" id="committees" role="tabpanel" aria-labelledby="committees-tab">
                             <div class="table">
                                 <table>
+                                <tr> <h2 class="title">Committees</h2></tr>
                                     <tr>
                                         <th>Title</th>
                                         <th>Date</th>
