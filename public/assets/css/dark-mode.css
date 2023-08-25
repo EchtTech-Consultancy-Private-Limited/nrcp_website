@@ -497,7 +497,7 @@ section.event-wrap .event-card.aos-init.aos-animate {
     padding: 2px;
 }
 
-.dropdown-item {
+.dropdown-item, .full-width-header.header-style1.home12-modifiy .rs-header .menu-area {
     background: #000000 !important;
 }
 

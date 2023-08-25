@@ -296,6 +296,7 @@
     });
 
 
+
   // Skip to Content
   var totop = $('#scrollUp');    
   win.on('scroll', function() {
@@ -408,14 +409,14 @@ $(document).ready(function(){
 // Font-Increment
 
 function increaseFontSize() {
-  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li, button,.about-t, .copyright-text');
+  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li, button,.about-t,h2.title,.desc-text-title, .copyright-text');
 
   elements.forEach((element) => {
     // Get the current font size and convert it to a number
     let currentFontSize = parseFloat(window.getComputedStyle(element).fontSize);
 
     // Check if the current font size is less than the maximum size (25px)
-    if (currentFontSize < 20) {
+    if (currentFontSize < 40) {
       // Increase the font size by 1px
       currentFontSize += 1;
       // Set the new font size
@@ -426,7 +427,7 @@ function increaseFontSize() {
 
 
 function normaltext() {
-  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li, button, .copyright-text');
+  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li,.desc, button,.about-t,h2.title,.desc-text-title, .copyright-text');
 
   elements.forEach((element) => {
        // Check if the current font size is less than the maximum size (25px)
@@ -436,7 +437,7 @@ function normaltext() {
 
 
 function decreaseFontSize() {
-  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, span, li, button, .copyright-text');
+  const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, a, li,.desc, button,.about-t,h2.title,.desc-text-title, .copyright-text');
 
   elements.forEach((element) => {
     // Get the current font size and convert it to a number
@@ -462,7 +463,7 @@ $(document).ready(function(){
     //     $(".dropdown-menu.add-class-focus.show").removeClass('show');
     // });
 
-    $("p, h1, h2, h3, h4, h5, h6,span,button, .copyright-text").attr('tabindex' , '0');
+    $("p, h1, h2, h3, h4, h5, h6, a, li, button,.about-t,h2.title,.desc-text-title,.desc, .copyright-text").attr('tabindex' , '0');
 
     $(".text-assesbility ").focus(function(){
         $(".text-assesbility-button").addClass('d-block');
@@ -475,20 +476,183 @@ $(document).ready(function(){
     // $(".banner").focus(function(){
     //     $(".text-assesbility-button").removeClass('d-block');
     // });
-
 });
 
 
 // Dark mode button
 
  // enable dark mode and light mode
-// function setTheme(theme) {
-//     const linkElement = document.getElementById('theme-style');
-//     linkElement.href = `${theme}.css`;
+function setTheme() {  
+
+    if (document.getElementById('mode').checked) {
+        const linkElement = document.getElementById('theme-style');
+        linkElement.href = `${'assets/css/dark-mode'}.css`;
+      
+        // Store the theme preference in local storage
+        localStorage.setItem('assets/css/dark-mode', theme);
+
+        // Set the initial theme based on local storage or default to 'light'
+  const initialTheme = localStorage.getItem('theme') || 'light';
+  setTheme(initialTheme);
+
+      } else {
+        const linkElement = document.getElementById('theme-style');
+        linkElement.href = `${'assets/css/style'}.css`;
+      
+        // Store the theme preference in local storage
+        localStorage.setItem('assets/css/style', theme);
+      }
+
+  }
   
-//     // Store the theme preference in local storage
-//     localStorage.setItem('theme', theme);
+
+
+  // change darkemode
+
+//   function swapStyleSheet(){
+//     document.getElementById('pageStyle').setAttribute('href', 'assets/css/dark-mode.css');
+  
+//     window.localStorage.setItem("pageStyle", 'assets/css/dark-mode.css');
+  
+  
 //   }
 //   // Set the initial theme based on local storage or default to 'light'
 //   const initialTheme = localStorage.getItem('theme') || 'light';
 //   setTheme(initialTheme);
+
+
+
+
+
+// slider add pause button
+// Custom Button
+var owl_1 = $('#banner1');
+$('.customNextBtn').click(function() {
+    owl_1.trigger('next.owl.carousel',500);
+  });
+  $('.customPreviousBtn').click(function() {
+    owl_1.trigger('prev.owl.carousel',500);
+  }); 
+  $('.customPause').click(function() {
+    owl_1.trigger('stop.owl.autoplay',500);
+  });
+  $('.customPlay').click(function() {
+    owl_1.trigger('play.owl.autoplay',500);
+  });
+
+
+  var pause = document.querySelector(".customPause");
+  var play = document.querySelector(".customPlay");
+  pause.addEventListener("click", function(){
+      play.style.display = "block";
+      pause.style.display = "none"
+  });
+  console.log("pause");
+  
+  play.addEventListener("click", function(){
+      play.style.display = "none";
+      pause.style.display = "block"
+  });
+  console.log("play");
+//   second latest news
+
+var owl_2 = $('#banner2');
+$('#customNextBtn2').click(function() {
+    owl_2.trigger('next.owl.carousel',500);
+  });
+  $('#customPreviousBtn2').click(function() {
+    owl_2.trigger('prev.owl.carousel',500);
+  }); 
+  $('#customPause2').click(function() {
+    owl_2.trigger('stop.owl.autoplay',500);
+  });
+  $('#customPlay2').click(function() {
+    owl_2.trigger('play.owl.autoplay',500);
+  });
+
+
+
+var pause2 = document.querySelector("#customPause2");
+var play2 = document.querySelector("#customPlay2");
+pause2.addEventListener("click", function(){
+    play2.style.display = "block";
+    pause2.style.display = "none"
+});
+console.log("pause");
+
+play2.addEventListener("click", function(){
+    play2.style.display = "none";
+    pause2.style.display = "block"
+});
+console.log("play");
+
+
+
+//   third photo gallery latest news
+
+var owl_3 = $('#banner3');
+$('#customNextBtn3').click(function() {
+    owl_3.trigger('next.owl.carousel',500);
+  });
+  $('#customPreviousBtn3').click(function() {
+    owl_3.trigger('prev.owl.carousel',500);
+  }); 
+  $('#customPause3').click(function() {
+    owl_3.trigger('stop.owl.autoplay',500);
+  });
+  $('#customPlay3').click(function() {
+    owl_3.trigger('play.owl.autoplay',500);
+  });
+
+
+
+var pause3 = document.querySelector("#customPause3");
+var play3 = document.querySelector("#customPlay3");
+pause3.addEventListener("click", function(){
+    play3.style.display = "block";
+    pause3.style.display = "none"
+});
+console.log("pause");
+
+play3.addEventListener("click", function(){
+    play3.style.display = "none";
+    pause3.style.display = "block"
+});
+console.log("play");
+
+
+
+
+
+//   fourth video gallery latest news
+
+var owl_4 = $('#banner4');
+$('#customNextBtn4').click(function() {
+    owl_4.trigger('next.owl.carousel',500);
+  });
+  $('#customPreviousBtn4').click(function() {
+    owl_4.trigger('prev.owl.carousel',500);
+  }); 
+  $('#customPause4').click(function() {
+    owl_4.trigger('stop.owl.autoplay',500);
+  });
+  $('#customPlay4').click(function() {
+    owl_4.trigger('play.owl.autoplay',500);
+  });
+
+
+
+var pause4 = document.querySelector("#customPause4");
+var play4 = document.querySelector("#customPlay4");
+pause4.addEventListener("click", function(){
+    play4.style.display = "block";
+    pause4.style.display = "none"
+});
+console.log("pause");
+
+play4.addEventListener("click", function(){
+    play4.style.display = "none";
+    pause4.style.display = "block"
+});
+console.log("play");
+
