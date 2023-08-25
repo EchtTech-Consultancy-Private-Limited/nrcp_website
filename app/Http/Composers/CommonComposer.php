@@ -32,20 +32,24 @@ class CommonComposer
      */
     public function compose(View $view)
     {
-       
-        $menuData = array(
-                        '/'=>'Home', 
-                        'contact-us'=>'Contact US',
-                        'about-us' => 'About NRCP',
-                        'activitie' => 'Activitie',
-                        'who-who' => 'Who Who',
-                    );
-           // dd($menuData);
-            $view->with(['menu' => $menuData
-
-        ]);
+        $menus = DB::table('website_menu_management')->orderby('sort_order','Asc')->get();   
+        $menuName = $this->getMenuTree($menus, 0);
+        $view->with(['headerMenu' => $menuName]);
 
     }
 
+    function getMenuTree($menus,$parentId){
+        $branch = array();
+        foreach ($menus as $menu){
+            if($menu->parent_id == $parentId) {
+                $children = $this->getMenuTree($menus,$menu->uid);
+                if ($children) {
+                    $menu->children = $children;
+                }
+                $branch[] = $menu;
+            }
+        }
+        return $branch;
+    }
     
 }

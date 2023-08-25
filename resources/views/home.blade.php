@@ -111,11 +111,17 @@
                               infected animal.
                            </div>
                            --}}
-                                    <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                                        data-wow-duration="2000ms">
-                                        <a class="readon green-banner" href="{{ route('event') }}">Read More <i
-                                                class="fa fa-angle-right pl-2"></i></a>
-                                    </div>
+
+                                        <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                                            data-wow-duration="2000ms">
+
+                                            {{-- href="{{ route('event') }}"   --}}
+                                            
+                                            <a class="readon green-banner" >Read More <i
+                                                    class="fa fa-angle-right pl-2"></i></a>
+                                        </div>
+
+                                   
                                 </div>
                             </div>
                         </div>
