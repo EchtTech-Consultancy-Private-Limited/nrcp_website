@@ -18405,6 +18405,7 @@ color: #171717;
   margin-top: 0px;
   top: 0px;
   z-index: 9999999;
+  display: none;
 }
 
 .loader .loader-container {
@@ -19751,12 +19752,26 @@ section.latest-news .rs-slider.style1 .btns div {
 
 
 .gallery-section .btns div {
-  padding: 3px 10px 27px;
-  font-size: 30px;
+  padding: 3px 7px 27px;
+    font-size: 20px;
   font-weight: 900;
 }
 
 p.text-normal-footer {
   font-size: 14px;
   margin-bottom: 13px;
+}
+
+.btn-view_play {
+  position: relative;
+}
+
+.btn-view_play .btns {
+  position: absolute;
+  top: 7%;
+  right: 1%;
+}
+
+.gallery-section.clientail div {
+  padding: 0px 7px 3px;
 }

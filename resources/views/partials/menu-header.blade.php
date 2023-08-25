@@ -116,7 +116,7 @@
                                                                                     @foreach ($childMenu->children as $subchildMenu)
                                                                                         <li>
                                                                                             <a
-                                                                                                href="{{ url('nrcp/' . $subchildMenu->url) }}">{{ $subchildMenu->name }}</a>
+                                                                                                href="{{ url($subchildMenu->url) }}">{{ $subchildMenu->name }}</a>
 
                                                                                         </li>
                                                                                     @endforeach
@@ -125,7 +125,7 @@
                                                                         @else
                                                                             <li>
                                                                                 <a
-                                                                                    href="{{ url('nrcp/' . $childMenu->url) }}">{{ $childMenu->name }}</a>
+                                                                                    href="{{ url($childMenu->url) }}">{{ $childMenu->name }}</a>
                                                                             </li>
                                                                         @endif
                                                                     @endforeach
@@ -134,19 +134,19 @@
                                                         @else
                                                             <li>
                                                                 <a
-                                                                    href="{{ url('nrcp/' . $suMenu->url) }}">{{ $suMenu->name }}</a>
+                                                                    href="{{ url($suMenu->url) }}">{{ $suMenu->name }}</a>
                                                             </li>
                                                         @endif
                                                     @endforeach
                                                 </ul>
                                             </li>
                                         @else
-                                            <li class="rs-mega-menu ">
+                                            <li class="rs-mega-menu">
                                                 <a href="{{ url($menuName->url) }}">{{ $menuName->name }}</a>
                                             </li>
                                         @endif
                                     @endforeach
-                                   
+                                    {{-- current-menu-item --}}
                                 </ul>
                                 <!-- //.nav-menu -->
                             </nav>
