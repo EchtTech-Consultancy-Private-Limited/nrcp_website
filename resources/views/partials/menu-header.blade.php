@@ -103,13 +103,13 @@
                                                     @foreach ($menuName->children as $suMenu)
                                                         @if (@isset($suMenu->children))
                                                             <li class="menu-item-has-children">
-                                                                <a href="{{ url('nrcp/' . $suMenu->url) }}" class="main-anchor">{{ $suMenu->name }}</a>
+                                                                <a href="{{ url($suMenu->url) }}" class="main-anchor">{{ $suMenu->name }}</a>
                                                                 <ul class="sub-menu">
 
                                                                     @foreach ($suMenu->children as $childMenu)
                                                                         @if (@isset($childMenu->children))
                                                                             <li class="menu-item-has-children">
-                                                                                <a href="{{ url('nrcp/' . $childMenu->url) }}" class="main-anchor">{{ $childMenu->name }}</a>
+                                                                                <a href="{{ url($childMenu->url) }}" class="main-anchor">{{ $childMenu->name }}</a>
 
                                                                                 <ul class="sub-menu">
 

@@ -41,7 +41,7 @@
                             <?php foreach (json_decode($image->public_url)as $public_url) { ?>
                             <div class="col-lg-4 col-md-3">
                                 <div class="event-img">
-                                    <a href="{{ url('uploads/EventsManagement/'.$public_url) }}"
+                                    <a href="{{ asset('uploads/EventsManagement/'.$public_url) }}"
                                         class="image-link">
                                         <img src="{{ asset('uploads/EventsManagement/'.$public_url) }}"
                                             alt="">
