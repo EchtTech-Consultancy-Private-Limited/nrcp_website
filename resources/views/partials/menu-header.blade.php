@@ -15,7 +15,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-6 text-lg-left pl-0 pr-0">
+    <div class="col-lg-8 text-lg-left pl-0 pr-0">
         <div class="rs-menu-area">
             <div class="main-menu">
 
@@ -46,6 +46,22 @@
                             </a>
                         </li>
 
+                        <li> 
+                            <div class="logo-cat-wrap right-h">
+                                <div class="logo-part mobile-logo-s">
+                                    <a href="{{ url('/') }}">
+                                        <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="" class="logo logo2">
+                                        <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt="" class="logo logo1 d-none">
+                                        <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
+                                            class="logo logo1 extra-logo d-none d-xs-block">
+                                        <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
+                                            class="logo logo1 extra-logo d-none d-xs-block">
+                                       
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
                         {{-- <li class="d-xs-none">
                      <a href="javascript:void();" class="top-logo">
                      <img src="{{asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
@@ -62,19 +78,8 @@
             </div>
             <!-- //.main-menu -->
         </div>
-    </div>
-    <div class="col-lg-2 text-lg-right">
-        <div class="logo-cat-wrap right-h">
-            <div class="logo-part mobile-logo-s">
-                <a href="{{ url('/') }}">
-                    <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="" class="logo logo2">
-                    <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt="" class="logo logo1">
-                    <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
-                        class="logo logo1 extra-logo d-none d-xs-block">
-                    </h2>
-                </a>
-            </div>
-        </div>
+    
+       
     </div>
 </div>
 
@@ -92,21 +97,19 @@
                                     @foreach ($headerMenu as $menuName)
                                         @if (@isset($menuName->children))
                                             <li class="menu-item-has-children <?php ?>">
-                                                <a href="{{ url('nrcp/' . $menuName->url) }}">{{ $menuName->name }}</a>
+                                                <a href="{{ url('nrcp/' . $menuName->url) }}" class="main-anchor">{{ $menuName->name }}</a>
 
                                                 <ul class="sub-menu">
                                                     @foreach ($menuName->children as $suMenu)
                                                         @if (@isset($suMenu->children))
                                                             <li class="menu-item-has-children">
-                                                                <a
-                                                                    href="{{ url('nrcp/' . $suMenu->url) }}">{{ $suMenu->name }}</a>
+                                                                <a href="{{ url('nrcp/' . $suMenu->url) }}" class="main-anchor">{{ $suMenu->name }}</a>
                                                                 <ul class="sub-menu">
 
                                                                     @foreach ($suMenu->children as $childMenu)
                                                                         @if (@isset($childMenu->children))
                                                                             <li class="menu-item-has-children">
-                                                                                <a
-                                                                                    href="{{ url('nrcp/' . $childMenu->url) }}">{{ $childMenu->name }}</a>
+                                                                                <a href="{{ url('nrcp/' . $childMenu->url) }}" class="main-anchor">{{ $childMenu->name }}</a>
 
                                                                                 <ul class="sub-menu">
 
