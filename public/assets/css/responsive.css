@@ -2124,10 +2124,10 @@
 
     .rs-about.style1 .notice-bord.style1,
     .rs-about.style1 .about-part {
-        margin-top: 70px;
+        margin-top: 25px;
     }
     .rs-about.style1 .notice-bord.style1 li {
-        padding: 30px;
+        padding: 10px 30px;
     }
     .rs-about.style1 .histort-part {
         position: unset;
@@ -2358,6 +2358,10 @@
     .container-fluid2 {
         padding-left: 0px;
         padding-right: 40px;
+    }
+
+    .textwidget.white-color {
+        text-align: center;
     }
 
     .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{
