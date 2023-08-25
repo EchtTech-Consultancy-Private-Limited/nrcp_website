@@ -97,8 +97,8 @@
                                     <td>	SOP of wound washing</td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -113,8 +113,8 @@
                                     <td>	SOP of Model Anti Rabies clinic</td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -126,8 +126,8 @@
                                     <td>	SOP for mass dog vaccination</td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -140,8 +140,8 @@
 
                                        <td>03/05/2009</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -167,8 +167,8 @@
                                     <td>	State monthly Reporting format</td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                        </td>
@@ -179,8 +179,8 @@
                                     <td>	District monthly reporting format</td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -192,8 +192,8 @@
                                     <td>	Line list format for Reporting Human Rabies case</td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -206,8 +206,8 @@
 
                                        <td>03/05/2009</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -219,8 +219,8 @@
                                     <td>	Animal bite Register</td>
                                        <td>05/05/2002</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(17kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                       <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -246,8 +246,8 @@
                                       <td>	Animal Rabies Diagnostic Labs </td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -259,8 +259,8 @@
                                     <td>	Human Rabies Diagnostic Labs </td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -288,8 +288,8 @@
                                        <td>List of Anti Rabies Clinics in India</td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -304,8 +304,8 @@
                                     <td>	List of Critical Care Units (Infectious Disease Hospitals) in India </td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -332,8 +332,8 @@
                                     <td>	National joint Steering Committee-Rabies Elimination </td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                        
@@ -345,8 +345,8 @@
                                     <td>	National Technical Advisory committee on Rabies </td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -358,8 +358,8 @@
                                     <td>	Standing committee on zoonosis </td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -372,8 +372,8 @@
 
                                        <td>03/05/2009</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                          <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -385,8 +385,8 @@
                                     <td>	District joint steering committee- Rabies Elimination </td>
                                        <td>05/05/2002</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(17kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                       <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                        

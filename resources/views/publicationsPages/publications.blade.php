@@ -89,7 +89,7 @@
                                        <td>03/05/2008</td>
                                        <td>
                                         <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                         
@@ -104,9 +104,10 @@
                                     <td>	National Guidelines for Rabies Prophylaxis, 2019 </td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                         <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
+
 
                                         
                                         
@@ -117,9 +118,10 @@
                                     <td>	National Action Plan for Dog Mediated Rabies Elimination by 2030 </td>
                                        <td>03/05/2008</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                         <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
+
 
                                         
                                         
@@ -131,9 +133,10 @@
 
                                        <td>03/05/2009</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                       <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
+
 
                                         
                                         
@@ -144,8 +147,8 @@
                                     <td>	Rabies- General Aspects & Laboratory Diagnostic Techniques 2022 </td>
                                        <td>05/05/2002</td>
                                        <td>
-                                        <div class="download ">
-                                            <span class="view">View</span><span class="size">(17kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
+                                       <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
 
                                        </td>
@@ -198,9 +201,10 @@
                                        <td></td>
                                        <td></td>
                                        <td>
-                                        <!-- <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                        </div> -->
+                                        <!--  <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </div>
+                                     -->
 
                                         
                                         <!-- <div class="accessible-version">
@@ -231,9 +235,10 @@
                                        <td></td>
                                        <td></td>
                                        <td>
-                                        <!-- <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                        </div> -->
+                                        <!--  <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </div>
+                                     -->
 
                                         
                                         <!-- <div class="accessible-version">
@@ -249,9 +254,10 @@
 
                                        <td></td>
                                        <td>
-                                        <!-- <div class="download ">
-                                            <span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                        </div> -->
+                                        <!--  <div class="download ">
+                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </div>
+                                     -->
 
                                         
                                         
