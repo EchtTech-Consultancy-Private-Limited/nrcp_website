@@ -2,14 +2,17 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                {{-- <div class="col-lg-2 col-md-12 col-sm-12 footer-widget">
-                    <div class="footer-logo mb-10">
+                <div class="col-lg-2 col-md-12 col-sm-12 footer-widget">
+                    {{-- <div class="footer-logo mb-10">
                         <a href="{{ url('/') }}">
                             <img src="{{ asset('assets/Nrcp_img/nrcp_white.png') }}" alt="">
                         </a>
-                    </div>
+                    </div> --}}
                     <div class="textwidget white-color">
                         <h4 class="footer-text-logo">National Rabies Control Program</h4>
+                        {{-- <p class="text-big"> National Center for Disease control </p> --}}
+                        <p class="text-normal-footer">Directorate General of Health Services, Ministry of
+                            Health & Family Welfare, Government of India </p>
                     </div>
                     <ul class="footer_social">
                         <li>
@@ -27,12 +30,12 @@
                         </li>
 
                     </ul>
-                </div> --}}
+                </div>
 
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 pl-20 md-pl-20 footer-widget md-mb-50 width-sm-50 mt-s-40">
-                            <h3 class="widget-title">Links</h3>
+                            <h3 class="widget-title">Important Links</h3>
                             <ul class="site-map border-right-white">
                                 <li><a href="{{ route('coming-soon') }}">Disclaimer</a></li>
                                 <li><a href="{{ route('coming-soon') }}">Copyright Policy</a></li>
@@ -53,7 +56,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-12 col-sm-12 footer-widget md-mb-50">
+                <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
                     <h3 class="widget-title">Contact Us</h3>
                     <ul class="address-widget">
                         <li>
