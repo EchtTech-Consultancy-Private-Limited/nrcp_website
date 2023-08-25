@@ -656,3 +656,37 @@ play4.addEventListener("click", function(){
 });
 console.log("play");
 
+
+
+//   Five video gallery latest news
+
+var owl_5 = $('#banner5');
+$('#customNextBtn5').click(function() {
+    owl_5.trigger('next.owl.carousel',500);
+  });
+  $('#customPreviousBtn5').click(function() {
+    owl_5.trigger('prev.owl.carousel',500);
+  }); 
+  $('#customPause5').click(function() {
+    owl_5.trigger('stop.owl.autoplay',500);
+  });
+  $('#customPlay5').click(function() {
+    owl_5.trigger('play.owl.autoplay',500);
+  });
+
+
+
+var pause5 = document.querySelector("#customPause5");
+var play5 = document.querySelector("#customPlay5");
+pause5.addEventListener("click", function(){
+    play5.style.display = "block";
+    pause5.style.display = "none"
+});
+console.log("pause");
+
+play5.addEventListener("click", function(){
+    play5.style.display = "none";
+    pause5.style.display = "block"
+});
+console.log("play");
+

@@ -205,11 +205,8 @@
                             <div class="slider-content">
                                 <div class="container-fluid px-0">
                                     <div class="d-flex align-items-center latest-news-slider-content-text">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
-                                            eius, ab
-                                            optio, vel animi mollitia, ipsam qui dolore numquam rerum assumenda
-                                            doloremque
-                                            magnam quis aliquid deleniti excepturi tenetur aperiam omnis.</p>
+                                        <p>World Rabies Day is going to be celebrated on <b>28th
+                                            September 2023 </b> </p>
                                     </div>
 
                                 </div>
@@ -218,11 +215,8 @@
                             <div class="slider-content">
                                 <div class="container-fluid px-0">
                                     <div class="d-flex align-items-center latest-news-slider-content-text">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
-                                            eius, ab
-                                            optio, vel animi mollitia, ipsam qui dolore numquam rerum assumenda
-                                            doloremque
-                                            magnam quis aliquid deleniti excepturi tenetur aperiam omnis.</p>
+                                        <p>World Rabies Day is going to be celebrated on <b>28th
+                                            September 2023 </b> </p>
                                     </div>
                                 </div>
                             </div>
@@ -783,15 +777,7 @@
                             <h2 class="title mb-10">Photo Gallery</h2>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                        <div class="btns">
-                            <div id="customPreviousBtn3"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                            <div id="customPause3"><i class="fa fa-pause" aria-hidden="true"></i></div>
-                            <div id="customPlay3" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
-                            </div>
-                            <div id="customNextBtn3"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                        </div>
-
+                    <div class="col-md-12">                       
 
                         <div class="rs-carousel owl-carousel nav-style2 gallery-carausel" data-loop="true"
                             data-items="4" data-margin="10" data-autoplay="true" data-hoverpause="true"
@@ -866,9 +852,20 @@
                             </div>
                         </div>
                     </div>
+                   <div class="btn-view_play"> 
                     <div class="btn-part mt-4 text-center">
                         <a class="readon2" href="#">View All</a>
                     </div>
+
+                    <div class="btns">
+                        <div id="customPreviousBtn3"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                        <div id="customPause3"><i class="fa fa-pause" aria-hidden="true"></i></div>
+                        <div id="customPlay3" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
+                        </div>
+                        <div id="customNextBtn3"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                    </div>
+                   </div>
+
                 </div>
             </div>
             <div class="col-md-6">
@@ -878,14 +875,7 @@
                             <h2 class="title mb-10">Video Gallery</h2>
                         </div>
                     </div>
-                    <div class="col-md-12">
-                    <div class="btns">
-                            <div id="customPreviousBtn4"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                            <div id="customPause4"><i class="fa fa-pause" aria-hidden="true"></i></div>
-                            <div id="customPlay4" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
-                            </div>
-                            <div id="customNextBtn4"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-                        </div>
+                    <div class="col-md-12">                  
 
                         <div class="rs-carousel owl-carousel nav-style2 gallery-carausel" data-loop="true"
                             data-items="4" data-margin="10" data-autoplay="true" data-hoverpause="true"
@@ -920,9 +910,19 @@
 
                         </div>
                     </div>
-                    <div class="btn-part mt-4 text-center">
-                        <a class="readon2" href="#">View All</a>
-                    </div>
+                    <div class="btn-view_play"> 
+                        <div class="btn-part mt-4 text-center">
+                            <a class="readon2" href="#">View All</a>
+                        </div>
+    
+                        <div class="btns">
+                            <div id="customPreviousBtn4"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                            <div id="customPause4"><i class="fa fa-pause" aria-hidden="true"></i></div>
+                            <div id="customPlay4" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                            <div id="customNextBtn4"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        </div>
+                       </div>
                 </div>
             </div>
         </div>
@@ -1030,12 +1030,22 @@
 <!-- Partner Start -->
 <div class="rs-partner pt-40 pb-40 gray-bg-color">
     <div class="container">
+        <div class="gallery-section clientail">
+         <div class="btns pr-0">
+                <div id="customPreviousBtn5"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                <div id="customPause5"><i class="fa fa-pause" aria-hidden="true"></i></div>
+                <div id="customPlay5" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+                <div id="customNextBtn5"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+            </div>
+        </div>
         <div class="rs-carousel owl-carousel" data-loop="true" data-items="6" data-margin="15" data-autoplay="true"
             data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="true"
             data-nav-speed="false" data-center-mode="false" data-mobile-device="2" data-mobile-device-nav="true"
             data-mobile-device-dots="false" data-ipad-device="3" data-ipad-device-nav="true"
             data-ipad-device-dots="false" data-ipad-device2="3" data-ipad-device-nav2="true"
-            data-ipad-device-dots2="false" data-md-device="6" data-md-device-nav="true" data-md-device-dots="false">
+            data-ipad-device-dots2="false" data-md-device="6" data-md-device-nav="true" data-md-device-dots="false" id="banner5">
+           
             <div class="partner-item">
                 <a href="http://pgportal.gov.in/" target="_blank" role="link"><img
                         src="{{ asset('assets/Nrcp_img/clients/pg-portal.png') }}" alt="PORTAL FOR PUBLIC GRIEVANCES"
