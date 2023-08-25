@@ -52,7 +52,7 @@
 @media only screen and (max-width: 1340px) and (min-width: 1200px) {
 
     .full-width-header .rs-header .logo-part img {
-        height: 93px !important;
+        height: 50px !important;
         padding-right: 5px;
     }
 
@@ -66,7 +66,7 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{
-        font: normal normal 12px/70px Poppins;
+        font: normal normal 12px/50px Poppins;
     }
 
     .rs-about.style8 .main-content .img-part {
@@ -226,7 +226,7 @@
     }
 
     .full-width-header .rs-header .logo-part img {
-        height: 80px;
+        height: 80px !important;
     }
     .full-width-header.header-style3 .rs-header .menu-area .menu-bg::before {
         left: 65%;
@@ -2412,7 +2412,7 @@
         line-height: 45px;
     }
 
-    .full-width-header .rs-header .logo-part img {
+    .full-width-header .rs-header .logo-part.mobile-logo-s img {
         height: 70px !important;
     }
 
@@ -3211,6 +3211,10 @@
         line-height: 30px;
     }
 
+    .menu-area.menu-sticky .col-lg-8.text-lg-left.pl-0.pr-0 {
+        padding-right: 15px !important;
+    }
+
     .rs-popular-courses.course-view-style .course-part {
         margin: 0;
     }
@@ -3219,6 +3223,14 @@
         float: left !important;
         margin: 0 0 30px;
     }
+
+    .rs-slider.style1 .btns div {
+        padding: 4px 10px;
+        cursor: pointer;
+        font-size: 15px;
+        background: #474646;
+    }
+
 
     .rs-popular-courses.course-view-style.list-view .course-part .courses-item {
         display: unset;
