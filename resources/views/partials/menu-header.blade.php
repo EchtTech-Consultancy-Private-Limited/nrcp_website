@@ -141,12 +141,12 @@
                                                 </ul>
                                             </li>
                                         @else
-                                            <li class="rs-mega-menu ">
+                                            <li class="rs-mega-menu">
                                                 <a href="{{ url($menuName->url) }}">{{ $menuName->name }}</a>
                                             </li>
                                         @endif
                                     @endforeach
-                                   
+                                    {{-- current-menu-item --}}
                                 </ul>
                                 <!-- //.nav-menu -->
                             </nav>
