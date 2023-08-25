@@ -29,6 +29,9 @@ Route::get('/media-alerts',[HomeController::class,'mediaalerts'])->name('media-a
 Route::get('/vaccination_dose',[HomeController::class,'vaccination_dose'])->name('vaccination-dose');
 
 
+Route::get('/downloads',[HomeController::class,'downloads'])->name('downloads');
+Route::get('/publications',[HomeController::class,'publications'])->name('publications');
+
 
 /************ API Call ********************************/
  
@@ -38,5 +41,3 @@ Route::group(['prefix' => 'nrcp'], function () {
     Route::get('/event-national',[HomeController::class,'event_national'])->name('event-national');
     
 });
-
-
