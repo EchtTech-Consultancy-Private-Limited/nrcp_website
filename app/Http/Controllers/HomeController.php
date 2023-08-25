@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App, Route, DB;
 
 class HomeController extends Controller
 {
@@ -27,10 +28,29 @@ class HomeController extends Controller
     }public function contactUs()
     {
         return view('contact-us'); 
-    }public function events()
+    }
+    
+    
+//event state and national   
+    public function event_state()
     {
-        return view('events.event-list'); 
-    }public function humanHealth()
+        $data= DB::table('events_management')->where('event_type','1')->where('soft_delete',0)->get();
+        return view('events.event-state',['data'=>$data]); 
+    }
+
+    public function event_national()
+    {
+        $data= DB::table('events_management')->where('event_type','2')->where('soft_delete',0)->get();
+        return view('events.event-national',['data'=>$data]); 
+    }
+//event state and national    
+    
+    
+    
+    
+    
+    
+    public function humanHealth()
     {
         return view('human-health'); 
     }
