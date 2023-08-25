@@ -674,8 +674,6 @@ $('#customNextBtn5').click(function() {
     owl_5.trigger('play.owl.autoplay',500);
   });
 
-
-
 var pause5 = document.querySelector("#customPause5");
 var play5 = document.querySelector("#customPlay5");
 pause5.addEventListener("click", function(){
