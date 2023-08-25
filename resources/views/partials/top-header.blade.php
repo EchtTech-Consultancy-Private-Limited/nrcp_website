@@ -10,6 +10,7 @@
                </li>
             </ul>
          </div>
+         
          <div class="col-md-6 text-lg-right">
             <ul class="toolbar-sl-share rs-inner-blog">
                <li class="opening widget-area">
@@ -64,5 +65,4 @@
                </li>
             </ul>
          </div>
-      </div>
-   
+      </div>   
