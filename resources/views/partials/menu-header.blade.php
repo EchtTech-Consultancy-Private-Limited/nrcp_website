@@ -46,17 +46,19 @@
                             </a>
                         </li>
 
-                        <li> 
+                        <li>
                             <div class="logo-cat-wrap right-h">
                                 <div class="logo-part mobile-logo-s">
                                     <a href="{{ url('/') }}">
-                                        <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="" class="logo logo2">
-                                        <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt="" class="logo logo1 d-none">
+                                        <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt=""
+                                            class="logo logo2">
+                                        <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
+                                            class="logo logo1 d-none">
                                         <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
                                             class="logo logo1 extra-logo d-none d-xs-block">
                                         <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
                                             class="logo logo1 extra-logo d-none d-xs-block">
-                                       
+
                                     </a>
                                 </div>
                             </div>
@@ -78,8 +80,8 @@
             </div>
             <!-- //.main-menu -->
         </div>
-    
-       
+
+
     </div>
 </div>
 
@@ -97,27 +99,29 @@
                                     @foreach ($headerMenu as $menuName)
                                         @if (@isset($menuName->children))
                                             <li class="menu-item-has-children <?php ?>">
-                                                <a href="{{ url('nrcp/' . $menuName->url) }}" class="main-anchor">{{ $menuName->name }}</a>
+                                                <a href="{{ url('nrcp/' . $menuName->url) }}"
+                                                    class="main-anchor">{{ $menuName->name }}</a>
 
                                                 <ul class="sub-menu">
                                                     @foreach ($menuName->children as $suMenu)
                                                         @if (@isset($suMenu->children))
                                                             <li class="menu-item-has-children">
-                                                                <a href="{{ url($suMenu->url) }}" class="main-anchor">{{ $suMenu->name }}</a>
+                                                                <a @if ($suMenu->tab_type == 1) target="_blank"  href="{{ url($suMenu->url) }}"    @else  href="{{ url($suMenu->url) }}" @endif
+                                                                    class="main-anchor">{{ $suMenu->name }}</a>
                                                                 <ul class="sub-menu">
 
                                                                     @foreach ($suMenu->children as $childMenu)
                                                                         @if (@isset($childMenu->children))
                                                                             <li class="menu-item-has-children">
-                                                                                <a href="{{ url($childMenu->url) }}" class="main-anchor">{{ $childMenu->name }}</a>
+                                                                                <a @if ($childMenu->tab_type == 1) target="_blank"  href="{{ url($childMenu->url) }}"    @else  href="{{ url($childMenu->url) }}" @endif
+                                                                                    class="main-anchor">{{ $childMenu->name }}</a>
 
                                                                                 <ul class="sub-menu">
 
                                                                                     @foreach ($childMenu->children as $subchildMenu)
                                                                                         <li>
                                                                                             <a
-                                                                                                href="{{ url($subchildMenu->url) }}">{{ $subchildMenu->name }}</a>
-
+                                                                                                @if ($subchildMenu->tab_type == 1) target="_blank"  href="{{ url($subchildMenu->url) }}"    @else  href="{{ url($subchildMenu->url) }}" @endif>{{ $subchildMenu->name }}</a>
                                                                                         </li>
                                                                                     @endforeach
                                                                                 </ul>
@@ -125,7 +129,7 @@
                                                                         @else
                                                                             <li>
                                                                                 <a
-                                                                                    href="{{ url($childMenu->url) }}">{{ $childMenu->name }}</a>
+                                                                                    @if ($childMenu->tab_type == 1) target="_blank"  href="{{ url($childMenu->url) }}"    @else  href="{{ url($childMenu->url) }}" @endif>{{ $childMenu->name }}</a>
                                                                             </li>
                                                                         @endif
                                                                     @endforeach
@@ -134,7 +138,7 @@
                                                         @else
                                                             <li>
                                                                 <a
-                                                                    href="{{ url($suMenu->url) }}">{{ $suMenu->name }}</a>
+                                                                    @if ($suMenu->tab_type == 1) target="_blank"  href="{{ url($suMenu->url) }}"    @else  href="{{ url($suMenu->url) }}" @endif>{{ $suMenu->name }}</a>
                                                             </li>
                                                         @endif
                                                     @endforeach
@@ -142,7 +146,8 @@
                                             </li>
                                         @else
                                             <li class="rs-mega-menu">
-                                                <a href="{{ url($menuName->url) }}">{{ $menuName->name }}</a>
+                                                <a
+                                                    @if ($menuName->tab_type == 1) target="_blank"  href="{{ url($menuName->url) }}"    @else  href="{{ url($menuName->url) }}" @endif>{{ $menuName->name }}</a>
                                             </li>
                                         @endif
                                     @endforeach
