@@ -44,7 +44,8 @@
                </li>
                <li>
                   <label class="switch mb-0">
-                  <input type="checkbox" id="mode" tabindex="0" onclick="setTheme(asset('assets/css/dark-mode.css')">
+                  <input type="checkbox" id="mode" tabindex="0" onclick="setTheme()">
+                  
                   <span class="slider round"></span>
                   </label>
                </li>

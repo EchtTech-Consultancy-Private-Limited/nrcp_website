@@ -930,7 +930,7 @@
 </div>
 </div>
 <!-- Faq Section Start -->
-<div class="rs-faq-part style1 pt-40 pb-80">
+{{-- <div class="rs-faq-part style1 pt-40 pb-80">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 padding-0 col-md-12">
@@ -1025,7 +1025,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- faq Section END -->
 <!-- Partner Start -->
 <div class="rs-partner pt-40 pb-40 gray-bg-color">
