@@ -139,12 +139,11 @@
                                             </li>
                                         @else
                                             <li class="rs-mega-menu ">
-                                                <a href="{{ url($menuName->name) }}">{{ $menuName->name }}</a>
+                                                <a href="{{ url($menuName->url) }}">{{ $menuName->name }}</a>
                                             </li>
                                         @endif
                                     @endforeach
-                                    <li class=""><a href="https://dev.nrcpdashboard.staggings.in/public/"
-                                            target="_blank">Login</a></li>
+                                   
                                 </ul>
                                 <!-- //.nav-menu -->
                             </nav>
