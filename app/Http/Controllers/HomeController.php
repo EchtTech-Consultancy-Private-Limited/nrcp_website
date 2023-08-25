@@ -74,6 +74,10 @@ class HomeController extends Controller
     {
         return view('vaccination_dose'); 
     }
+ 
+    public function events(){
+        return view('events.event'); 
+    }
 
 
     public function downloads()
