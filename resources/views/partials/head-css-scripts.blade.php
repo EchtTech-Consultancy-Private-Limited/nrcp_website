@@ -20,8 +20,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/rsmenu-main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/rs-spacing.css') }}">
+    <link rel="stylesheet" type="text/css" id="theme-style" href="">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
-    {{-- <link rel="stylesheet" type="text/css" id="darkmode_css" href="{{ asset('assets/css/dark-mode.css') }}"> --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/fonts/fonts.googleapis.com_css2.css') }}">
     <style>
@@ -33,9 +33,14 @@
             animation: pulse 2s infinite;
         }
 
+        #darkmode_css{
+            display: none;
+        }
+
         .pulse:hover {
             animation: none;
         }
+        
 
         @-webkit-keyframes pulse {
             0% {
