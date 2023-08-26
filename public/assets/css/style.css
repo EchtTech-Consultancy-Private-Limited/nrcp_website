@@ -19359,50 +19359,50 @@ h3.sub-title {
 }
 
 
-.table {
+table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.table td,
-.table th {
+table td,
+table th {
   padding: 12px 15px;
   border: 1px solid #ddd;
   text-align: center;
   font-size: 16px;
 }
 
-.table th {
+table th {
   background-color: #3f51b5;
   color: #ffffff;
 }
 
-.table tbody tr:nth-child(even) {
+table tbody tr:nth-child(even) {
   background-color: #d1e8f5;
 }
 
 /*responsive*/
 
 @media (max-width: 500px) {
-  .table thead {
-    display: none;
-  }
+  /* table thead {
+    display: block;
+  } */
 
-  .table,
-  .table tbody,
-  .table tr,
-  .table td {
+  table,
+  table tbody,
+  table tr,
+  table td {
   
     width: 100%;
   }
-  .table tr {
+  table tr {
     margin-bottom: 15px;
   }
-  .table td {
+  table td {
     text-align: center;
     position: relative;
   }
-  .table td::before {
+  table td::before {
     content: attr(data-label);
     position: absolute;
     left: 0;
@@ -19574,7 +19574,7 @@ a.top-logo img {
 
 .rs-publications-main .rs-breadcrumbs .breadcrumbs-text{
   position: relative !important;
-  top: 20px;
+  top: 18px;
  text-align: left;
 }
 
@@ -19613,22 +19613,22 @@ a.top-logo img {
 .rs-publications-main table td{
 text-align: left;
 }
-.rs-publications-main .table .download .view{
+.rs-publications-main table .download .view{
   color: #ff0000;
 }
-.rs-publications-main .table .download .fa-download{
+.rs-publications-main table .download .fa-download{
   color: #ff0000;
 }
-.rs-publications-main .table .download {
+.rs-publications-main table .download {
   padding: 5px 5px;
   font-size: 14px;
     white-space: nowrap;
 }
-.rs-publications-main .table .download *{
+.rs-publications-main table .download *{
   padding: 5px;
 }
 
-.rs-publications-main .table td, .rs-publications-main .table th {
+.rs-publications-main table td, .rs-publications-main table th {
   padding: 8px 15px;
   border: 1px solid #ddd;
   text-align: left;
@@ -19650,13 +19650,13 @@ text-align: left;
 .rs-publications-main .publication-sociol-icon li .slash{
 line-height: 0;
 }
-@media (max-width: 500px){
-  .rs-publications-main .table, .rs-publications-main .table tbody,.rs-publications-main .table tr, .table td {
+/* @media (max-width: 500px){
+  .rs-publications-main table, .rs-publications-main table tbody,.rs-publications-main table tr, table td {
     display: block;
     width: 100%;
     overflow: scroll;
 }
-}
+} */
 
 /* 
 /* publications end */
@@ -19794,4 +19794,9 @@ p.text-normal-footer {
 
 section{
   padding-bottom: 50px;
+}
+
+.rs-publications-main p {
+  text-align: justify;
+  margin-bottom: 15px;
 }

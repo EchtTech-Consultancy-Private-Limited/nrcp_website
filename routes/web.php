@@ -42,6 +42,8 @@ Route::get('/event',[EventController::class,'index'])->name('event');
 Route::get('/event-state',[EventController::class,'event_state'])->name('event-state');
 Route::get('/event-national',[EventController::class,'event_national'])->name('event-national');
 
+Route::get('/screen-reader-access',[HomeController::class,'screen_reader_access'])->name('screen-reader-access');
+
 
 
 Route::get('/site-map',[HomeController::class,'site_map']);

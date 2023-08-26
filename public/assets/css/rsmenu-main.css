@@ -560,7 +560,7 @@
     .rs-menu {
         position: absolute;
         z-index: 999;
-		top: -50%;
+		top: -55%;
 
     }
 
@@ -604,7 +604,10 @@
 
 	.rs-header .menu-area .main-menu .rs-menu ul.nav-menu {
 		background: #fff;
-		margin: 8px 7px 0px 10px;
+		margin: 8px 7px 0px 7px;
+		border: 1px solid #92271d4f;
+		border-radius: 5px;
+		padding-right: 10px;
 	}
 	.rs-header .menu-area .main-menu .rs-menu ul.nav-menu li {
 		display: block !important;

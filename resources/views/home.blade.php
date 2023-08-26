@@ -486,7 +486,7 @@
               </div>
           </div>
           </div>-->
-<div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-60">
+<div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-40">
     <div class="container">
         <div class="row">
             <div class="col-md-4">

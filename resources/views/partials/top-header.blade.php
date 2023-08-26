@@ -6,11 +6,11 @@
                </li>
                <li>
                   <a href="#skipCont"> Skip to Main Content</a> |
-                  <a href="javascript:void();"> Screen Reader Access</a>
+                  <a href="{{ url('screen-reader-access') }}"> Screen Reader Access</a>
                </li>
             </ul>
          </div>
-         
+
          <div class="col-md-6 text-lg-right">
             <ul class="toolbar-sl-share rs-inner-blog">
                <li class="opening widget-area">
@@ -63,11 +63,10 @@
                @if($social_media->twitter  != '')
                <li><a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif  target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
                </li>
-               @endif
-               @if($social_media->linkedin  != '')
-               <li><a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                 @endif
+               @if($social_media->Linkedin  != '')
+               <li><a href="{{ url($social_media->Linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif title="Linkedin"><i class="fa fa-Linkedin"></i></a>
                </li>
+               @endif
             </ul>
          </div>
       </div>   
