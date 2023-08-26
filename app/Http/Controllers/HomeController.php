@@ -9,15 +9,15 @@ use App, Route, DB;
 
 class HomeController extends Controller
 {
-    
-    
     /**
      * Display a listing of the resource.
      */
     
     public function index()
     {
-        return view('home'); 
+        //news
+        $news= DB::table('news_management')->where('soft_delete','0')->get();
+        return view('home',['news'=>$news]); 
     }
     public function anumalHealth()
     {
@@ -30,42 +30,11 @@ class HomeController extends Controller
         return view('contact-us'); 
     }
     
-    
-//event state and national   
-    public function event_state()
-    {
-        $data= DB::table('events_management')->where('event_type','1')->where('soft_delete',0)->get();
-        return view('events.event-state',['data'=>$data]); 
-    }
-
-    public function event_national()
-    {
-        $data= DB::table('events_management')->where('event_type','2')->where('soft_delete',0)->get();
-        return view('events.event-national',['data'=>$data]); 
-    }
-//event state and national    
-    
-    
-    
-    
-    
-    
     public function humanHealth()
     {
         return view('human-health'); 
     }
-    public function whoWho()
-    {
-        return view('aboutPages.who-who'); 
-    }
-    public function aboutUS()
-    {
-        return view('aboutPages.about-us'); 
-    }
-    public function activities()
-    {
-        return view('aboutPages.activities'); 
-    }
+    
     public function mediaalerts()
     {
         return view('media-alerts'); 
@@ -74,9 +43,18 @@ class HomeController extends Controller
     {
         return view('vaccination_dose'); 
     }
- 
-    public function events(){
-        return view('events.event'); 
+    public function privacyPolicy()
+    {
+        return view('privacy-policy'); 
+    }
+    
+   
+//language
+    public function SetLang(Request $request){
+        //dd($request->data);
+        session()->put('Lang',$request->data);
+        App::setLocale($request->data);
+        return response()->json(['data'=>$request->data,True]);
     }
 
 
