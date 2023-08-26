@@ -62,4 +62,20 @@ $(document).ready(function() {
     });
 });
 </script>
+
+<script>
+    function printDiv() {
+        var divContents = document.getElementById("tabContent").innerHTML;
+        var a = window.open('', '', 'height=600, width=600');
+        a.document.write('<html>');
+        a.document.write('<body>');
+        a.document.write(divContents);
+        a.document.write('</body></html>');
+        a.document.close();
+        a.print();
+    }
+
+</script>
+
+
 @stack('post-scripts')
