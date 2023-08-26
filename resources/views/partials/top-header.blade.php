@@ -2,7 +2,7 @@
          <div class="col-md-6 pr-0">
             <ul class="topbar-contact">
                <li>
-                  <span class="timezone">{{ date('d F Y') }} &nbsp;  {{ date('H:i:s')}}  </span>
+                  <span class="timezone">{{ date('d F Y') }} &nbsp;  {{ date('H:i:s')}}  &nbsp;  {{ date('T')}} </span>
                </li>
                <li>
                   <a href="#skipCont"> Skip to Main Content</a> |
@@ -63,11 +63,17 @@
                @if($social_media->twitter  != '')
                <li><a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif  target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
                </li>
-               @if($social_media->Linkedin  != '')
-               <li><a href="{{ url($social_media->Linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif title="Linkedin"><i class="fa fa-Linkedin"></i></a>
+               @endif
+               @if($social_media->linkedin  != '')
+               <li><a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif title="Linkedin"><i class="fa fa-linkedin"></i></a>
                </li>
                @endif
+
+               <li><a href="{{ url('/site-map') }}" ><i class="fa fa-sitemap"></i></a>
+               </li>
             </ul>
          </div>
       </div>   
 
+
+      
