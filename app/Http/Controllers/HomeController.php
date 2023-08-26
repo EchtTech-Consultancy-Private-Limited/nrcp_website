@@ -88,4 +88,9 @@ class HomeController extends Controller
     {
         return view('publicationsPages.publications'); 
     }
+
+    public function screen_reader_access()
+    {
+        return view('Screen_reader_access'); 
+    }
 }

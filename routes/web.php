@@ -40,4 +40,6 @@ Route::get('/publications',[HomeController::class,'publications'])->name('public
 Route::get('/event-state',[HomeController::class,'event_state'])->name('event-state');
 Route::get('/event-national',[HomeController::class,'event_national'])->name('event-national');
 
+Route::get('/screen-reader-access',[HomeController::class,'screen_reader_access'])->name('screen-reader-access');
+
 

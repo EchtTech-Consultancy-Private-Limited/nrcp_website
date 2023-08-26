@@ -6,11 +6,11 @@
                </li>
                <li>
                   <a href="#skipCont"> Skip to Main Content</a> |
-                  <a href="javascript:void();"> Screen Reader Access</a>
+                  <a href="{{ url('screen-reader-access') }}"> Screen Reader Access</a>
                </li>
             </ul>
          </div>
-         
+
          <div class="col-md-6 text-lg-right">
             <ul class="toolbar-sl-share rs-inner-blog">
                <li class="opening widget-area">
