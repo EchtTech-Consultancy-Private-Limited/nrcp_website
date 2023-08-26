@@ -552,13 +552,11 @@ $('.customNextBtn').click(function() {
       play.style.display = "block";
       pause.style.display = "none"
   });
-  console.log("pause");
   
   play.addEventListener("click", function(){
       play.style.display = "none";
       pause.style.display = "block"
   });
-  console.log("play");
 //   second latest news
 
 var owl_2 = $('#banner2');
@@ -583,13 +581,11 @@ pause2.addEventListener("click", function(){
     play2.style.display = "block";
     pause2.style.display = "none"
 });
-console.log("pause");
 
 play2.addEventListener("click", function(){
     play2.style.display = "none";
     pause2.style.display = "block"
 });
-console.log("play");
 
 
 
@@ -617,13 +613,11 @@ pause3.addEventListener("click", function(){
     play3.style.display = "block";
     pause3.style.display = "none"
 });
-console.log("pause");
 
 play3.addEventListener("click", function(){
     play3.style.display = "none";
     pause3.style.display = "block"
 });
-console.log("play");
 
 
 
@@ -653,13 +647,11 @@ pause4.addEventListener("click", function(){
     play4.style.display = "block";
     pause4.style.display = "none"
 });
-console.log("pause");
 
 play4.addEventListener("click", function(){
     play4.style.display = "none";
     pause4.style.display = "block"
 });
-console.log("play");
 
 
 
@@ -685,11 +677,9 @@ pause5.addEventListener("click", function(){
     play5.style.display = "block";
     pause5.style.display = "none"
 });
-console.log("pause");
 
 play5.addEventListener("click", function(){
     play5.style.display = "none";
     pause5.style.display = "block"
 });
-console.log("play");
 
