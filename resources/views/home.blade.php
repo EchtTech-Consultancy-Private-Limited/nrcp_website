@@ -595,26 +595,16 @@
                             <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
                                 style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
                                 <div class="date">{{date('d F', strtotime($item->start_date))}}</div>
-                              
-
                                 <div class='desc'>
-
-                               
-
-                                @if (Session::get('Lang') == 'hi')
-                               
-                                {{ $item->description_h}}
-                                 @else
-                                 {{ $item->description}}
-                                @endif
-
+                                    @if (Session::get('Lang') == 'en') 
+                                        {{ $item->description}}
+                                    @else
+                                       {{ $item->description_h }}
+                                    @endif
                                </div>
                             </li>
                         @endforeach 
                     @endif
-
-                      
-
                         </ul>
                     </div>
 

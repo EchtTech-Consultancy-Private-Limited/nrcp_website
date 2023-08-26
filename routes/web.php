@@ -46,7 +46,7 @@ Route::get('/screen-reader-access',[HomeController::class,'screen_reader_access'
 
 
 
-
+Route::get('/site-map',[HomeController::class,'site_map'])->name('sitemap');;
 
 
 //language

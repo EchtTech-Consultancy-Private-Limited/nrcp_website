@@ -71,4 +71,8 @@ class HomeController extends Controller
     {
         return view('Screen_reader_access'); 
     }
+
+    public function site_map(){
+        return view('site-map');
+    }
 }

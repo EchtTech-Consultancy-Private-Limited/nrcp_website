@@ -15,19 +15,24 @@
                             Health & Family Welfare, Government of India </p>
                     </div>
                     <ul class="footer_social">
-                        <li>
-                            <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
-                        </li>
-                        <!-- <li>
-                            <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a>
-                        </li> -->
-                        <li>
-                            <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a>
-                        </li>
 
+                        @if($social_media->facebook  != '')
                         <li>
-                            <a href="# " target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
+                            <a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank"><span><i class="fa fa-facebook"></i></span></a>
                         </li>
+                        @endif
+                       
+                        @if($social_media->twitter  != '')
+                        <li>
+                            <a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank"><span><i class="fa fa-twitter"></i></span></a>
+                        </li>
+                        @endif
+
+                        @if($social_media->linkedin  != '')
+                        <li>
+                            <a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
+                        </li>
+                        @endif
 
                     </ul>
                 </div>
@@ -40,7 +45,7 @@
                                 <li><a href="{{ route('coming-soon') }}">Disclaimer</a></li>
                                 <li><a href="{{ route('coming-soon') }}">Copyright Policy</a></li>
                                 <li><a href="{{ route('coming-soon') }}">Hyper Linking Policy</a></li>
-                                <li><a href="{{ route('coming-soon') }}">Privacy Policy</a></li>
+                                <li><a href="{{ route('privacypolicy') }}">Privacy Policy</a></li>
                                 <li><a href="{{ route('coming-soon') }}">Terms & Conditions</a></li>
                             </ul>
                         </div>
