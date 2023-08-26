@@ -61,8 +61,8 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-        margin-right: 0px !important;
-        margin-left: 10px;
+        margin-right: 12px !important;
+        margin-left: 20px;
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{
@@ -173,7 +173,7 @@
         min-height: 290px;
     }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
     .full-width-header .rs-header .menu-area .expand-btn-inner li {
         margin-right: 7px;
     }
@@ -249,6 +249,11 @@
     }
     .rs-categories.style1 .categories-item .content-part .title {
         font-size: 21px;
+    }
+
+    .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
+        margin-right: 12px !important;
+        margin-left: 20px;
     }
 }
 

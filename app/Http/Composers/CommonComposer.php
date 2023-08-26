@@ -33,6 +33,7 @@ class CommonComposer
     public function compose(View $view)
     {
          $social_media = DB::table('social_links')->first();
+        
 
         
         $menus = DB::table('website_menu_management')->orderby('sort_order','Asc')->get();   

@@ -47,11 +47,14 @@
                             <table class="table">
                                 <thead>
                                     <th>Dose Type</th>
-                                    <th>First Dose</th>
-                                    <th>Second Dose</th>
-                                    <th> Third Dose </th>
-                                    <th> Fourth Dose </th>
-                                    <th> Fifth Dose </th>
+                                    <th>Dose of vaccine</th>
+                                    <th>Dose day 0</th>
+                                    <th> Dose day 3</th>
+                                    <th> Dose day 7</th>
+                                    <th> Dose day 14</th>
+                                    <th> Dose day 28 </th>
+                                    <th> Summary</th>
+
                                 </thead>
                                 <tbody>
                                     <?php if(request('type') ==1){ ?>
@@ -59,33 +62,43 @@
                                         <td class="text-left">IM (Intra Muscular)</td>
                                         <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
                                         <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
+                                        <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                         <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
                                         <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
                                         <td>{{ date('Y-m-d', strtotime(request('date'). ' + 28 days')) }}</td>
+                                        <td> Summary </td>
                                     </tr>
                                         <?php }elseif(request('type') ==2){ ?>
                                         <tr>
                                             <td class="text-left">ID (Intra Dermal)</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
+                                            <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
+                                            <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 28 days')) }}</td>
+                                            <td> Summary </td>
                                         </tr>
                                         <?php }else{  ?>
                                         <tr>
                                             <td class="text-left">IM (Intra Muscular)</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
+                                            <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 28 days')) }}</td>
+                                            <td> Summary </td>
                                         </tr>
                                         <tr>
                                             <td class="text-left">ID (Intra Dermal)</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
+                                            <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
+                                            <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
                                             <td>{{ date('Y-m-d', strtotime(request('date'). ' + 28 days')) }}</td>
+                                            <td> Summary </td>
                                         </tr>
                                         <?php } ?>
                                     

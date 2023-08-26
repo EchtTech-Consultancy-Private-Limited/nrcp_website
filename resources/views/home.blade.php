@@ -333,7 +333,7 @@
 </div>
 --}}
 <!-- About Section Start -->
-<div id="rs-about" class="rs-about style8 pt-60 pb-60">
+<div id="rs-about" class="rs-about style8 pt-60 pb-40">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 p-0">
@@ -486,9 +486,9 @@
               </div>
           </div>
           </div>-->
-<div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-40">
+<div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-10">
     <div class="container">
-        <div class="row">
+        <div class="row p-0">
             <div class="col-md-4">
                 <div class="notice-bord style1">
                     <h4 class="title">Recent Activity</h4>
@@ -576,15 +576,9 @@
                         <a class="readon2 mod" href="#">View All</a>
                     </div>
 
-                    {{-- <div class="event-wrap">
-               <div class="btn-part mt-4 text-center md-mt-25 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 600ms; animation-name: fadeInUp;">
-                  <a href="#">View All Events</a>
-              </div>   
-            </div> --}}
-
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4  pr-0">
                 <div class="notice-bord style1">
                     <h4 class="title">Latest News</h4>
 
@@ -615,7 +609,7 @@
                     </div>
 
                     <div class="btn-part view-all-btn">
-                        <a class="readon2 mod" href="#">@lang('common.view_all')</a>
+                        <a class="readon2 mod" href="#">View All</a>
                     </div>
                 </div>
             </div>
@@ -1020,15 +1014,7 @@
 <!-- Partner Start -->
 <div class="rs-partner pt-40 pb-40 gray-bg-color">
     <div class="container">
-        <div class="gallery-section clientail">
-         <div class="btns pr-0">
-                <div id="customPreviousBtn5"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                <div id="customPause5"><i class="fa fa-pause" aria-hidden="true"></i></div>
-                <div id="customPlay5" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
-                </div>
-                <div id="customNextBtn5"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-            </div>
-        </div>
+       
         <div class="rs-carousel owl-carousel" data-loop="true" data-items="6" data-margin="15" data-autoplay="true"
             data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="true"
             data-nav-speed="false" data-center-mode="false" data-mobile-device="2" data-mobile-device-nav="true"
@@ -1110,6 +1096,17 @@
                         title="External Link That Will Open in a New Window."></a>
             </div>
         </div>
+
+        <div class="gallery-section clientail">
+            <div class="btns pr-0">
+                   <div id="customPreviousBtn5"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                   <div id="customPause5"><i class="fa fa-pause" aria-hidden="true"></i></div>
+                   <div id="customPlay5" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
+                   </div>
+                   <div id="customNextBtn5"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+               </div>
+           </div>
+
     </div>
 </div>
 <!-- Partner End -->

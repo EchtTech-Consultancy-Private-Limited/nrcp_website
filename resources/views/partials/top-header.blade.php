@@ -11,7 +11,7 @@
             </ul>
          </div>
 
-         <div class="col-md-6 text-lg-right">
+         <div class="col-md-6 text-lg-right pl-0">
             <ul class="toolbar-sl-share rs-inner-blog">
                <li class="opening widget-area">
                   <div class="search-widget">
@@ -72,9 +72,7 @@
                </li>
                @endif
 
-            @endif
-
-               <li><a href="{{ url('/site-map') }}" ><i class="fa fa-sitemap"></i></a>
+               <li><a href="{{ url('/site-map') }}" class="sitemap-cl" title="Site Map"><i class="fa fa-sitemap"></i></a>
                </li>
             </ul>
          </div>
