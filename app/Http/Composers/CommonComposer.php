@@ -32,9 +32,13 @@ class CommonComposer
      */
     public function compose(View $view)
     {
+         $social_media = DB::table('social_links')->first();
+
+        
+
         $menus = DB::table('website_menu_management')->orderby('sort_order','Asc')->get();   
         $menuName = $this->getMenuTree($menus, 0);   
-        $view->with(['headerMenu' => $menuName]);
+        $view->with(['headerMenu' => $menuName,'social_media'=>$social_media]);
 
     }
 

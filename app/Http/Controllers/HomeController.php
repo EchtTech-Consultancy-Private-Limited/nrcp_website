@@ -57,4 +57,8 @@ class HomeController extends Controller
         return response()->json(['data'=>$request->data,True]);
     }
 
+public function site_map(){
+    return view('site-map');
+}
+
 }

@@ -2,7 +2,7 @@
          <div class="col-md-6 pr-0">
             <ul class="topbar-contact">
                <li>
-                  <span class="timezone">July 25, 2023 | 09:07 PM(GMT +11:30)</span>
+                  <span class="timezone">{{ date('d F Y') }} &nbsp;  {{ date('H:i:s')}}  </span>
                </li>
                <li>
                   <a href="#skipCont"> Skip to Main Content</a> |
@@ -56,12 +56,17 @@
                      <option value="hi" @if (Session::get('Lang') == 'hi') selected @endif>Hindi</option>
                   </select>
                </li>
-               <li><a href="Javascript:void();" title="Facebook"><i class="fa fa-facebook"></i></a>
+               @if($social_media->facebook  != '')
+               <li><a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+               @endif
+
+               @if($social_media->twitter  != '')
+               <li><a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif  target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
                </li>
-               <li><a href="Javascript:void();" title="Instagram"><i class="fa fa-instagram"></i></a>
-               </li>
-               <li><a href="Javascript:void();" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="Javascript:void();" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+               @endif
+               @if($social_media->linkedin  != '')
+               <li><a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                 @endif
                </li>
             </ul>
          </div>

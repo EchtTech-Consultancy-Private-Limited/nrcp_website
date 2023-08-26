@@ -44,7 +44,7 @@ Route::get('/event-national',[EventController::class,'event_national'])->name('e
 
 
 
-
+Route::get('/site-map',[HomeController::class,'site_map']);
 
 
 //language
