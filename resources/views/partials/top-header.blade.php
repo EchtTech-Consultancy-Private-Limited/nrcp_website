@@ -72,9 +72,11 @@
                </li>
                @endif
 
+            @endif  
+                
                <li><a href="{{ url('/site-map') }}" class="sitemap-cl" title="Site Map"><i class="fa fa-sitemap"></i></a>
                </li>
-            @endif   
+            
             </ul>
          </div>
       </div>   
