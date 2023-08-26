@@ -9,8 +9,7 @@
             <img src="{{ asset('assets/Nrcp_img/banner.png') }}" alt="Breadcrumbs Image">
         </div>
         <div class="breadcrumbs-text white-color">
-            <h1 class="page-title">Publications</h1>
-           
+            <h1 class="page-title">Publications</h1>           
         </div>
     </div>
     <div class="rs-publications-main">

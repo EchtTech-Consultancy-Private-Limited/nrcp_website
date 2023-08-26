@@ -670,11 +670,11 @@ blockquote p {
 
 .readon.orange-btn {
   color: #ffffff;
-  background: #3F51B5;
-  border-color: #3F51B5;
+  background: #92271d;
+  border-color: #92271d;
   border-radius: 5px 5px 5px 5px;
   outline: none;
-  padding: 12px 35px;
+  padding: 10px 30px;
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
@@ -693,8 +693,8 @@ blockquote p {
 
 .readon.orange-btn:hover {
   color: #ffffff;
-  background: #ed3600;
-  border-color: #ed3600;
+  background: #2b3b93;
+  border-color: #2b3b93;
 }
 
 .readon.orange-btn.transparent:hover {
@@ -19421,7 +19421,7 @@ h3.sub-title {
 text-align: left;
 }
 
-a:focus-visible, a:focus {
+a:focus-visible {
     outline: -webkit-focus-ring-color auto 1px !important;
 }
 
@@ -19594,7 +19594,7 @@ a.top-logo img {
   background: #2b3b93;
   /* transform: scaleX(1.01); */
   color: #fff;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 .rs-publications-main .nav-pills .nav-link {
   /* border-radius: 0.25rem; */
@@ -19638,7 +19638,7 @@ text-align: left;
 
 .rs-publications-main .nav {
   
-  /* background: red; */
+  background:#fff;
   padding: 17px;
   border-radius: 10px;
 }
@@ -19774,4 +19774,24 @@ p.text-normal-footer {
 
 .gallery-section.clientail div {
   padding: 0px 7px 3px;
+}
+
+.event-img {
+  margin-bottom: 25px;
+}
+
+  /* master-class code */
+
+  .heading-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.heading-title h2 {
+  margin-bottom: 0;
+}
+
+section{
+  padding-bottom: 50px;
 }

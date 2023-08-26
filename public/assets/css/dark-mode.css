@@ -535,10 +535,11 @@ a.btn2::after{
 .sidebarwraper ul li.hasnested.opened a svg, .sidebarwraper ul li.hasnested .plus {
     fill: #ff0 !important;
 }
-.sidebarwraper ul li a.active,.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share .opening i:before,.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li a i.fa, .sidebarwraper ul li a,b.text-special,.box-rti a, a h5, a h6, a h4, a h3,.sidebarwraper ul li.hasnested, .sidebarwraper ul li.hasnested.opened a, .sidebarwraper ul li ul, .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a, .rs-slider.style1 .owl-nav .owl-next, .rs-slider.style1 .owl-nav .owl-prev  {
+.sidebarwraper ul li a.active,.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share .opening i:before,.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li a i.fa, .sidebarwraper ul li a,b.text-special,.box-rti a, a h5, a h6, a h4, a h3,.sidebarwraper ul li.hasnested, .sidebarwraper ul li.hasnested.opened a, .sidebarwraper ul li ul, .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a, .rs-slider.style1 .owl-nav .owl-next, .rs-slider.style1 .owl-nav .owl-prev, .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.sub-menu li a  {
     color: #ff0 !important;
     background: #000 !important;
 }
+
 
 .img-fac .top-text, .gallery-member .partnership-img div.top-text, .text-box .text-b{
     border: 1px solid #f6f6f6;
@@ -573,7 +574,7 @@ img{
     background:#fff !important;
 }
 
-.bg-light-grey, .myslider, .instagram-bg, section.excellence-wrap.pt-5 {
+.bg-light-grey, .myslider, .instagram-bg, section.excellence-wrap.pt-5, .full-width-header.header-style1.home12-modifiy .rs-header .menu-area.sticky, section.latest-news {
     background: #000000 !important;
 }
 
@@ -596,7 +597,7 @@ img{
     background-color: #000 !important;
 }
 
-.excellence-gallery.partnership-img .thumbnail img{
+.excellence-gallery.partnership-img .thumbnail img, div#debt-amount-pos, .slider.round{
     border: 1px solid #f6f6f6;
 }
 
@@ -608,6 +609,10 @@ ul.topbar-contact li {
     color: #fff !important;
 }
 
+.rs-about.style1 .notice-bord.style1 li{
+    background:#000 !important;
+    border: 1px solid #fff !important;
+}
 
 .rs-inner-blog .widget-area .search-widget .search-wrap button {
     border: 1px solid;
@@ -615,3 +620,16 @@ ul.topbar-contact li {
     padding: 5px 10px 5px;
     line-height: 20px;
 }
+
+.rs-about.style1 .notice-bord.style1 li .date{
+    color: #e1e1e1 !important;
+}
+
+.top-menu-box a.text-vaccination{
+    margin-top: 7px !important;
+}
+
+div#debt-amount-pos{
+    background: #ffff00 !important;
+}
+

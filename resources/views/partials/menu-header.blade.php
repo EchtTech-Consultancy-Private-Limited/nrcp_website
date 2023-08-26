@@ -145,7 +145,7 @@
                                                 </ul>
                                             </li>
                                         @else
-                                            <li class="rs-mega-menu">
+                                            <li class="">
                                                 <a
                                                     @if ($menuName->tab_type == 1) target="_blank"  href="{{ url($menuName->url) }}"    @else  href="{{ url($menuName->url) }}" @endif>{{ $menuName->name }}</a>
                                             </li>

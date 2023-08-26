@@ -157,9 +157,7 @@
                                     <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
                                         data-wow-duration="2000ms">
                                         <a class="readon green-banner" href="{{ route('activitie') }}">Read More <i
-                                                class="fa fa-angle-right pl-2"></i></a>
-
-                                        <div class="wrapper" id="skipCont"></div>
+                                                class="fa fa-angle-right pl-2"></i></a>                                       
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +166,6 @@
                 </div>
             </div>
         </div>
-
         <div class="btns">
             <div class="customPreviousBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
             <div class="customPause"><i class="fa fa-pause" aria-hidden="true"></i></div>
@@ -179,6 +176,7 @@
     <!-- Banner Section End -->
 
 
+    <div class="wrapper" id="skipCont"></div>
 
     <!-- latest news section start   -->
 

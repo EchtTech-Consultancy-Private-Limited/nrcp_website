@@ -498,26 +498,31 @@ $(document).ready(function(){
 
 // Dark mode button
 
+
+
+
+
  // enable dark mode and light mode
 function setTheme() {  
+    var baseURL = $("meta[name='basepath']").attr('content');
 
     if (document.getElementById('mode').checked) {
         const linkElement = document.getElementById('theme-style');
-        linkElement.href = `${'assets/css/dark-mode'}.css`;
-      
+        linkElement.href = baseURL+`/dark-mode.css`;
+        // {{asset('assets/css/dark-mode.css')}}
         // Store the theme preference in local storage
-        localStorage.setItem('assets/css/dark-mode', theme);
+        // localStorage.setItem('assets/css/dark-mode', theme);
 
         // Set the initial theme based on local storage or default to 'light'
-  const initialTheme = localStorage.getItem('theme') || 'light';
-  setTheme(initialTheme);
+//   const initialTheme = localStorage.getItem('theme') || 'light';
+//   setTheme(initialTheme);
 
       } else {
         const linkElement = document.getElementById('theme-style');
         linkElement.href = `${'assets/css/style'}.css`;
       
         // Store the theme preference in local storage
-        localStorage.setItem('assets/css/style', theme);
+        // localStorage.setItem('assets/css/style', theme);
       }
 
   }
@@ -564,13 +569,11 @@ $('.customNextBtn').click(function() {
       play.style.display = "block";
       pause.style.display = "none"
   });
-  console.log("pause");
   
   play.addEventListener("click", function(){
       play.style.display = "none";
       pause.style.display = "block"
   });
-  console.log("play");
 //   second latest news
 
 var owl_2 = $('#banner2');
@@ -595,13 +598,11 @@ pause2.addEventListener("click", function(){
     play2.style.display = "block";
     pause2.style.display = "none"
 });
-console.log("pause");
 
 play2.addEventListener("click", function(){
     play2.style.display = "none";
     pause2.style.display = "block"
 });
-console.log("play");
 
 
 
@@ -629,13 +630,11 @@ pause3.addEventListener("click", function(){
     play3.style.display = "block";
     pause3.style.display = "none"
 });
-console.log("pause");
 
 play3.addEventListener("click", function(){
     play3.style.display = "none";
     pause3.style.display = "block"
 });
-console.log("play");
 
 
 
@@ -665,13 +664,11 @@ pause4.addEventListener("click", function(){
     play4.style.display = "block";
     pause4.style.display = "none"
 });
-console.log("pause");
 
 play4.addEventListener("click", function(){
     play4.style.display = "none";
     pause4.style.display = "block"
 });
-console.log("play");
 
 
 
@@ -697,11 +694,9 @@ pause5.addEventListener("click", function(){
     play5.style.display = "block";
     pause5.style.display = "none"
 });
-console.log("pause");
 
 play5.addEventListener("click", function(){
     play5.style.display = "none";
     pause5.style.display = "block"
 });
-console.log("play");
 
