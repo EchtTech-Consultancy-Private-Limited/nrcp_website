@@ -56,6 +56,9 @@
                      <option value="hi" @if (Session::get('Lang') == 'hi') selected @endif>Hindi</option>
                   </select>
                </li>
+
+            @if(!empty($social_media))
+
                @if($social_media->facebook  != '')
                <li><a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                @endif
@@ -69,8 +72,11 @@
                </li>
                @endif
 
+            @endif  
+                
                <li><a href="{{ url('/site-map') }}" class="sitemap-cl" title="Site Map"><i class="fa fa-sitemap"></i></a>
                </li>
+            
             </ul>
          </div>
       </div>   

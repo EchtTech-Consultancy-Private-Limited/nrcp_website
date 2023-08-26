@@ -16,6 +16,9 @@
                     </div>
                     <ul class="footer_social">
 
+
+                        
+                    @if(!empty($social_media))
                         @if($social_media->facebook  != '')
                         <li>
                             <a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank"><span><i class="fa fa-facebook"></i></span></a>
@@ -33,6 +36,8 @@
                             <a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
                         </li>
                         @endif
+
+                    @endif
 
                     </ul>
                 </div>
