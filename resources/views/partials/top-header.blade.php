@@ -2,16 +2,16 @@
          <div class="col-md-6 pr-0">
             <ul class="topbar-contact">
                <li>
-                  <span class="timezone">July 25, 2023 | 09:07 PM(GMT +11:30)</span>
+                  <span class="timezone">{{ date('d F Y') }} &nbsp;  {{ date('H:i:s')}}  &nbsp;  {{ date('T')}} </span>
                </li>
                <li>
                   <a href="#skipCont"> Skip to Main Content</a> |
-                  <a href="javascript:void();"> Screen Reader Access</a>
+                  <a href="{{ url('screen-reader-access') }}"> Screen Reader Access</a>
                </li>
             </ul>
          </div>
-         
-         <div class="col-md-6 text-lg-right">
+
+         <div class="col-md-6 text-lg-right pl-0">
             <ul class="toolbar-sl-share rs-inner-blog">
                <li class="opening widget-area">
                   <div class="search-widget">
@@ -51,18 +51,29 @@
                   </label>
                </li>
                <li>
-                  <select class="form-control select-lang" tabindex="0">
-                     <option>English</option>
-                     <option>Hindi</option>
+                  <select class="form-control select-lang" onchange="javascript:setlang(value);"tabindex="0">
+                     <option value="en" @if (Session::get('Lang') == 'en') selected @endif >English</option>
+                     <option value="hi" @if (Session::get('Lang') == 'hi') selected @endif>Hindi</option>
                   </select>
                </li>
-               <li><a href="Javascript:void();" title="Facebook"><i class="fa fa-facebook"></i></a>
+               @if($social_media->facebook  != '')
+               <li><a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+               @endif
+
+               @if($social_media->twitter  != '')
+               <li><a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif  target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
                </li>
-               <li><a href="Javascript:void();" title="Instagram"><i class="fa fa-instagram"></i></a>
+               @endif
+               @if($social_media->linkedin  != '')
+               <li><a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif title="Linkedin"><i class="fa fa-linkedin"></i></a>
                </li>
-               <li><a href="Javascript:void();" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="Javascript:void();" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+               @endif
+
+               <li><a href="{{ url('/site-map') }}" class="sitemap-cl" title="Site Map"><i class="fa fa-sitemap"></i></a>
                </li>
             </ul>
          </div>
       </div>   
+
+
+      

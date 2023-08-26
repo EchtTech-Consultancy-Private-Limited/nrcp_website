@@ -40,7 +40,8 @@
                             </div>
 
                             <a href="javascript:void();" class="text-vaccination pulse"
-                                style="border: solid 4px; display: block !important">
+                            data-toggle="modal" data-target="#vaccination"
+                            style="border: solid 4px; display: block !important">
                                 <span> Have you Bitten by an Animal? </span> <br>
                                 Know your Rabies Vaccination Schedule
                             </a>

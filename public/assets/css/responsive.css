@@ -61,8 +61,8 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-        margin-right: 0px !important;
-        margin-left: 10px;
+        margin-right: 12px !important;
+        margin-left: 20px;
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{
@@ -173,7 +173,7 @@
         min-height: 290px;
     }
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1450px) {
     .full-width-header .rs-header .menu-area .expand-btn-inner li {
         margin-right: 7px;
     }
@@ -249,6 +249,11 @@
     }
     .rs-categories.style1 .categories-item .content-part .title {
         font-size: 21px;
+    }
+
+    .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
+        margin-right: 12px !important;
+        margin-left: 20px;
     }
 }
 
@@ -2493,6 +2498,12 @@
 
     .heading-title {
         display: block;
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-size: 14px;
+        margin-bottom: 12px;
     }
 
     .img-part.banner-image {
@@ -2540,6 +2551,8 @@
     .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share .opening i {
         margin-right: 10px;
     }
+
+    .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li.menu-item-has-children a:before{display: none;}
 
     .rs-inner-blog .widget-area .search-widget .search-wrap [type=search]{
         padding: 5px 17px;
@@ -2590,6 +2603,22 @@
         justify-content: end;
         align-items: center;
     }
+
+    .rs-publications-main table {
+        caption-side: bottom;
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+        display: inline-block;
+        overflow-x: auto;
+    }
+
+    .rs-publications-main table td, .rs-publications-main table th {
+        padding: 5px 15px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
 
     section.latest-news {
         height: 150px;
@@ -3065,11 +3094,11 @@
     }
 
     h2{
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .heading-title h2 {
-        margin-bottom: 16px;
+        margin-bottom: 10px;
     }
 
     .rs-breadcrumbs .breadcrumbs-text ul li a{
@@ -4233,7 +4262,7 @@
         margin-bottom: 20px;
     }
     .rs-breadcrumbs .breadcrumbs-text .page-title {
-        font-size: 30px;
+        font-size: 26px;
     }
     .rs-about.style2 .about-intro {
         padding: 45px 15px 50px;
