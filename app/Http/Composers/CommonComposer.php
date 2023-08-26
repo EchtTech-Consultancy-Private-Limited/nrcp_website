@@ -33,7 +33,7 @@ class CommonComposer
     public function compose(View $view)
     {
         $menus = DB::table('website_menu_management')->orderby('sort_order','Asc')->get();   
-        $menuName = $this->getMenuTree($menus, 0);
+        $menuName = $this->getMenuTree($menus, 0);   
         $view->with(['headerMenu' => $menuName]);
 
     }
@@ -51,5 +51,7 @@ class CommonComposer
         }
         return $branch;
     }
-    
+
+
+ 
 }

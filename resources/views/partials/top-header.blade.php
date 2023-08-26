@@ -51,9 +51,9 @@
                   </label>
                </li>
                <li>
-                  <select class="form-control select-lang" tabindex="0">
-                     <option>English</option>
-                     <option>Hindi</option>
+                  <select class="form-control select-lang" onchange="javascript:setlang(value);"tabindex="0">
+                     <option value="en" @if (Session::get('Lang') == 'en') selected @endif >English</option>
+                     <option value="hi" @if (Session::get('Lang') == 'hi') selected @endif>Hindi</option>
                   </select>
                </li>
                <li><a href="Javascript:void();" title="Facebook"><i class="fa fa-facebook"></i></a>
@@ -66,3 +66,4 @@
             </ul>
          </div>
       </div>   
+

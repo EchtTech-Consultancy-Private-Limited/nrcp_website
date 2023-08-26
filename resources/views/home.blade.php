@@ -590,42 +590,44 @@
                 <div class="notice-bord style1">
                     <h4 class="title">Latest News</h4>
 
+                  
+
                     <div class="marquee-height">
                         <ul class="Latest-news-slider marquee--inner ">
+                          
+                          
+
+                    @if(Count($news) > 0)
+
+                        @foreach ($news as $item)
                             <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
                                 style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                                <div class="date"><span>20</span>June</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting
-                                </div>
+                                <div class="date">{{date('d F', strtotime($item->start_date))}}</div>
+                              
+
+                                <div class='desc'>
+
+                               
+
+                                @if (Session::get('Lang') == 'hi')
+                               
+                                {{ $item->description_h}}
+                                 @else
+                                 {{ $item->description}}
+                                @endif
+
+                               </div>
                             </li>
-                            <li class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
-                                style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                                <div class="date"><span>22</span>Aug</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting
-                                </div>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                                style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                                <div class="date"><span>14</span>May</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting
-                                </div>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms"
-                                style="visibility: visible; animation-duration: 2000ms; animation-delay: 600ms; animation-name: fadeInUp;">
-                                <div class="date"><span>31</span>Sept</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting
-                                </div>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-delay="700ms" data-wow-duration="2000ms"
-                                style="visibility: visible; animation-duration: 2000ms; animation-delay: 700ms; animation-name: fadeInUp;">
-                                <div class="date"><span>28</span>Oct</div>
-                                <div class="desc">Lorem Ipsum is simply dummy text of the printing and setting
-                                </div>
-                            </li>
+                        @endforeach 
+                    @endif
+
+                      
+
                         </ul>
                     </div>
+
                     <div class="btn-part view-all-btn">
-                        <a class="readon2 mod" href="#">View All</a>
+                        <a class="readon2 mod" href="#"></a>
                     </div>
                 </div>
             </div>
