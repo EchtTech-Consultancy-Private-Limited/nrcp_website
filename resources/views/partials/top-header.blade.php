@@ -11,7 +11,7 @@
             </ul>
          </div>
 
-         <div class="col-md-6 text-lg-right">
+         <div class="col-md-6 text-lg-right pl-0">
             <ul class="toolbar-sl-share rs-inner-blog">
                <li class="opening widget-area">
                   <div class="search-widget">
