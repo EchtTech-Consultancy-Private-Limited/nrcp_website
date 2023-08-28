@@ -30,27 +30,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
-                    <div class="publication-sociol-icon">
-                        <ul class="d-flex justify-content-end">
-                            <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/printer.png') }}"
-                                        alt="printer Image" aria-label="printer" class="slash">/</a></li>
-                            <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/share.png') }}"
-                                        alt="share Image" aria-label="share"></a></li>
-                            <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/facebook.png') }}"
-                                        alt="facebook Image" aria-label="facebook"></a></li>
-                                        <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/twitter.png') }}"
-                                        alt="twitter Image" aria-label="twitter"></a></li>
-                            <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/linkedin.png') }}"
-                                        alt="linkedin Image" aria-label="linkedin"></a></li>
-                           
-                        </ul>
-                    </div>
+                    @include('share_link')
                 </div>
             </div>
         </div>
-
-
-
 
         <div id="rs-about" class="rs-about style1 pt-80 pb-40 md-pt-70 md-pb-70">
             <div class="container">
@@ -277,4 +260,6 @@
     </div>
 
 </div>
+
+
 @endsection

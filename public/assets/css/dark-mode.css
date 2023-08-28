@@ -535,13 +535,13 @@ a.btn2::after{
 .sidebarwraper ul li.hasnested.opened a svg, .sidebarwraper ul li.hasnested .plus {
     fill: #ff0 !important;
 }
-.sidebarwraper ul li a.active,.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share .opening i:before,.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li a i.fa, .sidebarwraper ul li a,b.text-special,.box-rti a, a h5, a h6, a h4, a h3,.sidebarwraper ul li.hasnested, .sidebarwraper ul li.hasnested.opened a, .sidebarwraper ul li ul, .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a, .rs-slider.style1 .owl-nav .owl-next, .rs-slider.style1 .owl-nav .owl-prev, .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.sub-menu li a  {
+.sidebarwraper ul li a.active, .contact-page-section .rs-quick-contact .form-group .btn-send, .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share .opening i:before,.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li a i.fa, .sidebarwraper ul li a,b.text-special,.box-rti a, a h5, a h6, a h4, a h3,.sidebarwraper ul li.hasnested, .sidebarwraper ul li.hasnested.opened a, .sidebarwraper ul li ul, .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a, .rs-slider.style1 .owl-nav .owl-next, .rs-slider.style1 .owl-nav .owl-prev, .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.sub-menu li a, .rs-publications-main table td a, .rs-publications-main table td a span, .rs-publications-main table td a i, .rs-publications-main table th a, table th {
     color: #ff0 !important;
     background: #000 !important;
 }
 
 
-.img-fac .top-text, .gallery-member .partnership-img div.top-text, .text-box .text-b{
+.img-fac .top-text, .gallery-member .partnership-img div.top-text, .text-box .text-b, .rs-publications-main .nav-pills .nav-link.active, .rs-publications-main .nav-pills .show>.nav-linko{
     border: 1px solid #f6f6f6;
 }
 
@@ -554,7 +554,7 @@ a.btn2::after{
     background-color: #000 !important;
 }
 
-p, ul li {
+p, ul li,.table td, .table th, .bold-text.text-black, .text-black, .rs-inner-blog .blog-deatails .blog-full .unorder-list li:before {
     color: #fff;
 }
 
@@ -593,23 +593,23 @@ img{
     text-align: center;
 }
 
-.back-img .thumbnail.p-relative img, .full-width-header .rs-header .topbar-area.home11-topbar{
+.back-img .thumbnail.p-relative img, .full-width-header .rs-header .topbar-area.home11-topbar, a.sitemap-cl, table tbody tr{
     background-color: #000 !important;
 }
 
-.excellence-gallery.partnership-img .thumbnail img, div#debt-amount-pos, .slider.round{
+.excellence-gallery.partnership-img .thumbnail img, div#debt-amount-pos, .slider.round, .rs-publications-main .nav{
     border: 1px solid #f6f6f6;
 }
 
-body{
-    color: #fff;
-}
-
-ul.topbar-contact li {
+body, .rs-breadcrumbs .breadcrumbs-text ul li, .rs-publications-main table td, .rs-publications-main table th{
     color: #fff !important;
 }
 
-.rs-about.style1 .notice-bord.style1 li{
+ul.topbar-contact li, .contact-page-section .contact-address-section .contact-info .icon-part i {
+    color: #fff !important;
+}
+
+.rs-about.style1 .notice-bord.style1 li, .contact-page-section .rs-quick-contact .form-group .btn-send{
     background:#000 !important;
     border: 1px solid #fff !important;
 }
@@ -629,7 +629,7 @@ ul.topbar-contact li {
     margin-top: 7px !important;
 }
 
-div#debt-amount-pos{
+div#debt-amount-pos, .publication-sociol-icon a img{
     background: #ffff00 !important;
 }
 

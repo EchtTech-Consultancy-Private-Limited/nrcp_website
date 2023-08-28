@@ -16770,8 +16770,11 @@ color: #171717;
 }
 
 .contact-page-section .rs-quick-contact {
-  background-color: #F9F8F8;
+  /* background-color: #F9F8F8; */
   padding: 70px 150px 70px;
+    box-shadow: 0 0 30px #eee;
+    background: #fff;
+    border-radius: 20px;
 }
 
 .contact-page-section .rs-quick-contact .from-control {
@@ -19820,3 +19823,51 @@ a.sitemap-cl {
 a.sitemap-cl i.fa {
   color: #fff !important;
 }
+
+ .pulse {
+            display: block;
+            width: 100%;
+            cursor: pointer;
+            box-shadow: 0 0 0 rgba(146, 39, 29, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        #darkmode_css{
+            display: none;
+        }
+
+        .pulse:hover {
+            animation: none;
+        }
+        
+
+        @-webkit-keyframes pulse {
+            0% {
+                -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+            }
+
+            70% {
+                -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+            }
+
+            100% {
+                -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+                box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+            }
+
+            70% {
+                -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+                box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+            }
+
+            100% {
+                -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+                box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+            }
+        }
