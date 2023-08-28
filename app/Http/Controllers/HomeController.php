@@ -75,4 +75,8 @@ class HomeController extends Controller
     public function site_map(){
         return view('site-map');
     }
+
+    public function feedback_form(){
+        return view('feedback');
+    }
 }
