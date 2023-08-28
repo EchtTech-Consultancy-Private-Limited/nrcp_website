@@ -192,17 +192,17 @@ function setlang(value){
     })
 
     //Videos popup jQuery 
-    var popupvideos = $('.popup-videos');
-    if(popupvideos.length){
-        $('.popup-videos').magnificPopup({
-            disableOn: 10,
-            type: 'iframe',
-            mainClass: 'mfp-fade',
-            removalDelay: 160,
-            preloader: false,
-            fixedContentPos: false
-        }); 
-    }
+    // var popupvideos = $('.popup-videos');
+    // if(popupvideos.length){
+    //     $('.popup-videos').magnificPopup({
+    //         disableOn: 10,
+    //         type: 'iframe',
+    //         mainClass: 'mfp-fade',
+    //         removalDelay: 160,
+    //         preloader: false,
+    //         fixedContentPos: false
+    //     }); 
+    // }
     
     /*-------------------------------------
         OwlCarousel

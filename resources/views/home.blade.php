@@ -609,7 +609,7 @@
                     </div>
 
                     <div class="btn-part view-all-btn">
-                        <a class="readon2 mod" href="#">View All</a>
+                        <a class="readon2 mod" href="{{ url('/search') }}">View All</a>
                     </div>
                 </div>
             </div>
@@ -774,7 +774,6 @@
                             <div class="team-item">
                                 <div class="gallery-box">
                                     <img src="{{ asset('assets/Nrcp_img/gallery/11.jpg') }}" alt="">
-                                    <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 169</div>
                                     <div class="text-gallery" id="banner3">
                                         Event 1
                                     </div>
@@ -783,7 +782,6 @@
                             <div class="team-item">
                                 <div class="gallery-box">
                                     <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
-                                    <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 129</div>
                                     <div class="text-gallery">
                                         Event 2
                                     </div>
@@ -792,7 +790,6 @@
                             <div class="team-item">
                                 <div class="gallery-box">
                                     <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
-                                    <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 169</div>
                                     <div class="text-gallery">
                                         Event 3
                                     </div>
@@ -801,7 +798,6 @@
                             <div class="team-item">
                                 <div class="gallery-box">
                                     <img src="{{ asset('assets/Nrcp_img/gallery/44.jpeg') }}" alt="">
-                                    <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 139</div>
                                     <div class="text-gallery">
                                         State Level ToT for NRCP (Kerala)
                                     </div>
@@ -810,7 +806,6 @@
                             <div class="team-item">
                                 <div class="gallery-box">
                                     <img src="{{ asset('assets/Nrcp_img/gallery/55.jpg') }}" alt="">
-                                    <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 139</div>
                                     <div class="text-gallery">
                                         Event 5
                                     </div>
@@ -819,7 +814,6 @@
                             <div class="team-item">
                                 <div class="gallery-box">
                                     <img src="{{ asset('assets/Nrcp_img/gallery/66.jpg') }}" alt="">
-                                    <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 139</div>
                                     <div class="text-gallery">
                                         Event 6
                                     </div>
@@ -828,7 +822,6 @@
                             <div class="team-item">
                                 <div class="gallery-box">
                                     <img src="{{ asset('assets/Nrcp_img/gallery/about.jpg') }}" alt="">
-                                    <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 139</div>
                                     <div class="text-gallery">
                                         Event 7
                                     </div>
@@ -853,14 +846,13 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="gallery-lbox">
+                <div class="gallery-lbox video-sec">
                     <div class="content">
                         <div class="sec-title3 text-center mb-40 ">
                             <h2 class="title mb-10">Video Gallery</h2>
                         </div>
                     </div>
-                    <div class="col-md-12">                  
-
+                    <div class="col-md-12">                
                         <div class="rs-carousel owl-carousel nav-style2 gallery-carausel" data-loop="true"
                             data-items="4" data-margin="10" data-autoplay="true" data-hoverpause="true"
                             data-autoplay-timeout="4500" data-smart-speed="900" data-dots="false" data-nav="false"
@@ -870,25 +862,25 @@
                             data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="2"
                             data-md-device-nav="false" data-md-device-dots="false" id="banner4">
                             <div class="team-item">
-                                <div class="gallery-box">
-                                    <video controls autoplay muted class="video-g">
-                                        <source src="{{ asset('assets/Nrcp_img/video-d.mp4') }}" type="video/mp4">
-                                    </video>
-                                    <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 169</div>
+                                <div class="gallery-box media-icon orange-color">
+                                    <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
                                     <div class="text-gallery">
                                         Event 1
                                     </div>
+                                    <a class="popup-videos" href="{{ url('/video') }}">
+                                        <i class="fa fa-play"></i>
+                                    </a>                                  
                                 </div>
                             </div>
                             <div class="team-item">
-                                <div class="gallery-box">
-                                    <video controls autoplay muted class="video-g">
-                                        <source src="{{ asset('assets/Nrcp_img/video-d.mp4') }}" type="video/mp4">
-                                    </video>
-                                    <div class="gallery-icon-text"><i class="fa fa-picture-o"></i> 169</div>
+                                <div class="gallery-box media-icon orange-color">
+                                    <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
                                     <div class="text-gallery">
                                         Event 2
                                     </div>
+                                    <a class="popup-videos" href="{{ url('/video') }}">
+                                        <i class="fa fa-play"></i>
+                                    </a>                                  
                                 </div>
                             </div>
 
@@ -896,7 +888,7 @@
                     </div>
                     <div class="btn-view_play"> 
                         <div class="btn-part mt-4 text-center">
-                            <a class="readon2" href="#">View All</a>
+                            <a class="readon2" href="{{ url('/video') }}">View All</a>
                         </div>
     
                         <div class="btns">

@@ -48,6 +48,8 @@ Route::get('/screen-reader-access',[HomeController::class,'screen_reader_access'
 
 Route::get('/site-map',[HomeController::class,'site_map'])->name('sitemap');
 Route::get('/feedback',[HomeController::class,'feedback_form'])->name('feedback');
+Route::get('/video',[HomeController::class,'video_page'])->name('video-page');
+Route::get('/search',[HomeController::class,'search_bar'])->name('search-bar');
 
 
 //language
