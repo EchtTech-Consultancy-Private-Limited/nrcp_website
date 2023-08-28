@@ -79,4 +79,11 @@ class HomeController extends Controller
     public function feedback_form(){
         return view('feedback');
     }
+
+    public function video_page(){
+        return view('videos');
+    }
+    public function search_bar(){
+        return view('search');
+    }
 }

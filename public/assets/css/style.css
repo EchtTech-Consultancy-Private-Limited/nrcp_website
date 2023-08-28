@@ -1134,7 +1134,7 @@ blockquote p {
 
 .media-icon .popup-videos {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
@@ -1143,6 +1143,10 @@ blockquote p {
   height: 70px;
   border-radius: 100%;
   text-align: center;
+}
+
+.gallery-lbox.video-sec .gallery-carausel .team-item img{
+  filter: brightness(0.6);
 }
 
 .media-icon .popup-videos:before {
@@ -19871,3 +19875,11 @@ a.sitemap-cl i.fa {
                 box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
             }
         }
+
+        i.search-icon {
+          position: absolute;
+          top: 35%;
+          right: 9%;
+      }
+
+      .contact-page-section .contact-comment-box.search-sec .from-control{padding:10px 43px 10px 20px;}
