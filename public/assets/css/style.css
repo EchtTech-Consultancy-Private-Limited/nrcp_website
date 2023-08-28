@@ -16770,8 +16770,11 @@ color: #171717;
 }
 
 .contact-page-section .rs-quick-contact {
-  background-color: #F9F8F8;
+  /* background-color: #F9F8F8; */
   padding: 70px 150px 70px;
+    box-shadow: 0 0 30px #eee;
+    background: #fff;
+    border-radius: 20px;
 }
 
 .contact-page-section .rs-quick-contact .from-control {

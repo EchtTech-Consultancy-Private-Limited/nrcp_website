@@ -74,9 +74,12 @@
                         </li>
                         <li>
 
-                            <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i> Division of Zoonotic
-                                Disease Programme, National Centre for Disease Control,
-                                Ministry of Health and Family Welfare
+                            <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                                Center for One Health,
+                                {{-- (Division of Zoonotic Disease Programme), --}}
+                                National Centre for Disease Control,
+                                Ministry of Health and Family Welfare,
+                                Goverment Of India, 22 Sham Nath Marg, Civil Lines, New Delhi, Delhi, 110054
                             </div>
                         </li>
                         <li>
