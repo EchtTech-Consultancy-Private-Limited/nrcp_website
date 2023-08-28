@@ -42,8 +42,8 @@
                     <div class="row">
                         <div class="col-lg-7 mx-auto">
                             <div class="rs-quick-contact new-style">
-                                <div class="inner-part mb-50">
-                                    <h2 class="title mb-15">Get In Touch</h2>
+                                <div class="inner-part mb-20">
+                                    <h2 class="title mb-15">Feedback Form</h2>
 
                                 </div>
                                 <div id="form-messages"></div>
