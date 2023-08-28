@@ -57,10 +57,11 @@
 
                         <div class="col-lg-6 col-md-12 col-sm-12 pl-50 md-pl-15 footer-widget md-mb-50 p-0 width-sm-50">
                             <ul class="site-map footer-link-withput-h border-right-white">
-                                <li><a href="{{ route('coming-soon') }}">Website Policies,</a></li>
+                                <li><a href="{{ route('coming-soon') }}">Website Policies</a></li>
                                 <li><a href="{{ route('coming-soon') }}">Accessibility Statement</a></li>
                                 <li><a href="{{ route('coming-soon') }}">Web Information Manager</a></li>
                                 <li><a onclick="return confirm('You Are Now Leaving This Site. Would you like to leave this site?')" href="https://ihip.nhp.gov.in/idsp/#!/login" target="_blank">IHIP Portal</a></li>
+                                <li><a href="{{ route('feedback') }}">Feedback</a></li>
                             </ul>
                         </div>
                     </div>
@@ -74,9 +75,12 @@
                         </li>
                         <li>
 
-                            <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i> Division of Zoonotic
-                                Disease Programme, National Centre for Disease Control,
-                                Ministry of Health and Family Welfare
+                            <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                                Center for One Health
+                                (Division of Zoonotic Disease Programme),
+                                National Centre for Disease Control,
+                                Ministry of Health and Family Welfare,
+                                Goverment Of India, 22 Sham Nath Marg, Civil Lines, New Delhi, Delhi, 110054
                             </div>
                         </li>
                         <li>

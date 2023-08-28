@@ -27,7 +27,7 @@
 
                 <div class="top-menu-box">
                     <ul>
-                        <li>
+                        <li tabindex="1">
 
                             <div class="top-header-logo">
                                 <a href="javascript:void();" class="top-logo">
@@ -47,7 +47,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li tabindex="1">
                             <div class="logo-cat-wrap right-h">
                                 <div class="logo-part mobile-logo-s">
                                     <a href="{{ url('/') }}">

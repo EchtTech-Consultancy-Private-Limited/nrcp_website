@@ -417,8 +417,27 @@ $(document).ready(function(){
     $(".rs-menu li.menu-item-has-children > a.main-anchor.show").removeClass('show');      
     // $(".rs-menu li.menu-item-has-children.multi-menu > a.main-anchor.show").removeClass('show');
     // $(".rs-menu li.menu-item-has-children.multi-menu > a.main-anchor").addClass('show');
-
     $(this).addClass('show');
+  });
+
+
+
+
+  $(".full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li:last-child a").focus(function(){
+
+    $(".rs-menu li.menu-item-has-children > a.main-anchor.show").removeClass('show');      
+
+  });
+
+  
+  $("li.menu-item-has-children ul.sub-menu li.menu-item-has-children > a").focus(function(){
+    $(".rs-menu li.menu-item-has-childre > a.main-anchor").addClass('show');
+  });
+
+  $("body").click(function(){
+
+    $(".rs-menu li.menu-item-has-children > a.main-anchor.show").removeClass('show');      
+
   });
 
 });
@@ -480,7 +499,7 @@ $(document).ready(function(){
     //     $(".dropdown-menu.add-class-focus.show").removeClass('show');
     // });
 
-    $("p, h1, h2, h3, h4, h5, h6, a, li, button,.about-t,h2.title,.desc-text-title,.desc, .copyright-text").attr('tabindex' , '0');
+    $("p, h1, h2, h3, h4, h5, h6, a, button,.about-t,h2.title,.desc-text-title,.desc, .copyright-text").attr('tabindex' , '0');
 
     $(".text-assesbility ").focus(function(){
         $(".text-assesbility-button").addClass('d-block');
