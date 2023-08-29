@@ -19386,7 +19386,7 @@ table th {
 }
 
 table tbody tr:nth-child(even) {
-  background-color: #d1e8f5;
+  background-color: #d1e8f5 !important;
 }
 
 /*responsive*/
@@ -19423,6 +19423,12 @@ table tbody tr:nth-child(even) {
   .pdf-image {
     text-align: center;
 }
+
+.dataTables_wrapper.no-footer div.dt-buttons {
+    float: left !important;
+    text-align: center;
+}
+
 }
 
 .rs-menu.rs-menu-close{
@@ -19883,3 +19889,33 @@ a.sitemap-cl i.fa {
       }
 
       .contact-page-section .contact-comment-box.search-sec .from-control{padding:10px 43px 10px 20px;}
+
+      /* Data Table css */
+      button.dt-button.buttons-print {
+        background: #3f51b5 !important;
+        color: #fff !important;
+        font-size: 20px !important;
+        padding: 7px 10px !important;
+        line-height: 10px !important;
+        border-radius: 4px !important;
+    }
+
+    .dataTables_wrapper .dataTables_paginate a.paginate_button.current, .dataTables_wrapper .dataTables_paginate a.paginate_button.current:hover, .dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+      background: linear-gradient(to bottom, rgb(63 81 181) 0%, rgb(63 81 181) 100%) !important;
+      line-height: 15px !important;
+      padding: 5px 14px !important;
+      color: #fff !important;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button{
+      line-height: 15px !important;
+      padding: 5px 14px !important;
+    }
+
+  .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate a.paginate_button.disabled:active{
+      color:#fff !important;
+    }
+
+    div#example_paginate {
+      margin-top: 12px;
+  }
