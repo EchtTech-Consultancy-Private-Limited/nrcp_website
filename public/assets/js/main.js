@@ -719,3 +719,12 @@ play5.addEventListener("click", function(){
     pause5.style.display = "block"
 });
 
+
+
+// Skip to main content
+
+function slipttobottom() {
+    $(window).scrollTop(450);
+}
+	
+

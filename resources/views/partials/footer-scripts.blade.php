@@ -18,6 +18,7 @@
 <script src="{{ asset('assets/js/plugins.js') }}"></script>
 <script src="{{ asset('assets/js/contact.form.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
+
 <script>
 $(document).ready(function() {
     $(".btn2").click(function() {
