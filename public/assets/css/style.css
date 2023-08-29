@@ -17406,7 +17406,7 @@ color: #171717;
 }
 
 .rs-footer.home9-style .footer-top {
-  padding:50px 0 40px;
+  padding:40px 0 30px;
 }
 
 .rs-footer.home9-style .footer-top .widget-title {
@@ -17676,7 +17676,7 @@ color: #171717;
 }
 
 .rs-footer.home9-style.main-home .footer-bottom {
-  padding: 23px 0 18px;
+  padding: 11px 0 9px;
   background: #3344A2;
   position: relative;
 }
@@ -18882,6 +18882,7 @@ h2.title.black-color.logo-text {
   height: 78px !important;
   padding-left: 10px;
   padding-right: 0px !important;
+  margin-top: 14px;
 }
 
 .top-menu-box {
@@ -19920,3 +19921,8 @@ a.sitemap-cl i.fa {
     div#example_paginate {
       margin-top: 12px;
   }
+
+  .star {
+    font-size: 13px;
+    margin-top: 25px !important;
+}
