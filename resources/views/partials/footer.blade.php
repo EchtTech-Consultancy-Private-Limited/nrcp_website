@@ -11,8 +11,8 @@
                     <div class="textwidget white-color">
                         <h4 class="footer-text-logo">National Rabies Control Program</h4>
                         {{-- <p class="text-big"> National Center for Disease control </p> --}}
-                        <p class="text-normal-footer">Directorate General of Health Services, Ministry of
-                            Health & Family Welfare, Government of India </p>
+                        {{-- <p class="text-normal-footer">Directorate General of Health Services, Ministry of
+                            Health & Family Welfare, Government of India </p> --}}
                     </div>
                     <ul class="footer_social">
 
@@ -42,7 +42,7 @@
                     </ul>
                 </div>
 
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="row">
                         <div class="col-lg-6 col-md-12 col-sm-12 pl-20 md-pl-20 footer-widget md-mb-50 width-sm-50 mt-s-40">
                             <h3 class="widget-title">Important Links</h3>
@@ -67,20 +67,21 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                <div class="col-lg-4 col-md-12 col-sm-12 footer-widget md-mb-50">
                     <h3 class="widget-title">Contact Us</h3>
                     <ul class="address-widget">
-                        <li>
+                        {{-- <li>
                             <div class="desc-text-title">Full Mailing Address:</div>
-                        </li>
+                        </li> --}}
                         <li>
 
                             <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                Center for One Health
-                                (Division of Zoonotic Disease Programme),
+                                <b> Center for One Health </b><br>                           
                                 National Centre for Disease Control,
+                                Directorate General of Health Services
                                 Ministry of Health and Family Welfare,
-                                Goverment Of India, 22 Sham Nath Marg, Civil Lines, New Delhi, Delhi, 110054
+                                Goverment Of India, <br>
+                                22 Sham Nath Marg, Delhi - 110054
                             </div>
                         </li>
                         <li>
@@ -94,7 +95,7 @@
 
                             <div class="desc">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:dirnicd@nic.in">nrcp[dot]ncdc[at]gmail[dot]com</a>
+                                <a href="mailto:dirnicd@nic.in">nohppcz[dot]ncdc[at]gmail[dot]com</a>
                             </div>
                         </li>
 
@@ -112,7 +113,7 @@
                     <h3 class="widget-title">Locate Us</h3>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.343413096401!2d77.22101037444737!3d28.67937218195402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfda49c63895b%3A0xf42dc723f30a63d2!2sNATIONAL%20CENTRE%20FOR%20DISEASE%20CONTROL%2C%20CSU%20INTEGRATED%20DISEASE%20SURVEILLANCE%20PROGRAMME%2C%20Civil%20Lines%2C%20Delhi%2C%20110054!5e0!3m2!1sen!2sin!4v1689766036308!5m2!1sen!2sin"
-                        width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="165" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 </div>

@@ -4806,8 +4806,8 @@ th.set-width {
 }
 
 .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-  margin-right: 20px !important;
-  margin-left: 22px;
+  margin-right: 35px !important;
+  margin-left: 25px;
 }
 
 .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li.current-menu-item>a {
@@ -16982,7 +16982,7 @@ color: #171717;
 .contact-page-section .contact-map2 iframe {
   float: left;
   width: 100%;
-  height: 615px;
+  height: 570px;
   border: none;
 }
 
@@ -17011,15 +17011,15 @@ color: #171717;
   display: flex;
   text-align: left;
   align-items: center;
-  padding: 0 30px;
-  min-height: 140px;
+  padding: 0 15px;
+  min-height: 150px;
   border-radius: 5px;
   position: relative;
   transition: all 0.3s ease;
 }
 
 .contact-page-section .contact-address-section .contact-info .icon-part {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .contact-page-section .contact-address-section .contact-info .icon-part i {
@@ -17406,7 +17406,7 @@ color: #171717;
 }
 
 .rs-footer.home9-style .footer-top {
-  padding:80px 0 50px;
+  padding:50px 0 40px;
 }
 
 .rs-footer.home9-style .footer-top .widget-title {
@@ -17434,7 +17434,7 @@ color: #171717;
   padding-left: 15px;
   position: relative;
   margin-bottom: 11px;
-  font: normal normal normal 14px/30px Poppins;
+  font:normal normal normal 13px/20px Poppins;
 }
 
 .rs-footer.home9-style .footer-top .site-map li a {
@@ -17459,7 +17459,7 @@ color: #171717;
 
 .rs-footer.home9-style .footer-top .address-widget li {
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .rs-footer.home9-style .footer-top .address-widget li i {
@@ -19172,7 +19172,7 @@ ul.site-map.footer-link-withput-h {
 .border-right-white {
   border-right: 2px solid #ffffff4f;
   padding: 0 10px;
-  height: 190px;
+  height: 160px;
 }
 
 .desc-text-title {
@@ -19228,7 +19228,8 @@ span.number-visitor {
 .img-part.banner-image img {
   height: 100%;
   width: 100%;
-  height: 466px;
+  height: 500px;
+  object-fit: cover;
 }
 
 li.menu-item-has-children ul.sub-menu li{
