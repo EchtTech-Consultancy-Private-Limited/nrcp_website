@@ -976,6 +976,26 @@
             data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="3"
             data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6" data-md-device-nav="true"
             data-md-device-dots="false" id="banner5">
+
+            <div class="partner-item">
+               <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link"><img
+                  src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}" alt="NCDC"
+                  title="NCDC"></a>
+            </div>
+
+            <div class="partner-item">
+               <a href="https://www.mohfw.gov.in/" target="_blank" role="link"><img
+                  src="{{ asset('assets/Nrcp_img/clients/MHFW.png') }}" alt="Ministry of Health and Family Welfare Government of India"
+                  title="Ministry of Health and Family Welfare Government of India"></a>
+            </div>
+
+            <div class="partner-item">
+               <a href="https://www.who.int/" target="_blank" role="link"><img
+                  src="{{ asset('assets/Nrcp_img/clients/who.png') }}" alt="World Health Organization"
+                  title="World Health Organization"></a>
+            </div>
+
+
             <div class="partner-item">
                <a href="http://pgportal.gov.in/" target="_blank" role="link"><img
                   src="{{ asset('assets/Nrcp_img/clients/pg-portal.png') }}" alt="PORTAL FOR PUBLIC GRIEVANCES"
