@@ -19,6 +19,11 @@
 <script src="{{ asset('assets/js/contact.form.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
 
+<script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('assets/js/dataTables.buttons.min.js') }}"></script>
+<script src="{{ asset('assets/js/buttons.print.min.js') }}"></script>
+
+
 <script>
 $(document).ready(function() {
     $(".btn2").click(function() {
@@ -62,9 +67,7 @@ $(document).ready(function() {
         }
     });
 });
-</script>
 
-<script>
     function printDiv() {
         var divContents = document.getElementById("tabContent").innerHTML;
         var a = window.open('', '', 'height=600, width=600');
@@ -75,6 +78,16 @@ $(document).ready(function() {
         a.document.close();
         a.print();
     }
+
+
+    $(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'print'
+        ]
+    } );
+} );
 
 </script>
 

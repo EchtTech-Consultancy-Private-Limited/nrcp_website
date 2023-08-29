@@ -170,7 +170,7 @@
    </div>
 </div>
 <!-- Banner Section End -->
-<div class="wrapper" id="skipCont"></div>
+
 <!-- latest news section start   -->
 <section class="latest-news">
    <div class="container">
@@ -874,6 +874,8 @@
          </div>
       </div>
    </div>
+
+</div>
    <!-- Faq Section Start -->
    {{-- 
    <div class="rs-faq-part style1 pt-40 pb-80">
