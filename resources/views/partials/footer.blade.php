@@ -87,14 +87,14 @@
 
                             <div class="desc">
                                 <i class="fa fa-mobile" aria-hidden="true"></i>
-                                <a href="tel:+91-11-23971272">Telephone: 011-23930178</a>
+                                <a href="tel:+91-11-23971272"> 011-23930178</a>
                             </div>
                         </li>
                         <li>
 
                             <div class="desc">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:dirnicd@nic.in">Email id nrcp.ncdc@gmail.com</a>
+                                <a href="mailto:dirnicd@nic.in">nrcp[dot]ncdc[at]gmail[dot]com</a>
                             </div>
                         </li>
 

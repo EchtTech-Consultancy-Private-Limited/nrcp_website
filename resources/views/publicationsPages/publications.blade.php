@@ -1,4 +1,5 @@
 @extends('layouts.main')
+
 @section('title')
 {{__('Publications')}}
 @endsection
@@ -56,7 +57,7 @@
                         <div class="tab-content" id="tabContent">
                             <div class="tab-pane fade show active" id="technical-document" role="tabpanel" aria-labelledby="technical-document-tab">
                            
-                            <div class="table">
+                            <div class="table" id="example">
                                 <table>
                                     <tr>
                                     <h2 class="title">Technical Document and Guideline</h2>
@@ -137,6 +138,12 @@
                                     </tr>
                                 </table>
                             </div>
+
+
+
+
+
+
                              </div>
                             <div class="tab-pane fade" id="research-papers" role="tabpanel" aria-labelledby="research-papers-tab">
                               <div class="table">

@@ -5,7 +5,7 @@
                   <span class="timezone">{{ date('d F Y') }} &nbsp;  {{ date('H:i:s')}}  &nbsp;  {{ date('T')}} </span>
                </li>
                <li>
-                  <a href="#skipCont"> Skip to Main Content</a> |
+                  <a href="javascript:void()" onclick="slipttobottom()"> Skip to Main Content</a> |
                   <a href="{{ url('screen-reader-access') }}"> Screen Reader Access</a>
                </li>
             </ul>
