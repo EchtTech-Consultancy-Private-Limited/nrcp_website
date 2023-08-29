@@ -107,7 +107,7 @@
                                                     @foreach ($menuName->children as $suMenu)
                                                         @if (@isset($suMenu->children))
                                                             <li class="menu-item-has-children">
-                                                                <a @if ($suMenu->tab_type == 1) target="_blank"  href="{{ url($suMenu->url) }}"    @else  href="{{ url($suMenu->url) }}" @endif
+                                                                <a @if ($suMenu->tab_type == 1) target="_blank"  href="{{ url($suMenu->url) }}" @else  href="{{ url($suMenu->url) }}" @endif
                                                                     class="main-anchor">{{ $suMenu->name_en  }}</a>
                                                                 <ul class="sub-menu">
 
