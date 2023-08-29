@@ -19222,15 +19222,16 @@ span.number-visitor {
 }
 
 .img-part.banner-image {
-  min-height: 466px;
+  min-height: 450px;
   height: 100%;
 }
 
 .img-part.banner-image img {
   height: 100%;
   width: 100%;
-  height: 500px;
+  height: 450px;
   object-fit: cover;
+  /* zoom: 150%; */
 }
 
 li.menu-item-has-children ul.sub-menu li{
