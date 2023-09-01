@@ -860,6 +860,7 @@
                      <div id="customPause4"><i class="fa fa-pause" aria-hidden="true"></i></div>
                      <div id="customPlay4" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
                      </div>
+                     <div id="customNextBtn4"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                   </div>
                </div>
             </div>
@@ -1003,7 +1004,7 @@
             </div>
             <div class="partner-item">
                <a href="https://notto.gov.in/" target="_blank" role="link">
-               <img src="{{ asset('assets/Nrcp_img/clients/logo-(1)_0_0.png') }}" alt="NOTTO"
+               <img src="{{ asset('assets/Nrcp_img/clients/logo-(1F)_0_0.png') }}" alt="NOTTO"
                   title="NOTTO">
                </a>
             </div>
