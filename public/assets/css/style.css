@@ -2248,7 +2248,7 @@ ul.listing-style.modify li:before {
 }
 
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a {
-  transition: all 0.3s ease;
+  transition:none;
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
@@ -2274,17 +2274,18 @@ ul.listing-style.modify li:before {
   font-family: 'FontAwesome';
   position: absolute;
   left: auto;
-  right: -4px;
-  top: 52%;
+  right: 5px;
+  top: 50%;
   text-align: center;
   display: block;
   cursor: pointer;
   transform: translateY(-50%);
-  transition: all .5s ease;
+  transition:none;
 }
 
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li.menu-item-has-children a:hover:before {
   content: "-";
+ 
 }
 
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li:last-child {
@@ -2377,7 +2378,7 @@ ul.listing-style.modify li:before {
   padding: 10px 30px;
   color: #ffffff;
   text-transform: capitalize;
-  transition: all 0.3s ease;
+  transition: none;
 }
 
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.mega-menu .mega-menu-container .single-megamenu:hover .sub-menu .menu-title {
@@ -19243,6 +19244,10 @@ li.menu-item-has-children ul.sub-menu li a{
   border-bottom: 1px solid #92271d !important;
 }
 
+li.menu-item-has-children ul.sub-menu li:nth-last-child(2) a, li.menu-item-has-children ul.sub-menu li:last-child a {
+  border-bottom: 0px solid white !important;
+}
+
 li.menu-item-has-children ul.sub-menu .sub-menu-close{
   display: none;
 }
@@ -19953,3 +19958,8 @@ a.sitemap-cl i.fa {
 div#banner1 .owl-nav {
   display: none;
 }
+
+.full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li > a:hover + ul.sub-menu{
+margin-top: 12px !important;
+}
+
