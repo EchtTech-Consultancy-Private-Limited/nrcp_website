@@ -264,10 +264,15 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-        margin-right: 4px !important;
-        margin-left: 12.5px;
+        margin-right: 18px !important;
+        margin-left: 18px;
     }
 }
+
+/* .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
+    margin-right: 10px !important;
+    margin-left: 15px;
+} */
 
 @media only screen and (max-width: 1366px) {
     .container {
