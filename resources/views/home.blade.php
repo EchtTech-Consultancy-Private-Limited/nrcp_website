@@ -8,6 +8,7 @@
 @section('breadcrumbs')
     {{ __('Home') }}
 @endsection
+
 @section('content')
     <?php //dd($menu)
     ?>
@@ -45,7 +46,7 @@
                                         </div>
                                         <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
                                             data-wow-duration="2000ms">
-                                            <a class="readon green-banner" href="{{ route('about-us') }}">Read More <i
+                                            <a class="readon green-banner" href="">Read More <i
                                                     class="fa fa-angle-right pl-2"></i></a>
                                         </div>
                                     </div>
@@ -205,16 +206,16 @@
 
 
                                 @if (Count($news) > 0)
-                                    @foreach ($news as $item)
+                                    @foreach ($news->take(3) as $item)
                                         <div class="slider-content">
                                             <div class="container-fluid px-0">
                                                 <div class="d-flex align-items-center latest-news-slider-content-text">
                                                     <p>
                                                         @if (Session::get('Lang') == 'hi')
-                                                            {{ $item->description_hi  }}
+                                                          {!! $item->description_hi  !!}
                                                         @else
-                                                            {{ $item->description_en   }}
-                                                        @endif
+                                                            {!!  $item->description_en   !!}
+                                                        @endif &nbsp;
                                                         {{ date('d F Y', strtotime($item->start_date)) }}
                                                     </p>
                                                 </div>
@@ -373,7 +374,7 @@
                                         </div>
                                         <div class="btn-part wow fadeInUp" data-wow-delay="400ms"
                                             data-wow-duration="2000ms">
-                                            <a class="readon2" href="{{ route('about-us') }}">Read More <i
+                                            <a class="readon2" href="">Read More <i
                                                     class="fa fa-angle-right pl-2"></i></a>
                                         </div>
                                     </div>
@@ -613,9 +614,9 @@
                                                 <div class="date">{{ date('d F', strtotime($item->start_date)) }}</div>
                                                 <div class='desc'>
                                                     @if (Session::get('Lang') == 'hi')
-                                                        {{ $item->description_hi  }}
-                                                    @else
-                                                        {{ $item->description_en }}
+                                                    {!! $item->description_hi  !!}
+                                                     @else
+                                                      {!!  $item->description_en   !!}
                                                     @endif
                                                 </div>
                                             </li>

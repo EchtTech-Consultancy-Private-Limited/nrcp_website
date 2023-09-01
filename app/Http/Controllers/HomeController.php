@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\feedback;
+use App\Models\contactUs;
 use App, Route, DB;
 
 class HomeController extends Controller
@@ -25,9 +27,6 @@ class HomeController extends Controller
     }public function comingSoon()
     {
         return view('coming-soon'); 
-    }public function contactUs()
-    {
-        return view('contact-us'); 
     }
     
     public function humanHealth()
@@ -76,7 +75,93 @@ class HomeController extends Controller
         return view('site-map');
     }
 
-    public function feedback_form(){
+
+    public function feedbackForm(Request $request){
+        
         return view('feedback');
     }
+    public function feedbackStore(Request $request){
+        
+        $validated = $request->validate([
+            'name' => 'required',
+            'email' => ['required','string','email','max:50','regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix'],
+            'designation' => 'required',
+            'phone' => 'required',
+            'organization' => 'required',
+            'address' => 'required',
+            'message' => 'required',
+        ]);
+
+        $data=new feedback; 
+        $data->name=$request->name;
+        $data->email=$request->email;
+        $data->designation=$request->designation;
+        $data->phone=$request->phone;
+        $data->organization=$request->organization;
+        $data->address=$request->address;
+        $data->message=$request->message;
+        $data->save();      
+        return back()->with('success', 'Record Add Successfully');
+    }
+    public function contactForm(){
+        return view('contact-us'); 
+    }
+
+    public function contactStroe(Request $request){
+
+        $validated = $request->validate([
+            'name' => 'required',
+            'email' => ['required','string','email','max:50','regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix'],
+            'subject' => 'required',
+            'phone' => 'required',
+            'message' => 'required',
+        ]);
+
+        $data=new contactUs; 
+        $data->name=$request->name;
+        $data->email=$request->email;
+        $data->subject=$request->subject;
+        $data->phone=$request->phone;
+        $data->message=$request->message;
+        $data->save();
+        return back()->with('success', 'Record Add Successfully');
+    } 
+
+
+    public function commonPagesContent($slug){
+       
+        $menus = DB::table('website_menu_management')->whereurl($slug)->first();
+        $metacontent = DB::table('dynamic_content_page_metatag')->where('menu_uid',$menus->uid)->get();
+
+          //dd($metacontent);
+       $data1 = [];
+       $datas1 = [];
+        foreach($metacontent as $metacontents){
+            $newData = new \stdclass;
+            $newData->pageTitle = $metacontents;
+                $content_page= DB::table('dynamic_page_content')->where('dcpm_id',$metacontents->uid)->get();
+                if($content_page){
+                    $newData->content_page = $content_page;
+                }
+
+               $content_pdf= DB::table('dynamic_content_page_pdf')->where('dcpm_id',$metacontents->uid)->get();
+                if($content_pdf){
+                    $newData->content_pdf = $content_pdf;
+                }
+                $content_gallery= DB::table('dynamic_content_page_gallery')->where('dcpm_id',$metacontents->uid)->get();
+                if($content_gallery){
+                    $newData->content_gallery = $content_gallery;
+                }
+           $datas1[] = $newData;
+        }
+        $objectpass = new \stdclass;
+        $objectpass->pageContent = $datas1;
+           //dd($objectpass->pageContent[0]->content_page);
+        
+        return view('master_layout',['objectpass'=>$objectpass]); 
+
+     }
+
+
+
 }

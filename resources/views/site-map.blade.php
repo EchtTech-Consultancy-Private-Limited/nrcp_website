@@ -69,28 +69,29 @@
                                             @if (@isset($menuName->children))
                                                 <li class="menu-item-has-children pb-0">
                                                     <a href="{{ url('nrcp/' . $menuName->url) }}"
-                                                        class="main-anchor">{{ $menuName->name }}</a>
+                                                        class="main-anchor">{{ $menuName->name_en }}</a>
     
                                                     <ul class="unorder-list pt-10">
                                                         @foreach ($menuName->children as $suMenu)
                                                             @if (@isset($suMenu->children))
                                                                 <li class="menu-item-has-children pb-0">
-                                                                    <a @if ($suMenu->tab_type == 1) target="_blank"  href="{{ url($suMenu->url) }}"    @else  href="{{ url($suMenu->url) }}" @endif
-                                                                        class="main-anchor">{{ $suMenu->name }}</a>
+                                                                    <a @if ($suMenu->tab_type == 1) target="_blank"  href="{{ url($suMenu->url ??'') }}"    @else  href="{{ url($suMenu->url ??'') }}" @endif
+                                                                        class="main-anchor">{{ $suMenu->name_en }}</a>
                                                                     <ul class="unorder-list pt-0">
     
                                                                         @foreach ($suMenu->children as $childMenu)
                                                                             @if (@isset($childMenu->children))
                                                                                 <li class="menu-item-has-children">
-                                                                                    <a @if ($childMenu->tab_type == 1) target="_blank"  href="{{ url($childMenu->url) }}"    @else  href="{{ url($childMenu->url) }}" @endif
-                                                                                        class="main-anchor">{{ $childMenu->name }}</a>
+                                                                                    <a @if ($childMenu->tab_type == 1) target="_blank"  href="{{ url($childMenu->url ??'') }}"    @else  href="{{ url($childMenu->url ??'') }}" @endif
+                                                                                     
+                                                                                        class="main-anchor">{{ $childMenu->name_en }}</a>
     
                                                                                     <ul class="unorder-list pt-0">
     
                                                                                         @foreach ($childMenu->children as $subchildMenu)
                                                                                             <li>
                                                                                                 <a
-                                                                                                    @if ($subchildMenu->tab_type == 1) target="_blank"  href="{{ url($subchildMenu->url) }}"    @else  href="{{ url($subchildMenu->url) }}" @endif>{{ $subchildMenu->name }}</a>
+                                                                                                    @if ($subchildMenu->tab_type == 1) target="_blank"  href="{{ url($subchildMenu->url ??'') }}"    @else  href="{{ url($subchildMenu->url  ??'') }}" @endif>{{ $subchildMenu->name_en }}</a>
                                                                                             </li>
                                                                                         @endforeach
                                                                                     </ul>
@@ -98,7 +99,7 @@
                                                                             @else
                                                                                 <li>
                                                                                     <a
-                                                                                        @if ($childMenu->tab_type == 1) target="_blank"  href="{{ url($childMenu->url) }}"    @else  href="{{ url($childMenu->url) }}" @endif>{{ $childMenu->name }}</a>
+                                                                                        @if ($childMenu->tab_type == 1) target="_blank"  href="{{ url($childMenu->url ??'') }}"    @else  href="{{ url($childMenu->url ??'') }}" @endif>{{ $childMenu->name_en }}</a>
                                                                                 </li>
                                                                             @endif
                                                                         @endforeach
@@ -107,7 +108,7 @@
                                                             @else
                                                                 <li>
                                                                     <a
-                                                                        @if ($suMenu->tab_type == 1) target="_blank"  href="{{ url($suMenu->url) }}"    @else  href="{{ url($suMenu->url) }}" @endif>{{ $suMenu->name }}</a>
+                                                                        @if ($suMenu->tab_type == 1) target="_blank"  href="{{ url($suMenu->url ??'') }}"    @else  href="{{ url($suMenu->url ??'') }}" @endif>{{ $suMenu->name_en }}</a>
                                                                 </li>
                                                             @endif
                                                         @endforeach
@@ -116,7 +117,7 @@
                                             @else
                                                 <li class="">
                                                     <a
-                                                        @if ($menuName->tab_type == 1) target="_blank"  href="{{ url($menuName->url) }}"    @else  href="{{ url($menuName->url) }}" @endif>{{ $menuName->name }}</a>
+                                                        @if ($menuName->tab_type == 1) target="_blank"  href="{{ url($menuName->url ??'') }}"    @else  href="{{ url($menuName->url ??'') }}" @endif>{{ $menuName->name_en }}</a>
                                                 </li>
                                             @endif
                                         @endforeach
