@@ -32,11 +32,9 @@
                 <div class="content-part">
                     <h5 class="info-subtitle">Address</h5>
                     <h4 class="info-title">  Center for One Health                      
-                        National Centre for Disease Control,
-                        Directorate General of Health Services
-                        Ministry of Health and Family Welfare,
-                        Goverment Of India,
-                        22 Sham Nath Marg, Delhi - 110054
+                        National Centre for Disease Control, Directorate General of Health Services,
+                                Ministry of Health and Family Welfare, Government of India,
+                                22 – Sham Nath Marg, Delhi - 110054
                         </h4>
                 </div>
             </div>
@@ -48,7 +46,7 @@
                 </div>
                 <div class="content-part">
                     <h5 class="info-subtitle">Email Address</h5>
-                    <h4 class="info-title"><a href="mailto:nrcp.ncdc@gmail.com">nrcp.ncdc@gmail.com</a></h4>
+                    <h4 class="info-title"><a href="mailto:nrcp.ncdc@gmail.com">nrcp[dot]ncdc[at]gmail[dot]com</a></h4>
                 </div>
             </div>
         </div>

@@ -1630,7 +1630,7 @@ ul.listing-style.modify li:before {
 }
 
 .sec-title3 .title {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 30px;
   font-weight: 800;
   color: #031a3d;
@@ -2665,7 +2665,7 @@ ul.listing-style.modify li:before {
 }
 
 .full-width-header .rs-header .menu-area.sticky .main-menu .rs-menu ul.nav-menu>li>a {
-  height: 50px;
+  height: auto;
   line-height: 50px;
   color: #494949;
 }
@@ -2933,6 +2933,7 @@ ul.listing-style.modify li:before {
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {
   color: #333333;
   font-weight: 500;
+  padding: 19px 18px 19px 17.5px;
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a:hover {
@@ -2954,7 +2955,7 @@ ul.listing-style.modify li:before {
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.sub-menu li a {
   color: #000 !important;
-  font: 12px/18px Poppins !important;
+  font: 14px/18px Poppins !important;
     font-weight: 500 !important;
 }
 
@@ -17406,7 +17407,7 @@ color: #171717;
 }
 
 .rs-footer.home9-style .footer-top {
-  padding:40px 0 30px;
+  padding:15px 0 10px;
 }
 
 .rs-footer.home9-style .footer-top .widget-title {
@@ -17433,7 +17434,7 @@ color: #171717;
 .rs-footer.home9-style .footer-top .site-map li {
   padding-left: 15px;
   position: relative;
-  margin-bottom: 11px;
+  margin-bottom: 5px;
   font:normal normal normal 13px/20px Poppins;
 }
 
@@ -18879,10 +18880,10 @@ h2.title.black-color.logo-text {
 }
 
 .full-width-header .rs-header .logo-part.mobile-logo-s img{
-  height: 78px !important;
+  height: 90px !important;
   padding-left: 10px;
   padding-right: 0px !important;
-  margin-top: 14px;
+  margin-top: 8px;
 }
 
 .top-menu-box {
@@ -19499,8 +19500,8 @@ body {
 .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{color:#fff !important}
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li.current-menu-item>a{border:1px solid #ffffff}
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a:hover{color:#e1e1e2 !important}
-.full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a{height: 50px;}
-.full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{    font: normal normal 13px/52px Poppins;}
+.full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a{height: auto;}
+.full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{font: normal normal 16px/24px Poppins;}
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.sub-menu li a:hover {
   color: #92271d !important;
@@ -19926,4 +19927,29 @@ a.sitemap-cl i.fa {
   .star {
     font-size: 13px;
     margin-top: 25px !important;
+}
+
+/* Nav Hover */
+
+.full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li > a:hover {
+  line-height: 0px;
+  background: #92271d !important;
+  color: #fff !important;
+  border-radius: 40px;
+  height: 0;
+  /* border: 1px solid #fff; */
+}
+
+.full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu ul.sub-menu li a:hover {
+  line-height: 0px;
+  background: transparent !important;
+  color: #000 !important;
+  border-radius: 0px;
+  height: 0;
+  /* border: 0px solid #fff;` */
+}
+
+
+div#banner1 .owl-nav {
+  display: none;
 }
