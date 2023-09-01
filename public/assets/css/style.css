@@ -2934,7 +2934,8 @@ ul.listing-style.modify li:before {
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {
   color: #333333;
   font-weight: 500;
-  padding: 19px 18px 19px 17.5px;
+  padding: 2px 18px 2px 17.2px;
+  margin-top: 8px;
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a:hover {
@@ -19506,7 +19507,7 @@ body {
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li.current-menu-item>a{border:1px solid #ffffff}
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a:hover{color:#e1e1e2 !important}
 .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a{height: auto;}
-.full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{font: normal normal 16px/24px Poppins;}
+.full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{font: normal normal 16px/40px Poppins;}
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.sub-menu li a:hover {
   color: #92271d !important;
@@ -19936,12 +19937,12 @@ a.sitemap-cl i.fa {
 
 /* Nav Hover */
 
-.full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li > a:hover {
-  line-height: 0px;
+.full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li > a:hover{
+  /* line-height: 0px; */
   background: #92271d !important;
   color: #fff !important;
   border-radius: 40px;
-  height: 0;
+  height: auto;
   /* border: 1px solid #fff; */
 }
 
@@ -19950,16 +19951,19 @@ a.sitemap-cl i.fa {
   background: transparent !important;
   color: #000 !important;
   border-radius: 0px;
-  height: 0;
+  height: auto;
   /* border: 0px solid #fff;` */
 }
 
+ul.nav-menu > li {
+  height: 60px;
+}
 
 div#banner1 .owl-nav {
   display: none;
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li > a:hover + ul.sub-menu{
-margin-top: 12px !important;
+margin-top: 0px !important;
 }
 
