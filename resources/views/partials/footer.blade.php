@@ -77,13 +77,13 @@
 
                             <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i> 
                                 <b> Center for One Health </b><br>                           
-                                National Centre for Disease Control,
-                                Directorate General of Health Services
-                                Ministry of Health and Family Welfare,
-                                Goverment Of India, <br>
-                                22 Sham Nath Marg, Delhi - 110054
+                                National Centre for Disease Control, Directorate General of Health Services,
+                                Ministry of Health and Family Welfare, Government of India, <br>
+                                22 – Sham Nath Marg, Delhi - 110054
                             </div>
                         </li>
+
+
                         <li>
 
                             <div class="desc">
@@ -95,7 +95,7 @@
 
                             <div class="desc">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:dirnicd@nic.in">nohppcz[dot]ncdc[at]gmail[dot]com</a>
+                                <a href="mailto:dirnicd@nic.in">nrcp[dot]ncdc[at]gmail[dot]com</a>
                             </div>
                         </li>
 
