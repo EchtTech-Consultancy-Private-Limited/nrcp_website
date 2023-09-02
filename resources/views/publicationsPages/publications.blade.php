@@ -1,4 +1,5 @@
 @extends('layouts.main')
+
 @section('title')
 {{__('Publications')}}
 @endsection
@@ -55,17 +56,17 @@
                   
                         <div class="tab-content" id="tabContent">
                             <div class="tab-pane fade show active" id="technical-document" role="tabpanel" aria-labelledby="technical-document-tab">
-                           
-                            <div class="table">
-                                <table>
-                                    <tr>
-                                    <h2 class="title">Technical Document and Guideline</h2>
-                                    </tr>
+                                <h2 class="title">Technical Document and Guideline</h2>
+                            <div>
+                                <table id="example">
+                                  <thead>
                                     <tr>
                                         <th>Title</th>
                                         <th>Date</th>
                                         <th>View/Download</th>
                                     </tr>
+                                  </thead>
+                                  <tbody>
                                     <tr>
                                        <td>Case Definition for Rabies</td>
                                        <td>03/05/2008</td>
@@ -83,30 +84,22 @@
                                   
 
                                     <tr>
-                                    <td>	National Guidelines for Rabies Prophylaxis, 2019 </td>
-                                       <td>03/05/2008</td>
-                                       <td>
-                                         <div class="download ">
-                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
-                                        </div>
-
-
-                                        
-                                        
-                                       </td>
+                                        <td>National Guidelines for Rabies Prophylaxis, 2019 </td>
+                                        <td>03/05/2008</td>
+                                        <td>
+                                            <div class="download ">
+                                                <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                            </div>                                        
+                                        </td>
                                     </tr>
 
                                     <tr>
-                                    <td>	National Action Plan for Dog Mediated Rabies Elimination by 2030 </td>
+                                      <td>	National Action Plan for Dog Mediated Rabies Elimination by 2030 </td>
                                        <td>03/05/2008</td>
                                        <td>
                                          <div class="download ">
                                             <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
-                                        </div>
-
-
-                                        
-                                        
+                                        </div>                                       
                                        </td>
                                     </tr>
 
@@ -135,8 +128,16 @@
 
                                        </td>
                                     </tr>
+                                    
+                                  </tbody>
                                 </table>
                             </div>
+
+
+
+
+
+
                              </div>
                             <div class="tab-pane fade" id="research-papers" role="tabpanel" aria-labelledby="research-papers-tab">
                               <div class="table">

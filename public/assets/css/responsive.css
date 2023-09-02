@@ -20,7 +20,19 @@
 
 
 
-@media only screen and (min-width: 2000px) {
+
+@media only screen and (min-width: 2300px) {
+    .main-content, .container-fluid, footer#rs-footer {
+        max-width: 1900px !important;
+        width: 100%;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 2000px) and (max-width: 2299px) {
     .main-content, .container-fluid, footer#rs-footer {
         max-width: 1400px !important;
         width: 100%;
@@ -252,10 +264,15 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-        margin-right: 12px !important;
-        margin-left: 20px;
+        margin-right: 18px !important;
+        margin-left: 18px;
     }
 }
+
+/* .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
+    margin-right: 10px !important;
+    margin-left: 15px;
+} */
 
 @media only screen and (max-width: 1366px) {
     .container {
@@ -1179,7 +1196,28 @@
     .rs-blog.style2 .blog-item .blog-content {
         padding: 17px 26px 26px;
     }
-    .rs-testimonial.home1-style .testi-item .author-desc .desc {
+
+    .full-width-header.home1-modifiy .rs-header .topbar-area .topbar-contact li{font-size: 11px;}
+.col-md-6.text-lg-right.pl-0 {
+    text-align: left !important;
+}
+
+h2.title.black-color.logo-text {
+    font: normal normal bold 15px/22px Tahoma;
+}
+
+h5.sub-text-l {
+    text-align: left;
+    font: normal normal normal 14px/27px Tahoma;
+}
+
+
+h6.sub-text-b-l {
+    text-align: left;
+    font: normal normal normal 10px/16px Tahoma;
+}
+
+.rs-testimonial.home1-style .testi-item .author-desc .desc {
         padding: 80px 30px 30px;
         font-size: 23px;
     }
@@ -2387,6 +2425,15 @@
         width: 100%;
         flex: 100%;
     }
+
+    .top-header-logo{
+        display: none;
+    }
+
+    section.latest-news .latest-news-text p{
+        font-size: 16px;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {

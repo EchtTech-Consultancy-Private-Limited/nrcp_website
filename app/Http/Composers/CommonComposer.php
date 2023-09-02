@@ -36,8 +36,9 @@ class CommonComposer
         $footerMenu = DB::table('website_menu_management')->where('menu_place','1')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
        
         $pageSlug = DB::table('website_menu_management')->where('url',request()->path())->first();
+        if(!empty($pageSlug->uid)){
         $pageSlug1 = DB::table('website_menu_management')->where('uid',$pageSlug->parent_id)->first();
-        
+        }
          if(!empty($pageSlug1->uid)){
           $commonsideMenu = DB::table('website_menu_management')->where('parent_id',$pageSlug1->uid)->get();
          }
