@@ -1,180 +1,179 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-   <head>
-      @include('partials.head-css-scripts')
-   </head>
-   <body class="defult-home">
-      <div id="loader" class="loader green-color">
-         <div class="loader-container">
-            <div class='loader-icon'>
-               <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="">
-            </div>
-         </div>
-      </div>
-      <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
-         <header id="rs-header" class="rs-header">
-                  <div class="topbar-area home11-topbar">
-                     <div class="container">
-                           @include('partials.top-header')
-                     </div>
-                  </div>
-                  <div class="menu-area menu-sticky">
-                     <div class="container">
-                           @include('partials.menu-header')
-                     </div>
-                  </div>
-         </header>
-      </div>
-      <div class="main-content">
+@extends('layouts.main')
+@section('title')
+{{ __('National Rabies Control Programme (NRCP)') }}
+@endsection
+@section('pageTitle')
+{{ __('Home') }}
+@endsection
+@section('breadcrumbs')
+{{ __('Home') }}
+@endsection
+@section('content')
         <!-- Slider Section Start -->
         <div class="rs-slider style1">
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0" data-autoplay="true"
-               data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false"
-               data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
-               data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
-               data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
-               data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false"
-               id="banner1">
-               <div class="slider-content">
-                  <div class="container-fluid px-0">
-                     <div class="row banner-mobile">
-                        <div class="col-lg-12 order-last p-0">
-                           <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}"
-                                 alt="">
-                           </div>
+                data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false"
+                data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
+                data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
+                data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
+                data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false"
+                id="banner1">
+                <div class="slider-content">
+                    <div class="container-fluid px-0">
+                        <div class="row banner-mobile">
+                            <div class="col-lg-6 order-last p-0">
+                                <div class="img-part banner-image">
+                                    <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pr-0 banner-mobile">
+                                <div class="banner-content alignment-center">
+                                    <div>
+                                        <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                                            data-wow-duration="3000ms">
+                                            National Rabies Control Program
+                                        </h1>
+                                        <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                                            data-wow-duration="2000ms">is a public health initiative in India that aims to
+                                            prevent and control the spread of rabies,
+                                            a deadly viral disease that is transmitted to humans through the bite of an
+                                            infected animal.
+                                        </div>
+                                        <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                                            data-wow-duration="2000ms">
+                                            <a class="readon green-banner" href="#">Read More <i
+                                                    class="fa fa-angle-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        {{-- <div class="col-lg-6 pr-0 banner-mobile">
-                           <div class="banner-content alignment-center">
-                              <div>
-                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="3000ms">
-                                    National Rabies Control Program
-                                 </h1>
-                                 <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="2000ms">is a public health initiative in India that aims to
-                                    prevent and control the spread of rabies,
-                                    a deadly viral disease that is transmitted to humans through the bite of an
-                                    infected animal.
-                                 </div>
-                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                                    data-wow-duration="2000ms">
-                                    <a class="readon green-banner" href="{{ route('about-us') }}">Read More <i
-                                       class="fa fa-angle-right pl-2"></i></a>
-                                 </div>
-                              </div>
+                    </div>
+                </div>
+                <div class="slider-content">
+                    <div class="container-fluid px-0">
+                        <div class="row banner-mobile">
+                            <div class="col-lg-6 order-last p-0">
+                                <div class="img-part banner-image">
+                                    <img class="" src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pr-0">
+                                <div class="banner-content alignment-center">
+                                    <div class="">
+                                        <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                                            data-wow-duration="3000ms">
+                                            Publications
+                                        </h1>
+                                        {{-- 
+                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="2000ms">is a public health initiative in India that aims to
+                              prevent and control the spread of rabies,
+                              a deadly viral disease that is transmitted to humans through the bite of an
+                              infected animal.
                            </div>
-                        </div> --}}
-                     </div>
-                  </div>
-               </div>
-               <div class="slider-content">
-                  <div class="container-fluid px-0">
-                     <div class="row banner-mobile">
-                        <div class="col-lg-12 order-last p-0">
-                           <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}"
-                                 alt="">
-                           </div>
+                           --}}
+                                        <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                                            data-wow-duration="2000ms">
+                                            <a class="readon green-banner"
+                                                href="https://ncdc.gov.in/WriteReadData/linkimages/GuidelinesforRabiesProphylaxis.pdf"
+                                                target="_blank">Read More <i class="fa fa-angle-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        {{-- <div class="col-lg-6 pr-0">
-                           <div class="banner-content alignment-center">
-                              <div class="">
-                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="3000ms">
-                                    Publications
-                                 </h1>
-                                 
-                                 <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="2000ms">is a public health initiative in India that aims to
-                                    prevent and control the spread of rabies,
-                                    a deadly viral disease that is transmitted to humans through the bite of an
-                                    infected animal.
-                                 </div>
-                              
-                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                                    data-wow-duration="2000ms">
-                                    <a class="readon green-banner"
-                                       href="https://ncdc.gov.in/WriteReadData/linkimages/GuidelinesforRabiesProphylaxis.pdf"
-                                       target="_blank">Read More <i class="fa fa-angle-right pl-2"></i></a>
-                                 </div>
-                              </div>
+                    </div>
+                </div>
+                <div class="slider-content">
+                    <div class="container-fluid px-0">
+                        <div class="row banner-mobile">
+                            <div class="col-lg-6 order-last p-0">
+                                <div class="img-part banner-image">
+                                    <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pr-0">
+                                <div class="banner-content alignment-center">
+                                    <div class="">
+                                        <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                                            data-wow-duration="3000ms">
+                                            Events
+                                        </h1>
+                                        {{-- 
+                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="2000ms">is a public health initiative in India that aims to
+                              prevent and control the spread of rabies,
+                              a deadly viral disease that is transmitted to humans through the bite of an
+                              infected animal.
                            </div>
-                        </div> --}}
-                     </div>
-                  </div>
-               </div>
-               <div class="slider-content">
-                  <div class="container-fluid px-0">
-                     <div class="row banner-mobile">
-                        <div class="col-lg-12 order-last p-0">
-                           <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}"
-                                 alt="">
-                           </div>
+                           --}}
+
+                                        <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                                            data-wow-duration="2000ms">
+
+                                            {{-- href="{{ route('event') }}"   --}}
+
+                                            <a class="readon green-banner">Read More <i
+                                                    class="fa fa-angle-right pl-2"></i></a>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        {{-- <div class="col-lg-6 pr-0">
-                           <div class="banner-content alignment-center">
-                              <div class="">
-                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="3000ms">
-                                    Events
-                                 </h1>
-                              
-                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                                    data-wow-duration="2000ms">
-                                    <a class="readon green-banner">Read More <i
-                                       class="fa fa-angle-right pl-2"></i></a>
-                                 </div>
-                              </div>
+                    </div>
+                </div>
+
+
+
+                <div class="slider-content">
+                    <div class="container-fluid px-0">
+                        <div class="row banner-mobile">
+                            <div class="col-lg-6 order-last p-0">
+                                <div class="img-part banner-image">
+                                    <img class="" src="{{ asset('assets/Nrcp_img/event/event5.jpg') }}"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pr-0">
+                                <div class="banner-content alignment-center">
+                                    <div class="">
+                                        <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                                            data-wow-duration="3000ms">
+                                            Upcoming Activities
+                                        </h1>
+                                        {{-- 
+                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                              data-wow-duration="2000ms">is a public health initiative in India that aims to
+                              prevent and control the spread of rabies,
+                              a deadly viral disease that is transmitted to humans through the bite of an
+                              infected animal.
                            </div>
-                        </div> --}}
-                     </div>
-                  </div>
-               </div>
-               <div class="slider-content">
-                  <div class="container-fluid px-0">
-                     <div class="row banner-mobile">
-                        <div class="col-lg-12 order-last p-0">
-                           <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/event/event5.jpg') }}"
-                                 alt="">
-                           </div>
+                           --}}
+                                        <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                                            data-wow-duration="2000ms">
+                                            <a class="readon green-banner" href="{{ route('activitie') }}">Read More <i
+                                                    class="fa fa-angle-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        {{-- <div class="col-lg-6 pr-0">
-                           <div class="banner-content alignment-center">
-                              <div class="">
-                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="3000ms">
-                                    Upcoming Activities
-                                 </h1>
-                                 
-                                 <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="2000ms">is a public health initiative in India that aims to
-                                    prevent and control the spread of rabies,
-                                    a deadly viral disease that is transmitted to humans through the bite of an
-                                    infected animal.
-                                 </div>
-                              
-                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                                    data-wow-duration="2000ms">
-                                    <a class="readon green-banner" href="{{ route('activities') }}">Read More <i
-                                       class="fa fa-angle-right pl-2"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div> --}}
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
             <div class="btns">
-               <div class="customPreviousBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-               <div class="customPause"><i class="fa fa-pause" aria-hidden="true"></i></div>
-               <div class="customPlay "><i class="fa fa-play" aria-hidden="true"></i></div>
-               <div class="customNextBtn"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                <div class="customPreviousBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                <div class="customPause"><i class="fa fa-pause" aria-hidden="true"></i></div>
+                <div class="customPlay "><i class="fa fa-play" aria-hidden="true"></i></div>
+                <div class="customNextBtn"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
             </div>
-         </div>
+        </div>
         <!-- Banner Section End -->
 
 
@@ -209,11 +208,11 @@
                                                 <div class="d-flex align-items-center latest-news-slider-content-text">
                                                     <p>
                                                         @if (Session::get('Lang') == 'hi')
-                                                            {!! $item->description_hi  !!}
+                                                            {{ $item->description_hi  }}
                                                         @else
-                                                            {!! $item->description_en   !!}
+                                                            {{ $item->description_en   }}
                                                         @endif
-                                                         | {{  date('d F Y', strtotime($item->start_date)) }}
+                                                        {{ date('d F Y', strtotime($item->start_date)) }}
                                                     </p>
                                                 </div>
 
@@ -609,12 +608,12 @@
                                         @foreach ($news->take(3) as $item)
                                             <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
                                                 style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                                                <div class="date">{{ date('d M', strtotime($item->start_date)) }}</div>
+                                                <div class="date">{{ date('d F', strtotime($item->start_date)) }}</div>
                                                 <div class='desc'>
                                                     @if (Session::get('Lang') == 'hi')
-                                                        {!! $item->description_hi  !!}
+                                                        {{ $item->description_hi  }}
                                                     @else
-                                                        {!! $item->description_en !!}
+                                                        {{ $item->description_en }}
                                                     @endif
                                                 </div>
                                             </li>
@@ -1126,8 +1125,4 @@
    </div>
    <!-- Partner End -->
 </div>
-</div>
-         @include('partials.footer')
-         @include('partials.footer-scripts')
-   </body>
-</html>
+@endsection

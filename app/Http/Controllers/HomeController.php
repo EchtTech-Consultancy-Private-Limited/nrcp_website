@@ -71,7 +71,8 @@ class HomeController extends Controller
         return view('Screen_reader_access'); 
     }
 
-    public function site_map(){
+    public function siteMap(){
+        
         return view('site-map');
     }
 
@@ -103,7 +104,9 @@ class HomeController extends Controller
         $data->save();      
         return back()->with('success', 'Record Add Successfully');
     }
-    public function contactForm(){
+    public function contactForm($slug=''){
+
+        
         return view('contact-us'); 
     }
 
@@ -131,8 +134,17 @@ class HomeController extends Controller
     public function commonPagesContent($slug){
        
         $menus = DB::table('website_menu_management')->whereurl($slug)->first();
-        $metacontent = DB::table('dynamic_content_page_metatag')->where('menu_uid',$menus->uid)->get();
+        if(!empty($menus->uid)){
+            $metacontent = DB::table('dynamic_content_page_metatag')->where('menu_uid',$menus->uid)->get();
 
+        }else{
+            abort(404);
+        }
+        if($menus->url == $slug){
+            $breadcrumbs = $menus->name_en;
+        }else{
+            $breadcrumbs = '';
+        }
           //dd($metacontent);
        $data1 = [];
        $datas1 = [];
@@ -156,9 +168,9 @@ class HomeController extends Controller
         }
         $objectpass = new \stdclass;
         $objectpass->pageContent = $datas1;
-           //dd($objectpass->pageContent[0]->content_page);
+        //dd($objectpass);
         
-        return view('master_layout',['objectpass'=>$objectpass]); 
+        return view('master_layout',['objectpass'=>$objectpass, 'breadcrumbs'=> $breadcrumbs ]); 
 
      }
 

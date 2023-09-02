@@ -112,14 +112,13 @@
                                                         @if (@isset($suMenu->children))
                                                             <li class="menu-item-has-children">
 
-                                                                <a @if ($suMenu->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank"  href="{{ url($suMenu->url ?? '') }}"    @else  href="{{ url($suMenu->url ?? '') }}" @endif
+                                                                <a @if ($suMenu->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank"  href="{{ url($suMenu->url ?? '/') }}"    @else  href="{{ url($suMenu->url ?? '/') }}" @endif
                                                                     class="main-anchor">
                                                                     @if (Session::get('Lang') == 'hi')
                                                                       {{ $suMenu->name_hi ??''}}
                                                                     @else
                                                                       {{ $suMenu->name_en ??''}}
                                                                     @endif
-                                                                    
                                                                    </a>
                                                                 <ul class="sub-menu">
 
