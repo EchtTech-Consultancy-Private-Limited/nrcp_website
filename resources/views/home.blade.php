@@ -1,230 +1,259 @@
-@extends('layouts.main')
-@section('title')
-{{ __('National Rabies Control Programme (NRCP)') }}
-@endsection
-@section('pageTitle')
-{{ __('Home') }}
-@endsection
-@section('breadcrumbs')
-{{ __('Home') }}
-@endsection
-@section('content')
-<?php //dd($menu)
-   ?>
-<div class="main-content">
-<!-- Slider Section Start -->
-<div class="rs-slider style1">
-   <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0" data-autoplay="true"
-      data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false"
-      data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
-      data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
-      data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
-      data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false"
-      id="banner1">
-      <div class="slider-content">
-         <div class="container-fluid px-0">
-            <div class="row banner-mobile">
-               <div class="col-lg-12 order-last p-0">
-                  <div class="img-part banner-image">
-                     <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}"
-                        alt="">
-                  </div>
-               </div>
-               {{-- <div class="col-lg-6 pr-0 banner-mobile">
-                  <div class="banner-content alignment-center">
-                     <div>
-                        <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                           data-wow-duration="3000ms">
-                           National Rabies Control Program
-                        </h1>
-                        <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                           data-wow-duration="2000ms">is a public health initiative in India that aims to
-                           prevent and control the spread of rabies,
-                           a deadly viral disease that is transmitted to humans through the bite of an
-                           infected animal.
-                        </div>
-                        <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                           data-wow-duration="2000ms">
-                           <a class="readon green-banner" href="{{ route('about-us') }}">Read More <i
-                              class="fa fa-angle-right pl-2"></i></a>
-                        </div>
-                     </div>
-                  </div>
-               </div> --}}
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+   <head>
+      @include('partials.head-css-scripts')
+   </head>
+   <body class="defult-home">
+      <div id="loader" class="loader green-color">
+         <div class="loader-container">
+            <div class='loader-icon'>
+               <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="">
             </div>
          </div>
       </div>
-      <div class="slider-content">
-         <div class="container-fluid px-0">
-            <div class="row banner-mobile">
-               <div class="col-lg-12 order-last p-0">
-                  <div class="img-part banner-image">
-                     <img class="" src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}"
-                        alt="">
-                  </div>
-               </div>
-               {{-- <div class="col-lg-6 pr-0">
-                  <div class="banner-content alignment-center">
-                     <div class="">
-                        <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                           data-wow-duration="3000ms">
-                           Publications
-                        </h1>
-                        
-                        <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                           data-wow-duration="2000ms">is a public health initiative in India that aims to
-                           prevent and control the spread of rabies,
-                           a deadly viral disease that is transmitted to humans through the bite of an
-                           infected animal.
-                        </div>
-                       
-                        <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                           data-wow-duration="2000ms">
-                           <a class="readon green-banner"
-                              href="https://ncdc.gov.in/WriteReadData/linkimages/GuidelinesforRabiesProphylaxis.pdf"
-                              target="_blank">Read More <i class="fa fa-angle-right pl-2"></i></a>
-                        </div>
+      <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
+         <header id="rs-header" class="rs-header">
+                  <div class="topbar-area home11-topbar">
+                     <div class="container">
+                           @include('partials.top-header')
                      </div>
                   </div>
-               </div> --}}
-            </div>
-         </div>
+                  <div class="menu-area menu-sticky">
+                     <div class="container">
+                           @include('partials.menu-header')
+                     </div>
+                  </div>
+         </header>
       </div>
-      <div class="slider-content">
-         <div class="container-fluid px-0">
-            <div class="row banner-mobile">
-               <div class="col-lg-12 order-last p-0">
-                  <div class="img-part banner-image">
-                     <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}"
-                        alt="">
-                  </div>
-               </div>
-               {{-- <div class="col-lg-6 pr-0">
-                  <div class="banner-content alignment-center">
-                     <div class="">
-                        <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                           data-wow-duration="3000ms">
-                           Events
-                        </h1>
-                       
-                        <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                           data-wow-duration="2000ms">
-                           <a class="readon green-banner">Read More <i
-                              class="fa fa-angle-right pl-2"></i></a>
+      <div class="main-content">
+        <!-- Slider Section Start -->
+        <div class="rs-slider style1">
+            <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0" data-autoplay="true"
+               data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false"
+               data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
+               data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
+               data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
+               data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false"
+               id="banner1">
+               <div class="slider-content">
+                  <div class="container-fluid px-0">
+                     <div class="row banner-mobile">
+                        <div class="col-lg-12 order-last p-0">
+                           <div class="img-part banner-image">
+                              <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}"
+                                 alt="">
+                           </div>
                         </div>
+                        {{-- <div class="col-lg-6 pr-0 banner-mobile">
+                           <div class="banner-content alignment-center">
+                              <div>
+                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                                    data-wow-duration="3000ms">
+                                    National Rabies Control Program
+                                 </h1>
+                                 <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                                    data-wow-duration="2000ms">is a public health initiative in India that aims to
+                                    prevent and control the spread of rabies,
+                                    a deadly viral disease that is transmitted to humans through the bite of an
+                                    infected animal.
+                                 </div>
+                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                                    data-wow-duration="2000ms">
+                                    <a class="readon green-banner" href="{{ route('about-us') }}">Read More <i
+                                       class="fa fa-angle-right pl-2"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div> --}}
                      </div>
                   </div>
-               </div> --}}
-            </div>
-         </div>
-      </div>
-      <div class="slider-content">
-         <div class="container-fluid px-0">
-            <div class="row banner-mobile">
-               <div class="col-lg-12 order-last p-0">
-                  <div class="img-part banner-image">
-                     <img class="" src="{{ asset('assets/Nrcp_img/event/event5.jpg') }}"
-                        alt="">
-                  </div>
                </div>
-               {{-- <div class="col-lg-6 pr-0">
-                  <div class="banner-content alignment-center">
-                     <div class="">
-                        <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                           data-wow-duration="3000ms">
-                           Upcoming Activities
-                        </h1>
-                        
-                        <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                           data-wow-duration="2000ms">is a public health initiative in India that aims to
-                           prevent and control the spread of rabies,
-                           a deadly viral disease that is transmitted to humans through the bite of an
-                           infected animal.
+               <div class="slider-content">
+                  <div class="container-fluid px-0">
+                     <div class="row banner-mobile">
+                        <div class="col-lg-12 order-last p-0">
+                           <div class="img-part banner-image">
+                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}"
+                                 alt="">
+                           </div>
                         </div>
-                       
-                        <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                           data-wow-duration="2000ms">
-                           <a class="readon green-banner" href="{{ route('activitie') }}">Read More <i
-                              class="fa fa-angle-right pl-2"></i></a>
-                        </div>
+                        {{-- <div class="col-lg-6 pr-0">
+                           <div class="banner-content alignment-center">
+                              <div class="">
+                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                                    data-wow-duration="3000ms">
+                                    Publications
+                                 </h1>
+                                 
+                                 <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                                    data-wow-duration="2000ms">is a public health initiative in India that aims to
+                                    prevent and control the spread of rabies,
+                                    a deadly viral disease that is transmitted to humans through the bite of an
+                                    infected animal.
+                                 </div>
+                              
+                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                                    data-wow-duration="2000ms">
+                                    <a class="readon green-banner"
+                                       href="https://ncdc.gov.in/WriteReadData/linkimages/GuidelinesforRabiesProphylaxis.pdf"
+                                       target="_blank">Read More <i class="fa fa-angle-right pl-2"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div> --}}
                      </div>
                   </div>
-               </div> --}}
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="btns">
-      <div class="customPreviousBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-      <div class="customPause"><i class="fa fa-pause" aria-hidden="true"></i></div>
-      <div class="customPlay "><i class="fa fa-play" aria-hidden="true"></i></div>
-      <div class="customNextBtn"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-   </div>
-</div>
-<!-- Banner Section End -->
-
-<!-- latest news section start   -->
-<section class="latest-news">
-   <div class="container">
-      <div class="row">
-         <div class="col-lg-3 col-md-3">
-            <div class="latest-news-text">
-               <p class="m-0">Latest Notification</p>
-            </div>
-         </div>
-         <div class="col-lg-8 col-md-8">
-            <div class="rs-slider style1">
-               <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0"
-                  data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="3000"
-                  data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false"
-                  data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
-                  data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
-                  data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
-                  data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
-                  data-md-device-dots="false" id="banner2">
-                  @if (Count($news) > 0)
-                  @foreach ($news as $item)
-                  <div class="slider-content">
-                     <div class="container-fluid px-0">
-                        <div class="d-flex align-items-center latest-news-slider-content-text">
-                           <p>
-                              @if (Session::get('Lang') == 'hi')
-                              {{ $item->description_hi  }}
-                              @else
-                              {{ $item->description_en   }}
-                              @endif
-                              {{ date('d F Y', strtotime($item->start_date)) }}
-                           </p>
+               </div>
+               <div class="slider-content">
+                  <div class="container-fluid px-0">
+                     <div class="row banner-mobile">
+                        <div class="col-lg-12 order-last p-0">
+                           <div class="img-part banner-image">
+                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}"
+                                 alt="">
+                           </div>
                         </div>
+                        {{-- <div class="col-lg-6 pr-0">
+                           <div class="banner-content alignment-center">
+                              <div class="">
+                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                                    data-wow-duration="3000ms">
+                                    Events
+                                 </h1>
+                              
+                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                                    data-wow-duration="2000ms">
+                                    <a class="readon green-banner">Read More <i
+                                       class="fa fa-angle-right pl-2"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div> --}}
                      </div>
                   </div>
-                  @endforeach
-                  @endif
+               </div>
+               <div class="slider-content">
+                  <div class="container-fluid px-0">
+                     <div class="row banner-mobile">
+                        <div class="col-lg-12 order-last p-0">
+                           <div class="img-part banner-image">
+                              <img class="" src="{{ asset('assets/Nrcp_img/event/event5.jpg') }}"
+                                 alt="">
+                           </div>
+                        </div>
+                        {{-- <div class="col-lg-6 pr-0">
+                           <div class="banner-content alignment-center">
+                              <div class="">
+                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
+                                    data-wow-duration="3000ms">
+                                    Upcoming Activities
+                                 </h1>
+                                 
+                                 <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
+                                    data-wow-duration="2000ms">is a public health initiative in India that aims to
+                                    prevent and control the spread of rabies,
+                                    a deadly viral disease that is transmitted to humans through the bite of an
+                                    infected animal.
+                                 </div>
+                              
+                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
+                                    data-wow-duration="2000ms">
+                                    <a class="readon green-banner" href="{{ route('activities') }}">Read More <i
+                                       class="fa fa-angle-right pl-2"></i></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div> --}}
+                     </div>
+                  </div>
                </div>
             </div>
-         </div>
-         <div class="col-md-1 rs-slider style1">
             <div class="btns">
-               <div id="customPreviousBtn2"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-               <div id="customPause2"><i class="fa fa-pause" aria-hidden="true"></i></div>
-               <div id="customPlay2" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
-               </div>
-               <div id="customNextBtn2"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+               <div class="customPreviousBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+               <div class="customPause"><i class="fa fa-pause" aria-hidden="true"></i></div>
+               <div class="customPlay "><i class="fa fa-play" aria-hidden="true"></i></div>
+               <div class="customNextBtn"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
             </div>
          </div>
-      </div>
-   </div>
-</section>
-<!-- latest news section end  -->
-<!-- Card Section Start -->
-<!-- <div class="container">
-   <marquee style="padding:13px 0 3px;">
-       <a href="javascript:void();" style="color: red; font-weight: bold;">
-           World Rabies Day is going to be celebrated on <b>28th September 2023 </b>.</span>
-   </marquee>
-   </div> -->
-{{-- 
-<div id="rs-features" class="rs-features main-home ">
+        <!-- Banner Section End -->
+
+
+        <div class="wrapper" id="skipCont"></div>
+
+        <!-- latest news section start   -->
+
+        <section class="latest-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="latest-news-text">
+                            <p class="m-0">Latest News</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <div class="rs-slider style1">
+                            <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0"
+                                data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="3000"
+                                data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false"
+                                data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
+                                data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
+                                data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
+                                data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
+                                data-md-device-dots="false" id="banner2">
+
+
+                                @if (Count($news) > 0)
+                                    @foreach ($news as $item)
+                                        <div class="slider-content">
+                                            <div class="container-fluid px-0">
+                                                <div class="d-flex align-items-center latest-news-slider-content-text">
+                                                    <p>
+                                                        @if (Session::get('Lang') == 'hi')
+                                                            {!! $item->description_hi  !!}
+                                                        @else
+                                                            {!! $item->description_en   !!}
+                                                        @endif
+                                                         | {{  date('d F Y', strtotime($item->start_date)) }}
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endif
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-1 rs-slider style1">
+                        <div class="btns">
+                            <div id="customPreviousBtn2"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                            <div id="customPause2"><i class="fa fa-pause" aria-hidden="true"></i></div>
+                            <div id="customPlay2" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
+                            </div>
+                            <div id="customNextBtn2"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- latest news section end  -->
+
+        <!-- Card Section Start -->
+        <!-- <div class="container">
+            <marquee style="padding:13px 0 3px;">
+                <a href="javascript:void();" style="color: red; font-weight: bold;">
+                    World Rabies Day is going to be celebrated on <b>28th September 2023 </b>.</span>
+            </marquee>
+        </div> -->
+
+
+        {{-- <div id="rs-features" class="rs-features main-home ">
    <div class="container">
       <div class="row">
          <div class="col-lg-3 col-md-12 md-mb-30 ml-auto">
@@ -259,7 +288,7 @@
          </div>
       </div>
    </div>
-</div>
+
 --}}
 <!-- Card Section End -->
 {{-- 
@@ -309,286 +338,298 @@
    </div>
 </div>
 --}}
-<!-- About Section Start -->
-<div id="rs-about" class="rs-about style8 pt-60 pb-40">
-   <div class="container">
-      <div class="row">
-         <div class="col-lg-12 p-0">
-            <div class="main-content">
-               <div class="row">
-                  <div class="col-lg-9 mb-4">
-                     <div class="sec-title3 pl-10 wow fadeInUp" data-wow-delay="300ms"
-                        data-wow-duration="2000ms">
-                        <h2 class="title">About NRCP</h2>
-                        <div class="desc mb-30 about-t">
-                           Rabies is responsible for extensive morbidity and mortality in India. The
-                           disease is endemic throughout the country. With the exception of Andaman &
-                           Nicobar and Lakshadweep Islands, human cases of rabies are reported from all
-                           over the country. The cases occur throughout the year. About 96% of the
-                           mortality and morbidity is associated with dog bites. Cats, wolf, jackal,
-                           mongoose and monkeys are other important reservoirs of rabies in India. Bat
-                           rabies has not been conclusively reported from the country.
-                           To address the issue of rabies in the country, National Rabies Control Programme
-                           was approved during 12th FYP by Standing Finance Committee meeting held on
-                           03.10.2013 as Central Sector Scheme to be implemented under the Umbrella of NHM
-                           .The Programme had two components – Human and Animal Components in 12th FYP.
-                           Human Component for roll out in the all States and UTs through nodal agency
-                           NCDC with total budget of Rs 20 Crores and Animal Health Component for pilot
-                           testing in Haryana and Chennai through nodal agency Animal Welfare Board of
-                           India(AWBI)under the aegis of MoEF&CC, GOI with total budget of Rs 30 Crores for
-                           the Plan period. The Human Health Component has been rolled out in 26 States and
-                           UTs (Pilot Project for Animal Health Component by AWBI has been ended with
-                           closure of last FY of 12th FYP i.e. with effect from 31.3.2017)
+        <!-- About Section Start -->
+        <div id="rs-about" class="rs-about style8 pt-60 pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 p-0">
+                        <div class="main-content">
+
+                            <div class="row">
+                                <div class="col-lg-9 mb-4">
+                                    <div class="sec-title3 pl-10 wow fadeInUp" data-wow-delay="300ms"
+                                        data-wow-duration="2000ms">
+                                        <h2 class="title">About NRCP</h2>
+                                        <div class="desc mb-30 about-t">
+                                            Rabies is responsible for extensive morbidity and mortality in India. The
+                                            disease is endemic throughout the country. With the exception of Andaman &
+                                            Nicobar and Lakshadweep Islands, human cases of rabies are reported from all
+                                            over the country. The cases occur throughout the year. About 96% of the
+                                            mortality and morbidity is associated with dog bites. Cats, wolf, jackal,
+                                            mongoose and monkeys are other important reservoirs of rabies in India. Bat
+                                            rabies has not been conclusively reported from the country.
+                                            To address the issue of rabies in the country, National Rabies Control Programme
+                                            was approved during 12th FYP by Standing Finance Committee meeting held on
+                                            03.10.2013 as Central Sector Scheme to be implemented under the Umbrella of NHM
+                                            .The Programme had two components – Human and Animal Components in 12th FYP.
+                                            Human Component for roll out in the all States and UTs through nodal agency
+                                            NCDC with total budget of Rs 20 Crores and Animal Health Component for pilot
+                                            testing in Haryana and Chennai through nodal agency Animal Welfare Board of
+                                            India(AWBI)under the aegis of MoEF&CC, GOI with total budget of Rs 30 Crores for
+                                            the Plan period. The Human Health Component has been rolled out in 26 States and
+                                            UTs (Pilot Project for Animal Health Component by AWBI has been ended with
+                                            closure of last FY of 12th FYP i.e. with effect from 31.3.2017)
+                                        </div>
+                                        <div class="btn-part wow fadeInUp" data-wow-delay="400ms"
+                                            data-wow-duration="2000ms">
+                                            <a class="readon2" href="#">Read More <i
+                                                    class="fa fa-angle-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="pdf-image">
+                                        <a href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}" target="_blank"
+                                            title="National Action Plan">
+                                            <img src="{{ asset('assets/Nrcp_img/pdf-frtontpage.PNG') }}"
+                                                alt="National Action Plan" title="National Action Plan" />
+                                        </a>
+                                        <div class="btn-part wow fadeInUp mt-4" data-wow-delay="400ms"
+                                            data-wow-duration="2000ms">
+                                            <a class="readon2"
+                                                href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}"
+                                                target="_blank" title="National Action Plan">View PDF <i
+                                                    class="fa fa-angle-right pl-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn-part wow fadeInUp" data-wow-delay="400ms"
-                           data-wow-duration="2000ms">
-                           <a class="readon2" href="{{ route('about-us') }}">Read More <i
-                              class="fa fa-angle-right pl-2"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="pdf-image">
-                        <a href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}" target="_blank"
-                           title="National Action Plan">
-                        <img src="{{ asset('assets/Nrcp_img/pdf-frtontpage.PNG') }}"
-                           alt="National Action Plan" title="National Action Plan" />
-                        </a>
-                        <div class="btn-part wow fadeInUp mt-4" data-wow-delay="400ms"
-                           data-wow-duration="2000ms">
-                           <a class="readon2"
-                              href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}"
-                              target="_blank" title="National Action Plan">View PDF <i
-                              class="fa fa-angle-right pl-2"></i></a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
-</div>
-<!-- About Section End -->
-<!--<div id="rs-categories" class="rs-categories style1 pt-60 pb-60">
-   <div class="container">
-       <div class="row y-middle mb-30">
-           <div class="col-md-6 sm-mb-30">
-               <div class="sec-title">
-                   <h2 class="title mb-0">Media Alerts / Action Taken </h2>
-               </div>
-           </div>
-           <div class="col-md-6">
-               <div class="btn-part text-right sm-text-left">
-                   <a href="#" class="readon">View All</a>
-               </div>
-           </div>
-       </div>
-       <div class="row">
-   
-           <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
-               style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-               <a class="categories-item" href="#">
-                   <div class="content-part text-center">
-                       <div class="date-text"> 15 Feb 2023</div>
-                       <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                           Nonumy Eirmod Tempor</h4>
-                       <span class="courses course-icon pt-3"><img
-                               src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                   </div>
-               </a>
-           </div>
-           <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="400ms" data-wow-duration="2000ms"
-               style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-               <a class="categories-item" href="#">
-                   <div class="content-part text-center">
-                       <div class="date-text"> 15 Feb 2023</div>
-                       <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                           Nonumy Eirmod Tempor</h4>
-                       <span class="courses course-icon pt-3"><img
-                               src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                   </div>
-               </a>
-           </div>
-           <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="500ms" data-wow-duration="2000ms"
-               style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-               <a class="categories-item" href="#">
-                   <div class="content-part text-center">
-                       <div class="date-text"> 15 Feb 2023</div>
-                       <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                           Nonumy Eirmod Tempor</h4>
-                       <span class="courses course-icon pt-3"><img
-                               src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                   </div>
-               </a>
-           </div>
-   
-           <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
-               style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-               <a class="categories-item" href="#">
-                   <div class="content-part text-center">
-                       <div class="date-text"> 15 Feb 2023</div>
-                       <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                           Nonumy Eirmod Tempor</h4>
-                       <span class="courses course-icon pt-3"><img
-                               src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                   </div>
-               </a>
-           </div>
-           <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="400ms" data-wow-duration="2000ms"
-               style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-               <a class="categories-item" href="#">
-                   <div class="content-part text-center">
-                       <div class="date-text"> 15 Feb 2023</div>
-                       <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                           Nonumy Eirmod Tempor</h4>
-                       <span class="courses course-icon pt-3"><img
-                               src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                   </div>
-               </a>
-           </div>
-           <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="500ms" data-wow-duration="2000ms"
-               style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-               <a class="categories-item" href="#">
-                   <div class="content-part text-center">
-                       <div class="date-text"> 15 Feb 2023</div>
-                       <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                           Nonumy Eirmod Tempor</h4>
-                       <span class="courses course-icon pt-3"><img
-                               src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                   </div>
-               </a>
-           </div>
-   
-   
-       </div>
-   </div>
-   </div>-->
-<div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-10">
-<div class="container">
-<div class="row p-0">
-   <div class="col-md-4">
-      <div class="notice-bord style1">
-         <h4 class="title">Recent Activity</h4>
-         <div class="marquee-height">
-            <ul class="recent-activity-slide marquee--inner">
-               <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                  <div class="desc"> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
+        </div>
+        <!-- About Section End -->
+        <!--<div id="rs-categories" class="rs-categories style1 pt-60 pb-60">
+              <div class="container">
+                  <div class="row y-middle mb-30">
+                      <div class="col-md-6 sm-mb-30">
+                          <div class="sec-title">
+                              <h2 class="title mb-0">Media Alerts / Action Taken </h2>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="btn-part text-right sm-text-left">
+                              <a href="#" class="readon">View All</a>
+                          </div>
+                      </div>
                   </div>
-               </li>
-               <li class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                  <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
+                  <div class="row">
+              
+                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
+                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                          <a class="categories-item" href="#">
+                              <div class="content-part text-center">
+                                  <div class="date-text"> 15 Feb 2023</div>
+                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                                      Nonumy Eirmod Tempor</h4>
+                                  <span class="courses course-icon pt-3"><img
+                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="400ms" data-wow-duration="2000ms"
+                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                          <a class="categories-item" href="#">
+                              <div class="content-part text-center">
+                                  <div class="date-text"> 15 Feb 2023</div>
+                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                                      Nonumy Eirmod Tempor</h4>
+                                  <span class="courses course-icon pt-3"><img
+                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="500ms" data-wow-duration="2000ms"
+                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                          <a class="categories-item" href="#">
+                              <div class="content-part text-center">
+                                  <div class="date-text"> 15 Feb 2023</div>
+                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                                      Nonumy Eirmod Tempor</h4>
+                                  <span class="courses course-icon pt-3"><img
+                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                              </div>
+                          </a>
+                      </div>
+              
+                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
+                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                          <a class="categories-item" href="#">
+                              <div class="content-part text-center">
+                                  <div class="date-text"> 15 Feb 2023</div>
+                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                                      Nonumy Eirmod Tempor</h4>
+                                  <span class="courses course-icon pt-3"><img
+                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="400ms" data-wow-duration="2000ms"
+                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                          <a class="categories-item" href="#">
+                              <div class="content-part text-center">
+                                  <div class="date-text"> 15 Feb 2023</div>
+                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                                      Nonumy Eirmod Tempor</h4>
+                                  <span class="courses course-icon pt-3"><img
+                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="500ms" data-wow-duration="2000ms"
+                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                          <a class="categories-item" href="#">
+                              <div class="content-part text-center">
+                                  <div class="date-text"> 15 Feb 2023</div>
+                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
+                                      Nonumy Eirmod Tempor</h4>
+                                  <span class="courses course-icon pt-3"><img
+                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
+                              </div>
+                          </a>
+                      </div>
+              
+              
                   </div>
-               </li>
-               <li class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                  <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
-                  </div>
-               </li>
-               <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 600ms; animation-name: fadeInUp;">
-                  <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
-                  </div>
-               </li>
-               <li class="wow fadeInUp" data-wow-delay="700ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 700ms; animation-name: fadeInUp;">
-                  <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
-                  </div>
-               </li>
-            </ul>
-         </div>
-         <div class="btn-part view-all-btn">
-            <a class="readon2 mod" href="#">View All</a>
-         </div>
-      </div>
-   </div>
-   <div class="col-md-4">
-      <div class="notice-bord style1">
-         <h4 class="title">Publications</h4>
-         <div class="marquee-height">
-            <ul class="Publications-slide marquee--inner ">
-               <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                  <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
-                  </div>
-               </li>
-               <li class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                  <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
-                  </div>
-               </li>
-               <li class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                  <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
-                  </div>
-               </li>
-               <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 600ms; animation-name: fadeInUp;">
-                  <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
-                  </div>
-               </li>
-               <li class="wow fadeInUp" data-wow-delay="700ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 700ms; animation-name: fadeInUp;">
-                  <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                     Ipsum is
-                     simply dummy text of the printing and setting
-                  </div>
-               </li>
-            </ul>
-         </div>
-         <div class="btn-part view-all-btn">
-            <a class="readon2 mod" href="#">View All</a>
-         </div>
-      </div>
-   </div>
-   <div class="col-md-4  pr-0">
-      <div class="notice-bord style1">
-         <h4 class="title">Latest News</h4>
-         <div class="marquee-height">
-            <ul class="Latest-news-slider marquee--inner ">
-               @if (Count($news) > 0)
-               @foreach ($news->take(3) as $item)
-               <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                  <div class="date">{{ date('d F', strtotime($item->start_date)) }}</div>
-                  <div class='desc'>
-                     @if (Session::get('Lang') == 'hi')
-                     {{ $item->description_hi  }}
-                     @else
-                     {{ $item->description_en }}
-                     @endif
-                  </div>
-               </li>
-               @endforeach
-               @endif
-            </ul>
-         </div>
-         <div class="btn-part view-all-btn">
-            <a class="readon2 mod" href="{{ url('/search') }}">View All</a>
-         </div>
-      </div>
-   </div>
-</div>
+              </div>
+              </div>-->
+        <div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-10">
+            <div class="container">
+                <div class="row p-0">
+                    <div class="col-md-4">
+                        <div class="notice-bord style1">
+                            <h4 class="title">Recent Activity</h4>
+                            <div class="marquee-height">
+                                <ul class="recent-activity-slide marquee--inner">
+                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                                        <div class="desc"> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="700ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 700ms; animation-name: fadeInUp;">
+                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-part view-all-btn">
+                                <a class="readon2 mod" href="#">View All</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="notice-bord style1">
+                            <h4 class="title">Publications</h4>
+
+                            <div class="marquee-height">
+
+                                <ul class="Publications-slide marquee--inner ">
+                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
+                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="700ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 700ms; animation-name: fadeInUp;">
+                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
+                                            Ipsum is
+                                            simply dummy text of the printing and setting
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn-part view-all-btn">
+                                <a class="readon2 mod" href="#">View All</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4  pr-0">
+                        <div class="notice-bord style1">
+                            <h4 class="title">Latest News</h4>
+
+
+
+                            <div class="marquee-height">
+                                <ul class="Latest-news-slider marquee--inner ">
+
+                                    @if (Count($news) > 0)
+                                        @foreach ($news->take(3) as $item)
+                                            <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                                                style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                                                <div class="date">{{ date('d M', strtotime($item->start_date)) }}</div>
+                                                <div class='desc'>
+                                                    @if (Session::get('Lang') == 'hi')
+                                                        {!! $item->description_hi  !!}
+                                                    @else
+                                                        {!! $item->description_en !!}
+                                                    @endif
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    @endif
+                                </ul>
+                            </div>
+
+                            <div class="btn-part view-all-btn">
+                                <a class="readon2 mod" href="#">View All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 </div>
 </div>
@@ -1085,4 +1126,8 @@
    </div>
    <!-- Partner End -->
 </div>
-@endsection
+</div>
+         @include('partials.footer')
+         @include('partials.footer-scripts')
+   </body>
+</html>

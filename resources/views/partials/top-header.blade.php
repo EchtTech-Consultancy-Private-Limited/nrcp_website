@@ -74,7 +74,7 @@
 
             @endif  
                 
-               <li><a href="{{ url('/site-map') }}" class="sitemap-cl" title="Site Map"><i class="fa fa-sitemap"></i></a>
+               <li><a href="{{ route('sitemap') }}" class="sitemap-cl" title="Site Map"><i class="fa fa-sitemap"></i></a>
                </li>
             
             </ul>
