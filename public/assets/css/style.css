@@ -19819,7 +19819,7 @@ p.text-normal-footer {
 }
 
 section{
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .rs-publications-main p {
@@ -19969,3 +19969,16 @@ div#banner1 .owl-nav {
 margin-top: 0px !important;
 }
 
+span.date-news-latest {
+  color: #fff;
+  padding-left: 7px;
+}
+
+.tab-content {
+  background: #fff;
+  padding: 17px;
+  border-radius: 10px;
+}
+p, p span {
+  font-family: 'Poppins', sans-serif !important;
+}

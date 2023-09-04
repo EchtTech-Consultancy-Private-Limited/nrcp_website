@@ -176,9 +176,7 @@
             </div>
          </div>
         <!-- Banner Section End -->
-
-
-        <div class="wrapper" id="skipCont"></div>
+      
 
         <!-- latest news section start   -->
 
@@ -192,7 +190,7 @@
                     </div>
                     <div class="col-lg-9 col-md-9">
                         <div class="rs-slider style1">
-                            <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0"
+                            <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="30"
                                 data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="3000"
                                 data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false"
                                 data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
@@ -213,7 +211,7 @@
                                                         @else
                                                             {!! $item->description_en   !!}
                                                         @endif
-                                                         | {{  date('d F Y', strtotime($item->start_date)) }}
+                                                        <span class="date-news-latest"> | {{  date('d F Y', strtotime($item->start_date)) }} </span>
                                                     </p>
                                                 </div>
 
