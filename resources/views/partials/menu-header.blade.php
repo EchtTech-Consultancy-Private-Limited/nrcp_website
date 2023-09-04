@@ -121,7 +121,6 @@
                                                                     @endif
                                                                    </a>
                                                                 <ul class="sub-menu">
-
                                                                     @foreach ($suMenu->children as $childMenu)
                                                                         @if (@isset($childMenu->children))
                                                                             <li class="menu-item-has-children">
