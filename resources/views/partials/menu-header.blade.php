@@ -237,12 +237,10 @@
             <div class="widget-area">
                 <div class="recent-posts mb-50">                   
                     <ul>
-                        <li><a href="javascript:void();">Contact Us</a></li>
                         <li><a href="javascript:void();">Citizen Charter</a></li>
                         <li><a href="javascript:void();">Grievance</a></li>
                         <li><a href="javascript:void();">RTI</a></li>
                         <li><a href="javascript:void();">Help</a></li>
-                        <li><a href="javascript:void();">Feedback</a></li>
                        
                     </ul>
                 </div>

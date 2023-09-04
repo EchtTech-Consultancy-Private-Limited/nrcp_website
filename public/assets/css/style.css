@@ -6030,13 +6030,13 @@ body .modal-backdrop {
 .rs-breadcrumbs .breadcrumbs-text ul li {
   color: #505050;
   display: inline-block;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
 }
 
 .rs-breadcrumbs .breadcrumbs-text ul li a {
   position: relative;
-  padding-right: 30px;
+  padding-right: 18px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   color: #505050;
@@ -6049,8 +6049,8 @@ body .modal-backdrop {
   height: 15px;
   /* width: 2px; */
   position: absolute;
-  right: 7px;
-  top: -2px;
+  right: 3px;
+  top: -4px;
   /* transform: rotate(26deg); */
   font-family: 'FontAwesome';
 }
@@ -19601,13 +19601,13 @@ a.top-logo img {
 
 .rs-publications-main .rs-breadcrumbs .breadcrumbs-text{
   position: relative !important;
-  top: 18px;
+  top: 16px;
  text-align: left;
 }
 
 .rs-publications-main .publication-sociol-icon img{
  width: 36px;
- padding: 10px;
+ padding: 8px 10px;
 }
 
 
@@ -20028,4 +20028,8 @@ body.nav-expanded .overlay {
 
 .full-width-header .rs-header .right_menu_togle ul li a {
   font-weight: 500;
+}
+
+.breadcrumbs-text a.active {
+  color: #3f51b5 !important;
 }
