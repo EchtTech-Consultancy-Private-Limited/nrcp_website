@@ -203,6 +203,17 @@
                                         @endif
                                     @endforeach
                                     {{-- current-menu-item --}}
+                                    <li class="menu-bar-side"> 
+                                        {{-- <a href="javascript:void();">
+                                        <i class="fa fa-bars"> </i>
+                                       </a>  --}}
+
+                                        <a id="nav-expander" class="nav-expander style6">
+                                            <span class="dot1"></span>
+                                            <span class="dot2"></span>
+                                            <span class="dot3"></span>
+                                        </a>
+                                   </li>
                                 </ul>
                                 <!-- //.nav-menu -->
                             </nav>
@@ -214,3 +225,44 @@
             </div>
         </div>
     </div>
+    <div class="overlay"></div>
+     <!-- Canvas Menu start -->
+     <nav class="right_menu_togle hidden-md">
+        
+        <div class="close-btn">
+            <div id="nav-close">
+                <div class="line">
+                    <span class="line1"></span><span class="line2"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="rs-inner-blog">
+            <div class="widget-area">
+                <div class="recent-posts mb-50">                   
+                    <ul>
+                        <li><a href="javascript:void();">Contact Us</a></li>
+                        <li><a href="javascript:void();">Citizen Charter</a></li>
+                        <li><a href="javascript:void();">Grievance</a></li>
+                        <li><a href="javascript:void();">RTI</a></li>
+                        <li><a href="javascript:void();">Help</a></li>
+                        <li><a href="javascript:void();">Feedback</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+         
+
+       
+
+        {{-- <div class="canvas-contact">
+            <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div> --}}
+    </nav>
+    <!-- Canvas Menu end -->
