@@ -203,11 +203,7 @@
                                         @endif
                                     @endforeach
                                     {{-- current-menu-item --}}
-                                    <li class="menu-bar-side"> 
-                                        {{-- <a href="javascript:void();">
-                                        <i class="fa fa-bars"> </i>
-                                       </a>  --}}
-
+                                    <li class="menu-bar-side">                                       
                                         <a id="nav-expander" class="nav-expander style6">
                                             <span class="dot1"></span>
                                             <span class="dot2"></span>
