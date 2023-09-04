@@ -343,13 +343,12 @@ function setlang(value){
         $('#nav-close').on('click',function(e){
             e.preventDefault();
             $('body').removeClass('nav-expanded');
-        });
-
-        $('body').on('click',function(e){
-            e.preventDefault();
-            $('body').removeClass('nav-expanded');
-        });
+        });       
     }
+
+    $("body").on('click',function(){
+        $('body').removeClass('nav-expanded');
+    });
 
 
     // View Course
