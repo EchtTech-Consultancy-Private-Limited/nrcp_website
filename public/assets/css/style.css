@@ -2676,7 +2676,7 @@ ul.listing-style.modify li:before {
 }
 
 .full-width-header .rs-header .menu-area.sticky .nav-expander span {
-  background: #111111;
+  background: #fff;
 }
 
 .full-width-header .rs-header .menu-area.sticky .nav-expander:hover span {
@@ -2731,9 +2731,10 @@ ul.listing-style.modify li:before {
 
 .full-width-header .rs-header .right_menu_togle {
   background: #fafafa;
-  padding: 30px 50px;
-  width: 500px;
-  right: -500px;
+  padding: 30px 35px;
+  width: 420px;
+  right: -420px;
+  height: 100vh;
   z-index: 999999;
   text-align: center;
   transition: all 0.3s ease;
@@ -4812,7 +4813,7 @@ th.set-width {
 
 .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
   margin-right: 35px !important;
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li.current-menu-item>a {
@@ -19981,4 +19982,50 @@ span.date-news-latest {
 }
 p, p span {
   font-family: 'Poppins', sans-serif !important;
+}
+
+.full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li.menu-bar-side > a:hover {
+  background: transparent !important;
+}
+
+.full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li.menu-bar-side {
+  margin-right: 0px !important;
+  float: right;
+}
+
+li.menu-bar-side a i {
+  font-size: 20px;
+}
+
+li.menu-bar-side a {
+  margin-top: 0px !important;
+}
+
+nav.right_menu_togle.hidden-md .recent-posts {
+  background: transparent;
+  box-shadow: none;
+  text-align: left;
+  padding: 0px;
+  padding-top: 80px;
+}
+
+nav.right_menu_togle.hidden-md ul li {
+  margin-top: 0px !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 0px !important;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+body.nav-expanded .overlay {
+  background: #000;
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  opacity: .6;
+  cursor: pointer;
+}
+
+.full-width-header .rs-header .right_menu_togle ul li a {
+  font-weight: 500;
 }

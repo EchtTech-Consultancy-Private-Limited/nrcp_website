@@ -333,14 +333,19 @@ function setlang(value){
     //canvas menu
     var navexpander = $('#nav-expander');
     if(navexpander.length){
-        $('#nav-expander').on('click',function(e){
+        $('#nav-expander').hover(function(e){
             e.preventDefault();
-            $('body').toggleClass('nav-expanded');
+            $('body').addClass('nav-expanded');
         });
     }
     var navclose = $('#nav-close');
     if(navclose.length){
         $('#nav-close').on('click',function(e){
+            e.preventDefault();
+            $('body').removeClass('nav-expanded');
+        });
+
+        $('body').on('click',function(e){
             e.preventDefault();
             $('body').removeClass('nav-expanded');
         });
