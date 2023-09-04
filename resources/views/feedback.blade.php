@@ -15,8 +15,8 @@
 </style>
 @section('content')
     <div id="rs-about" class="rs-about style1 pt-50 pb-50 md-pt-70 md-pb-70">
-        <div class="container">
-            <div class="row">
+        <div class="container contact-page-section">
+            <div class="row contact-address-section">
                 <div class="col-lg-7 mx-auto">
                     <div class="rs-quick-contact new-style">
                         <div class="inner-part mb-20">
