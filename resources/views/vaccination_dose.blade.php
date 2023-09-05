@@ -48,8 +48,8 @@
                             <?php if(request('type') ==1){ ?>
                             <tr>
                                 <td class="text-left">IM (Intra Muscular)</td>
+                                <td>{{ _('1 entire vaccine vial') }}</td>
                                 <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
-                                <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                 <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                 <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
                                 <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
@@ -59,8 +59,8 @@
                                 <?php }elseif(request('type') ==2){ ?>
                                 <tr>
                                     <td class="text-left">ID (Intra Dermal)</td>
+                                    <td>{{ _('0.1ml per dose on each Arm') }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
-                                    <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
@@ -70,8 +70,8 @@
                                 <?php }else{  ?>
                                 <tr>
                                     <td class="text-left">IM (Intra Muscular)</td>
+                                    <td>{{ _('1 entire vaccine vial') }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
-                                    <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
@@ -80,8 +80,8 @@
                                 </tr>
                                 <tr>
                                     <td class="text-left">ID (Intra Dermal)</td>
+                                    <td>{{ _('0.1ml per dose on each Arm') }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
-                                    <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
