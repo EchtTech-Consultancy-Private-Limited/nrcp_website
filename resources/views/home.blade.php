@@ -28,7 +28,7 @@
       <div class="main-content">
         <!-- Slider Section Start -->
         <div class="rs-slider style1">
-            <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0" data-autoplay="true"
+            <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="20" data-autoplay="true"
                data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false"
                data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
                data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
@@ -40,7 +40,7 @@
                      <div class="row banner-mobile">
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}"
+                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}"
                                  alt="">
                            </div>
                         </div>
@@ -109,7 +109,7 @@
                      <div class="row banner-mobile">
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}"
+                              <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}"
                                  alt="">
                            </div>
                         </div>
