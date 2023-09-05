@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contactUss', function (Blueprint $table) {
+        Schema::create('contact_us', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable();
             $table->string('email')->nullable();
@@ -26,8 +26,8 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function down(): void
+    public function down()
     {
-        //
+        Schema::dropIfExists('contact_us');
     }
 };
