@@ -19661,6 +19661,7 @@ text-align: left;
   text-align: left;
   font-size: 15px;
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 .rs-publications-main .nav {
