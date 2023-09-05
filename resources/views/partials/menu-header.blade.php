@@ -247,7 +247,7 @@
         </div>
          
 
-       
+       <a class="tab-close">&nbsp;</a> 
 
         {{-- <div class="canvas-contact">
             <ul class="social">
