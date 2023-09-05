@@ -101,10 +101,18 @@
                                     <td>{{ date('d F Y', strtotime($pdf->start_date ??'')) }}</</td>
                                     <td>
                                        <div class="download ">
-                                          <a href="#"><span class="view">View</span></a>
+                                          <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><span class="view">View</span></a>
                                              <span class="size">{{ $pdf->pdfimage_size ??'' }}</span>
+                                             @if($pdf->file_extension == 'pdf')
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
-                                          <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                             @elseif($pdf->file_extension == 'xlsx' || $pdf->file_extension == 'csv')
+                                             <i class="fa fa-file-excel-o" aria-hidden="true"></i> 
+                                             @elseif($pdf->file_extension == 'docx' || $pdf->file_extension == 'DOCX' || $pdf->file_extension == 'doc' || $pdf->file_extension == 'DOC')
+                                             <i class="fa fa-file-word-o" aria-hidden="true"></i> 
+                                             @else
+                                             <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
+                                             @endif
+                                          <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
                                        </div>
                                        <!-- <div class="accessible-version">
                                           <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
