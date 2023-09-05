@@ -207,9 +207,9 @@
                                                 <div class="d-flex align-items-center latest-news-slider-content-text">
                                                     <p>
                                                         @if (Session::get('Lang') == 'hi')
-                                                            {!! $item->description_hi  !!}
+                                                            {!! $item->title_name_hi  !!}
                                                         @else
-                                                            {!! $item->description_en   !!}
+                                                            {!! $item->title_name_en   !!}
                                                         @endif
                                                         <span class="date-news-latest"> | {{  date('d F Y', strtotime($item->start_date)) }} </span>
                                                     </p>
@@ -610,9 +610,9 @@
                                                 <div class="date">{{ date('d M', strtotime($item->start_date)) }}</div>
                                                 <div class='desc'>
                                                     @if (Session::get('Lang') == 'hi')
-                                                        {!! $item->description_hi  !!}
+                                                        {!! $item->title_name_hi  !!}
                                                     @else
-                                                        {!! $item->description_en !!}
+                                                        {!! $item->title_name_en !!}
                                                     @endif
                                                 </div>
                                             </li>
