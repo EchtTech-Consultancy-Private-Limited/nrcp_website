@@ -112,7 +112,7 @@
                                              @else
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
                                              @endif
-                                          <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                          <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
                                        </div>
                                        <!-- <div class="accessible-version">
                                           <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
