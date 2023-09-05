@@ -19661,6 +19661,9 @@ text-align: left;
   text-align: left;
   font-size: 15px;
   vertical-align: middle;
+}
+
+.rs-publications-main table th{
   white-space: nowrap;
 }
 
