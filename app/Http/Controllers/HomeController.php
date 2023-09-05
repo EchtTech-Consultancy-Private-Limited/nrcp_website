@@ -141,7 +141,7 @@ class HomeController extends Controller
        
         $menus = DB::table('website_menu_management')->whereurl($slug)->first();
         if(!empty($menus->uid)){
-            $metacontent = DB::table('dynamic_content_page_metatag')->where('menu_uid',$menus->uid)->get();
+            $metacontent = DB::table('dynamic_content_page_metaTag')->where('menu_uid',$menus->uid)->get();
 
         }else{
             abort(404);
