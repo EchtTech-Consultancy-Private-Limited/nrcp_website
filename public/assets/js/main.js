@@ -337,6 +337,11 @@ function setlang(value){
             e.preventDefault();
             $('body').addClass('nav-expanded');
         });
+
+        $('#nav-expander').focus(function(e){
+            e.preventDefault();
+            $('body').addClass('nav-expanded');
+        });
     }
     var navclose = $('#nav-close');
     if(navclose.length){
@@ -347,6 +352,10 @@ function setlang(value){
     }
 
     $("body").on('click',function(){
+        $('body').removeClass('nav-expanded');
+    });
+
+    $(".tab-close").focus(function(){
         $('body').removeClass('nav-expanded');
     });
 

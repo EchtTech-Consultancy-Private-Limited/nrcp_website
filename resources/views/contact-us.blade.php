@@ -41,7 +41,7 @@
             <div class=" col-lg-4 col-md-12 lg-pr-0">
                 <div class="contact-info contact-phone">
                     <div class="icon-part">
-                        <i class="fa fa-user-o"></i>
+                        <i class="fa fa-phone"></i>
                     </div>
                     <div class="content-part">
                         <h5 class="info-subtitle">Phone Number</h5>
