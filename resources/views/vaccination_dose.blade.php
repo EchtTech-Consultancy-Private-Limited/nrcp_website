@@ -63,7 +63,7 @@
                                     <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
-                                    <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
+                                    <td>{{ __('NIL') }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 28 days')) }}</td>
                                     <td> Total 5 injection 5 visit</td>
                                 </tr>
@@ -84,7 +84,7 @@
                                     <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 3 days')) }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 7 days')) }}</td>
-                                    <td>{{ date('Y-m-d', strtotime(request('date'). ' + 14 days')) }}</td>
+                                    <td>{{ __('NIL') }}</td>
                                     <td>{{ date('Y-m-d', strtotime(request('date'). ' + 28 days')) }}</td>
                                     <td> Total 5 injection 5 visit</td>
                                 </tr>
