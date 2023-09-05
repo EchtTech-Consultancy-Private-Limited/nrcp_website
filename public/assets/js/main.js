@@ -9,7 +9,7 @@
 * -----------------------------------------------------------------------------
 *
 **/
-var baseurl=  window.location.origin + '/nrcp_website/public';
+var baseurl=  window.location.origin + '/';
 
 //alert(baseurl + "/set-language");
 function setlang(value){
