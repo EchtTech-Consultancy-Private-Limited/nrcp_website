@@ -101,10 +101,10 @@
                                     <td>{{ date('d F Y', strtotime($pdf->start_date ??'')) }}</</td>
                                     <td>
                                        <div class="download ">
-                                          <a href="#"><span class="view">View</span></a><span
-                                             class="size">{{ $pdf->pdfimage_size ??'' }}</span><i class="fa fa-file-pdf-o"
-                                             aria-hidden="true"></i> <a href="#"><i
-                                             class="fa fa-download" aria-hidden="true"></i></a>
+                                          <a href="#"><span class="view">View</span></a>
+                                             <span class="size">{{ $pdf->pdfimage_size ??'' }}</span>
+                                             <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
+                                          <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                        </div>
                                        <!-- <div class="accessible-version">
                                           <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
@@ -117,56 +117,14 @@
                         </section>
                        
                         @endif
-                        <!-- List section -->
-                        {{-- <section>
-                           <h3 class="title">List Page</h3>
-                           <div class="desc rs-inner-blog">
-                              <div class="blog-deatails">
-                                 <div class="blog-full p-0">
-                                    <ul class="unorder-list mb-20">
-                                       <li class="pb-0">
-                                          Training of Health Care professionals on appropriate Animal bite management 
-                                          and Rabies Post Exposure Prophylaxis. 
-                                          <ul class="unorder-list">
-                                             <li>Training of Health Care professionals on appropriate Animal bite management 
-                                                and Rabies Post Exposure Prophylaxis. 
-                                             </li>
-                                             <li>Advocacy for states to adopt and implement Interdermal route of Post 
-                                                exposure prophylaxis for Animal bite Victims and Pre exposure prophylaxis for 
-                                                high risk categories. 
-                                             </li>
-                                             <li>Strengthen Human Rabies Surveillance System. </li>
-                                             <li>Strengthening of Regional Laboratories under NRCP for Rabies Diagnosis. </li>
-                                             <li>Creating awareness in the community through Advocacy &amp; Communication 
-                                                and Social Mobilization. 
-                                             </li>
-                                          </ul>
-                                       </li>
-                                       <li>Advocacy for states to adopt and implement Interdermal route of Post 
-                                          exposure prophylaxis for Animal bite Victims and Pre exposure prophylaxis for 
-                                          high risk categories. 
-                                       </li>
-                                       <li>Strengthen Human Rabies Surveillance System. </li>
-                                       <li>Strengthening of Regional Laboratories under NRCP for Rabies Diagnosis. </li>
-                                       <li>Creating awareness in the community through Advocacy &amp; Communication 
-                                          and Social Mobilization. 
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
-                        </section> --}}
                      </div>
                      @endforeach
                   </div>
-                 
                </div>
             </div>
-         
          @else
             <p>No Content Available!</p>
             @endif
          </div>
       </div>
 @endsection 
-

@@ -50,6 +50,7 @@ Route::post('/feedback-submit',[HomeController::class,'feedbackStore'])->name('f
 
 Route::get('/contact-us',[HomeController::class,'contactForm'])->name('contact-us');
 Route::post('/contact-us',[HomeController::class,'contactStroe'])->name('contact-Stroe');
+Route::get('/faq',[HomeController::class,'getFAQ'])->name('faq');
 
 
 //language
