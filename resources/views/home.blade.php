@@ -1043,7 +1043,7 @@
             </div>
             <div class="partner-item">
                <a href="https://notto.gov.in/" target="_blank" role="link">
-               <img src="{{ asset('assets/Nrcp_img/clients/logo-(1F)_0_0.png') }}" alt="NOTTO"
+               <img src="{{ asset('assets/Nrcp_img/clients/logo-(1)_0_0.png') }}" alt="NOTTO"
                   title="NOTTO">
                </a>
             </div>

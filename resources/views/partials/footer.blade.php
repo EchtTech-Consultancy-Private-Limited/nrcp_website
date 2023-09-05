@@ -103,8 +103,8 @@
 
                             <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i> 
                                 <b> Center for One Health </b><br>                           
-                                National Centre for Disease Control, Directorate General of Health Services,
-                                Ministry of Health and Family Welfare, Government of India, <br>
+                                National Centre for Disease Control,<br> Directorate General of Health Services,
+                              <br>  Ministry of Health and Family Welfare,<br> Government of India, <br>
                                 22 – Sham Nath Marg, Delhi - 110054
                             </div>
                         </li>
@@ -202,24 +202,64 @@
                         <form method="get" action="{{ url('vaccination_dose') }}">
                             <fieldset>
                                 <div class="row">
-                                    <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12">
-                                        <label class="pl-2">{{ __('Date of Ist Dose of vaccination (day 0)') }}</label>
-                                        <input class="from-control mt-2" type="date" name="date"
-                                            placeholder="Name" required>
-                                    </div>
+                                   
                                     <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12">
                                         <label class="pl-2">Date of Animal Bites</label>
                                         <input class="from-control mt-2" type="date" name="date1"
                                             placeholder="Name">
                                     </div>
                                 </div>
-                                <div class=" row form-group">
-                                    <div class="col-md-5  mx-auto">
-                                        <button type="submit" class="readon2">
+                                <div class="row form-group">
+                                    <div class="col-md-11 mx-auto">
+                                        <a class="readon2 modal-btn text-white">
+                                            Have you taken Rabies Vaccine after animal bite
+                                        </a>
+                                    </div>
+                                </div>                                                           
+
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                       <div class="radio button">
+                                           <div class="radio-box">
+                                            <input type="radio" id="yes-bite" name="animal_bite" value="yes">
+                                            <label for="yes-bite">Yes</label>
+                                           </div>
+                                           <div class="radio-box">
+                                            <input type="radio" id="no-bite" name="animal_bite" value="no">
+                                            <label for="no-bite">No</label> 
+                                           </div>   
+                                       </div>
+                                    </div>
+                                    
+                                    {{-- CHoose Yes --}}
+                                    <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12 d-none" id="choose-yes">
+                                        <label class="pl-2">{{ __('Date of Ist Dose of vaccination (day 0)') }}</label>
+                                        <input class="from-control mt-2" type="date" name="date"
+                                            placeholder="Name" required>
+                                    </div>
+                                    {{-- CHoose Yes End--}}
+
+
+                                    {{-- CHoose No --}}
+                                    <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12 d-none" id="choose-no">
+                                        <label class="pl-2">{{ __('Date of Ist Dose of vaccination (day 0)') }}</label>
+                                        <input class="from-control mt-2" type="date" name="date" value="{{ date('d F Y') }}" disabled required>
+                                    </div>
+
+                                    {{-- CHoose No End --}}
+
+                                </div>
+
+                                <div class="row form-group">
+                                    <div class="col-md-5 mx-auto">
+                                        <button type="submit" class="readon2 modal-btn">
                                             Proceed
                                         </button>
                                     </div>
                                 </div>
+
+
                             </fieldset>
                         </form>
                     </div>
