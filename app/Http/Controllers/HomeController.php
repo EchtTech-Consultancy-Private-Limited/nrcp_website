@@ -130,6 +130,12 @@ class HomeController extends Controller
         return back()->with('success', 'Record Add Successfully');
     } 
 
+    public function getFAQ(){
+
+        $faq = DB::table('faq')->where('soft_delete','0')->get();
+
+        return view('faq-page',['faqdata'=>$faq ]); 
+    }
 
     public function commonPagesContent($slug){
        
