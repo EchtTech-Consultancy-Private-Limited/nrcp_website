@@ -7,8 +7,9 @@
                     <div class="pl-2">
                         <h2 class="title black-color logo-text">National Rabies Control Program</h2>
                         <h5 class="sub-text-l">National Center for Disease control</h5>
-                        <h6 class="sub-text-b-l">Directorate General of Health Services, Ministry of
-                            Health & Family Welfare, Government of India
+                        <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
+                            Ministry of Health & Family Welfare, <br>
+                            Government of India,
                         </h6>
                     </div>
                 </a>

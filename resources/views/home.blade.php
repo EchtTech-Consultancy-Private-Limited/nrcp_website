@@ -207,9 +207,9 @@
                                                 <div class="d-flex align-items-center latest-news-slider-content-text">
                                                     <p>
                                                         @if (Session::get('Lang') == 'hi')
-                                                            {!! $item->description_hi  !!}
+                                                            {!! $item->title_name_hi  !!}
                                                         @else
-                                                            {!! $item->description_en   !!}
+                                                            {!! $item->title_name_en   !!}
                                                         @endif
                                                         <span class="date-news-latest"> | {{  date('d F Y', strtotime($item->start_date)) }} </span>
                                                     </p>
@@ -610,9 +610,9 @@
                                                 <div class="date">{{ date('d M', strtotime($item->start_date)) }}</div>
                                                 <div class='desc'>
                                                     @if (Session::get('Lang') == 'hi')
-                                                        {!! $item->description_hi  !!}
+                                                        {!! $item->title_name_hi  !!}
                                                     @else
-                                                        {!! $item->description_en !!}
+                                                        {!! $item->title_name_en !!}
                                                     @endif
                                                 </div>
                                             </li>
@@ -1043,7 +1043,7 @@
             </div>
             <div class="partner-item">
                <a href="https://notto.gov.in/" target="_blank" role="link">
-               <img src="{{ asset('assets/Nrcp_img/clients/logo-(1F)_0_0.png') }}" alt="NOTTO"
+               <img src="{{ asset('assets/Nrcp_img/clients/logo-(1)_0_0.png') }}" alt="NOTTO"
                   title="NOTTO">
                </a>
             </div>

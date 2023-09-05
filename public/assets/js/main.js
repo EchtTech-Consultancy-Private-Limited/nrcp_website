@@ -741,3 +741,12 @@ function slipttobottom() {
 }
 	
 
+$("#yes-bite").click(function(){
+    $("#choose-yes").removeClass('d-none');  
+    $("#choose-no").addClass('d-none');        
+  });
+
+$("#no-bite").click(function(){
+    $("#choose-no").removeClass('d-none'); 
+    $("#choose-yes").addClass('d-none');          
+  });
