@@ -40,7 +40,7 @@
                      <div class="row banner-mobile">
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}"
+                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}"
                                  alt="">
                            </div>
                         </div>
@@ -109,7 +109,7 @@
                      <div class="row banner-mobile">
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}"
+                              <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}"
                                  alt="">
                            </div>
                         </div>
