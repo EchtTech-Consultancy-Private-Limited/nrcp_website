@@ -198,10 +198,8 @@
                                 data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
                                 data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
                                 data-md-device-dots="false" id="banner2">
-
-
                                 @if (Count($news) > 0)
-                                    @foreach ($news as $item)
+                                    @foreach ($news->take(3) as $item)
                                         <div class="slider-content">
                                             <div class="container-fluid px-0">
                                                 <div class="d-flex align-items-center latest-news-slider-content-text">
@@ -597,22 +595,26 @@
                     <div class="col-md-4  pr-0">
                         <div class="notice-bord style1">
                             <h4 class="title">Latest News</h4>
-
-
-
                             <div class="marquee-height">
                                 <ul class="Latest-news-slider marquee--inner ">
-
                                     @if (Count($news) > 0)
-                                        @foreach ($news->take(3) as $item)
+                                        @foreach ($news as $item)
                                             <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
                                                 style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
                                                 <div class="date">{{ date('d M', strtotime($item->start_date)) }}</div>
                                                 <div class='desc'>
                                                     @if (Session::get('Lang') == 'hi')
-                                                        {!! $item->title_name_hi  !!}
+                                                      @if($item->tab_type == '1')
+                                                      <a href="{{ $item->public_url }}" target="_blank">{!! $item->title_name_hi  !!}</a>
+                                                      @else
+                                                      <a href="{{ $item->public_url }}">{!! $item->title_name_hi  !!}</a>
+                                                      @endif
                                                     @else
-                                                        {!! $item->title_name_en !!}
+                                                      @if($item->tab_type == '1')
+                                                      <a href="{{ $item->public_url }}" target="_blank">{!! $item->title_name_en !!}</a>
+                                                      @else
+                                                      <a href="{{ $item->public_url }}">{!! $item->title_name_en !!}</a>
+                                                      @endif
                                                     @endif
                                                 </div>
                                             </li>
