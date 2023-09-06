@@ -22,12 +22,13 @@
                     <div class="faq-content">
                         @if(count($faqdata)>0)
                         <div id="accordion" class="accordion">
+                             <?php $i=1;  ?>
                             @foreach($faqdata as $faqdatas)
                             <div class="card">
                                 <div class="card-header">
-                                    <a class="card-link" data-toggle="collapse" href="#collapseOne">Q 1: {{ $faqdatas->question_en }}</a>
+                                    <a class="card-link" data-toggle="collapse" href="#collapseOne_{{$faqdatas->uid}}">Q {{ $i++ }}: {{ $faqdatas->question_en }}</a>
                                 </div>
-                                <div id="collapseOne" class="collapse " data-parent="#accordion">
+                                <div id="collapseOne_{{$faqdatas->uid}}" class="collapse " data-parent="#accordion">
                                     <div class="card-body">{!! $faqdatas->answer_en !!}</div>
                                 </div>
                             </div>
