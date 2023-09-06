@@ -9,7 +9,7 @@
                         <h5 class="sub-text-l">National Center for Disease control</h5>
                         <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
                             Ministry of Health & Family Welfare, <br>
-                            Government of India,
+                            Government of India
                         </h6>
                     </div>
                 </a>
