@@ -634,8 +634,8 @@
 </div>
 </div>
 
-{{-- 
-<div id="rs-popular-courses" class="rs-popular-courses style1 modify1 pt-60 pb-60">
+ 
+{{-- <div id="rs-popular-courses" class="rs-popular-courses style1 modify1 pt-60 pb-60">
    <div class="container">
       <div class="sec-title6 text-center mb-40">
          <h2 class="title">Quick Links</h2>
@@ -712,8 +712,8 @@
          </div>
       </div>
    </div>
-</div>
---}}
+</div> --}}
+
 {{-- 
 <div class="rs-cta bg-cta pt-20 pb-10">
    <div class="container">
