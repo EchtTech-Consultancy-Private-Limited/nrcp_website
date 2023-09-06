@@ -37,7 +37,7 @@
                     </div>
                     <div class="content-part">
                         <h5 class="info-subtitle">Email Address</h5>
-                        <h4 class="info-title"><a href="mailto:nrcp.ncdc@gmail.com">nrcp[dot]ncdc[at]gmail[dot]com</a></h4>
+                        <h4 class="info-title"><a href="mailto:napreindia-ncdc@ncdc.gov.in">napreindia-ncdc[at]ncdc[dot]gov[dot]in</a></h4>
                     </div>
                 </div>
             </div>
