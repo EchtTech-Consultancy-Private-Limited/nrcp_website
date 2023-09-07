@@ -124,13 +124,49 @@
                            </div>
                         </section>
                        
+
+                        <section class="rs-blog main-home">
+                           <div class="heading-title">
+                              <h3 class="title">Event</h3>
+                           </div>
+                       
+                           <div class="row">
+                              <div class="com-md-4">
+                                 <div class="blog-item">
+                                    <div class="image-part">
+                                        <img src="assets/images/blog/style2/3.jpg" alt="">
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="blog-meta">
+                                            <li><i class="fa fa-user-o"></i> Admin</li>
+                                            <li><i class="fa fa-calendar"></i>April 25, 2020</li>
+                                        </ul>
+                                        <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
+                                        <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                        <div class="btn-btm">
+                                            <div class="cat-list">
+                                                <ul class="post-categories">
+                                                    <li><a href="#">College</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="rs-view-btn">
+                                                <a href="#">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                           </div>
+
+                        </section>
+                       
                         @endif
                      </div>
                      @endforeach
                   </div>
                </div>
             </div>
-         @else
+          @else
             <p>No Content Available!</p>
             @endif
          </div>
