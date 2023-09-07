@@ -20127,3 +20127,7 @@ th.date-width, th.download-icon-width {
   height: 307px;
   margin: auto;
 } */
+
+span.size {
+  font-size: 12px;
+}

@@ -105,7 +105,7 @@
                                     <td>
                                        <div class="download ">
                                           <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><span class="view">View</span></a>
-                                             <span class="size">{{ $pdf->pdfimage_size ??'' }}</span>
+                                             
                                              @if($pdf->file_extension == 'pdf')
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
                                              @elseif($pdf->file_extension == 'xlsx' || $pdf->file_extension == 'csv')
@@ -115,6 +115,7 @@
                                              @else
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
                                              @endif
+                                             <span class="size">({{ $pdf->pdfimage_size ??'' }})</span>
                                           {{-- <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a> --}}
                                        </div>
                                       
