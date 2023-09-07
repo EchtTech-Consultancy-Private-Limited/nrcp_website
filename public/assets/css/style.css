@@ -20108,3 +20108,14 @@ body.nav-expanded .overlay {
 .nearest-vaccication1 .grid-item.filter1{
   position: static !important;
 }
+
+.map{
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+.map iframe{
+  width: 700px;
+  height: 307px;
+  margin: auto;
+}
