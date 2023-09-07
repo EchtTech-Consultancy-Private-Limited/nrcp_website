@@ -20114,9 +20114,14 @@ body.nav-expanded .overlay {
     text-align: end;
 }
 
-th.date-width, th.download-icon-width {
-    width: 140px !important;
+.date-width, .download-icon-width {
+    width: 20% !important;
 }
+
+.title-data {
+  width: 60% !important;
+}
+
 .map{
   display: flex;
   margin: auto;

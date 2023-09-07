@@ -92,7 +92,7 @@
                               <table class="example">
                                <thead>
                                  <tr>
-                                    <th>Title</th>
+                                    <th class="title-data">Title</th>
                                     <th class="date-width">Date</th>
                                     <th class="download-icon-width">View/Download</th>
                                  </tr>
@@ -101,8 +101,8 @@
                                  @foreach ($sidebar->content_pdf  as  $pdf)
                                  <tr>
                                     <td>{{ $pdf->pdf_title ??''}}</td>
-                                    <td>{{ date('d F Y', strtotime($pdf->start_date ??'')) }}</</td>
-                                    <td>
+                                    <td class="date-width">{{ date('d F Y', strtotime($pdf->start_date ??'')) }}</</td>
+                                    <td class="download-icon-width">
                                        <div class="download ">
                                           <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><span class="view">View</span></a>
                                              
