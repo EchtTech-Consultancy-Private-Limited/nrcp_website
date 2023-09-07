@@ -20062,3 +20062,49 @@ body.nav-expanded .overlay {
     border-radius: 50px;
     cursor: pointer;
 }
+.rs-publications-main .sub-tab .nav-tabs {
+  border-bottom: 0px solid #dee2e6 !important;
+  border: 0;
+  /* background: #3f51b5; */
+  padding: 0;
+  border-radius: 13px;
+}
+
+
+.rs-publications-main .sub-tab .nav-tabs .nav-link {
+  border: 0px solid transparent;
+  text-align: center;
+}
+
+.rs-publications-main .sub-tab .nav-tabs .nav-item {
+ 
+  background: #3f51b5;
+  color: #fff;
+  border-radius: 0px;
+  border: 0;
+  margin: 0;
+}
+
+.rs-publications-main .sub-tab .nav-tabs .nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  border-radius: 0 !important;
+  background: #92271d;
+  color: #fff;
+}
+
+.sub-tab .sec-bg-white {
+  background: #fff;
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+.nearest-vaccication1{
+  height: auto !important;
+}
+
+.nearest-vaccication1 .grid-item.filter1{
+  position: static !important;
+}
