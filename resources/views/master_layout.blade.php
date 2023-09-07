@@ -84,12 +84,12 @@
                         @if(count($sidebar->content_pdf) > 0)  
                         <!-- Table section -->
                         <section>
-                           <div class="heading-title">
+                           <div class="heading-title table-heading">
                               {{-- <h3 class="title">Technical Document and Guideline</h3> --}}
                               <a href="javascript:vopid();" class="readon orange-btn"> Archive </a>
                            </div>
                            <div class="table">
-                              <table id="example">
+                              <table class="example">
                                <thead>
                                  <tr>
                                     <th>Title</th>
@@ -134,13 +134,15 @@
                         {{-- ================================== --}}
 
                        
+
+                      
                         @endif
                      </div>
                      @endforeach
                   </div>
                </div>
             </div>
-         @else
+          @else
             <p>No Content Available!</p>
             @endif
          </div>
