@@ -204,8 +204,7 @@
                                    
                                     <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12">
                                         <label class="pl-2">Date of Animal Bites</label>
-                                        <input class="from-control mt-2" type="date" name="date1"
-                                            placeholder="Name">
+                                        <input class="from-control mt-2" type="date" name="date1" placeholder="Name">
                                     </div>
                                 </div>
                                 <div class="row form-group">
