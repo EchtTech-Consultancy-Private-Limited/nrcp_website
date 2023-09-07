@@ -81,7 +81,7 @@ $(document).ready(function() {
 
 
     $(document).ready(function() {
-    $('#example').DataTable( {
+    $('.example').DataTable( {
         dom: 'Bfrtip',
         buttons: [
             'print'

@@ -20108,3 +20108,8 @@ body.nav-expanded .overlay {
 .nearest-vaccication1 .grid-item.filter1{
   position: static !important;
 }
+
+.heading-title.table-heading {
+    display: block;
+    text-align: end;
+}
