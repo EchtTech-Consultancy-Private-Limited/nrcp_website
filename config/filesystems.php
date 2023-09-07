@@ -43,6 +43,11 @@ return [
             'visibility' => 'public',
             'throw' => false,
         ],
+        
+        'resources_views' => [
+            'driver' => 'local',
+            'root' => base_path('resources/uploads'),
+        ],
 
         's3' => [
             'driver' => 's3',
