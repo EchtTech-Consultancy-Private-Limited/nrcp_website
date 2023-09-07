@@ -1,4 +1,5 @@
 @extends('layouts.main')
+
 @section('title')
     {{ __('National Rabies Control Programme (NRCP)') }}
 @endsection
@@ -9,7 +10,7 @@
     {{ __('Vaccination Dose') }}
 @endsection
 @section('content')
-    <!-- Contact Section Start -->
+<!-- Contact Section Start -->
     <div id="rs-about" class="event-page-section pt-80 pb-100 md-pt-70 md-pb-70">
         <div class="container">
             <div class="row">               
