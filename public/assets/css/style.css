@@ -20117,3 +20117,13 @@ body.nav-expanded .overlay {
 th.date-width, th.download-icon-width {
     width: 140px !important;
 }
+.map{
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+/* .map iframe{
+  width: 700px;
+  height: 307px;
+  margin: auto;
+} */
