@@ -531,6 +531,7 @@ $(document).ready(function(){
 // Dark mode button
 
 
+ 
 
 
 
@@ -750,3 +751,7 @@ $("#no-bite").click(function(){
     $("#choose-no").removeClass('d-none'); 
     $("#choose-yes").addClass('d-none');          
   });
+
+  
+ 
+  
