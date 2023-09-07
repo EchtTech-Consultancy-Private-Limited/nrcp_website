@@ -121,7 +121,7 @@
 
                             <div class="desc">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:dirnicd@nic.in">nrcp[dot]ncdc[at]gmail[dot]com</a>
+                                <a href="mailto:dirnicd@nic.in">napreindia-ncdc[at]ncdc[dot]gov[dot]in</a>
                             </div>
                         </li>
 

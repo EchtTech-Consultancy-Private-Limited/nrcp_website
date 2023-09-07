@@ -89,12 +89,15 @@
                               <a href="javascript:vopid();" class="readon orange-btn"> Archive </a>
                            </div>
                            <div class="table">
-                              <table>
+                              <table id="example">
+                               <thead>
                                  <tr>
                                     <th>Title</th>
                                     <th>Date</th>
                                     <th>View/Download</th>
                                  </tr>
+                               </thead>
+                               <tbody>
                                  @foreach ($sidebar->content_pdf  as  $pdf)
                                  <tr>
                                     <td>{{ $pdf->pdf_title ??''}}</td>
@@ -120,9 +123,16 @@
                                     </td>
                                  </tr>
                                  @endforeach
+                               </tbody>
                               </table>
                            </div>
                         </section>
+
+
+
+
+                        {{-- ================================== --}}
+
                        
 
                         <section class="rs-blog main-home">
