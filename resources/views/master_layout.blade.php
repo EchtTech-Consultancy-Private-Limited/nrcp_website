@@ -127,20 +127,15 @@
                               </table>
                            </div>
                         </section>
-
-
-
-
                         {{-- ================================== --}}
 
-                       
                         @endif
                      </div>
                      @endforeach
                   </div>
                </div>
             </div>
-         @else
+            @else
             <p>No Content Available!</p>
             @endif
          </div>
