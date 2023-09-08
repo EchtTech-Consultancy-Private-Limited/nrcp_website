@@ -84,28 +84,28 @@
                         @if(count($sidebar->content_pdf) > 0)  
                         <!-- Table section -->
                         <section>
-                           <div class="heading-title">
+                           <div class="heading-title table-heading">
                               {{-- <h3 class="title">Technical Document and Guideline</h3> --}}
                               <a href="javascript:vopid();" class="readon orange-btn"> Archive </a>
                            </div>
                            <div class="table">
-                              <table id="example">
+                              <table class="example">
                                <thead>
                                  <tr>
-                                    <th>Title</th>
-                                    <th>Date</th>
-                                    <th>View/Download</th>
+                                    <th class="title-data">Title</th>
+                                    <th class="date-width">Date</th>
+                                    <th class="download-icon-width">View/Download</th>
                                  </tr>
                                </thead>
                                <tbody>
                                  @foreach ($sidebar->content_pdf  as  $pdf)
                                  <tr>
                                     <td>{{ $pdf->pdf_title ??''}}</td>
-                                    <td>{{ date('d F Y', strtotime($pdf->start_date ??'')) }}</</td>
-                                    <td>
+                                    <td class="date-width">{{ date('d F Y', strtotime($pdf->start_date ??'')) }}</</td>
+                                    <td class="download-icon-width">
                                        <div class="download ">
                                           <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><span class="view">View</span></a>
-                                             <span class="size">{{ $pdf->pdfimage_size ??'' }}</span>
+                                             
                                              @if($pdf->file_extension == 'pdf')
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
                                              @elseif($pdf->file_extension == 'xlsx' || $pdf->file_extension == 'csv')
@@ -115,11 +115,10 @@
                                              @else
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
                                              @endif
-                                          <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                             <span class="size">({{ $pdf->pdfimage_size ??'' }})</span>
+                                          {{-- <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a> --}}
                                        </div>
-                                       <!-- <div class="accessible-version">
-                                          <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                          </div> -->
+                                      
                                     </td>
                                  </tr>
                                  @endforeach
@@ -127,15 +126,20 @@
                               </table>
                            </div>
                         </section>
+
+
+
+
                         {{-- ================================== --}}
 
+                       
                         @endif
                      </div>
                      @endforeach
                   </div>
                </div>
             </div>
-            @else
+         @else
             <p>No Content Available!</p>
             @endif
          </div>

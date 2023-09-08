@@ -48,7 +48,7 @@
                             <h3 class="widget-title">Important Links</h3>
                             <ul class="site-map border-right-white">
 
-                                @foreach ($footerMenu->slice(0,4) as $footerMenus)
+                                @foreach ($footerMenu->slice(0,5) as $footerMenus)
                                 <li><a @if ($footerMenus->tab_type == 1)    @if (Session::get('Lang') == 'hi')  onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif   target="_blank" href="{{ url($footerMenus->url  ??'') }}">   @else  href="{{ url($footerMenus->url  ??'') }}" @endif>
                                     @if (Session::get('Lang') == 'hi')
                                         {{ $footerMenus->name_hi  }}
@@ -61,24 +61,23 @@
                             </ul>
                         </div>
 
-                        {{-- <li><a href="{{ route('coming-soon') }}">Disclaimer</a></li>
-                        <li><a href="{{ route('coming-soon') }}">Copyright Policy</a></li>
-                        <li><a href="{{ route('coming-soon') }}">Hyper Linking Policy</a></li>
-                        <li><a href="{{ route('privacypolicy') }}">Privacy Policy</a></li>
-                        <li><a href="{{ route('coming-soon') }}">Terms & Conditions</a></li>
-
-                        <li><a href="{{ route('coming-soon') }}">Website Policies</a></li>
-                        <li><a href="{{ route('coming-soon') }}">Accessibility Statement</a></li>
-                        <li><a href="{{ route('coming-soon') }}">Web Information Manager</a></li>
-                        <li><a onclick="return confirm('You Are Now Leaving This Site. Would you like to leave this site?')" href="https://ihip.nhp.gov.in/idsp/#!/login" target="_blank">IHIP Portal</a></li>
-                        <li><a href="{{ route('feedback') }}">Feedback</a></li> --}}
 
                         <div class="col-lg-6 col-md-12 col-sm-12 pl-50 md-pl-15 footer-widget md-mb-50 p-0 width-sm-50">
                             <ul class="site-map footer-link-withput-h border-right-white">
-
+                                                                
                                 @foreach ($footerMenu->slice(5,10) as $footerMenus)
                                   <li>
-                                    <a  @if ($footerMenus->tab_type == 1)    @if (Session::get('Lang') == 'hi')  onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif   target="_blank" href="{{ url($footerMenus->url  ??'') }}">   @else  href="{{ url($footerMenus->url  ??'') }}" @endif>
+                                      @if ($footerMenus->tab_type == 1) 
+                                           @if (Session::get('Lang') == 'hi') 
+                                           @else
+                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank">        
+                                           @endif
+                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank">     
+                                      @else  
+                                      <a href="{{ url($footerMenus->url  ??'') }}" target="_blank"> 
+                                      @endif    
+                                          
+                                          
                                         @if (Session::get('Lang') == 'hi')
                                             {{ $footerMenus->name_hi  }}
                                         @else
@@ -205,8 +204,7 @@
                                    
                                     <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12">
                                         <label class="pl-2">Date of Animal Bites</label>
-                                        <input class="from-control mt-2" type="date" name="date1"
-                                            placeholder="Name">
+                                        <input class="from-control mt-2" type="date" name="date1" placeholder="Name">
                                     </div>
                                 </div>
                                 <div class="row form-group">

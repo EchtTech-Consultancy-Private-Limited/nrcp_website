@@ -2437,6 +2437,12 @@ h6.sub-text-b-l {
 }
 
 @media only screen and (max-width: 767px) {
+    .map iframe{
+        width: 100% !important;
+        height: 307px;
+        margin: 0px;
+      }
+      
     .sub-tab select {
         margin-bottom: 10px;
       }
@@ -3751,6 +3757,13 @@ h6.sub-text-b-l {
 }
 
 @media only screen and (max-width: 480px) {
+    .map iframe{
+        width: 300px !important;
+        height: 207px;
+        margin: auto;
+        margin-left: -20px;
+      }
+      
     .container-fluid2 {
         padding-left: 0px;
         padding-right: 20px;

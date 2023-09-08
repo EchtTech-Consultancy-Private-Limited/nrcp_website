@@ -12338,7 +12338,7 @@ span.courses.course-icon img {
 
 .rs-blog.main-home .blog-item .blog-content {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
-  padding: 40px 35px 16px;
+  padding: 20px 18px;
 }
 
 .rs-blog.main-home .blog-item .blog-content .blog-meta {
@@ -12372,9 +12372,9 @@ span.courses.course-icon img {
 }
 
 .rs-blog.main-home .blog-item .blog-content .title {
-  margin-bottom: 14px;
-  font-size: 24px;
-  line-height: 34px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .rs-blog.main-home .blog-item .blog-content .title a {
@@ -20107,4 +20107,32 @@ body.nav-expanded .overlay {
 
 .nearest-vaccication1 .grid-item.filter1{
   position: static !important;
+}
+
+.heading-title.table-heading {
+    display: block;
+    text-align: end;
+}
+
+.date-width, .download-icon-width {
+    width: 20% !important;
+}
+
+.title-data {
+  width: 60% !important;
+}
+
+.map{
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+/* .map iframe{
+  width: 700px;
+  height: 307px;
+  margin: auto;
+} */
+
+span.size {
+  font-size: 12px;
 }
