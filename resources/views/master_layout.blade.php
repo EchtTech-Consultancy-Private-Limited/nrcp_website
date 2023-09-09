@@ -92,20 +92,20 @@
                               <table class="example">
                                <thead>
                                  <tr>
-                                    <th>Title</th>
-                                    <th>Date</th>
-                                    <th>View/Download</th>
+                                    <th class="title-data">Title</th>
+                                    <th class="date-width">Date</th>
+                                    <th class="download-icon-width">View/Download</th>
                                  </tr>
                                </thead>
                                <tbody>
                                  @foreach ($sidebar->content_pdf  as  $pdf)
                                  <tr>
                                     <td>{{ $pdf->pdf_title ??''}}</td>
-                                    <td>{{ date('d F Y', strtotime($pdf->start_date ??'')) }}</</td>
-                                    <td>
+                                    <td class="date-width">{{ date('d F Y', strtotime($pdf->start_date ??'')) }}</</td>
+                                    <td class="download-icon-width">
                                        <div class="download ">
                                           <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><span class="view">View</span></a>
-                                             <span class="size">{{ $pdf->pdfimage_size ??'' }}</span>
+                                             
                                              @if($pdf->file_extension == 'pdf')
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
                                              @elseif($pdf->file_extension == 'xlsx' || $pdf->file_extension == 'csv')
@@ -115,11 +115,10 @@
                                              @else
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
                                              @endif
-                                          <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+                                             <span class="size">({{ $pdf->pdfimage_size ??'' }})</span>
+                                          {{-- <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a> --}}
                                        </div>
-                                       <!-- <div class="accessible-version">
-                                          <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                          </div> -->
+                                      
                                     </td>
                                  </tr>
                                  @endforeach
@@ -127,22 +126,56 @@
                               </table>
                            </div>
                         </section>
-
-
-
-
                         {{-- ================================== --}}
+                        <section class="rs-blog main-home">
+                           <div class="heading-title">
+                              <h2 class="title">Event Gallery</h2>
+                           </div>                     
+                           <div class="row">
+                              <div class="col-md-4">
+                                 <div class="blog-item">
+                                    <div class="image-part">
+                                       <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
+                                    </div>
+                                    <div class="blog-content">                                       
+                                        <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
+                                        <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                    </div>
+                                </div>
+                              </div>
 
-                       
+                              <div class="col-md-4">
+                                 <div class="blog-item">
+                                    <div class="image-part">
+                                       <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
+                                    </div>
+                                    <div class="blog-content">                                       
+                                        <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
+                                        <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                    </div>
+                                </div>
+                              </div>
 
-                      
+                              <div class="col-md-4">
+                                 <div class="blog-item">
+                                    <div class="image-part">
+                                       <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
+                                    </div>
+                                    <div class="blog-content">                                       
+                                        <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
+                                        <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
+                                    </div>
+                                </div>
+                              </div>
+                           </div>
+                        </section>
                         @endif
                      </div>
                      @endforeach
                   </div>
                </div>
             </div>
-          @else
+            @else
             <p>No Content Available!</p>
             @endif
          </div>
