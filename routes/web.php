@@ -59,3 +59,7 @@ Route::get('/set-language',[HomeController::class,'SetLang']);
 //content slug
 Route::get('{slug}',[HomeController::class,'commonPagesContent']);
 
+Route::post('/get-districts-list',[HomeController::class,'getDistricts']);
+Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch']);
+
+
