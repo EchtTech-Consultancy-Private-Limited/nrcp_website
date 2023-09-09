@@ -126,49 +126,6 @@
                               </table>
                            </div>
                         </section>
-                        {{-- ================================== --}}
-                        <section class="rs-blog main-home">
-                           <div class="heading-title">
-                              <h2 class="title">Event Gallery</h2>
-                           </div>                     
-                           <div class="row">
-                              <div class="col-md-4">
-                                 <div class="blog-item">
-                                    <div class="image-part">
-                                       <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
-                                    </div>
-                                    <div class="blog-content">                                       
-                                        <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
-                                        <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
-                                    </div>
-                                </div>
-                              </div>
-
-                              <div class="col-md-4">
-                                 <div class="blog-item">
-                                    <div class="image-part">
-                                       <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
-                                    </div>
-                                    <div class="blog-content">                                       
-                                        <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
-                                        <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
-                                    </div>
-                                </div>
-                              </div>
-
-                              <div class="col-md-4">
-                                 <div class="blog-item">
-                                    <div class="image-part">
-                                       <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
-                                    </div>
-                                    <div class="blog-content">                                       
-                                        <h3 class="title"><a href="blog-single.html">Shutdown of schools extended to Aug 31 </a></h3>
-                                        <div class="desc">the acquisition of knowledge, skills, values befs, and habits. Educational methods include teach ing, training, storytelling</div>
-                                    </div>
-                                </div>
-                              </div>
-                           </div>
-                        </section>
                         @endif
                      </div>
                      @endforeach

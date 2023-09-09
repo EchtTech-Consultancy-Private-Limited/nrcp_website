@@ -99,7 +99,8 @@
                                 <ul class="nav-menu">
                                     @foreach ($headerMenu as $menuName)
                                         @if (@isset($menuName->children))
-                                            <li class="menu-item-has-children <?php ?>">
+                                            <li class="menu-item-has-children ">
+                                            <?php //dd($menuName->route_type); ?>
                                                 <a href="{{ url($menuName->url ??'') }}"
                                                     class="main-anchor">
                                                   @if (Session::get('Lang') == 'hi')
@@ -113,7 +114,7 @@
                                                         @if (@isset($suMenu->children))
                                                             <li class="menu-item-has-children">
 
-                                                                <a @if ($suMenu->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank"  href="{{ url($suMenu->url ?? '/') }}"    @else  href="{{ url($suMenu->url ?? '/') }}" @endif
+                                                                <a @if ($suMenu->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank"  href="{{$menuName->route_type}}{{ ($suMenu->url ?? '/') }}"    @else  href="{{$menuName->route_type}}{{ ($suMenu->url ?? '/') }}" @endif
                                                                     class="main-anchor">
                                                                     @if (Session::get('Lang') == 'hi')
                                                                       {{ $suMenu->name_hi ??''}}
