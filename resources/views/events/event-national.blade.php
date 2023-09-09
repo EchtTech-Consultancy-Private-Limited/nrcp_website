@@ -6,33 +6,42 @@
     {{ __('Home') }}
 @endsection
 @section('breadcrumbs')
-    {{ __($breadcrumbs) }}
+    {{ __('National Event') }}
 @endsection
 @section('content')
 <!-- Contact Section Start -->
 <div class="event-page-section pt-80 pb-100 md-pt-70 md-pb-70">
     <div class="container">
-        @if (Count($data) > 0)
-            @foreach ($data as $image)
-                <p>
-                    {{ $image->description }}
-                </p>
-
-                <div class="row">
-                    <?php foreach (json_decode($image->public_url)as $public_url) { ?>
-                    <div class="col-lg-4 col-md-3">
-                        <div class="event-img">
-                            <a href="{{ asset('uploads/EventsManagement/'.$public_url) }}"
-                                class="image-link">
-                                <img src="{{ asset('uploads/EventsManagement/'.$public_url) }}"
-                                    alt="">
-                            </a>
+        <div class="row">
+                <section class="rs-blog main-home">
+                    <div class="heading-title">
+                        <h2 class="title">Event Gallery</h2>
+                    </div>   
+                    @if(count($data)>0)                  
+                    <div class="row">
+                        @foreach($data as $datas)
+                        <div class="col-md-4">
+                            <div class="blog-item">
+                                <div class="image-part">
+                                    <img src="{{ asset('uploads/EventsManagement/'.json_decode($datas->images)[0]) }}" alt="">
+                                </div>
+                                <div class="blog-content">                                       
+                                    <h3 class="title">
+                                        <a href="#">{{ $datas->title_name_en }}</a>
+                                    </h3>
+                                    <div class="desc">
+                                        {!! $datas->description_en  !!}
+                                    </div>
+                                </div>
+                              </div>
                         </div>
+                       @endforeach
                     </div>
-                    <?php } ?>
-                </div>
-            @endforeach
-        @endif
+                    @else
+                        <p>NO Data Available!!</p>
+                       @endif
+                </section>
+            </div>
     </div>
 </div>
 @endsection

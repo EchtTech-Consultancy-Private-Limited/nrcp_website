@@ -8,6 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="basepath" content="{{ asset('assets/css/') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="apple-touch-icon" href="{{ asset('assets/Nrcp_img/nrcp.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/fonts/fonts.googleapis.com_css2.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.min.css') }}">

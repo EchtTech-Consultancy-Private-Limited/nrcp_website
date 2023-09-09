@@ -178,41 +178,36 @@
                                                                 <div class="row">
                                                                     <div class="col-lg-12">
                                                                         <form method="get"
-                                                                            action="http://localhost/nrcp-website/public/vaccination_dose?data=2023-09-07">
+                                                                            action="">
                                                                             <div class="search-widget mb-20">
                                                                                 <div class="row">
                                                                                     <div class="col-lg-5">
-                                                                                        <select name="district"
-                                                                                            id="district"
-                                                                                            class="form-control">
+                                                                                        <select name="state"
+                                                                                            id="state"
+                                                                                            class="form-control" onchange="getDistrictList();">
                                                                                             <option
-                                                                                                value="--Slect-Your-State--">
-                                                                                                ---Slect-Your-State---
+                                                                                                value="">
+                                                                                                Select-Your-State
                                                                                             </option>
-                                                                                            <option>Delhi</option>
-                                                                                            <option>Uttar Pradesh</option>
+                                                                                           
+                                                                                            @foreach($state as $states)
+                                                                                            <option value="{{ $states->state_name }}">{{ $states->state_name }}</option>
+                                                                                            @endforeach
                                                                                         </select>
                                                                                     </div>
                                                                                     <div class="col-lg-5">
                                                                                         <div class="location-select">
-                                                                                            <select name="district"
-                                                                                                id="district"
-                                                                                                class="form-control">
-                                                                                                <option
-                                                                                                    value="---Slect-District---">
-                                                                                                    ---Slect-District---
+                                                                                            <select name="cities" id="cities" class="form-control">
+                                                                                                <option value="">
+                                                                                                    Select-District
                                                                                                 </option>
-                                                                                                <option>Gonda</option>
-                                                                                                <option>delhi</option>
                                                                                             </select>
                                                                                         </div>
                                                                                     </div>
 
                                                                                     <div class="col-lg-2">
                                                                                         <div class="btn-part view-all-btn ">
-                                                                                            <a class="readon2 mod mt-0"
-                                                                                                href="#"
-                                                                                                tabindex="0">Search</a>
+                                                                                            <button class="readon2 mod mt-0" type="button" onclick="getSearchResults();">Search</button>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -226,38 +221,8 @@
 
                                                                         <section class="loaded">
 
-                                                                            <div class="table">
-                                                                                <table>
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <th>State Name</th>
-                                                                                            <th>District Name</th>
-                                                                                            <th>Address with Block</th>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td>Dadra and Nagar Haveli</td>
-                                                                                            <td>Dadra and Nagar Haveli and
-                                                                                                Daman Diu
-                                                                                            </td>
-                                                                                            <td>
-                                                                                                I.R.B Campus P.H.C Randa
-                                                                                            </td>
-                                                                                        </tr>
-
-
-                                                                                        <tr>
-                                                                                            <td>Dadra and Nagar Haveli</td>
-                                                                                            <td>Dadra and Nagar Haveli and
-                                                                                                Daman Diu
-                                                                                            </td>
-                                                                                            <td>
-                                                                                                I.R.B Campus P.H.C Randa
-                                                                                            </td>
-                                                                                        </tr>
-
-
-                                                                                    </tbody>
-                                                                                </table>
+                                                                            <div class="table" id="search-data">
+                                                                                
                                                                             </div>
                                                                         </section>
                                                                     </div>
@@ -347,8 +312,8 @@
                 $(".grid-item.filter3").removeClass("d-none");
             });
         });
-    </script>
-    <script>
+    
+    
         $(document).ready(function() {
             $('.image-link').magnificPopup({
                 type: 'image',
@@ -366,6 +331,48 @@
                 }
             });
         });
+        function getDistrictList(){
+        var statename = $('#state').val();
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: "get-districts-list",
+            type: "POST",
+            data:{
+                'state_name' : statename // in header request I'm getting value [productName: plastic product] *
+                },
+            success:function(data){
+                document.querySelector('#cities').innerHTML = data;
+                $select.selectmenu("refresh", true);
+            },
+            error:function(e){
+                alert("Some error occured. Please try again later.");
+            }
+        });
+    }
+    //Search code starts
+    function getSearchResults(){
+        var statename = $('#state').val();
+        var districtname = $('#cities').val();
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: "get-vaccination-center",
+            type: "POST",
+            data:{
+                'state_name' : statename,
+                'city_name' : districtname // in header request I'm getting value [productName: plastic product] *
+                },
+            success:function(data){
+                document.querySelector('#search-data').innerHTML = data
+            },
+            error:function(e){
+                alert("Some error occured. Please try again later.");
+            }
+        });
+    }
 
 $("#Master_layout_1").click(function(){
     $(".row.grid.nearest-vaccication").addClass('nearest-vaccication1');

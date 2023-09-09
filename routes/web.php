@@ -38,8 +38,8 @@ Route::get('/vaccination_dose',[HomeController::class,'vaccination_dose'])->name
 
 //event
 Route::get('/event',[EventController::class,'index'])->name('event');
-Route::get('/event-state/{slug}',[EventController::class,'event_state'])->name('event-state');
-Route::get('/event-national/{slug}',[EventController::class,'event_national'])->name('event-national');
+Route::get('/event-state',[EventController::class,'event_state'])->name('event-state');
+Route::get('/national-event',[EventController::class,'event_national'])->name('national-event');
 
 
 //form
@@ -58,4 +58,8 @@ Route::get('/set-language',[HomeController::class,'SetLang']);
 
 //content slug
 Route::get('{slug}',[HomeController::class,'commonPagesContent']);
+
+Route::post('/get-districts-list',[HomeController::class,'getDistricts']);
+Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch']);
+
 
