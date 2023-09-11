@@ -136,7 +136,7 @@ class HomeController extends Controller
 
     public function getFAQ(){
 
-        $faq = DB::table('faq')->where('soft_delete','0')->get();
+        $faq = DB::table('faq')->where('soft_delete','0')->orderBy('short_order','asc')->get();
 
         return view('faq-page',['faqdata'=>$faq ]); 
     }
@@ -217,11 +217,7 @@ class HomeController extends Controller
          foreach ($data as $searchData) {
                 $resultsData.='<tr><td>'.$searchData->state_name.'</td><td>'.$searchData->district_name.'</td><td>'.$searchData->address.'</td></tr>';
          }
-         
          $resultsData .= '</tbody></table>';
-         
-         
-         
         // dd($data);
          return $resultsData;
      }

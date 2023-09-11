@@ -52,7 +52,7 @@
                                                     <select class="form-control" data-date="{{ request('date') }}"
                                                         onchange="changeURL(this.value)" name="type" id="vaccination-dose">
                                                         <option value="0,{{ request('date') }}"{{ request('type') == 0 ? 'selected' : '' }}>
-                                                            Select Dose Type </option>
+                                                        Select route of  vaccine administration </option>
                                                         <option value="1,{{ request('date') }}"
                                                             {{ request('type') == 1 ? 'selected' : '' }}> IM
                                                             (Intra Muscular) </option>
