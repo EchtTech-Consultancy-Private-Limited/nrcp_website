@@ -20136,3 +20136,9 @@ body.nav-expanded .overlay {
 span.size {
   font-size: 12px;
 }
+
+.readon2.vaccination-btn {
+    padding: 6px 25px;
+    font-size: 14px;
+    line-height: 26px;
+}
