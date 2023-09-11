@@ -90,7 +90,7 @@
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 7 days')) }}</td>
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 14 days')) }}</td>
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 28 days')) }}</td>
-                                                <td>Total 8 injection 4 visits</td>
+                                                <td> Total 5 injection 5 visit</td>
                                             </tr>
                                             <?php }elseif(request('type') ==2){ ?>
                                             <tr>
@@ -101,7 +101,7 @@
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 7 days')) }}</td>
                                                 <td>{{ __('NIL') }}</td>
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 28 days')) }}</td>
-                                                <td> Total 5 injection 5 visit</td>
+                                                <td>Total 8 injection 4 visits</td>
                                             </tr>
                                             <?php }else{  ?>
                                             <tr>
@@ -112,7 +112,7 @@
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 7 days')) }}</td>
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 14 days')) }}</td>
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 28 days')) }}</td>
-                                                <td> Total 8 injection 4 visits </td>
+                                                <td> Total 5 injection 5 visit</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-left">ID (Intra Dermal)</td>
@@ -122,7 +122,7 @@
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 7 days')) }}</td>
                                                 <td>{{ __('NIL') }}</td>
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 28 days')) }}</td>
-                                                <td> Total 5 injection 5 visit</td>
+                                                <td> Total 8 injection 4 visits </td>
                                             </tr>
                                             <?php } ?>
             
