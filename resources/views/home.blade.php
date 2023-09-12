@@ -870,24 +870,25 @@
                      data-md-device-nav="false" data-md-device-dots="false" id="banner4">
                      <div class="team-item">
                         <div class="gallery-box media-icon orange-color">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
+                           {{-- <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
                            <div class="text-gallery">
                               Event 1
                            </div>
                            <a class="popup-videos" href="{{ url('/video') }}">
                            <i class="fa fa-play"></i>
-                           </a>                                  
+                           </a>                                   --}}
+
+                           <video controls muted class="video-g">
+                              <source src="{{ asset('assets/Nrcp_img/video1.mp4') }}" type="video/mp4">
+                              </video>
+
                         </div>
                      </div>
                      <div class="team-item">
                         <div class="gallery-box media-icon orange-color">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
-                           <div class="text-gallery">
-                              Event 2
-                           </div>
-                           <a class="popup-videos" href="{{ url('/video') }}">
-                           <i class="fa fa-play"></i>
-                           </a>                                  
+                           <video controls muted class="video-g">
+                              <source src="{{ asset('assets/Nrcp_img/video2.mp4') }}" type="video/mp4">
+                              </video>                              
                         </div>
                      </div>
                   </div>
