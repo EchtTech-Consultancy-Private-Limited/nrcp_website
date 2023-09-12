@@ -3437,6 +3437,33 @@ h6.sub-text-b-l {
     .rs-popular-courses.style2 .course-wrap .front-part .content-part .title {
         font-size: 19px;
     }
+
+    .container1 .mySlides img {
+        height: auto;
+      }
+
+      .container1 .column {
+        float: left;
+        width: 28.5%;
+        margin-bottom: 10px;
+        margin-right: 2px;
+        margin-left: 10px;
+    }
+
+    .col-box-g {
+        border: 0px solid #ddd;
+        padding: 12px;
+        padding-right: 0px;
+        height: auto;
+        overflow-y: inherit;
+    }
+
+    .container1 .prev, .container1 .next{
+        top: 40%;
+    width: auto;
+    padding: 10px;
+    }
+
 }
 
 

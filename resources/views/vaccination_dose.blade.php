@@ -207,7 +207,7 @@
 
                                                                                     <div class="col-lg-2">
                                                                                         <div class="btn-part view-all-btn ">
-                                                                                            <button class="readon2 mod mt-0" type="button" onclick="getSearchResults();">Search</button>
+                                                                                            <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResults();">Search</button>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>

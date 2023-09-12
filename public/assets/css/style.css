@@ -20136,3 +20136,109 @@ body.nav-expanded .overlay {
 span.size {
   font-size: 12px;
 }
+
+.readon2.vaccination-btn {
+    padding: 6px 25px;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.col-box-g {
+  border: 1px solid #ddd;
+  padding: 12px;
+  padding-right: 0px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.container1 .mySlides img {
+  height: 400px;
+}
+
+
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container1 {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .container1 .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .container1 .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .container1 .prev,
+  .container1 .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 16px;
+    margin-top: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .container1 .next {
+    right: 15px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .container1 .prev:hover,
+  .container1 .next:hover {
+      background-color: rgb(63 81 181);
+      color: #fff !important;
+  }
+  
+  /* Number text (1/3 etc) */
+  .container1 .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .container1 .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .container1 .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .container1 .column {
+      float: left;
+      width: 30.8%;
+      margin-bottom: 15px;
+      margin-right: 15px;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .container1 .demo {
+    opacity: 0.6;
+  }
+  
+  .container1 .active,
+  .container1 .demo:hover {
+    opacity: 1;
+  }
