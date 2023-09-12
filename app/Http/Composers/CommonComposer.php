@@ -34,6 +34,7 @@ class CommonComposer
     {
         $social_media = DB::table('social_links')->first();
         $footerMenu = DB::table('website_menu_management')->where('menu_place','1')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
+        $toogleMenu = DB::table('website_menu_management')->where('menu_place','2')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
        
         $pageSlug = DB::table('website_menu_management')->where('url',request()->path())->first();
         if(!empty($pageSlug->uid)){
@@ -47,6 +48,7 @@ class CommonComposer
         $menus = DB::table('website_menu_management')->where('menu_place','0')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
         $menuName = $this->getMenuTree($menus, 0);   
         $view->with(['headerMenu' => $menuName,'social_media'=>$social_media,'footerMenu'=>$footerMenu,
+        'toogleMenu'=>$toogleMenu,
         'commonsideMenu'=>isset($commonsideMenu)?$commonsideMenu:'']);
 
     }
