@@ -238,13 +238,11 @@
                                     </div>
                                     {{-- CHoose Yes End--}}
 
-
                                     {{-- CHoose No --}}
-                                    <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12 d-none" id="choose-no">
+                                    {{-- <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12 d-none" id="choose-no">
                                         <label class="pl-2">{{ __('Date of Ist Dose of vaccination (day 0)') }}</label>
                                         <input class="from-control mt-2" type="date" name="date" value="{{ date('d F Y') }}" disabled required>
-                                    </div>
-
+                                    </div> --}}
                                     {{-- CHoose No End --}}
 
                                 </div>
