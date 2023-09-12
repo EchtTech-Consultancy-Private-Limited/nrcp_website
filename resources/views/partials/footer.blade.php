@@ -49,7 +49,7 @@
                             <ul class="site-map border-right-white">
 
                                 @foreach ($footerMenu->slice(0,5) as $footerMenus)
-                                <li><a @if ($footerMenus->tab_type == 1)    @if (Session::get('Lang') == 'hi')  onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif   target="_blank" href="{{ url($footerMenus->url  ??'') }}">   @else  href="{{ url($footerMenus->url  ??'') }}" @endif>
+                                <li><a @if ($footerMenus->tab_type == 1) @if (Session::get('Lang') == 'hi')  onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif   target="_blank" href="{{ url($footerMenus->url  ??'') }}">   @else  href="{{ url($footerMenus->url  ??'') }}" @endif>
                                     @if (Session::get('Lang') == 'hi')
                                         {{ $footerMenus->name_hi  }}
                                     @else
@@ -154,8 +154,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-right md-text-left pr-0">
+                    
                     <div class="visitors-sec">
-                        <h5>Visitors :
+                        <h5>Website last Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>  &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Visitors :
                             <span class="number-visitor">2</span>
                             <span class="number-visitor">6</span>
                             <span class="number-visitor">4</span>
