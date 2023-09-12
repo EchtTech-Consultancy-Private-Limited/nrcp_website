@@ -12334,6 +12334,7 @@ span.courses.course-icon img {
   background: #fff;
   transition: all 500ms ease;
   border-radius: 5px;
+  margin-bottom: 40px;
 }
 
 .rs-blog.main-home .blog-item .blog-content {
@@ -12373,9 +12374,11 @@ span.courses.course-icon img {
 
 .rs-blog.main-home .blog-item .blog-content .title {
   margin-bottom: 10px;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
 }
+
 
 .rs-blog.main-home .blog-item .blog-content .title a {
   color: #101010;
@@ -20245,4 +20248,9 @@ span.size {
 
   .collapse p span {
     font-size: 15px !important;
+}
+
+.rs-blog.main-home .blog-item .image-part img {
+  height: 305px;
+  width: 100%;
 }
