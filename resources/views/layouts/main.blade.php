@@ -60,13 +60,17 @@
                         <ul class="d-flex justify-content-end">
                            {{-- <li><a href="javascript:void();" id="" download> <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/sociol-icon/printer.png"
                               alt="printer Image" aria-label="printer" class="slash">/</a></li> --}}
-                           <li><a href="javascript:void();"> <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/sociol-icon/share.png"
+                           <li><a href="#" target="_blank"> <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/sociol-icon/share.png"
                               alt="share Image" aria-label="share"></a></li>
-                           <li><a href="javascript:void();"> <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/sociol-icon/facebook.png"
+                              @if($social_media->facebook)
+                           <li><a href="{{$social_media->facebook}}" target="_blank"> <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/sociol-icon/facebook.png"
                               alt="facebook Image" aria-label="facebook"></a></li>
-                           <li><a href="javascript:void();"> <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/sociol-icon/twitter.png"
+                              @endif
+                              @if($social_media->twitter)
+                           <li><a href="{{$social_media->twitter}}" target="_blank"> <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/sociol-icon/twitter.png"
                               alt="twitter Image" aria-label="twitter"></a></li>
-                           <li><a href="javascript:void();"> <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/sociol-icon/linkedin.png"
+                              @endif
+                           <li><a href="javascript:void();" target="_blank"> <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/sociol-icon/linkedin.png"
                               alt="linkedin Image" aria-label="linkedin"></a></li>
                         </ul>
                      </div>

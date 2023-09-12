@@ -209,7 +209,7 @@
                                                         @else
                                                             {!! $item->title_name_en   !!}
                                                         @endif
-                                                        <span class="date-news-latest"> | {{  date('d F Y', strtotime($item->start_date)) }} </span>
+                                                        <span class="date-news-latest"> | {{  date('d/m/Y', strtotime($item->start_date)) }} </span>
                                                     </p>
                                                 </div>
 
@@ -347,28 +347,17 @@
                                         data-wow-duration="2000ms">
                                         <h2 class="title">About NRCP</h2>
                                         <div class="desc mb-30 about-t">
-                                            Rabies is responsible for extensive morbidity and mortality in India. The
-                                            disease is endemic throughout the country. With the exception of Andaman &
-                                            Nicobar and Lakshadweep Islands, human cases of rabies are reported from all
-                                            over the country. The cases occur throughout the year. About 96% of the
-                                            mortality and morbidity is associated with dog bites. Cats, wolf, jackal,
-                                            mongoose and monkeys are other important reservoirs of rabies in India. Bat
-                                            rabies has not been conclusively reported from the country.
-                                            To address the issue of rabies in the country, National Rabies Control Programme
-                                            was approved during 12th FYP by Standing Finance Committee meeting held on
-                                            03.10.2013 as Central Sector Scheme to be implemented under the Umbrella of NHM
-                                            .The Programme had two components – Human and Animal Components in 12th FYP.
-                                            Human Component for roll out in the all States and UTs through nodal agency
-                                            NCDC with total budget of Rs 20 Crores and Animal Health Component for pilot
-                                            testing in Haryana and Chennai through nodal agency Animal Welfare Board of
-                                            India(AWBI)under the aegis of MoEF&CC, GOI with total budget of Rs 30 Crores for
-                                            the Plan period. The Human Health Component has been rolled out in 26 States and
-                                            UTs (Pilot Project for Animal Health Component by AWBI has been ended with
-                                            closure of last FY of 12th FYP i.e. with effect from 31.3.2017)
+                                        Rabies is responsible for extensive morbidity and mortality in India. The disease is endemic throughout the country. Except for Andaman & Nicobar and Lakshadweep Islands, human cases of rabies are reported from all over the country. The cases occur throughout the year. About 96% of the mortality and morbidity is associated with dog bites. Cats, wolf, jackal, mongoose and monkeys are other important reservoirs of rabies in India. Bat rabies has not been conclusively reported from the country.
+                                        <br><br>
+                                        <b>Evolution of National Rabies Control Program</b>
+                                        <br><br>
+In the 11th five-year plan (2007–2012) Rabies control efforts in India gained momentum and the Ministry of Health and Family Welfare, Govt of India approved a “Pilot Project for the Control of Human Rabies”, for which ` 8.65 crores were allocated. For the first time, Rabies control in animals, animal birth control and vaccination of stray dogs were mentioned in this plan, as components of animal welfare to be handled by the Animal Welfare Board of India. The project was implemented by NCDC in 5 cities Delhi, Ahmedabad, Pune, Bangalore and Madurai and the project began in January 2008 and continued till 2012. The objectives of the project were prevention of human deaths due to Rabies, enhancing awareness in the general community, developing trained health manpower, strengthening diagnostic facilities, strengthening surveillance and maintenance of continuous surveillance and sensitization of other sectors. Experience gained in the pilot project indicated that strategy is feasible, reproducible, and implementable.
+
+With the lessons learned in the pilot project, the Ministry of Health and Family Welfare approved National Rabies Control Programme (NRCP) in the 12th Five Year Plan for rollout in the entire country. During the 12th Five years plan, from 2014 to 2017, a small pilot was also taken to test the strategy of Animal Health Components in Haryana and Chennai through the Animal Welfare Board of India (AWBI) under the aegis of the Ministry of Environment, Forest and Climate Change, Govt of India. From 2017 onwards NCDC is coordinating to implement Human Health Component of National Rabies Control Program. From the financial year 2019-20 onwards, human health component activities at the State and District level are being funded by the National Health Mission’s program implementation and planning mechanism.
                                         </div>
                                         <div class="btn-part wow fadeInUp" data-wow-delay="400ms"
                                             data-wow-duration="2000ms">
-                                            <a class="readon2" href="#">Read More <i
+                                            <a class="readon2" href="{{ url('About-NRCP') }}">Read More <i
                                                     class="fa fa-angle-right pl-2"></i></a>
                                         </div>
                                     </div>
