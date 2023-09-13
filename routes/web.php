@@ -22,7 +22,6 @@ use App\Http\Controllers\PublicationsController;
  Route::get('/',[HomeController::class,'index'])->name('/');
 
 
-
 Route::get('/anumal-health',[HomeController::class,'anumalHealth'])->name('anumal-health');
 Route::get('/coming-soon',[HomeController::class,'comingSoon'])->name('coming-soon');
 Route::get('/human-health',[HomeController::class,'humanHealth'])->name('human-health');
