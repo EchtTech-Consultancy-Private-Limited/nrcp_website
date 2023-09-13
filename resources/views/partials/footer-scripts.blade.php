@@ -100,18 +100,19 @@ $(document).ready(function() {
         ]
     } );
 } );
+function checkYesNo(e){
+    var html = '';
+    if(e=='1'){
+        $("#txtDate").removeAttr('required', 'true'); 
+        html +=`<label class="pl-2">{{ __('Date of 1st Dose of vaccination (day 0)') }}</label>
+                <input class="from-control mt-2" type="date" name="date" placeholder="Name" id="txtDate1" required>`;
+    }else{
+        $("#txtDate").attr('required', 'true'); 
+        html +=``;
+    }
+    $('#yesINput').html(html);
+}
 
-
-
-$("#yes-bite").click(function(){
-    $("#choose-yes").removeClass('d-none');  
-    $("#choose-no").addClass('d-none');        
-  });
-
-$("#no-bite").click(function(){
-    $("#choose-no").removeClass('d-none'); 
-    $("#choose-yes").addClass('d-none');          
-  });
   $(function(){
     var dtToday = new Date();
     var month = dtToday.getMonth() + 1;
