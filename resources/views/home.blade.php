@@ -35,138 +35,35 @@
                data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
                data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true" data-md-device-dots="false"
                id="banner1">
+               @if(count($homebanner)>0)
+               @foreach($homebanner as $k=>$value)
                <div class="slider-content">
                   <div class="container-fluid px-0">
                      <div class="row banner-mobile">
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner-m.jpg') }}"
-                                 alt="">
+                           <img src="{{ asset('uploads/banner/'.explode(',',json_decode($value->banner_collection)[0])[1]) }}"
+                                 alt="{{explode(',',json_decode($value->banner_collection)[0])[0]}}">
                            </div>
-                        </div>
-                        {{-- <div class="col-lg-6 pr-0 banner-mobile">
-                           <div class="banner-content alignment-center">
-                              <div>
-                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="3000ms">
-                                    National Rabies Control Program
-                                 </h1>
-                                 <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="2000ms">is a public health initiative in India that aims to
-                                    prevent and control the spread of rabies,
-                                    a deadly viral disease that is transmitted to humans through the bite of an
-                                    infected animal.
-                                 </div>
-                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                                    data-wow-duration="2000ms">
-                                    <a class="readon green-banner" href="{{ route('about-us') }}">Read More <i
-                                       class="fa fa-angle-right pl-2"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div> --}}
+                        </div>                       
                      </div>
                   </div>
                </div>
+               @endforeach
+               @else
                <div class="slider-content">
                   <div class="container-fluid px-0">
                      <div class="row banner-mobile">
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}"
-                                 alt="">
+                           <img src="{{ asset(config('constants.brand.default_banner')) }}"
+                                 alt="Banner">
                            </div>
-                        </div>
-                        {{-- <div class="col-lg-6 pr-0">
-                           <div class="banner-content alignment-center">
-                              <div class="">
-                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="3000ms">
-                                    Publications
-                                 </h1>
-                                 
-                                 <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="2000ms">is a public health initiative in India that aims to
-                                    prevent and control the spread of rabies,
-                                    a deadly viral disease that is transmitted to humans through the bite of an
-                                    infected animal.
-                                 </div>
-                              
-                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                                    data-wow-duration="2000ms">
-                                    <a class="readon green-banner"
-                                       href="https://ncdc.gov.in/WriteReadData/linkimages/GuidelinesforRabiesProphylaxis.pdf"
-                                       target="_blank">Read More <i class="fa fa-angle-right pl-2"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div> --}}
+                        </div>                       
                      </div>
                   </div>
                </div>
-               <div class="slider-content">
-                  <div class="container-fluid px-0">
-                     <div class="row banner-mobile">
-                        <div class="col-lg-12 order-last p-0">
-                           <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/event/event4.jpg') }}"
-                                 alt="">
-                           </div>
-                        </div>
-                        {{-- <div class="col-lg-6 pr-0">
-                           <div class="banner-content alignment-center">
-                              <div class="">
-                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="3000ms">
-                                    Events
-                                 </h1>
-                              
-                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                                    data-wow-duration="2000ms">
-                                    <a class="readon green-banner">Read More <i
-                                       class="fa fa-angle-right pl-2"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div> --}}
-                     </div>
-                  </div>
-               </div>
-               <div class="slider-content">
-                  <div class="container-fluid px-0">
-                     <div class="row banner-mobile">
-                        <div class="col-lg-12 order-last p-0">
-                           <div class="img-part banner-image">
-                              <img class="" src="{{ asset('assets/Nrcp_img/event/event5.jpg') }}"
-                                 alt="">
-                           </div>
-                        </div>
-                        {{-- <div class="col-lg-6 pr-0">
-                           <div class="banner-content alignment-center">
-                              <div class="">
-                                 <h1 class="sl-title wow fadeInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="3000ms">
-                                    Upcoming Activities
-                                 </h1>
-                                 
-                                 <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                                    data-wow-duration="2000ms">is a public health initiative in India that aims to
-                                    prevent and control the spread of rabies,
-                                    a deadly viral disease that is transmitted to humans through the bite of an
-                                    infected animal.
-                                 </div>
-                              
-                                 <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
-                                    data-wow-duration="2000ms">
-                                    <a class="readon green-banner" href="{{ route('activities') }}">Read More <i
-                                       class="fa fa-angle-right pl-2"></i></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div> --}}
-                     </div>
-                  </div>
-               </div>
+               @endif
             </div>
             <div class="btns">
                <div class="customPreviousBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>

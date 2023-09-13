@@ -17,6 +17,7 @@
 <script src="{{ asset('assets/js/tilt.jquery.min.js') }}"></script>
 <script src="{{ asset('assets/js/plugins.js') }}"></script>
 <script src="{{ asset('assets/js/contact.form.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.lazyload.min.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
 
 <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
@@ -25,6 +26,17 @@
 
 
 <script>
+var scrollBottom = $(window).scrollTop() + $(window).height();
+$(window).scroll(function(){
+      if($(this).scrollTop() > 400) {
+        $('.button').css({'display': 'none'});
+       } else if (scrollBottom  > 200) {
+        $('.button').css({'display': 'block'});
+      }
+    });
+$(document).ready(function() {
+    $('img').lazyload();
+});
 $(document).ready(function() {
     $(".btn2").click(function() {
         $(".grid-item.filter2").removeClass('d-none');

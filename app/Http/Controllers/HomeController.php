@@ -19,7 +19,10 @@ class HomeController extends Controller
     {
         //news
         $news= DB::table('news_management')->where('soft_delete','0')->get();
-        return view('home',['news'=>$news]); 
+        $homebanner = DB::table('home_page_banner_management')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
+       
+        //dd($homebanner);
+        return view('home',['news'=>$news,'homebanner'=>$homebanner ]); 
     }
     public function anumalHealth()
     {
