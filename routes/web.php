@@ -22,7 +22,6 @@ use App\Http\Controllers\PublicationsController;
  Route::get('/',[HomeController::class,'index'])->name('/');
 
 
-
 Route::get('/anumal-health',[HomeController::class,'anumalHealth'])->name('anumal-health');
 Route::get('/coming-soon',[HomeController::class,'comingSoon'])->name('coming-soon');
 Route::get('/human-health',[HomeController::class,'humanHealth'])->name('human-health');
@@ -35,6 +34,7 @@ Route::get('/vaccination_dose',[HomeController::class,'vaccination_dose'])->name
 // Route::get('/publications',[PublicationsController::class,'publications'])->name('publications');
 //Route::get('/privacy-policy',[HomeController::class,'privacyPolicy'])->name('privacypolicy');
 
+Route::get('/news-details',[HomeController::class,'news_details'])->name('news-details');
 
 //event
 Route::get('/event',[EventController::class,'index'])->name('event');
@@ -60,6 +60,8 @@ Route::get('/set-language',[HomeController::class,'SetLang']);
 Route::get('{slug}',[HomeController::class,'commonPagesContent']);
 
 Route::post('/get-districts-list',[HomeController::class,'getDistricts']);
+
 Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch']);
+
 
 
