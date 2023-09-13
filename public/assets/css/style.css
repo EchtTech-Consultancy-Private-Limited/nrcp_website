@@ -12340,6 +12340,7 @@ span.courses.course-icon img {
 .rs-blog.main-home .blog-item .blog-content {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
   padding: 20px 18px;
+  min-height: 160px;
 }
 
 .rs-blog.main-home .blog-item .blog-content .blog-meta {
