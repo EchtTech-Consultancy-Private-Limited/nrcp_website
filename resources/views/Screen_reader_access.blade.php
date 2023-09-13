@@ -4,10 +4,10 @@
 {{ __('National Rabies Control Programme (NRCP)') }}
 @endsection
 @section('pageTitle')
-{{ __('Home') }}
+{{ __('Screen Reader Access') }}
 @endsection
 @section('breadcrumbs')
-{{ __('Home') }}
+{{ __('Screen Reader Access') }}
 @endsection
 @section('content')
 <?php //dd($menu)
@@ -15,52 +15,10 @@
 
     <div class="main-content">
 
-        <div class="rs-breadcrumbs breadcrumbs-overlay">
-            <div class="breadcrumbs-img">
-                <img src="{{ asset('assets/Nrcp_img/banner.png') }}" alt="Breadcrumbs Image">
-            </div>
-            <div class="breadcrumbs-text white-color">
-                <h1 class="page-title">Screen Reader Access</h1>           
-            </div>
-        </div>
+       
 
         <div class="rs-publications-main">
-            <div class="container">                
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="rs-breadcrumbs ">
-    
-                            <div class="breadcrumbs-text ">
-    
-                                <ul>
-                                    <li>
-                                        <a class="active" href="{{ url('/') }}">Home</a>
-                                    </li>
-                                    <li>Screen Reader Access</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="publication-sociol-icon">
-                            <ul class="d-flex justify-content-end">
-                                <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/printer.png') }}"
-                                            alt="printer Image" aria-label="printer" class="slash">/</a></li>
-                                <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/share.png') }}"
-                                            alt="share Image" aria-label="share"></a></li>
-                                <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/facebook.png') }}"
-                                            alt="facebook Image" aria-label="facebook"></a></li>
-                                            <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/twitter.png') }}"
-                                            alt="twitter Image" aria-label="twitter"></a></li>
-                                <li><a href="#"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/linkedin.png') }}"
-                                            alt="linkedin Image" aria-label="linkedin"></a></li>
-                               
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+           
             <div id="rs-about" class="rs-about style1 pt-80 pb-40 md-pt-70 md-pb-70">     
                 <div class="container">                              
                 <div class="heading-title">
