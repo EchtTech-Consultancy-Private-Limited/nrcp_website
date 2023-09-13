@@ -31,11 +31,11 @@
                         <li tabindex="1">
 
                             <div class="top-header-logo">
-                                <a href="javascript:void();" class="top-logo">
+                                <a href="https://swachhbharat.mygov.in/" target="_blank" class="top-logo">
                                     <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
                                 </a>
 
-                                <a href="javascript:void();" class="top-logo">
+                                <a href="https://www.g20.org/en/" target="_blank" class="top-logo">
                                     <img src="{{ asset('assets/Nrcp_img/g20.png') }}">
                                 </a>
                             </div>
@@ -65,7 +65,7 @@
                             </div>
                         </li>
 
-                        {{-- <li class="d-xs-none">
+                         <!-- <li class="d-xs-none">
                      <a href="javascript:void();" class="top-logo">
                      <img src="{{asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
                      </a>
@@ -73,8 +73,7 @@
                      <a href="javascript:void();" class="top-logo">
                         <img src="{{asset('assets/Nrcp_img/g20.png') }}">
                         </a>
-                  </li> --}}
-
+                  </li>  -->
                     </ul>
                 </div>
 

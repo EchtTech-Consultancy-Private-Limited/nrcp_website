@@ -68,7 +68,7 @@
                                 </div>
 
                                 <div class="table-responsive">
-                                    <table class="table">
+                                    <table class="example">
                                         <thead>
                                             <th>Dose Type</th>
                                             <th>Dose of vaccine</th>

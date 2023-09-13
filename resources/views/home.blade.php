@@ -615,7 +615,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                             </div>
 
                             <div class="btn-part view-all-btn">
-                                <a class="readon2 mod" href="#">View All</a>
+                                <a class="readon2 mod" href="{{ route('news-details')}}">View All</a>
                             </div>
                         </div>
                     </div>

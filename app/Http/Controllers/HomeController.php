@@ -80,6 +80,10 @@ class HomeController extends Controller
         return view('site-map');
     }
 
+    public function news_details(){
+        
+        return view('news_details');
+    }
 
     public function feedbackForm(Request $request){
         

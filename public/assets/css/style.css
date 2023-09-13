@@ -13179,23 +13179,23 @@ span.courses.course-icon img {
   color: #111111;
 }
 
-.rs-inner-blog .blog-deatails .blog-full .unorder-list li {
+.tab-content ul li {
   display: block;
   position: relative;
   padding-left: 25px;
   padding-bottom: 15px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 25px;
 }
 
-.rs-inner-blog .blog-deatails .blog-full .unorder-list li:before {
+.tab-content ul li:before {
   position: absolute;
   top: 0;
   left: 5px;
     content: "\f111";
     font-family: FontAwesome;
     color: #000000;
-    font-size: 8px;
+    font-size: 5px;
 }
 
 .rs-inner-blog .ps-navigation {
