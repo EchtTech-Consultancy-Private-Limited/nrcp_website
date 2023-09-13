@@ -2462,6 +2462,10 @@ h6.sub-text-b-l {
         line-height: 46px;
     }
 
+    .mobile-menu-visible{
+        display: block !important;
+    }
+
     .col-md-6.text-lg-right.pl-0 {
         padding-left: 15px !important;
     }
