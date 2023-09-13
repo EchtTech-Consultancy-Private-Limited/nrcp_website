@@ -28,9 +28,9 @@
                                     <h3 class="title">
                                         <a href="#">{{ $datas->title_name_en }}</a>
                                     </h3>
-                                    <div class="desc">
+                                    <!-- <div class="desc">
                                         {!! $datas->description_en  !!}
-                                    </div>
+                                    </div> -->
                                 </div>
                               </div>
                         </div>

@@ -19950,7 +19950,7 @@ a.sitemap-cl i.fa {
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li > a:hover{
   /* line-height: 0px; */
   background: #92271d !important;
-  color: #fff !important;
+  color: #fff;
   border-radius: 40px;
   height: auto;
   /* border: 1px solid #fff; */
@@ -19959,7 +19959,7 @@ a.sitemap-cl i.fa {
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu ul.sub-menu li a:hover {
   line-height: 0px;
   background: transparent !important;
-  color: #000 !important;
+  color: #000;
   border-radius: 0px;
   height: auto;
   /* border: 0px solid #fff;` */

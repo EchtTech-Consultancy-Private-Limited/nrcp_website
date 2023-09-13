@@ -511,7 +511,7 @@ section.event-wrap .event-card.aos-init.aos-animate {
 }
 
 .site-header .navbar-nav .dropdown-menu li a,a, .master-class table a ,
-.site-header .navbar-nav .dropdown-menu .dropdown-item:hover ul.dropdown-menu li.dropdown-item a{
+.site-header .navbar-nav .dropdown-menu .dropdown-item:hover ul.dropdown-menu li.dropdown-item a, .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu ul.sub-menu li a:hover{
     color: #ff0 !important;
 }
 
@@ -534,10 +534,6 @@ a.btn2::after{
 
 .sidebarwraper ul li.hasnested.opened a svg, .sidebarwraper ul li.hasnested .plus {
     fill: #ff0 !important;
-}
-.sidebarwraper ul li a.active, .contact-page-section .rs-quick-contact .form-group .btn-send, .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share .opening i:before,.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li a i.fa, .sidebarwraper ul li a,b.text-special,.box-rti a, a h5, a h6, a h4, a h3,.sidebarwraper ul li.hasnested, .sidebarwraper ul li.hasnested.opened a, .sidebarwraper ul li ul, .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a, .rs-slider.style1 .owl-nav .owl-next, .rs-slider.style1 .owl-nav .owl-prev, .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.sub-menu li a, .rs-publications-main table td a, .rs-publications-main table td a span, .rs-publications-main table td a i, .rs-publications-main table th a, table th {
-    color: #ff0 !important;
-    background: #000 !important;
 }
 
 
@@ -609,7 +605,7 @@ ul.topbar-contact li, .contact-page-section .contact-address-section .contact-in
     color: #fff !important;
 }
 
-.rs-about.style1 .notice-bord.style1 li, .contact-page-section .rs-quick-contact .form-group .btn-send{
+.rs-about.style1 .notice-bord.style1 li, .full-width-header .rs-header .right_menu_togle, .rs-blog.main-home .blog-item, .contact-page-section .rs-quick-contact .form-group .btn-send, .rs-faq-part.style1 .main-part .faq-content .accordion .card{
     background:#000 !important;
     border: 1px solid #fff !important;
 }
@@ -625,6 +621,10 @@ ul.topbar-contact li, .contact-page-section .contact-address-section .contact-in
     color: #e1e1e1 !important;
 }
 
+label{color: #fff;}
+
+.dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{color: #b3adad !important;}
+
 .top-menu-box a.text-vaccination{
     margin-top: 7px !important;
 }
@@ -633,3 +633,13 @@ div#debt-amount-pos, .publication-sociol-icon a img{
     background: #ffff00 !important;
 }
 
+.sidebarwraper ul li a.active, .rs-publications-main .nav-pills .nav-link, .contact-page-section .rs-quick-contact .form-group .btn-send, .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share .opening i:before,.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li a i.fa, .sidebarwraper ul li a,b.text-special,.box-rti a, a h5, a h6, a h4, a h3,.sidebarwraper ul li.hasnested, .sidebarwraper ul li.hasnested.opened a, .sidebarwraper ul li ul, .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a, .rs-slider.style1 .owl-nav .owl-next, .rs-slider.style1 .owl-nav .owl-prev, .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.sub-menu li a, .rs-publications-main table td a, .rs-publications-main table td a span, .rs-publications-main table td a i, .rs-publications-main table th a, table th {
+    color: #ff0 !important;
+    background: #000 !important;
+}
+
+.rs-publications-main table td, .rs-publications-main table th, .rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-header .card-link, .rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-header .card-link.collapsed{background: #000 !important;}
+
+.rs-breadcrumbs div.breadcrumbs-text.white-color{background: transparent !important;}
+
+.full-width-header.header-style1.home1-modifiy.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu ul.sub-menu li a:hover{color: yellow !important;}
