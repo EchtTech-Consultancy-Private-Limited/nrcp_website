@@ -19230,7 +19230,6 @@ span.number-visitor {
 .pdf-image img {
   width: 100%;
 }
-
 .img-part.banner-image {
   min-height: 450px;
   height: 450px;
@@ -19239,7 +19238,7 @@ span.number-visitor {
 .img-part.banner-image img {
   height: 100%;
   width: 100%;
-  height: 550px;
+  height: 450px;
   object-fit: cover;
   /* zoom: 150%; */
 }

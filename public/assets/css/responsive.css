@@ -40,7 +40,18 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+}
 
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .img-part.banner-image img{
+        height: 365px;
+    }
+
+    .img-part.banner-image {
+        min-height: 365px;
+        height: 365px;
+      }
+      
 }
 
 
