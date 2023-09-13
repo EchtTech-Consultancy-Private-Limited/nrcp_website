@@ -74,7 +74,7 @@
                                            @endif
                                            <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank">     
                                       @else  
-                                      <a href="{{ url($footerMenus->url  ??'') }}" target="_blank"> 
+                                      <a href="{{ url($footerMenus->url  ??'') }}"> 
                                       @endif    
                                           
                                           
