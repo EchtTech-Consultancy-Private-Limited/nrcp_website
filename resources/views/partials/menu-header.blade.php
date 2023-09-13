@@ -24,68 +24,173 @@
                <i class="fa fa-bars"></i>
                </a>
             </div>
-        </div>
-    </div>
-    <div class="col-lg-8 text-lg-left pl-0 pr-0">
-        <div class="rs-menu-area">
-            <div class="main-menu">
-
-                <div class="mobile-menu">
-                    <a class="rs-menu-toggle">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </div>
-
-                <div class="top-menu-box">
-                    <ul>
-                        <li tabindex="1">
-
-                            <div class="top-header-logo">
-                                <a href="https://swachhbharat.mygov.in/" target="_blank" class="top-logo">
-                                    <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
-                                </a>
-
-                                <a href="https://www.g20.org/en/" target="_blank" class="top-logo">
-                                    <img src="{{ asset('assets/Nrcp_img/g20.png') }}">
-                                </a>
-                            </div>
-
-                            <a href="javascript:void();" class="text-vaccination pulse" data-toggle="modal"
-                                data-target="#vaccination" style="border: solid 4px; display: block !important">
-                                <span> Have you Bitten by an Animal? </span> <br>
-                                Know your Rabies Vaccination Schedule
-                            </a>
-                        </li>
-
-                        <li tabindex="1">
-                            <div class="logo-cat-wrap right-h">
-                                <div class="logo-part mobile-logo-s">
-                                    <a href="{{ url('/') }}">
-                                        <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt=""
-                                            class="logo logo2">
-                                        <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
-                                            class="logo logo1 d-none">
-                                        <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block">
-                                        <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block">
-
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-
-                         <!-- <li class="d-xs-none">
+            <div class="top-menu-box">
+               <ul>
+                  <li tabindex="1">
+                     <div class="top-header-logo">
+                        <a href="https://swachhbharat.mygov.in/" target="_blank" class="top-logo">
+                        <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
+                        </a>
+                        <a href="https://www.g20.org/en/" target="_blank" class="top-logo">
+                        <img src="{{ asset('assets/Nrcp_img/g20.png') }}">
+                        </a>
+                     </div>
+                     <a href="javascript:void();" class="text-vaccination pulse" data-toggle="modal"
+                        data-target="#vaccination" style="border: solid 4px; display: block !important">
+                     <span> Have you Bitten by an Animal? </span> <br>
+                     Know your Rabies Vaccination Schedule
+                     </a>
+                  </li>
+                  <li tabindex="1">
+                     <div class="logo-cat-wrap right-h">
+                        <div class="logo-part mobile-logo-s">
+                           <a href="{{ url('/') }}">
+                           <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt=""
+                              class="logo logo2">
+                           <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
+                              class="logo logo1 d-none">
+                           <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
+                              class="logo logo1 extra-logo d-none d-xs-block">
+                           <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
+                              class="logo logo1 extra-logo d-none d-xs-block">
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+                  {{-- 
+                  <li class="d-xs-none">
                      <a href="javascript:void();" class="top-logo">
                      <img src="{{asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
                      </a>
                      <a href="javascript:void();" class="top-logo">
-                        <img src="{{asset('assets/Nrcp_img/g20.png') }}">
-                        </a>
-                  </li>  -->
-                    </ul>
-                </div>
-
+                     <img src="{{asset('assets/Nrcp_img/g20.png') }}">
+                     </a>
+                  </li>
+                  --}}
+               </ul>
+            </div>
+         </div>
+         <!-- //.main-menu -->
+      </div>
+   </div>
+</div>
+</div>
+<div class="nav-bottom">
+<div class="container">
+   <div class="row">
+      <div class="col-lg-12 text-lg-left pl-0 pr-0">
+         <div class="rs-menu-area">
+            <div class="main-menu">
+               <nav class="rs-menu">
+                  <nav class="rs-menu">
+                     <ul class="nav-menu">
+                        @foreach ($headerMenu as $menuName)
+                        @if (@isset($menuName->children))
+                        <li class="menu-item-has-children ">
+                           <?php //dd($menuName->route_type); ?>
+                           <a href="{{ url($menuName->url ??'') }}"
+                              class="main-anchor">
+                           @if (Session::get('Lang') == 'hi')
+                           {{ $menuName->name_hi ??''}}
+                           @else
+                           {{ $menuName->name_en ??''}}
+                           @endif
+                           </a>
+                           <ul class="sub-menu">
+                              @foreach ($menuName->children as $suMenu)
+                              @if (@isset($suMenu->children))
+                              <li class="menu-item-has-children">
+                                 <a @if ($suMenu->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank"  href="{{$menuName->route_type}}{{ ($suMenu->url ?? '/') }}"    @else  href="{{$menuName->route_type}}{{ ($suMenu->url ?? '/') }}" @endif
+                                 class="main-anchor">
+                                 @if (Session::get('Lang') == 'hi')
+                                 {{ $suMenu->name_hi ??''}}
+                                 @else
+                                 {{ $suMenu->name_en ??''}}
+                                 @endif
+                                 </a>
+                                 <ul class="sub-menu">
+                                    @foreach ($suMenu->children as $childMenu)
+                                    @if (@isset($childMenu->children))
+                                    <li class="menu-item-has-children">
+                                       <a @if ($childMenu->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank"  href="{{ url($childMenu->url ?? '') }}"    @else  href="{{ url($childMenu->url ?? '') }}" @endif
+                                       class="main-anchor">
+                                       @if (Session::get('Lang') == 'hi')
+                                       {{ $childMenu->name_hi ??''}}
+                                       @else
+                                       {{ $childMenu->name_en  ??''}}
+                                       @endif
+                                       </a>
+                                       <ul class="sub-menu">
+                                          @foreach ($childMenu->children as $subchildMenu)
+                                          <li>
+                                             <a
+                                             @if ($subchildMenu->tab_type == 1)  @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif  target="_blank"  href="{{ url($subchildMenu->url ??'') }}"    @else  href="{{ url($subchildMenu->url ??'') }}" @endif>
+                                             @if (Session::get('Lang') == 'hi')
+                                             {{ $subchildMenu->name_hi ??''}}
+                                             @else
+                                             {{ $subchildMenu->name_en ??'' }}
+                                             @endif
+                                             </a>
+                                          </li>
+                                          @endforeach
+                                       </ul>
+                                    </li>
+                                    @else
+                                    <li>
+                                       <a
+                                       @if ($childMenu->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank"  href="{{ url($childMenu->url ?? '') }}"    @else  href="{{ url($childMenu->url ?? '') }}" @endif>
+                                       @if (Session::get('Lang') == 'hi')
+                                       {{ $childMenu->name_hi ??''}}
+                                       @else
+                                       {{ $childMenu->name_en  ??''}}
+                                       @endif
+                                       </a>
+                                    </li>
+                                    @endif
+                                    @endforeach
+                                 </ul>
+                              </li>
+                              @else
+                              <li>
+                                 <a
+                                 @if ($suMenu->tab_type == 1) target="_blank" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif href="{{ url($suMenu->url ?? '') }}"    @else  href="{{ url($suMenu->url ?? '') }}" @endif>
+                                 @if (Session::get('Lang') == 'hi')
+                                 {{ $suMenu->name_hi ??''}}
+                                 @else
+                                 {{ $suMenu->name_en ??'' }}
+                                 @endif
+                                 </a>
+                              </li>
+                              @endif
+                              @endforeach
+                           </ul>
+                        </li>
+                        @else
+                        <li class="">
+                           <a
+                           @if ($menuName->tab_type == 1)    @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif   target="_blank"  href="{{ url($menuName->url ?? '') }}"    @else  href="{{ url($menuName->url ?? '') }}" @endif>
+                           @if (Session::get('Lang') == 'hi')
+                           {{ $menuName->name_hi ?? '' }}
+                           @else
+                           {{ $menuName->name_en ?? '' }}
+                           @endif
+                           </a>
+                        </li>
+                        @endif
+                        @endforeach
+                        {{-- current-menu-item --}}
+                        <li class="menu-bar-side">                                       
+                           <a id="nav-expander" class="nav-expander style6">
+                           <span class="dot1"></span>
+                           <span class="dot2"></span>
+                           <span class="dot3"></span>
+                           </a>
+                        </li>
+                     </ul>
+                     <!-- //.nav-menu -->
+                  </nav>
+                  <!-- //.nav-menu -->
+               </nav>
             </div>
             <!-- //.main-menu -->
          </div>

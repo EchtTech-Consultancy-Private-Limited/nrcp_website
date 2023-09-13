@@ -19240,7 +19240,7 @@ span.number-visitor {
   height: 100%;
   width: 100%;
   height: 550px;
-  object-fit: fill;
+  object-fit: cover;
   /* zoom: 150%; */
 }
 
