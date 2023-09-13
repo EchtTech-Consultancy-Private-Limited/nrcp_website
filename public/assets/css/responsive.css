@@ -2483,6 +2483,11 @@ h6.sub-text-b-l {
         height: 50px;
     }
 
+    .pdf-image img {
+        width: 99%;
+        padding-left: 15px;
+    }
+
     section.latest-news .latest-news-slider-content-text{
         display: block !important;
     }
@@ -2504,8 +2509,16 @@ h6.sub-text-b-l {
         margin-bottom: 18px;
     }
 
+    .visitors-sec h5{
+        line-height: 26px;
+    }
+
     .main-part.new-style.padding-sm-0 {
         padding: 0 30px !important;
+    }
+
+    ul.address-widget .desc b {
+        display: contents;
     }
 
     .rs-partner .partner-item a img{
@@ -2615,7 +2628,11 @@ h6.sub-text-b-l {
     }
 
     .pt-60, .pt-80 {
-        padding-top: 40px;
+        padding-top: 30px;
+    }
+
+    .pb-40 {
+        padding-bottom: 30px;
     }
 
     .rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-header .card-link{

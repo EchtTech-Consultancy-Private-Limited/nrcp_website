@@ -383,7 +383,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                         <div class="notice-bord style1">
                             <h4 class="title">Recent Activity</h4>
                             <div class="marquee-height">
-                                <ul class="recent-activity-slide marquee--inner">
+                                <!-- <ul class="recent-activity-slide marquee--inner">
                                     <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
                                         style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
                                         <div class="desc"> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
@@ -419,7 +419,10 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                                             simply dummy text of the printing and setting
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> -->
+
+                                <h5 class="ml-2 mt-4">Content Coming soon</h5>
+
                             </div>
 
                             <div class="btn-part view-all-btn">
@@ -433,8 +436,8 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                             <h4 class="title">Publications</h4>
 
                             <div class="marquee-height">
-
-                                <ul class="Publications-slide marquee--inner ">
+                            <h5 class="ml-2 mt-4">Content Coming soon</h5>
+                                <!-- <ul class="Publications-slide marquee--inner ">
                                     <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
                                         style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
                                         <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
@@ -470,12 +473,11 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                                             simply dummy text of the printing and setting
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="btn-part view-all-btn">
                                 <a class="readon2 mod" href="#">View All</a>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-md-4  pr-0">

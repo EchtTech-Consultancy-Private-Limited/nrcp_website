@@ -12340,6 +12340,7 @@ span.courses.course-icon img {
 .rs-blog.main-home .blog-item .blog-content {
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
   padding: 20px 18px;
+  min-height: 160px;
 }
 
 .rs-blog.main-home .blog-item .blog-content .blog-meta {
@@ -19950,7 +19951,7 @@ a.sitemap-cl i.fa {
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li > a:hover{
   /* line-height: 0px; */
   background: #92271d !important;
-  color: #fff !important;
+  color: #fff;
   border-radius: 40px;
   height: auto;
   /* border: 1px solid #fff; */
@@ -19959,7 +19960,7 @@ a.sitemap-cl i.fa {
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu ul.sub-menu li a:hover {
   line-height: 0px;
   background: transparent !important;
-  color: #000 !important;
+  color: #000;
   border-radius: 0px;
   height: auto;
   /* border: 0px solid #fff;` */
