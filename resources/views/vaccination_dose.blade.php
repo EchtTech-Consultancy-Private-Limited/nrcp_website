@@ -44,7 +44,7 @@
                                     aria-labelledby="Master_layout_0">
                                 <!-- Content and Images -->
 
-                                <div class="col-md-4">
+                                <div class="col-md-4 pl-0">
                                     <div class="rs-inner-blog">
                                         <div class="widget-area">
                                             <form method="get" action="{{ url('vaccination_dose') }}?data={{ request('date') }}">
@@ -124,8 +124,7 @@
                                                 <td>{{ date('Y-m-d', strtotime(request('date') . ' + 28 days')) }}</td>
                                                 <td> Total 8 injection 4 visits </td>
                                             </tr>
-                                            <?php } ?>
-            
+                                            <?php } ?>          
             
             
                                         </tbody>
@@ -133,7 +132,7 @@
                                 </div>
                                 <div class="col-md-12">
 
-                                    <ul class="mt-3">
+                                    <ul class="mt-4 text-normal-ul">
                                         <li class="mb-2"><sup class="text-danger star"> * </sup>Site of vaccine injection:
                                             Adult/Children : Deltoid muscle (IM/ID)
                                             Infant and Children : Anterolateral thigh(IM)
