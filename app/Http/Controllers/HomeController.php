@@ -213,8 +213,7 @@ class HomeController extends Controller
          $cityname = $request->city_name;
          $data = DB::table('model_anti_rabies_clinic')
                  ->select(['district_name','state_name','address'])
-                 ->where('state_name','LIKE',$statename)
-                 ->orWhere('district_name','LIKE',$cityname)
+                 ->where('state_name','LIKE',$statename)->where('district_name','LIKE',$cityname)
                  ->get();
          
          $resultsData = '<table>'
