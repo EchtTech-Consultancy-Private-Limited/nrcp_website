@@ -31,11 +31,11 @@
                         </li>
                         @endif
 
-                        @if($social_media->linkedin  != '')
+                        <!-- @if($social_media->linkedin  != '')
                         <li>
                             <a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank"><span><i class="fa fa-linkedin"></i></span></a>
                         </li>
-                        @endif
+                        @endif -->
 
                     @endif
 
