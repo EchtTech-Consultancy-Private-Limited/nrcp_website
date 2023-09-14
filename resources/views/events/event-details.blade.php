@@ -46,7 +46,7 @@
 @endsection
 @push('post-scripts')
 <script>
-        let slideIndex = 1;
+        let slideIndex = 0;
         showSlides(slideIndex);        
         function plusSlides(n) {
           showSlides(slideIndex += n);
