@@ -18511,15 +18511,25 @@ color: #171717;
 }
 
 
-span.timezone {
+.timezone {
   background: #fff;
   padding: 5px 10px;
   border-radius: 50px;
 }
 
+
 .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li a i.fa {
   color: #3F51B5;
 }
+
+.time {
+  margin-bottom: 0px;
+  padding-left: 5px;
+  margin-left: 0px;
+  display: inline;
+  width: 120px !important;
+}
+
 
 /* switch button Css */
 
@@ -20254,4 +20264,17 @@ span.size {
 .rs-blog.main-home .blog-item .image-part img {
   height: 305px;
   width: 100%;
+}
+
+
+div#ContactCaptcha_CaptchaDiv {
+  display: flex !important;
+}
+
+.BDC_CaptchaIconsDiv{
+  margin-left: 10px;
+}
+
+img#ContactCaptcha_CaptchaImage {
+  height: 50px;
 }

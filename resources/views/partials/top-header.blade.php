@@ -1,8 +1,10 @@
       <div class="row y-middle">
          <div class="col-md-6 pr-0">
             <ul class="topbar-contact">
-               <li>
-                  <span class="timezone">{{ date('d F Y') }} &nbsp;  {{ date('H:i:s')}}  &nbsp;  {{ date('T')}} </span>
+               <li class="datetime">
+                  <span class="timezone">{{ date('d F Y') }} 
+                     <span id=timeid> </span>
+                  </span>
                </li>
                <li>
                   <a href="javascript:void()" onclick="slipttobottom()"> Skip to Main Content</a> |
@@ -16,9 +18,10 @@
                <li class="opening widget-area">
                   <div class="search-widget">
                      <div class="search-wrap">
-                        <input type="search" placeholder="Search" name="s" class="search-input"
-                           value="">
-                        <button type="submit" value="Search"><i class=" flaticon-search"></i></button>
+                     <form action="{{ url('search') }}" method="get" class="font-item">
+                           <input type="search" id="sitewidesearch" required placeholder="Search" name="search" class="search-input" value="">
+                           <button type="submit" id="button" value="Search"><i class=" flaticon-search"></i></button>
+                        </form>
                      </div>
                   </div>
                </li>
@@ -46,7 +49,6 @@
                <li>
                   <label class="switch mb-0">
                   <input type="checkbox" id="mode" tabindex="0" onclick="setTheme()">
-                  
                   <span class="slider round"></span>
                   </label>
                </li>
@@ -67,10 +69,10 @@
                <li><a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif  target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
                </li>
                @endif
-               @if($social_media->linkedin  != '')
-               <li><a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif title="Linkedin"><i class="fa fa-linkedin"></i></a>
-               </li>
-               @endif
+               <!-- @if($social_media->linkedin  != '') -->
+               <!-- <li><a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif title="Linkedin"><i class="fa fa-linkedin"></i></a> -->
+               <!-- </li> -->
+               <!-- @endif -->
 
             @endif  
                 

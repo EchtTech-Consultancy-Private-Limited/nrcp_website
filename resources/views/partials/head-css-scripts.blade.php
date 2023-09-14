@@ -26,8 +26,10 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
+    <script>
+        //alert(localStorage.getItem('theme-mode'));
+    </script>
     <link rel="stylesheet" type="text/css" id="theme-style" href="">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
    
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.dataTables.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/buttons.dataTables.min.css') }}">

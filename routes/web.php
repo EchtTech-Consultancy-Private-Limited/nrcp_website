@@ -34,13 +34,13 @@ Route::get('/vaccination_dose',[HomeController::class,'vaccination_dose'])->name
 // Route::get('/publications',[PublicationsController::class,'publications'])->name('publications');
 //Route::get('/privacy-policy',[HomeController::class,'privacyPolicy'])->name('privacypolicy');
 
-Route::get('/news-details',[HomeController::class,'news_details'])->name('news-details');
+Route::get('/news-details',[HomeController::class,'newsDetails'])->name('news-details');
 
 //event
 Route::get('/event',[EventController::class,'index'])->name('event');
 Route::get('/event-state',[EventController::class,'event_state'])->name('event-state');
 Route::get('/national-event',[EventController::class,'event_national'])->name('national-event');
-
+Route::any('/{slug}/event-details/{id}',[EventController::class,'getStateEventDetails'])->name('state/event-details');
 
 //form
 Route::get('/screen-reader-access',[HomeController::class,'screen_reader_access'])->name('screen-reader-access');

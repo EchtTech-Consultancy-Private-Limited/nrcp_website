@@ -81,7 +81,7 @@ $(document).ready(function() {
 });
 
     function printDiv() {
-        var divContents = document.getElementById("tabContent").innerHTML;
+        var divContents = document.getElementById("wholePagePrint").innerHTML;
         var a = window.open('', '', 'height=600, width=600');
         a.document.write('<html>');
         a.document.write('<body>');
@@ -138,8 +138,27 @@ function checkYesNo(e){
     $('#txtDate').attr('max', maxDate);
     $('#txtDate1').attr('max', maxDate);
 });
-
 </script>
-
+<script type="text/javascript">
+    function ctime(){
+    if (!document.getElementById)
+    return
+    timeElement=document.getElementById("timeid")
+    var curdate=new Date()
+    var hours=curdate.getHours()
+    var minutes=curdate.getMinutes()
+    var seconds=curdate.getSeconds()
+    var DayNight="PM"
+    if (hours<12) DayNight="AM";
+    if (hours>12) hours=hours-12;
+    if (hours==0) hours=12;
+    if (minutes<=9) minutes="0"+minutes;
+    if (seconds<=9) seconds="0"+seconds;
+    var ctime=hours+":"+minutes+":"+seconds+" "+DayNight;
+    timeElement.innerHTML="<p class='time'>"+ctime+"</p>"
+    setTimeout("ctime()",1000)
+    }
+    window.onload=ctime
+</script>
 
 @stack('post-scripts')
