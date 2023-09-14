@@ -20278,3 +20278,15 @@ div#ContactCaptcha_CaptchaDiv {
 img#ContactCaptcha_CaptchaImage {
   height: 50px;
 }
+
+.hide-some-input .dataTables_filter, .hide-some-input .dataTables_info, .hide-some-input .dataTables_paginate.paging_simple_numbers {
+  display: none;
+}
+
+.col-box-g .column img.demo.cursor {
+  height: 110px !important;
+}
+
+.datetime {
+  width: 230px;
+}

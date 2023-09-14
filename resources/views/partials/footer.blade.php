@@ -157,12 +157,7 @@
                     
                     <div class="visitors-sec">
                         <h5>Website last Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>  &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Visitors :
-                            <span class="number-visitor">2</span>
-                            <span class="number-visitor">6</span>
-                            <span class="number-visitor">4</span>
-                            <span class="number-visitor">6</span>
-                            <span class="number-visitor">8</span>
-                            <span class="number-visitor">2</span>
+                            <span class="number-visitor">{{ $visitCounter }}</span>
                         </h5>
                     </div>
                 </div>

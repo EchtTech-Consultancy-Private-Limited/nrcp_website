@@ -18,6 +18,7 @@ use App\Http\Controllers\PublicationsController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::middleware(['visitingcounter'])->group(function () {
 
  Route::get('/',[HomeController::class,'index'])->name('/');
 
@@ -63,5 +64,5 @@ Route::post('/get-districts-list',[HomeController::class,'getDistricts']);
 
 Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch']);
 
-
+});
 
