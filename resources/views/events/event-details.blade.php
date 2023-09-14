@@ -27,7 +27,7 @@
                     <div class="col-md-6 col-box-g">
                     @foreach(json_decode($data->images) as $key=>$datas)
                         <div class="column">
-                            <img class="demo cursor" src="{{ asset('uploads/EventsManagement/'.$datas) }}" style="width:100%" onclick="currentSlide($key)" alt="">
+                            <img class="demo cursor" src="{{ asset('uploads/EventsManagement/'.$datas) }}" style="width:100%" onclick="currentSlide({{$key}})" alt="">
                         </div>
                     @endforeach
                     </div>
