@@ -83,9 +83,11 @@ class HomeController extends Controller
         return view('site-map');
     }
 
-    public function news_details(){
-        
-        return view('news_details');
+    public function newsDetails(){
+
+        $news= DB::table('news_management')->where('soft_delete','0')->get();
+
+        return view('news-details',['newsList'=>$news]);
     }
 
     public function feedbackForm(Request $request){
@@ -102,6 +104,7 @@ class HomeController extends Controller
             'organization' => 'required',
             'address' => 'required',
             'message' => 'required',
+            'CaptchaCode' => 'required|valid_captcha',
         ]);
 
         $data=new feedback; 
@@ -129,6 +132,7 @@ class HomeController extends Controller
             'subject' => 'required',
             'phone' => 'required',
             'message' => 'required',
+            'CaptchaCode' => 'required|valid_captcha',
         ]);
 
         $data=new contactUs; 

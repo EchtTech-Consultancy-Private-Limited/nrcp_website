@@ -25,7 +25,7 @@
                         </div>
                         <div id="form-messages"></div>
                         <form id="form" method="post" action="{{ url('feedback-submit') }}">
-                            @if ($errors->any())
+                            <!-- @if ($errors->any())
                                 <div class="alert alert-danger">
                                     <ul>
                                         @foreach ($errors->all() as $error)
@@ -33,7 +33,7 @@
                                         @endforeach
                                     </ul>
                                 </div>
-                            @endif
+                            @endif -->
                             @if( Session::has("success") )
                             <div class="alert alert-success alert-block" role="alert">
                             <button class="close" data-dismiss="alert"></button>
@@ -95,7 +95,15 @@
                                     @endif
 
                                 </div>
-
+                                <div class="col-md-6">
+                                    {!! captcha_image_html('ContactCaptcha') !!}
+                                </div>
+                                <div class="col-md-6 mb-5">
+                                    <input class="form-control" type="text" id="CaptchaCode" name="CaptchaCode" placeholder="Captcha here" style="margin-top:5px;">
+                                    @if ($errors->has('CaptchaCode'))
+                                    <div class="text-danger">{{ $errors->first('CaptchaCode') }}</div>
+                                    @endif
+                                </div>
 
                                 <div class="form-group col-md-5 mx-auto mb-0">
                                     <input class="btn-send" type="submit" value="Submit">

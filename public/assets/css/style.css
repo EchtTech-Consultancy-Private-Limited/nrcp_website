@@ -12946,6 +12946,7 @@ span.courses.course-icon img {
   border: 1px solid #ddd;
   color: #444444;
   padding: 6px 17px;
+  padding-right: 30px;
   width: 90%;
   font-size: 13px;
   border-radius: 30px;
@@ -18511,15 +18512,25 @@ color: #171717;
 }
 
 
-span.timezone {
+.timezone {
   background: #fff;
   padding: 5px 10px;
   border-radius: 50px;
 }
 
+
 .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li a i.fa {
   color: #3F51B5;
 }
+
+.time {
+  margin-bottom: 0px;
+  padding-left: 5px;
+  margin-left: 0px;
+  display: inline;
+  width: 120px !important;
+}
+
 
 /* switch button Css */
 
@@ -20255,3 +20266,15 @@ span.size {
   width: 100%;
 }
 
+
+div#ContactCaptcha_CaptchaDiv {
+  display: flex !important;
+}
+
+.BDC_CaptchaIconsDiv{
+  margin-left: 10px;
+}
+
+img#ContactCaptcha_CaptchaImage {
+  height: 50px;
+}

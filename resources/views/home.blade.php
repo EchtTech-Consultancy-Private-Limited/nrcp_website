@@ -493,13 +493,13 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                                                 <div class='desc'>
                                                     @if (Session::get('Lang') == 'hi')
                                                       @if($item->tab_type == '1')
-                                                      <a href="{{ $item->public_url }}" target="_blank">{!! $item->title_name_hi  !!}</a>
+                                                      <a href="{{ $item->public_url }}" target="_blank" onclick="return confirm('This link will take you to an external web site.')">{!! $item->title_name_hi  !!}</a>
                                                       @else
                                                       <a href="{{ $item->public_url }}">{!! $item->title_name_hi  !!}</a>
                                                       @endif
                                                     @else
                                                       @if($item->tab_type == '1')
-                                                      <a href="{{ $item->public_url }}" target="_blank">{!! $item->title_name_en !!}</a>
+                                                      <a href="{{ $item->public_url }}" target="_blank" onclick="return confirm('This link will take you to an external web site.')">{!! $item->title_name_en !!}</a>
                                                       @else
                                                       <a href="{{ $item->public_url }}">{!! $item->title_name_en !!}</a>
                                                       @endif

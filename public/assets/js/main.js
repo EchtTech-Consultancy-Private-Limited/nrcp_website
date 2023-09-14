@@ -538,14 +538,21 @@ $(document).ready(function(){
  // enable dark mode and light mode
 function setTheme() {  
     var baseURL = $("meta[name='basepath']").attr('content');
+    
 
     if (document.getElementById('mode').checked) {
+        $('#mode').attr('checked');
         const linkElement = document.getElementById('theme-style');
+        linkElement.href=localStorage.getItem('theme-mode');
         linkElement.href = baseURL+`/dark-mode.css`;
+        
+        
         // {{asset('assets/css/dark-mode.css')}}
+        //localStorage.getItem('theme-mode')
         // Store the theme preference in local storage
-        // localStorage.setItem('assets/css/dark-mode', theme);
+         localStorage.setItem('theme-mode', baseURL+`/dark-mode.css`);
 
+        
         // Set the initial theme based on local storage or default to 'light'
 //   const initialTheme = localStorage.getItem('theme') || 'light';
 //   setTheme(initialTheme);
@@ -553,9 +560,9 @@ function setTheme() {
       } else {
         const linkElement = document.getElementById('theme-style');
         linkElement.href = `${'assets/css/style'}.css`;
-      
+        $('#mode').removeAttr('checked');
         // Store the theme preference in local storage
-        // localStorage.setItem('assets/css/style', theme);
+         localStorage.removeItem('theme-mode');
       }
 
   }

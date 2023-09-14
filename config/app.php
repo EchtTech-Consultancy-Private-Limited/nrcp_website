@@ -159,7 +159,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        LaravelCaptcha\Providers\LaravelCaptchaServiceProvider::class,
          Illuminate\View\ViewServiceProvider::class,
         /*
          * Application Service Providers...

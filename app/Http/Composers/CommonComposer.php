@@ -4,7 +4,7 @@ namespace App\Http\Composers;
 
 use Illuminate\View\View;
 use Illuminate\Support\Facades\Auth;
-
+use Carbon\Carbon;
 use App, Route, DB;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Http\Request;
@@ -48,10 +48,9 @@ class CommonComposer
         $menus = DB::table('website_menu_management')->where('menu_place','0')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
         $menuName = $this->getMenuTree($menus, 0);   
 
-
         $view->with(['headerMenu' => $menuName,'social_media'=>$social_media,'footerMenu'=>$footerMenu,
         'toogleMenu'=>$toogleMenu,
-        
+        'time'=>$this->getLocalTime(),
         'commonsideMenu'=>isset($commonsideMenu)?$commonsideMenu:'']);
 
     }
@@ -69,6 +68,8 @@ class CommonComposer
         }
         return $branch;
     }
-
+    function getLocalTime(){
+        return Carbon::now()->timezone('Asia/Kolkata')->format('H:m:s');
+    }
 
 }
