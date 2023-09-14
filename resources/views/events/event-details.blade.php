@@ -16,8 +16,6 @@
             <div class="rs-blog main-home">
                 <div class="container1 row">
                     <div class="col-md-6">
-                        <?php dd($data); ?>
-                        
                         @foreach(json_decode($data->images) as $datas)
                         <div class="mySlides">
                             <img src="{{ asset('uploads/EventsManagement/'.$datas) }}" style="width:100%">
