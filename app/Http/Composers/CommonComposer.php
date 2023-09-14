@@ -33,6 +33,7 @@ class CommonComposer
     public function compose(View $view)
     {
         $social_media = DB::table('social_links')->first();
+        $visitCounter = DB::table('visiting_counters')->count();
         $footerMenu = DB::table('website_menu_management')->where('menu_place','1')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
         $toogleMenu = DB::table('website_menu_management')->where('menu_place','2')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
         
@@ -51,6 +52,7 @@ class CommonComposer
         $view->with(['headerMenu' => $menuName,'social_media'=>$social_media,'footerMenu'=>$footerMenu,
         'toogleMenu'=>$toogleMenu,
         'time'=>$this->getLocalTime(),
+        'visitCounter'=>$visitCounter,
         'commonsideMenu'=>isset($commonsideMenu)?$commonsideMenu:'']);
 
     }
