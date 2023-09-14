@@ -26,6 +26,7 @@
 
 
 <script>
+
 var scrollBottom = $(window).scrollTop() + $(window).height();
 $(window).scroll(function(){
       if($(this).scrollTop() > 400) {
@@ -96,10 +97,17 @@ $(document).ready(function() {
     $('.example').DataTable( {
         dom: 'Bfrtip',
         buttons: [
-            'print'
+            {              
+                extend: 'print',
+                    title: function() {
+                        return "<div style='font-size: 25px;'>National Rabies Control Program</div>";
+                    } 
+            }
         ]
     } );
 } );
+
+
 function checkYesNo(e){
     var html = '';
     if(e=='1'){
