@@ -67,7 +67,7 @@
                 
                                 </div>
 
-                                <div class="table-responsive">
+                                <div class="table-responsive hide-some-input">
                                     <table class="example">
                                         <thead>
                                             <th>Dose Type</th>
