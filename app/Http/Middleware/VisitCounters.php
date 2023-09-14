@@ -20,7 +20,7 @@ class VisitCounters
         $user_ip_address= $request->header('CF-Connecting-IP', $request->ip());
         
         $exitIP = DB::table('visiting_counters')->where('ip',getHostByName(getHostName()))->first();
-        if(empty($exitIP)){
+        if($exitIP ==null){
             DB::table('visiting_counters')->insert([
                     'user_agent'=> json_encode($this->getBrowser()),
                     'ip' => getHostByName(getHostName())
