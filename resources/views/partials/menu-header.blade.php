@@ -194,8 +194,8 @@
                            </a>
                            <ul class="sub-menu">
                            @foreach($toogleMenu as $toogleMenus)
-               <li><a href="{{ url($toogleMenus->url ?? '') }}">{{ $toogleMenus->name_en }}</a></li>
-               @endforeach    
+                           <li><a href="{{ url($toogleMenus->url ?? '') }}">{{ $toogleMenus->name_en }}</a></li>
+                           @endforeach    
                         </ul>
                      <!-- //.nav-menu -->
                   </nav>
