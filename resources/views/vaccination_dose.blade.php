@@ -43,8 +43,8 @@
                                 <div class="tab-pane fade active show" id="master-layout_0" role="tabpanel"
                                     aria-labelledby="Master_layout_0">
                                 <!-- Content and Images -->
-                                <div class="row">
-                                <div class="col-md-4">
+
+                                <div class="col-md-4 pl-0">
                                     <div class="rs-inner-blog">
                                         <div class="widget-area">
                                             <form method="get" action="{{ url('vaccination_dose') }}?data={{ request('date') }}">
@@ -66,10 +66,7 @@
                                     </div>
                 
                                 </div>
-                                    <div class="col-md-8 text-right">
-                                        <span><b>Date of Animal Bites: {{ date('d/m/Y', strtotime(request('date'))) }}</b></span>
-                                    </div>    
-                                </div>    
+
                                 <div class="table-responsive hide-some-input">
                                     <table class="example">
                                         <thead>
@@ -88,43 +85,43 @@
                                             <tr>
                                                 <td class="text-left">IM (Intra Muscular)</td>
                                                 <td>{{ _('1 entire vaccine vial') }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date'))) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 3 days')) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 7 days')) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 14 days')) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 28 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 3 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 7 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 14 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 28 days')) }}</td>
                                                 <td> Total 5 injection 5 visit</td>
                                             </tr>
                                             <?php }elseif(request('type') ==2){ ?>
                                             <tr>
                                                 <td class="text-left">ID (Intra Dermal)</td>
                                                 <td>{{ _('0.1ml per dose on each Arm') }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date'))) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 3 days')) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 7 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 3 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 7 days')) }}</td>
                                                 <td>{{ __('NIL') }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 28 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 28 days')) }}</td>
                                                 <td>Total 8 injection 4 visits</td>
                                             </tr>
                                             <?php }else{  ?>
                                             <tr>
                                                 <td class="text-left">IM (Intra Muscular)</td>
                                                 <td>{{ _('1 entire vaccine vial') }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date'))) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 3 days')) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 7 days')) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 14 days')) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 28 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 3 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 7 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 14 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 28 days')) }}</td>
                                                 <td> Total 5 injection 5 visit</td>
                                             </tr>
                                             <tr>
                                                 <td class="text-left">ID (Intra Dermal)</td>
                                                 <td>{{ _('0.1ml per dose on each Arm') }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date'))) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 3 days')) }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 7 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date'))) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 3 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 7 days')) }}</td>
                                                 <td>{{ __('NIL') }}</td>
-                                                <td>{{ date('d/m/Y', strtotime(request('date') . ' + 28 days')) }}</td>
+                                                <td>{{ date('Y-m-d', strtotime(request('date') . ' + 28 days')) }}</td>
                                                 <td> Total 8 injection 4 visits </td>
                                             </tr>
                                             <?php } ?>          
