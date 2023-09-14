@@ -40,7 +40,18 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+}
 
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    .img-part.banner-image img{
+        height: 365px;
+    }
+
+    .img-part.banner-image {
+        min-height: 365px;
+        height: 365px;
+      }
+      
 }
 
 
@@ -2449,6 +2460,10 @@ h6.sub-text-b-l {
     .sec-title3 .title.title3 {
         font-size: 36px;
         line-height: 46px;
+    }
+
+    .mobile-menu-visible{
+        display: block !important;
     }
 
     .col-md-6.text-lg-right.pl-0 {

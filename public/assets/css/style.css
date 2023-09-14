@@ -12946,6 +12946,7 @@ span.courses.course-icon img {
   border: 1px solid #ddd;
   color: #444444;
   padding: 6px 17px;
+  padding-right: 30px;
   width: 90%;
   font-size: 13px;
   border-radius: 30px;
@@ -19240,7 +19241,6 @@ span.number-visitor {
 .pdf-image img {
   width: 100%;
 }
-
 .img-part.banner-image {
   min-height: 450px;
   height: 450px;
@@ -19249,7 +19249,7 @@ span.number-visitor {
 .img-part.banner-image img {
   height: 100%;
   width: 100%;
-  height: 550px;
+  height: 450px;
   object-fit: cover;
   /* zoom: 150%; */
 }

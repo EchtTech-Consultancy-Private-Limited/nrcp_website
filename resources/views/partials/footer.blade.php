@@ -218,11 +218,11 @@
                                     <div class="col-md-12">
                                        <div class="radio button">
                                            <div class="radio-box">
-                                            <input type="radio" onclick="checkYesNo('1')" name="animal_bite" value="yes">
-                                            <label for="yes-bite">Yes</label>
+                                            <input type="radio" onclick="checkYesNo('1')" name="animal_bite" value="yes" id="yes-dogbite">
+                                            <label for="yes-dogbite">Yes</label>
                                            </div>
                                            <div class="radio-box">
-                                            <input type="radio" onclick="checkYesNo('0')" name="animal_bite" value="no">
+                                            <input type="radio" onclick="checkYesNo('0')" name="animal_bite" value="no" id="no-bite">
                                             <label for="no-bite">No</label> 
                                            </div>   
                                        </div>

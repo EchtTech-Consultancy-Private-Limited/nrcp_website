@@ -9,7 +9,7 @@
     {{ __('Site Map') }}
 @endsection
 @section('content')
-<div id="rs-about" class="rs-about style1 pt-40 pb-40">
+<div id="rs-about" class="rs-about tab-content style1 pt-40 pb-40">
     <div class="container">
         <div class="row">
             <div class="col-md-12"> 

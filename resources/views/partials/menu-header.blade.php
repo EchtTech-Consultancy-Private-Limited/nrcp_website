@@ -179,6 +179,7 @@
                         @endif
                         @endforeach
                         {{-- current-menu-item --}}
+
                         <li class="menu-bar-side">                                       
                            <a id="nav-expander" class="nav-expander style6">
                            <span class="dot1"></span>
@@ -186,7 +187,16 @@
                            <span class="dot3"></span>
                            </a>
                         </li>
-                     </ul>
+
+                        <li class="menu-item-has-children mobile-menu-visible d-none">
+                           <a href="javascript:void();">
+                             More
+                           </a>
+                           <ul class="sub-menu">
+                           @foreach($toogleMenu as $toogleMenus)
+                           <li><a href="{{ url($toogleMenus->url ?? '') }}">{{ $toogleMenus->name_en }}</a></li>
+                           @endforeach    
+                        </ul>
                      <!-- //.nav-menu -->
                   </nav>
                   <!-- //.nav-menu -->
