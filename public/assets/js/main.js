@@ -333,7 +333,7 @@ function setlang(value){
     //canvas menu
     var navexpander = $('#nav-expander');
     if(navexpander.length){
-        $('#nav-expander').hover(function(e){
+        $('#nav-expander').click(function(e){
             e.preventDefault();
             $('body').addClass('nav-expanded');
         });
@@ -351,9 +351,9 @@ function setlang(value){
         });       
     }
 
-    $("body").on('click',function(){
-        $('body').removeClass('nav-expanded');
-    });
+    // $("body").on('click',function(){
+    //     $('body').removeClass('nav-expanded');
+    // });
 
     $(".tab-close").focus(function(){
         $('body').removeClass('nav-expanded');

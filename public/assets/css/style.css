@@ -19572,7 +19572,7 @@ a.top-logo img {
   display: block;
   width: 100%;
   position: absolute;
-  animation: marquee 10s linear infinite;
+  animation: marquee 20s linear infinite;
   padding: 10px;
   behavior: scroll;
 
@@ -19586,7 +19586,7 @@ a.top-logo img {
 
 @keyframes marquee {
   to {
-      transform: translateY(-50%);
+      transform: translateY(-15%);
     }
 }
 
