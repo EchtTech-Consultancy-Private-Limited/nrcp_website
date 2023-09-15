@@ -44,27 +44,31 @@
                                     aria-labelledby="Master_layout_0">
                                 <!-- Content and Images -->
 
-                                <div class="col-md-4 pl-0">
+                                <div class="row">
+                                <div class="col-md-4">
                                     <div class="rs-inner-blog">
                                         <div class="widget-area">
                                             <form method="get" action="{{ url('vaccination_dose') }}?data={{ request('date') }}">
                                                 <div class="search-widget mb-20">
-                                                    <select class="form-control" data-date="{{ request('date') }}"
-                                                        onchange="changeURL(this.value)" name="type" id="vaccination-dose">
-                                                        <option value="0,{{ request('date') }}"{{ request('type') == 0 ? 'selected' : '' }}>
-                                                        Select route of  vaccine administration </option>
-                                                        <option value="1,{{ request('date') }}"
-                                                            {{ request('type') == 1 ? 'selected' : '' }}> IM
-                                                            (Intra Muscular) </option>
-                                                        <option
-                                                            value="2,{{ request('date') }}"{{ request('type') == 2 ? 'selected' : '' }}>
-                                                            ID (Intra Dermal)</option>
-                                                    </select>
-                                                    <form>
-                                                </div>
+                                                        <select class="form-control" data-date="{{ request('date') }}"
+                                                            onchange="changeURL(this.value)" name="type" id="vaccination-dose">
+                                                            <option value="0,{{ request('date') }}"{{ request('type') == 0 ? 'selected' : '' }}>
+                                                            Select route of  vaccine administration </option>
+                                                            <option value="1,{{ request('date') }}"
+                                                                {{ request('type') == 1 ? 'selected' : '' }}> IM
+                                                                (Intra Muscular) </option>
+                                                            <option
+                                                                value="2,{{ request('date') }}"{{ request('type') == 2 ? 'selected' : '' }}>
+                                                                ID (Intra Dermal)</option>
+                                                        </select>
+                                                        </div>
+                                                    </form>
+                                            </div>
                                         </div>
                                     </div>
-                
+                                    <div class="col-md-8 text-right">
+                                        <span><b>Date of Animal Bites: {{ date('d/m/Y', strtotime(request('date'))) }}</b></span>
+                                    </div>  
                                 </div>
 
                                 <div class="table-responsive hide-some-input">
