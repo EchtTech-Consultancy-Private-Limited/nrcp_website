@@ -91,21 +91,21 @@ $(document).ready(function() {
         a.document.close();
         a.print();
     }
-
+  
 
     $(document).ready(function() {
-    $('.example').DataTable( {
-        dom: 'Bfrtip',
-        buttons: [
-            {              
-                extend: 'print',
-                    title: function() {
-                        return "<div style='font-size: 25px;'>National Rabies Control Program</div>";
-                    } 
-            }
-        ]
-    } );
-} );
+        $('.example').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                {              
+                    extend: 'print',
+                        title: function() {
+                            return "<div style='font-size: 25px;'>National Rabies Control Program</div>";
+                        } 
+                }
+            ]
+        } );
+    });
 
 
 function checkYesNo(e){
