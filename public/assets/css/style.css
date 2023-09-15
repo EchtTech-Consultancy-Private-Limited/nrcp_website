@@ -2676,7 +2676,7 @@ ul.listing-style.modify li:before {
 }
 
 .full-width-header .rs-header .menu-area.sticky .nav-expander span {
-  background: #fff;
+  background: #fff !important;
 }
 
 .full-width-header .rs-header .menu-area.sticky .nav-expander:hover span {
@@ -19586,7 +19586,7 @@ a.top-logo img {
 
 @keyframes marquee {
   to {
-      transform: translateY(-15%);
+      transform: translateY(-12%);
     }
 }
 
