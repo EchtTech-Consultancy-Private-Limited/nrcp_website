@@ -12945,9 +12945,9 @@ span.courses.course-icon img {
 .rs-inner-blog .widget-area .search-widget .search-wrap [type=search] {
   border: 1px solid #ddd;
   color: #444444;
-  padding: 6px 17px;
+  padding: 6px 10px;
   padding-right: 30px;
-  width: 90%;
+  width: 100%;
   font-size: 13px;
   border-radius: 30px;
   position: relative;
@@ -12956,15 +12956,13 @@ span.courses.course-icon img {
 
 .rs-inner-blog .widget-area .search-widget .search-wrap [type=search]:focus {
   width: 100%;
-
-
 }
 
 .rs-inner-blog .widget-area .search-widget .search-wrap button {
   background: transparent;
   border: medium none;
   color: #505050;
-  padding: 6px 10px 8px;
+  padding: 6px 5px 8px;
   position: absolute;
   display: block;
   right: 0px;
@@ -20288,5 +20286,5 @@ img#ContactCaptcha_CaptchaImage {
 }
 
 .datetime {
-  width: 230px;
+  width: 240px;
 }
