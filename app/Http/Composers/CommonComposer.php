@@ -42,7 +42,7 @@ class CommonComposer
         $pageSlug1 = DB::table('website_menu_management')->where('uid',$pageSlug->parent_id)->first();
         }
          if(!empty($pageSlug1->uid)){
-          $commonsideMenu = DB::table('website_menu_management')->where('parent_id',$pageSlug1->uid)->get();
+          $commonsideMenu = DB::table('website_menu_management')->where('parent_id',$pageSlug1->uid)->orderby('sort_order','Asc')->get();
          }
 
        // dd($commonsideMenu);
@@ -52,7 +52,7 @@ class CommonComposer
         $view->with(['headerMenu' => $menuName,'social_media'=>$social_media,'footerMenu'=>$footerMenu,
         'toogleMenu'=>$toogleMenu,
         'time'=>$this->getLocalTime(),
-        'visitCounter'=>$visitCounter,
+        'visitCounter'=>isset($visitCounter)?$visitCounter:'0',
         'commonsideMenu'=>isset($commonsideMenu)?$commonsideMenu:'']);
 
     }
