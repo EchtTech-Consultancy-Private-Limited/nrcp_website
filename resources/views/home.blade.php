@@ -106,7 +106,9 @@
                                                         @else
                                                             {!! $item->title_name_en   !!}
                                                         @endif
-                                                        <span class="date-news-latest"> On Date: {{  date('d/m/Y', strtotime($item->start_date)) }} </span>
+                                                        <span class="date-news-latest"> On 
+                                                         <!-- Date: {{  date('d/m/Y', strtotime($item->start_date)) }} -->
+                                                       </span>
                                                     </p>
                                                 </div>
 
