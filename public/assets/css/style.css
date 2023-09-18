@@ -2219,7 +2219,7 @@ ul.listing-style.modify li:before {
   align-items: center;
   height: 125px;
   line-height: 120px;
-  justify-content: right;
+  justify-content: left;
 }
 
 .full-width-header .rs-header .menu-area .logo-cat-wrap .categories-btn .cat-menu-inner {
