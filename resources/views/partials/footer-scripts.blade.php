@@ -91,21 +91,39 @@ $(document).ready(function() {
         a.document.close();
         a.print();
     }
+  
+
+    $(document).ready(function() {
+        $('.example').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                {              
+                    extend: 'print',
+                        title: function() {
+                            return "<div style='font-size: 25px;'>National Rabies Control Program</div>";
+                           ;
+                        }                    
+                       
+               }
+            ]
+        } );
+    });
 
 
     $(document).ready(function() {
-    $('.example').DataTable( {
-        dom: 'Bfrtip',
-        buttons: [
-            {              
-                extend: 'print',
-                    title: function() {
-                        return "<div style='font-size: 25px;'>National Rabies Control Program</div>";
-                    } 
-            }
-        ]
-    } );
-} );
+        $('.example1').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                {              
+                    extend: 'print',
+                        title: function() {
+                            return "<div style='font-size: 25px;margin-bottom:20px;'>Vaccination Schedule</div> <ul style='display:block;position: absolute; bottom :75%'><li style='font-size: 16px;font-weight:400; margin-bottom:10px;'>1- Site of vaccine injection: Adult/Children : Deltoid muscle (IM/ID) Infant and Children : Anterolateral thigh(IM) </li> <li style='font-size: 16px;font-weight:400;margin-bottom:10px;'>2- All category III bites wounds must be infiltrated with Rabies immunoglobulin.</li>  <li style='font-size: 16px;font-weight:400'>3- If you have never been vaccinated for Rabies, this is the schedule you need to follow.</li></ul>";
+                         
+                        }                          
+               }
+            ]
+        } );
+    });
 
 
 function checkYesNo(e){
