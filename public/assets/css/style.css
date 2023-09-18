@@ -2730,10 +2730,11 @@ ul.listing-style.modify li:before {
 }
 
 .full-width-header .rs-header .right_menu_togle {
-  background: #fafafa;
+  /* background: #fafafa; */
+  background: #3f51b5;
   padding: 30px 35px;
-  width: 420px;
-  right: -420px;
+  width: 300px;
+  right: -300px;
   height: 100vh;
   z-index: 999999;
   text-align: center;
@@ -12996,7 +12997,7 @@ span.courses.course-icon img {
 }
 
 .rs-inner-blog .widget-area .recent-posts ul li a {
-  color: #505050;
+  color: #fff;
 }
 
 .rs-inner-blog .widget-area .recent-posts ul li a:hover {
@@ -20022,12 +20023,12 @@ nav.right_menu_togle.hidden-md .recent-posts {
   box-shadow: none;
   text-align: left;
   padding: 0px;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 nav.right_menu_togle.hidden-md ul li {
   margin-top: 0px !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgb(255 255 255 / 39%);
   border-top: 0px !important;
   margin-bottom: 0px;
   padding-bottom: 10px;
