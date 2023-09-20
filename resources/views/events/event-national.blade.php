@@ -16,21 +16,22 @@
                 <section class="rs-blog main-home">
                     <div class="heading-title">
                         <h2 class="title">Event Gallery</h2>
-                    </div>   
-                    @if(count($data)>0)                  
+                    </div>  
+                    
+                    @if(count($data->eventContent)>0)                  
                     <div class="row">
-                        @foreach($data as $datas)
+                        @foreach($data->eventContent as $datas)
                         <div class="col-md-4">
                             <div class="blog-item">
                                 <div class="image-part">
-                                    <img src="{{ asset('uploads/EventsManagement/'.json_decode($datas->images)[0]) }}" alt="">
+                                    <img src="{{ asset('uploads/EventsManagement/'.$datas->eventImags[0]->public_url) }}" alt="">
                                 </div>
                                 <div class="blog-content">                                       
                                     <h3 class="title">
-                                        <a href="{{ url($type.'/event-details/'.$datas->uid) }}">{{ $datas->title_name_en }}</a>
+                                        <a href="{{ url($type.'/event-details/'.$datas->event->uid) }}">{{ $datas->event->title_name_en }}</a>
                                     </h3>
                                     <!-- <div class="desc">
-                                        {!! $datas->description_en  !!}
+                                        {!! $datas->event->description_en  !!}
                                     </div> -->
                                 </div>
                               </div>

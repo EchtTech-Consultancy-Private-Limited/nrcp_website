@@ -16,18 +16,18 @@
             <div class="rs-blog main-home">
                 <div class="container1 row">
                     <div class="col-md-6">
-                        @foreach(json_decode($data->images) as $datas)
+                        @foreach($eventImag as $datas)
                         <div class="mySlides">
-                            <img src="{{ asset('uploads/EventsManagement/'.$datas) }}" style="width:100%">
+                            <img src="{{ asset('uploads/EventsManagement/'.$datas->public_url) }}" style="width:100%">
                         </div>
                         @endforeach
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
                         <a class="next" onclick="plusSlides(1)">❯</a>
                     </div>
                     <div class="col-md-6 col-box-g">
-                    @foreach(json_decode($data->images) as $key=>$datas)
+                    @foreach($eventImag as $key=>$datas)
                         <div class="column">
-                            <img class="demo cursor" src="{{ asset('uploads/EventsManagement/'.$datas) }}" style="width:100%" onclick="currentSlide({{$key+1}})" alt="">
+                            <img class="demo cursor" src="{{ asset('uploads/EventsManagement/'.$datas->public_url) }}" style="width:100%" onclick="currentSlide({{$key+1}})" alt="">
                         </div>
                     @endforeach
                     </div>
