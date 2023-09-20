@@ -14,9 +14,10 @@ class EventController extends Controller
     {
         
         $events= DB::table('events_management')->where('event_type','1')->where('soft_delete',0)->get();
-        $objectdata = new \stdclass;
+        
         //$data =[];
         foreach($events as $datas){
+            $objectdata = new \stdclass;
             $objectdata->event = $datas;
             $eventImag= DB::table('events_details')->where('events_id',$datas->uid)->where('soft_delete',0)->get();
             if($eventImag){
@@ -28,7 +29,7 @@ class EventController extends Controller
         $objectpass = new \stdclass;
         $objectpass->eventContent = $data;
         $type="state";
-
+    //dd($objectpass);
         return view('events.event-state',
             ['data'=>$objectpass,'type'=>$type]
         ); 
@@ -36,9 +37,9 @@ class EventController extends Controller
     public function event_national()
     {
         $events= DB::table('events_management')->where('event_type','2')->where('soft_delete',0)->get();
-        $objectdata = new \stdclass;
         //$data =[];
         foreach($events as $datas){
+            $objectdata = new \stdclass;
             $objectdata->event = $datas;
             $eventImag= DB::table('events_details')->where('events_id',$datas->uid)->where('soft_delete',0)->get();
             if($eventImag){
