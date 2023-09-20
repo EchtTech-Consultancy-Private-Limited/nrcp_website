@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\PublicationsController;
+use App\Http\Controllers\SearchController;
 
 
 
@@ -52,6 +53,7 @@ Route::post('/feedback-submit',[HomeController::class,'feedbackStore'])->name('f
 Route::get('/contact-us',[HomeController::class,'contactForm'])->name('contact-us');
 Route::post('/contact-us',[HomeController::class,'contactStroe'])->name('contact-Stroe');
 Route::get('/faq',[HomeController::class,'getFAQ'])->name('faq');
+Route::get('/search',[SearchController::class,'getSearchData'])->name('search');
 
 
 //language
