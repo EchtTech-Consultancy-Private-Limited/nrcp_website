@@ -42,8 +42,8 @@
                      <div class="row banner-mobile">
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
-                           <img src="{{ asset('uploads/banner/'.explode(',',json_decode($value->banner_collection)[0])[1]) }}"
-                                 alt="{{explode(',',json_decode($value->banner_collection)[0])[0]}}">
+                           <img src="{{ asset('uploads/banner/'.$value->public_url) }}"
+                                 alt="{{ $value->banner_title }}">
                            </div>
                         </div>                       
                      </div>
