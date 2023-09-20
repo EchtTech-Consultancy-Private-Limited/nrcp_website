@@ -148,30 +148,5 @@
     </div>
 </div>
 @push('post-scripts')
-<script>
-    $("document").ready(function(){
-        setTimeout(function(){
-           $("div.alert").remove();
-        }, 5000 ); // 5 secs
-    
-    });
-    // disable alphate
-    $('.phone').keypress(function(e) {
-       // alert('hii');
-        var regex = new RegExp("^[0-9_]");
-        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
-        if (regex.test(str)) {
-            return true;
-        }
-        e.preventDefault();
-        return false;
-    });
-
-$(document).ready(function(){ 
-    $(".BDC_CaptchaImageDiv a").remove(); 
- 
-});
-
-</script>
 @endpush
 @endsection
