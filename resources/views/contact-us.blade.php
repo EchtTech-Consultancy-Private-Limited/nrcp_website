@@ -139,11 +139,11 @@
                             </div>
                         </div>
 
-            <div class="col-lg-5 md-mb-30">
-                <div class="contact-map2">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3500.3822174465167!2d77.222103!3d28.678211000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfda49c63895b%3A0xf42dc723f30a63d2!2sNATIONAL%20CENTRE%20FOR%20DISEASE%20CONTROL%2C%20CSU%20INTEGRATED%20DISEASE%20SURVEILLANCE%20PROGRAMME%2C%20Civil%20Lines%2C%20Delhi%2C%20110054%2C%20India!5e0!3m2!1sen!2sus!4v1690304684981!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+                    <div class="col-lg-5 md-mb-30">
+                        <div class="contact-map2">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3500.3822174465167!2d77.222103!3d28.678211000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfda49c63895b%3A0xf42dc723f30a63d2!2sNATIONAL%20CENTRE%20FOR%20DISEASE%20CONTROL%2C%20CSU%20INTEGRATED%20DISEASE%20SURVEILLANCE%20PROGRAMME%2C%20Civil%20Lines%2C%20Delhi%2C%20110054%2C%20India!5e0!3m2!1sen!2sus!4v1690304684981!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
         </div>
     </div>
 </div>
