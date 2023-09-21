@@ -58,8 +58,8 @@
                   <div class="col-lg-6 col-md-6">
                      <div class="publication-sociol-icon">
                         <ul class="d-flex justify-content-end">
-                           <li><a href="javascript:void();" id="" onclick="printDiv()" download> <img src="{{ asset('assets/Nrcp_img/sociol-icon/printer.png') }}"
-                              alt="printer Image" aria-label="printer" class="slash"></a></li>
+                           <!-- <li><a href="javascript:void();" id="" onclick="printDiv()" download> <img src="{{ asset('assets/Nrcp_img/sociol-icon/printer.png') }}"
+                              alt="printer Image" aria-label="printer" class="slash"></a></li> -->
                            <li><a href="#" target="_blank"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/share.png') }}"
                               alt="share Image" aria-label="share"></a></li>
                               @if($social_media->facebook  != '')

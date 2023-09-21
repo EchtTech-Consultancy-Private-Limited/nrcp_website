@@ -38,12 +38,12 @@
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-12">
-
+                       
                             <div class="tab-content sub-tab" id="tabContent">
-                                <div class="tab-pane fade active show" id="master-layout_0" role="tabpanel"
+                                <div class="tab-pane fade active show" id="" role="tabpanel"
                                     aria-labelledby="Master_layout_0">
                                 <!-- Content and Images -->
-
+                           
                                 <div class="row">
                                 <div class="col-md-4">
                                     <div class="rs-inner-blog">
@@ -67,7 +67,8 @@
                                         </div>
                                     </div>
                                     <div class="col-md-8 text-right">
-                                        <span><b>Date of Animal Bites: {{ date('d/m/Y', strtotime(request('date'))) }}</b></span>
+
+                                        <span id="biteDate"><b>Date of Animal Bites: {{ date('d/m/Y', strtotime(request('date'))) }}</b></span>
                                     </div>  
                                 </div>
 
@@ -152,8 +153,8 @@
                 
                                         </li>
                                     </ul>
-                
                                 </div>
+                            
                             </div>
                                <div class="tab-pane fade" id="master-layout_1" role="tabpanel"
                                     aria-labelledby="Master_layout_1">
@@ -301,7 +302,9 @@
     </div>
 @endsection
 @push('post-scripts')
+
     <script>
+        
         function changeURL(e) {
             var temp = new Array();
             var temp = e.split(',');
