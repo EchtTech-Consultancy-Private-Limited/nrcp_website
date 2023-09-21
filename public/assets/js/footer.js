@@ -81,19 +81,25 @@ $(document).ready(function() {
 
 
     $(document).ready(function() {
+        const searchParams = new URLSearchParams(window.location.search);       
+        const vDate = new Date(searchParams.get('date'));
+        let vMonth = vDate.getMonth();
+        let bDate = vDate.getDate();
+        let vYear = vDate.getFullYear();        
+    
         $('.example1').DataTable( {
             dom: 'Bfrtip',
             buttons: [
                 {              
                     extend: 'print',
                         title: function() {
-                            return "<div style='font-size: 25px;margin-bottom:20px;'>Vaccination Schedule</div> <ul style='display:block;position: absolute; bottom :75%'><li style='font-size: 16px;font-weight:400; margin-bottom:10px;'>1- Site of vaccine injection: Adult/Children : Deltoid muscle (IM/ID) Infant and Children : Anterolateral thigh(IM) </li> <li style='font-size: 16px;font-weight:400;margin-bottom:10px;'>2- All category III bites wounds must be infiltrated with Rabies immunoglobulin.</li>  <li style='font-size: 16px;font-weight:400'>3- If you have never been vaccinated for Rabies, this is the schedule you need to follow.</li></ul>";
-                         
+                            return "<div style='display:flex;justify-content: space-between;align-items: center;'> <div style='font-size: 25px;margin-bottom:20px;'>Vaccination Schedule</div> <div style='font-size: 18px;margin-bottom:20px;'> Date : "+`${bDate +"-" + (Number(vMonth) + 1)  + "-" + vYear}`+" </div> <ul style='display:block;position: absolute; bottom :75%'><li style='font-size: 16px;font-weight:400; margin-bottom:10px;'>1- Site of vaccine injection: Adult/Children : Deltoid muscle (IM/ID) Infant and Children : Anterolateral thigh(IM) </li> <li style='font-size: 16px;font-weight:400;margin-bottom:10px;'>2- All category III bites wounds must be infiltrated with Rabies immunoglobulin.</li>  <li style='font-size: 16px;font-weight:400'>3- If you have never been vaccinated for Rabies, this is the schedule you need to follow.</li></ul>";
                         }                          
                }
             ]
         } );
     });
+    
 
 
 function checkYesNo(e){
