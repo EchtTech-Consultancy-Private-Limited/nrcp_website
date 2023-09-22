@@ -36,6 +36,11 @@ class HomeController extends Controller
     {
         return view('human-health'); 
     }
+
+    public function videoDetail()
+    {
+        return view('videos'); 
+    }
     
     public function mediaalerts()
     {
