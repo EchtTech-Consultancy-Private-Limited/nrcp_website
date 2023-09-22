@@ -221,7 +221,7 @@ class HomeController extends Controller
                  . '<tr>'
                  . '<th>State Name</th>'
                  . '<th>District Name</th>'
-                 . '<th>Address with Block</th>'
+                 . '<th>Facility Name</th>'
                  . '</tr>';
          
          foreach ($data as $searchData) {
