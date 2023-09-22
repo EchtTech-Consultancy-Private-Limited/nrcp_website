@@ -18518,7 +18518,7 @@ color: #171717;
   margin-top: 0px;
   top: 0px;
   z-index: 9999999;
-  display: none;
+  /* display: none; */
 }
 
 .loader .loader-container {
