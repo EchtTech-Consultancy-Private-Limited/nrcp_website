@@ -4,13 +4,13 @@
       @include('partials.head-css-scripts')
    </head>
    <body class="defult-home">
-      <div id="loader" class="loader green-color">
+      <!-- <div id="loader" class="loader green-color">
          <div class="loader-container">
             <div class='loader-icon'>
                <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="">
             </div>
          </div>
-      </div>
+      </div> -->
       <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
          <header id="rs-header" class="rs-header">
                   <div class="topbar-area home11-topbar">
@@ -433,50 +433,23 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                     </div>
                     <div class="col-md-4">
                         <div class="notice-bord style1">
-                            <h4 class="title">Publications</h4>
-
-                            <div class="marquee-height">
-                            <h5 class="ml-2 mt-4">Content Coming soon</h5>
-                                <!-- <ul class="Publications-slide marquee--inner ">
-                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 600ms; animation-name: fadeInUp;">
-                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="700ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 700ms; animation-name: fadeInUp;">
-                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                </ul> -->
-                            </div>
-                            <div class="btn-part view-all-btn">
-                                <a class="readon2 mod" href="#">View All</a>
+                            <h4 class="title">Facebook Feed</h4>
+                            <div class="marquee-height myslider">                        
+                           <div class="item a text-center">
+                           <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                              <img src="{{ asset('assets/Nrcp_img/f1.png') }}" alt="">
+                           </a>
+                           </div>
+                           <div class="item b text-center">
+                           <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                              <img src="{{ asset('assets/Nrcp_img/f2.png') }}" alt="">
+                           </a>
+                           </div>
+                           <div class="item c text-center">
+                           <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                              <img src="{{ asset('assets/Nrcp_img/f3.png') }}" alt="">
+                           </a>
+                           </div>
                             </div>
                         </div>
                     </div>
@@ -728,7 +701,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                </div>
                <div class="btn-view_play">
                   <div class="btn-part mt-4 text-center">
-                     <a class="readon2" href="#">View All</a>
+                     <a class="readon2" href="{{ url('/national-event') }}">View All</a>
                   </div>
                   <div class="btns">
                      <div id="customPreviousBtn3"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
@@ -783,7 +756,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                </div>
                <div class="btn-view_play">
                   <div class="btn-part mt-4 text-center">
-                     <a class="readon2" href="{{ url('/video') }}">View All</a>
+                     <a class="readon2" href="{{ route('video') }}">View All</a>
                   </div>
                   <div class="btns">
                      <div id="customPreviousBtn4"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
@@ -1016,7 +989,10 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
    <!-- Partner End -->
 </div>
 </div>
+
          @include('partials.footer')
          @include('partials.footer-scripts')
    </body>
 </html>
+
+

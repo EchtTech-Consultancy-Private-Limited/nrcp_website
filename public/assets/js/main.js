@@ -1,14 +1,4 @@
-/**
-*
-* -----------------------------------------------------------------------------
-*
-* Template : Educavo - Education HTML Template
-* Author : rs-theme
-* Author URI : http://www.rstheme.com/
-*
-* -----------------------------------------------------------------------------
-*
-**/
+
 var baseurl=  window.location.origin;
 
 //alert(baseurl + "/set-language");
@@ -747,8 +737,15 @@ play5.addEventListener("click", function(){
 function slipttobottom() {
     $(window).scrollTop(450);
 }
-	
 
-  
- 
-  
+$('.myslider').slick({
+
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    autoplay:true,
+    vertical: true,
+    verticalSwiping: true
+        
+    });
+        
