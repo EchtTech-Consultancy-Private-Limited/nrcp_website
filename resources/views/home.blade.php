@@ -881,16 +881,18 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
             data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6" data-md-device-nav="true"
             data-md-device-dots="false" id="banner5">
 
-            <div class="partner-item">
-               <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link"><img
-                  src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}" alt="NCDC"
-                  title="NCDC"></a>
-            </div>
+          
 
             <div class="partner-item">
                <a href="https://www.mohfw.gov.in/" target="_blank" role="link"><img
                   src="{{ asset('assets/Nrcp_img/clients/MHFW.png') }}" alt="Ministry of Health and Family Welfare Government of India"
                   title="Ministry of Health and Family Welfare Government of India"></a>
+            </div>
+
+            <div class="partner-item">
+               <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link"><img
+                  src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}" alt="NCDC"
+                  title="NCDC"></a>
             </div>
 
             <div class="partner-item">
