@@ -4,13 +4,7 @@
       @include('partials.head-css-scripts')
    </head>
    <body class="defult-home" id="wholePagePrint">
-      <div id="loader" class="loader green-color">
-         <div class="loader-container">
-            <div class='loader-icon'>
-               <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="">
-            </div>
-         </div>
-      </div>
+     
       <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
          <header id="rs-header" class="rs-header">
                   <div class="topbar-area home11-topbar">
