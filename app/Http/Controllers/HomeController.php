@@ -18,7 +18,7 @@ class HomeController extends Controller
     public function index()
     {
         //news
-        $news= DB::table('news_management')->where('soft_delete','0')->get();
+        $news= DB::table('news_management')->where('soft_delete','0')->orderBy('created_at', 'desc')->get();
         $homebanner = DB::table('home_page_banner_management')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
        
         //dd($homebanner);
@@ -126,6 +126,7 @@ class HomeController extends Controller
 
     public function contactStroe(Request $request){
 
+        
         $validated = $request->validate([
             'name' => 'required',
             'email' => ['required','string','email','max:50','regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix'],
