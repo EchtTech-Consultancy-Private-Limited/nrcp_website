@@ -49,7 +49,9 @@ class CommonComposer
         $menus = DB::table('website_menu_management')->where('menu_place','0')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
         $menuName = $this->getMenuTree($menus, 0);   
 
-        $view->with(['headerMenu' => $menuName,'social_media'=>$social_media,'footerMenu'=>$footerMenu,
+        $view->with(['headerMenu' => $menuName,
+        'social_media'=>$social_media,
+        'footerMenu'=>$footerMenu,
         'toogleMenu'=>$toogleMenu,
         'time'=>$this->getLocalTime(),
         'visitCounter'=>isset($visitCounter)?$visitCounter:'0',
