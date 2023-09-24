@@ -1,14 +1,4 @@
-/**
-*
-* -----------------------------------------------------------------------------
-*
-* Template : Educavo - Education HTML Template
-* Author : rs-theme
-* Author URI : http://www.rstheme.com/
-*
-* -----------------------------------------------------------------------------
-*
-**/
+
 var baseurl=  window.location.origin;
 
 //alert(baseurl + "/set-language");
@@ -172,7 +162,7 @@ function setlang(value){
             type: 'inline',
             preloader: false,
             focus: '#qname',
-            removalDelay: 500,
+            removalDelay: 200,
             callbacks: {
                 beforeOpen: function() {
                     this.st.mainClass = this.st.el.attr('data-effect');
@@ -188,7 +178,7 @@ function setlang(value){
     
     //preloader
     $(window).on('load', function() {
-        $("#loader").delay(1000).fadeOut(500);
+        $("#loader").delay(200).fadeOut(80);
     })
 
     //Videos popup jQuery 
@@ -747,8 +737,15 @@ play5.addEventListener("click", function(){
 function slipttobottom() {
     $(window).scrollTop(450);
 }
-	
 
-  
- 
-  
+$('.myslider').slick({
+
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    autoplay:true,
+    vertical: true,
+    verticalSwiping: true
+        
+    });
+        

@@ -18518,7 +18518,7 @@ color: #171717;
   margin-top: 0px;
   top: 0px;
   z-index: 9999999;
-  display: none;
+  /* display: none; */
 }
 
 .loader .loader-container {
@@ -20397,4 +20397,19 @@ img#ContactCaptcha_CaptchaImage {
 
 section.latest-news .owl-nav {
   display: none;
+}
+
+.marquee-height.myslider {
+  height: 450px !important;
+}
+
+.marquee-height.myslider .item a{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.marquee-height.myslider .item img{
+  width: 90% !important;
+  height: 460px !important;
 }

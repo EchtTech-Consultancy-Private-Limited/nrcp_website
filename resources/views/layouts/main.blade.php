@@ -4,13 +4,7 @@
       @include('partials.head-css-scripts')
    </head>
    <body class="defult-home" id="wholePagePrint">
-      <div id="loader" class="loader green-color">
-         <div class="loader-container">
-            <div class='loader-icon'>
-               <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="">
-            </div>
-         </div>
-      </div>
+     
       <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
          <header id="rs-header" class="rs-header">
                   <div class="topbar-area home11-topbar">
@@ -55,7 +49,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-6 col-md-6">
+                  <!-- <div class="col-lg-6 col-md-6">
                      <div class="publication-sociol-icon">
                         <ul class="d-flex justify-content-end">
                            <li><a href="javascript:void();" id="" onclick="printDiv()" download> <img src="{{ asset('assets/Nrcp_img/sociol-icon/printer.png') }}"
@@ -70,11 +64,11 @@
                            <li><a href="{{$social_media->twitter}}" target="_blank"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/twitter.png') }}"
                               alt="twitter Image" aria-label="twitter"></a></li>
                               @endif
-                           <!-- <li><a href="javascript:void();" target="_blank"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/linkedin.png') }}"
-                              alt="linkedin Image" aria-label="linkedin"></a></li> -->
+                           <li><a href="javascript:void();" target="_blank"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/linkedin.png') }}"
+                              alt="linkedin Image" aria-label="linkedin"></a></li>
                         </ul>
                      </div>
-                  </div>
+                  </div> -->
                </div>
             </div>
                @yield('content')
