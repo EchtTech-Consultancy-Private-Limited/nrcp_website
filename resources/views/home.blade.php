@@ -82,7 +82,7 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-2">
                         <div class="latest-news-text">
-                            <p class="m-0">Latest News</p>
+                            <p class="m-0">Recent Activity</p>
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-9">
