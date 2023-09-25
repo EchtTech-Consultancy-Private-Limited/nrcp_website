@@ -19287,7 +19287,7 @@ ul.site-map.footer-link-withput-h {
 
 .border-right-white {
   border-right: 2px solid #ffffff4f;
-  padding: 0 10px;
+  padding: 0 10px 10px 0;
   height: 160px;
 }
 
@@ -19845,7 +19845,7 @@ margin: 0;
 section.latest-news .latest-news-text p{
   line-height: 70px;
   border-right: 1px solid #fff;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
   color: #ffd965;
   }
