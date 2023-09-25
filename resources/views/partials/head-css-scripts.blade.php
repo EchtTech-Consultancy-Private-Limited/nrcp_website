@@ -11,7 +11,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="apple-touch-icon" href="{{ asset('assets/Nrcp_img/nrcp.png') }}">
     <link rel="stylesheet" href="{{ asset('assets/fonts/fonts.googleapis.com_css2.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/fonts/poppins/Poppins.css') }}">
+    <!-- <link rel="stylesheet" href="{{ asset('assets/fonts/poppins/Poppins.css') }}"> -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/font-awesome.min.css') }}">
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/Nrcp_img/nrcp.png') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/bootstrap.min.css') }}">
@@ -27,9 +27,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
-    <script>
-        //alert(localStorage.getItem('theme-mode'));
-    </script>
+   
     <link rel="stylesheet" type="text/css" id="theme-style" href="">
    
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.dataTables.min.css') }}">
