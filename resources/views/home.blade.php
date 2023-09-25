@@ -381,74 +381,45 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                 <div class="row p-0">
                     <div class="col-md-4">
                         <div class="notice-bord style1">
-                            <h4 class="title">Recent Activity</h4>
-                            <div class="marquee-height">
-                                <!-- <ul class="recent-activity-slide marquee--inner">
-                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                                        <div class="desc"> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="600ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 600ms; animation-name: fadeInUp;">
-                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-delay="700ms" data-wow-duration="2000ms"
-                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 700ms; animation-name: fadeInUp;">
-                                        <div class="desc"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Lorem
-                                            Ipsum is
-                                            simply dummy text of the printing and setting
-                                        </div>
-                                    </li>
-                                </ul> -->
-
-                                <h5 class="ml-2 mt-4">Content Coming soon</h5>
-
+                            <h4 class="title">Twitter Feed</h4>
+                            <div class="marquee-height myslider">
+                                 <div class="item a text-center">
+                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                       <img src="{{ asset('assets/Nrcp_img/t1.png') }}" alt="">
+                                    </a>
+                                    </div>
+                                    <div class="item b text-center">
+                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                       <img src="{{ asset('assets/Nrcp_img/t2.png') }}" alt="">
+                                    </a>
+                                    </div>
+                                    <div class="item c text-center">
+                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                       <img src="{{ asset('assets/Nrcp_img/t3.png') }}" alt="">
+                                    </a>
+                                 </div>
                             </div>
-
-                            <div class="btn-part view-all-btn">
-                                <a class="readon2 mod" href="#">View All</a>
-                            </div>
-
+                         
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="notice-bord style1">
                             <h4 class="title">Facebook Feed</h4>
                             <div class="marquee-height myslider">                        
-                           <div class="item a text-center">
-                           <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
-                              <img src="{{ asset('assets/Nrcp_img/f1.png') }}" alt="">
-                           </a>
-                           </div>
-                           <div class="item b text-center">
-                           <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
-                              <img src="{{ asset('assets/Nrcp_img/f2.png') }}" alt="">
-                           </a>
-                           </div>
-                           <div class="item c text-center">
-                           <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
-                              <img src="{{ asset('assets/Nrcp_img/f3.png') }}" alt="">
-                           </a>
+                          <div class="item a text-center">
+                              <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                 <img src="{{ asset('assets/Nrcp_img/f1.png') }}" alt="">
+                              </a>
+                              </div>
+                              <div class="item b text-center">
+                              <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                 <img src="{{ asset('assets/Nrcp_img/f2.png') }}" alt="">
+                              </a>
+                              </div>
+                              <div class="item c text-center">
+                              <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                 <img src="{{ asset('assets/Nrcp_img/f3.png') }}" alt="">
+                              </a>
                            </div>
                             </div>
                         </div>
@@ -880,8 +851,6 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
             data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="3"
             data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6" data-md-device-nav="true"
             data-md-device-dots="false" id="banner5">
-
-          
 
             <div class="partner-item">
                <a href="https://www.mohfw.gov.in/" target="_blank" role="link"><img
