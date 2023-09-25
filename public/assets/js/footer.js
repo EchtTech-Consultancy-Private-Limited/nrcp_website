@@ -7,9 +7,9 @@ $(window).scroll(function(){
         $('.button').css({'display': 'block'});
       }
     });
-// $(document).ready(function() {
-//     $('img').lazyload();
-// });
+$(document).ready(function() {
+    $('img').lazyload();
+});
 $(document).ready(function() {
     $(".btn2").click(function() {
         $(".grid-item.filter2").removeClass('d-none');
@@ -81,12 +81,12 @@ $(document).ready(function() {
 
 
     $(document).ready(function() {
-        const searchParams = new URLSearchParams(window.location.search);       
+        const searchParams = new URLSearchParams(window.location.search);    
         const vDate = new Date(searchParams.get('date'));
         let vMonth = vDate.getMonth();
         let bDate = vDate.getDate();
-        let vYear = vDate.getFullYear();        
-    
+        let vYear = vDate.getFullYear();   
+
         $('.example1').DataTable( {
             dom: 'Bfrtip',
             buttons: [

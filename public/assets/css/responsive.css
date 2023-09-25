@@ -89,7 +89,7 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{
-        font: normal normal 12px/50px Poppins;
+        font: normal normal 12px/30px Poppins;
     }
 
     .rs-about.style8 .main-content .img-part {
@@ -115,8 +115,12 @@
     }
 
     .img-part.banner-image {
-        min-height: 535px;
+        min-height: 305px;
         height: 100%;
+    }
+
+    ul.nav-menu > li {
+        height: 50px;
     }
 
     /* .full-width-header .rs-header .logo-part img {
@@ -124,7 +128,7 @@
     } */
 
     .img-part.banner-image img{
-        height: 100% !important;
+        height: 305px !important;
     }
 
     .rs-slider.style1 .slider-content .sl-title {
@@ -134,6 +138,16 @@
     .desc.mb-30.about-t {
         font: normal normal normal 14px/22px Poppins;
     }
+
+    section.latest-news, section.latest-news .latest-news-slider-content-text {
+        height: 55px;
+    }
+    section.latest-news .latest-news-text p {
+        line-height: 55px;}
+
+        section.latest-news .rs-slider .btns{
+            top: -5px;
+        }
 
 }
 
@@ -287,7 +301,7 @@
 
 @media only screen and (max-width: 1366px) {
     .container {
-        max-width: 1230px;
+        max-width: 1200px;
         width: 100%;
     }
     .rs-footer .footer-bottom::before {
@@ -306,6 +320,8 @@
         width: 60px;
         margin: 0 18px 0 0;
     }
+
+   
     .rs-categories.style1 .categories-item .content-part .title {
         transition: all 0.3s ease;
         text-align: center;
