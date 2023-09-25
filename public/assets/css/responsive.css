@@ -67,6 +67,13 @@
         bottom: 8%;
     }
 
+    .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{
+        padding: 2px 20px 2px 19px;
+    }
+
+    ul.site-map.footer-link-withput-h {
+        margin-top: 48px;
+    }
 
 }
 
