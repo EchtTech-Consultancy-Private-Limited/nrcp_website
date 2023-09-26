@@ -106,6 +106,7 @@ function checkYesNo(e){
     var html = '';
     if(e=='1'){
         $("#txtDate").removeAttr('required', 'true'); 
+        html =`<label class="pl-2">Date of 1st Dose of vaccination (day 0)</label>`;
         html +=`<input class="from-control mt-2 mb-4" type="date" name="v-date" placeholder="Name" id="txtDate1" required>`;
 $(function(){
     var dtToday = new Date();
