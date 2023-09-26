@@ -305,5 +305,53 @@ class HomeController extends Controller
         // dd($data);
          return $resultsData;
      }
+     
+     
+     public function vaccinationSearchH (Request $request) {
+         $statename = $request->state_name;
+         $cityname = $request->city_name;
+         $data = DB::table('human_rabies_labs')
+                 ->select(['district_name','state_name','address'])
+                 ->where('state_name','LIKE',$statename)->where('district_name','LIKE',$cityname)
+                 ->get();
+         
+         $resultsData = '<table>'
+                 . '<tbody>'
+                 . '<tr>'
+                 . '<th>State Name</th>'
+                 . '<th>District Name</th>'
+                 . '<th>Facility Name</th>'
+                 . '</tr>';
+         
+         foreach ($data as $searchData) {
+                $resultsData.='<tr><td>'.$searchData->state_name.'</td><td>'.$searchData->district_name.'</td><td>'.$searchData->address.'</td></tr>';
+         }
+         $resultsData .= '</tbody></table>';
+        // dd($data);
+         return $resultsData;
+     }
+     public function vaccinationSearchA (Request $request) {
+         $statename = $request->state_name;
+         $cityname = $request->city_name;
+         $data = DB::table('animal_rabies_labs')
+                 ->select(['district_name','state_name','address'])
+                 ->where('state_name','LIKE',$statename)->where('district_name','LIKE',$cityname)
+                 ->get();
+         
+         $resultsData = '<table>'
+                 . '<tbody>'
+                 . '<tr>'
+                 . '<th>State Name</th>'
+                 . '<th>District Name</th>'
+                 . '<th>Facility Name</th>'
+                 . '</tr>';
+         
+         foreach ($data as $searchData) {
+                $resultsData.='<tr><td>'.$searchData->state_name.'</td><td>'.$searchData->district_name.'</td><td>'.$searchData->address.'</td></tr>';
+         }
+         $resultsData .= '</tbody></table>';
+        // dd($data);
+         return $resultsData;
+     }
 
 }

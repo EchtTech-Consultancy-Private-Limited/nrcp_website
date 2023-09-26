@@ -72,5 +72,8 @@ Route::post('/get-districts-list-animal',[HomeController::class,'getDistrictsAni
 
 Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch']);
 
+Route::post('/get-vaccination-center-H',[HomeController::class,'vaccinationSearchH']);
+Route::post('/get-vaccination-center-A',[HomeController::class,'vaccinationSearchA']);
+
 });
 
