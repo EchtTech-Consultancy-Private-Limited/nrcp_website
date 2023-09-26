@@ -659,8 +659,6 @@ $(".nav-link").click(function(){
   $("#on-the-map").click(function(){
     console.log("this is tab");
         $(".col-lg-12.col-md-12.grid-item.filter4.d-none").css("display", "block");
-        col-lg-12 col-md-12 grid-item filter4 
-    })
-
+    });
     </script>
 @endpush

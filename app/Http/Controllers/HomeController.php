@@ -29,13 +29,26 @@ class HomeController extends Controller
                           // ->orderby('gm.sort_order','Asc')
                            ->get();   
         //dd($photoGallery);
-        //dd($homebanner);
         return view('home',['news'=>$news,'homebanner'=>$homebanner,'photogallery'=>$photoGallery ]); 
     }
+
     public function anumalHealth()
     {
         return view('animal-health'); 
-    }public function comingSoon()
+    }
+    public function photoGalleryDetails()
+    {
+        
+        $photoGallery = DB::table('gallery_management as gm')
+                           ->join('gallery_details as ged','ged.gallery_id','=','gm.uid')
+                           ->select('gm.*','ged.*')
+                           ->where('gm.soft_delete','0')
+                          // ->orderby('gm.sort_order','Asc')
+                           ->get(); 
+        $breadcrumbs = 'Photo Gallery Details';
+        return view('photo-gallery-details',['photogallery'=>$photoGallery,'breadcrumbs'=> $breadcrumbs ]); 
+    }
+    public function comingSoon()
     {
         return view('coming-soon'); 
     }

@@ -629,7 +629,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                      data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2"
                      data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="2"
                      data-md-device-nav="false" data-md-device-dots="false" id="banner3">
-                     @if(isset($photogallery))
+                     @if(!empty($photogallery))
                      @foreach($photogallery as $photogallerys)
                      <div class="team-item">
                         <div class="gallery-box">
@@ -640,12 +640,29 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                         </div>
                      </div>
                      @endforeach
+                     @else
+                     <div class="team-item">
+                        <div class="gallery-box">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/11.jpg') }}" alt="">
+                           <div class="text-gallery">
+                              Event 1
+                           </div>
+                        </div>
+                     </div>
+                     <div class="team-item">
+                        <div class="gallery-box">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
+                           <div class="text-gallery">
+                              Event 2
+                           </div>
+                        </div>
+                     </div>
                      @endif
                   </div>
                </div>
                <div class="btn-view_play">
                   <div class="btn-part mt-4 text-center">
-                     <a class="readon2" href="{{ url('/national-event') }}">View All</a>
+                     <a class="readon2" href="{{ route('photo-gallery') }}">View All</a>
                   </div>
                   <div class="btns">
                      <div id="customPreviousBtn3"><i class="fa fa-angle-left" aria-hidden="true"></i></div>

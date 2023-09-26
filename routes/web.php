@@ -35,7 +35,8 @@ Route::get('/media-alerts',[HomeController::class,'mediaalerts'])->name('media-a
 Route::get('/vaccination_dose',[HomeController::class,'vaccination_dose'])->name('vaccination-dose');
 // Route::get('/downloads',[HomeController::class,'downloads'])->name('downloads');
 // Route::get('/publications',[PublicationsController::class,'publications'])->name('publications');
-//Route::get('/privacy-policy',[HomeController::class,'privacyPolicy'])->name('privacypolicy');
+
+Route::get('/photo-gallery',[HomeController::class,'photoGalleryDetails'])->name('photo-gallery');
 
 Route::get('/news-details',[HomeController::class,'newsDetails'])->name('news-details');
 
