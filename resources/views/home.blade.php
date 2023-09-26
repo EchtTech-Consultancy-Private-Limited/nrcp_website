@@ -95,7 +95,28 @@
                                 data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
                                 data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
                                 data-md-device-dots="false" id="banner2">
-                                @if (Count($news) > 0)
+                                <div class="slider-content">
+                                    <div class="container-fluid px-0">
+                                       <div class="d-flex align-items-center latest-news-slider-content-text">
+                                             <p>World Rabies Day is being celebrated on 28th Sept’2023 </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="slider-content">
+                                    <div class="container-fluid px-0">
+                                       <div class="d-flex align-items-center latest-news-slider-content-text">
+                                             <p>NRCP Website will be launched on 27th Sept’ 2023</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="slider-content">
+                                    <div class="container-fluid px-0">
+                                       <div class="d-flex align-items-center latest-news-slider-content-text">
+                                             <p>NCDC Journal for One Health will be launched in December 2023 </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                <!-- @if (Count($news) > 0)
                                     @foreach ($news->take(3) as $item)
                                         <div class="slider-content">
                                             <div class="container-fluid px-0">
@@ -113,14 +134,10 @@
                                             </div>
                                         </div>
                                     @endforeach
-                                @endif
-
-
+                                @endif -->
                             </div>
-
                         </div>
                     </div>
-
                     <div class="col-md-1 rs-slider style1">
                         <div class="btns">
                             <div id="customPreviousBtn2"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
