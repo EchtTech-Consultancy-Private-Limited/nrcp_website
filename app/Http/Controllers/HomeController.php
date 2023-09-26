@@ -73,7 +73,19 @@ class HomeController extends Controller
                  ->select('state_name')
                  ->groupBy('state_name')
                  ->get();
-        return view('vaccination_dose',['state'=>$rabies_clinics_data_states]); 
+        
+        $human_rabies_labs_data_states = DB::table('human_rabies_labs')
+                 ->select('state_name')
+                 ->groupBy('state_name')
+                 ->get();
+        
+        $animal_rabies_labs_data_states = DB::table('animal_rabies_labs')
+                 ->select('state_name')
+                 ->groupBy('state_name')
+                 ->get();
+        
+        
+        return view('vaccination_dose',['state'=>$rabies_clinics_data_states,'human_labs_state'=>$human_rabies_labs_data_states,'animal_labs_state'=>$animal_rabies_labs_data_states]); 
     }
     public function privacyPolicy()
     {
@@ -235,10 +247,93 @@ class HomeController extends Controller
          }
          return $cityDropDown;
      }
+     
+     
+     public function getDistrictsHuman(Request $request) {
+         $statename = $request->state_name;
+         $cities = DB::table('human_rabies_labs')
+                 ->select('district_name')
+                 ->where('state_name','LIKE',$statename)
+                 ->groupBy('district_name')
+                 ->get();
+         $cityDropDown = '<option value="">Select District</option>';
+         foreach ($cities as $city) {
+                $cityDropDown.='<option value="'.$city->district_name.'">'.$city->district_name.'</option>';
+         }
+         return $cityDropDown;
+     }
+     
+     
+     public function getDistrictsAnimal(Request $request) {
+         $statename = $request->state_name;
+         $cities = DB::table('animal_rabies_labs')
+                 ->select('district_name')
+                 ->where('state_name','LIKE',$statename)
+                 ->groupBy('district_name')
+                 ->get();
+         $cityDropDown = '<option value="">Select District</option>';
+         foreach ($cities as $city) {
+                $cityDropDown.='<option value="'.$city->district_name.'">'.$city->district_name.'</option>';
+         }
+         return $cityDropDown;
+     }
+     
+     
+     
+     
+     
      public function vaccinationSearch(Request $request) {
          $statename = $request->state_name;
          $cityname = $request->city_name;
          $data = DB::table('model_anti_rabies_clinic')
+                 ->select(['district_name','state_name','address'])
+                 ->where('state_name','LIKE',$statename)->where('district_name','LIKE',$cityname)
+                 ->get();
+         
+         $resultsData = '<table>'
+                 . '<tbody>'
+                 . '<tr>'
+                 . '<th>State Name</th>'
+                 . '<th>District Name</th>'
+                 . '<th>Facility Name</th>'
+                 . '</tr>';
+         
+         foreach ($data as $searchData) {
+                $resultsData.='<tr><td>'.$searchData->state_name.'</td><td>'.$searchData->district_name.'</td><td>'.$searchData->address.'</td></tr>';
+         }
+         $resultsData .= '</tbody></table>';
+        // dd($data);
+         return $resultsData;
+     }
+     
+     
+     public function vaccinationSearchH (Request $request) {
+         $statename = $request->state_name;
+         $cityname = $request->city_name;
+         $data = DB::table('human_rabies_labs')
+                 ->select(['district_name','state_name','address'])
+                 ->where('state_name','LIKE',$statename)->where('district_name','LIKE',$cityname)
+                 ->get();
+         
+         $resultsData = '<table>'
+                 . '<tbody>'
+                 . '<tr>'
+                 . '<th>State Name</th>'
+                 . '<th>District Name</th>'
+                 . '<th>Facility Name</th>'
+                 . '</tr>';
+         
+         foreach ($data as $searchData) {
+                $resultsData.='<tr><td>'.$searchData->state_name.'</td><td>'.$searchData->district_name.'</td><td>'.$searchData->address.'</td></tr>';
+         }
+         $resultsData .= '</tbody></table>';
+        // dd($data);
+         return $resultsData;
+     }
+     public function vaccinationSearchA (Request $request) {
+         $statename = $request->state_name;
+         $cityname = $request->city_name;
+         $data = DB::table('animal_rabies_labs')
                  ->select(['district_name','state_name','address'])
                  ->where('state_name','LIKE',$statename)->where('district_name','LIKE',$cityname)
                  ->get();
