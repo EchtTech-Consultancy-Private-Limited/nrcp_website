@@ -19,10 +19,18 @@ class HomeController extends Controller
     {
         //news
         $news= DB::table('news_management')->where('soft_delete','0')->orderBy('created_at', 'desc')->get();
+       
         $homebanner = DB::table('home_page_banner_management')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
        
+        $photoGallery = DB::table('gallery_management as gm')
+                           ->join('gallery_details as ged','ged.gallery_id','=','gm.uid')
+                           ->select('gm.*','ged.*')
+                           ->where('gm.soft_delete','0')
+                          // ->orderby('gm.sort_order','Asc')
+                           ->get();   
+        //dd($photoGallery);
         //dd($homebanner);
-        return view('home',['news'=>$news,'homebanner'=>$homebanner ]); 
+        return view('home',['news'=>$news,'homebanner'=>$homebanner,'photogallery'=>$photoGallery ]); 
     }
     public function anumalHealth()
     {
