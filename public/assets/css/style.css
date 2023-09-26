@@ -19711,6 +19711,7 @@ a.top-logo img {
   position: relative !important;
   top: 16px;
  text-align: left;
+ padding-bottom: 2px;
 }
 
 .rs-publications-main .publication-sociol-icon img{
