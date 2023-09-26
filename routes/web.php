@@ -65,6 +65,10 @@ Route::get('{slug}',[HomeController::class,'commonPagesContent']);
 
 Route::post('/get-districts-list',[HomeController::class,'getDistricts']);
 
+Route::post('/get-districts-list-human',[HomeController::class,'getDistrictsHuman']);
+
+Route::post('/get-districts-list-animal',[HomeController::class,'getDistrictsAnimal']);
+
 Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch']);
 
 });
