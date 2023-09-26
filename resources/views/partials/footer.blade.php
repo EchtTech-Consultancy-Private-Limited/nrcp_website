@@ -226,9 +226,9 @@
                                     <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput">
                                     </div>
                                     {{-- CHoose Yes End--}}
-                                    <div class="col-md-12 text-center">
-                                    <p class="text-center">Date of 1st Dose of vaccination (day 0)</p>
-                                    </div>
+                                    <!-- <div class="col-md-12 text-center">
+                                        <p class="text-center">Date of 1st Dose of vaccination (day 0)</p>
+                                    </div> -->
                                 </div>
 
                                 <div class="row form-group">

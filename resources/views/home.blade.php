@@ -401,17 +401,17 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                             <h4 class="title">Twitter Feed</h4>
                             <div class="marquee-height myslider">
                                  <div class="item a text-center">
-                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter">
                                        <img src="{{ asset('assets/Nrcp_img/t1.png') }}" alt="">
                                     </a>
                                     </div>
                                     <div class="item b text-center">
-                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter">
                                        <img src="{{ asset('assets/Nrcp_img/t2.png') }}" alt="">
                                     </a>
                                     </div>
                                     <div class="item c text-center">
-                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter">
                                        <img src="{{ asset('assets/Nrcp_img/t3.png') }}" alt="">
                                     </a>
                                  </div>
@@ -628,63 +628,19 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                      data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2"
                      data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2"
                      data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="2"
-                     data-md-device-nav="false" data-md-device-dots="false">
+                     data-md-device-nav="false" data-md-device-dots="false" id="banner3">
+                     @if(isset($photogallery))
+                     @foreach($photogallery as $photogallerys)
                      <div class="team-item">
                         <div class="gallery-box">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/11.jpg') }}" alt="">
-                           <div class="text-gallery" id="banner3">
+                           <img src="{{ asset('uploads/GalleryManagement/'.$photogallerys->public_url) }}" alt="">
+                           <!-- <div class="text-gallery" id="banner3">
                               Event 1
-                           </div>
+                           </div> -->
                         </div>
                      </div>
-                     <div class="team-item">
-                        <div class="gallery-box">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
-                           <div class="text-gallery">
-                              Event 2
-                           </div>
-                        </div>
-                     </div>
-                     <div class="team-item">
-                        <div class="gallery-box">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/33.jpg') }}" alt="">
-                           <div class="text-gallery">
-                              Event 3
-                           </div>
-                        </div>
-                     </div>
-                     <div class="team-item">
-                        <div class="gallery-box">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/44.jpeg') }}" alt="">
-                           <div class="text-gallery">
-                              State Level ToT for NRCP (Kerala)
-                           </div>
-                        </div>
-                     </div>
-                     <div class="team-item">
-                        <div class="gallery-box">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/55.jpg') }}" alt="">
-                           <div class="text-gallery">
-                              Event 5
-                           </div>
-                        </div>
-                     </div>
-                     <div class="team-item">
-                        <div class="gallery-box">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/66.jpg') }}" alt="">
-                           <div class="text-gallery">
-                              Event 6
-                           </div>
-                        </div>
-                     </div>
-                     <div class="team-item">
-                        <div class="gallery-box">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/about.jpg') }}" alt="">
-                           <div class="text-gallery">
-                              Event 7
-                           </div>
-                        </div>
-                     </div>
+                     @endforeach
+                     @endif
                   </div>
                </div>
                <div class="btn-view_play">
