@@ -223,14 +223,16 @@
                                        </div>
                                     </div>
                                     {{-- CHoose Yes --}}
-                                    <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12" id="yesINput">
+                                    <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput">
                                     </div>
                                     {{-- CHoose Yes End--}}
-
+                                    <div class="col-md-12 text-center">
+                                    <p class="text-center">Date of 1st Dose of vaccination (day 0)</p>
+                                    </div>
                                 </div>
 
                                 <div class="row form-group">
-                                    <div class="col-md-5 mx-auto">
+                                    <div class="col-md-12 text-center">
                                         <button type="submit" class="readon2 modal-btn">
                                             Proceed
                                         </button>

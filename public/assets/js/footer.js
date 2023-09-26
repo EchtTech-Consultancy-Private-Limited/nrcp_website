@@ -106,7 +106,7 @@ function checkYesNo(e){
     var html = '';
     if(e=='1'){
         $("#txtDate").removeAttr('required', 'true'); 
-        html +=`<input class="from-control mt-2" type="date" name="v-date" placeholder="Name" id="txtDate1" required>`;
+        html +=`<input class="from-control mt-2 mb-4" type="date" name="v-date" placeholder="Name" id="txtDate1" required>`;
 $(function(){
     var dtToday = new Date();
     var month = dtToday.getMonth() + 1;
