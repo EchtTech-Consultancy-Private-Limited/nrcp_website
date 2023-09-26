@@ -384,17 +384,17 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                             <h4 class="title">Twitter Feed</h4>
                             <div class="marquee-height myslider">
                                  <div class="item a text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
                                        <img src="{{ asset('assets/Nrcp_img/t1.png') }}" alt="">
                                     </a>
                                     </div>
                                     <div class="item b text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
                                        <img src="{{ asset('assets/Nrcp_img/t2.png') }}" alt="">
                                     </a>
                                     </div>
                                     <div class="item c text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
+                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
                                        <img src="{{ asset('assets/Nrcp_img/t3.png') }}" alt="">
                                     </a>
                                  </div>
@@ -948,11 +948,11 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
          </div>
          <div class="gallery-section clientail">
             <div class="btns pr-0">
-               <div id="customPreviousBtn5"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+               <!-- <div id="customPreviousBtn5"><i class="fa fa-angle-left" aria-hidden="true"></i></div> -->
                <div id="customPause5"><i class="fa fa-pause" aria-hidden="true"></i></div>
                <div id="customPlay5" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
                </div>
-               <div id="customNextBtn5"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+               <!-- <div id="customNextBtn5"><i class="fa fa-angle-right" aria-hidden="true"></i></div> -->
             </div>
          </div>
       </div>
