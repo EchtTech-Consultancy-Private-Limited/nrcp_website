@@ -1866,7 +1866,7 @@ h6.sub-text-b-l {
        
     }
     .container {
-        max-width: 720px;
+        max-width: 760px;
     }
     .rs-about.style6 .shape-animate .transparent.left {
         left: 0;
@@ -2466,7 +2466,16 @@ h6.sub-text-b-l {
     }
 
     section.latest-news .latest-news-text p{
-        font-size: 16px;
+        font-size: 12px;
+    }
+
+    .pdf-image img {
+        height: auto !important;
+    }
+
+    .img-part.banner-image img, .img-part.banner-image{
+        height:190px ;
+        min-height: 190px;
     }
 
 }
