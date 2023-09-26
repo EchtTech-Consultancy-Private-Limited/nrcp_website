@@ -159,6 +159,7 @@
 }
 
 
+
 @media only screen and (max-width: 1600px) {
     .full-width-header.header-style3.modify .rs-header .menu-area .logo-part {
         width: 250px;
@@ -4711,6 +4712,9 @@ h6.sub-text-b-l {
         margin: 10% auto 0;
     }}
 
-    .rs-partner .owl-nav {
-        display: none;
+
+    @media only screen and (max-width: 1300px) and (min-width: 1090px) {
+        ul.site-map.footer-link-withput-h {
+            margin-top: 47px !important;
+        }
     }
