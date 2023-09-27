@@ -2538,6 +2538,7 @@ h6.sub-text-b-l {
 
     section.latest-news .latest-news-slider-content-text{
         display: block !important;
+        height: 50px;
     }
 
     span.date-news-latest{padding-left: 0px !important;}
@@ -2599,7 +2600,7 @@ h6.sub-text-b-l {
     }
 
     h2.title.black-color.logo-text {
-        font: normal normal bold 14px/20px Tahoma;
+        font: normal normal bold 13px/20px Tahoma;
     }
 
     img.logo.logo1.extra-logo {
@@ -2766,7 +2767,7 @@ h6.sub-text-b-l {
     
 
     section.latest-news {
-        height: 150px;
+        height: 90px;
     }
 
     section.latest-news .rs-slider.style1 {
@@ -2779,6 +2780,15 @@ h6.sub-text-b-l {
 
     section.latest-news .latest-news-text p{
         border-right: 0px !important;
+        line-height: 40px;
+        font-size: 15px;
+    }
+    section.latest-news p{
+        font-size: 12px;
+    }
+
+    section.latest-news .rs-slider .btns{
+        height: 40px;
     }
 
     .bg-min:before{
@@ -3181,7 +3191,7 @@ h6.sub-text-b-l {
     }
     
     .img-part.banner-image img {
-        height:115px;
+        height:150px;
         width: 100%;
         object-fit: cover;
     }
