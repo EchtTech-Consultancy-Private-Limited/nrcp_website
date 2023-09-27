@@ -57,18 +57,13 @@ if(request('animal_bite') == 'yes'){
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Nearest Animal Rabies laboratory
                                 </button>
-                                
-
-
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-12">
-                       
                             <div class="tab-content sub-tab" id="tabContent">
-                                <div class="tab-pane fade active show" id="" role="tabpanel"
+                                <div class="tab-pane fade active show" id="master-layout_0" role="tabpanel"
                                     aria-labelledby="Master_layout_0">
                                 <!-- Content and Images -->
-                           
                                 <div class="row">
                                 <div class="col-md-4">
                                     <div class="rs-inner-blog">
@@ -96,7 +91,6 @@ if(request('animal_bite') == 'yes'){
                                         <span id="biteDate"><b>Date of Animal Bites: {{ date('d/m/Y', strtotime($date)) }}</b></span>
                                     </div>  
                                 </div>
-
                                 <div class="table-responsive hide-some-input">
                                     <table class="example1">
                                         <thead>
@@ -179,12 +173,10 @@ if(request('animal_bite') == 'yes'){
                                         </li>
                                     </ul>
                                 </div>
-                            
                             </div>
                                 <div class="tab-pane fade" id="master-layout_1" role="tabpanel"
                                     aria-labelledby="Master_layout_1">
                                     <!-- tab content start -->
-
                                     <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active" id="sub-tab1-content" role="tabpanel"
                                             aria-labelledby="sub-tab1">
@@ -197,7 +189,7 @@ if(request('animal_bite') == 'yes'){
                                                         <div class="gridFilter style2 text-left mb-40">
                                                             <button data-filter=".filter1" class="active">By
                                                                 District</button>
-                                                            <button data-filter=".filter2" class="btn2" id="on-the-map">On the
+                                                            <button data-filter=".filter2" class="btn2 on-the-map" id="on-the-map">On the
                                                                 Map</button>
 
                                                         </div>
@@ -212,7 +204,7 @@ if(request('animal_bite') == 'yes'){
                                                                                 <div class="row">
                                                                                     <div class="col-lg-5">
                                                                                         <select name="state"
-                                                                                            id="state"
+                                                                                            id="stateC"
                                                                                             class="form-control" onchange="getDistrictList();">
                                                                                             <option
                                                                                                 value="">
@@ -226,7 +218,7 @@ if(request('animal_bite') == 'yes'){
                                                                                     </div>
                                                                                     <div class="col-lg-5">
                                                                                         <div class="location-select">
-                                                                                            <select name="cities" id="cities" class="form-control">
+                                                                                            <select name="cities" id="citiesC" class="form-control">
                                                                                                 <option value="">
                                                                                                     Select-District
                                                                                                 </option>
@@ -309,13 +301,10 @@ if(request('animal_bite') == 'yes'){
                                             aria-labelledby="sub-tab2">tab2</div>
                                     </div>
                                     <!-- tab content end -->
-
                                 </div>
-                            
                                 <div class="tab-pane fade" id="master-layout_2" role="tabpanel"
                                     aria-labelledby="Master_layout_2">
                                     <!-- tab content start -->
-
                                     <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active" id="sub-tab1-content" role="tabpanel"
                                             aria-labelledby="sub-tab1">
@@ -328,7 +317,7 @@ if(request('animal_bite') == 'yes'){
                                                         <div class="gridFilter style2 text-left mb-40">
                                                             <button data-filter=".filter1" class="active">By
                                                                 District</button>
-                                                            <button data-filter=".filter2" class="btn2" id="on-the-map">On the
+                                                            <button data-filter=".filter2" class="btn2 on-the-map" id="on-the-map">On the
                                                                 Map</button>
 
                                                         </div>
@@ -343,21 +332,21 @@ if(request('animal_bite') == 'yes'){
                                                                                 <div class="row">
                                                                                     <div class="col-lg-5">
                                                                                         <select name="state"
-                                                                                            id="state"
-                                                                                            class="form-control" onchange="getDistrictList();">
+                                                                                            id="stateH"
+                                                                                            class="form-control" onchange="getDistrictListH();">
                                                                                             <option
                                                                                                 value="">
                                                                                                 Select-Your-State
                                                                                             </option>
                                                                                            
-                                                                                            @foreach($state as $states)
-                                                                                            <option value="{{ $states->state_name }}">{{ $states->state_name }}</option>
+                                                                                            @foreach($human_labs_state as $human_labs_state)
+                                                                                            <option value="{{ $human_labs_state->state_name }}">{{ $human_labs_state->state_name }}</option>
                                                                                             @endforeach
                                                                                         </select>
                                                                                     </div>
                                                                                     <div class="col-lg-5">
                                                                                         <div class="location-select">
-                                                                                            <select name="cities" id="cities" class="form-control">
+                                                                                            <select name="cities" id="citiesH" class="form-control">
                                                                                                 <option value="">
                                                                                                     Select-District
                                                                                                 </option>
@@ -367,7 +356,7 @@ if(request('animal_bite') == 'yes'){
 
                                                                                     <div class="col-lg-2">
                                                                                         <div class="btn-part view-all-btn ">
-                                                                                            <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResults();">Search</button>
+                                                                                            <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResultsH();">Search</button>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -381,19 +370,19 @@ if(request('animal_bite') == 'yes'){
 
                                                                         <section class="loaded">
 
-                                                                            <div class="table" id="search-data">
+                                                                            <div class="table" id="search-data-H">
                                                                                 
                                                                             </div>
                                                                         </section>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-12 col-md-12 grid-item filter2 d-none">
+                                                            <div class="col-lg-12 col-md-12 grid-item filter2 ">
                                                                 <div class="row">
                                                                    <div class="col-lg-12">
-                                                                    <div class="map">
+                                                                    <!-- <div class="map">
                                                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe>
-                                                                    </div>
+                                                                    </div> -->
                                                                    </div>
 
                                                                 </div>
@@ -440,9 +429,7 @@ if(request('animal_bite') == 'yes'){
                                             aria-labelledby="sub-tab2">tab2</div>
                                     </div>
                                     <!-- tab content end -->
-
                                 </div>
-                        
                                 <div class="tab-pane fade" id="master-layout_3" role="tabpanel"
                                     aria-labelledby="Master_layout_3">
                                     <!-- tab content start -->
@@ -459,7 +446,7 @@ if(request('animal_bite') == 'yes'){
                                                         <div class="gridFilter style2 text-left mb-40">
                                                             <button data-filter=".filter1" class="active">By
                                                                 District</button>
-                                                            <button data-filter=".filter2" class="btn2" id="on-the-map">On the
+                                                            <button data-filter=".filter2" class="btn2 on-the-map" id="on-the-map">On the
                                                                 Map</button>
 
                                                         </div>
@@ -474,21 +461,21 @@ if(request('animal_bite') == 'yes'){
                                                                                 <div class="row">
                                                                                     <div class="col-lg-5">
                                                                                         <select name="state"
-                                                                                            id="state"
-                                                                                            class="form-control" onchange="getDistrictList();">
+                                                                                            id="stateA"
+                                                                                            class="form-control" onchange="getDistrictListA();">
                                                                                             <option
                                                                                                 value="">
                                                                                                 Select-Your-State
                                                                                             </option>
                                                                                            
-                                                                                            @foreach($state as $states)
-                                                                                            <option value="{{ $states->state_name }}">{{ $states->state_name }}</option>
+                                                                                            @foreach($animal_labs_state as $animal_labs_state)
+                                                                                            <option value="{{ $animal_labs_state->state_name }}">{{ $animal_labs_state->state_name }}</option>
                                                                                             @endforeach
                                                                                         </select>
                                                                                     </div>
                                                                                     <div class="col-lg-5">
                                                                                         <div class="location-select">
-                                                                                            <select name="cities" id="cities" class="form-control">
+                                                                                            <select name="cities" id="citiesA" class="form-control">
                                                                                                 <option value="">
                                                                                                     Select-District
                                                                                                 </option>
@@ -498,7 +485,7 @@ if(request('animal_bite') == 'yes'){
 
                                                                                     <div class="col-lg-2">
                                                                                         <div class="btn-part view-all-btn ">
-                                                                                            <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResults();">Search</button>
+                                                                                            <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResultsA();">Search</button>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -512,7 +499,7 @@ if(request('animal_bite') == 'yes'){
 
                                                                         <section class="loaded">
 
-                                                                            <div class="table" id="search-data">
+                                                                            <div class="table" id="search-data-A">
                                                                                 
                                                                             </div>
                                                                         </section>
@@ -571,19 +558,11 @@ if(request('animal_bite') == 'yes'){
                                             aria-labelledby="sub-tab2">tab2</div>
                                     </div>
                                     <!-- tab content end -->
-
                                 </div>
-                              
-
                             </div>
                         </div>
                     </div>
-                  
-
-
-
                 </div>
-              
             </div>
         </div>
     </div>
@@ -624,8 +603,9 @@ if(request('animal_bite') == 'yes'){
                 }
             });
         });
+        
         function getDistrictList(){
-        var statename = $('#state').val();
+        var statename = $('#stateC').val();
         $.ajax({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -636,7 +616,7 @@ if(request('animal_bite') == 'yes'){
                 'state_name' : statename // in header request I'm getting value [productName: plastic product] *
                 },
             success:function(data){
-                document.querySelector('#cities').innerHTML = data;
+                document.querySelector('#citiesC').innerHTML = data;
                 $select.selectmenu("refresh", true);
             },
             error:function(e){
@@ -644,10 +624,54 @@ if(request('animal_bite') == 'yes'){
             }
         });
     }
+    
+        function getDistrictListH(){
+        var statename = $('#stateH').val();
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: "get-districts-list-human",
+            type: "POST",
+            data:{
+                'state_name' : statename // in header request I'm getting value [productName: plastic product] *
+                },
+            success:function(data){
+                document.querySelector('#citiesH').innerHTML = data;
+                $select.selectmenu("refresh", true);
+            },
+            error:function(e){
+                alert("Some error occured. Please try again later.");
+            }
+        });
+    }
+    
+        function getDistrictListA(){
+        var statename = $('#stateA').val();
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: "get-districts-list-animal",
+            type: "POST",
+            data:{
+                'state_name' : statename // in header request I'm getting value [productName: plastic product] *
+                },
+            success:function(data){
+                document.querySelector('#citiesA').innerHTML = data;
+                $select.selectmenu("refresh", true);
+            },
+            error:function(e){
+                alert("Some error occured. Please try again later.");
+            }
+        });
+    }
+    
+    
     //Search code starts
     function getSearchResults(){
-        var statename = $('#state').val();
-        var districtname = $('#cities').val();
+        var statename = $('#stateC').val();
+        var districtname = $('#citiesC').val();
         $.ajax({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -666,8 +690,55 @@ if(request('animal_bite') == 'yes'){
             }
         });
     }
+    
+    
+    function getSearchResultsH(){
+        var statename = $('#stateH').val();
+        var districtname = $('#citiesH').val();
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: "get-vaccination-center-H",
+            type: "POST",
+            data:{
+                'state_name' : statename,
+                'city_name' : districtname // in header request I'm getting value [productName: plastic product] *
+                },
+            success:function(data){
+                document.querySelector('#search-data-H').innerHTML = data
+            },
+            error:function(e){
+                alert("Some error occured. Please try again later.");
+            }
+        });
+    }
+    
+    function getSearchResultsA(){
+        var statename = $('#stateA').val();
+        var districtname = $('#citiesA').val();
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: "get-vaccination-center-A",
+            type: "POST",
+            data:{
+                'state_name' : statename,
+                'city_name' : districtname // in header request I'm getting value [productName: plastic product] *
+                },
+            success:function(data){
+                document.querySelector('#search-data-A').innerHTML = data
+            },
+            error:function(e){
+                alert("Some error occured. Please try again later.");
+            }
+        });
+    }
+    
+    
 
-$("#Master_layout_1").click(function(){
+$(".nav-link").click(function(){
     $(".row.grid.nearest-vaccication").addClass('nearest-vaccication1');
     
   });
@@ -677,6 +748,9 @@ $("#Master_layout_1").click(function(){
     
   });
 
-
+  $("#on-the-map").click(function(){
+    //console.log("this is tab");
+        $(".col-lg-12.col-md-12.grid-item.filter4.d-none").css("display", "block");
+    });
     </script>
 @endpush
