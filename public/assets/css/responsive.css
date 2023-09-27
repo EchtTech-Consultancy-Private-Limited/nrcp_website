@@ -2047,8 +2047,8 @@ h6.sub-text-b-l {
 
     .full-width-header.home1-modifiy .rs-header .logo-part {
         position: absolute;
-        line-height: 60px;
-        height: 60px;
+        line-height: 110px;
+        height: 115px;
         width: 80%;
     }
     .full-width-header.home8-style4 .rs-header .menu-area .logo-part {
@@ -2465,9 +2465,36 @@ h6.sub-text-b-l {
         display: none;
     }
 
+    .rs-menu {
+        position: absolute;
+        z-index: 999;
+        top: -22%;
+    }
+
+    .full-width-header .rs-header .topbar-area.home11-topbar ul.toolbar-sl-share.rs-inner-blog li {
+        padding: 8px 10px;
+    }
+
+    .top-menu-box {
+        padding: 10px 0 0;
+    }
+
+    .rs-menu-toggle{
+        padding-right: 20px;
+    }
+
+    .full-width-header .rs-header .logo-part.mobile-logo-s img {
+        height: 60px !important;
+        padding-left: 18px;
+        padding-right: 0px !important;
+        margin-top: 27px;
+    }
+
     section.latest-news .latest-news-text p{
         font-size: 12px;
     }
+
+    .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{color: #000 !important;}
 
     .pdf-image img {
         height: auto !important;
@@ -2486,6 +2513,13 @@ h6.sub-text-b-l {
         height: 307px;
         margin: 0px;
       }
+
+      .full-width-header.home1-modifiy .rs-header .logo-part {
+        position: absolute;
+        line-height: 60px;
+        height: 60px;
+        width: 80%;
+    }
 
       .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {
         font: normal normal 14px/30px Poppins;
@@ -4264,7 +4298,7 @@ h6.sub-text-b-l {
     }
     .rs-popular-courses.main-home .courses-item .courses-grid .content-part .title {
         font-size: 20px;
-    }
+    } 
   
     .rs-about.style8 .sec-title3 .title{
         font-size: 18px;
