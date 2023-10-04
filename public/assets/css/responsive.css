@@ -2047,8 +2047,8 @@ h6.sub-text-b-l {
 
     .full-width-header.home1-modifiy .rs-header .logo-part {
         position: absolute;
-        line-height: 90px;
-        height: 90px;
+        line-height: 110px;
+        height: 115px;
         width: 80%;
     }
     .full-width-header.home8-style4 .rs-header .menu-area .logo-part {
@@ -2061,7 +2061,7 @@ h6.sub-text-b-l {
 
     .logo-part.mobile-logo-s {
         position: static !important;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
         width: 100% !important;
     }
 
@@ -2077,7 +2077,7 @@ h6.sub-text-b-l {
 
     .logo-cat-wrap.right-h .logo-part a {
         display: flex;
-        height: 100%;
+        height: auto;
         justify-content: space-between !important;
         width: 100% !important;
         padding-right: 15px;
@@ -2117,7 +2117,7 @@ h6.sub-text-b-l {
     }
 
     .menu-area.menu-sticky {
-        padding-top: 18px;
+        padding-top: 12px;
     }
 
     .full-width-header .rs-header .menu-area .rs-menu-area {
@@ -2465,9 +2465,36 @@ h6.sub-text-b-l {
         display: none;
     }
 
+    .rs-menu {
+        position: absolute;
+        z-index: 999;
+        top: -22%;
+    }
+
+    .full-width-header .rs-header .topbar-area.home11-topbar ul.toolbar-sl-share.rs-inner-blog li {
+        padding: 8px 10px;
+    }
+
+    .top-menu-box {
+        padding: 10px 0 0;
+    }
+
+    .rs-menu-toggle{
+        padding-right: 20px;
+    }
+
+    .full-width-header .rs-header .logo-part.mobile-logo-s img {
+        height: 60px !important;
+        padding-left: 18px;
+        padding-right: 0px !important;
+        margin-top: 27px;
+    }
+
     section.latest-news .latest-news-text p{
         font-size: 12px;
     }
+
+    .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a{color: #000 !important;}
 
     .pdf-image img {
         height: auto !important;
@@ -2486,6 +2513,17 @@ h6.sub-text-b-l {
         height: 307px;
         margin: 0px;
       }
+
+      .full-width-header.home1-modifiy .rs-header .logo-part {
+        position: absolute;
+        line-height: 60px;
+        height: 60px;
+        width: 80%;
+    }
+
+      .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {
+        font: normal normal 14px/30px Poppins;
+    }
       
     .sub-tab select {
         margin-bottom: 10px;
@@ -2538,6 +2576,7 @@ h6.sub-text-b-l {
 
     section.latest-news .latest-news-slider-content-text{
         display: block !important;
+        height: 50px;
     }
 
     span.date-news-latest{padding-left: 0px !important;}
@@ -2595,11 +2634,12 @@ h6.sub-text-b-l {
     }
 
     .full-width-header .rs-header .logo-part.mobile-logo-s img {
-        height: 70px !important;
+        height: 60px !important;
+        margin-top: 0px;
     }
 
     h2.title.black-color.logo-text {
-        font: normal normal bold 14px/20px Tahoma;
+        font: normal normal bold 13px/20px Tahoma;
     }
 
     img.logo.logo1.extra-logo {
@@ -2626,7 +2666,7 @@ h6.sub-text-b-l {
     }
 
     .top-menu-box {
-        padding: 8px 0 0;
+        padding: 0px 0 0;
     }
 
     .modal-dialog{
@@ -2766,7 +2806,7 @@ h6.sub-text-b-l {
     
 
     section.latest-news {
-        height: 150px;
+        height: 90px;
     }
 
     section.latest-news .rs-slider.style1 {
@@ -2779,6 +2819,16 @@ h6.sub-text-b-l {
 
     section.latest-news .latest-news-text p{
         border-right: 0px !important;
+        line-height: 40px;
+        font-size: 15px;
+    }
+    section.latest-news p{
+        font-size: 12px;
+        white-space: break-spaces;
+    }
+
+    section.latest-news .rs-slider .btns{
+        height: 40px;
     }
 
     .bg-min:before{
@@ -3181,7 +3231,7 @@ h6.sub-text-b-l {
     }
     
     .img-part.banner-image img {
-        height:115px;
+        height:170px;
         width: 100%;
         object-fit: cover;
     }
@@ -4248,11 +4298,12 @@ h6.sub-text-b-l {
     }
     .rs-popular-courses.main-home .courses-item .courses-grid .content-part .title {
         font-size: 20px;
-    }
+    } 
   
     .rs-about.style8 .sec-title3 .title{
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px;
+        margin-bottom: 12px;
     }
     .rs-recipes .sec-title3 .title {
         font-size: 24px;
