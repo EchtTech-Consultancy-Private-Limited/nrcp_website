@@ -98,14 +98,14 @@
                                 <div class="slider-content">
                                     <div class="container-fluid px-0">
                                        <div class="d-flex align-items-center latest-news-slider-content-text">
-                                             <p>World Rabies Day is being celebrated on 28th Sept’2023 </p>
+                                             <p>We had celebrated World's Rabies Day on 28th Sept’2023 </p>
                                        </div>
                                     </div>
                                  </div>
                                  <div class="slider-content">
                                     <div class="container-fluid px-0">
                                        <div class="d-flex align-items-center latest-news-slider-content-text">
-                                             <p>NRCP Website will be launched on 27th Sept’ 2023</p>
+                                             <p>NRCP Website will be launched soon.</p>
                                        </div>
                                     </div>
                                  </div>
