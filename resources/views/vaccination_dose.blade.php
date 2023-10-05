@@ -17,7 +17,7 @@ if(request('animal_bite') == 'yes'){
     $date = request('date');
     $animal_bite = request('animal_bite');
 }elseif(request('animal_bite') == 'no'){
-    $vDate =request('date');
+    $vDate = date('d/m/Y', strtotime(date("Y/m/d"))); //request('date');
     $date = request('date');
 }else{
     $vDate =request('date');
