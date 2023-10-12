@@ -49,13 +49,13 @@ if(request('animal_bite') == 'yes'){
                                 <button class="nav-link" id="Master_layout_2" data-toggle="pill"
                                     data-target="#master-layout_2" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
-                                    Nearest Human Rabies laboratory
+                                    Nearest Human Rabies Laboratory
                                 </button>
                                 
                                 <button class="nav-link" id="Master_layout_3" data-toggle="pill"
                                     data-target="#master-layout_3" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
-                                    Nearest Animal Rabies laboratory
+                                    Nearest Animal Rabies Laboratory
                                 </button>
                             </div>
                         </div>
