@@ -17,7 +17,7 @@ if(request('animal_bite') == 'yes'){
     $date = request('date');
     $animal_bite = request('animal_bite');
 }elseif(request('animal_bite') == 'no'){
-    $vDate =request('date');
+    $vDate = date('d/m/Y', strtotime(date("Y/m/d"))); //request('date');
     $date = request('date');
 }else{
     $vDate =request('date');
@@ -87,8 +87,8 @@ if(request('animal_bite') == 'yes'){
                                         </div>
                                     </div>
                                     <div class="col-md-8 text-right">
-
                                         <span id="biteDate"><b>Date of Animal Bites: {{ date('d/m/Y', strtotime($date)) }}</b></span>
+                                        <div id="vaccinationDate" class="mt-1"><b>Date of 1st Dose of vaccination (day0): {{ date('d/m/Y', strtotime($vDate)) }}</b></div>
                                     </div>  
                                 </div>
                                 <div class="table-responsive hide-some-input">

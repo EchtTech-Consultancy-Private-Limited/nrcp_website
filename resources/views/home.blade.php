@@ -98,6 +98,13 @@
                                 <div class="slider-content">
                                     <div class="container-fluid px-0">
                                        <div class="d-flex align-items-center latest-news-slider-content-text">
+                                             <a href="{{ asset('assets/Nrcp_img/WorldRabiesDayObservationReport.pdf') }}" class="text-white" target="_blank">World Rabies day 2023 Activities at National level</a>
+                                       </div>
+                                    </div>
+                                 </div>
+                                <div class="slider-content">
+                                    <div class="container-fluid px-0">
+                                       <div class="d-flex align-items-center latest-news-slider-content-text">
                                              <p>We had celebrated World's Rabies Day on 28th Sept’2023 </p>
                                        </div>
                                     </div>
