@@ -43,7 +43,7 @@
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
                            <img src="{{ asset('uploads/banner/'.$value->public_url) }}"
-                                 alt="{{ $value->banner_title }}">
+                                 alt="{{ $value->banner_title }}" rel="noopener noreferrer">
                            </div>
                         </div>                       
                      </div>
@@ -57,7 +57,7 @@
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
                            <img src="{{ asset(config('constants.brand.default_banner')) }}"
-                                 alt="Banner">
+                                 alt="Banner" rel="noopener noreferrer">
                            </div>
                         </div>                       
                      </div>
@@ -98,7 +98,7 @@
                                 <div class="slider-content">
                                     <div class="container-fluid px-0">
                                        <div class="d-flex align-items-center latest-news-slider-content-text">
-                                             <a href="{{ asset('assets/Nrcp_img/WorldRabiesDayObservationReport.pdf') }}" class="text-white" target="_blank">World Rabies day 2023 Activities at National level</a>
+                                             <a href="{{ asset('assets/Nrcp_img/WorldRabiesDayObservationReport.pdf') }}" class="text-white" target="_blank" rel="noopener noreferrer">World Rabies day 2023 Activities at National level</a>
                                        </div>
                                     </div>
                                  </div>
@@ -160,101 +160,9 @@
         </section>
 
         <!-- latest news section end  -->
-
-        <!-- Card Section Start -->
-        <!-- <div class="container">
-            <marquee style="padding:13px 0 3px;">
-                <a href="javascript:void();" style="color: red; font-weight: bold;">
-                    World Rabies Day is going to be celebrated on <b>28th September 2023 </b>.</span>
-            </marquee>
-        </div> -->
-
-
-        {{-- <div id="rs-features" class="rs-features main-home ">
-   <div class="container">
-      <div class="row">
-         <div class="col-lg-3 col-md-12 md-mb-30 ml-auto">
-            <a href="{{ route('human-health') }}">
-               <div class="features-wrap">
-                  <div class="icon-part c-card">
-                     <img src="{{ asset('assets/Nrcp_img/human.png') }}" alt="" class="animal-rotate human h-40">
-                  </div>
-                  <div class="content-part">
-                     <h4 class="title">
-                        <span class="watermark">8,53,99,928</span>
-                     </h4>
-                     <p class="dese red-text">Human Health</p>
-            <a href="{{ route('human-health') }}">Read More <i class="fa fa-angle-right pl-2"></i></a>
-            </div>
-            </div>
-            </a>
-         </div>
-         <div class="col-lg-3 col-md-12 md-mb-30 mr-auto">
-            <a href="{{ route('anumal-health') }}">
-               <div class="features-wrap">
-                  <div class="icon-part c-card">
-                     <img src="{{ asset('assets/Nrcp_img/animal.png') }}" alt="" class="animal-rotate h-40">
-                  </div>
-                  <div class="content-part">
-                     <h4 class="title"><span class="watermark">27,18,00,060</span></h4>
-                     <p class="dese deep-purple-text">Animal Health</p>
-            <a href="{{ route('anumal-health') }}">Read More <i class="fa fa-angle-right pl-2"></i></a>
-            </div>
-            </div>
-            </a>
-         </div>
-      </div>
-   </div>
-
---}}
+     
 <!-- Card Section End -->
-{{-- 
-<div class="ministers-memories">
-   <div class="container-fluid">
-      <div class="row">
-         <div class="col-md-4 bg-min">
-            <h1 class="sl-title wow fadeInLeft text-white minister-h1" data-wow-delay="300ms"
-               data-wow-duration="3000ms"
-               style="visibility: visible; animation-duration: 3000ms; animation-delay: 300ms; animation-name: fadeInLeft;">
-               From Director's <br> Desk
-            </h1>
-         </div>
-         <div class="col-md-6 bg-design">
-            <div class="box-min">
-               <div class="min-post">
-                  <div class="post-img">
-                     <img src="{{ asset('assets/Nrcp_img/Prof_Atul_Goel.png') }}" alt="">
-                  </div>
-                  <div class="post-item">
-                     <div class="post-desc min-heading">
-                        <a href="javascript:void();">PROF (DR.) ATUL GOEL</a>
-                     </div>
-                     <p class="sub-title-head"> DGHS & DIRECTOR NCDC </p>
-                  </div>
-               </div>
-               <div class="min-post">
-                  <div class="post-img">
-                     <img src="assets/Nrcp_img/pk.png" alt="">
-                  </div>
-                  <div class="post-item">
-                     <div class="post-desc min-heading">
-                        <a href="#">DR P K SEN</a>
-                     </div>
-                     <p class="sub-title-head"> PRINCIPAL ADVISOR </p>
-                  </div>
-               </div>
-               <div class=" bg-button text-center">
-                  <a class="readon2" href="javascript:void();">View All <i class="fa fa-angle-right pl-2"></i></a>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-2 bg-button text-center">
-            <a class="readon2" href="javascript">View All <i class="fa fa-angle-right pl-2"></i></a>
-         </div>
-      </div>
-   </div>
-</div>
---}}
+
         <!-- About Section Start -->
         <div id="rs-about" class="rs-about style8 pt-60 pb-40">
             <div class="container">
@@ -278,7 +186,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                                         </div>
                                         <div class="btn-part wow fadeInUp" data-wow-delay="400ms"
                                             data-wow-duration="2000ms">
-                                            <a class="readon2" href="{{ url('About-NRCP') }}">Read More <i
+                                            <a class="readon2" href="{{ url('About-NRCP') }}" rel="noopener noreferrer">Read More <i
                                                     class="fa fa-angle-right pl-2"></i></a>
                                         </div>
                                     </div>
@@ -286,15 +194,14 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                                 <div class="col-md-3">
                                     <div class="pdf-image">
                                         <a href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}" target="_blank"
-                                            title="National Action Plan">
+                                            title="National Action Plan" rel="noopener noreferrer">
                                             <img src="{{ asset('assets/Nrcp_img/pdf-frtontpage.PNG') }}"
-                                                alt="National Action Plan" title="National Action Plan" />
+                                                alt="National Action Plan" title="National Action Plan" rel="noopener noreferrer" />
                                         </a>
                                         <div class="btn-part wow fadeInUp mt-4" data-wow-delay="400ms"
                                             data-wow-duration="2000ms">
-                                            <a class="readon2"
-                                                href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}"
-                                                target="_blank" title="National Action Plan">View PDF <i
+                                            <a class="readon2" href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}"
+                                                target="_blank" title="National Action Plan" rel="noopener noreferrer">View PDF <i
                                                     class="fa fa-angle-right pl-2"></i></a>
                                         </div>
                                     </div>
@@ -306,100 +213,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
             </div>
         </div>
         <!-- About Section End -->
-        <!--<div id="rs-categories" class="rs-categories style1 pt-60 pb-60">
-              <div class="container">
-                  <div class="row y-middle mb-30">
-                      <div class="col-md-6 sm-mb-30">
-                          <div class="sec-title">
-                              <h2 class="title mb-0">Media Alerts / Action Taken </h2>
-                          </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="btn-part text-right sm-text-left">
-                              <a href="#" class="readon">View All</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row">
-              
-                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
-                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                          <a class="categories-item" href="#">
-                              <div class="content-part text-center">
-                                  <div class="date-text"> 15 Feb 2023</div>
-                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                                      Nonumy Eirmod Tempor</h4>
-                                  <span class="courses course-icon pt-3"><img
-                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="400ms" data-wow-duration="2000ms"
-                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                          <a class="categories-item" href="#">
-                              <div class="content-part text-center">
-                                  <div class="date-text"> 15 Feb 2023</div>
-                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                                      Nonumy Eirmod Tempor</h4>
-                                  <span class="courses course-icon pt-3"><img
-                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="500ms" data-wow-duration="2000ms"
-                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                          <a class="categories-item" href="#">
-                              <div class="content-part text-center">
-                                  <div class="date-text"> 15 Feb 2023</div>
-                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                                      Nonumy Eirmod Tempor</h4>
-                                  <span class="courses course-icon pt-3"><img
-                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                              </div>
-                          </a>
-                      </div>
-              
-                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
-                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                          <a class="categories-item" href="#">
-                              <div class="content-part text-center">
-                                  <div class="date-text"> 15 Feb 2023</div>
-                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                                      Nonumy Eirmod Tempor</h4>
-                                  <span class="courses course-icon pt-3"><img
-                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="400ms" data-wow-duration="2000ms"
-                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                          <a class="categories-item" href="#">
-                              <div class="content-part text-center">
-                                  <div class="date-text"> 15 Feb 2023</div>
-                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                                      Nonumy Eirmod Tempor</h4>
-                                  <span class="courses course-icon pt-3"><img
-                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                              </div>
-                          </a>
-                      </div>
-                      <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="500ms" data-wow-duration="2000ms"
-                          style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                          <a class="categories-item" href="#">
-                              <div class="content-part text-center">
-                                  <div class="date-text"> 15 Feb 2023</div>
-                                  <h4 class="title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
-                                      Nonumy Eirmod Tempor</h4>
-                                  <span class="courses course-icon pt-3"><img
-                                          src="{{ asset('assets/Nrcp_img/arrow-right.png') }}" /></span>
-                              </div>
-                          </a>
-                      </div>
-              
-              
-                  </div>
-              </div>
-              </div>-->
+    
         <div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-10">
             <div class="container">
                 <div class="row p-0">
@@ -408,18 +222,18 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                             <h4 class="title">Twitter Feed</h4>
                             <div class="marquee-height myslider">
                                  <div class="item a text-center">
-                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter">
-                                       <img src="{{ asset('assets/Nrcp_img/t1.png') }}" alt="">
+                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter" rel="noopener noreferrer">
+                                       <img src="{{ asset('assets/Nrcp_img/t1.png') }}" alt="img" rel="noopener noreferrer">
                                     </a>
                                     </div>
                                     <div class="item b text-center">
-                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter">
-                                       <img src="{{ asset('assets/Nrcp_img/t2.png') }}" alt="">
+                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter" rel="noopener noreferrer">
+                                       <img src="{{ asset('assets/Nrcp_img/t2.png') }}" alt="img" rel="noopener noreferrer">
                                     </a>
                                     </div>
                                     <div class="item c text-center">
-                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter">
-                                       <img src="{{ asset('assets/Nrcp_img/t3.png') }}" alt="">
+                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter" rel="noopener noreferrer">
+                                       <img src="{{ asset('assets/Nrcp_img/t3.png') }}" alt="img" rel="noopener noreferrer">
                                     </a>
                                  </div>
                             </div>
@@ -431,18 +245,18 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                             <h4 class="title">Facebook Feed</h4>
                             <div class="marquee-height myslider">                        
                           <div class="item a text-center">
-                              <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
-                                 <img src="{{ asset('assets/Nrcp_img/f1.png') }}" alt="">
+                              <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook" rel="noopener noreferrer">
+                                 <img src="{{ asset('assets/Nrcp_img/f1.png') }}" alt="img" rel="noopener noreferrer">
                               </a>
                               </div>
                               <div class="item b text-center">
-                              <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
-                                 <img src="{{ asset('assets/Nrcp_img/f2.png') }}" alt="">
+                              <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook" rel="noopener noreferrer">
+                                 <img src="{{ asset('assets/Nrcp_img/f2.png') }}" alt="img" rel="noopener noreferrer">
                               </a>
                               </div>
                               <div class="item c text-center">
-                              <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook">
-                                 <img src="{{ asset('assets/Nrcp_img/f3.png') }}" alt="">
+                              <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Facebook" rel="noopener noreferrer">
+                                 <img src="{{ asset('assets/Nrcp_img/f3.png') }}" alt="img" rel="noopener noreferrer">
                               </a>
                            </div>
                             </div>
@@ -461,15 +275,15 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                                                 <div class='desc'>
                                                     @if (Session::get('Lang') == 'hi')
                                                       @if($item->tab_type == '1')
-                                                      <a href="{{ $item->public_url }}" target="_blank" onclick="return confirm('This link will take you to an external web site.')">{!! $item->title_name_hi  !!}</a>
+                                                      <a href="{{ $item->public_url }}" target="_blank" onclick="return confirm('This link will take you to an external web site.')" rel="noopener noreferrer">{!! $item->title_name_hi  !!}</a>
                                                       @else
-                                                      <a href="{{ $item->public_url }}">{!! $item->title_name_hi  !!}</a>
+                                                      <a href="{{ $item->public_url }}" rel="noopener noreferrer">{!! $item->title_name_hi  !!}</a>
                                                       @endif
                                                     @else
                                                       @if($item->tab_type == '1')
-                                                      <a href="{{ $item->public_url }}" target="_blank" onclick="return confirm('This link will take you to an external web site.')">{!! $item->title_name_en !!}</a>
+                                                      <a href="{{ $item->public_url }}" target="_blank" onclick="return confirm('This link will take you to an external web site.')" rel="noopener noreferrer">{!! $item->title_name_en !!}</a>
                                                       @else
-                                                      <a href="{{ $item->public_url }}">{!! $item->title_name_en !!}</a>
+                                                      <a href="{{ $item->public_url }}" rel="noopener noreferrer">{!! $item->title_name_en !!}</a>
                                                       @endif
                                                     @endif
                                                 </div>
@@ -480,7 +294,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                             </div>
 
                             <div class="btn-part view-all-btn">
-                                <a class="readon2 mod" href="{{ route('news-details')}}">View All</a>
+                                <a class="readon2 mod" href="{{ route('news-details')}}" rel="noopener noreferrer">View All</a>
                             </div>
                         </div>
                     </div>
@@ -508,7 +322,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                <div class="row">
                   <div class="col-lg-6">
                      <div class="img-part">
-                        <img src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}" alt="Image" rel="noopener noreferrer">
                      </div>
                   </div>
                   <div class="col-lg-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
@@ -525,7 +339,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                <div class="row">
                   <div class="col-lg-6">
                      <div class="img-part">
-                        <img src="{{ asset('assets/Nrcp_img/Updated_images/DSC_3631.jpg') }}" alt="Image">
+                        <img src="{{ asset('assets/Nrcp_img/Updated_images/DSC_3631.jpg') }}" alt="Image" rel="noopener noreferrer">
                      </div>
                   </div>
                   <div class="col-lg-6">
@@ -544,7 +358,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                         <div class="sec-title mb-10">
                            <div class="blog-button">
                               <a class="blog-btn" href="{{ asset('assets/Nrcp_img/Model_Anti_rabies_Clinic.pdf') }}"
-                                 target="_blank">View PDF</a>
+                                 target="_blank" rel="noopener noreferrer">View PDF</a>
                            </div>
                         </div>
                      </div>
@@ -557,7 +371,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                      <div class="content">
                         <div class="sec-title mb-10">
                            <div class="blog-button">
-                              <a class="blog-btn" href="{{ asset('assets/Nrcp_img/ID_Hospitals.pdf') }}" target="_blank">View
+                              <a class="blog-btn" href="{{ asset('assets/Nrcp_img/ID_Hospitals.pdf') }}" target="_blank" rel="noopener noreferrer">View
                               PDF</a>
                            </div>
                         </div>
@@ -581,7 +395,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
             <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms"
                data-wow-duration="2000ms"
                style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-               <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" />
+               <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" rel="noopener noreferrer" />
                <div class="content-part">
                   <p class="txt">
                      Rabies General Aspects & Laboratory Diagnostic Techniques 2022
@@ -592,7 +406,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
          <div class="col-md-4">
             <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
                style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-               <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" />
+               <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" rel="noopener noreferrer" />
                <div class="content-part">
                   <p class="txt">
                      National Guidelines on Diagnosis Case Management and Prevention and Control of
@@ -604,7 +418,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
          <div class="col-md-4">
             <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
                style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-               <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" />
+               <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" rel="noopener noreferrer"/>
                <div class="content-part">
                   <p class="txt">
                      NCDC notified as National Coordinating Centre for Surveillance of Antimicrobial
@@ -640,7 +454,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                      @foreach($photogallery as $photogallerys)
                      <div class="team-item">
                         <div class="gallery-box">
-                           <img src="{{ asset('uploads/GalleryManagement/'.$photogallerys->public_url) }}" alt="">
+                           <img src="{{ asset('uploads/GalleryManagement/'.$photogallerys->public_url) }}" alt="" rel="noopener noreferrer">
                            <!-- <div class="text-gallery" id="banner3">
                               Event 1
                            </div> -->
@@ -650,7 +464,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                      @else
                      <div class="team-item">
                         <div class="gallery-box">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/11.jpg') }}" alt="">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/11.jpg') }}" alt="" rel="noopener noreferrer">
                            <div class="text-gallery">
                               Event 1
                            </div>
@@ -658,7 +472,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                      </div>
                      <div class="team-item">
                         <div class="gallery-box">
-                           <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
+                           <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="" rel="noopener noreferrer">
                            <div class="text-gallery">
                               Event 2
                            </div>
@@ -669,7 +483,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                </div>
                <div class="btn-view_play">
                   <div class="btn-part mt-4 text-center">
-                     <a class="readon2" href="{{ route('photo-gallery') }}">View All</a>
+                     <a class="readon2" href="{{ route('photo-gallery') }}" rel="noopener noreferrer">View All</a>
                   </div>
                   <div class="btns">
                      <div id="customPreviousBtn3"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
@@ -699,13 +513,13 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                      data-md-device-nav="false" data-md-device-dots="false" id="banner4">
                      <div class="team-item">
                         <div class="gallery-box media-icon orange-color">
-                           {{-- <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
+                         <!-- <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
                            <div class="text-gallery">
                               Event 1
                            </div>
                            <a class="popup-videos" href="{{ url('/video') }}">
                            <i class="fa fa-play"></i>
-                           </a>                                   --}}
+                           </a>                                    -->
 
                            <video controls muted class="video-g">
                               <source src="{{ asset('assets/Nrcp_img/video1.mp4') }}" type="video/mp4">
@@ -724,7 +538,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                </div>
                <div class="btn-view_play">
                   <div class="btn-part mt-4 text-center">
-                     <a class="readon2" href="{{ route('video') }}">View All</a>
+                     <a class="readon2" href="{{ route('video') }}" rel="noopener noreferrer">View All</a>
                   </div>
                   <div class="btns">
                      <div id="customPreviousBtn4"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
@@ -740,104 +554,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
    </div>
 
 </div>
-   <!-- Faq Section Start -->
-   {{-- 
-   <div class="rs-faq-part style1 pt-40 pb-80">
-      <div class="container">
-         <div class="row">
-            <div class="col-lg-12 padding-0 col-md-12">
-               <div class="main-part new-style padding-sm-0">
-                  <div class="title mb-20">
-                     <h2 class="text-part">Frequently Asked Questions</h2>
-                  </div>
-                  <div class="faq-content">
-                     <div id="accordion" class="accordion">
-                        <div class="card">
-                           <div class="card-header">
-                              <a class="card-link" data-toggle="collapse" href="#collapseOne">Q 1: What is
-                              rabies?</a>
-                           </div>
-                           <div id="collapseOne" class="collapse " data-parent="#accordion">
-                              <div class="card-body">
-                                 Rabies is a disease transmitted from animals to humans, which is caused
-                                 by a virus. There are two clinical manifestations of rabies – frantic
-                                 and paralytic. Frantic rabies is most common form of human rabies.
-                              </div>
-                           </div>
-                        </div>
-                        <div class="card">
-                           <div class="card-header">
-                              <a class="card-link collapsed" data-toggle="collapse" href="#collapseTwo"
-                                 aria-expanded="false">Q 2: How is rabies transmitted?</a>
-                           </div>
-                           <div id="collapseTwo" class="collapse" data-parent="#accordion" style="">
-                              <div class="card-body">
-                                 The rabies virus invades the nervous system of mammals. It is primarily
-                                 transmitted from the rabid animal’s saliva when it bites or scratches
-                                 someone. Licks to wounds or grazed and broken skin, or to the lining of
-                                 the mouth and nose, can also transmit the disease.
-                                 Dogs are responsible for 96% of human rabies cases in South-East Asia,
-                                 but there are also reports
-                                 of human rabies due to bites of cats, mongooses, jackals, foxes, wolves
-                                 and other carnivorous animals.
-                                 Rabies due to monkey and rat bites are rare. Horses and donkeys get
-                                 aggressive and bite ferociously when they are rabid. Cattle and
-                                 buffaloes do not bite when they are rabid, but precautions should be
-                                 taken while examining sick animals that are salivating.
-                                 Sometimes livestock owners confuse rabies with foot-and-mouth disease,
-                                 haemorrhagic septicaemia or choking and may attempt to administer drugs
-                                 by hand, and thus get infected with rabies virus.
-                                 There are no evidence-based reports of human rabies occurring due to
-                                 consumption of milk.
-                                 Individuals or professionals who slaughter rabiesinfected animals and
-                                 handle brain and other infected material may be at risk, but there are
-                                 no human cases due to consumption of cooked meat.
-                                 Human-to-human transmission of rabies through corneal or other organ
-                                 transplantation is rare but possible. Such transmission has occurred
-                                 among recipients of transplanted corneas and recently among recipients
-                                 of solid organs and vascular tissue.
-                                 Therefore corneas or organs should not be collected from a patient who
-                                 died due to rabies encephalitis or any undiagnosed neurological disease.
-                                 Although rabies patients are extremely unlikely to bite other people,
-                                 caregivers should be watchful and alert when looking after them, and
-                                 avoid contact with the patient’s saliva.
-                              </div>
-                           </div>
-                        </div>
-                        <div class="card">
-                           <div class="card-header">
-                              <a class="card-link collapsed" data-toggle="collapse" href="#collapseThree"
-                                 aria-expanded="false">Q 3: How does one treat an animal bite?</a>
-                           </div>
-                           <div id="collapseThree" class="collapse" data-parent="#accordion" style="">
-                              <div class="card-body">
-                                 <ul>
-                                    If a person is bitten by an animal:
-                                    <li> ●● Wounds should be washed and flushed immediately with soap and water
-                                       for 10–15 minutes. If soap is not available, flush with water alone.
-                                    </li>
-                                    This is the most effective first-aid treatment against rabies.</li>
-                                    <li> ●● Wounds should be cleaned thoroughly with 70% alcohol/ethanol or
-                                       povidone-iodine, if available.
-                                    <li> ●● As soon as possible, take the person to a healthcare facility for
-                                       further treatment.
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="btn-part mt-4 text-center">
-                     <a class="readon2" href="#">View All</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   --}}
-   <!-- faq Section END -->
+ 
    <!-- Partner Start -->
    <div class="rs-partner pt-40 pb-40 gray-bg-color">
       <div class="container">
@@ -850,97 +567,97 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
             data-md-device-dots="false" id="banner5">
 
             <div class="partner-item">
-               <a href="https://www.mohfw.gov.in/" target="_blank" role="link"><img
+               <a href="https://www.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
                   src="{{ asset('assets/Nrcp_img/clients/MHFW.png') }}" alt="Ministry of Health and Family Welfare Government of India"
-                  title="Ministry of Health and Family Welfare Government of India"></a>
+                  title="Ministry of Health and Family Welfare Government of India" rel="noopener noreferrer"></a>
             </div>
 
             <div class="partner-item">
-               <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link"><img
+               <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
                   src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}" alt="NCDC"
-                  title="NCDC"></a>
+                  title="NCDC" rel="noopener noreferrer"></a>
             </div>
 
             <div class="partner-item">
-               <a href="https://www.who.int/" target="_blank" role="link"><img
+               <a href="https://www.who.int/" target="_blank" role="link" rel="noopener noreferrer"><img
                   src="{{ asset('assets/Nrcp_img/clients/who.png') }}" alt="World Health Organization"
-                  title="World Health Organization"></a>
+                  title="World Health Organization" rel="noopener noreferrer"></a>
             </div>
 
 
             <div class="partner-item">
-               <a href="http://pgportal.gov.in/" target="_blank" role="link"><img
+               <a href="http://pgportal.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
                   src="{{ asset('assets/Nrcp_img/clients/pg-portal.png') }}" alt="PORTAL FOR PUBLIC GRIEVANCES"
-                  title="PORTAL FOR PUBLIC GRIEVANCES"></a>
+                  title="PORTAL FOR PUBLIC GRIEVANCES" rel="noopener noreferrer"></a>
             </div>
             <div class="partner-item">
-               <a href="https://notto.gov.in/" target="_blank" role="link">
+               <a href="https://notto.gov.in/" target="_blank" role="link" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/logo-(1)_0_0.png') }}" alt="NOTTO"
-                  title="NOTTO">
+                  title="NOTTO" rel="noopener noreferrer">
                </a>
             </div>
             <div class="partner-item">
-               <a href="https://www.nhp.gov.in/" target="_blank" role="link">
+               <a href="https://www.nhp.gov.in/" target="_blank" role="link" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/nhp-india.png') }}" alt="National Health Portal"
-                  title="National Health Portal">
+                  title="National Health Portal" rel="noopener noreferrer">
                </a>
             </div>
             <div class="partner-item">
-               <a href="http://nhm.gov.in/" target="_blank" role="link">
+               <a href="http://nhm.gov.in/" target="_blank" role="link" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/RashtriyaBalSwasthyaKaryakram.jpg') }}"
-                  alt="Rashtriya Bal Swasthya Karyakram (RBSK)" title="Rashtriya Bal Swasthya Karyakram (RBSK)">
+                  alt="Rashtriya Bal Swasthya Karyakram (RBSK)" title="Rashtriya Bal Swasthya Karyakram (RBSK)" rel="noopener noreferrer">
                </a>
             </div>
             <div class="partner-item">
-               <a href="https://www.nikshay.in" target="_blank" rel="noopener noreferrer" role="link">
+               <a href="https://www.nikshay.in" target="_blank" role="link" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/nikshay.png') }}"
                   alt="Nikshay, External link that will open in a new window"
-                  title="Nikshay, External link that will open in a new window"></a>
+                  title="Nikshay, External link that will open in a new window" rel="noopener noreferrer"></a>
             </div>
             <div class="partner-item">
                <a href="https://cgewho.in/" target="_blank" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/CENTRALGOVERNMENTEMPLOYEES.jpg') }}"
                   alt="CENTRAL GOVERNMENT EMPLOYEES, External link that will open in a new window"
-                  title="CENTRAL GOVERNMENT EMPLOYEES, External link that will open in a new window"></a>
+                  title="CENTRAL GOVERNMENT EMPLOYEES, External link that will open in a new window" rel="noopener noreferrer"></a>
             </div>
             <div class="partner-item">
                <a href="https://main.mohfw.gov.in/major-programmes/poor-patients-financial-support" target="_blank"
-                  role="link"><img src="{{ asset('assets/Nrcp_img/clients/poor.png') }}"
-                  alt="Poor Patients-Financial Support" title="Poor Patients-Financial Support"></a>
+                  role="link" rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/poor.png') }}"
+                  alt="Poor Patients-Financial Support" title="Poor Patients-Financial Support" rel="noopener noreferrer"></a>
             </div>
             <div class="partner-item">
-               <a href="https://www.nhp.gov.in/quit-tobacco" target="_blank" role="link">
+               <a href="https://www.nhp.gov.in/quit-tobacco" target="_blank" role="link" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/quittobacco.jpg') }}"
                   alt="Quit Tabacoo, External link that will open in a new window"
-                  title="Quit Tabacoo, External link that will open in a new window">
+                  title="Quit Tabacoo, External link that will open in a new window" rel="noopener noreferrer">
                </a>
             </div>
             <div class="partner-item">
                <a href="https://www.incometaxindia.gov.in/Pages/income-declaration-scheme.aspx" target="_blank"
-                  role="link">
+                  role="link" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/IncomeTaxDepartment.jpg') }}"
                   alt="Income Tax Department, External link that will open in a new window"
-                  title="Income Tax Department, External link that will open in a new window">
+                  title="Income Tax Department, External link that will open in a new window" rel="noopener noreferrer">
                </a>
             </div>
             <div class="partner-item">
                <a href="https://www.mygov.in/group-issue/inviting-ideas-pm-narendra-modis-mann-ki-baat-august-2016/"
-                  target="_blank" rel="noopener noreferrer" role="link">
+                  target="_blank" rel="noopener noreferrer" role="link" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/8956354581471930117.jpg') }}" alt="mann ki baat"
-                  title="mann ki baat"></a>
+                  title="mann ki baat" rel="noopener noreferrer"></a>
             </div>
             <div class="partner-item">
-               <a href="https://main.mohfw.gov.in/my-hospital" target="_blank" role="link">
+               <a href="https://main.mohfw.gov.in/my-hospital" target="_blank" role="link" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/mera_aspatal.png') }}"
                   alt="My Hospital, External Link That Will Open in a New Window."
-                  title="External Link That Will Open in a New Window.">
+                  title="External Link That Will Open in a New Window." rel="noopener noreferrer">
                </a>
             </div>
             <div class="partner-item">
-               <a href="https://www.mygov.in/" target="_blank" rel="noopener noreferrer" role="link">
+               <a href="https://www.mygov.in/" target="_blank" role="link" rel="noopener noreferrer">
                <img src="{{ asset('assets/Nrcp_img/clients/mygov_2.png') }}"
                   alt="My Gov, External Link That Will Open in a New Window."
-                  title="External Link That Will Open in a New Window."></a>
+                  title="External Link That Will Open in a New Window." rel="noopener noreferrer"></a>
             </div>
          </div>
          <div class="gallery-section clientail">
