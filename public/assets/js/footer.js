@@ -83,9 +83,18 @@ $(document).ready(function() {
     $(document).ready(function() {
         const searchParams = new URLSearchParams(window.location.search);    
         const vDate = new Date(searchParams.get('date'));
+        var d = new Date();
+        var month = d.getMonth()+1;
+        var day = d.getDate();
+        var output = d.getFullYear() + '/' +((''+month).length<2 ? '0' : '') + month + '/' +((''+day).length<2 ? '0' : '') + day;
+        var dDate = new Date(searchParams.get('v-date') !=null ?searchParams.get('v-date'):output); 
         let vMonth = vDate.getMonth();
         let bDate = vDate.getDate();
-        let vYear = vDate.getFullYear();   
+        let vYear = vDate.getFullYear();
+
+        let dMonth = dDate.getMonth();
+        let dbDate = dDate.getDate();
+        let dYear = dDate.getFullYear();   
 
         $('.example1').DataTable( {
             dom: 'Bfrtip',
@@ -93,7 +102,7 @@ $(document).ready(function() {
                 {              
                     extend: 'print',
                         title: function() {
-                            return "<div style='display:flex;justify-content: space-between;align-items: center;'> <div style='font-size: 25px;margin-bottom:20px;'>Vaccination Schedule</div> <div style='font-size: 18px;margin-bottom:20px;'> Date of Animal Bites : "+`${bDate +"-" + (Number(vMonth) + 1)  + "-" + vYear}`+" </div> <ul style='display:block;position: absolute; bottom :75%'><li style='font-size: 16px;font-weight:400; margin-bottom:10px;'>1- Site of vaccine injection: Adult/Children : Deltoid muscle (IM/ID) Infant and Children : Anterolateral thigh(IM) </li> <li style='font-size: 16px;font-weight:400;margin-bottom:10px;'>2- All category III bites wounds must be infiltrated with Rabies immunoglobulin.</li>  <li style='font-size: 16px;font-weight:400'>3- If you have never been vaccinated for Rabies, this is the schedule you need to follow.</li></ul>";
+                            return "<div style='display:flex;justify-content: space-between;align-items: center;'> <div style='font-size: 25px;margin-bottom:20px;'>Vaccination Schedule</div> <div> <div style='font-size: 18px;margin-bottom:5px;'> Date of Animal Bites : "+`${bDate +"-" + (Number(vMonth) + 1)  + "-" + vYear}`+" </div> <div style='font-size: 18px;margin-bottom:20px;'> Date of 1st Dose of vaccination (day0): "+`${dbDate +"-" + (Number(dMonth) + 1)  + "-" + dYear}`+" </div> </div> <ul style='display:block;position: absolute; bottom :73%'><li style='font-size: 16px;font-weight:400; margin-bottom:10px;'>1- Site of vaccine injection: Adult/Children : Deltoid muscle (IM/ID) Infant and Children : Anterolateral thigh(IM) </li> <li style='font-size: 16px;font-weight:400;margin-bottom:10px;'>2- All category III bites wounds must be infiltrated with Rabies immunoglobulin.</li>  <li style='font-size: 16px;font-weight:400'>3- If you have never been vaccinated for Rabies, this is the schedule you need to follow.</li></ul> <div style='position: absolute; top:95%;font-size:14px'><i>[Disclaimer:- The above information is for reference only, not for any medico-legal purpose. Please seek advice with the doctor for the same.]</i></div> ";
                         }                          
                }
             ]
