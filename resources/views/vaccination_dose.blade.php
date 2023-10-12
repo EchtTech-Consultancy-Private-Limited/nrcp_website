@@ -43,7 +43,7 @@ if(request('animal_bite') == 'yes'){
                                 <button class="nav-link" id="Master_layout_1" data-toggle="pill"
                                     data-target="#master-layout_1" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
-                                    Nearest Anti Rabies Clinic
+                                    Nearest Health Facility Where Rabies Vaccine Available
                                 </button>
                                 
                                 <button class="nav-link" id="Master_layout_2" data-toggle="pill"
