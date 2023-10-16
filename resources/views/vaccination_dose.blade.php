@@ -16,13 +16,16 @@ if(request('animal_bite') == 'yes'){
     $vDate =request('v-date');
     $date = request('date');
     $animal_bite = request('animal_bite');
-}elseif(request('animal_bite') == 'no'){
-    $vDate = date('d/m/Y', strtotime(date("Y/m/d"))); //request('date');
+}else if(request('animal_bite') == 'no'){
+    $vDate = date("Y-m-d"); //request('date');
     $date = request('date');
+    $animal_bite = request('animal_bite');
 }else{
     $vDate =request('date');
     $date = request('date');
+    $animal_bite = request('animal_bite');
 }
+//dd($vDate);
 ?>
   
 
@@ -527,186 +530,6 @@ if(request('animal_bite') == 'yes'){
 
     <script>
         
-        function changeURL(e) {
-            var temp = new Array();
-            var temp = e.split(',');
-            document.location.href = "vaccination_dose?type=" + temp[0] + '&' + 'date=' + temp[1]+'&'+'animal_bite=' + temp[2]+'&'+'v-date=' + temp[3];
-        }
-        $(document).ready(function() {
-            $(".btn2").click(function() {
-                $(".grid-item.filter2").removeClass('d-none');
-            });
-            $(".btn3").click(function() {
-                $(".grid-item.filter3").removeClass("d-none");
-            });
-        });
-    
-    
-        $(document).ready(function() {
-            $('.image-link').magnificPopup({
-                type: 'image',
-                mainClass: 'mfp-with-zoom',
-                gallery: {
-                    enabled: true
-                },
-                zoom: {
-                    enabled: true,
-                    duration: 300, // duration of the effect, in milliseconds
-                    easing: 'ease-in-out', // CSS transition easing function
-                    opener: function(openerElement) {
-                        return openerElement.is('img') ? openerElement : openerElement.find('img');
-                    }
-                }
-            });
-        });
-        
-        function getDistrictList(){
-        var statename = $('#stateC').val();
-        $.ajax({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: "get-districts-list",
-            type: "POST",
-            data:{
-                'state_name' : statename // in header request I'm getting value [productName: plastic product] *
-                },
-            success:function(data){
-                document.querySelector('#citiesC').innerHTML = data;
-                $select.selectmenu("refresh", true);
-            },
-            error:function(e){
-                alert("Some error occured. Please try again later.");
-            }
-        });
-    }
-    
-        function getDistrictListH(){
-        var statename = $('#stateH').val();
-        $.ajax({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: "get-districts-list-human",
-            type: "POST",
-            data:{
-                'state_name' : statename // in header request I'm getting value [productName: plastic product] *
-                },
-            success:function(data){
-                document.querySelector('#citiesH').innerHTML = data;
-                $select.selectmenu("refresh", true);
-            },
-            error:function(e){
-                alert("Some error occured. Please try again later.");
-            }
-        });
-    }
-    
-        function getDistrictListA(){
-        var statename = $('#stateA').val();
-        $.ajax({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: "get-districts-list-animal",
-            type: "POST",
-            data:{
-                'state_name' : statename // in header request I'm getting value [productName: plastic product] *
-                },
-            success:function(data){
-                document.querySelector('#citiesA').innerHTML = data;
-                $select.selectmenu("refresh", true);
-            },
-            error:function(e){
-                alert("Some error occured. Please try again later.");
-            }
-        });
-    }
-    
-    
-    //Search code starts
-    function getSearchResults(){
-        var statename = $('#stateC').val();
-        var districtname = $('#citiesC').val();
-        $.ajax({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: "get-vaccination-center",
-            type: "POST",
-            data:{
-                'state_name' : statename,
-                'city_name' : districtname // in header request I'm getting value [productName: plastic product] *
-                },
-            success:function(data){
-                document.querySelector('#search-data').innerHTML = data
-            },
-            error:function(e){
-                alert("Some error occured. Please try again later.");
-            }
-        });
-    }
-    
-    
-    function getSearchResultsH(){
-        var statename = $('#stateH').val();
-        var districtname = $('#citiesH').val();
-        $.ajax({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: "get-vaccination-center-H",
-            type: "POST",
-            data:{
-                'state_name' : statename,
-                'city_name' : districtname // in header request I'm getting value [productName: plastic product] *
-                },
-            success:function(data){
-                document.querySelector('#search-data-H').innerHTML = data
-            },
-            error:function(e){
-                alert("Some error occured. Please try again later.");
-            }
-        });
-    }
-    
-    function getSearchResultsA(){
-        var statename = $('#stateA').val();
-        var districtname = $('#citiesA').val();
-        $.ajax({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            },
-            url: "get-vaccination-center-A",
-            type: "POST",
-            data:{
-                'state_name' : statename,
-                'city_name' : districtname // in header request I'm getting value [productName: plastic product] *
-                },
-            success:function(data){
-                document.querySelector('#search-data-A').innerHTML = data
-            },
-            error:function(e){
-                alert("Some error occured. Please try again later.");
-            }
-        });
-    }
-    
-    
-
-$(".nav-link").click(function(){
-    $(".row.grid.nearest-vaccication").addClass('nearest-vaccication1');
-    
-  });
-
-  $("#on-the-map").click(function(){
-    $(".row.grid.nearest-vaccication").removeClass('nearest-vaccication1');
-    
-  });
-
-  $("#on-the-map").click(function(){
-    //console.log("this is tab");
-        $(".col-lg-12.col-md-12.grid-item.filter4.d-none").css("display", "block");
-    });
+       
     </script>
 @endpush
