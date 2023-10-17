@@ -165,6 +165,103 @@ if(request('animal_bite') == 'yes'){
                                         </ul>
                                     </div>
                             </div>
+
+
+                                <div class="tab-pane fade" id="master-layout_1" role="tabpanel"
+                                    aria-labelledby="Master_layout_1">
+                                    <!-- tab content start -->
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="sub-tab1-content" role="tabpanel"
+                                            aria-labelledby="sub-tab1">
+                                            <div id="rs-popular-courses" class="rs-popular-courses style1 modify1">
+                                                <div class="container">
+                                                    {{-- <div class="sec-title6 text-center mb-40">
+                                                  <h2 class="title">Quick Links</h2>
+                                               </div> --}}
+
+                                               <!-- ************************************************************************** -->
+
+
+                                            <div class="sec-bg-white vaccination-tab">
+                                               <ul class="nav nav-tabs vaccination-child-tab" id="myTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="district-tab" data-toggle="tab" data-target="#district" type="button" role="tab" aria-controls="district" aria-selected="true">By District</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="map-tab" data-toggle="tab" data-target="#map" type="button" role="tab" aria-controls="map" aria-selected="false">On the Map
+                                                        </button>
+                                                    </li>
+                                                   
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="district" role="tabpanel" aria-labelledby="district-tab">
+                                                                 <div class="row nearest-vaccication">
+
+                                                       <div class="col-lg-12 col-md-12 ">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <form method="get"
+                                                                            action="">
+                                                                            <div class="search-widget mb-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-5">
+                                                                                        <select name="state"
+                                                                                            id="stateC"
+                                                                                            class="form-control" onchange="getDistrictList();">
+                                                                                            <option
+                                                                                                value="">
+                                                                                                Select-Your-State
+                                                                                            </option>
+                                                                                           
+                                                                                            @foreach($state as $states)
+                                                                                            <option value="{{ $states->state_name }}">{{ $states->state_name }}</option>
+                                                                                            @endforeach
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <div class="col-lg-5">
+                                                                                        <div class="location-select">
+                                                                                            <select name="cities" id="citiesC" class="form-control">
+                                                                                                <option value="">
+                                                                                                    Select-District
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="col-lg-2">
+                                                                                        <div class="btn-part view-all-btn ">
+                                                                                            <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResults();">Search</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </form>
+
+                                                                    </div>
+
+                                                                    <div class="col-lg-12">
+
+                                                                        <section class="loaded">
+
+                                                                            <div class="table" id="search-data">
+                                                                                
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                                 </div>
+
+                                                        </div>
+                                                        <div class="tab-pane fade" id="map" role="tabpanel" aria-labelledby="map-tab">
+ 
+                                                        
+                                                                <div class="row">
+                                                                   <div class="col-lg-12">
+                                                                    <div class="map">
+                                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe>
+
                         
                         <div class="tab-pane fade" id="master-layout_1" role="tabpanel"
                             aria-labelledby="Master_layout_1">
@@ -214,8 +311,17 @@ if(request('animal_bite') == 'yes'){
                                                                             Select-District
                                                                         </option>
                                                                     </select>
+
                                                                     </div>
                                                                 </div>
+
+                                                           
+                                                        </div>
+                                                       
+                                                </div>
+                                            </div>
+                                                <!-- ********************************************************************* -->
+          
                                                                 <div class="col-lg-2">
                                                                     <div class="btn-part view-all-btn ">
                                                                     <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResults();">Search</button>
@@ -271,12 +377,133 @@ if(request('animal_bite') == 'yes'){
                                                         </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
                                             </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="tab-pane fade" id="master-layout_2" role="tabpanel"
+                                    aria-labelledby="Master_layout_2">
+                                    <!-- tab content start -->
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="sub-tab1-content" role="tabpanel"
+                                            aria-labelledby="sub-tab1">
+                                            <div id="rs-popular-courses" class="rs-popular-courses style1 modify1">
+                                                <div class="container">
+                                                    {{-- <div class="sec-title6 text-center mb-40">
+                                                  <h2 class="title">Quick Links</h2>
+                                               </div> --}}
+
+                                                 <!-- ************************************************************************** -->
+
+
+                                            <div class="sec-bg-white vaccination-tab">
+                                               <ul class="nav nav-tabs vaccination-child-tab" id="myTab" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="district-tab2" data-toggle="tab" data-target="#district2" type="button" role="tab" aria-controls="district2" aria-selected="true">By District</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="map-tab2" data-toggle="tab" data-target="#map2" type="button" role="tab" aria-controls="map2" aria-selected="false">On the Map
+                                                        </button>
+                                                    </li>
+                                                   
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="district2" role="tabpanel" aria-labelledby="district-tab2">
+                                                                 <div class="row nearest-vaccication">
+                                                            <div class="col-lg-12 col-md-12 ">
+                                                                <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <form method="get"
+                                                                            action="">
+                                                                            <div class="search-widget mb-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-5">
+                                                                                        <select name="state"
+                                                                                            id="stateH"
+                                                                                            class="form-control" onchange="getDistrictListH();">
+                                                                                            <option
+                                                                                                value="">
+                                                                                                Select-Your-State
+                                                                                            </option>
+                                                                                           
+                                                                                            @foreach($human_labs_state as $human_labs_state)
+                                                                                            <option value="{{ $human_labs_state->state_name }}">{{ $human_labs_state->state_name }}</option>
+                                                                                            @endforeach
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <div class="col-lg-5">
+                                                                                        <div class="location-select">
+                                                                                            <select name="cities" id="citiesH" class="form-control">
+                                                                                                <option value="">
+                                                                                                    Select-District
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="col-lg-2">
+                                                                                        <div class="btn-part view-all-btn ">
+                                                                                            <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResultsH();">Search</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </form>
+
+                                                                    </div>
+
+                                                                    <div class="col-lg-12">
+
+                                                                        <section class="loaded">
+
+                                                                            <div class="table" id="search-data-H">
+                                                                                
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    
+                                                                 </div>
+
+                                                        </div>
+                                                        <div class="tab-pane fade" id="map2" role="tabpanel" aria-labelledby="map-tab2">
+ 
+                                                        <div class="row">
+                                                                   <div class="col-lg-12">
+                                                                    <!-- <div class="map">
+                                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe>
+                                                                    </div> -->
+                                                                   </div>
+
+                                                                </div>
+                                                        </div>
+                                                       
+                                                </div>
+                                            </div>
+                                                <!-- ********************************************************************* -->
+                                                    <div class="sec-bg-white">
+                                                       
+                                                        <div class="row grid nearest-vaccication">
+                                                           
+                                                            <div class="col-lg-12 col-md-12 grid-item filter3 d-none">
+                                                                <div class="row align-item-center">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="content">
+                                                                            <div class="sec-title mb-10">
+                                                                                <div class="blog-button">
+                                                                                    <a class="blog-btn"
+                                                                                        href="{{ asset('assets/Nrcp_img/Model_Anti_rabies_Clinic.pdf') }}"
+                                                                                        target="_blank">View PDF</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
                                 </div>
                                 <div class="tab-pane fade" id="sub-tab2-content" role="tabpanel"
                                 aria-labelledby="sub-tab2">tab2</div>
@@ -331,6 +558,7 @@ if(request('animal_bite') == 'yes'){
                                                                             Select-District
                                                                         </option>
                                                                     </select>
+
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-lg-2">
@@ -394,6 +622,100 @@ if(request('animal_bite') == 'yes'){
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="tab-pane fade" id="master-layout_3" role="tabpanel"
+                                    aria-labelledby="Master_layout_3">
+                                    <!-- tab content start -->
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="sub-tab1-content" role="tabpanel"
+                                            aria-labelledby="sub-tab1">
+                                            <div id="rs-popular-courses" class="rs-popular-courses style1 modify1">
+                                                <div class="container">
+                                                    {{-- <div class="sec-title6 text-center mb-40">
+                                                  <h2 class="title">Quick Links</h2>
+                                               </div> --}}
+
+                                                 <!-- ************************************************************************** -->
+
+
+                                            <div class="sec-bg-white vaccination-tab">
+                                               <ul class="nav nav-tabs vaccination-child-tab" id="myTab2" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="district-tab3" data-toggle="tab" data-target="#district3" type="button" role="tab" aria-controls="district3" aria-selected="true">By District</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="map-tab3" data-toggle="tab" data-target="#map3" type="button" role="tab" aria-controls="map3" aria-selected="false">On the Map
+                                                        </button>
+                                                    </li>
+                                                   
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent">
+                                                        <div class="tab-pane fade show active" id="district3" role="tabpanel" aria-labelledby="district-tab3">
+                                                            <div class="row  nearest-vaccication">
+                                                                 <div class="row">
+                                                                    <div class="col-lg-12">
+                                                                        <form method="get"
+                                                                            action="">
+                                                                            <div class="search-widget mb-20">
+                                                                                <div class="row">
+                                                                                    <div class="col-lg-5">
+                                                                                        <select name="state"
+                                                                                            id="stateA"
+                                                                                            class="form-control" onchange="getDistrictListA();">
+                                                                                            <option
+                                                                                                value="">
+                                                                                                Select-Your-State
+                                                                                            </option>
+                                                                                           
+                                                                                            @foreach($animal_labs_state as $animal_labs_state)
+                                                                                            <option value="{{ $animal_labs_state->state_name }}">{{ $animal_labs_state->state_name }}</option>
+                                                                                            @endforeach
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <div class="col-lg-5">
+                                                                                        <div class="location-select">
+                                                                                            <select name="cities" id="citiesA" class="form-control">
+                                                                                                <option value="">
+                                                                                                    Select-District
+                                                                                                </option>
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="col-lg-2">
+                                                                                        <div class="btn-part view-all-btn ">
+                                                                                            <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResultsA();">Search</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </form>
+
+                                                                    </div>
+
+                                                                    <div class="col-lg-12">
+
+                                                                        <section class="loaded">
+
+                                                                            <div class="table" id="search-data-A">
+                                                                                
+                                                                            </div>
+                                                                        </section>
+                                                                    </div>
+                                                                </div>
+                                                    
+                                                                 </div>
+                                                                 
+
+                                                        </div>
+                                                        <div class="tab-pane fade" id="map3" role="tabpanel" aria-labelledby="map-tab3">
+                                                        <div class="row">
+                                                                   <div class="col-lg-12">
+                                                                    <div class="map">
+                                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe>
+
                                 </div>
                                 <div class="tab-pane fade" id="sub-tab2-content" role="tabpanel"
                                 aria-labelledby="sub-tab2">tab2</div>
@@ -448,11 +770,37 @@ if(request('animal_bite') == 'yes'){
                                                                             Select-District
                                                                         </option>
                                                                     </select>
+
                                                                     </div>
                                                                 </div>
+
+                                                           
+                                                        </div>
+                                                       
+                                                </div>
+                                            </div>
+                                                <!-- ********************************************************************* -->
+                                                    <div class="sec-bg-white">
+                                                      
+                                                        <div class="row grid nearest-vaccication">
+
+                                                            <div class="col-lg-12 col-md-12 grid-item filter3 d-none">
+                                                                <div class="row align-item-center">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="content">
+                                                                            <div class="sec-title mb-10">
+                                                                                <div class="blog-button">
+                                                                                    <a class="blog-btn"
+                                                                                        href="{{ asset('assets/Nrcp_img/Model_Anti_rabies_Clinic.pdf') }}"
+                                                                                        target="_blank">View PDF</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
                                                                 <div class="col-lg-2">
                                                                     <div class="btn-part view-all-btn ">
                                                                     <button class="readon2 vaccination-btn mod mt-0" type="button" onclick="getSearchResultsA();">Search</button>
+
                                                                     </div>
                                                                 </div>
                                                             </div>
