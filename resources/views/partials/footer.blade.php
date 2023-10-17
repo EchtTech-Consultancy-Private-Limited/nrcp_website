@@ -21,13 +21,13 @@
                     @if(!empty($social_media))
                         @if($social_media->facebook  != '')
                         <li>
-                            <a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank"><span><i class="fa fa-facebook"></i></span></a>
+                            <a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" rel="noopener noreferrer"><span><i class="fa fa-facebook"></i></span></a>
                         </li>
                         @endif
                        
                         @if($social_media->twitter  != '')
                         <li>
-                            <a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank"><span><i class="fa fa-twitter"></i></span></a>
+                            <a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" rel="noopener noreferrer"><span><i class="fa fa-twitter"></i></span></a>
                         </li>
                         @endif
 
@@ -70,11 +70,11 @@
                                       @if ($footerMenus->tab_type == 1) 
                                            @if (Session::get('Lang') == 'hi') 
                                            @else
-                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank">        
+                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank" rel="noopener noreferrer">        
                                            @endif
-                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank">     
+                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank" rel="noopener noreferrer">     
                                       @else  
-                                      <a href="{{ url($footerMenus->url  ??'') }}"> 
+                                      <a href="{{ url($footerMenus->url  ??'') }}" rel="noopener noreferrer"> 
                                       @endif    
                                           
                                           
@@ -113,14 +113,14 @@
 
                             <div class="desc">
                                 <i class="fa fa-mobile" aria-hidden="true"></i>
-                                <a href="tel:+91-11-23971272"> 011-23930178</a>
+                                <a href="tel:+91-11-23971272" rel="noopener noreferrer"> 011-23930178</a>
                             </div>
                         </li>
                         <li>
 
                             <div class="desc">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                <a href="mailto:dirnicd@nic.in">napreindia-ncdc[at]ncdc[dot]gov[dot]in</a>
+                                <a href="mailto:dirnicd@nic.in" rel="noopener noreferrer">napreindia-ncdc[at]ncdc[dot]gov[dot]in</a>
                             </div>
                         </li>
 
