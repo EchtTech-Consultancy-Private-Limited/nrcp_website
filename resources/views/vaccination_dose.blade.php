@@ -1,5 +1,4 @@
 @extends('layouts.main')
-
 @section('title')
     {{ __('National Rabies Control Programme (NRCP)') }}
 @endsection
@@ -599,10 +598,3 @@ if(request('animal_bite') == 'yes'){
         </div>
     </div>
 @endsection
-@push('post-scripts')
-
-    <script>
-        
-       
-    </script>
-@endpush
