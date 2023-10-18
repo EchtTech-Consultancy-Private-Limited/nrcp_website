@@ -7,8 +7,8 @@
                   </span>
                </li>
                <li>
-                  <a href="javascript:void()" onclick="slipttobottom()"> Skip to Main Content</a> |
-                  <a href="{{ url('screen-reader-access') }}"> Screen Reader Access</a>
+                  <a href="javascript:void()" onclick="slipttobottom()" rel="noopener noreferrer"> Skip to Main Content</a> |
+                  <a href="{{ url('screen-reader-access') }}" rel="noopener noreferrer"> Screen Reader Access</a>
                </li>
             </ul>
          </div>
@@ -62,11 +62,11 @@
             @if(!empty($social_media))
 
                @if($social_media->facebook  != '')
-               <li><a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" title="Facebook" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
                @endif
 
                @if($social_media->twitter  != '')
-               <li><a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif  target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
+               <li><a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif  target="_blank" title="twitter" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a>
                </li>
                @endif
                <!-- @if($social_media->linkedin  != '') -->
@@ -76,7 +76,7 @@
 
             @endif  
                 
-               <li><a href="{{ route('sitemap') }}" class="sitemap-cl" title="Site Map"><i class="fa fa-sitemap"></i></a>
+               <li><a href="{{ route('sitemap') }}" class="sitemap-cl" title="Site Map" rel="noopener noreferrer"><i class="fa fa-sitemap"></i></a>
                </li>
             
             </ul>
