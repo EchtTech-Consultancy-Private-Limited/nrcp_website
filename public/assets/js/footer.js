@@ -122,7 +122,32 @@ $(document).ready(function() {
         });
     });
 
-
+$(document).ready(function($) {
+        
+        $("#vacination-form-validation").validate({
+        rules: {
+            animal_bite: "required"
+        },
+        messages: {
+            animal_bite: "This field is required"
+        },
+         errorPlacement: function(error, element) 
+{
+    if ( element.is(":radio") ) 
+    {
+        error.appendTo( element.parents('.form-group') );
+    }
+    else 
+    { // This is the default behavior 
+        error.insertAfter( element );
+    }
+ },
+        submitHandler: function(form) {
+            form.submit();
+        }
+        
+    });
+});
     $(document).ready(function() {
         $('.image-link').magnificPopup({
             type: 'image',
