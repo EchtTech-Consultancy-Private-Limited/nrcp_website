@@ -15,8 +15,6 @@
                             Health & Family Welfare, Government of India </p> --}}
                     </div>
                     <ul class="footer_social">
-
-
                         
                     @if(!empty($social_media))
                         @if($social_media->facebook  != '')
@@ -194,7 +192,7 @@
                 <div class="contact-page-section mt-4">
                     <div class="contact-comment-box">
 
-                        <form method="get" action="{{ url('vaccination_dose') }}">
+                        <form method="get" action="{{ url('vaccination_dose') }}" id="vacination-form-validation" novalidate="novalidate">
                             <fieldset>
                                 <div class="row">
                                     <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12">
@@ -233,7 +231,7 @@
 
                                 <div class="row form-group">
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="readon2 modal-btn">
+                                        <button type="submit" class="readon2 modal-btn" name="submit">
                                             Proceed
                                         </button>
                                     </div>

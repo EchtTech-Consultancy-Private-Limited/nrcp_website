@@ -77,3 +77,7 @@ Route::post('/get-vaccination-center-A',[HomeController::class,'vaccinationSearc
 
 });
 
+//default behaviour, always keep as last entry
+Route::any('{catchall}', function () {
+    abort(404);
+})->where('catchall', '.*');
