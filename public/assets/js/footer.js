@@ -122,32 +122,43 @@ $(document).ready(function() {
         });
     });
 
-$(document).ready(function($) {
-        
-        $("#vacination-form-validation").validate({
-        rules: {
-            animal_bite: "required"
-        },
-        messages: {
-            animal_bite: "This field is required"
-        },
-         errorPlacement: function(error, element) 
-{
-    if ( element.is(":radio") ) 
+function cehckradio(){
+    var dat = $('input[type="radio"][name="animal_bite"]:checked').val();
+    if(dat == undefined){
+        $("#radio_error").html("Please select Yes/No")
+    }
+        return true;
+    }
+$(function()
     {
-        error.appendTo( element.parents('.form-group') );
-    }
-    else 
-    { // This is the default behavior 
-        error.insertAfter( element );
-    }
- },
-        submitHandler: function(form) {
-            form.submit();
-        }
-        
+      $('#myform').validate(
+        {
+          rules:
+          {
+            animal_bite:{ required:true }
+          },
+          messages:
+          {
+            animal_bite:
+            {
+              required:"Please select<br/>"
+            }
+          },
+          errorPlacement: function(error, element) 
+          {
+              if ( element.is(":radio") ) 
+              {
+                  error.appendTo( element.parents('.container') );
+              }
+              else 
+              { // This is the default behavior 
+                  error.insertAfter( element );
+              }
+           }
+        });
+      
     });
-});
+
     $(document).ready(function() {
         $('.image-link').magnificPopup({
             type: 'image',
@@ -166,7 +177,7 @@ $(document).ready(function($) {
         });
     });
     
-    function getDistrictList(){
+function getDistrictList(){
     var statename = $('#stateC').val();
     $.ajax({
         headers: {
@@ -187,7 +198,7 @@ $(document).ready(function($) {
     });
 }
 
-    function getDistrictListH(){
+function getDistrictListH(){
     var statename = $('#stateH').val();
     $.ajax({
         headers: {
@@ -208,7 +219,7 @@ $(document).ready(function($) {
     });
 }
 
-    function getDistrictListA(){
+function getDistrictListA(){
     var statename = $('#stateA').val();
     $.ajax({
         headers: {
@@ -425,3 +436,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+

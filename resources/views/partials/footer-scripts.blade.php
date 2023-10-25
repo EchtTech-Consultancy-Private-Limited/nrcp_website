@@ -2,6 +2,7 @@
 <script src="{{ asset('assets/js/modernizr-2.8.3.min.js') }}"></script>
 <!-- <script src="{{ asset('assets/js/jquery.min.js') }}"></script> -->
 <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 <script src="{{ asset('assets/js/rsmenu-main.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.nav.js') }}"></script>
 <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
@@ -24,6 +25,5 @@
 <script src="{{ asset('assets/js/dataTables.buttons.min.js') }}"></script>
 <script src="{{ asset('assets/js/buttons.print.min.js') }}"></script>
 <script src="{{ asset('assets/js/footer.js') }}"></script>
-
 
 @stack('post-scripts')
