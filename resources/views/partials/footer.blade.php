@@ -192,12 +192,12 @@
                 <div class="contact-page-section mt-4">
                     <div class="contact-comment-box">
 
-                        <form method="get" action="{{ url('vaccination_dose') }}" id="vacination-form-validation" novalidate="novalidate">
+                        <form method="get" action="{{ url('vaccination_dose') }}" id="myform" novalidate="novalidate">
                             <fieldset>
                                 <div class="row">
                                     <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12">
                                         <label class="pl-2">Date of Animal Bites</label>
-                                        <input class="from-control mt-2" type="date" name="date" id="txtDate" placeholder="Name" required >
+                                        <input class="from-control mt-2" type="date" name="date" id="txtDate" placeholder="Name" required/>
                                     </div>
                                 </div>
                                 <div class="row form-group">
@@ -211,14 +211,15 @@
                                     <div class="col-md-12">
                                        <div class="radio button">
                                            <div class="radio-box">
-                                            <input type="radio" onclick="checkYesNo('1')" name="animal_bite" value="yes" id="yes-dogbite">
+                                            <input type="radio" onclick="checkYesNo('1')" name="animal_bite" value="yes" id="yes-dogbite" required />
                                             <label for="yes-dogbite">Yes</label>
                                            </div>
                                            <div class="radio-box">
-                                            <input type="radio" onclick="checkYesNo('0')" name="animal_bite" value="no" id="no-bite">
+                                            <input type="radio" onclick="checkYesNo('0')" name="animal_bite" value="no" id="no-bite" required />
                                             <label for="no-bite">No</label> 
                                            </div>   
                                        </div>
+                                       <p class="text-center text-danger" id="radio_error"></p> 
                                     </div>
                                     {{-- CHoose Yes --}}
                                     <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput">
@@ -231,9 +232,10 @@
 
                                 <div class="row form-group">
                                     <div class="col-md-12 text-center">
-                                        <button type="submit" class="readon2 modal-btn" name="submit">
+                                    <input type="submit" name="Submit" class="readon2 modal-btn" onclick="cehckradio()" value="Submit" id="mysbutton" />
+                                        <!-- <button type="submit" class="readon2 modal-btn" name="submit">
                                             Proceed
-                                        </button>
+                                        </button> -->
                                     </div>
                                 </div>
                             </fieldset>
