@@ -18,13 +18,10 @@ if(request('animal_bite') == 'yes'){
 }else if(request('animal_bite') == 'no'){
     $vDate = date("Y-m-d"); //request('date');
     $date = request('date');
-    $animal_bite = request('animal_bite');
 }else{
     $vDate =request('date');
     $date = request('date');
-    $animal_bite = request('animal_bite');
 }
-//dd($vDate);
 ?>
     <div id="rs-about" class="event-page-section pt-80 pb-100 md-pt-70 md-pb-70">
         <div class="container">
@@ -104,7 +101,6 @@ if(request('animal_bite') == 'yes'){
                                             <th> Dose day 14</th>
                                             <th> Dose day 28 </th>
                                             <th> Summary</th>
-            
                                         </thead>
                                         <tbody>
                                             <?php if(request('type') ==1){ ?>
@@ -151,8 +147,6 @@ if(request('animal_bite') == 'yes'){
                                                 <td> Total 8 injection 4 visits </td>
                                             </tr>
                                             <?php } ?>          
-            
-            
                                         </tbody>
                                     </table>
                                 </div>
@@ -245,12 +239,11 @@ if(request('animal_bite') == 'yes'){
                                                                                     </div>
                                                                                 </div>
 
-                                                                            </div>
-                                                                        </form>
+                                                        </div>
+                                                        </form>
 
-                                                                    </div>
-
-                                                                    <div class="col-lg-12">
+                                                    </div>
+                                                    <div class="col-lg-12">
 
                                                                         <section class="loaded">
 

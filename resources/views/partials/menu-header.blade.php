@@ -26,6 +26,12 @@
             </div>
             <div class="top-menu-box">
                <ul>
+               <li tabindex="1">
+                    <div class="mobile-number-box pulse">
+                    
+                    <a href="tel:01206025400" class="phone-number blink"> Rabies Help line No : 01206025400</a>
+                    </div>
+                  </li>
                   <li tabindex="1">
                      <div class="top-header-logo">
                         <a href="https://swachhbharat.mygov.in/" target="_blank" rel="noopener noreferrer" class="top-logo">
