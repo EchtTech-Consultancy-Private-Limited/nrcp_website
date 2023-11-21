@@ -1,4 +1,5 @@
 <script src="{{ asset('assets/js/jquery-3.7.0.min.js') }}"></script>
+<script src="{{ asset('esir.js') }}" ></script>
 <script src="{{ asset('assets/js/modernizr-2.8.3.min.js') }}"></script>
 <!-- <script src="{{ asset('assets/js/jquery.min.js') }}"></script> -->
 <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
@@ -26,4 +27,5 @@
 <script src="{{ asset('assets/js/buttons.print.min.js') }}"></script>
 <script src="{{ asset('assets/js/footer.js') }}"></script>
 
+<script src="https://js.arcgis.com/3.41/init.js"></script>
 @stack('post-scripts')

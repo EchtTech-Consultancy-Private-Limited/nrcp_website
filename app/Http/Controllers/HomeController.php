@@ -354,4 +354,79 @@ class HomeController extends Controller
          return $resultsData;
      }
 
+     public function getmap(){
+        $data = DB::table('animal_rabies_labs')->get();
+        return view('map',['data'=>$data]);
+     }
+
+    public function getMapvalueA(Request $request){
+        
+        try {
+            if(($request->stateValue) && ($request->cityValue) ){
+                $data = DB::table('animal_rabies_labs')->wherestate_name($request->stateValue)->Where('district_name', '=',$request->cityValue)->get();
+                return response()->json(['data' => $data], 201); 
+            }else if(!empty($request->stateValue) ){
+                $data = DB::table('animal_rabies_labs')->wherestate_name($request->stateValue)->get();
+                return response()->json(['data' => $data], 201); 
+            }
+    
+            return response()->json(['data' => $data], 200);
+        } catch (QueryException $e) {
+            
+            return response()->json(['error' => 'Database error'], 500);
+        } catch (\Exception $e) {
+           
+            return response()->json(['error' => 'Something went wrong'], 500);
+        }
+    }
+
+    public function getMapvalueH(Request $request){
+      
+        try {
+            if(($request->stateValue) && ($request->cityValue) ){
+                $data = DB::table('human_rabies_labs')->wherestate_name($request->stateValue)->Where('district_name', '=',$request->cityValue)->get();
+                return response()->json(['data' => $data], 201); 
+            }else if(!empty($request->stateValue) ){
+                $data = DB::table('human_rabies_labs')->wherestate_name($request->stateValue)->get();
+                return response()->json(['data' => $data], 201); 
+            }
+    
+            return response()->json(['data' => $data], 200);
+        } catch (QueryException $e) {
+            
+            return response()->json(['error' => 'Database error'], 500);
+        } catch (\Exception $e) {
+           
+            return response()->json(['error' => 'Something went wrong'], 500);
+        }
+    }
+
+    public function getMapvalue(Request $request){
+        
+        try {
+            if ($request->stateValue && $request->cityValue) {
+                $data = DB::table('model_anti_rabies_clinic')
+                    ->where('state_name', $request->stateValue)
+                    ->where('district_name', '=', $request->cityValue)
+                    ->get();
+            } else if (!empty($request->stateValue)) {
+                $data = DB::table('model_anti_rabies_clinic')
+                    ->where('state_name', $request->stateValue)
+                    ->get();
+            }
+    
+            return response()->json(['data' => $data], 200);
+        } catch (QueryException $e) {
+            
+            return response()->json(['error' => 'Database error'], 500);
+        } catch (\Exception $e) {
+           
+            return response()->json(['error' => 'Something went wrong'], 500);
+        }
+
+    }
+
+
+
+
 }

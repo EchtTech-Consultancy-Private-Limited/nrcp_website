@@ -23,6 +23,11 @@ Route::middleware(['visitingcounter'])->group(function () {
 
  Route::get('/',[HomeController::class,'index'])->name('/');
 
+//map 
+ Route::get('getMapvalue',[HomeController::class,'getMapvalue']);
+ Route::get('getMapvalueA',[HomeController::class,'getMapvalueA']);
+ Route::get('getMapvalueH',[HomeController::class,'getMapvalueH']);
+//map
 
 Route::get('/video',[HomeController::class,'videoDetail'])->name('video');
 Route::get('/anumal-health',[HomeController::class,'anumalHealth'])->name('anumal-health');
@@ -74,6 +79,8 @@ Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch'
 
 Route::post('/get-vaccination-center-H',[HomeController::class,'vaccinationSearchH']);
 Route::post('/get-vaccination-center-A',[HomeController::class,'vaccinationSearchA']);
+
+
 
 });
 
