@@ -6,13 +6,13 @@
 </script>
 
 <style>
-    html,
+    /* html,
     body,
     #map {
         height: 100%;
         margin: 0;
         padding: 0;
-    }
+    } */
 
     .esriPopup .titleButton.close{top: 11px;}
 </style>
