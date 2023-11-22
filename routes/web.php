@@ -19,6 +19,7 @@ use App\Http\Controllers\SearchController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+require __DIR__ .'/cms_web.php';
 Route::middleware(['visitingcounter'])->group(function () {
 
  Route::get('/',[HomeController::class,'index'])->name('/');
@@ -76,6 +77,8 @@ Route::post('/get-vaccination-center-H',[HomeController::class,'vaccinationSearc
 Route::post('/get-vaccination-center-A',[HomeController::class,'vaccinationSearchA']);
 
 });
+
+
 
 //default behaviour, always keep as last entry
 Route::any('{catchall}', function () {
