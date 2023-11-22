@@ -359,7 +359,7 @@ class HomeController extends Controller
         return view('map',['data'=>$data]);
      }
 
-    public function getMapvalueA(Request $request){
+    public function mapAnimalCenter(Request $request){
         
         try {
             if(($request->stateValue) && ($request->cityValue) ){
@@ -380,7 +380,7 @@ class HomeController extends Controller
         }
     }
 
-    public function getMapvalueH(Request $request){
+    public function mapHumanCenter(Request $request){
       
         try {
             if(($request->stateValue) && ($request->cityValue) ){
@@ -401,7 +401,7 @@ class HomeController extends Controller
         }
     }
 
-    public function getMapvalue(Request $request){
+    public function mapClientCenter(Request $request){
         
         try {
             if ($request->stateValue && $request->cityValue) {

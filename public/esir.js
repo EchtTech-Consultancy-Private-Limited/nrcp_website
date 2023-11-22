@@ -39,7 +39,7 @@ $(document).ready(function() {
         var state = $('#stateA').val();
         var citiess = $('#citiesA').val();
         $.ajax({
-            url: baseUrl + '/getMapvalueA',
+            url: baseUrl + '/map-animal-center',
             type: 'get',
             data: {
                 stateValue: state,
@@ -161,7 +161,7 @@ $(document).ready(function() {
         var state = $('#stateH').val();
         var citiesss = $('#citiesH').val();
         $.ajax({
-            url: baseUrl + '/getMapvalueH',
+            url: baseUrl + '/map-human-center',
             type: 'get',
             data: {
                 stateValue: state,
@@ -286,7 +286,7 @@ $(document).ready(function() {
         var state = $('#stateC').val();
         var citiesssss = $('#citiesC').val();
         $.ajax({
-            url: baseUrl + '/getMapvalue',
+            url: baseUrl + '/map-client-center',
             type: 'get',
             data: {
                 stateValue: state,
