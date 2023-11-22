@@ -2848,6 +2848,11 @@ h6.sub-text-b-l {
         margin-bottom:30px;
     }
 
+    .mobile-number-box{
+        margin-top: 0px;
+        height: 44px;
+    }
+
     .box-min {
         display: block;
         align-items: center;

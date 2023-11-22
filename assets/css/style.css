@@ -20488,3 +20488,36 @@ list-style-type: none;
 .error{
   color: red !important;
 }
+
+.mobile-number-box {
+  margin-right: 0px;
+  border: 1px solid #92271d;
+  padding: 0px 22px;
+  border-radius: 21px;
+  background: #92271d;
+  margin-top: 45px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal 15px/20px Poppins;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* .mobile-number-box .phone-number {
+  font-size: 18px;
+} */
+
+.blink {
+  animation-name: blinker;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+ }
+ 
+ @keyframes blinker {  
+  0% { color: #d7d5d5; }
+  50% { color: #fff; }
+  100% { color: yellow; }
+ }
