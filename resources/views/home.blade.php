@@ -42,7 +42,7 @@
                      <div class="row banner-mobile">
                         <div class="col-lg-12 order-last p-0">
                            <div class="img-part banner-image">
-                           <img src="{{ asset('uploads/banner/'.$value->public_url) }}"
+                           <img src="{{ asset('resources/uploads/banner/'.$value->public_url) }}"
                                  alt="{{ $value->banner_title }}" rel="noopener noreferrer">
                            </div>
                         </div>                       
@@ -454,7 +454,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                      @foreach($photogallery as $photogallerys)
                      <div class="team-item">
                         <div class="gallery-box">
-                           <img src="{{ asset('uploads/GalleryManagement/'.$photogallerys->public_url) }}" alt="" rel="noopener noreferrer">
+                           <img src="{{ asset('resources/uploads/GalleryManagement/'.$photogallerys->public_url) }}" alt="" rel="noopener noreferrer">
                            <!-- <div class="text-gallery" id="banner3">
                               Event 1
                            </div> -->

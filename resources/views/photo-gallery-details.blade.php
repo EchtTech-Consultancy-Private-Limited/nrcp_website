@@ -18,7 +18,7 @@
                     <div class="col-md-6">
                         @foreach($photogallery as $datas)
                         <div class="mySlides">
-                            <img src="{{ asset('uploads/GalleryManagement/'.$datas->public_url) }}" style="width:100%">
+                            <img src="{{ asset('resources/uploads/GalleryManagement/'.$datas->public_url) }}" style="width:100%">
                         </div>
                         @endforeach
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -27,7 +27,7 @@
                     <div class="col-md-6 col-box-g">
                     @foreach($photogallery as $key=>$datas)
                         <div class="column">
-                            <img class="demo cursor" src="{{ asset('uploads/GalleryManagement/'.$datas->public_url) }}" style="width:100%" onclick="currentSlide({{$key+1}})" alt="">
+                            <img class="demo cursor" src="{{ asset('resources/uploads/GalleryManagement/'.$datas->public_url) }}" style="width:100%" onclick="currentSlide({{$key+1}})" alt="">
                         </div>
                     @endforeach
                     </div>

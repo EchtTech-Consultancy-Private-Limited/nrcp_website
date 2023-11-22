@@ -66,10 +66,5 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'visitingcounter' => \App\Http\Middleware\VisitCounters::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
-        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'prevent-back-history' => \App\Http\Middleware\PreventBackHistory::class,
-        'logs' => \App\Http\Middleware\AdminLogs::class,
-        'apithrottle' => \App\Http\Middleware\ThrottleMiddleware::class,
-        'EnsureTokenIsValid' => \App\Http\Middleware\EnsureTokenIsValid::class,
     ];
 }

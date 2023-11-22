@@ -91,7 +91,7 @@ $(document).ready(function(){
 //                 $("#imagesort").val(data.item.sort_order);
 //                 $("#imageoldid").val(data.item.cell_imges);
 //                 $("#event").val(data.item.event);
-//                 $('#image').html('<img src="{{ asset('uploads/multiple/club') }}/' + data.item
+//                 $('#image').html('<img src="{{ asset('resources/uploads/multiple/club') }}/' + data.item
 //                     .image + '" width="100" height="100" />')
 //                 $("#imagestatus").val(data.item.status);
 //             },
