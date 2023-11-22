@@ -72,8 +72,8 @@
                                  @foreach ($sidebar->content_gallery  as  $gallery)  
                                  <div class="col-lg-4 col-md-3">
                                     <div class="event-img">
-                                       <a href="{{ asset('uploads/PageContentGallery/'.$gallery->public_url) }}"  class="image-link">
-                                           <img src="{{ asset('uploads/PageContentGallery/'.$gallery->public_url) }}" alt="">
+                                       <a href="{{ asset('resources/uploads/PageContentGallery/'.$gallery->public_url) }}"  class="image-link">
+                                           <img src="{{ asset('resources/uploads/PageContentGallery/'.$gallery->public_url) }}" alt="">
                                        </a>
                                    </div>
                                  </div>
@@ -104,7 +104,7 @@
                                     <td class="date-width">{{ date('d F Y', strtotime($pdf->start_date ??'')) }}</</td>
                                     <td class="download-icon-width">
                                        <div class="download ">
-                                          <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><span class="view">View</span></a>
+                                          <a href="{{ asset('resources/uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><span class="view">View</span></a>
                                              
                                              @if($pdf->file_extension == 'pdf')
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
@@ -116,7 +116,7 @@
                                              <i class="fa fa-file-pdf-o" aria-hidden="true"></i> 
                                              @endif
                                              <span class="size">({{ $pdf->pdfimage_size ??'' }})</span>
-                                          {{-- <a href="{{ asset('uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a> --}}
+                                          {{-- <a href="{{ asset('resources/uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a> --}}
                                        </div>
                                       
                                     </td>

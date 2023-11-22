@@ -22,7 +22,7 @@
                         <div class="col-md-4">
                             <div class="blog-item">
                                 <div class="image-part">
-                                    <img src="{{ asset('uploads/EventsManagement/'.$datas->eventImags[0]->public_url) }}" alt="">
+                                    <img src="{{ asset('resources/uploads/EventsManagement/'.$datas->eventImags[0]->public_url) }}" alt="">
                                 </div>
                                 <div class="blog-content">                                       
                                     <h3 class="title">
