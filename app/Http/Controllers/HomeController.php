@@ -392,6 +392,7 @@ class HomeController extends Controller
             }
     
             return response()->json(['data' => $data], 200);
+
         } catch (QueryException $e) {
             
             return response()->json(['error' => 'Database error'], 500);
@@ -413,9 +414,11 @@ class HomeController extends Controller
                 $data = DB::table('model_anti_rabies_clinic')
                     ->where('state_name', $request->stateValue)
                     ->get();
+                  
             }
-    
+
             return response()->json(['data' => $data], 200);
+
         } catch (QueryException $e) {
             
             return response()->json(['error' => 'Database error'], 500);
@@ -423,10 +426,5 @@ class HomeController extends Controller
            
             return response()->json(['error' => 'Something went wrong'], 500);
         }
-
     }
-
-
-
-
 }
