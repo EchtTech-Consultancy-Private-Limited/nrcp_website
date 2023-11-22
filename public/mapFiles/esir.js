@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
 
+   //  alert('hii');
     $('#getSearchResultsA').on('click', function() {
         $('#newMapA').html('');
         $.ajaxSetup({
@@ -62,7 +63,7 @@ $(document).ready(function() {
                     map = new Map("newMapA", {
                         basemap: "topo-vector",
                         center: [data[0].longitude, data[0].latitude],
-                        zoom: 5
+                        zoom: 6
                     });
                     var graphicsLayer = new GraphicsLayer();
 
@@ -170,7 +171,7 @@ $(document).ready(function() {
             success: function(response) {
                 var map;
                 var data = response.data;
-
+                   
                 require([
                     "esri/map",
                     "esri/layers/GraphicsLayer",
@@ -184,7 +185,7 @@ $(document).ready(function() {
                     map = new Map("newMapH", {
                         basemap: "topo-vector",
                         center: [data[0].longitude, data[0].latitude],
-                        zoom: 5
+                        zoom: 6
                     });
 
                     var graphicsLayer = new GraphicsLayer();
@@ -295,6 +296,7 @@ $(document).ready(function() {
             success: function(response) {
                 var map;
                 var data = response.data;
+                //console.log(data);
 
                 require([
                     "esri/map",
@@ -309,7 +311,7 @@ $(document).ready(function() {
                     map = new Map("newMapC", {
                         basemap: "topo-vector",
                         center: [data[0].longitude, data[0].latitude],
-                        zoom: 5
+                        zoom: 6
                     });
 
                     var graphicsLayer = new GraphicsLayer();
