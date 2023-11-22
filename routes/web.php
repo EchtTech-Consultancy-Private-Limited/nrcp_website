@@ -22,7 +22,13 @@ use App\Http\Controllers\SearchController;
 require __DIR__ .'/cms_web.php';
 Route::middleware(['visitingcounter'])->group(function () {
 
- Route::get('/',[HomeController::class,'index'])->name('/');
+Route::get('/',[HomeController::class,'index'])->name('/');
+
+//map 
+ Route::get('map-client-center',[HomeController::class,'mapClientCenter']);
+ Route::get('map-animal-center',[HomeController::class,'mapAnimalCenter']);
+ Route::get('map-human-center',[HomeController::class,'mapHumanCenter']);
+//map
 
 
 Route::get('/video',[HomeController::class,'videoDetail'])->name('video');
@@ -71,10 +77,12 @@ Route::post('/get-districts-list-human',[HomeController::class,'getDistrictsHuma
 
 Route::post('/get-districts-list-animal',[HomeController::class,'getDistrictsAnimal']);
 
-Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch']);
 
+Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch']);
 Route::post('/get-vaccination-center-H',[HomeController::class,'vaccinationSearchH']);
 Route::post('/get-vaccination-center-A',[HomeController::class,'vaccinationSearchA']);
+
+
 
 });
 
