@@ -8,7 +8,7 @@
 <div class="main-content">
     <div class="rs-breadcrumbs breadcrumbs-overlay">
         <div class="breadcrumbs-img">
-            <img src="https://dev.nrcp.staggings.in/public/assets/Nrcp_img/banner.png" alt="Breadcrumbs Image">
+            <img src="https://dev.nrcp.staggings.in/assets/Nrcp_img/banner.png" alt="Breadcrumbs Image">
         </div>
         <div class="breadcrumbs-text white-color">
             <h1 class="page-title">Master Layout</h1>
