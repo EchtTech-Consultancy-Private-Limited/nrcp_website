@@ -219,7 +219,7 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                 <div class="row p-0">
                     <div class="col-md-4">
                         <div class="notice-bord style1">
-                            <h4 class="title">Twitter Feed</h4>
+                            <h4 class="title twitter-text-h"><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}" alt="img" rel="noopener noreferrer" class="twitter-logo"> ( Twitter Feed )</h4>
                             <div class="marquee-height myslider">
 
                             <div class="item a text-center">
