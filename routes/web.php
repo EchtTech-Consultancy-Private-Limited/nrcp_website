@@ -28,6 +28,10 @@ Route::get('/',[HomeController::class,'index'])->name('/');
  Route::get('map-client-center',[HomeController::class,'mapClientCenter']);
  Route::get('map-animal-center',[HomeController::class,'mapAnimalCenter']);
  Route::get('map-human-center',[HomeController::class,'mapHumanCenter']);
+
+ Route::get('onload-client-center',[HomeController::class,'onloadClientCenter']);
+ Route::get('onload-animal-center',[HomeController::class,'onloadAnimalCenter']);
+ Route::get('onload-human-center',[HomeController::class,'onloadHumanCenter']);
 //map
 
 
