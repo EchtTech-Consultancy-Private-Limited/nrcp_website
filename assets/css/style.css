@@ -6344,6 +6344,14 @@ body .modal-backdrop {
     border-radius: 10px 10px 0px 0px;
 }
 
+img.twitter-logo {
+  width: 23px;
+}
+
+.rs-about.style1 .notice-bord.style1 .title.twitter-text-h{
+  font-size: 16px;
+}
+
 .rs-about.style1 .notice-bord.style1 li {
   position: relative;
   background: #e7f4f6;
@@ -20521,3 +20529,7 @@ list-style-type: none;
   50% { color: #fff; }
   100% { color: yellow; }
  }
+
+ .sticky .mobile-number-box {
+  margin-bottom: 10px;
+}
