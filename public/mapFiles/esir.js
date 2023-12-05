@@ -85,7 +85,6 @@ $(document).ready(function () {
                             var infoTemplate = new InfoTemplate("Vaccination Center",
                                 "State: ${state_name}<br/>District: ${district_name}<br/>Address: ${address}"
                             );
-
                             var pointGraphic = new Graphic(
                                 point,
                                 pointSymbol,

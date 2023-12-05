@@ -250,7 +250,7 @@
                                                                                                     class="form-control"
                                                                                                     onchange="getDistrictList();">
                                                                                                     <option value="0">
-                                                                                                        Select-Your-State
+                                                                                                        All Option
                                                                                                     </option>
 
                                                                                                     @foreach ($state as $states)
@@ -271,7 +271,7 @@
                                                                                                         class="form-control">
                                                                                                         <option
                                                                                                             value="">
-                                                                                                            Select-District
+                                                                                                            All Option
                                                                                                         </option>
                                                                                                     </select>
                                                                                                 </div>
@@ -392,7 +392,7 @@
                                                                                                     class="form-control"
                                                                                                     onchange="getDistrictListH();">
                                                                                                     <option value="0">
-                                                                                                        Select-Your-State
+                                                                                                        All Option
                                                                                                     </option>
 
                                                                                                     @foreach ($human_labs_state as $human_labs_state)
@@ -411,7 +411,7 @@
                                                                                                         class="form-control">
                                                                                                         <option
                                                                                                             value="">
-                                                                                                            Select-District
+                                                                                                            All Option
                                                                                                         </option>
                                                                                                     </select>
                                                                                                 </div>
@@ -560,7 +560,7 @@
                                                                                                 class="form-control"
                                                                                                 onchange="getDistrictListA();">
                                                                                                 <option value="0">
-                                                                                                    Select-Your-State
+                                                                                                    All Option
                                                                                                 </option>
 
                                                                                                 @foreach ($animal_labs_state as $animal_labs_state)
@@ -577,7 +577,7 @@
                                                                                                     id="citiesA"
                                                                                                     class="form-control">
                                                                                                     <option value="">
-                                                                                                        Select-District
+                                                                                                        All Option
                                                                                                     </option>
                                                                                                 </select>
                                                                                             </div>
