@@ -88,8 +88,8 @@
                     <div class="col-lg-9 col-md-9">
                         <div class="rs-slider style1">
                             <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="30"
-                                data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="3000"
-                                data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false"
+                                data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000"
+                                data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false"
                                 data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
                                 data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
                                 data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
