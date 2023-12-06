@@ -739,13 +739,15 @@ function slipttobottom() {
 }
 
 $('.myslider').slick({
-
+    
     slidesToScroll: 1,
     arrows: false,
     dots: false,
     autoplay:true,
     vertical: true,
-    verticalSwiping: true
+    verticalSwiping: true,
+    
+    speed: 5000,
         
     });
         
