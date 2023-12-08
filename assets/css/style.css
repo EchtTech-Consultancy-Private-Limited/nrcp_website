@@ -12483,6 +12483,17 @@ span.courses.course-icon img {
   line-height: 27px;
   font-weight: 400;
 }
+.rs-blog.main-home .blog-item .blog-content.b-t{min-height: 56px;padding: 20px 18px 10px;}
+.rs-blog.main-home .blog-item .blog-content.b-t .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 340px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.rs-blog.main-home .blog-item .blog-content.b-t .title a{color: #92271d !important;}
 
 
 .rs-blog.main-home .blog-item .blog-content .title a {
@@ -20533,3 +20544,12 @@ list-style-type: none;
  .sticky .mobile-number-box {
   margin-bottom: 10px;
 }
+
+
+
+/* h2.title.event-heading-color {
+  padding: 10px;
+  border-radius: 30px;
+  color: #3f51b5;
+  background: linear-gradient(45deg, #3f51b569, transparent);
+} */
