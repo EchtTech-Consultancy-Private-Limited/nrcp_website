@@ -745,9 +745,8 @@ $('.myslider').slick({
     dots: false,
     autoplay:true,
     vertical: true,
-    verticalSwiping: true,
-    
-    speed: 5000,
+    verticalSwiping: true,    
+    speed: 8000,
         
     });
         

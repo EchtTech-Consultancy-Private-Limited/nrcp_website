@@ -222,10 +222,16 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                             <h4 class="title twitter-text-h"><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}" alt="img" rel="noopener noreferrer" class="twitter-logo"> ( Twitter Feed )</h4>
                             <div class="marquee-height myslider">
 
-                            <div class="item a text-center">
-                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter" rel="noopener noreferrer">
-                                       <img src="{{ asset('assets/Nrcp_img/t5.png') }}" alt="img" rel="noopener noreferrer">
-                                    </a>
+                                  <div class="item a text-center">
+                                       <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter" rel="noopener noreferrer">
+                                          <img src="{{ asset('assets/Nrcp_img/t6.jpg') }}" alt="img" rel="noopener noreferrer">
+                                       </a>
+                                    </div>
+
+                                  <div class="item a text-center">
+                                       <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter" rel="noopener noreferrer">
+                                          <img src="{{ asset('assets/Nrcp_img/t5.png') }}" alt="img" rel="noopener noreferrer">
+                                       </a>
                                     </div>
 
                                    <div class="item a text-center">
