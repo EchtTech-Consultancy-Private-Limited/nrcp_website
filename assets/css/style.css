@@ -17131,7 +17131,7 @@ color: #171717;
 }
 
 .contact-page-section .contact-address-section .contact-info {
-  background: #f9f9f9;
+  background: #3f51b5;
   display: flex;
   text-align: left;
   align-items: center;
@@ -17147,7 +17147,7 @@ color: #171717;
 }
 
 .contact-page-section .contact-address-section .contact-info .icon-part i {
-  color: #3F51B5;
+  color: #fff;
   font-size: 30px;
   margin: 0;
   padding: 0;
@@ -17158,29 +17158,30 @@ color: #171717;
   text-align: center;
   background: transparent;
   border: 6px solid #f9ede9;
+  transition: all .3s ease-in-out;
 }
 
 .contact-page-section .contact-address-section .contact-info .content-part .info-subtitle {
   font-size: 18px;
   font-weight: 700;
-  color: #505050;
+  color: #fff;
   margin: 0 0 5px;
 }
 
 .contact-page-section .contact-address-section .contact-info .content-part .info-title {
   font-size: 15px;
     font-weight: 400;
-    color: #111111;
+    color: #fff;
     margin: 0;
 }
 
 .contact-page-section .contact-address-section .contact-info .content-part a {
-  color: #111111;
+  color: #fff;
   display: block;
 }
 
 .contact-page-section .contact-address-section .contact-info .content-part a:hover {
-  color: #3F51B5;
+  color: #fff;
 }
 
 .contact-page-section .contact-address-section .contact-info:hover {
@@ -17193,6 +17194,11 @@ color: #171717;
 
 .contact-page-section .contact-comment-section {
   padding: 50px;
+}
+
+.contact-page-section .contact-address-section .contact-info:hover .icon-part i{
+background: #f9ede9;
+color: #333;
 }
 
 .contact-page-section .contact-comment-section h3 {
