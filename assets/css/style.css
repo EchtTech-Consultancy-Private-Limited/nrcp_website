@@ -17158,7 +17158,7 @@ color: #171717;
   text-align: center;
   background: transparent;
   border: 6px solid #f9ede9;
-  transform: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .contact-page-section .contact-address-section .contact-info .content-part .info-subtitle {
