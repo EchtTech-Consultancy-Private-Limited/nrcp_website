@@ -3070,6 +3070,23 @@ h6.sub-text-b-l {
         padding: 0 35px;
     }
 
+    .some-bold-l {
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        font-size: 14px;
+        padding-left: 0;
+        margin-bottom: 6px !important;
+    }
+
+    .nearest-vaccication .col-lg-4 {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .form-control.radio{
+        margin-bottom: 18px;
+    }
+
     .mt-s-40{
         margin-top: 30px;
     }
@@ -4726,9 +4743,11 @@ h6.sub-text-b-l {
     .sec-bg-white {
         padding: 30px 22px;
     }
+
+    .mt-smm-0{margin-top: 0px !important;}
     
    .rs-popular-courses .sec-bg-white {
-        padding: 0px 22px 15px;
+        padding: 0px 0px 15px;
     }
 
     .rs-popular-courses.course-view-style .course-search-part {
