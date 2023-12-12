@@ -1851,6 +1851,11 @@ ul.listing-style.modify li:before {
   color: #031a3d;
 }
 
+.sec-title6.title-78 .title {
+  font-size: 28px;
+  line-height: 46px;  
+}
+
 .sec-title6 .title.title2 {
   font-weight: 800;
   margin: 0;
@@ -20559,3 +20564,35 @@ list-style-type: none;
   color: #3f51b5;
   background: linear-gradient(45deg, #3f51b569, transparent);
 } */
+
+.form-control.radio {
+  display: block;
+  height: calc(0.8em + 0.5rem + 0px);
+  transition: none;
+  width: 30px;
+  margin-right: 5px;
+
+}
+
+.form-control:focus{
+  box-shadow: none !important;
+}
+
+select:focus-visible, select:focus, input:focus-visible, input:focus {
+  outline: 0 !important;
+}
+
+.radio-btn-box label {
+  line-height: 20px;
+}
+
+.radio-btn-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.some-bold-l {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  font-size: 15px;
+}

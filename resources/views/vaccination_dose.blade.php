@@ -44,7 +44,7 @@
         $date = request('date');
     }
     ?>
-    <div id="rs-about" class="event-page-section pt-80 pb-100 md-pt-70 md-pb-70">
+    <div id="rs-about" class="event-page-section pt-60 pb-50 md-pt-70 md-pb-70">
         <div class="container">
             <div class="row">
 
@@ -52,12 +52,16 @@
 
                     <div class="row">
                         <div class="col-lg-3 col-md-12">
-
                             <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
                                 <button class="nav-link active" id="Master_layout_0" data-toggle="pill"
                                     data-target="#master-layout_0" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="true" tabindex="0">
                                     Know Your Vaccination Schedule
+                                </button>
+                                <button class="nav-link" id="Master_layout_4" data-toggle="pill"
+                                    data-target="#master-layout_4" type="button" role="tab"
+                                    aria-controls="annual-report" aria-selected="false" tabindex="0">
+                                    Know Your Dose
                                 </button>
                                 <button class="nav-link" id="Master_layout_1" data-toggle="pill"
                                     data-target="#master-layout_1" type="button" role="tab"
@@ -199,6 +203,72 @@
                                         </ul>
                                     </div>
                                 </div>
+
+                                <!-- Know Your Dose Tab -->
+
+                                <div class="tab-pane fade" id="master-layout_4" role="tabpanel"
+                                    aria-labelledby="Master_layout_4">
+                                    <div id="rs-popular-courses" class="rs-popular-courses style1 modify1">
+                                                <div class="container">
+                                                 <div class="sec-title6 title-78 text-center mb-20">
+                                                  <h2 class="title text-left">Know Your Dose</h2>
+                                               </div> 
+
+                                                    <!-- ************************************************************************** -->
+
+
+                                                    <div class="sec-bg-white vaccination-tab">
+                                                    <div class="row nearest-vaccication">
+
+                                                        <div class="col-lg-12 col-md-12 ">
+                                                            <div class="row">
+                                                                <div class="col-lg-12">
+                                                                <form method="get" action="">
+                                                                <div class="search-widget mb-20">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-8 row align-items-center">
+                                                                            <label for="" class="col-md-5 mb-0 some-bold-l">Enter Weight of Patient : </label>
+                                                                            <input type="text" class="form-control col-md-6" placeholder="Enter Weight">
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                        <div class="radio-btn-box pt-7">
+                                                                        <div class="d-flex">
+                                                                            <input type="radio" id="Equine" name="RIG" class="form-control radio" value="Equine">
+                                                                            <label for="Equine">Equine RIG</label>
+                                                                        </div>
+                                                                           
+                                                                          <div class="d-flex">
+                                                                             <input type="radio" id="Human" name="RIG" class="form-control radio" value="Human">
+                                                                             <label for="Human">Human RIG</label>
+                                                                          </div>
+                                                                        </div>
+                                                                        </div>
+
+                                                                        <div class="col-lg-12">
+                                                                            <div class="btn-part view-all-btn mt-30 mt-smm-0">
+                                                                                <button class="readon2 vaccination-btn mod mb-0" type="button">Calculate Dosage</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </form>
+
+                                                                </div>
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    </div>
+                                                    <!-- ********************************************************************* -->
+
+                                                </div>
+                                            </div>
+
+                                </div>
+
+                                <!-- Know Your Dose Tab End-->
 
                                 <div class="tab-pane fade" id="master-layout_1" role="tabpanel"
                                     aria-labelledby="Master_layout_1">
