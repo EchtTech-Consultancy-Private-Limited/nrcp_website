@@ -88,8 +88,8 @@
                     <div class="col-lg-9 col-md-9">
                         <div class="rs-slider style1">
                             <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="30"
-                                data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="3000"
-                                data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false"
+                                data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000"
+                                data-smart-speed="2000" data-dots="false" data-nav="false" data-nav-speed="false"
                                 data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
                                 data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
                                 data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
@@ -222,10 +222,16 @@ With the lessons learned in the pilot project, the Ministry of Health and Family
                             <h4 class="title twitter-text-h"><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}" alt="img" rel="noopener noreferrer" class="twitter-logo"> ( Twitter Feed )</h4>
                             <div class="marquee-height myslider">
 
-                            <div class="item a text-center">
-                                    <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter" rel="noopener noreferrer">
-                                       <img src="{{ asset('assets/Nrcp_img/t5.png') }}" alt="img" rel="noopener noreferrer">
-                                    </a>
+                                  <div class="item a text-center">
+                                       <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter" rel="noopener noreferrer">
+                                          <img src="{{ asset('assets/Nrcp_img/t6.jpg') }}" alt="img" rel="noopener noreferrer">
+                                       </a>
+                                    </div>
+
+                                  <div class="item a text-center">
+                                       <a href="https://twitter.com/nrcpmohfw" onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" target="_blank" title="Twitter" rel="noopener noreferrer">
+                                          <img src="{{ asset('assets/Nrcp_img/t5.png') }}" alt="img" rel="noopener noreferrer">
+                                       </a>
                                     </div>
 
                                    <div class="item a text-center">

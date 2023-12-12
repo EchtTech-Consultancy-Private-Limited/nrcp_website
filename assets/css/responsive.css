@@ -2521,6 +2521,8 @@ h6.sub-text-b-l {
         width: 80%;
     }
 
+    .rs-blog.main-home .blog-item .blog-content.b-t .title{width: 300px !important;}
+
       .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {
         font: normal normal 14px/30px Poppins;
     }
@@ -4768,6 +4770,8 @@ h6.sub-text-b-l {
     .rs-inner-blog .widget-area .recent-posts-widget .show-featured .post-img {
         margin-bottom: 15px;
     }
+
+    .rs-blog.main-home .blog-item .blog-content.b-t .title{width: 300px !important;}
 }
 
 

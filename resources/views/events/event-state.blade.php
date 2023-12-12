@@ -9,7 +9,7 @@
     {{ __('State Event') }}
 @endsection
 @section('content')
-<div class="event-page-section pt-80 pb-100 md-pt-70 md-pb-70">
+<div class="event-page-section pt-60 pb-40 md-pt-70 md-pb-70">
     <div class="container">
         <div class="row">
             <section class="rs-blog main-home">
@@ -24,9 +24,9 @@
                                 <div class="image-part">
                                     <img src="{{ asset('resources/uploads/EventsManagement/'.$datas->eventImags[0]->public_url) }}" alt="">
                                 </div>
-                                <div class="blog-content">                                       
+                                <div class="blog-content b-t">                                       
                                     <h3 class="title">
-                                        <a href="{{ url($type.'/event-details/'.$datas->event->uid) }}">{{ $datas->event->title_name_en }}</a>
+                                        <a href="{{ url($type.'/event-details/'.$datas->event->uid) }}" title="{{ $datas->event->title_name_en }}">{{ $datas->event->title_name_en }}</a>
                                     </h3>
                                     <!-- <div class="desc">
                                         {!! $datas->event->description_en  !!}

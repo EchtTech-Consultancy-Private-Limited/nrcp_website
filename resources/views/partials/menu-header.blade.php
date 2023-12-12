@@ -49,7 +49,7 @@
                             <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
                                 data-toggle="modal" data-target="#vaccination"
                                 style="border: solid 4px; display: block !important">
-                                <span> Have you Bitten by an Animal? </span> <br>
+                                <span class="blink"> Have you Bitten by an Animal? </span> <br>
                                 Know your Rabies Vaccination Schedule
                             </a>
                         </li>
