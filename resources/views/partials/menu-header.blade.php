@@ -3,8 +3,8 @@
         <div class="logo-cat-wrap">
             <div class="logo-part">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
-                    <img src="{{ asset(config('constants.brand.default_logo')) }}" alt="" rel="noopener noreferrer"
-                        class="logo logo1">
+                    {{-- <img src="{{ asset(config('constants.brand.default_logo')) }}" alt="" rel="noopener noreferrer"
+                        class="logo logo1"> --}}
                     <div class="pl-2">
                         <h2 class="title black-color logo-text">National Rabies Control Program</h2>
                         <h5 class="sub-text-l">National Center for Disease control</h5>
@@ -239,6 +239,7 @@
                                             </ul>
                                         </li>
                                     @endif
+                                    
                                     <!-- //.nav-menu -->
                             </nav>
                             <!-- //.nav-menu -->
