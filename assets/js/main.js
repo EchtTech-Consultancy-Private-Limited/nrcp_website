@@ -779,7 +779,7 @@ $('.myslider').slick({
         $('.calculate_dosse').html(`
         <h3>Calculated Dosage of ERIG is: 
             <span class="dose_unit">
-                <span>${total}</span> IU per kg body weight
+                <span id='dosageValue'>${total}</span> IU per kg body weight
             </span>
         </h3>
     `);
