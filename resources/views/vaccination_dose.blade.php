@@ -14,7 +14,9 @@
         padding: 0;
     } */
 
-    .esriPopup .titleButton.close{top: 11px;}
+    .esriPopup .titleButton.close {
+        top: 11px;
+    }
 </style>
 {{-- map js --}}
 
@@ -209,68 +211,85 @@
                                 <div class="tab-pane fade" id="master-layout_4" role="tabpanel"
                                     aria-labelledby="Master_layout_4">
                                     <div id="rs-popular-courses" class="rs-popular-courses style1 modify1">
-                                                <div class="container">
-                                                 <div class="sec-title6 title-78 text-center mb-20">
-                                                  <h2 class="title text-left">Know Your Dose</h2>
-                                               </div> 
+                                        <div class="container">
+                                            <div class="sec-title6 title-78 text-center mb-20">
+                                                <h2 class="title text-left">Know Your Dose</h2>
+                                            </div>
 
-                                                    <!-- ************************************************************************** -->
+                                            <!-- ************************************************************************** -->
 
 
-                                                    <div class="sec-bg-white vaccination-tab">
-                                                    <div class="row nearest-vaccication">
+                                            <div class="sec-bg-white vaccination-tab">
+                                                <div class="row nearest-vaccication">
 
-                                                        <div class="col-lg-12 col-md-12 ">
-                                                            <div class="row">
-                                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12 col-md-12 ">
+                                                        <div class="row">
+                                                            <div class="col-lg-12">
                                                                 <form method="get" action="">
-                                                                <div class="search-widget mb-20">
-                                                                    <div class="row">
-                                                                        <div class="col-lg-8 row align-items-center">
-                                                                            <label for="" class="col-md-5 mb-0 some-bold-l">Enter Weight of Patient : </label>
-                                                                            <input type="number" id="calculate" class="form-control col-md-6" placeholder="Enter Weight">
-                                                                        </div>
-                                                                        <div class="col-lg-4">
-                                                                        <div class="radio-btn-box pt-7">
-                                                                        <div class="d-flex">
-                                                                            <input type="radio" id="Equine" name="RIG" class="form-control radio RIG" value="40">
-                                                                            <label for="Equine">Equine RIG</label>
-                                                                        </div>
-                                                                           
-                                                                          <div class="d-flex">
-                                                                             <input type="radio" id="Human" name="RIG" class="form-control radio RIG" value="20">
-                                                                             <label for="Human">Human RIG</label>
-                                                                          </div>
-                                                                        </div>
-                                                                        </div>
+                                                                    <div class="search-widget mb-20">
+                                                                        <div class="row">
+                                                                            <div class="col-lg-8 row align-items-center">
+                                                                                <label for=""
+                                                                                    class="col-md-5 mb-0 some-bold-l">Enter
+                                                                                    Weight of Patient : </label>
+                                                                                <input type="number" id="calculate"
+                                                                                    class="form-control col-md-6" required
+                                                                                    placeholder="Enter Weight">
+                                                                            </div>
+                                                                            <div class="col-lg-4">
+                                                                                <div class="radio-btn-box pt-7">
+                                                                                    <div class="d-flex">
+                                                                                        <input type="radio" 
+                                                                                            id="Equine" name="RIG"
+                                                                                            class="form-control radio RIG"
+                                                                                            value="40">
+                                                                                        <label for="Equine">Equine
+                                                                                            RIG</label>
+                                                                                    </div>
 
-                                                                        <div class="col-lg-12">
-                                                                            <div class="btn-part view-all-btn mt-30 mt-smm-0">
-                                                                                <button class="readon2 vaccination-btn mod mb-0" id="calculate" onclick="fun()" type="button">Calculate Dose</button>
+                                                                                    <div class="d-flex">
+                                                                                        <input type="radio"
+                                                                                            id="Human" name="RIG"
+                                                                                            class="form-control radio RIG"
+                                                                                            value="20">
+                                                                                        <label for="Human">Human
+                                                                                            RIG</label>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-lg-12">
+                                                                                <div
+                                                                                    class="btn-part view-all-btn mt-30 mt-smm-0">
+                                                                                    <button
+                                                                                        class="readon2 vaccination-btn mod mb-0"
+                                                                                        id="calculate" onclick="fun()"
+                                                                                        type="button">Calculate
+                                                                                        Dose</button>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
+
                                                                     </div>
+                                                                </form>
 
+                                                                <div class="calculate_dosse">
+                                                                    
                                                                 </div>
-                                                            </form>
-
-                                                             <div class="calculate_dosse">
-                                                                   <h3>Calculated Dosage of ERIG is:  <span class="dose_unit"> <span id="dosageValue"></span> IU per kg body weight</span></h3>
-                                                             </div>
-                                                           
 
 
-                                                                </div>
-                                                               
+
                                                             </div>
+
                                                         </div>
                                                     </div>
-
-                                                    </div>
-                                                    <!-- ********************************************************************* -->
-
                                                 </div>
+
                                             </div>
+                                            <!-- ********************************************************************* -->
+
+                                        </div>
+                                    </div>
 
                                 </div>
 
@@ -530,8 +549,8 @@
                                                                 <div class="row">
                                                                     <div class="col-lg-12">
                                                                         <!-- <div class="map">
-                                                                                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe>
-                                                                                                        </div> -->
+                                                                                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe>
+                                                                                                            </div> -->
                                                                         <div id="newMapH"></div>
                                                                     </div>
 
@@ -630,7 +649,7 @@
                                                                                 <div class="search-widget mb-20">
                                                                                     <div class="row">
                                                                                         <div class="col-lg-5">
-                                                                                            
+
                                                                                             <select name="state"
                                                                                                 id="stateA"
                                                                                                 class="form-control"
@@ -658,7 +677,7 @@
                                                                                                 </select>
                                                                                             </div>
                                                                                         </div>
-                                                                                        
+
                                                                                         <div class="col-lg-2">
                                                                                             <div
                                                                                                 class="btn-part view-all-btn ">
@@ -697,9 +716,9 @@
                                                                             {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe> --}}
 
                                                                             <div id="newMapA"></div>
-                                                                          
+
                                                                         </div>
-                                                                
+
                                                                     </div>
 
                                                                 </div>
@@ -764,9 +783,5 @@
         </div>
     </div>
 
-<script>
- 
     
-   
-</script>
 @endsection
