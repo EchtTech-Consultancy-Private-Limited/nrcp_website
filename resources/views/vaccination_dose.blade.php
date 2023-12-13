@@ -228,7 +228,7 @@
                                                                     <div class="row">
                                                                         <div class="col-lg-8 row align-items-center">
                                                                             <label for="" class="col-md-5 mb-0 some-bold-l">Enter Weight of Patient : </label>
-                                                                            <input type="text" id="calculate" class="form-control col-md-6" placeholder="Enter Weight">
+                                                                            <input type="number" id="calculate" class="form-control col-md-6" placeholder="Enter Weight">
                                                                         </div>
                                                                         <div class="col-lg-4">
                                                                         <div class="radio-btn-box pt-7">
@@ -246,7 +246,7 @@
 
                                                                         <div class="col-lg-12">
                                                                             <div class="btn-part view-all-btn mt-30 mt-smm-0">
-                                                                                <button class="readon2 vaccination-btn mod mb-0" id="calculate" onclick="fun()" type="button">Calculate Dosage</button>
+                                                                                <button class="readon2 vaccination-btn mod mb-0" id="calculate" onclick="fun()" type="button">Calculate Dose</button>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -254,8 +254,10 @@
                                                                 </div>
                                                             </form>
 
-
-                                                            <h3>Calculated Dosage of ERIG is: <span id="dosageValue"></span> IU, i.e., 7 mL</h3>
+                                                             <div class="calculate_dosse">
+                                                                   <h3>Calculated Dosage of ERIG is:  <span class="dose_unit"> <span id="dosageValue"></span> IU per kg body weight</span></h3>
+                                                             </div>
+                                                           
 
 
                                                                 </div>

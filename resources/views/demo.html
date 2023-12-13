@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/2.1.99/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Roboto', sans-serif;
+        }
+
+
+        .card-container {
+            width: 300px;
+            height: 440px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin: auto;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card-image img {
+            height: 220px;
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            background-size: cover;
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 16px;
+            min-height: 200px;
+        }
+
+        .card-badge {
+            text-transform: uppercase;
+            background-color: #fff;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 70px;
+            margin: 0;
+            font-size: 12px;
+        }
+
+        .card-badge-blue {
+            background-color: #92d4e4;
+        }
+
+        .card-badge-purple {
+            background-color: #3d1d94;
+        }
+
+        .card-badge-pink {
+            background-color: #c62bcb;
+        }
+
+        .card-body h1 {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            margin: 8px 0 16px 0;
+        }
+
+        .card-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .card-author p {
+            margin: 0 16px;
+            font-size: 12px;
+        }
+
+        .card-author p:last-child {
+            color: #888;
+        }
+
+        .card-author img {
+            border-radius: 50%;
+            height: 48px;
+            width: 48px;
+            margin-top: auto;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /*Carousel Gallery*/
+        .carousel-gallery {
+            margin: 50px 0;
+            padding: 0 30px;
+        }
+
+        .carousel-gallery .swiper-slide a {
+            display: block;
+            width: 100%;
+            height: 200px;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            -webkit-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 3px 2px 20px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel-gallery .swiper-slide a:hover .image .overlay {
+            opacity: 1;
+        }
+
+        .carousel-gallery .swiper-slide a .image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .carousel-gallery .swiper-slide a .image .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(20, 20, 20, 0.8);
+            text-align: center;
+            opacity: 0;
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+
+        .carousel-gallery .swiper-slide a .image .overlay em {
+            color: #fff;
+            font-size: 26px;
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            display: inline-block;
+        }
+
+        .carousel-gallery .swiper-pagination {
+            position: relative;
+            bottom: auto;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .carousel-gallery .swiper-pagination .swiper-pagination-bullet {
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+
+        .carousel-gallery .swiper-pagination .swiper-pagination-bullet:hover {
+            opacity: 0.7;
+        }
+
+        .carousel-gallery .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+            background-color: #d63031;
+            transform: scale(1.1, 1.1);
+        }
+
+        /*# Carousel Gallery*/
+        .plugins {
+            text-align: center;
+        }
+
+        .plugins h3 {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            text-transform: uppercase;
+            color: #111;
+        }
+
+        .plugins a {
+            display: inline-block;
+            font-family: Arial;
+            color: #777;
+            font-size: 14px;
+            margin: 10px;
+            transition: all 0.2s linear;
+        }
+
+        .plugins a:hover {
+            color: #d63031;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Card Section -->
+
+    <section>
+     <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+               <div class="card-container">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="a brand new sports car" />
+                </div>
+                <div class="card-body">
+                    <span class="card-badge card-badge-blue">Car design</span>
+                    <h1>
+                        Why is the sports cars so well designed?
+                    </h1>
+                    <p class="card-subtitle">
+                        An exploration into the car design industry and how it works
+                    </p>
+                    <div class="card-author">
+                        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="author avatar" />
+                        <div class="author-info">
+                            <p class="author-name">John Doe</p>
+                            <p class="post-timestamp">2h ago</p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card-container">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1504728078670-d0a59873c8c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                        alt="a landscape view full of baloons" />
+                </div>
+                <div class="card-body">
+                    <span class="card-badge card-badge-purple">Adventure</span>
+                    <h1>
+                        Discover new adventures over the world
+                    </h1>
+                    <p class="card-subtitle">
+                        Adventure and baloons are trends these days
+                    </p>
+                    <div class="card-author">
+                        <img src="https://images.unsplash.com/photo-1504728078670-d0a59873c8c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                            alt="author avatar" />
+                        <div class="author-info">
+                            <p class="author-name">John Doe</p>
+                            <p class="post-timestamp">2h ago</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card-container">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1506422748879-887454f9cdff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                        alt="a city full of buildings" />
+                </div>
+                <div class="card-body">
+                    <span class="card-badge card-badge-pink">Engineering</span>
+                    <h1>
+                        Living in downtown in the biggest cities
+                    </h1>
+                    <p class="card-subtitle">
+                        Citizens of the biggest cities in the world talk about their lives
+                    </p>
+                    <div class="card-author">
+                        <img src="https://images.unsplash.com/photo-1506422748879-887454f9cdff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                            alt="author avatar" />
+                        <div class="author-info">
+                            <p>John Doe</p>
+                            <p>2h ago</p>
+                        </div>
+                    </div>
+                    </div>        
+                </div>
+            </div>
+          </div>
+     </div>
+    </section>
+
+    <!-- Card Section End -->
+
+ <section class="container">
+     <div class="row">
+        <div class="col-md-12">
+              <!-- Carausel section start -->
+    <!--Carousel Gallery-->
+    <div class="carousel-gallery">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="https://images.pexels.com/photos/48794/boy-walking-teddy-bear-child-48794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        data-fancybox="gallery">
+                        <div class="image"
+                            style="background-image: url(https://images.pexels.com/photos/48794/boy-walking-teddy-bear-child-48794.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                            <div class="overlay">
+                                <em class="mdi mdi-magnify-plus"></em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        data-fancybox="gallery">
+                        <div class="image"
+                            style="background-image: url(https://images.pexels.com/photos/248280/pexels-photo-248280.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                            <div class="overlay">
+                                <em class="mdi mdi-magnify-plus"></em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        data-fancybox="gallery">
+                        <div class="image"
+                            style="background-image: url(https://images.pexels.com/photos/89095/pexels-photo-89095.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                            <div class="overlay">
+                                <em class="mdi mdi-magnify-plus"></em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        data-fancybox="gallery">
+                        <div class="image"
+                            style="background-image: url(https://images.pexels.com/photos/669319/pexels-photo-669319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                            <div class="overlay">
+                                <em class="mdi mdi-magnify-plus"></em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        data-fancybox="gallery">
+                        <div class="image"
+                            style="background-image: url(https://images.pexels.com/photos/277477/pexels-photo-277477.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                            <div class="overlay">
+                                <em class="mdi mdi-magnify-plus"></em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://images.pexels.com/photos/928276/pexels-photo-928276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        data-fancybox="gallery">
+                        <div class="image"
+                            style="background-image: url(https://images.pexels.com/photos/928276/pexels-photo-928276.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500)">
+                            <div class="overlay">
+                                <em class="mdi mdi-magnify-plus"></em>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--#Carousel Gallery-->
+    <!-- Carausel section End -->
+        </div>
+     </div>
+ </section>
+
+    <script>
+        $(function () {
+
+            var swiper = new Swiper('.carousel-gallery .swiper-container', {
+                effect: 'slide',
+                speed: 900,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                simulateTouch: true,
+                autoplay: {
+                    delay: 5000,
+                    stopOnLastSlide: false,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: '.carousel-gallery .swiper-pagination',
+                    clickable: true
+                },
+                breakpoints: {
+                    // when window width is <= 320px
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 5
+                    },
+                    // when window width is <= 480px
+                    425: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+                    // when window width is <= 640px
+                    768: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    }
+                }
+            }); 
+
+
+        });
+    </script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src=""></script>
+
+</body>
+
+</html>
