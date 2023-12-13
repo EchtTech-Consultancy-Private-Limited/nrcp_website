@@ -749,5 +749,44 @@ $('.myslider').slick({
     speed: 100000,
         
     });
-        
+
+
    
+        
+   function fun(){
+
+   
+    var calculate =  $('#calculate').val();
+    var selectedRIG = $('input[name="RIG"]:checked').val();
+    
+    if (calculate.trim() === ''  ||  !selectedRIG ) {
+         
+        if (calculate.trim() === '' ) {
+            alert('Weight of Patient is blank ');
+          $('.dose_unit').hide();
+        }
+
+        if (!selectedRIG ) {
+            alert('RIG is blank ');
+           
+        }
+
+
+    } else {
+         
+        var total = calculate * selectedRIG;
+
+        $('.calculate_dosse').html(`
+        <h3>Calculated Dosage of ERIG is: 
+            <span class="dose_unit">
+                <span id='dosageValue'>${total}</span> IU per kg body weight
+            </span>
+        </h3>
+    `);
+        
+     
+    }
+
+        
+
+   }

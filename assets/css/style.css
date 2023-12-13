@@ -20596,3 +20596,20 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   letter-spacing: 0.2px;
   font-size: 15px;
 }
+
+
+.calculate_dosse h3{
+  font-size: 21px;
+}
+
+.calculate_dosse .dose_unit {
+  font-size: 19px;
+  font-weight: 700;
+  background: #f2f4ff;
+  padding: 0 8px;
+  border-radius: 5px;
+}
+
+.calculate_dosse #dosageValue {
+  color: red;
+}
