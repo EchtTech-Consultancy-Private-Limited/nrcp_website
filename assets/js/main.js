@@ -801,10 +801,10 @@ function fun() {
 
 }
 
-
-$(document).ready(function () {
-    alert('hii');
-    $('#master-layout_0').removeClass('active show');
-});
-
-
+function printDiv(newMapA) {
+    var printContents = document.getElementById(newMapA).innerHTML;
+    var originalContents = document.body.innerHTML;
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = originalContents;
+}    
