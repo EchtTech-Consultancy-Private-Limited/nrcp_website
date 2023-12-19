@@ -365,7 +365,7 @@ $(function(){
     $('#txtDate1').attr('max', maxDate);
 });
 
-    function ctime(){
+function ctime(){
     if (!document.getElementById)
     return
     timeElement=document.getElementById("timeid")
