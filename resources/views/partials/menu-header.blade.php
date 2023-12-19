@@ -9,10 +9,10 @@
                     <div class="pl-2">
                         <h2 class="title black-color logo-text">National Rabies Control Program</h2>
                         <h5 class="sub-text-l">National Center for Disease control</h5>
-                        <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
+                        <!-- <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
                             Ministry of Health & Family Welfare, <br>
                             Government of India
-                        </h6>
+                        </h6> -->
                     </div>
                 </a>
             </div>
@@ -32,11 +32,11 @@
                             <div class="mobile-number-box pulse">
 
                                 <a href="tel:01206025400" class="phone-number blink"> Rabies Help line No :
-                                    01206025400</a>
+                                  <i class="fa fa-phone"></i>  01206025400</a>
                             </div>
                         </li>
                         <li tabindex="1">
-                            <div class="top-header-logo">
+                            <!-- <div class="top-header-logo">
                                 <a href="https://swachhbharat.mygov.in/" target="_blank" rel="noopener noreferrer"
                                     class="top-logo">
                                     <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
@@ -46,7 +46,7 @@
                                     class="top-logo">
                                     <img src="{{ asset('assets/Nrcp_img/g20.png') }}" rel="noopener noreferrer">
                                 </a>
-                            </div>
+                            </div> -->
                             <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
                                 data-toggle="modal" data-target="#vaccination"
                                 style="border: solid 4px; display: block !important">
