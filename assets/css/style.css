@@ -2317,9 +2317,9 @@ ul.listing-style.modify li:before {
 .full-width-header .rs-header .menu-area .logo-cat-wrap {
   display: flex;
   align-items: center;
-  height: 125px;
+  height: 160px;
   line-height: 120px;
-  justify-content: left;
+  justify-content: right;
 }
 
 .full-width-header .rs-header .menu-area .logo-cat-wrap .categories-btn .cat-menu-inner {
@@ -19000,7 +19000,7 @@ form:invalid+button {
 }
 
 h2.title.black-color.logo-text {
-  font: normal normal bold 18px/28px Tahoma;
+  font: normal normal bold 30px/50px Tahoma;
   letter-spacing: 0px;
   color: #3F51B5;
   opacity: 1;
@@ -19019,12 +19019,12 @@ h2.title.black-color.logo-text {
 }
 
 .full-width-header .rs-header .logo-part img {
-    height: 90px !important;
+    height: 128px !important;
     padding-right: 5px;
 }
 
 .full-width-header .rs-header .logo-part.mobile-logo-s img{
-  height: 90px !important;
+  height: 128px !important;
   padding-left: 10px;
   padding-right: 0px !important;
   margin-top: 0px;
@@ -19037,7 +19037,7 @@ h2.title.black-color.logo-text {
 .top-menu-box a.text-vaccination {
   background: #92271d 0% 0% no-repeat padding-box;
   border-radius: 21px;
-  font: normal normal 15px/20px Poppins;
+  font: normal normal 14px/18px Poppins;
   font-weight: 500;
   color: #fff;
   padding: 10px 18px;
@@ -19053,8 +19053,9 @@ a.text-vaccination.pulse span {
 .top-menu-box ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
+  justify-content:space-between;
   align-items: center;
+  margin-top: 10px;
 }
 
 .top-menu-box ul li {
@@ -19163,7 +19164,7 @@ div#rs-about {
 
 h5.sub-text-l {
   text-align: left;
-  font: normal normal normal 18px/27px Tahoma;
+  font: normal normal normal 20px/25px Tahoma;
   letter-spacing: 0px;
   color: #404040;
   opacity: 1;
@@ -20530,7 +20531,7 @@ list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  font: normal normal 15px/20px Poppins;
+  font: normal normal 14px/18px Poppins;
   color: #fff;
   font-weight: 500;
 }

@@ -802,9 +802,3 @@ function fun() {
 }
 
 
-$(document).ready(function () {
-    alert('hii');
-    $('#master-layout_0').removeClass('active show');
-});
-
-
