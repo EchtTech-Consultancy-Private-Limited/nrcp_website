@@ -1,24 +1,16 @@
 <div class="row y-middle">
-    <div class="col-lg-4">
+    <div class="col-lg-1">
         <div class="logo-cat-wrap">
             <div class="logo-part">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
 
-                    <img src="{{ asset(config('constants.brand.default_logo')) }}" alt="" rel="noopener noreferrer" class="logo logo1">
-                    
-                    <div class="pl-2">
-                        <h2 class="title black-color logo-text">National Rabies Control Program</h2>
-                        <h5 class="sub-text-l">National Center for Disease control</h5>
-                        <!-- <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
-                            Ministry of Health & Family Welfare, <br>
-                            Government of India
-                        </h6> -->
-                    </div>
+                    <img src="{{ asset(config('constants.brand.default_logo')) }}" alt="" rel="noopener noreferrer" class="logo logo1">                    
+                   
                 </a>
             </div>
         </div>
     </div>
-    <div class="col-lg-8 text-lg-left pl-0 pr-0">
+    <div class="col-lg-9 text-lg-left pl-0 pr-0">
         <div class="rs-menu-area">
             <div class="main-menu">
                 <div class="mobile-menu">
@@ -27,6 +19,16 @@
                     </a>
                 </div>
                 <div class="top-menu-box">
+                    <div class="main-text-logo">
+                    <div class="pl-2 text-center">
+                        <h2 class="title black-color logo-text">National Rabies Control Program</h2>
+                        <h5 class="sub-text-l text-center">National Center for Disease control</h5>
+                        <!-- <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
+                            Ministry of Health & Family Welfare, <br>
+                            Government of India
+                        </h6> -->
+                    </div>
+                    </div>
                     <ul>
                         <li tabindex="1">
                             <div class="mobile-number-box pulse">
@@ -54,22 +56,9 @@
                                 Know your Rabies Vaccination Schedule
                             </a>
                         </li>
-                        <li tabindex="1">
-                            <div class="logo-cat-wrap right-h">
-                                <div class="logo-part mobile-logo-s">
-                                    <a href="{{ url('/') }}" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt=""
-                                            class="logo logo2" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
-                                            class="logo logo1 d-none" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
+                        <!-- <li tabindex="1">
+                           
+                        </li> -->
                         {{-- 
                   <li class="d-xs-none">
                      <a href="javascript:void();" class="top-logo">
@@ -85,6 +74,22 @@
             </div>
             <!-- //.main-menu -->
         </div>
+    </div>
+    <div class="col-lg-2 text-lg-left pl-0 pr-0">
+    <div class="logo-cat-wrap right-h">
+                                <div class="logo-part mobile-logo-s">
+                                    <a href="{{ url('/') }}" rel="noopener noreferrer">
+                                        <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt=""
+                                            class="logo logo2" rel="noopener noreferrer">
+                                        <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
+                                            class="logo logo1 d-none" rel="noopener noreferrer">
+                                        <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
+                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
+                                        <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
+                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
+                                    </a>
+                                </div>
+                            </div>      
     </div>
 </div>
 </div>
