@@ -19019,7 +19019,7 @@ h2.title.black-color.logo-text {
 }
 
 .full-width-header .rs-header .logo-part img {
-    height: 105px !important;
+    height: 90px !important;
     padding-right: 5px;
 }
 
@@ -19027,7 +19027,7 @@ h2.title.black-color.logo-text {
   height: 90px !important;
   padding-left: 10px;
   padding-right: 0px !important;
-  margin-top: 8px;
+  margin-top: 0px;
 }
 
 .top-menu-box {
@@ -20525,7 +20525,7 @@ list-style-type: none;
   padding: 0px 22px;
   border-radius: 21px;
   background: #92271d;
-  margin-top: 45px;
+  /* margin-top: 45px; */
   height: 54px;
   display: flex;
   justify-content: center;

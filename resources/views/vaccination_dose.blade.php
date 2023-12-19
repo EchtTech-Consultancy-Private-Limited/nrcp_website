@@ -653,7 +653,7 @@
                                                         <div class="tab-content" id="myTabContent">
                                                             <div class="tab-pane fade show active" id="district3"
                                                                 role="tabpanel" aria-labelledby="district-tab3">
-                                                                <div class="row  nearest-vaccication">
+                                                                <div class="nearest-vaccication">
                                                                     <div class="row">
                                                                         <div class="col-lg-12">
                                                                             <form method="get" action="">
@@ -721,6 +721,9 @@
                                                             <div class="tab-pane fade" id="map3" role="tabpanel"
                                                                 aria-labelledby="map-tab3">
                                                                 <div class="row">
+                                                                <div class="col-md-12 btn-part view-all-btn mb-3">                                                                   
+                                                                    <a class="readon2 mod float-right mt-0" href="javascript:void();" rel="noopener noreferrer" tabindex="0" onclick="printDiv()" id="btn-print-map"><i class="fa fa-print"></i> Print</a>
+                                                                </div>
                                                                     <div class="col-lg-12">
                                                                         <div class="map">
 
@@ -778,8 +781,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                         <div class="tab-pane fade" id="sub-tab2-content" role="tabpanel"
                                             aria-labelledby="sub-tab2">tab2</div>
@@ -795,7 +796,16 @@
     </div>
 
 
-    
 
-  
+    <script>
+        function printDiv(newMapA) {
+            var printContents = document.getElementById(newMapA).innerHTML;
+            var originalContents = document.body.innerHTML;
+            document.body.innerHTML = printContents;
+            window.print();
+            document.body.innerHTML = originalContents;
+        }    
+    </script>
+
+
 @endsection
