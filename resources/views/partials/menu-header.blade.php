@@ -1,11 +1,18 @@
-<div class="row y-middle">
-    <div class="col-lg-1">
+<div class="row y-middle ptb-d-20">
+    <div class="col-lg-1 pr-0">
         <div class="logo-cat-wrap">
             <div class="logo-part">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
 
                     <img src="{{ asset(config('constants.brand.default_logo')) }}" alt="" rel="noopener noreferrer" class="logo logo1">                    
-                   
+                    <div class="pl-2 text-center d-none d-xs-block">
+                        <h2 class="title black-color logo-text">National Rabies Control Program</h2>
+                        <h5 class="sub-text-l text-center">National Center for Disease control</h5>
+                        <!-- <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
+                            Ministry of Health & Family Welfare, <br>
+                            Government of India
+                        </h6> -->
+                    </div>
                 </a>
             </div>
         </div>
@@ -20,7 +27,7 @@
                 </div>
                 <div class="top-menu-box">
                     <div class="main-text-logo">
-                    <div class="pl-2 text-center">
+                    <div class="pl-2 text-center d-xs-none">
                         <h2 class="title black-color logo-text">National Rabies Control Program</h2>
                         <h5 class="sub-text-l text-center">National Center for Disease control</h5>
                         <!-- <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
@@ -81,12 +88,12 @@
                                     <a href="{{ url('/') }}" rel="noopener noreferrer">
                                         <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt=""
                                             class="logo logo2" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
+                                        <!-- <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
                                             class="logo logo1 d-none" rel="noopener noreferrer">
                                         <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
                                             class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
                                         <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
+                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer"> -->
                                     </a>
                                 </div>
                             </div>      
