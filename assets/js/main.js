@@ -794,11 +794,7 @@ function fun() {
             </span>
         </h3>
     `);
-
-
     }
-
-
 }
 
 function printDiv(newMapA) {
