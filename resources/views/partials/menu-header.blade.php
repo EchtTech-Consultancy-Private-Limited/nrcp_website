@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-9 text-lg-left pl-0 pr-0">
+    <div class="col-lg-9 text-lg-left pr-0">
         <div class="rs-menu-area">
             <div class="main-menu">
                 <div class="mobile-menu">
