@@ -3022,8 +3022,8 @@ ul.listing-style.modify li:before {
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area {
-  /* background: #ffffff !important; */
-  background: #4e0b05 !important;
+  background: #ffffff !important;
+  /* background: #4e0b05 !important; */
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area {
@@ -3109,7 +3109,8 @@ ul.listing-style.modify li:before {
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area.sticky {
-  background: #4e0b05 !important;
+  /* background: #4e0b05 !important; */
+  background: #fff ;
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area.sticky .logo-cat-wrap {
@@ -19003,7 +19004,7 @@ form:invalid+button {
 h2.title.black-color.logo-text {
   font: normal normal bold 35px/62px Tahoma;
   letter-spacing: 0px;
-  color: #fff;
+  color:#3f51b5;
   opacity: 1;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -19041,11 +19042,11 @@ h2.title.black-color.logo-text {
 }
 
 .top-menu-box a.text-vaccination {
-  background: #fff 0% 0% no-repeat padding-box;
+  background: #870b00 0% 0% no-repeat padding-box;
   border-radius: 21px;
   font: normal normal 14px/18px Poppins;
   font-weight: 500;
-  color:#870b00;
+  color:#fff;
   padding: 10px 18px;
   text-align: center;
 }
@@ -19172,7 +19173,7 @@ h5.sub-text-l {
   text-align: left;
   font: normal normal normal 20px/25px Tahoma;
   letter-spacing: 0px;
-  color: #fff;
+  color: #000;
   opacity: 1;
   margin-bottom: 3px;
 }
@@ -20531,7 +20532,7 @@ list-style-type: none;
   border: 1px solid #92271d;
   padding: 0px 22px;
   border-radius: 21px;
-  background: #fff;
+  background: #870b00;
   /* margin-top: 45px; */
   height: 54px;
   display: flex;
@@ -20554,9 +20555,9 @@ list-style-type: none;
  }
  
  @keyframes blinker {  
-  0% { color: #870b00; }
-  50% { color: #870b00; }
-  100% { color: #fff; }
+  0% { color: #FFF; }
+  50% { color: #fff; }
+  100% { color: yellow; }
  }
 
  .sticky .mobile-number-box {

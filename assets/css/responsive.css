@@ -2086,6 +2086,7 @@ h6.sub-text-b-l {
         justify-content: space-between !important;
         width: 100% !important;
         padding-right: 15px;
+        padding-left: 23px;
     }
 
     .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a {
@@ -2528,10 +2529,9 @@ h6.sub-text-b-l {
 
     .top-menu-box {
         margin-right: 15px;
-        margin-top: 42px;
+        margin-top: 20px;
     }
-
-    .ptb-d-20 {
+    .ptb-d-20 { 
         padding: 6px 0;
     }
 
@@ -2632,6 +2632,14 @@ h6.sub-text-b-l {
         display: contents;
     }
 
+    .menu-area.menu-sticky .col-lg-9.text-lg-left.pr-0 {
+        padding-right: 15px !important;
+    }
+
+    a.text-vaccination.pulse span {
+        font-size: 14px;
+    }
+
     .rs-partner .partner-item a img{
         height: 80px;
     }
@@ -2684,8 +2692,8 @@ h6.sub-text-b-l {
     }
 
     .top-menu-box a.text-vaccination{
-        padding: 8px 25px;
-        font: normal normal 14px/20px Poppins;
+        padding: 8px 15px;
+        font: normal normal 13px/20px Poppins;
         text-align: center;
     }
 
