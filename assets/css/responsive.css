@@ -2535,6 +2535,8 @@ h6.sub-text-b-l {
         padding: 6px 0;
     }
 
+    .rs-cta.style7 .partition-bg-wrap{display: none;}
+
     .full-width-header .rs-header .logo-part img {
         height: 90px !important;
     }
