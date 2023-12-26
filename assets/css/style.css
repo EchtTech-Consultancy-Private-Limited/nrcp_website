@@ -3023,6 +3023,7 @@ ul.listing-style.modify li:before {
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area {
   background: #ffffff !important;
+  /* background: #4e0b05 !important; */
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area {
@@ -3036,8 +3037,8 @@ ul.listing-style.modify li:before {
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {
   color: #333333;
   font-weight: 500;
-  padding: 2px 20px 2px 19px;
-  margin-top: 8px;
+  padding: 2px 16px 2px 16px;
+  margin-top: 5px;
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li.menu-item-has-children a{padding: 2px 28px 2px 18px;}
@@ -3108,7 +3109,8 @@ ul.listing-style.modify li:before {
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area.sticky {
-  background: #ffffff !important;
+  /* background: #4e0b05 !important; */
+  background: #fff ;
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area.sticky .logo-cat-wrap {
@@ -14372,6 +14374,8 @@ span.courses.course-icon img {
 .rs-cta.style7 .partition-bg-wrap {
   background: none !important;
   position: relative;
+  border-bottom: 1px solid #fff;
+ 
 }
 
 .rs-cta.style7 .partition-bg-wrap:after,
@@ -14385,18 +14389,21 @@ span.courses.course-icon img {
 }
 
 .rs-cta.style7 .partition-bg-wrap:after {
-  background: url(assets/images/cta/home7/1.png);
+  /* background: url(assets/images/cta/home7/1.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background:#3f51b5;
 }
 
 .rs-cta.style7 .partition-bg-wrap:before {
-  background: url(assets/images/cta/home7/2.png);
+  /* background: url(assets/images/cta/home7/2.png); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   right: 0;
+  /* background: #870b00; */
+  background: #3f51b5;
 }
 
 .rs-cta.main-home .partition-bg-wrap {
@@ -19000,9 +19007,9 @@ form:invalid+button {
 }
 
 h2.title.black-color.logo-text {
-  font: normal normal bold 30px/50px Tahoma;
+  font: normal normal bold 45px/62px Tahoma;
   letter-spacing: 0px;
-  color: #3F51B5;
+  color:#3f51b5;
   opacity: 1;
   margin-bottom: 0px;
   padding-left: 0px;
@@ -19019,15 +19026,20 @@ h2.title.black-color.logo-text {
 }
 
 .full-width-header .rs-header .logo-part img {
-    height: 128px !important;
-    padding-right: 5px;
+  height: 155px !important;
+  padding-right: 0;
+  border-radius: 13px;
 }
 
 .full-width-header .rs-header .logo-part.mobile-logo-s img{
-  height: 128px !important;
-  padding-left: 10px;
-  padding-right: 0px !important;
-  margin-top: 0px;
+    height: 155px !important;
+    margin-top: 0px;
+    border-radius: 100%;   
+    padding: 0;
+}
+
+.menu-area.menu-sticky.sticky .ptb-d-20 {
+  padding: 6px 0;
 }
 
 .top-menu-box {
@@ -19035,13 +19047,14 @@ h2.title.black-color.logo-text {
 }
 
 .top-menu-box a.text-vaccination {
-  background: #92271d 0% 0% no-repeat padding-box;
+  background: #870b00 0% 0% no-repeat padding-box;
   border-radius: 21px;
   font: normal normal 14px/18px Poppins;
   font-weight: 500;
-  color: #fff;
+  color:#fff;
   padding: 10px 18px;
   text-align: center;
+  border: 1px solid #767373;
 }
 
 a.text-vaccination.pulse span {
@@ -19055,7 +19068,8 @@ a.text-vaccination.pulse span {
   flex-wrap: wrap;
   justify-content:space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  display: none;
 }
 
 .top-menu-box ul li {
@@ -19166,7 +19180,7 @@ h5.sub-text-l {
   text-align: left;
   font: normal normal normal 20px/25px Tahoma;
   letter-spacing: 0px;
-  color: #404040;
+  color: #000;
   opacity: 1;
   margin-bottom: 3px;
 }
@@ -20107,7 +20121,7 @@ a.sitemap-cl i.fa {
 }
 
 ul.nav-menu > li {
-  height: 60px;
+  height: 55px;
 }
 
 div#banner1 .owl-nav .owl-prev, div#banner1 .owl-nav .owl-next {
@@ -20525,7 +20539,7 @@ list-style-type: none;
   border: 1px solid #92271d;
   padding: 0px 22px;
   border-radius: 21px;
-  background: #92271d;
+  background: #870b00;
   /* margin-top: 45px; */
   height: 54px;
   display: flex;
@@ -20548,13 +20562,13 @@ list-style-type: none;
  }
  
  @keyframes blinker {  
-  0% { color: #d7d5d5; }
+  0% { color: #FFF; }
   50% { color: #fff; }
   100% { color: yellow; }
  }
 
  .sticky .mobile-number-box {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 
@@ -20614,3 +20628,10 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 .calculate_dosse #dosageValue {
   color: red;
 }
+.logo-cat-wrap.right-h {
+  justify-content: center !important;
+}
+
+.menu-area.menu-sticky.sticky .top-menu-box ul{display: none}
+
+.ptb-d-20{padding: 25px 0 32px;}

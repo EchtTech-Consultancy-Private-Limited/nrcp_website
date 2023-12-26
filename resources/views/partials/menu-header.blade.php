@@ -1,16 +1,23 @@
-<div class="row y-middle">
-    <div class="col-lg-1">
+<div class="row y-middle ptb-d-20">
+    <div class="col-lg-1 pr-0">
         <div class="logo-cat-wrap">
             <div class="logo-part">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
 
                     <img src="{{ asset(config('constants.brand.default_logo')) }}" alt="" rel="noopener noreferrer" class="logo logo1">                    
-                   
-                </a>
+                    <div class="pl-2 text-center d-none d-xs-block">
+                        <h2 class="title black-color logo-text">National Rabies Control Program</h2>
+                        <!-- <h5 class="sub-text-l text-center">National Center for Disease control</h5> -->
+                        <!-- <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
+                            Ministry of Health & Family Welfare, <br>
+                            Government of India
+                        </h6> -->
+                    </div>
+                </a> 
             </div>
         </div>
     </div>
-    <div class="col-lg-9 text-lg-left pl-0 pr-0">
+    <div class="col-lg-9 text-lg-left pr-0">
         <div class="rs-menu-area">
             <div class="main-menu">
                 <div class="mobile-menu">
@@ -20,9 +27,9 @@
                 </div>
                 <div class="top-menu-box">
                     <div class="main-text-logo">
-                    <div class="pl-2 text-center">
+                    <div class="pl-2 text-center d-xs-none">
                         <h2 class="title black-color logo-text">National Rabies Control Program</h2>
-                        <h5 class="sub-text-l text-center">National Center for Disease control</h5>
+                        <!-- <h5 class="sub-text-l text-center">National Center for Disease control</h5> -->
                         <!-- <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
                             Ministry of Health & Family Welfare, <br>
                             Government of India
@@ -60,15 +67,15 @@
                            
                         </li> -->
                         {{-- 
-                  <li class="d-xs-none">
-                     <a href="javascript:void();" class="top-logo">
-                     <img src="{{asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
-                     </a>
-                     <a href="javascript:void();" class="top-logo">
-                     <img src="{{asset('assets/Nrcp_img/g20.png') }}">
-                     </a>
-                  </li>
-                  --}}
+                         <li class="d-xs-none">
+                            <a href="javascript:void();" class="top-logo">
+                              <img src="{{asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
+                            </a>
+                            <a href="javascript:void();" class="top-logo">
+                            <img src="{{asset('assets/Nrcp_img/g20.png') }}">
+                            </a>
+                        </li>
+                        --}}
                     </ul>
                 </div>
             </div>
@@ -81,18 +88,47 @@
                                     <a href="{{ url('/') }}" rel="noopener noreferrer">
                                         <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt=""
                                             class="logo logo2" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
+                                        <!-- <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
                                             class="logo logo1 d-none" rel="noopener noreferrer">
                                         <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
                                             class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
                                         <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
+                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer"> -->
                                     </a>
                                 </div>
                             </div>      
-    </div>
-</div>
-</div>
+                         </div>
+                    </div>
+                </div>
+
+                <div class="rs-cta style7">
+                    <div class="partition-bg-wrap">
+                        <div class="container">
+                            <div class="row pt-10 md-pt-70 pb-10 md-pb-70">
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-4 pl-62 md-pl-15 col-md-12 md-pb-70">
+                                    <div class="mobile-number-box pulse">
+                                        <a href="tel:01206025400" class="phone-number blink" tabindex="0"> Rabies Help line No :
+                                            <i class="fa fa-phone"></i> 01206025400</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-1"></div>
+                                <div class="col-lg-4 pl-62 md-pl-15 col-md-12 md-pt-70">
+                                    <div class="top-menu-box">
+                                        <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
+                                            data-toggle="modal" data-target="#vaccination" style="display: block !important" tabindex="0">
+                                            <span class="blink"> Have you Bitten by an Animal? </span> <br>
+                                            Know your Rabies Vaccination Schedule
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 <div class="nav-bottom">
     <div class="container">
         <div class="row">
