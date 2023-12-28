@@ -13,7 +13,7 @@
       <meta property="og:url" content=""/>
       <meta property="og:site_name" content="CMS | Login" />
       <link rel="canonical" href=""/>
-      <link rel="shortcut icon" href="{{ asset(config('constants.default.favicon')) }}"/>
+      <link rel="shortcut icon" href="{{ asset('assets-cms/media/logos/favicon.ico') }}"/>
       <link href="{{ asset('assets-cms/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css"/>
       <link href="{{ asset('assets-cms/cms_css/style.bundle.css') }}" rel="stylesheet" type="text/css"/>
       <link href="{{ asset('assets-cms/cms_css/cms-css.css') }}" rel="stylesheet" type="text/css"/>
@@ -30,6 +30,13 @@
             background-image: url('{{ asset("assets-cms/media/auth/bg10-dark.jpg") }}');
             }
          </style>
+         <!-- <iframe 
+  src="https://theorg.com/org/echt-tech-consultancy-services-pvt-ltd/embed" 
+  width="100%" 
+  height="550px" 
+  frameBorder="0" 
+  style="border: 1px solid #eaeaeb; border-radius: 4px;"> 
+</iframe> -->
          <div class="d-flex flex-column flex-lg-row flex-column-fluid">
             <div class="d-flex flex-lg-row-fluid">
                <div class="d-flex flex-column flex-center pb-0 pb-lg-10 p-10 w-100">
