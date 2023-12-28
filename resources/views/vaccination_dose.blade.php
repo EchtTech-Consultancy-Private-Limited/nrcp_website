@@ -217,7 +217,7 @@
                                     <div id="rs-popular-courses" class="rs-popular-courses style1 modify1">
                                         <div class="container">
                                             <div class="sec-title6 title-78 text-center mb-20">
-                                                <h2 class="title text-left">Know Your Dose</h2>
+                                                <h2 class="title text-left">Know Your RIG Dose</h2>
                                             </div>
 
                                             <!-- ************************************************************************** -->
