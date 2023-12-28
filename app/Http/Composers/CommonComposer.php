@@ -36,7 +36,8 @@ class CommonComposer
         $visitCounter = DB::table('visiting_counters')->count();
         $footerMenu = DB::table('website_menu_management')->where('menu_place','1')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
         $toogleMenu = DB::table('website_menu_management')->where('menu_place','2')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
-        
+        $logo = DB::table('website_core_settings')->where('soft_delete', 0)->first();
+  //    dd($logo);
         $pageSlug = DB::table('website_menu_management')->where('url',request()->path())->first();
         if(!empty($pageSlug->uid)){
         $pageSlug1 = DB::table('website_menu_management')->where('uid',$pageSlug->parent_id)->first();
@@ -50,6 +51,7 @@ class CommonComposer
         $menuName = $this->getMenuTree($menus, 0);   
 
         $view->with(['headerMenu' => $menuName,
+        'logo'=>$logo,
         'social_media'=>$social_media,
         'footerMenu'=>$footerMenu,
         'toogleMenu'=>$toogleMenu,
