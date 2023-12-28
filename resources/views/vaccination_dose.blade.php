@@ -68,7 +68,7 @@
                                 <button class="nav-link " id="Master_layout_4" data-toggle="pill"
                                     data-target="#master-layout_4" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
-                                    Know Your Dose
+                                    Know Your RIG Dose
                                 </button>
                                 <button class="nav-link" id="Master_layout_1" data-toggle="pill"
                                     data-target="#master-layout_1" type="button" role="tab"
