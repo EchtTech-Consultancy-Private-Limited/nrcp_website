@@ -18788,6 +18788,7 @@ form #debt-amount-slider::before {
 form.font-item {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 form #debt-amount-slider input,
@@ -20687,3 +20688,8 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   font-weight: bold;
 }
  
+ ul.toolbar-sl-share.rs-inner-blog {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
