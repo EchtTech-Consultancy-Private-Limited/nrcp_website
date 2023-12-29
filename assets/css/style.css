@@ -18675,7 +18675,7 @@ color: #333;
 .switch input {
   opacity: 0;
   width: 0;
-  height: 0;
+  height: 19px;
 }
 
 .slider {
@@ -20688,8 +20688,8 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   font-weight: bold;
 }
  
- ul.toolbar-sl-share.rs-inner-blog {
+ /* ul.toolbar-sl-share.rs-inner-blog {
     display: flex;
     justify-content: right;
     align-items: center;
-}
+} */
