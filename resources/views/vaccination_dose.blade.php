@@ -410,7 +410,8 @@
 
 
                                                                 <div class="row">
-                                                                    <div class="col-lg-12">
+                                                                <a class="readon2 mod float-right mt-0 print-button" href="javascript:void();" rel="noopener noreferrer" tabindex="0" onclick="printContent('printMap1')" id="btn-print-map"><i class="fa fa-print"></i> Print</a>
+                                                                    <div class="col-lg-12" id="printMap1">
                                                                         <div class="map">
                                                                             {{-- <iframe
                                                                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin"
@@ -555,7 +556,8 @@
                                                                 aria-labelledby="map-tab2">
 
                                                                 <div class="row">
-                                                                    <div class="col-lg-12">
+                                                                <a class="readon2 mod float-right mt-0 print-button" href="javascript:void();" rel="noopener noreferrer" tabindex="0" onclick="printContent('printMap2')" id="btn-print-map"><i class="fa fa-print"></i> Print</a>
+                                                                    <div class="col-lg-12" id="printMap2">
                                                                         <!-- <div class="map">
                                                                                                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe>
                                                                                                             </div> -->
@@ -650,6 +652,7 @@
                                                             </li>
 
                                                         </ul>
+                                                       
                                                         <div class="tab-content" id="myTabContent">
                                                             <div class="tab-pane fade show active" id="district3"
                                                                 role="tabpanel" aria-labelledby="district-tab3">
@@ -693,7 +696,7 @@
                                                                                             <div
                                                                                                 class="btn-part view-all-btn ">
                                                                                                 <button
-                                                                                                    class="readon2 vaccination-btn mod mt-0 "
+                                                                                                    class="readon2 vaccination-btn mod mt-0 print-button"
                                                                                                     id="getSearchResultsA"
                                                                                                     type="button">Search</button>
                                                                                             </div>
@@ -721,10 +724,9 @@
                                                             <div class="tab-pane fade" id="map3" role="tabpanel"
                                                                 aria-labelledby="map-tab3">
                                                                 <div class="row">
-                                                                <div class="col-md-12 btn-part view-all-btn mb-3">                                                                   
-                                                                    <a class="readon2 mod float-right mt-0" href="javascript:void();" rel="noopener noreferrer" tabindex="0" onclick="printDiv()" id="btn-print-map"><i class="fa fa-print"></i> Print</a>
-                                                                </div>
-                                                                    <div class="col-lg-12">
+                                                                <a class="readon2 mod float-right mt-0 print-button" href="javascript:void();" rel="noopener noreferrer" tabindex="0" onclick="printContent('printMap3')" id="btn-print-map"><i class="fa fa-print"></i> Print</a>
+                                                                    <div class="col-lg-12" id="printMap3">
+                                                                        
                                                                         <div class="map">
 
                                                                             {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe> --}}

@@ -836,11 +836,30 @@ function fun() {
     }
 }
 
-function printDiv(newMapA) {
-    var printContents = document.getElementById(newMapA).innerHTML;
-    var originalContents = document.body.innerHTML;
-    document.body.innerHTML = printContents;
-    window.print();
-    document.body.innerHTML = originalContents;
-}    
+// function printDiv(newMapA) {
+//     var printContents = document.getElementById(newMapA).innerHTML;
+//     var originalContents = document.body.innerHTML;
+//     document.body.innerHTML = printContents;
+//     window.print();
+//     document.body.innerHTML = originalContents;
+// }    
 
+
+
+
+function printContent(printDivId) {
+    // Get the content of the element to be printed
+    var printContents = document.getElementById(printDivId).innerHTML;
+
+    // Save the current content of the body
+    var originalContents = document.body.innerHTML;
+
+    // Set the body content to the content to be printed
+    document.body.innerHTML = printContents;
+
+    // Print the content
+    window.print();
+
+    // Restore the original content of the body
+    document.body.innerHTML = originalContents;
+}
