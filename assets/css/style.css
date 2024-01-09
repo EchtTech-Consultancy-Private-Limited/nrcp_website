@@ -20957,3 +20957,15 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   z-index: -1;
   display: none;
 }
+
+.tab-pane.fade.active.show{
+  position: relative;
+}
+
+.print-button{
+  /* display: none; */
+  position: absolute;
+  top: -62px;
+  right: 0px;
+  padding: 6px 16px !important;
+}
