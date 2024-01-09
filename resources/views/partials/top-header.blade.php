@@ -2,7 +2,7 @@
          <div class="col-md-6 pr-0">
             <ul class="topbar-contact">
                <li class="datetime">
-                  <span class="timezone">{{ date('d F Y') }} 
+                  <span class="timezone">{{ date('d F Y') }}
                      <span id=timeid> </span>
                   </span>
                </li>
@@ -74,14 +74,11 @@
                <!-- </li> -->
                <!-- @endif -->
 
-            @endif  
-                
+            @endif
+
                <li><a href="{{ route('sitemap') }}" class="sitemap-cl" title="Site Map" rel="noopener noreferrer"><i class="fa fa-sitemap"></i></a>
                </li>
-            
+
             </ul>
          </div>
-      </div>   
-
-
-      
+      </div>
