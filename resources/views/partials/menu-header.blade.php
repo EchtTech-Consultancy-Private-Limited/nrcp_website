@@ -1,4 +1,4 @@
-<div class="row y-middle ptb-d-20">
+<div class="row y-middle ">
     <div class="col-lg-1 pr-0">
         <div class="logo-cat-wrap">
             <div class="logo-part">
@@ -14,12 +14,12 @@
                     @endif
 
                     <div class="pl-2 text-center d-none d-xs-block">
-                        <h2 class="title black-color logo-text">National Rabies Control Program</h2>
-                        <!-- <h5 class="sub-text-l text-center">National Center for Disease control</h5> -->
-                        <!-- <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
+                        <h2 class="title black-color text-center logo-text">National Rabies Control Program</h2>
+                        <h5 class="sub-text-l text-center">National Center for Disease control</h5>
+                        <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
                             Ministry of Health & Family Welfare, <br>
                             Government of India
-                        </h6> -->
+                        </h6>
                     </div>
                 </a>
             </div>
@@ -37,11 +37,11 @@
                     <div class="main-text-logo">
                         <div class="pl-2 text-center d-xs-none">
                             <h2 class="title black-color logo-text">National Rabies Control Program</h2>
-                            <!-- <h5 class="sub-text-l text-center">National Center for Disease control</h5> -->
-                            <!-- <h6 class="sub-text-b-l">Directorate General of Health Services,<br>
-                            Ministry of Health & Family Welfare, <br>
+                            <h5 class="sub-text-l text-center">National Center for Disease Control</h5>
+                            <h6 class="sub-text-b-l text-center">Directorate General of Health Services,<br>
+                            Ministry of Health & Family Welfare,
                             Government of India
-                        </h6> -->
+                        </h6>
                         </div>
                     </div>
                     <ul>
@@ -72,9 +72,9 @@
                             </a>
                         </li>
                         <!-- <li tabindex="1">
-                           
+
                         </li> -->
-                        {{-- 
+                        {{--
                          <li class="d-xs-none">
                             <a href="javascript:void();" class="top-logo">
                               <img src="{{asset('assets/Nrcp_img/Swach_Bharat.svg') }}">

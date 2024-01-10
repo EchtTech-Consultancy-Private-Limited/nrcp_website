@@ -3,6 +3,9 @@
 
 <head>
     @include('partials.head-css-scripts')
+
+ <style>
+    </style>
 </head>
 
 <body class="defult-home">
@@ -12,7 +15,7 @@
                <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="">
             </div>
          </div>
-      </div> -->
+         </div> -->
     <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
         <header id="rs-header" class="rs-header">
             <div class="topbar-area home11-topbar">
@@ -21,6 +24,10 @@
                 </div>
             </div>
             <div class="menu-area menu-sticky">
+                <!-- SVG-CONTENT-DISPLAY NONE -->
+                <div class="svg-cont" >
+                        <img src="{{URL::asset('assets/Nrcp_img/svg/blue-svg.png')}}" alt="NRCP">
+                </div>
                 <div class="container">
                     @include('partials.menu-header')
                 </div>
@@ -29,56 +36,8 @@
     </div>
     <div class="main-content">
         <!-- Slider Section Start -->
-        <div class="rs-slider style1">
-            <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="20" data-autoplay="true"
-                data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false"
-                data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1"
-                data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="1"
-                data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="1"
-                data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
-                data-md-device-dots="false" id="banner1">
-                @if(count($homebanner)>0)
-                @foreach($homebanner as $k=>$value)
-                <div class="slider-content">
-                    <div class="container-fluid px-0">
-                        <div class="row banner-mobile">
-                            <div class="col-lg-12 order-last p-0">
-                                <div class="img-part banner-image">
-                                    <img src="{{ asset('resources/uploads/banner/'.$value->public_url) }}"
-                                        alt="{{ $value->banner_title }}" rel="noopener noreferrer">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-                @else
-                <div class="slider-content">
-                    <div class="container-fluid px-0">
-                        <div class="row banner-mobile">
-                            <div class="col-lg-12 order-last p-0">
-                                <div class="img-part banner-image">
-                                    <img src="{{ asset(config('constants.brand.default_banner')) }}" alt="Banner"
-                                        rel="noopener noreferrer">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endif
-            </div>
-            <div class="btns">
-                <div class="customPreviousBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
-                <div class="customPause"><i class="fa fa-pause" aria-hidden="true"></i></div>
-                <div class="customPlay "><i class="fa fa-play" aria-hidden="true"></i></div>
-                <div class="customNextBtn"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-            </div>
-        </div>
         <!-- Banner Section End -->
-
-
         <!-- latest news section start   -->
-
         <section class="latest-news">
             <div class="container">
                 <div class="row">
@@ -89,47 +48,46 @@
                     </div>
                     <div class="col-lg-9 col-md-9">
                         <!-- <div class="rs-slider style1">
-                            <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="30"
-                                data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="9000"
-                                data-smart-speed="9000" data-dots="false" data-nav="false" data-nav-speed="false"
-                                data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
-                                data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
-                                data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
-                                data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
-                                data-md-device-dots="false" id="banner2">
-                                <div class="slider-content">
-                                    <div class="container-fluid px-0">
-                                        <div class="d-flex align-items-center latest-news-slider-content-text">
-                                            <a href="{{ asset('assets/Nrcp_img/WorldRabiesDayObservationReport.pdf') }}"
-                                                class="text-white" target="_blank" rel="noopener noreferrer">World
-                                                Rabies day 2023 Activities at National level</a>
-                                        </div>
+                        <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="30"
+                            data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="9000"
+                            data-smart-speed="9000" data-dots="false" data-nav="false" data-nav-speed="false"
+                            data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
+                            data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
+                            data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
+                            data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
+                            data-md-device-dots="false" id="banner2">
+                            <div class="slider-content">
+                                <div class="container-fluid px-0">
+                                    <div class="d-flex align-items-center latest-news-slider-content-text">
+                                        <a href="{{ asset('assets/Nrcp_img/WorldRabiesDayObservationReport.pdf') }}"
+                                            class="text-white" target="_blank" rel="noopener noreferrer">World
+                                            Rabies day 2023 Activities at National level</a>
                                     </div>
                                 </div>
-                                <div class="slider-content">
-                                    <div class="container-fluid px-0">
-                                        <div class="d-flex align-items-center latest-news-slider-content-text">
-                                            <p>We had celebrated World's Rabies Day on 28th Sept’2023 </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-content">
-                                    <div class="container-fluid px-0">
-                                        <div class="d-flex align-items-center latest-news-slider-content-text">
-                                            <p>NRCP Website will be launched soon.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="slider-content">
-                                    <div class="container-fluid px-0">
-                                        <div class="d-flex align-items-center latest-news-slider-content-text">
-                                            <p>NCDC Journal for One Health will be launched in December 2023 </p>
-                                        </div>
-                                    </div>
-                                </div>                               
                             </div>
+                            <div class="slider-content">
+                                <div class="container-fluid px-0">
+                                    <div class="d-flex align-items-center latest-news-slider-content-text">
+                                        <p>We had celebrated World's Rabies Day on 28th Sept’2023 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-content">
+                                <div class="container-fluid px-0">
+                                    <div class="d-flex align-items-center latest-news-slider-content-text">
+                                        <p>NRCP Website will be launched soon.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-content">
+                                <div class="container-fluid px-0">
+                                    <div class="d-flex align-items-center latest-news-slider-content-text">
+                                        <p>NCDC Journal for One Health will be launched in December 2023 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </div> -->
-
                         <div class="ticker_wrap">
                             <div class="ticker__viewport">
                                 <ul class="ticker__list" data-ticker="list" id="banner2">
@@ -138,20 +96,18 @@
                                             class="text-white" target="_blank" rel="noopener noreferrer">World
                                             Rabies day 2023 Activities at National level</a>
                                     </li>
-                                    <li class="ticker__item" data-ticker="item">                                        
-                                            We had celebrated World's Rabies Day on 28th Sept’2023         
+                                    <li class="ticker__item" data-ticker="item">
+                                        We had celebrated World's Rabies Day on 28th Sept’2023
                                     </li>
-
-                                    <li class="ticker__item" data-ticker="item">                                      
-                                            NRCP Website will be launched soon.
+                                    <li class="ticker__item" data-ticker="item">
+                                        NRCP Website will be launched soon.
                                     </li>
-                                    <li class="ticker__item" data-ticker="item">                                       
-                                            NCDC Journal for One Health will be launched in December 2023                                      
+                                    <li class="ticker__item" data-ticker="item">
+                                        NCDC Journal for One Health will be launched in December 2023
                                     </li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
                     <div class="col-md-1 rs-slider style1">
                         <div class="btns">
@@ -162,23 +118,246 @@
                             <div id="customNextBtn2"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>
-
         <!-- latest news section end  -->
+        <!-- Demo new banner design -->
+        <div class="container-custom_chngs">
+            <div class="row">
+                <div class="col-md-3 order-md-1 order-2">
+                    <div class="cont_secsns left_dhr mob-item2">
+                        <!-- <h4 class="title" tabindex="0">Quick Information</h4> -->
+                        <div class="main_btntop_chnges">
+                            <!-- <div class="mobile-number-box pulse">
+                                <a href="tel:01206025400" class="phone-number blink" tabindex="0"> Rabies Help line No :
+                                    <i class="fa fa-phone"></i> 01206025400</a>
+                            </div> -->
+                            <div class="top-menu-box">
+                                <!-- <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
+                                    data-toggle="modal" data-target="#vaccination" style="display: block !important"
+                                    tabindex="0">
+                                    <span class="blink"> Have you Bitten by an Animal? </span> <br>
+                                    Know your Rabies Vaccination Schedule
+                                </a> -->
+                                <!-- <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
+                                    data-toggle="modal" data-target="#vaccination" style="display: block !important"
+                                    tabindex="0">
+                                    <span class="blink"> Nearest Human Rabies Laboratory </span> <br>
+                                </a>
+                                <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
+                                    data-toggle="modal" data-target="#vaccination" style="display: block !important"
+                                    tabindex="0">
+                                    <span class="blink"> Nearest Animal Rabies Laboratory </span> <br>
+                                </a> -->
+                            </div>
 
+                            <div class="new_btns_cols" >
+
+                            <button class="button-29 text-center blink" role="button">
+                                <a href="#" class="blink_text"> Rabies Help line No :
+                                    <i class="fa fa-phone"></i> 0120-6025400</a>
+
+                           </button>
+
+                            <button class="button-29 text-center " role="button"> <a href="#" class="blink_text" >
+                            Have you Bitten by an Animal? <br>
+                            Know your Rabies Vaccination Schedule
+                            </a>
+                           </button>
+
+
+                            <button class="button-29 text-center" role="button">
+                                <!-- <a href="#" class="blink_text">Nearest Human Rabies Laboratory</a> -->
+                                <a href="#" class="blink_text">Directories</a>
+                                </button>
+
+                           <button class="button-29 text-center" role="button">
+                            <!-- <a href="#" class="blink_text">Nearest Animal Rabies Laboratory</a> -->
+                            <a href="#" class="blink_text">Grievance</a>
+
+                           </button>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <div class="cont_secsns mid_dhr">
+                        <div class="rs-slider style1">
+                            <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="20"
+                                data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000"
+                                data-smart-speed="800" data-dots="false" data-nav="false" data-nav-speed="false"
+                                data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
+                                data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
+                                data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
+                                data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
+                                data-md-device-dots="false" id="banner1">
+                                @if(count($homebanner)>0)
+                                @foreach($homebanner as $k=>$value)
+                                <div class="slider-content">
+                                    <div class="container-fluid px-0">
+                                        <div class="row banner-mobile">
+                                            <div class="col-lg-12 order-last p-0">
+                                                <div class="img-part banner-image">
+                                                    <img src="{{ asset('resources/uploads/banner/'.$value->public_url) }}"
+                                                        alt="{{ $value->banner_title }}" rel="noopener noreferrer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                                @else
+                                <div class="slider-content">
+                                    <div class="container-fluid px-0">
+                                        <div class="row banner-mobile">
+                                            <div class="col-lg-12 order-last p-0">
+                                                <div class="img-part banner-image">
+                                                    <img src="{{ asset(config('constants.brand.default_banner')) }}"
+                                                        alt="Banner" rel="noopener noreferrer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endif
+                            </div>
+                            <div class="btns">
+                                <div class="customPreviousBtn"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                                <div class="customPause"><i class="fa fa-pause" aria-hidden="true"></i></div>
+                                <div class="customPlay "><i class="fa fa-play" aria-hidden="true"></i></div>
+                                <div class="customNextBtn"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 order-md-3 order-3">
+                    <div class="cont_secsns right_dhr new-till">
+                        <div class="notice-bord style1">
+                            <h4 class="title" tabindex="0">Recent Activities</h4>
+                            <!-- <div class="marquee-height">
+                                <ul class="Latest-news-slider marquee--inner ">
+                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 100ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                                        <div class="desc" tabindex="0">
+                                            <a href="https://www.newindianexpress.com/states/odisha/2023/sep/18/odisha-govt-makes-human-rabies-a-notifiable-disease-2615963.html"
+                                                target="_blank"
+                                                onclick="return confirm('This link will take you to an external web site.')"
+                                                rel="noopener noreferrer" tabindex="0">Odisha govt makes human rabies a
+                                                notifiable disease</a>
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                                        <div class="desc" tabindex="0">
+                                            <a href="https://odishabytes.com/odisha-government-declares-human-rabies-as-notifiable-disease/"
+                                                target="_blank"
+                                                onclick="return confirm('This link will take you to an external web site.')"
+                                                rel="noopener noreferrer" tabindex="0">Odisha Government Declares Human
+                                                Rabies As Notifiable Disease</a>
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                                        style="visibility: hidden; animation-duration: 2000ms; animation-delay: 300ms; animation-name: none;">
+                                        <div class="desc" tabindex="0">
+                                            <a href="https://www.indiatoday.in/india/story/delhi-stray-dog-incidents-two-children-killed-in-vasant-kunj-2345671-2023-03-12"
+                                                target="_blank"
+                                                onclick="return confirm('This link will take you to an external web site.')"
+                                                rel="noopener noreferrer" tabindex="0">2 children mauled to death by
+                                                stray dogs in Delhi Vasant Kunj in separate incidents</a>
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                                        style="visibility: hidden; animation-duration: 2000ms; animation-delay: 300ms; animation-name: none;">
+                                        <div class="desc" tabindex="0">
+                                            <a href="https://www.indiatoday.in/india/story/stray-dog-mauls-infant-in-rajasthan-experts-say-sterilisation-vaccination-key-to-curb-canine-scare-2341116-2023-03-01"
+                                                target="_blank"
+                                                onclick="return confirm('This link will take you to an external web site.')"
+                                                rel="noopener noreferrer" tabindex="0">Stray dog mauls infant in
+                                                Rajasthan experts say sterilisation vaccination key to curb canine
+                                                scare</a>
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                                        <div class="desc" tabindex="0">
+                                            <a href="https://odishabytes.com/odisha-government-declares-human-rabies-as-notifiable-disease/"
+                                                target="_blank"
+                                                onclick="return confirm('This link will take you to an external web site.')"
+                                                rel="noopener noreferrer" tabindex="0">Odisha Government Declares Human
+                                                Rabies As Notifiable Disease</a>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                            </div> -->
+
+                            <div class="marquee marquee-vertical" data-speed="50">
+                <div class="marquee-wrapper">
+                    <div class="marquee-content">
+                        <div class="latest-lists" >
+                             <strong><i class="fa fa-hand-o-right mx-1 blin" aria-hidden="true"></i> : </strong> Odisha govt makes human rabies a
+                                                notifiable disease <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                        </div>
+                        <div class="latest-lists">
+                        <strong> <i class="fa fa-hand-o-right mx-1"  aria-hidden="true"></i> : </strong> Odisha Government Declares Human
+                                                Rabies As Notifiable Disease <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                        </div>
+                        <div class="latest-lists">
+                        <strong><i class="fa fa-hand-o-right mx-1"  aria-hidden="true"></i> : </strong> 2 children mauled to death by
+                                                stray dogs in Delhi Vasant Kunj in separate incidents <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                        </div>
+                        <div class="latest-lists">
+                        <strong><i class="fa fa-hand-o-right mx-1"  aria-hidden="true"></i> : </strong> Stray dog mauls infant in
+                                                Rajasthan experts say sterilisation vaccination key to curb canine
+                                                scare <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                        </div>
+                        <div class="latest-lists">
+                        <strong><i class="fa fa-hand-o-right mx-1"  aria-hidden="true"></i> : </strong> Odisha Government Declares Human
+                                                Rabies As Notifiable Disease <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                        </div>
+                        <div class="latest-lists">
+                        <strong><i class="fa fa-hand-o-right mx-1"  aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
+                            ut dolor ea amet. Cum reiciendis ab <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                        </div>
+                        <div class="latest-lists">
+                        <strong><i class="fa fa-hand-o-right mx-1"  aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
+                            ut dolor ea amet. Cum reiciendis ab <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                        </div>
+                        <div class="latest-lists">
+                        <strong><i class="fa fa-hand-o-right mx-1"  aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
+                            ut dolor ea amet. Cum reiciendis ab <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                        </div>
+                        <div class="latest-lists">
+                        <strong><i class="fa fa-hand-o-right mx-1"  aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
+                            ut dolor ea amet. Cum reiciendis ab <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Demo new banner design Ends-->
         <!-- Card Section End -->
-
         <!-- About Section Start -->
-        <div id="rs-about" class="rs-about style8 pt-60 pb-40">
+        <div id="rs-about" class="rs-about style8 pt-60">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 p-0">
                         <div class="main-content">
-
                             <div class="row">
                                 <div class="col-lg-9 mb-4">
                                     <div class="sec-title3 pl-10 wow fadeInUp" data-wow-delay="300ms"
@@ -209,7 +388,6 @@
                                             strengthening surveillance and maintenance of continuous surveillance and
                                             sensitization of other sectors. Experience gained in the pilot project
                                             indicated that strategy is feasible, reproducible, and implementable.
-
                                             With the lessons learned in the pilot project, the Ministry of Health and
                                             Family Welfare approved National Rabies Control Programme (NRCP) in the 12th
                                             Five Year Plan for rollout in the entire country. During the 12th Five years
@@ -255,16 +433,14 @@
             </div>
         </div>
         <!-- About Section End -->
-
-        <div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-10">
+        <div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-60">
             <div class="container">
-                <div class="row p-0">
+                <div class="row ">
                     <div class="col-md-4">
                         <div class="notice-bord style1">
                             <h4 class="title twitter-text-h"><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}"
                                     alt="img" rel="noopener noreferrer" class="twitter-logo"> ( Twitter Feed )</h4>
                             <div class="marquee-height myslider">
-
                                 <div class="item a text-center">
                                     <a href="https://twitter.com/nrcpmohfw"
                                         onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
@@ -273,7 +449,6 @@
                                             rel="noopener noreferrer">
                                     </a>
                                 </div>
-
                                 <div class="item a text-center">
                                     <a href="https://twitter.com/nrcpmohfw"
                                         onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
@@ -282,7 +457,6 @@
                                             rel="noopener noreferrer">
                                     </a>
                                 </div>
-
                                 <div class="item a text-center">
                                     <a href="https://twitter.com/nrcpmohfw"
                                         onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
@@ -308,7 +482,6 @@
                                     </a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -342,7 +515,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4  pr-0">
+                    <div class="col-md-4">
                         <div class="notice-bord style1">
                             <h4 class="title">Latest News</h4>
                             <div class="marquee-height">
@@ -378,7 +551,6 @@
                                     @endif
                                 </ul>
                             </div>
-
                             <div class="btn-part view-all-btn">
                                 <a class="readon2 mod" href="{{ route('news-details')}}" rel="noopener noreferrer">View
                                     All</a>
@@ -387,29 +559,27 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-
-    {{-- <div id="rs-popular-courses" class="rs-popular-courses style1 modify1 pt-60 pb-60">
-   <div class="container">
-      <div class="sec-title6 text-center mb-40">
-         <h2 class="title">Quick Links</h2>
-      </div>
-      <div class="sec-bg-white">
-         <div class="gridFilter style2 text-left mb-40">
-            <button data-filter=".filter1" class="active">What's New</button>
-            <button data-filter=".filter2" class="btn2">Budget and Finance</button>
-            <button data-filter=".filter3" class="btn3">Rabies Clinic</button>
-            <button data-filter=".filter4" class="btn4">ID Hospitals</button>
-         </div>
-         <div class="row grid">
-            <div class="col-lg-12 col-md-12 grid-item filter1">
-               <div class="row">
-                  <div class="col-lg-6">
-                     <div class="img-part">
-                        <img src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}" alt="Image" rel="noopener
+    {{--
+      <div id="rs-popular-courses" class="rs-popular-courses style1 modify1 pt-60 pb-60">
+         <div class="container">
+            <div class="sec-title6 text-center mb-40">
+               <h2 class="title">Quick Links</h2>
+            </div>
+            <div class="sec-bg-white">
+               <div class="gridFilter style2 text-left mb-40">
+                  <button data-filter=".filter1" class="active">What's New</button>
+                  <button data-filter=".filter2" class="btn2">Budget and Finance</button>
+                  <button data-filter=".filter3" class="btn3">Rabies Clinic</button>
+                  <button data-filter=".filter4" class="btn4">ID Hospitals</button>
+               </div>
+               <div class="row grid">
+                  <div class="col-lg-12 col-md-12 grid-item filter1">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="img-part">
+                              <img src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}" alt="Image" rel="noopener
     noreferrer">
     </div>
     </div>
@@ -472,20 +642,21 @@
     </div>
     </div>
     </div>
-    </div> --}}
-
-    {{-- 
-<div class="rs-cta bg-cta pt-20 pb-10">
-   <div class="container">
-      <div class="sec-title6 text-center pt-60 mb-40">
-         <h2 class="title text-white">Technical Documents and Guidelines</h2>
-      </div>
-      <div class="row rs-blog home9-style pt-20 pb-50">
-         <div class="col-md-4">
-            <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms"
-               data-wow-duration="2000ms"
-               style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-               <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" rel="noopener noreferrer" />
+    </div>
+    --}}
+    {{--
+      <div class="rs-cta bg-cta pt-20 pb-10">
+         <div class="container">
+            <div class="sec-title6 text-center pt-60 mb-40">
+               <h2 class="title text-white">Technical Documents and Guidelines</h2>
+            </div>
+            <div class="row rs-blog home9-style pt-20 pb-50">
+               <div class="col-md-4">
+                  <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms"
+                     data-wow-duration="2000ms"
+                     style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                     <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" rel="noopener noreferrer"
+    />
     <div class="content-part">
         <p class="txt">
             Rabies General Aspects & Laboratory Diagnostic Techniques 2022
@@ -522,12 +693,12 @@
     </div>
     --}}
     <div class="gallery-section pt-60 pb-60">
-        <div class="container-fluid pr-0">
+        <div class="px-3">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="gallery-lbox">
+                    <div class="gallery-lbox new_gall_boxhead_change">
                         <div class="content">
-                            <div class="sec-title3 text-center mb-40 ">
+                            <div class="sec-title3 text-center  ">
                                 <h2 class="title mb-10">Photo Gallery</h2>
                             </div>
                         </div>
@@ -547,8 +718,8 @@
                                         <img src="{{ asset('resources/uploads/GalleryManagement/'.$photogallerys->public_url) }}"
                                             alt="" rel="noopener noreferrer">
                                         <!-- <div class="text-gallery" id="banner3">
-                              Event 1
-                           </div> -->
+                                    Event 1
+                                    </div> -->
                                     </div>
                                 </div>
                                 @endforeach
@@ -590,9 +761,9 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="gallery-lbox video-sec">
+                    <div class="gallery-lbox video-sec new_gall_boxhead_change">
                         <div class="content">
-                            <div class="sec-title3 text-center mb-40 ">
+                            <div class="sec-title3 text-center ">
                                 <h2 class="title mb-10">Video Gallery</h2>
                             </div>
                         </div>
@@ -608,17 +779,15 @@
                                 <div class="team-item">
                                     <div class="gallery-box media-icon orange-color">
                                         <!-- <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
-                           <div class="text-gallery">
-                              Event 1
-                           </div>
-                           <a class="popup-videos" href="{{ url('/video') }}">
-                           <i class="fa fa-play"></i>
-                           </a>                                    -->
-
+                                    <div class="text-gallery">
+                                       Event 1
+                                    </div>
+                                    <a class="popup-videos" href="{{ url('/video') }}">
+                                    <i class="fa fa-play"></i>
+                                    </a>                                    -->
                                         <video controls muted class="video-g">
                                             <source src="{{ asset('assets/Nrcp_img/video1.mp4') }}" type="video/mp4">
                                         </video>
-
                                     </div>
                                 </div>
                                 <div class="team-item">
@@ -646,9 +815,7 @@
                 </div>
             </div>
         </div>
-
     </div>
-
     <!-- Partner Start -->
     <div class="rs-partner pt-40 pb-40 gray-bg-color">
         <div class="container">
@@ -659,7 +826,6 @@
                 data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="3"
                 data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6" data-md-device-nav="true"
                 data-md-device-dots="false" id="banner5">
-
                 <div class="partner-item">
                     <a href="https://www.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/MHFW.png') }}"
@@ -667,20 +833,16 @@
                             title="Ministry of Health and Family Welfare Government of India"
                             rel="noopener noreferrer"></a>
                 </div>
-
                 <div class="partner-item">
                     <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}" alt="NCDC" title="NCDC"
                             rel="noopener noreferrer"></a>
                 </div>
-
                 <div class="partner-item">
                     <a href="https://www.who.int/" target="_blank" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/who.png') }}" alt="World Health Organization"
                             title="World Health Organization" rel="noopener noreferrer"></a>
                 </div>
-
-
                 <div class="partner-item">
                     <a href="http://pgportal.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/pg-portal.png') }}"
@@ -777,7 +939,6 @@
     <!-- Partner End -->
     </div>
     </div>
-
     @include('partials.footer')
     @include('partials.footer-scripts')
 </body>

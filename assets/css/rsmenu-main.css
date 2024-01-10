@@ -148,16 +148,16 @@
 
 
 /*-----------------------------------------------------------------------------------*/
-/*	SUB-MENUS SETTINGS 
+/*	SUB-MENUS SETTINGS
 /*-----------------------------------------------------------------------------------*/
 /* Hide sub-menus */
 .rs-menu ul ul {
 	position: absolute;
 	top: 100%;
 	width: 100%;
-	background-color: #111111; 
+	background-color: #111111;
 }
-.rs-menu ul ul.visible, .rs-menu ul .rs-mega-menu ul.visible ul.sub-menu {	
+.rs-menu ul ul.visible, .rs-menu ul .rs-mega-menu ul.visible ul.sub-menu {
 	display:block;
    z-index: 110;
 }
@@ -200,11 +200,11 @@
 
 
 /*-----------------------------------------------------------------------------------*/
-/*  APPEARANCE SETTINGS 
+/*  APPEARANCE SETTINGS
 /*-----------------------------------------------------------------------------------*/
 .rs-menu a {
     color:#bbb;
-	
+
 	/* Remove the blue Webkit background when element is tapped */
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 }
@@ -214,7 +214,7 @@
 	margin-right:10px;
 	font-size:16px;
 	/* Make the font smoother for Chrome */
-	transform:translate3d(0, 0, 0);    
+	transform:translate3d(0, 0, 0);
 }
 
 /* Put down arrows */
@@ -241,8 +241,8 @@
 }
 
 /* Sub-menus - font size and text alignment*/
-.rs-menu ul ul a {   
-    font-size: 15px;	
+.rs-menu ul ul a {
+    font-size: 15px;
     text-align: left;
 }
 
@@ -252,7 +252,7 @@
 /*-----------------------------------------------------------------------------------*/
 .rs-header .menu-area .main-menu .rs-menu .nav-menu .mega-menu {
 	position: absolute;
-	left: 0;  
+	left: 0;
 	background-color: #ffffff;
 	min-width: 700px;
 }
@@ -272,9 +272,9 @@
 	width:auto;
     padding:0;
     min-height:initial;
-    box-shadow:none;   
+    box-shadow:none;
 }
-.rs-header .menu-area .main-menu .rs-menu .nav-menu .mega-menu .sub-menu li, 
+.rs-header .menu-area .main-menu .rs-menu .nav-menu .mega-menu .sub-menu li,
 .rs-header .menu-area .main-menu .rs-menu .nav-menu .mega-menu .sub-menu a {
     width:100%;
 }
@@ -376,7 +376,7 @@
 .nav-expanded nav {
     right: 0 !important;
 }
-.off-wrap {	
+.off-wrap {
 	position: absolute;
 	width: 100%;
 	background: #000;
@@ -409,7 +409,7 @@
 /*  MEDIA QUERIES
 /*-----------------------------------------------------------------------------------*/
 @media screen and (min-width: 992px) {
-	
+
 	/*RESPONSE MENU*/
 	.rs-menu {
 	    height: auto !important;
@@ -417,41 +417,41 @@
 	.rs-menu li {
     	display:inline-block;
 	}
-	
+
 	.nav-menu .rs-mega-menu {
     	position: static;
 	}
-	
+
 	.rs-menu ul ul.visible {
 		visibility: hidden;
     	opacity:0;
 	}
-	
+
 	/* Remove arrows if not in mobile */
-	.nav-menu .menu-item-has-children > span, 
+	.nav-menu .menu-item-has-children > span,
 	.nav-menu .rs-mega-menu > span {
 		display:none;
 	}
-	
-	/* Remove Menu Toggle if not in mobile */	
+
+	/* Remove Menu Toggle if not in mobile */
 	.rs-menu-toggle {
 		display:none;
 	}
-	
+
 	/* Remove Menu Close if not in mobile */
 	.nav-menu div.sub-menu-close {
 		display:none;
 	}
-	
-	
+
+
 	/* Show sub-menus in hover */
-	.rs-menu li:active > ul, 
-	.rs-menu li:focus > ul, 
-	.rs-menu li:hover > ul, 
-	.rs-menu li:hover > ul.mega-menu > li > ul, 
-	.rs-menu li:hover ul.mega-menu .sub-menu {		
+	.rs-menu li:active > ul,
+	.rs-menu li:focus > ul,
+	.rs-menu li:hover > ul,
+	.rs-menu li:hover > ul.mega-menu > li > ul,
+	.rs-menu li:hover ul.mega-menu .sub-menu {
 		display:block;
-		z-index: 17;	
+		z-index: 17;
 	}
 
 	/* Adjust position the sub-menus in the left */
@@ -460,21 +460,21 @@
 		right: auto;
         top: 70%;
 	}
-	
+
 	/* Adjust position the sub-menus on the top */
 	.rs-menu ul ul ul {
 		top: 0;
-	}	
-	
+	}
+
 	.rs-menu ul ul {
 		width:auto;
 	}
-	
+
 	/* Sub-menus - width */
 	.rs-menu ul ul a {
 		width: 260px;	/* <- Modify for width change */
 	}
-	
+
     .nav-menu .mega-menu li div.mega-menu-innner .single-magemenu {
         width: 25%;
         float: left;
@@ -521,15 +521,15 @@
 	/* Menu Transition*/
 	.rs-menu ul ul {
 		opacity: 0;
-		visibility: hidden;	
+		visibility: hidden;
 		transform: translateY(-10px);
 		transform: scaleY(0);
 		transform-origin: 0 0 0;
 	}
 
-	.rs-menu li:active > ul, .rs-menu li:focus > ul, .rs-menu li:hover > ul, .rs-menu li:hover > ul.mega-menu > li > ul {    
+	.rs-menu li:active > ul, .rs-menu li:focus > ul, .rs-menu li:hover > ul, .rs-menu li:hover > ul.mega-menu > li > ul {
 		 opacity: 1;
-		 visibility:visible;		
+		 visibility:visible;
 		 transform: translateY(0px);
 		 transform: scaleY(1);
 	}
@@ -544,11 +544,11 @@
 		visibility: visible;
 		transform: scaleY(1);
 	}
-		
+
 }
 
 @media only screen and (max-width: 991px) {
-	
+
 	.rs-header .menu-area .logo-area {
 	    position: absolute;
 	    z-index: 1;
@@ -560,9 +560,13 @@
     .rs-menu {
         position: absolute;
         z-index: 999;
-		top: -35%;
+		top: -20%;
 
     }
+	.rs-header .menu-area .rs-menu-area
+	{
+		padding: 10px 0px !important;
+	}
 
 	.full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li{margin-left: 0px;}
     .rs-menu .row [class*="col-"] {
@@ -571,11 +575,11 @@
         margin-left: 0!important;
         margin-right: 0!important;
     }
-   	
+
 	.nav-menu > li > a {
 		border-bottom:1px solid #131313;
 		text-align: left;
-	}	
+	}
 	.nav-menu > li:last-child a {
     	border-bottom:none;
 	}
@@ -589,22 +593,22 @@
 		float:left;
 		width:100%;
 		cursor:pointer;
-		background:#f6f3ed;		
+		background:#f6f3ed;
 		color:#000;
 		font-size:14px;
-		text-align:center;	
+		text-align:center;
 		height: 50px;
 		line-height: 50px;
 	}
-	
-	.nav-menu div.sub-menu-close i {		
+
+	.nav-menu div.sub-menu-close i {
 		font-size:16px;
 		margin-right: 5px;
 	}
 
 	.rs-header .menu-area .main-menu .rs-menu ul.nav-menu {
 		background: #fff;
-		margin: 8px 7px 0px 7px;
+		margin: 20px 7px 0px 7px;
 		border: 1px solid #92271d4f;
 		border-radius: 5px;
 		padding-right: 10px;
@@ -650,7 +654,7 @@
 		padding: 10px 15px;
 	}
 
-	.nav-menu > .menu-item-has-children > span.rs-menu-parent {		
+	.nav-menu > .menu-item-has-children > span.rs-menu-parent {
 		display: block;
 		position: absolute;
 		right: 0;
@@ -662,11 +666,11 @@
 		cursor:pointer;
 		background: #ddd;
 		z-index: 9;
-		
+
 		/* Remove the blue Webkit background when element is tapped */
-		-webkit-tap-highlight-color:rgba(0,0,0,0);    
-	}	
-	.nav-menu > .menu-item-has-children .sub-menu .menu-item-has-children span.rs-menu-parent {		
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+	}
+	.nav-menu > .menu-item-has-children .sub-menu .menu-item-has-children span.rs-menu-parent {
 		display: block;
 		position: absolute;
 		background: #ddd;
@@ -677,20 +681,20 @@
 		width: 45px;
 		text-align: center;
 		cursor: pointer;
-		border-left:none;	
-		z-index: 9;	
+		border-left:none;
+		z-index: 9;
 		/* Remove the blue Webkit background when element is tapped */
-		-webkit-tap-highlight-color:rgba(0,0,0,0);    
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
 	}
-	.nav-menu span.rs-menu-parent i { 
+	.nav-menu span.rs-menu-parent i {
 		margin:0;
 	}
 
 	.rs-menu-close {
-    	height: 0;		
+    	height: 0;
     	overflow: hidden!important;
 	}
-	
+
 	/*Menu Toggle Appearance*/
 	.rs-menu-toggle {
 		display: block;
@@ -698,16 +702,16 @@
 		position: relative;
 		height: 90px;
 		line-height: 90px;
-		cursor:pointer;		
+		cursor:pointer;
 		color: #333 !important;
 		font-size: 22px;
-		text-transform: uppercase;	
+		text-transform: uppercase;
 		-webkit-tap-highlight-color:rgba(0,0,0,0);
-	}	
-	
+	}
+
 }
 
-@media only screen and (max-width: 1080px) {	
+@media only screen and (max-width: 1080px) {
 	.nav-menu > li > a i {
 		display:none;
 	}

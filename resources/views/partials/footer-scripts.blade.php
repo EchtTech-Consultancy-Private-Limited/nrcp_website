@@ -21,6 +21,9 @@
 <script src="{{ asset('assets/js/jquery.lazyload.min.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
 
+<script src="{{ asset('assets/js/marqueedirection.js') }}"></script>
+<script src="{{ asset('assets/js/custmmarqui.js') }}"></script>
+
 <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('assets/js/dataTables.buttons.min.js') }}"></script>
 <script src="{{ asset('assets/js/buttons.print.min.js') }}"></script>
