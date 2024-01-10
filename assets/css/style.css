@@ -3030,8 +3030,8 @@ ul.listing-style.modify li:before {
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area {
   /* background: #ffffff !important; */
-  /* background: #4e0b05 !important; */
-  background-image: linear-gradient(to right, #ffddc8 , #fff) !important;
+  background: #ffddc8 !important;
+  /* background-image: linear-gradient(to right, #ffddc8 , #fff) !important; */
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area {
@@ -3118,8 +3118,8 @@ ul.listing-style.modify li:before {
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area.sticky {
   /* background: #4e0b05 !important; */
-  /* background: #fff ; */
-  background-image: linear-gradient(to right, #ffddc8 , #fff) !important;
+  background: #ffddc8 !important;
+  /* background-image: linear-gradient(to right, #ffddc8 , #fff) !important; */
 }
 
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area.sticky .logo-cat-wrap {
@@ -4924,7 +4924,7 @@ th.set-width {
 }
 
 .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-  margin-right: 25px !important;
+  margin-right: 22px !important;
   margin-left: 15px;
 }
 
@@ -13320,7 +13320,7 @@ span.courses.course-icon img {
   position: relative;
   padding-left: 25px;
   padding-bottom: 15px;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 25px;
 }
 
@@ -17784,10 +17784,10 @@ color: #333;
     border-radius: 50px;
 }
 
-.rs-footer.home9-style.main-home .footer-top .footer_social li a:hover {
+/* .rs-footer.home9-style.main-home .footer-top .footer_social li a:hover {
   color: #3F51B5;
   background: #fff;
-}
+} */
 
 .rs-footer.home9-style.main-home .footer-top .site-map li a {
   color: #e8e8e8;
@@ -20764,7 +20764,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 {
 
   padding: 2% 2% 0% 2%;
-    height: 360px;
+    height: 400px;
 }
 
 .right_dhr .title
@@ -20774,6 +20774,8 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   padding: 12px 12px;
   border-radius: 12px 12px 0px 0px;
   margin-bottom: 2px;
+  font-size: 16px;
+
 }
 
 .top-menu-box a.text-vaccination {
@@ -20787,15 +20789,29 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 
 .latest-lists
 {
-  color: #000;
-  padding: 10px;
-  border-top: unset;
-  /* border-bottom:  1px solid #808080;
-  border-left:  1px solid #808080;
-  border-right:  1px solid #808080; */
-  margin: 10px 0px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  font-size: 14px;
+   color: #000;
+    padding: 6px;
+    border-top: unset;
+    margin: 14px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 12px;
+    line-height: 1.2;
+    border-radius: 6px;
+}
+.latest-lists-page
+{
+
+    padding: 10px 0px;
+    border-top: unset;
+    margin: 6px 0px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-size: 14px;
+
+}
+.latest-lists-page i
+{
+  padding: 8px;
+
 }
 
 .fa-hand-o-right
@@ -20803,7 +20819,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   color: #92271d;
 }
 .marquee-vertical {
-  height: 246px;
+  height: 91px;
 }
 
 .marquee-content {
@@ -20845,7 +20861,12 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 }
 
 
-
+.latest-lists a .fa-circle-thin
+{
+   color: #92271de3;
+   font-size: 12px;
+   font-weight: 900;
+}
 
 
 
@@ -20866,7 +20887,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  height: 66px;
+  height: 68px;
   justify-content: center;
   line-height: 1.2;
   list-style: none;
@@ -20962,10 +20983,37 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   position: relative;
 }
 
+img.facebook-logo
+{
+  filter: invert(1);
+  width: 32px;
+}
+
 .print-button{
-  /* display: none; */
+
   position: absolute;
   top: -62px;
   right: 0px;
   padding: 6px 16px !important;
+}
+.measurement
+{
+margin-top: 14px;
+}
+.measurement li
+{
+  font-size: 14px;
+    font-weight: 700;
+    /* color: #3f51b5; */
+    padding-bottom: 0px !important;
+    color: #808080;
+}
+
+.extrnal_popups ul li
+{
+  padding: 10px;
+  border: 3px solid #92271de3;
+  border-radius: 10px 0px 10px 0px;
+  margin: 10px 0px;
+
 }

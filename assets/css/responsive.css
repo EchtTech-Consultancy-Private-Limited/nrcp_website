@@ -301,7 +301,7 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-        margin-right: 18px !important;
+        margin-right: 12px !important;
         margin-left: 18px;
     }
 }
@@ -2536,7 +2536,7 @@ h6.sub-text-b-l {
     }
     .rs-menu-area
     {
-        background-image: linear-gradient(to right, #ffddc8 , #fff) !important;
+        background: #ffddc8;
     }
 
     /* .top-menu-box {
@@ -4873,4 +4873,58 @@ h6.sub-text-b-l {
         ul.site-map.footer-link-withput-h {
             margin-top: 47px !important;
         }
+    }
+
+
+
+    @media only screen and (min-width: 768px) and (max-width: 991px){
+
+
+     .button-29
+     {
+        height: 40px;
+        font-size: 8px;
+     }
+     .right_dhr .title
+     {
+       padding: 6px;
+       font-size: 14px;
+     }
+     .latest-lists
+     {
+       font-size: 8px;
+     }
+     .marquee-vertical {
+        height: 45px;
+    }
+    .container-custom_chngs {
+
+        height: 242px;
+    }
+    .rs-about.style1 .notice-bord.style1 .title.twitter-text-h {
+        font-size: 14px;
+    }
+    .sec-title3 .title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .readon2
+    {
+        padding: 4px 20px;
+        font-size: 12px;
+    }
+    h5.sub-text-l {
+        text-align: left !important;}
+
+
+    .rs-footer.home9-style .footer-top {
+        padding: 54px 0 60px;
+    }
+    h2.title.black-color.logo-text
+    {
+        font: normal normal bold 23px/62px Tahoma;
+    margin-bottom: -14px;
+
+    }
+
     }

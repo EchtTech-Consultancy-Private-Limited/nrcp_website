@@ -15,17 +15,18 @@
                             Health & Family Welfare, Government of India </p> --}}
                     </div>
                     <ul class="footer_social">
-                        
+
                     @if(!empty($social_media))
                         @if($social_media->facebook  != '')
                         <li>
                             <a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" rel="noopener noreferrer"><span><i class="fa fa-facebook"></i></span></a>
                         </li>
                         @endif
-                       
+
                         @if($social_media->twitter  != '')
                         <li>
-                            <a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" rel="noopener noreferrer"><span><i class="fa fa-twitter"></i></span></a>
+                            <a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" rel="noopener noreferrer"><span><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}"
+                                    alt="img" rel="noopener noreferrer" class="twitter-logo"></span></a>
                         </li>
                         @endif
 
@@ -62,20 +63,20 @@
 
                         <div class="col-lg-6 col-md-12 col-sm-12 pl-50 md-pl-15 footer-widget md-mb-50 p-0 width-sm-50">
                             <ul class="site-map footer-link-withput-h border-right-white">
-                                                                
+
                                 @foreach ($footerMenu->slice(5,10) as $footerMenus)
                                   <li>
-                                      @if ($footerMenus->tab_type == 1) 
-                                           @if (Session::get('Lang') == 'hi') 
+                                      @if ($footerMenus->tab_type == 1)
+                                           @if (Session::get('Lang') == 'hi')
                                            @else
-                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank" rel="noopener noreferrer">        
+                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank" rel="noopener noreferrer">
                                            @endif
-                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank" rel="noopener noreferrer">     
-                                      @else  
-                                      <a href="{{ url($footerMenus->url  ??'') }}" rel="noopener noreferrer"> 
-                                      @endif    
-                                          
-                                          
+                                           <a onclick="return confirm('This link will take you to an external web site.')" href="{{ url($footerMenus->url  ??'') }}" target="_blank" rel="noopener noreferrer">
+                                      @else
+                                      <a href="{{ url($footerMenus->url  ??'') }}" rel="noopener noreferrer">
+                                      @endif
+
+
                                         @if (Session::get('Lang') == 'hi')
                                             {{ $footerMenus->name_hi  }}
                                         @else
@@ -84,7 +85,7 @@
                                      </a>
                                   </li>
                                 @endforeach
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -98,8 +99,8 @@
                         </li> --}}
                         <li>
 
-                            <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                <b> Center for One Health </b><br>                           
+                            <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <b> Center for One Health </b><br>
                                 National Centre for Disease Control,<br> Directorate General of Health Services,
                               <br>  Ministry of Health and Family Welfare,<br> Government of India, <br>
                                 22 – Sham Nath Marg, Delhi - 110054
@@ -123,7 +124,7 @@
                         </li>
 
                         <li>
-<!-- 
+<!--
                             <div class="desc">
                                 <i class="fa fa-globe" aria-hidden="true"></i>
                                 <a href="www.ncdc.gov.in">www.ncdc.gov.in</a>
@@ -152,7 +153,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 text-right md-text-left pr-0">
-                    
+
                     <div class="visitors-sec">
                         <h5>Website last Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>  &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Visitors :
                             <span class="number-visitor">{{ $visitCounter }}</span>
@@ -206,7 +207,7 @@
                                             Have you taken Rabies Vaccine after animal bite
                                         </a>
                                     </div>
-                                </div>                                                           
+                                </div>
                                 <div class="row">
                                     <div class="col-md-12">
                                        <div class="radio button">
@@ -216,10 +217,10 @@
                                            </div>
                                            <div class="radio-box">
                                             <input type="radio" onclick="checkYesNo('0')" name="animal_bite" value="no" id="no-bite" required />
-                                            <label for="no-bite">No</label> 
-                                           </div>   
+                                            <label for="no-bite">No</label>
+                                           </div>
                                        </div>
-                                       <p class="text-center text-danger" id="radio_error"></p> 
+                                       <p class="text-center text-danger" id="radio_error"></p>
                                     </div>
                                     {{-- CHoose Yes --}}
                                     <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput">
@@ -242,6 +243,39 @@
                         </form>
                     </div>
                 </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<div id="vaccinationt" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-vaccination">
+
+        <!-- Modal content-->
+        <div class="modal-content modal-content1">
+
+            <div class="modal-body">
+
+                <div class="py-3 d-flex justify-content-between ">
+                    <h4 class="modal-title">Rabies Global Activities</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="extrnal_popups">
+                    <ul>
+                        <li><a href="#"> Have you taken Rabies Vaccine after animal bite <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="#"> Have you taken Rabies Vaccine after animal bite <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="#"> Have you taken Rabies Vaccine after animal bite <i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+
+                    </ul>
+                </div>
+
+
 
             </div>
 

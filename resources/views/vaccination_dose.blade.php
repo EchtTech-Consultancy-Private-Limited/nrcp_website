@@ -55,11 +55,11 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12">
                             <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link 
-                                
+                                <button class="nav-link
+
                                 {{ request('tab') == 'nhrl' || request('tab') == 'narl' ? '' : 'active' }}"
 
-                                
+
                                  id="Master_layout_0" data-toggle="pill"
                                     data-target="#master-layout_0" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="true" tabindex="0">
@@ -81,7 +81,7 @@
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Nearest Human Rabies Laboratory
                                 </button>
-                               
+
                                 <button class="nav-link {{ request('tab') == 'narl' ? ' active' : '' }}" id="Master_layout_3" data-toggle="pill"
                                     data-target="#master-layout_3" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
@@ -243,7 +243,7 @@
                                                                             <div class="col-lg-4">
                                                                                 <div class="radio-btn-box pt-7">
                                                                                     <div class="d-flex">
-                                                                                        <input type="radio" 
+                                                                                        <input type="radio"
                                                                                             id="Equine" name="RIG"
                                                                                             class="form-control radio RIG"
                                                                                             value="40">
@@ -278,7 +278,7 @@
                                                                 </form>
 
                                                                 <div class="calculate_dosse">
-                                                                    
+
                                                                 </div>
 
 
@@ -442,15 +442,15 @@
                                     </div>
                                     <!-- tab content end -->
                                 </div>
-                                
+
                                 <div class="tab-pane fade" id="master-layout_2" role="tabpanel"
                                     aria-labelledby="Master_layout_2">
                                     <!-- tab content start -->
                                     <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active
-                                        
-                                       
-                                        
+
+
+
                                         " id="sub-tab1-content" role="tabpanel"
                                             aria-labelledby="sub-tab1">
                                             <div id="rs-popular-courses" class="rs-popular-courses style1 modify1">
@@ -622,7 +622,7 @@
 
                                     <div class="tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active"
-                                        
+
                                          id="sub-tab1-content" role="tabpanel"
                                             aria-labelledby="sub-tab1">
                                             <div id="rs-popular-courses" class="rs-popular-courses style1 modify1">
@@ -652,7 +652,7 @@
                                                             </li>
 
                                                         </ul>
-                                                       
+
                                                         <div class="tab-content" id="myTabContent">
                                                             <div class="tab-pane fade show active" id="district3"
                                                                 role="tabpanel" aria-labelledby="district-tab3">
@@ -726,7 +726,7 @@
                                                                 <div class="row">
                                                                 <a class="readon2 mod float-right mt-0 print-button" href="javascript:void();" rel="noopener noreferrer" tabindex="0" onclick="printContent('printMap3')" id="btn-print-map"><i class="fa fa-print"></i> Print</a>
                                                                     <div class="col-lg-12" id="printMap3">
-                                                                        
+
                                                                         <div class="map">
 
                                                                             {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15281445.36555606!2d72.11145795589131!3d20.758022812161478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1694066812387!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300px"></iframe> --}}
