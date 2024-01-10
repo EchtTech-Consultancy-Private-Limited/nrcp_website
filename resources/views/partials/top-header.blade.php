@@ -52,12 +52,12 @@
                   <span class="slider round"></span>
                   </label>
                </li>
-               <!-- <li>
-                  <select class="form-control select-lang" disabled onchange="javascript:setlang(value);"tabindex="0">
+               <li>
+                  <select class="form-control select-lang" onchange="javascript:setlang(value);"tabindex="0">
                      <option value="en" @if (Session::get('Lang') == 'en') selected @endif >English</option>
                      <option value="hi" @if (Session::get('Lang') == 'hi') selected @endif >Hindi</option>
                   </select>
-               </li> -->
+               </li>
 
             @if(!empty($social_media))
 

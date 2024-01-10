@@ -19,6 +19,23 @@ use App\Http\Controllers\SearchController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+function set_active($route) {
+    if( is_array( $route ) ){
+        return in_array(Request::path(), $route) ? 'hover show' : '';
+    }
+    return Request::path() == $route ? 'hover show' : '';
+}
+function set_active1($route) {
+    if( is_array( $route ) ){
+        return in_array(Request::path(), $route) ? 'active' : '';
+    }
+    return Request::path() == $route ? 'active' : '';
+}
+Artisan::call('cache:clear');
+Artisan::call('storage:link');
+Artisan::call('view:clear');
+Artisan::call('route:clear');
+Artisan::call('config:clear');
 require __DIR__ .'/cms_web.php';
 Route::middleware(['visitingcounter'])->group(function () {
 
