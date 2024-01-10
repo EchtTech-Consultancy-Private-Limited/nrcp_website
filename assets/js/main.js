@@ -93,13 +93,13 @@ function setlang(value) {
         });
     }
 
-    // collapse hidden  
+    // collapse hidden
     var navMain = $(".navbar-collapse");
     navMain.on("click", "a:not([data-toggle])", null, function () {
         navMain.collapse('hide');
     });
 
-    // video 
+    // video
     if ($('.player').length) {
         $(".player").YTPlayer();
     }
@@ -181,7 +181,7 @@ function setlang(value) {
         $("#loader").delay(200).fadeOut(80);
     })
 
-    //Videos popup jQuery 
+    //Videos popup jQuery
     // var popupvideos = $('.popup-videos');
     // if(popupvideos.length){
     //     $('.popup-videos').magnificPopup({
@@ -191,7 +191,7 @@ function setlang(value) {
     //         removalDelay: 160,
     //         preloader: false,
     //         fixedContentPos: false
-    //     }); 
+    //     });
     // }
 
     /*-------------------------------------
@@ -267,7 +267,7 @@ function setlang(value) {
         });
     });
 
-    // Skill bar 
+    // Skill bar
     var skillbar = $('.skillbar');
     if (skillbar.length) {
         $('.skillbar').skillBars({
@@ -287,7 +287,7 @@ function setlang(value) {
         });
     }
 
-    // scrollTop init	
+    // scrollTop init
     var totop = $('#scrollUp');
     win.on('scroll', function () {
         if (win.scrollTop() > 150) {
@@ -688,12 +688,12 @@ var $ticker = $('[data-ticker="list"]'),
 
 function setupViewport(){
     $ticker.find(tickerItem).clone().prependTo('[data-ticker="list"]');
-    
+
     for (i = 0; i < itemCount; i ++){
         var itemWidth = $(tickerItem).eq(i).outerWidth();
         viewportWidth = viewportWidth + itemWidth;
     }
-    
+
     $ticker.css('width', viewportWidth);
 }
 
@@ -709,7 +709,7 @@ function animateTicker(){
 function initializeTicker(){
     setupViewport();
     animateTicker();
-    
+
     $ticker.on('mouseenter', function(){
         $(this).stop(true);
     }).on('mouseout', function(){
@@ -827,10 +827,15 @@ function fun() {
         var total = calculate * selectedRIG;
 
         $('.calculate_dosse').html(`
-        <h3>Calculated Dosage of ERIG is: 
-            <span class="dose_unit">
-                <span id='dosageValue'>${total}</span> IU per kg body weight
+        <h3>Calculated Dosage of ERIG is:
+            <span class="dose_unit measurement">
+                <span id='dosageValue'>${total}</span>
+
             </span>
+            <ul class="measurement" >
+                  <li>Equine RIG: 300 IU = 1 ml</li>
+                  <li>Human RIG: 150 IU = 1 ml</li>
+            </ul>
         </h3>
     `);
     }
@@ -842,7 +847,7 @@ function fun() {
 //     document.body.innerHTML = printContents;
 //     window.print();
 //     document.body.innerHTML = originalContents;
-// }    
+// }
 
 
 
