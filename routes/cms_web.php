@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CMSControllers\API\CommonAPIController;
+use App\Http\Controllers\CMSControllers\ImageController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\CMSControllers\DashboardController;
@@ -56,6 +57,9 @@ Route::post('mimeimagecheck', [CommonAPIController::class, 'imageMimeCheck'])->n
 Route::post('mimepdfcheck', [CommonAPIController::class, 'pdfMimeCheck'])->name('mimepdfcheck');
 // capture analytics
 Route::post('analytics', [AnalyticsController::class, 'store'])->name('store-analytics');
+Route::post('fetch-designation', [EmpDepartDesignationController::class, 'fetchDesignation'])->name('fetch-designation');
+
+//,->middleware('throttle:custom_Limit')
 
 Route::get('/image/{path}', [ImageController::class, 'encryptPath']);
 
