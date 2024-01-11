@@ -833,8 +833,8 @@ function fun() {
 
             </span>
             <ul class="measurement" >
-                  <li>Equine RIG: 300 IU = 1 ml</li>
-                  <li>Human RIG: 150 IU = 1 ml</li>
+                  <li>Equine RIG: 40 IU = 1 ml</li>
+                  <li>Human RIG: 20 IU = 1 ml</li>
             </ul>
         </h3>
     `);
