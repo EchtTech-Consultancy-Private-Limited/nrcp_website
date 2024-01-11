@@ -825,7 +825,11 @@ function fun() {
     } else {
 
         var total = calculate * selectedRIG;
-
+        if(selectedRIG =='40'){
+            var valData = `Equine RIG: 300 IU = ${Math.ceil(total/300)} ml`;
+        }else{
+            var valData = `Human RIG: 150 IU = ${Math.ceil(total/150)} ml`;
+        }
         $('.calculate_dosse').html(`
         <h3>Calculated Dosage of ERIG is:
             <span class="dose_unit measurement">
@@ -833,8 +837,7 @@ function fun() {
 
             </span>
             <ul class="measurement" >
-                  <li>Equine RIG: 40 IU = 1 ml</li>
-                  <li>Human RIG: 20 IU = 1 ml</li>
+                  <li>${valData}</li>
             </ul>
         </h3>
     `);
