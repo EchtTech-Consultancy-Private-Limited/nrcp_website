@@ -1,6 +1,6 @@
 @extends('cms-view.layouts.main')
 @section('title')
-    {{__('Recent Activity')}}
+    {{__('Recent Activity Create')}}
 @endsection
 @section('pageTitle')
  {{ __('Recent Activity') }}
