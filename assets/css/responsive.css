@@ -1162,6 +1162,14 @@
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .img-part.banner-image img
+    {
+        height: 320px;
+    }
+    .img-part.banner-image {
+        min-height: 320px;
+        height: 320px;
+    }
 
     .rs-menu ul ul li > ul {
         left: unset;
@@ -1421,6 +1429,7 @@ h6.sub-text-b-l {
 }
 
 @media only screen and (max-width: 991px) {
+
     .order-last {
         -ms-flex-order: unset;
         order: 2;
@@ -2506,10 +2515,16 @@ h6.sub-text-b-l {
         height: auto !important;
     }
 
-    .img-part.banner-image img, .img-part.banner-image{
+    /* .img-part.banner-image img, .img-part.banner-image{
         height:190px ;
         min-height: 190px;
-    }
+    } */
+
+    .img-part.banner-image img {
+
+        height: 200px !important;
+
+      }
 
 }
 
@@ -4859,6 +4874,8 @@ h6.sub-text-b-l {
     }
 
     .rs-blog.main-home .blog-item .blog-content.b-t .title{width: 300px !important;}
+
+
 }
 
 
@@ -4873,11 +4890,46 @@ h6.sub-text-b-l {
         ul.site-map.footer-link-withput-h {
             margin-top: 47px !important;
         }
+
+    }
+
+
+    @media only screen and (min-width: 1601px) and (max-width: 2000px){
+
+        .img-part.banner-image img
+        {
+            height: 330px;
+        }
+        .img-part.banner-image
+        {
+            height: 330px;
+            min-height: 330px;
+        }
+        .marquee-vertical {
+            height: 100px;
+        }
+    }
+
+    @media only screen and (min-width: 2001px) and (max-width: 2300px)
+    {
+        .img-part.banner-image img
+        {
+            height: 333px;
+        }
+        .img-part.banner-image
+        {
+            height: 333px;
+            min-height: 333px;
+        }
+        .marquee-vertical {
+            height: 100px;
+        }
     }
 
 
 
     @media only screen and (min-width: 768px) and (max-width: 991px){
+
 
 
      .button-29
@@ -4925,6 +4977,18 @@ h6.sub-text-b-l {
         font: normal normal bold 23px/62px Tahoma;
     margin-bottom: -14px;
 
+    }
+
+    .img-part.banner-image {
+        min-height: 200px;
+        height: 200px;
+    }
+    .marquee-height.myslider {
+        height: 275px !important;
+    }
+    .marquee-height
+    {
+        height: 224px;
     }
 
     }

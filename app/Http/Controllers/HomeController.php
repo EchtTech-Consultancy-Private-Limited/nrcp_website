@@ -28,7 +28,7 @@ class HomeController extends Controller
             ->where('gm.soft_delete', '0')
             // ->orderby('gm.sort_order','Asc')
             ->get();
-        //dd($photoGallery);
+        // dd($photoGallery);
         return view('home', ['news' => $news, 'homebanner' => $homebanner, 'photogallery' => $photoGallery]);
     }
 
