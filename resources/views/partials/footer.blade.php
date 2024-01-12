@@ -138,7 +138,8 @@
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.343413096401!2d77.22101037444737!3d28.67937218195402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfda49c63895b%3A0xf42dc723f30a63d2!2sNATIONAL%20CENTRE%20FOR%20DISEASE%20CONTROL%2C%20CSU%20INTEGRATED%20DISEASE%20SURVEILLANCE%20PROGRAMME%2C%20Civil%20Lines%2C%20Delhi%2C%20110054!5e0!3m2!1sen!2sin!4v1689766036308!5m2!1sen!2sin"
                          allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="locate-us-iframe" ></iframe>
+                        referrerpolicy="no-referrer-when-downgrade" class="locate-us-iframe" >
+                    </iframe>
 
                 </div>
             </div>

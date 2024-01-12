@@ -900,7 +900,7 @@ blockquote p {
 .readon2 {
   outline: none;
   border: none;
-  padding: 12px 30px;
+  padding: 10px 15px;
   border-radius: 50px;
   display: inline-block;
   text-transform: capitalize;
