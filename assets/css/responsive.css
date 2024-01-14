@@ -3713,7 +3713,32 @@ h6.sub-text-b-l {
     }
     .cont_secsns
     {
-        margin: 20px 0px;
+        margin: 20px 6px;
+    }
+
+    .owl-prev
+    {
+        line-height: 20px;
+    }
+    .owl-prev i, .owl-next i
+    {
+        line-height: 20px;
+    }
+    .rs-partner .fa-angle-left:before
+    {
+        font-size: 18px;
+
+    }
+
+    .rs-partner .fa-angle-right:before
+    {
+        font-size: 18px;
+
+
+    }
+    .main_btntop_chnges
+    {
+        padding: 0px;
     }
 
 
