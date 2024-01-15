@@ -277,6 +277,10 @@
     .full-width-header .rs-header .logo-part img {
         height: 134px !important;
     }
+    .full-width-header .rs-header .logo-part a
+    {
+        width: 96px;
+    }
     .full-width-header.header-style3 .rs-header .menu-area .menu-bg::before {
         left: 65%;
     }
@@ -1159,7 +1163,15 @@
         padding-left: 35px;
     }
 }
-
+@media only screen and (min-width: 1200px) and (max-width: 1330px)
+{
+    .button-29
+    {
+        height: 71px;
+        font-size: 11px;
+        white-space: normal;
+    }
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .img-part.banner-image img
@@ -1169,6 +1181,13 @@
     .img-part.banner-image {
         min-height: 320px;
         height: 320px;
+    }
+
+    .button-29
+    {
+        height: 71px;
+        font-size: 11px;
+        white-space: normal;
     }
 
     .rs-menu ul ul li > ul {
@@ -1250,18 +1269,18 @@
 }
 
 h2.title.black-color.logo-text {
-    font: normal normal bold 15px/22px Tahoma;
+    font: normal normal bold 20px/22px Tahoma;
 }
 
 h5.sub-text-l {
     text-align: left;
-    font: normal normal normal 14px/27px Tahoma;
+    font: normal normal normal 17px/27px Tahoma;
 }
 
 
 h6.sub-text-b-l {
     text-align: left;
-    font: normal normal normal 10px/16px Tahoma;
+    font: normal normal normal 13px/16px Tahoma;
 }
 
 .rs-testimonial.home1-style .testi-item .author-desc .desc {
@@ -2469,6 +2488,11 @@ h6.sub-text-b-l {
     .rs-degree.style1 .title {
         font-size: 25px;
     }
+    .button-29 {
+        height: 50px !important;
+        white-space: normal;
+
+    }
 
     .full-width-header .rs-header .topbar-area.home11-topbar .col-md-6 {
         max-width: 100% !important;
@@ -2499,10 +2523,17 @@ h6.sub-text-b-l {
     }
 
     .full-width-header .rs-header .logo-part.mobile-logo-s img {
-        height: 60px !important;
-        padding-left: 18px;
+
+        height: 90px !important;
+        padding-left: 0px;
         padding-right: 0px !important;
         margin-top: 27px;
+
+    }
+    .full-width-header .rs-header .logo-part a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     section.latest-news .latest-news-text p{
@@ -3682,7 +3713,32 @@ h6.sub-text-b-l {
     }
     .cont_secsns
     {
-        margin: 20px 0px;
+        margin: 20px 6px;
+    }
+
+    .owl-prev
+    {
+        line-height: 20px;
+    }
+    .owl-prev i, .owl-next i
+    {
+        line-height: 20px;
+    }
+    .rs-partner .fa-angle-left:before
+    {
+        font-size: 18px;
+
+    }
+
+    .rs-partner .fa-angle-right:before
+    {
+        font-size: 18px;
+
+
+    }
+    .main_btntop_chnges
+    {
+        padding: 0px;
     }
 
 
@@ -4011,6 +4067,14 @@ h6.sub-text-b-l {
         height: 207px;
         margin: auto;
         margin-left: -20px;
+      }
+      .gallery-lbox
+      {
+        margin-top: 20px;
+      }
+      .btn-part
+      {
+        margin-top: 8px !important;
       }
 
     .container-fluid2 {
@@ -4908,8 +4972,18 @@ h6.sub-text-b-l {
         .marquee-vertical {
             height: 100px;
         }
+        .y-middle
+        {
+            padding: 16px 0px;
+        }
     }
-
+    @media only screen and (min-width: 1400px) and (max-width: 2000px)
+    {
+        .y-middle
+        {
+            padding: 16px 0px;
+        }
+    }
     @media only screen and (min-width: 2001px) and (max-width: 2300px)
     {
         .img-part.banner-image img
@@ -4924,6 +4998,10 @@ h6.sub-text-b-l {
         .marquee-vertical {
             height: 100px;
         }
+        .y-middle
+        {
+            padding: 16px 0px;
+        }
     }
 
 
@@ -4935,8 +5013,15 @@ h6.sub-text-b-l {
      .button-29
      {
         height: 40px;
-        font-size: 8px;
+        font-size: 10px;
+        margin: 0% 0% 3% 0%;
      }
+     .marquee-vertical {
+        height: 60px;
+    }
+     .top-menu-box {
+        padding: 0 0 0 0;
+      }
      .right_dhr .title
      {
        padding: 6px;
@@ -4947,11 +5032,15 @@ h6.sub-text-b-l {
        font-size: 8px;
      }
      .marquee-vertical {
-        height: 45px;
+        height: 60px;
+    }
+    .border-right-white
+    {
+        border: none;
     }
     .container-custom_chngs {
 
-        height: 242px;
+        height: 254px;
     }
     .rs-about.style1 .notice-bord.style1 .title.twitter-text-h {
         font-size: 14px;
@@ -4978,10 +5067,13 @@ h6.sub-text-b-l {
     margin-bottom: -14px;
 
     }
+    .img-part.banner-image img {
+        height: 222px !important;
+    }
 
     .img-part.banner-image {
-        min-height: 200px;
-        height: 200px;
+        min-height: 222px;
+        height: 222px;
     }
     .marquee-height.myslider {
         height: 275px !important;
