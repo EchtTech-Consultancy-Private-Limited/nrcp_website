@@ -705,7 +705,7 @@
                         </div>
                      </div>
                      <div class="btn-view_play">
-                        <div class="btn-part mt-4 text-center">
+                        <div class="btn-part mt-2 text-center">
                            <a class="readon2" href="{{ route('photo-gallery') }}" rel="noopener noreferrer">View
                            All</a>
                         </div>
@@ -759,7 +759,7 @@
                         </div>
                      </div>
                      <div class="btn-view_play">
-                        <div class="btn-part mt-4 text-center">
+                        <div class="btn-part mt-2 text-center">
                            <a class="readon2" href="{{ route('video') }}" rel="noopener noreferrer">View All</a>
                         </div>
                         <div class="btns">

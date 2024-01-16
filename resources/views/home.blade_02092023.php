@@ -67,7 +67,7 @@
                                             data-wow-duration="3000ms">
                                             Publications
                                         </h1>
-                                        {{-- 
+                                        {{--
                            <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
                               data-wow-duration="2000ms">is a public health initiative in India that aims to
                               prevent and control the spread of rabies,
@@ -103,7 +103,7 @@
                                             data-wow-duration="3000ms">
                                             Events
                                         </h1>
-                                        {{-- 
+                                        {{--
                            <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
                               data-wow-duration="2000ms">is a public health initiative in India that aims to
                               prevent and control the spread of rabies,
@@ -147,7 +147,7 @@
                                             data-wow-duration="3000ms">
                                             Upcoming Activities
                                         </h1>
-                                        {{-- 
+                                        {{--
                            <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
                               data-wow-duration="2000ms">is a public health initiative in India that aims to
                               prevent and control the spread of rabies,
@@ -290,7 +290,7 @@
 
 --}}
 <!-- Card Section End -->
-{{-- 
+{{--
 <div class="ministers-memories">
    <div class="container-fluid">
       <div class="row">
@@ -414,7 +414,7 @@
                       </div>
                   </div>
                   <div class="row">
-              
+
                       <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
                           style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
                           <a class="categories-item" href="#">
@@ -451,7 +451,7 @@
                               </div>
                           </a>
                       </div>
-              
+
                       <div class="col-lg-4 col-md-6 wow fadeInUp p-0" data-wow-delay="300ms" data-wow-duration="2000ms"
                           style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
                           <a class="categories-item" href="#">
@@ -488,11 +488,49 @@
                               </div>
                           </a>
                       </div>
-              
-              
+
+
                   </div>
               </div>
               </div>-->
+
+
+
+
+
+
+
+
+
+          <div class="container">
+            <div class="row">
+               <div class="col-md-2">
+                  <div class="left_sec_btns">
+                     dfdfdfdfdf
+                  </div>
+
+               </div>
+               <div class="col-md-8">
+               <div class="mid_sec_btns">
+                     dfdfdfdfdf
+                  </div>
+
+                  </div>
+                  <div class="col-md-2">
+                  <div class="right_sec_btns">
+                     rght_rght
+                  </div>
+
+                  </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
         <div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-10">
             <div class="container">
                 <div class="row p-0">
@@ -633,7 +671,7 @@
 </div>
 </div>
 
-{{-- 
+{{--
 <div id="rs-popular-courses" class="rs-popular-courses style1 modify1 pt-60 pb-60">
    <div class="container">
       <div class="sec-title6 text-center mb-40">
@@ -713,7 +751,7 @@
    </div>
 </div>
 --}}
-{{-- 
+{{--
 <div class="rs-cta bg-cta pt-20 pb-10">
    <div class="container">
       <div class="sec-title6 text-center pt-60 mb-40">
@@ -875,7 +913,7 @@
                            </div>
                            <a class="popup-videos" href="{{ url('/video') }}">
                            <i class="fa fa-play"></i>
-                           </a>                                  
+                           </a>
                         </div>
                      </div>
                      <div class="team-item">
@@ -886,7 +924,7 @@
                            </div>
                            <a class="popup-videos" href="{{ url('/video') }}">
                            <i class="fa fa-play"></i>
-                           </a>                                  
+                           </a>
                         </div>
                      </div>
                   </div>
@@ -910,7 +948,7 @@
 
 </div>
    <!-- Faq Section Start -->
-   {{-- 
+   {{--
    <div class="rs-faq-part style1 pt-40 pb-80">
       <div class="container">
          <div class="row">
