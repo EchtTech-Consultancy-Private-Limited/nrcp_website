@@ -20764,7 +20764,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 {
 
   padding: 2% 2% 0% 2%;
-    height: 400px;
+    height: 390px;
 }
 
 .right_dhr .title
@@ -20819,7 +20819,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   color: #92271d;
 }
 .marquee-vertical {
-  height: 91px;
+  height: 104px;
 }
 
 .marquee-content {
@@ -20829,7 +20829,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 
 .marquee {
   overflow-y: scroll;
-  margin: 15px 0;
+  margin: 6px 0;
 }
 
 .marquee-horizontal {
