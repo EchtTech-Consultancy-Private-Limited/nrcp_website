@@ -20868,6 +20868,11 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
    font-weight: 900;
 }
 
+.latest-lists a
+{
+  font-size: 14px;
+}
+
 
 
 /* ---------------------- */
@@ -21075,4 +21080,10 @@ margin-top: 14px;
     color: #92271de3;
     border-radius: 50%;
     border: 1px solid #808080;
+}
+
+img.twitter-logo-top
+{
+  width: 14px;
+  filter: invert(1);
 }

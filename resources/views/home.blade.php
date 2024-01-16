@@ -373,7 +373,7 @@
                                  <img src="{{ asset('assets/Nrcp_img/pdf-frtontpage.PNG') }}"
                                     alt="National Action Plan" title="National Action Plan"
                                     rel="noopener noreferrer" />
-                                 </a>
+                                 </a>git
                                  <div class="btn-part wow fadeInUp mt-4" data-wow-delay="400ms"
                                     data-wow-duration="2000ms">
                                     <a class="readon2"
