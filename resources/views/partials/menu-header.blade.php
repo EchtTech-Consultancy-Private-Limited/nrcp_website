@@ -1,4 +1,4 @@
-<div class="row y-middle ">
+<div class="row y-middle py-2">
     <div class="col-lg-1 pr-0">
         <div class="logo-cat-wrap">
             <div class="logo-part">

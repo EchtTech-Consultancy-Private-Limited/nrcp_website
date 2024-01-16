@@ -170,7 +170,7 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-6 order-1 order-md-2">
+               <div class="col-md-6 order-1 order-md-2 px-0">
                   <div class="cont_secsns mid_dhr">
                      <div class="rs-slider style1">
                         <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="20"
@@ -223,7 +223,7 @@
                <div class="col-md-3 order-md-3 order-3">
                   <div class="cont_secsns right_dhr new-till">
                      <div class="notice-bord style1">
-                        <h4 class="title" tabindex="0">Human Health Sector</h4>
+                        <h4 class="title" tabindex="0">Human Health Sector Activities</h4>
                         <div class="marquee marquee-vertical" data-speed="50">
                            <div class="marquee-wrapper">
                               <div class="marquee-content">
@@ -258,7 +258,7 @@
                               </div>
                            </div>
                         </div>
-                        <h4 class="title" tabindex="0">Animal Health Sector</h4>
+                        <h4 class="title" tabindex="0">Animal Health Sector Activities</h4>
 
                         <div class="marquee marquee-vertical" data-speed="50">
                            <div class="marquee-wrapper">
@@ -391,7 +391,7 @@
             </div>
          </div>
          <!-- About Section End -->
-         <div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-60 pb-60">
+         <div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-40 pb-40">
             <div class="container">
                <div class="row ">
                   <div class="col-md-4">
@@ -651,7 +651,7 @@
          </div>
       </div>
       --}}
-      <div class="gallery-section pt-60 pb-60">
+      <div class="gallery-section pt-40 pb-40">
          <div class="px-3">
             <div class="row">
                <div class="col-md-6">
