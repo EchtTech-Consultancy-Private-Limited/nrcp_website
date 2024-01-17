@@ -1886,8 +1886,8 @@ ul.listing-style.modify li:before {
 
 .full-width-header .rs-header .topbar-area .topbar-contact li {
   display: inline-block;
-  line-height: 50px;
-  height: 50px;
+  line-height: 45px;
+  height: 45px;
   margin-right: 10px;
   padding-right: 8px;
   font-size: 13px;
@@ -2041,6 +2041,7 @@ ul.listing-style.modify li:before {
 
 .full-width-header .rs-header .topbar-area.home8-topbar.inner-part .topbar-contact li a {
   color: #ffffff !important;
+
 }
 
 .full-width-header .rs-header .topbar-area.home8-topbar.inner-part .topbar-contact li a:hover {
@@ -2148,6 +2149,9 @@ ul.listing-style.modify li:before {
 
 .full-width-header .rs-header .topbar-area.home11-topbar {
   background: #f1f1f1 !important;
+  height: 38px;
+  display: flex;
+    align-items: center;
 }
 
 .full-width-header .rs-header .topbar-area.home11-topbar .topbar-contact li {
@@ -2166,6 +2170,7 @@ ul.listing-style.modify li:before {
 
 .full-width-header .rs-header .topbar-area.home11-topbar .topbar-contact li a {
   color: #000;
+  font-size: 12px;
 }
 
 .full-width-header .rs-header .topbar-area.home11-topbar .topbar-contact li a:hover {
@@ -2192,7 +2197,7 @@ ul.listing-style.modify li:before {
 }
 
 .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share .opening i:before {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   color: #000;
 }
@@ -6355,7 +6360,7 @@ body .modal-backdrop {
 
 .rs-about.style1 .notice-bord.style1 .title {
   background: #92271d;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     padding: 12px 25px;
     text-align: center;
@@ -6366,11 +6371,12 @@ body .modal-backdrop {
 }
 
 img.twitter-logo {
-  width: 18px;
+  width: 12px;
 }
 
 .rs-about.style1 .notice-bord.style1 .title.twitter-text-h{
   font-size: 16px;
+  line-height: 24px;
 }
 
 .rs-about.style1 .notice-bord.style1 li {
@@ -6394,6 +6400,10 @@ img.twitter-logo {
   padding-right: 10px;
   font-weight: 600;
   width: 60px;
+}
+.an-latest-news
+{
+  line-height: 26px;
 }
 
 .rs-about.style1 .notice-bord.style1 li .date span {
@@ -13082,10 +13092,10 @@ span.courses.course-icon img {
 .rs-inner-blog .widget-area .search-widget .search-wrap [type=search] {
   border: 1px solid #ddd;
   color: #444444;
-  padding: 3px 10px;
+  padding: 1px 10px;
   padding-right: 30px;
   width: 100%;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 30px;
   position: relative;
   transition: 0.4s ease-in-out;
@@ -13105,7 +13115,7 @@ span.courses.course-icon img {
   right: 0px;
   top: 0;
   z-index: 10;
-  font-size: 20px;
+  font-size: 10px;
   border-radius: 0 5px 5px;
 }
 
@@ -18661,8 +18671,9 @@ color: #333;
 
 .timezone {
   background: #fff;
-  padding: 5px 10px;
+  padding: 2px 10px;
   border-radius: 50px;
+  font-size: 12px;
 }
 
 
@@ -18684,8 +18695,8 @@ color: #333;
 .switch {
   position: relative;
   display: inline-block;
-  width: 55px;
-  height: 26px;
+  width: 32px;
+  height: 14px;
 }
 
 .switch input {
@@ -18705,14 +18716,21 @@ color: #333;
   -webkit-transition: .4s;
   transition: .4s;
 }
+.an-center-switch
+{
+  height: 17px;
+}
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 3px;
+
+
+  height: 12px;
+  width: 12px;
+  left: 0px;
+  bottom: 1px;
+
   background-color: black;
   -webkit-transition: .4s;
   transition: .4s;
@@ -18754,8 +18772,10 @@ select.form-control.select-lang {
   border: 0;
   color: #000;
   background: #ffffff;
-  padding: 3px 9px;
-  font-size: 13px;
+  padding: 0px 9px;
+    font-size: 12px;
+    line-height: 10px;
+    height: 24px;
 }
 
 button.text-increment-btn {
@@ -19114,6 +19134,7 @@ a.text-vaccination.pulse span {
 
 span.font-t {
   color: #000000;
+  font-size: 12px;
 }
 
 .ministers-memories .container-fluid {
@@ -19710,7 +19731,7 @@ a.top-logo img {
   /* border-radius: 3px !important; */
   padding: 4px 15px;
   font-size: 13px;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .marquee-height {
@@ -19771,7 +19792,7 @@ a.top-logo img {
 .video-g {
   object-fit: cover;
   width:100%;
-  height: 275px;
+  height: 280px;
 }
 
 .marquee--inner .desc {
@@ -20027,7 +20048,7 @@ section{
 .gallery-section.clientail .btns {
   position: absolute;
   right: -0.8%;
-  margin-top: 6px;
+  margin-top: 1px;
 }
 
 a.sitemap-cl {
@@ -20764,7 +20785,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 {
 
   padding: 2% 2% 0% 2%;
-    height: 390px;
+    height: 380px;
 }
 
 .right_dhr .title
@@ -20819,7 +20840,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   color: #92271d;
 }
 .marquee-vertical {
-  height: 104px;
+  height: 107px;
 }
 
 .marquee-content {
@@ -20892,7 +20913,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   color: #fff;
   cursor: pointer;
   display: inline-flex;
-  height: 68px;
+  height: 67px;
   justify-content: center;
   line-height: 1.2;
   list-style: none;
@@ -20910,7 +20931,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   will-change: box-shadow,transform;
   font-size: 14px;
   color: #fff;
-  margin: 0% 0% 5% 0%;
+  margin: 0% 0% 6% 0%;
   animation: effect 2s linear infinite;
 }
 
@@ -21001,7 +21022,9 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 img.facebook-logo
 {
   filter: invert(1);
-  width: 25px;
+  width: 23px;
+  height: 22px;
+  object-fit: cover;
 }
 
 .print-button{
@@ -21011,6 +21034,7 @@ img.facebook-logo
   right: 0px;
   padding: 6px 16px !important;
 }
+
 .measurement
 {
 margin-top: 14px;
@@ -21086,4 +21110,23 @@ img.twitter-logo-top
 {
   width: 14px;
   filter: invert(1);
+}
+
+.p-32
+{
+ padding: 32px 0px;
+}
+
+.left_dhr
+{
+  height: 322px;
+
+}
+.mid_dhr
+{
+  height: 322px;
+}
+.right_dhr
+{
+  height: 322px;
 }

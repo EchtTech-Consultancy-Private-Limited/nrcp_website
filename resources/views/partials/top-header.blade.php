@@ -14,7 +14,7 @@
          </div>
 
          <div class="col-md-6 text-lg-right pl-0">
-            <ul class="toolbar-sl-share rs-inner-blog">
+            <ul class="toolbar-sl-share rs-inner-blog d-flex align-items-center justify-content-between">
                <li class="opening widget-area">
                   <div class="search-widget">
                      <div class="search-wrap">
@@ -46,7 +46,7 @@
                      </form>
                   </div>
                </li>
-               <li>
+               <li class="an-center-switch" >
                   <label class="switch mb-0">
                   <input type="checkbox" id="mode" tabindex="0" onclick="setTheme()">
                   <span class="slider round"></span>
