@@ -6366,7 +6366,7 @@ body .modal-backdrop {
 }
 
 img.twitter-logo {
-  width: 23px;
+  width: 18px;
 }
 
 .rs-about.style1 .notice-bord.style1 .title.twitter-text-h{
@@ -13082,7 +13082,7 @@ span.courses.course-icon img {
 .rs-inner-blog .widget-area .search-widget .search-wrap [type=search] {
   border: 1px solid #ddd;
   color: #444444;
-  padding: 6px 10px;
+  padding: 3px 10px;
   padding-right: 30px;
   width: 100%;
   font-size: 13px;
@@ -13099,7 +13099,7 @@ span.courses.course-icon img {
   background: transparent;
   border: medium none;
   color: #505050;
-  padding: 6px 5px 8px;
+  padding: 3px 5px 8px;
   position: absolute;
   display: block;
   right: 0px;
@@ -21001,7 +21001,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 img.facebook-logo
 {
   filter: invert(1);
-  width: 32px;
+  width: 25px;
 }
 
 .print-button{
