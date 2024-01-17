@@ -65,7 +65,7 @@
                             <div class="slider-content">
                                 <div class="container-fluid px-0">
                                     <div class="d-flex align-items-center latest-news-slider-content-text">
-                                        <p>We had celebrated World's Rabies Day on 28th Sept’2023 </p>
+                                        <p>We had celebrated World's Rabies Day on 32th Sept’2023 </p>
                                     </div>
                                 </div>
                             </div>
@@ -391,7 +391,7 @@
             </div>
          </div>
          <!-- About Section End -->
-         <div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 pt-40 pb-40">
+         <div id="rs-popular-courses" class="rs-about rs-latest-events style1 modify1 p-32 an-pt-tab">
             <div class="container">
                <div class="row ">
                   <div class="col-md-4">
@@ -476,7 +476,7 @@
                   </div>
                   <div class="col-md-4">
                      <div class="notice-bord style1">
-                        <h4 class="title">Latest News</h4>
+                        <h4 class="title an-latest-news">Latest News</h4>
                         <div class="marquee-height">
                            <ul class="Latest-news-slider marquee--inner ">
                               @if (Count($news) > 0)
@@ -651,7 +651,7 @@
          </div>
       </div>
       --}}
-      <div class="gallery-section pt-40 pb-40">
+      <div class="gallery-section p-32">
          <div class="px-3">
             <div class="row">
                <div class="col-md-6">
@@ -759,7 +759,7 @@
                         </div>
                      </div>
                      <div class="btn-view_play">
-                        <div class="btn-part mt-2 text-center">
+                        <div class="btn-part  text-center">
                            <a class="readon2" href="{{ route('video') }}" rel="noopener noreferrer">View All</a>
                         </div>
                         <div class="btns">
@@ -776,7 +776,7 @@
          </div>
       </div>
       <!-- Partner Start -->
-      <div class="rs-partner pt-40 pb-40 gray-bg-color">
+      <div class="rs-partner p-32 gray-bg-color">
          <div class="container">
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="6" data-margin="15" data-autoplay="true"
                data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false"

@@ -44,12 +44,12 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
     .img-part.banner-image img{
-        height: 314px;
+        height: 319px;
     }
 
     .img-part.banner-image {
-        min-height: 314px;
-        height: 314px;
+        min-height: 319px;
+        height: 319px;
       }
 
       h2.title.black-color.logo-text {
@@ -139,7 +139,7 @@
     } */
 
     .img-part.banner-image img{
-        height: 305px !important;
+        height: 322px !important;
     }
 
     .rs-slider.style1 .slider-content .sl-title {
@@ -279,7 +279,7 @@
     }
     .full-width-header .rs-header .logo-part a
     {
-        width: 96px;
+        width: unset;
     }
     .full-width-header.header-style3 .rs-header .menu-area .menu-bg::before {
         left: 65%;
@@ -5019,7 +5019,7 @@ h6.sub-text-b-l {
      .right_dhr .title
      {
        padding: 6px;
-       font-size: 14px;
+       font-size: 12px;
      }
      .latest-lists
      {
@@ -5075,6 +5075,19 @@ h6.sub-text-b-l {
     .marquee-height
     {
         height: 224px;
+    }
+    .btn-part.view-all-btn a
+    {
+        margin-top: 4px;
+    }
+    img.facebook-logo {
+        filter: invert(1);
+        width: 18px;
+    }
+
+    .an-pt-tab
+    {
+        padding-top: 1px;
     }
 
     }
