@@ -613,8 +613,9 @@ ul.topbar-contact li, .contact-page-section .contact-address-section .contact-in
 .rs-inner-blog .widget-area .search-widget .search-wrap button {
     border: 1px solid;
     border-left: 0;
-    padding: 5px 10px 5px;
-    line-height: 20px;
+    /* padding: 5px 10px 5px; */
+    line-height: 1px;
+    padding: 10px;
 }
 
 .rs-about.style1 .notice-bord.style1 li .date{
