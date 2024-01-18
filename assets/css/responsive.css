@@ -1163,7 +1163,7 @@
         padding-left: 35px;
     }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1330px)
+/* @media only screen and (min-width: 1200px) and (max-width: 1330px)
 {
     .button-29
     {
@@ -1171,7 +1171,7 @@
         font-size: 11px;
         white-space: normal;
     }
-}
+} */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .img-part.banner-image img
@@ -2585,10 +2585,18 @@ h6.sub-text-b-l {
         background: #ffddc8;
     }
 
+    .right_dhr .title
+    {
+        text-align: center;
+    }
     /* .top-menu-box {
         margin-right: 15px;
         margin-top: 20px;
     } */
+    .mid_dhr
+    {
+        height: 160px;
+    }
     .ptb-d-20 {
         padding: 6px 0;
     }
@@ -5001,9 +5009,6 @@ h6.sub-text-b-l {
 
 
     @media only screen and (min-width: 768px) and (max-width: 991px){
-
-
-
      .button-29
      {
         height: 40px;
@@ -5058,8 +5063,7 @@ h6.sub-text-b-l {
     h2.title.black-color.logo-text
     {
         font: normal normal bold 23px/62px Tahoma;
-    margin-bottom: -14px;
-
+        margin-bottom: -14px;
     }
     .img-part.banner-image img {
         height: 222px !important;
@@ -5090,4 +5094,29 @@ h6.sub-text-b-l {
         padding-top: 1px;
     }
 
+    }
+
+
+    @media only screen and (min-width: 1390px) and (max-width: 1686px)
+    {
+      .button-29
+      {
+        height: 66px !important;
+      }
+    }
+
+
+    @media only screen and (min-width: 1080px) and (max-width: 1230px)
+    {
+        .button-29
+        {
+          height: 66px !important;
+        }
+    }
+    @media only screen and (min-width: 1231px) and (max-width: 1359px)
+    {
+        .button-29
+        {
+          height: 69px !important;
+        }
     }
