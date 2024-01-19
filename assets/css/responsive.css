@@ -5153,3 +5153,15 @@ ul.topbar-contact li{
           height: 69px !important;
         }
     }
+
+    @media only screen and (min-width: 1600px)
+    {
+        .container-custom_chngs {
+            height: 402px;
+        }
+
+        .button-29
+        {
+            margin: 0% 0% 5% 0%;
+        }
+    }
