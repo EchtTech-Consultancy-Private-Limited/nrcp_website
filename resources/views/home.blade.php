@@ -160,7 +160,7 @@
                            </button>
                            <button class="button-29 text-center" role="button">
                               <!-- <a href="#" class="blink_text">Nearest Human Rabies Laboratory</a> -->
-                              <a href="#" class="blink_text">Who's who</a>
+                              <a href="http://localhost/nrcp_website/directories" class="blink_text">Who's who</a>
                            </button>
                            <button class="button-29 text-center" role="button" data-toggle="modal" data-target="#vaccinationt">
                               <!-- <a href="#" class="blink_text">Nearest Animal Rabies Laboratory</a> -->
