@@ -7,8 +7,8 @@
                   </span>
                </li>
                <li>
-                  <a href="javascript:void()" onclick="slipttobottom()" rel="noopener noreferrer"> Skip to Main Content</a> |
-                  <a href="{{ url('screen-reader-access') }}" rel="noopener noreferrer"> Screen Reader Access</a>
+                  <a href="javascript:void()" class="d-inline-block" onclick="slipttobottom()" rel="noopener noreferrer"><span class="mob-th-">Skip to Main Content</span> </a> |
+                  <a href="{{ url('screen-reader-access') }}" class="d-inline-block" rel="noopener noreferrer"><span class="mob-th-icon"><i class="fa fa-volume-up" aria-hidden="true"></i></span><span class="mob-th-acces"> Screen Reader Access</span></a>
                </li>
             </ul>
          </div>

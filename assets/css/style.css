@@ -19074,7 +19074,7 @@ h2.title.black-color.logo-text {
 }
 
 .full-width-header .rs-header .logo-part.mobile-logo-s img{
-    height: 100px !important;
+    height: 125px !important;
     margin-top: 0px;
     border-radius: 100%;
     padding: 0;
@@ -21133,4 +21133,22 @@ img.twitter-logo-top
 .right_dhr
 {
   height: 322px;
+}
+
+.mob-th-acces{
+  display: block;
+}
+.mob-th-icon{
+  display: none;
+}
+
+.topbar-contact
+{
+  height: 44px;
+  display: flex;
+}
+
+.d-inline-block
+{
+  display: inline-block;
 }

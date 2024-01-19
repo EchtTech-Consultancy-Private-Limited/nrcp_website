@@ -2849,6 +2849,13 @@ h6.sub-text-b-l {
 
     ul.toolbar-sl-share.rs-inner-blog {
         padding-bottom: 10px;
+        flex-wrap: wrap;
+
+    }
+    .mob-th-
+    {
+        width: 131px;
+        display: block;
     }
 
     /* ul.toolbar-sl-share.rs-inner-blog{display: block !important;} */
@@ -4944,8 +4951,34 @@ h6.sub-text-b-l {
     .rs-inner-blog .widget-area .recent-posts-widget .show-featured .post-img {
         margin-bottom: 15px;
     }
+.mob-th-acces{
+    display: none;
+}
+.mob-th-icon{
+    display: block;
+}
+ul.topbar-contact{
+    display: flex !important;
+}
+ul.topbar-contact li{
+    padding: 0 7px;
+}
 
+.full-width-header .rs-header .topbar-area.home11-topbar .topbar-contact li:last-child {
+
+    display: flex;
+}
     .rs-blog.main-home .blog-item .blog-content.b-t .title{width: 300px !important;}
+
+
+    .full-width-header .rs-header .topbar-area.home11-topbar
+    {
+        height: unset;
+        display: block;
+    }
+    .topbar-area.home11-topbar ul.topbar-contact {
+        display: block;
+    }
 
 
 }
