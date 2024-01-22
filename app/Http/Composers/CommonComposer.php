@@ -46,12 +46,17 @@ class CommonComposer
           $commonsideMenu = DB::table('website_menu_management')->where('parent_id',$pageSlug1->uid)->orderby('sort_order','Asc')->get();
          }
 
+         $human_activite= DB::table('recent_activities')->where('notification_others',1)->where('soft_delete', 0)->latest('created_at')->get();
+         $animal_activite= DB::table('recent_activities')->where('notification_others',2)->where('soft_delete', 0)->latest('created_at')->get();
+
        // dd($commonsideMenu);
         $menus = DB::table('website_menu_management')->where('menu_place','0')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
         $menuName = $this->getMenuTree($menus, 0);   
 
         $view->with(['headerMenu' => $menuName,
         'logo'=>$logo,
+        'human_activite'=> $human_activite,
+        'animal_activite'=> $animal_activite,
         'social_media'=>$social_media,
         'footerMenu'=>$footerMenu,
         'toogleMenu'=>$toogleMenu,
