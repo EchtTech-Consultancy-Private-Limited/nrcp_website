@@ -2510,6 +2510,10 @@ h6.sub-text-b-l {
         top: -22%;
     }
 
+    .an-center-switch {
+        height: 30px !important;
+    }
+
     .full-width-header .rs-header .topbar-area.home11-topbar ul.toolbar-sl-share.rs-inner-blog li {
         padding: 8px 10px;
     }
