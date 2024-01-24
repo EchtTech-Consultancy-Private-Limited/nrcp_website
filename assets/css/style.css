@@ -19082,6 +19082,7 @@ h2.title.black-color.logo-text {
 
 .menu-area.menu-sticky.sticky .ptb-d-20 {
   padding: 6px 0;
+
 }
 
 .top-menu-box {
@@ -20932,7 +20933,7 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   will-change: box-shadow,transform;
   font-size: 14px;
   color: #fff;
