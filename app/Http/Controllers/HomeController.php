@@ -44,8 +44,15 @@ class HomeController extends Controller
             ->latest('created_at')
             ->get();
 
+            $gallery = DB::table('gallery_management')
+            ->where('soft_delete', 0)
+            ->where('uid', $id)
+            ->latest('created_at')
+            ->first();
+            
+      
         $breadcrumbs = 'Photo Gallery Images';
-    return view('photo-gallery-details', ['photogallery' => $photogallery, 'breadcrumbs' => $breadcrumbs]);
+    return view('photo-gallery-details', ['gallery'=>$gallery,'photogallery' => $photogallery, 'breadcrumbs' => $breadcrumbs]);
 
     }
     public function comingSoon()
