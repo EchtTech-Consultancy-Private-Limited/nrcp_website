@@ -779,15 +779,15 @@
                                 data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
                                 data-md-device="2" data-md-device-nav="false" data-md-device-dots="false"
                                 id="banner3">
-                                @if (isset($galleryData) &&  !empty($galleryData))
+                                @if (isset($galleryData) && !empty($galleryData))
                                     @foreach ($galleryData as $k => $galleryDatas)
                                         <div class="team-item">
                                             <div class="gallery-box">
                                                 @if (count($galleryDatas['gallery_details']) > 0)
-                                                    <img src="{{ asset('resources/uploads/GalleryManagement/' . $galleryDatas['gallery_details'][0]->public_url) }}"
+                                                    <img @if (isset($galleryDatas['gallery_details'][0]->public_url) && !blank($galleryDatas['gallery_details'][0]->public_url)) src="{{ asset('resources/uploads/GalleryManagement/' . $galleryDatas['gallery_details'][0]->public_url) }}" @endif
                                                         alt="" rel="noopener noreferrer">
                                                     <div class="text-gallery">
-                                                        {{ $galleryDatas['gallery']->title_name_en }}
+                                                        {{ $galleryDatas['gallery']->title_name_en ?? '' }}
                                                     </div>
                                                 @else
                                                     <p>No images available for this gallery.</p>

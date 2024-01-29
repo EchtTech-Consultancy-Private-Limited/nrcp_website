@@ -21,26 +21,27 @@
                     @if (isset($galleryData) && count($galleryData) > 0)
                         <div class="row">
                             @foreach ($galleryData as $galleryDatas)
-                              @if (count($galleryDatas['gallery_details']) > 0)
-                                <div class="col-md-4">
-                                    <div class="blog-item">
-                                        <a href="{{ url('photo-gallery-images/'.$galleryDatas['gallery']->uid) }}"  title="{{ $galleryDatas['gallery']->title_name_en }}">
-                                        <div class="image-part">
-                                            <img src="{{ asset('resources/uploads/GalleryManagement/' . $galleryDatas['gallery_details'][0]->public_url) }}"
-                                                alt="">
-                                        </div>
-                                        <div class="blog-content b-t">
-                                            <h3 class="title">
+                                @if (count($galleryDatas['gallery_details']) > 0)
+                                    <div class="col-md-4">
+                                        <div class="blog-item">
+                                            <a href="{{ url('photo-gallery-images/' . $galleryDatas['gallery']->uid) }}"
+                                                title="{{ $galleryDatas['gallery']->title_name_en ?? '' }}">
+                                                <div class="image-part">
+                                                    <img @if(isset($galleryDatas['gallery_details'][0]->public_url) && !blank($galleryDatas['gallery_details'][0]->public_url)) src="{{ asset('resources/uploads/GalleryManagement/' . $galleryDatas['gallery_details'][0]->public_url) }}" @endif
+                                                        alt="">
+                                                </div>
+                                                <div class="blog-content b-t">
+                                                    <h3 class="title">
+
+                                                        {{ $galleryDatas['gallery']->title_name_en ?? '' }}
+                                                    </h3>
+                                                    <!-- <div class="desc">
                                              
-                                                 {{ $galleryDatas['gallery']->title_name_en }}
-                                            </h3>
-                                            <!-- <div class="desc">
-                                         
-                                        </div> -->
+                                            </div> -->
+                                                </div>
+                                            </a>
                                         </div>
-                                    </a>
                                     </div>
-                                </div>
                                 @endif
                             @endforeach
                         </div>
