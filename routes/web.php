@@ -64,7 +64,7 @@ Route::get('/vaccination_dose',[HomeController::class,'vaccination_dose'])->name
 // Route::get('/downloads',[HomeController::class,'downloads'])->name('downloads');
 // Route::get('/publications',[PublicationsController::class,'publications'])->name('publications');
 
-Route::get('/photo-gallery',[HomeController::class,'photoGalleryDetails'])->name('photo-gallery');
+
 
 Route::get('/news-details',[HomeController::class,'newsDetails'])->name('news-details');
 
@@ -84,6 +84,10 @@ Route::get('/contact-us',[HomeController::class,'contactForm'])->name('contact-u
 Route::post('/contact-us',[HomeController::class,'contactStroe'])->name('contact-Stroe');
 Route::get('/faq',[HomeController::class,'getFAQ'])->name('faq');
 Route::get('/search',[SearchController::class,'getSearchData'])->name('search');
+
+//photo gallery
+Route::get('/photo-gallery-images/{id}',[HomeController::class,'photoGalleryDetails'])->name('photo-gallery');
+Route::get('/photo-gallery-category',[HomeController::class,'photoGalleryCategory'])->name('photoGalleryCategory');
 
 
 //language
