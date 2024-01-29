@@ -24,19 +24,21 @@
                               @if (count($galleryDatas['gallery_details']) > 0)
                                 <div class="col-md-4">
                                     <div class="blog-item">
+                                        <a href="{{ url('photo-gallery-images/'.$galleryDatas['gallery']->uid) }}"  title="{{ $galleryDatas['gallery']->title_name_en }}">
                                         <div class="image-part">
                                             <img src="{{ asset('resources/uploads/GalleryManagement/' . $galleryDatas['gallery_details'][0]->public_url) }}"
                                                 alt="">
                                         </div>
                                         <div class="blog-content b-t">
                                             <h3 class="title">
-                                                <a href="{{ url('photo-gallery-images/'.$galleryDatas['gallery']->uid) }}"
-                                                    title="{{ $galleryDatas['gallery']->title_name_en }}">{{ $galleryDatas['gallery']->title_name_en }}</a>
+                                             
+                                                 {{ $galleryDatas['gallery']->title_name_en }}
                                             </h3>
                                             <!-- <div class="desc">
                                          
                                         </div> -->
                                         </div>
+                                    </a>
                                     </div>
                                 </div>
                                 @endif
