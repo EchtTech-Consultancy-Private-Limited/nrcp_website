@@ -19,13 +19,13 @@
                     @if(!empty($social_media))
                         @if($social_media->facebook  != '')
                         <li>
-                            <a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" rel="noopener noreferrer"><span><i class="fa fa-facebook"></i></span></a>
+                            <a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank" rel="noopener noreferrer"><span><i class="fa fa-facebook"></i></span></a>
                         </li>
                         @endif
 
                         @if($social_media->twitter  != '')
                         <li>
-                            <a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" rel="noopener noreferrer"><span><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}"
+                            <a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank" rel="noopener noreferrer"><span><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}"
                                     alt="img" rel="noopener noreferrer" class="twitter-logo"></span></a>
                         </li>
                         @endif

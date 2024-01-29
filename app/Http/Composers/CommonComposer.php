@@ -53,8 +53,36 @@ class CommonComposer
         $menus = DB::table('website_menu_management')->where('menu_place','0')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
         $menuName = $this->getMenuTree($menus, 0);   
 
+
+        //photo gallery managment
+            $galleryData = []; 
+
+            $gallery = DB::table('gallery_management')
+                ->where('soft_delete', 0)
+                ->latest('created_at')
+                ->get();
+
+            if (count($gallery) > 0) {
+                foreach ($gallery as $images) {
+                    $gallay_images = DB::table('gallery_details')
+                        ->where('soft_delete', 0)
+                        ->where('gallery_id', $images->uid)
+                        ->latest('created_at')
+                        ->get();
+
+                    if (count($gallay_images) > 0) {
+                        $galleryData[] = [
+                            'gallery' => $images,
+                            'gallery_details' => $gallay_images
+                        ];
+                    }
+                }
+            }
+
+        
         $view->with(['headerMenu' => $menuName,
         'logo'=>$logo,
+        'galleryData'=>$galleryData,
         'human_activite'=> $human_activite,
         'animal_activite'=> $animal_activite,
         'social_media'=>$social_media,

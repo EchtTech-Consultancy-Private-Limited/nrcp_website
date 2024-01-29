@@ -12,13 +12,19 @@
 <div class="event-page-section pt-60 pb-60">
     <div class="container">
         <div class="row">
-            @if(!empty($photogallery))
+            <div class="heading-title">
+                <h2 class="title event-heading-color">Photo Gallery Images</h2>
+            </div>
+            @if(isset($photogallery)  && !empty($photogallery))
             <div class="rs-blog main-home">
                 <div class="container1 row">
                     <div class="col-md-6">
                         @foreach($photogallery as $datas)
+
                         <div class="mySlides">
+                            @if(!blank($datas->public_url))
                             <img src="{{ asset('resources/uploads/GalleryManagement/'.$datas->public_url) }}" style="width:100%">
+                            @endif
                         </div>
                         @endforeach
                         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -27,7 +33,12 @@
                     <div class="col-md-6 col-box-g">
                     @foreach($photogallery as $key=>$datas)
                         <div class="column">
-                            <img class="demo cursor" src="{{ asset('resources/uploads/GalleryManagement/'.$datas->public_url) }}" style="width:100%" onclick="currentSlide({{$key+1}})" alt="">
+                            <img class="demo cursor" 
+                            @if(!blank($datas->public_url))
+                            src="{{ asset('resources/uploads/GalleryManagement/'.$datas->public_url) }}" 
+                            @endif
+                            
+                            style="width:100%" onclick="currentSlide({{$key+1}})" alt="">
                         </div>
                     @endforeach
                     </div>

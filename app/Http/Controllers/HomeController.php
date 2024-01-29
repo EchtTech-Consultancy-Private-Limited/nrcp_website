@@ -36,17 +36,17 @@ class HomeController extends Controller
     {
         return view('animal-health');
     }
-    public function photoGalleryDetails()
+    public function photoGalleryDetails($id)
     {
-
-        $photoGallery = DB::table('gallery_management as gm')
-            ->join('gallery_details as ged', 'ged.gallery_id', '=', 'gm.uid')
-            ->select('gm.*', 'ged.*')
-            ->where('gm.soft_delete', '0')
-            // ->orderby('gm.sort_order','Asc')
+        $photogallery = DB::table('gallery_details')
+            ->where('soft_delete', 0)
+            ->where('gallery_id', $id)
+            ->latest('created_at')
             ->get();
-        $breadcrumbs = 'Photo Gallery Details';
-        return view('photo-gallery-details', ['photogallery' => $photoGallery, 'breadcrumbs' => $breadcrumbs]);
+
+        $breadcrumbs = 'Photo Gallery Images';
+    return view('photo-gallery-details', ['photogallery' => $photogallery, 'breadcrumbs' => $breadcrumbs]);
+
     }
     public function comingSoon()
     {
@@ -487,6 +487,47 @@ class HomeController extends Controller
         } catch (\Exception $e) {
 
             return response()->json(['error' => 'Something went wrong'], 500);
+        }
+    }
+
+
+    public function photoGalleryCategory()
+    {
+        try {
+            $galleryData = []; 
+
+            $gallery = DB::table('gallery_management')
+                ->where('soft_delete', 0)
+                ->latest('created_at')
+                ->get();
+
+            if (count($gallery) > 0) {
+                foreach ($gallery as $images) {
+                    $gallay_images = DB::table('gallery_details')
+                        ->where('soft_delete', 0)
+                        ->where('gallery_id', $images->uid)
+                        ->latest('created_at')
+                        ->get();
+
+                    if (count($gallay_images) > 0) {
+                        $galleryData[] = [
+                            'gallery' => $images,
+                            'gallery_details' => $gallay_images
+                        ];
+                    }
+                }
+            }
+
+            return view('galleryCategory', ['galleryData' => $galleryData]);
+        } catch (\Exception $e) {
+            \Log::error('An exception occurred: ' . $e->getMessage());
+            return abort(404);
+        } catch (\PDOException $e) {
+            \Log::error('A PDOException occurred: ' . $e->getMessage());
+            return abort(404);
+        } catch (\Throwable $e) {
+            \Log::error('An unexpected exception occurred: ' . $e->getMessage());
+            return abort(404);;
         }
     }
 }
