@@ -82,6 +82,7 @@
                         </div>
                         @endif
                         <div class="row">
+
                             <div class="col-lg-6 mb-25 col-md-12">
                                 <input class="from-control" type="text" id="name" name="name" value="{{ old('name') }}"
                                     placeholder="Name">
@@ -97,6 +98,7 @@
                                     value="{{ old('email') }}" placeholder="Email">
 
 
+
                                 @if ($errors->has('email'))
                                 <div class="text-danger">{{ $errors->first('email') }}</div>
                                 @endif
@@ -107,6 +109,7 @@
                                 <input class="from-control phone" type="text" id="phone" value="{{ old('phone') }}"
                                     name="phone" placeholder="Phone" maxlength="10" minlength="10">
 
+
                                 @if ($errors->has('phone'))
                                 <div class="text-danger">{{ $errors->first('phone') }}</div>
                                 @endif
@@ -116,14 +119,17 @@
                                 <input class="from-control" type="text" id="subject" value="{{ old('subject') }}"
                                     name="subject" placeholder="Subject">
 
+
                                 @if ($errors->has('subject'))
                                 <div class="text-danger">{{ $errors->first('subject') }}</div>
                                 @endif
 
                             </div>
+
                             <div class="col-lg-12 mb-25">
                                 <textarea class="from-control" id="message" name="message"
                                     placeholder=" Message">{{ old('message') }}</textarea>
+
                                 @if ($errors->has('message'))
                                 <div class="text-danger">{{ $errors->first('message') }}</div>
                                 @endif
