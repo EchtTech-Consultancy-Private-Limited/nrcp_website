@@ -81,7 +81,7 @@
                 @endif
                         <div class="row">
                             <div class="col-lg-6 mb-35 col-md-12">
-                                <input class="from-control" type="text" id="name" name="name" placeholder="Name">
+                                <input class="from-control" type="text" id="name" name="name" value="{{ old('name') }}" placeholder="Name">
                         
                         
                                 @if ($errors->has('name'))
@@ -90,7 +90,7 @@
                             </div> 
                         
                             <div class="col-lg-6 mb-35 col-md-12">
-                                <input class="from-control" type="text" id="email" name="email" placeholder="Email">
+                                <input class="from-control" type="text" id="email" name="email"  value="{{ old('email') }}" placeholder="Email">
                         
                         
                                 @if ($errors->has('email'))
@@ -100,7 +100,7 @@
 
                         
                             <div class="col-lg-6 mb-35 col-md-12">
-                                <input class="from-control phone" type="text" id="phone" name="phone" placeholder="Phone" maxlength="10" minlength="10">
+                                <input class="from-control phone" type="text" id="phone" value="{{ old('phone') }}" name="phone" placeholder="Phone" maxlength="10" minlength="10">
                         
                                 @if ($errors->has('phone'))
                                 <div class="text-danger">{{ $errors->first('phone') }}</div>
@@ -108,7 +108,7 @@
                             </div>   
                         
                             <div class="col-lg-6 mb-35 col-md-12">
-                                <input class="from-control" type="text" id="subject" name="subject" placeholder="Subject">
+                                <input class="from-control" type="text" id="subject" value="{{ old('subject') }}" name="subject" placeholder="Subject">
                             
                                 @if ($errors->has('subject'))
                                 <div class="text-danger">{{ $errors->first('subject') }}</div>
@@ -116,7 +116,7 @@
                         
                             </div>
                             <div class="col-lg-12 mb-35">
-                                <textarea class="from-control" id="message" name="message" placeholder=" Message" ></textarea>
+                                <textarea class="from-control" id="message" name="message" placeholder=" Message" >{{ old('message') }}</textarea>
                                 @if ($errors->has('message'))
                                 <div class="text-danger">{{ $errors->first('message') }}</div>
                                 @endif

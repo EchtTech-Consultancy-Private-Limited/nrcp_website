@@ -195,7 +195,7 @@ class HomeController extends Controller
         $data->phone = $request->phone;
         $data->message = $request->message;
         $data->save();
-        return back()->with('success', 'Record Add Successfully');
+        return back()->with('success', 'Thanks for contacting us, We have received your query and will get back to you shortly!');
     }
 
     public function getFAQ()
