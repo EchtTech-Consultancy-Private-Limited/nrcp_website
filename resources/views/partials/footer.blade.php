@@ -19,13 +19,13 @@
                     @if(!empty($social_media))
                         @if($social_media->facebook  != '')
                         <li>
-                            <a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" rel="noopener noreferrer"><span><i class="fa fa-facebook"></i></span></a>
+                            <a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank" rel="noopener noreferrer"><span><i class="fa fa-facebook"></i></span></a>
                         </li>
                         @endif
 
                         @if($social_media->twitter  != '')
                         <li>
-                            <a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" rel="noopener noreferrer"><span><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}"
+                            <a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank" rel="noopener noreferrer"><span><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}"
                                     alt="img" rel="noopener noreferrer" class="twitter-logo"></span></a>
                         </li>
                         @endif
@@ -272,10 +272,9 @@
 
                 <div class="text-anime">
                     <ul>
-                        <li class="d-flex align-item-start" > <div><i class="fa fa-arrow-right mt-4" aria-hidden="true"></i></div>  <a class="highlighted"  href="#"> Have you taken Rabies Vaccine after animal bite  Have you taken Rabies Vaccine after animal bite </a> <div><i class="fa fa-external-link mt-4 " aria-hidden="true"></i></div> </li>
-                        <li class="d-flex align-item-start" > <div><i class="fa fa-arrow-right mt-4" aria-hidden="true"></i></div>  <a class="highlighted"  href="#"> Have you taken Rabies Vaccine after Rabies Vaccine after animal bite</a> <div><i class="fa fa-external-link mt-4 " aria-hidden="true"></i></div> </li>
-                        <li class="d-flex align-item-start" > <div><i class="fa fa-arrow-right mt-4" aria-hidden="true"></i></div>  <a class="highlighted"  href="#"> Have you taken Rabies Vaccine after animal bite Rabies. </a> <div><i class="fa fa-external-link mt-4 " aria-hidden="true"></i></div> </li>
-
+                        <li class="d-flex align-item-start" > <div><i class="fa fa-arrow-right mt-4" aria-hidden="true"></i></div>  <a class="highlighted" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif  target="_blank"  href="{{ 'https://www.who.int/news-room/feature-stories/detail/eliminating-rabies-ukraine-journey-from-crisis-to-control' }}"> Eliminating rabies: Ukraine’s journey from crisis to control</a> <div><i class="fa fa-external-link mt-4 " aria-hidden="true"></i></div> </li>
+                        <li class="d-flex align-item-start" > <div><i class="fa fa-arrow-right mt-4" aria-hidden="true"></i></div>  <a class="highlighted" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif  target="_blank" href="{{ 'https://www.dvm360.com/view/spca-international-awards-grants-to-vaccinate-12-000-animals-against-rabies' }}"> SPCA International awards grants to vaccinate 12,000 animals against rabies</a> <div><i class="fa fa-external-link mt-4 " aria-hidden="true"></i></div> </li>
+                      
                     </ul>
                 </div>
 

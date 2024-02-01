@@ -240,7 +240,7 @@
                                                 @endphp
 
                                                 <div class="latest-lists">
-                                                    <a @if ($human_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif
+                                                    <a @if ($human_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
                                                     target="_blank" href="{{ $humanUrl }}" @else
                                                         href="{{ url($humanUrl) }}" @endif>
                                                         <strong><i class="fa fa-hand-o-right mx-1"
@@ -322,7 +322,7 @@
                                                 @endphp
 
                                                 <div class="latest-lists">
-                                                    <a @if ($animal_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif
+                                                    <a @if ($animal_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
                                                     target="_blank" href="{{ $animalUrl }}" @else
                                                         href="{{ url($animalUrl) }}" @endif
 
@@ -779,43 +779,28 @@
                                 data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
                                 data-md-device="2" data-md-device-nav="false" data-md-device-dots="false"
                                 id="banner3">
-                                @if (!empty($photogallery))
-                                    @foreach ($photogallery as $photogallerys)
+                                @if (isset($galleryData) && !empty($galleryData))
+                                    @foreach ($galleryData as $k => $galleryDatas)
                                         <div class="team-item">
                                             <div class="gallery-box">
-                                                <img src="{{ asset('resources/uploads/GalleryManagement/' . $photogallerys->public_url) }}"
-                                                    alt="" rel="noopener noreferrer">
-                                                <!-- <div class="text-gallery" id="banner3">
-                                    Event 1
-                                    </div> -->
+                                                @if (count($galleryDatas['gallery_details']) > 0)
+                                                    <img @if (isset($galleryDatas['gallery_details'][0]->public_url) && !blank($galleryDatas['gallery_details'][0]->public_url)) src="{{ asset('resources/uploads/GalleryManagement/' . $galleryDatas['gallery_details'][0]->public_url) }}" @endif
+                                                        alt="" rel="noopener noreferrer">
+                                                    <div class="text-gallery">
+                                                        {{ $galleryDatas['gallery']->title_name_en ?? '' }}
+                                                    </div>
+                                                @else
+                                                    <p>No images available for this gallery.</p>
+                                                @endif
                                             </div>
                                         </div>
                                     @endforeach
-                                @else
-                                    <div class="team-item">
-                                        <div class="gallery-box">
-                                            <img src="{{ asset('assets/Nrcp_img/gallery/11.jpg') }}" alt=""
-                                                rel="noopener noreferrer">
-                                            <div class="text-gallery">
-                                                Event 1
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-item">
-                                        <div class="gallery-box">
-                                            <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt=""
-                                                rel="noopener noreferrer">
-                                            <div class="text-gallery">
-                                                Event 2
-                                            </div>
-                                        </div>
-                                    </div>
                                 @endif
                             </div>
                         </div>
                         <div class="btn-view_play">
                             <div class="btn-part mt-2 text-center">
-                                <a class="readon2" href="{{ route('photo-gallery') }}"
+                                <a class="readon2" href="{{ url('photo-gallery-category') }}"
                                     rel="noopener noreferrer">View
                                     All</a>
                             </div>

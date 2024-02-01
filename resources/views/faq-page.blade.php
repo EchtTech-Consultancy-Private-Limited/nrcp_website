@@ -11,7 +11,7 @@
 @section('content')
 <!-- Faq Section Start -->
 <section>
-<div class="rs-faq-part style1 pt-40 pb-80">
+<div class="rs-faq-part style1 pt-40 pb-80" id="rs-about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 padding-0 col-md-12">

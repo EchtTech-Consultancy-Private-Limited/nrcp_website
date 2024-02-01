@@ -15404,7 +15404,8 @@ span.courses.course-icon img {
 
 .rs-faq-part.style1 .main-part.new-style {
   background: #fff;
-  padding: 0px 15px;
+  padding: 20px 15px;
+  border-radius: 10px;
 }
 
 .rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card:last-child {
@@ -15424,7 +15425,7 @@ color: #171717;
 .rs-faq-part.style1 .main-part.new-style .faq-content .accordion .card .card-header .card-link:after {
   position: absolute;
   font-family: FontAwesome;
-  content: "\f106";
+  content: "\f107";
   right: 45px;
   top: 50%;
   transform: translateY(-50%);
@@ -16988,7 +16989,7 @@ color: #171717;
 }
 
 .contact-page-section .rs-quick-contact.new-style {
-  padding: 30px 40px;
+  padding: 15px 25px;
 }
 
 .contact-page-section .rs-contact-box .address-item {
@@ -17139,6 +17140,10 @@ color: #171717;
 
 .contact-page-section .contact-map2 {
   overflow: hidden;
+  padding: 10px;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #eee;
 }
 
 .contact-page-section .contact-map2 iframe {
@@ -18695,8 +18700,8 @@ color: #333;
 .switch {
   position: relative;
   display: inline-block;
-  width: 32px;
-  height: 14px;
+  width: 40px;
+  height: 20px;
 }
 
 .switch input {
@@ -18718,7 +18723,7 @@ color: #333;
 }
 .an-center-switch
 {
-  height: 17px;
+  height: 19px;
 }
 
 .slider:before {
@@ -18726,8 +18731,8 @@ color: #333;
   content: "";
 
 
-  height: 12px;
-  width: 12px;
+  height: 14px;
+  width: 14px;
   /* left: 0px;
   bottom: 1px; */
   left: -9px;
@@ -18761,8 +18766,8 @@ input:checked+.slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-  left: 0;
-  top: 1px;
+  left: 2px;
+  top: 3px;
 }
 
 select.form-control.select-lang {
@@ -20446,7 +20451,7 @@ span.size {
   /* Six columns side by side */
   .container1 .column {
       float: left;
-      width: 30.8%;
+      width: 30.7%;
       margin-bottom: 15px;
       margin-right: 15px;
   }
