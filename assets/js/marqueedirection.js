@@ -32,10 +32,10 @@
                 };
 
                 if (($settings.direction == "vertical")) {
-                    console.log('forward')
+                    // console.log('forward')
                     $forward = function(event, settings) {
 
-                        console.log("forwardTrigger");
+                        // console.log("forwardTrigger");
 
                         $half_scroll = Math.floor($(that).prop("scrollHeight") / 2);
 
