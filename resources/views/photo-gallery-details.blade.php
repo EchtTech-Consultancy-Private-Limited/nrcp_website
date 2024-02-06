@@ -12,11 +12,13 @@
     <div class="event-page-section pt-60 pb-60">
         <div class="container">
             <div class="row">
-                <div class="heading-title">
+              <div class="col-md-12">
+              <div class="heading-title">
                     <h2 class="title event-heading-color">Photo Gallery Images</h2>
                 </div>
+              </div>
                 @if (isset($photogallery) && !empty($photogallery))
-                    <div class="rs-blog main-home">
+                    <div class="rs-blog main-home col-md-12">
                         <div class="container1 row">
                             <div class="col-md-6">
                                 @foreach ($photogallery as $datas)
@@ -45,10 +47,14 @@
                 @else
                     {{ abort(404) }}
                 @endif
-            </div><br>
-            @if (!blank($gallery->title_name_en))
+
+                <div class="col-md-12 mt-3">
+                @if (!blank($gallery->title_name_en))
                 <h3>{{ $gallery->title_name_en ?? '' }}<h3>
             @endif
+                </div>
+            </div>
+           
         </div>
     </div>
 @endsection
