@@ -133,7 +133,7 @@ class HomeController extends Controller
     public function newsDetails()
     {
 
-        $news = DB::table('news_management')->where('soft_delete', '0')->get();
+        $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->get();
 
         return view('news-details', ['newsList' => $news]);
     }
@@ -201,7 +201,7 @@ class HomeController extends Controller
     public function getFAQ()
     {
 
-        $faq = DB::table('faq')->where('soft_delete', '0')->orderBy('short_order', 'asc')->get();
+        $faq = DB::table('faq')->where('status', 3)->where('soft_delete', '0')->orderBy('short_order', 'asc')->get();
 
         return view('faq-page', ['faqdata' => $faq]);
     }
@@ -504,6 +504,7 @@ class HomeController extends Controller
             $galleryData = []; 
 
             $gallery = DB::table('gallery_management')
+                ->where('status', 3)
                 ->where('soft_delete', 0)
                 ->latest('created_at')
                 ->get();
