@@ -13,7 +13,7 @@ class EventController extends Controller
     public function event_state()
     {
         
-        $events= DB::table('events_management')->where('event_type','1')->where('soft_delete',0)->get();
+        $events= DB::table('events_management')->where('event_type','1')->where('status', 3)->where('soft_delete',0)->get();
         
         //$data =[];
         foreach($events as $datas){

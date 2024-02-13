@@ -32,25 +32,25 @@ class CommonComposer
      */
     public function compose(View $view)
     {
-        $social_media = DB::table('social_links')->first();
+        $social_media = DB::table('social_links')->where('status', 3)->first();
         $visitCounter = DB::table('visiting_counters')->count();
-        $footerMenu = DB::table('website_menu_management')->where('menu_place','1')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
-        $toogleMenu = DB::table('website_menu_management')->where('menu_place','2')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
-        $logo = DB::table('website_core_settings')->where('soft_delete', 0)->first();
+        $footerMenu = DB::table('website_menu_management')->where('menu_place','1')->where('status', 3)->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
+        $toogleMenu = DB::table('website_menu_management')->where('menu_place','2')->where('status', 3)->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
+        $logo = DB::table('website_core_settings')->where('status', 3)->where('soft_delete', 0)->first();
   //    dd($logo);
-        $pageSlug = DB::table('website_menu_management')->where('url',request()->path())->first();
+        $pageSlug = DB::table('website_menu_management')->where('status', 3)->where('url',request()->path())->first();
         if(!empty($pageSlug->uid)){
-        $pageSlug1 = DB::table('website_menu_management')->where('uid',$pageSlug->parent_id)->first();
+        $pageSlug1 = DB::table('website_menu_management')->where('status', 3)->where('uid',$pageSlug->parent_id)->first();
         }
          if(!empty($pageSlug1->uid)){
-          $commonsideMenu = DB::table('website_menu_management')->where('parent_id',$pageSlug1->uid)->orderby('sort_order','Asc')->get();
+          $commonsideMenu = DB::table('website_menu_management')->where('parent_id',$pageSlug1->uid)->where('status', 3)->orderby('sort_order','Asc')->get();
          }
 
-         $human_activite= DB::table('recent_activities')->where('notification_others',1)->where('soft_delete', 0)->latest('created_at')->get();
-         $animal_activite= DB::table('recent_activities')->where('notification_others',2)->where('soft_delete', 0)->latest('created_at')->get();
+         $human_activite= DB::table('recent_activities')->where('notification_others',1)->where('status', 3)->where('soft_delete', 0)->latest('created_at')->get();
+         $animal_activite= DB::table('recent_activities')->where('notification_others',2)->where('status', 3)->where('soft_delete', 0)->latest('created_at')->get();
 
        // dd($commonsideMenu);
-        $menus = DB::table('website_menu_management')->where('menu_place','0')->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
+        $menus = DB::table('website_menu_management')->where('menu_place','0')->where('status', 3)->where('soft_delete','0')->orderby('sort_order','Asc')->get();   
         $menuName = $this->getMenuTree($menus, 0);   
 
 
@@ -58,6 +58,7 @@ class CommonComposer
             $galleryData = []; 
 
             $gallery = DB::table('gallery_management')
+                ->where('status', 3)
                 ->where('soft_delete', 0)
                 ->latest('created_at')
                 ->get();
@@ -79,10 +80,39 @@ class CommonComposer
                 }
             }
 
+            // gallery video
+            $galleryVideo = [];
+            $videoGallery = DB::table('gallery_management')
+                ->where('type', 1)
+                ->where('status', 3)
+                ->where('soft_delete', 0)
+                ->latest('created_at')
+                ->get();
+
+            if (count($videoGallery) > 0) {
+                foreach ($videoGallery as $images) {
+                    $gallay_video = DB::table('gallery_details')
+                        ->where('soft_delete', 0)
+                        ->where('gallery_id', $images->uid)
+                        ->latest('created_at')
+                        ->get();
+
+                    if (count($gallay_video) > 0) {
+                        $galleryVideo[] = [
+                            'gallery' => $images,
+                            'gallery_details' => $gallay_video
+                        ];
+                    }
+                }
+            }
+
+            // dd($galleryVideo);
+
         
         $view->with(['headerMenu' => $menuName,
         'logo'=>$logo,
         'galleryData'=>$galleryData,
+        'galleryVideo' => $galleryVideo,
         'human_activite'=> $human_activite,
         'animal_activite'=> $animal_activite,
         'social_media'=>$social_media,

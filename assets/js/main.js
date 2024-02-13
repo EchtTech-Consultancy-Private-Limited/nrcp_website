@@ -1,3 +1,34 @@
+//   youtube player bu videoId
+var tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var players = document.querySelectorAll('.youtube-player');
+var currentVideoIndex = 0;
+
+function onYouTubeIframeAPIReady() {
+    players.forEach(function(player, index) {
+        new YT.Player(player, {
+            height: '280',
+            width: '100%',
+            videoId: player.getAttribute('data-video-id'),
+            events: {
+                'onReady': function(event) {
+                    event.target.playVideo();
+                },
+                'onStateChange': function(event) {
+                    if (event.data === YT.PlayerState.ENDED) {
+                        // Move to the next video when the current one ends
+                        currentVideoIndex = (currentVideoIndex + 1) % players.length;
+                        players[currentVideoIndex].loadVideoById(players[currentVideoIndex].getAttribute('data-video-id'));
+                    }
+                },
+            },
+        });
+    });
+}
+// end youtube video
 
 var baseurl = window.location.origin;
 
