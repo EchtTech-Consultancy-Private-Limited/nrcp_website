@@ -140,7 +140,6 @@ class HomeController extends Controller
 
     public function feedbackForm(Request $request)
     {
-
         return view('feedback');
     }
     public function feedbackStore(Request $request)
