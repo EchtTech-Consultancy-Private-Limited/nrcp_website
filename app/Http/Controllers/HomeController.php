@@ -67,7 +67,8 @@ class HomeController extends Controller
 
     public function videoDetail()
     {
-        return view('videos');
+        $titleName = 'Video Gallery';
+        return view('videos',['title',$titleName]);
     }
 
     public function mediaalerts()

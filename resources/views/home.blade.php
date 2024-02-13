@@ -826,34 +826,31 @@
                         <div class="col-md-12">
                             <div class="rs-carousel owl-carousel nav-style2 gallery-carausel" data-loop="true"
                                 data-items="4" data-margin="10" data-autoplay="true" data-hoverpause="true"
-                                data-autoplay-timeout="4500" data-smart-speed="900" data-dots="false"
-                                data-nav="false" data-nav-speed="false" data-center-mode="false"
-                                data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"
-                                data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false"
-                                data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
-                                data-md-device="2" data-md-device-nav="false" data-md-device-dots="false"
-                                id="banner4">
-                                <div class="team-item">
-                                    <div class="gallery-box media-icon orange-color">
-                                        <!-- <img src="{{ asset('assets/Nrcp_img/gallery/22.jpg') }}" alt="">
-                                    <div class="text-gallery">
-                                       Event 1
+                                data-autoplay-timeout="4500" data-smart-speed="900" data-dots="false" data-nav="false"
+                                data-nav-speed="false" data-center-mode="false" data-mobile-device="1"
+                                data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2"
+                                data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2"
+                                data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="2"
+                                data-md-device-nav="false" data-md-device-dots="false" id="banner4">
+                                @if (isset($galleryVideo) && !empty($galleryVideo))
+                                @foreach($galleryVideo as $videos)
+                                    @foreach($videos['gallery_details'] as $videoId)
+                                    {{-- @dd($videoId->public_url);                                         --}}
+                                    <div class="team-item">
+                                        <div class="gallery-box media-icon orange-color">
+                                            @if($videoId->public_url)
+                                            {!! '<div class="youtube-player" data-video-id="' . $videoId->public_url . '"></div>'!!}
+                                            @else
+                                            <p>No images available for this gallery.</p>
+                                            @endif
+                                        </div>
                                     </div>
-                                    <a class="popup-videos" href="{{ url('/video') }}">
-                                    <i class="fa fa-play"></i>
-                                    </a>                                    -->
-                                        <video controls muted class="video-g">
-                                            <source src="{{ asset('assets/Nrcp_img/video1.mp4') }}" type="video/mp4">
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="team-item">
-                                    <div class="gallery-box media-icon orange-color">
-                                        <video controls muted class="video-g">
-                                            <source src="{{ asset('assets/Nrcp_img/video2.mp4') }}" type="video/mp4">
-                                        </video>
-                                    </div>
-                                </div>
+                                    @endforeach
+                                @endforeach
+                                @endif
+
+
+
                             </div>
                         </div>
                         <div class="btn-view_play">

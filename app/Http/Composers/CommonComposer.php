@@ -80,10 +80,39 @@ class CommonComposer
                 }
             }
 
+            // gallery video
+            $galleryVideo = [];
+            $videoGallery = DB::table('gallery_management')
+                ->where('type', 1)
+                ->where('status', 3)
+                ->where('soft_delete', 0)
+                ->latest('created_at')
+                ->get();
+
+            if (count($videoGallery) > 0) {
+                foreach ($videoGallery as $images) {
+                    $gallay_video = DB::table('gallery_details')
+                        ->where('soft_delete', 0)
+                        ->where('gallery_id', $images->uid)
+                        ->latest('created_at')
+                        ->get();
+
+                    if (count($gallay_video) > 0) {
+                        $galleryVideo[] = [
+                            'gallery' => $images,
+                            'gallery_details' => $gallay_video
+                        ];
+                    }
+                }
+            }
+
+            // dd($galleryVideo);
+
         
         $view->with(['headerMenu' => $menuName,
         'logo'=>$logo,
         'galleryData'=>$galleryData,
+        'galleryVideo' => $galleryVideo,
         'human_activite'=> $human_activite,
         'animal_activite'=> $animal_activite,
         'social_media'=>$social_media,
