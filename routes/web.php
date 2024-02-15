@@ -52,7 +52,7 @@ Route::get('/',[HomeController::class,'index'])->name('/');
 //map
 
 
-Route::get('/video',[HomeController::class,'videoDetail'])->name('video');
+Route::get('/video-gallery',[HomeController::class,'videoDetail'])->name('video-gallery');
 Route::get('/anumal-health',[HomeController::class,'anumalHealth'])->name('anumal-health');
 Route::get('/coming-soon',[HomeController::class,'comingSoon'])->name('coming-soon');
 Route::get('/human-health',[HomeController::class,'humanHealth'])->name('human-health');

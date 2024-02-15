@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
               <div class="col-md-12">
-              <div class="heading-title">
+                <div class="heading-title">
                     <h2 class="title event-heading-color">Photo Gallery Images</h2>
                 </div>
               </div>
