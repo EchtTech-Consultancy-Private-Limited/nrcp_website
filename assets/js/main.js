@@ -1,33 +1,41 @@
 //   youtube player bu videoId
 var tag = document.createElement('script');
-tag.src = 'https://www.youtube.com/iframe_api';
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var players = document.querySelectorAll('.youtube-player');
-var currentVideoIndex = 0;
+    var players = document.querySelectorAll('.youtube-player');
+    var currentVideoIndex = 0;
 
-function onYouTubeIframeAPIReady() {
-    players.forEach(function(player, index) {
-        new YT.Player(player, {
-            height: '280',
-            width: '100%',
-            videoId: player.getAttribute('data-video-id'),
-            events: {
-                'onReady': function(event) {
-                    event.target.playVideo();
+    function onYouTubeIframeAPIReady() {
+        players.forEach(function(player, index) {
+            new YT.Player(player, {
+                height: '400',
+                width: '100%',
+                videoId: player.getAttribute('data-video-id'),
+                events: {
+                    // 'onReady': function(event) {
+                    //     event.target.playVideo();
+                    // },
+                    'onStateChange': function(event) {
+                        if (event.data === YT.PlayerState.ENDED) {
+                            // Move to the next video when the current one ends
+                            currentVideoIndex = (currentVideoIndex + 1) % players.length;
+                            players[currentVideoIndex].loadVideoById(players[currentVideoIndex].getAttribute('data-video-id'));
+                        }
+                    },
                 },
-                'onStateChange': function(event) {
-                    if (event.data === YT.PlayerState.ENDED) {
-                        // Move to the next video when the current one ends
-                        currentVideoIndex = (currentVideoIndex + 1) % players.length;
-                        players[currentVideoIndex].loadVideoById(players[currentVideoIndex].getAttribute('data-video-id'));
-                    }
-                },
-            },
+            });
         });
-    });
-}
+    }
+    jQuery(".fancybox-close").click(function() {
+        // changes the iframe src to prevent playback or stop the video playback in our case
+        $('.youtube-iframe').each(function(index) {
+          var originalSrc = $(this).attr('src');
+          // Appending '?autoplay=0' to the URL stops the video
+          $(this).attr('src', originalSrc + '?autoplay=0');
+        });
+      });
 // end youtube video
 
 var baseurl = window.location.origin;

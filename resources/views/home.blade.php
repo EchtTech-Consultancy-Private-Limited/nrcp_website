@@ -855,7 +855,7 @@
                         </div>
                         <div class="btn-view_play">
                             <div class="btn-part  text-center">
-                                <a class="readon2" href="{{ route('video') }}" rel="noopener noreferrer">View
+                                <a class="readon2" href="{{ route('video-gallery') }}" rel="noopener noreferrer">View
                                     All</a>
                             </div>
                             <div class="btns">

@@ -47462,10 +47462,10 @@ function shiftRange(range, index, length, source) {
       return index.transformPosition(pos, source !== _emitter4.default.sources.USER);
     });
 
-    var _map2 = _slicedToArray(_map, 2);
+    var _ = _slicedToArray(_map, 2);
 
-    start = _map2[0];
-    end = _map2[1];
+    start = _[0];
+    end = _[1];
   } else {
     var _map3 = [range.index, range.index + range.length].map(function (pos) {
       if (pos < index || pos === index && source === _emitter4.default.sources.USER) return pos;
@@ -50908,10 +50908,10 @@ var Cursor = function (_Parchment$Embed) {
           return Math.max(0, Math.min(restoreText.data.length, offset - 1));
         });
 
-        var _map2 = _slicedToArray(_map, 2);
+        var _ = _slicedToArray(_map, 2);
 
-        start = _map2[0];
-        end = _map2[1];
+        start = _[0];
+        end = _[1];
 
         return {
           startNode: restoreText,
