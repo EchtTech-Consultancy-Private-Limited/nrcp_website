@@ -48,7 +48,11 @@ use App\Http\Controllers\CMSControllers\ManualFileUploadController;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/captcha', [LoginController::class, 'generateCaptcha'])->name('captcha');
+Route::get('dev/login', [LoginController::class, 'showLoginForm'])->name('dev/login');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('login-dev', [LoginController::class, 'authenticateDev'])->name('authenticate-dev');
 Route::post('login', [LoginController::class, 'authenticate'])->name('authenticate');
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 Route::get('forget-user', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget-user');
@@ -82,6 +86,12 @@ Route::middleware(['auth','prevent-back-history','EnsureTokenIsValid'])->group(f
         Route::get('/role-create', [RolesAndPermissionController::class, 'createRoles'])->name('role.create');
         Route::get('/role-edit', [RolesAndPermissionController::class, 'edit'])->name('role.edit');
         Route::get('/role-list', [RolesAndPermissionController::class, 'roleIndex'])->name('role.list');
+    });
+
+    Route::prefix('newrole')->group(function(){
+        Route::get('/new-role-create', [RolesAndPermissionController::class, 'newCreateRoles'])->name('newrole.create');
+        Route::get('/new-role-edit', [RolesAndPermissionController::class, 'newRoleEdit'])->name('newrole.edit');
+        Route::get('/new-role-list', [RolesAndPermissionController::class, 'newRoleIndex'])->name('newrole.list');
     });
     
     Route::prefix('permission')->group(function(){
@@ -223,10 +233,16 @@ Route::middleware(['auth','prevent-back-history','EnsureTokenIsValid'])->group(f
         Route::get('/maunalfileupload-list', [ManualFileUploadController::class, 'index'])->name('mfu.list');
     });
 
+    Route::prefix('formmappingmenu')->group(function(){
+        Route::get('/formmappingmenu-create', [FormBuilderController::class, 'create'])->name('formmappingmenu.create');
+        Route::get('/formmappingmenu-edit', [FormBuilderController::class, 'edit'])->name('formmappingmenu.edit');
+        Route::get('/formmappingmenu-list', [FormBuilderController::class, 'formMappingIndex'])->name('formmappingmenu.list');
+    });
+
 
 
 });
-    
+
 require __DIR__ .'/api_route.php';
 
 
