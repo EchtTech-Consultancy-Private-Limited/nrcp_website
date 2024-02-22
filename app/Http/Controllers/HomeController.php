@@ -18,9 +18,9 @@ class HomeController extends Controller
     public function index()
     {
         //news
-        $news = DB::table('news_management')->where('soft_delete', '0')->orderBy('created_at', 'desc')->get();
+        $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->orderBy('created_at', 'desc')->get();
 
-        $homebanner = DB::table('home_page_banner_management')->where('soft_delete', '0')->orderby('sort_order', 'Asc')->get();
+        $homebanner = DB::table('home_page_banner_management')->where('status', 3)->where('soft_delete', '0')->orderby('sort_order', 'Asc')->get();
 
         $photoGallery = DB::table('gallery_management as gm')
             ->join('gallery_details as ged', 'ged.gallery_id', '=', 'gm.uid')
@@ -45,6 +45,7 @@ class HomeController extends Controller
             ->get();
 
             $gallery = DB::table('gallery_management')
+            ->where('status', 3)
             ->where('soft_delete', 0)
             ->where('uid', $id)
             ->latest('created_at')
@@ -209,7 +210,7 @@ class HomeController extends Controller
     public function commonPagesContent($slug)
     {
 
-        $menus = DB::table('website_menu_management')->whereurl($slug)->first();
+        $menus = DB::table('website_menu_management')->where('status', 3)->whereurl($slug)->first();
         if (!empty($menus->uid)) {
             $metacontent = DB::table('dynamic_content_page_metatag')->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->get();
         } else {
