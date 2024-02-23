@@ -29,7 +29,6 @@ class EventController extends Controller
         $objectpass = new \stdclass;
         $objectpass->eventContent = $data;
         $type="state";
-    //dd($objectpass);
         return view('events.event-state',
             ['data'=>$objectpass,'type'=>$type]
         ); 

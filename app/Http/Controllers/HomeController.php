@@ -17,18 +17,13 @@ class HomeController extends Controller
 
     public function index()
     {
-        //news
         $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->orderBy('created_at', 'desc')->get();
-
         $homebanner = DB::table('home_page_banner_management')->where('status', 3)->where('soft_delete', '0')->orderby('sort_order', 'Asc')->get();
-
         $photoGallery = DB::table('gallery_management as gm')
             ->join('gallery_details as ged', 'ged.gallery_id', '=', 'gm.uid')
             ->select('gm.*', 'ged.*')
             ->where('gm.soft_delete', '0')
-            // ->orderby('gm.sort_order','Asc')
             ->get();
-        // dd($photoGallery);
         return view('home', ['news' => $news, 'homebanner' => $homebanner, 'photogallery' => $photoGallery]);
     }
 
@@ -44,17 +39,14 @@ class HomeController extends Controller
             ->latest('created_at')
             ->get();
 
-            $gallery = DB::table('gallery_management')
+        $gallery = DB::table('gallery_management')
             ->where('status', 3)
             ->where('soft_delete', 0)
             ->where('uid', $id)
             ->latest('created_at')
             ->first();
-            
-      
         $breadcrumbs = 'Photo Gallery Images';
-    return view('photo-gallery-details', ['gallery'=>$gallery,'photogallery' => $photogallery, 'breadcrumbs' => $breadcrumbs]);
-
+        return view('photo-gallery-details', ['gallery' => $gallery, 'photogallery' => $photogallery, 'breadcrumbs' => $breadcrumbs]);
     }
     public function comingSoon()
     {
@@ -69,7 +61,7 @@ class HomeController extends Controller
     public function videoDetail()
     {
         $titleName = 'Video Gallery';
-        return view('videos',['title',$titleName]);
+        return view('videos', ['title', $titleName]);
     }
 
     public function mediaalerts()
@@ -100,18 +92,13 @@ class HomeController extends Controller
     {
         return view('privacy-policy');
     }
-
-
     //language
     public function SetLang(Request $request)
     {
-        //dd($request->data);
         session()->put('Lang', $request->data);
         App::setLocale($request->data);
         return response()->json(['data' => $request->data, True]);
     }
-
-
     public function downloads()
     {
         return view('downloadPages.downloads');
@@ -171,15 +158,11 @@ class HomeController extends Controller
     }
     public function contactForm($slug = '')
     {
-
-
         return view('contact-us');
     }
 
     public function contactStroe(Request $request)
     {
-
-
         $validated = $request->validate([
             'name' => 'required',
             'email' => ['required', 'string', 'email', 'max:50', 'regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix'],
@@ -201,18 +184,15 @@ class HomeController extends Controller
 
     public function getFAQ()
     {
-
         $faq = DB::table('faq')->where('status', 3)->where('soft_delete', '0')->orderBy('short_order', 'asc')->get();
-
         return view('faq-page', ['faqdata' => $faq]);
     }
 
     public function commonPagesContent($slug)
     {
-
         $menus = DB::table('website_menu_management')->where('status', 3)->whereurl($slug)->first();
         if (!empty($menus->uid)) {
-            $metacontent = DB::table('dynamic_content_page_metatag')->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->get();
+            $metacontent = DB::table('dynamic_content_page_metatag')->where('status', 3)->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->get();
         } else {
             abort(404);
         }
@@ -221,7 +201,6 @@ class HomeController extends Controller
         } else {
             $breadcrumbs = '';
         }
-        //dd($metacontent);
         $data1 = [];
         $datas1 = [];
         foreach ($metacontent as $metacontents) {
@@ -244,9 +223,8 @@ class HomeController extends Controller
         }
         $objectpass = new \stdclass;
         $objectpass->pageContent = $datas1;
-        //dd($objectpass);
-
-        return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs]);
+        $metaDetails = DB::table('dynamic_content_page_metatag')->where('status', 3)->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->first();
+        return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs, 'metaDetails' => $metaDetails]);
     }
 
     public function getDistricts(Request $request)
@@ -296,10 +274,6 @@ class HomeController extends Controller
         return $cityDropDown;
     }
 
-
-
-
-
     public function vaccinationSearch(Request $request)
     {
         $statename = $request->state_name;
@@ -321,7 +295,6 @@ class HomeController extends Controller
             $resultsData .= '<tr><td>' . $searchData->state_name . '</td><td>' . $searchData->district_name . '</td><td>' . $searchData->address . '</td></tr>';
         }
         $resultsData .= '</tbody></table>';
-        // dd($data);
         return $resultsData;
     }
 
@@ -457,7 +430,6 @@ class HomeController extends Controller
             $data = DB::table('model_anti_rabies_clinic')->get();
 
             return response()->json(['data' => $data], 200);
-
         } catch (QueryException $e) {
 
             return response()->json(['error' => 'Database error'], 500);
@@ -502,7 +474,7 @@ class HomeController extends Controller
     public function photoGalleryCategory()
     {
         try {
-            $galleryData = []; 
+            $galleryData = [];
 
             $gallery = DB::table('gallery_management')
                 ->where('status', 3)

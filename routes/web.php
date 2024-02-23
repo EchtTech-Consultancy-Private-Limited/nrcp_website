@@ -63,11 +63,7 @@ Route::get('/media-alerts',[HomeController::class,'mediaalerts'])->name('media-a
 Route::get('/vaccination_dose',[HomeController::class,'vaccination_dose'])->name('vaccination-dose');
 // Route::get('/downloads',[HomeController::class,'downloads'])->name('downloads');
 // Route::get('/publications',[PublicationsController::class,'publications'])->name('publications');
-
-
-
 Route::get('/news-details',[HomeController::class,'newsDetails'])->name('news-details');
-
 //event
 Route::get('/event',[EventController::class,'index'])->name('event');
 Route::get('/event-state',[EventController::class,'event_state'])->name('event-state');
@@ -105,13 +101,7 @@ Route::post('/get-districts-list-animal',[HomeController::class,'getDistrictsAni
 Route::post('/get-vaccination-center',[HomeController::class,'vaccinationSearch']);
 Route::post('/get-vaccination-center-H',[HomeController::class,'vaccinationSearchH']);
 Route::post('/get-vaccination-center-A',[HomeController::class,'vaccinationSearchA']);
-
-
-
 });
-
-
-
 //default behaviour, always keep as last entry
 Route::any('{catchall}', function () {
     abort(404);

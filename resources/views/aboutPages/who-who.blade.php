@@ -29,13 +29,7 @@
         <!-- Contact Section Start -->
         <div class="nrcp-board-section pt-37 pb-100 md-pt-70 md-pb-70">
             <div class="container">
-
-                <!--            <div class="sec-title">
-                <h2 class="title mb-0">Faculty of the Division:</h2>
-            </div>-->
-
                 <div class="sec-title">
-
                     <div class="bold-text mb-40 mt-30 text-black"><span class="text-with-bg">
                             Head of the Division:
                         </span>
