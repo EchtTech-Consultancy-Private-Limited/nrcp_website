@@ -14,7 +14,6 @@
             @if (count($objectpass->pageContent) > 0)
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
-
                         <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
                             @if (!empty($commonsideMenu))
                                 @if (count($commonsideMenu) > 0)
@@ -36,13 +35,11 @@
                                         id="Master_layout_{{ $k }}" data-toggle="pill"
                                         data-target="#master-layout_{{ $k }}" type="button" role="tab"
                                         aria-controls="annual-report" aria-selected="false">
-
                                         @if (Session::get('Lang') == 'hi')
                                             {{ $sidebar->pageTitle->page_title_en ?? '' }}
                                         @else
                                             {{ $sidebar->pageTitle->page_title_en ?? '' }}
                                         @endif
-
                                     </button>
                                 @endforeach
                             @endif
@@ -57,13 +54,11 @@
                                     <!-- Content and Images -->
                                     <div class="heading-title">
                                         <h2 class="title">
-
                                             @if (Session::get('Lang') == 'hi')
                                                 {{ $sidebar->pageTitle->page_title_hi ?? '' }}
                                             @else
                                                 {{ $sidebar->pageTitle->page_title_en ?? '' }}
                                             @endif
-
                                         </h2>
                                     </div>
                                     @if (count($sidebar->content_page) > 0)
@@ -127,7 +122,6 @@
                                                                         <a href="{{ asset('resources/uploads/PageContentPdf/' . $pdf->public_url) }}"
                                                                             target="_blank"><span
                                                                                 class="view">View</span></a>
-
                                                                         @if ($pdf->file_extension == 'pdf')
                                                                             <i class="fa fa-file-pdf-o"
                                                                                 aria-hidden="true"></i>
@@ -148,9 +142,7 @@
                                                                         <span
                                                                             class="size">({{ $pdf->pdfimage_size ?? '' }})
                                                                         </span>
-                                                                        
                                                                     </div>
-
                                                                 </td>
                                                             </tr>
                                                         @endforeach

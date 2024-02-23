@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
     @include('partials.head-css-scripts')
     <style>
     </style>
 </head>
-
 <body class="defult-home">
     <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
         <header id="rs-header" class="rs-header">
@@ -93,12 +91,10 @@
                                     </a>
                                 </button>
                                 <button class="button-29 text-center" role="button">
-                                    
                                     <a href="{{ url('directories') }}" class="blink_text">Who's who</a>
                                 </button>
                                 <button class="button-29 text-center" role="button" data-toggle="modal"
                                     data-target="#vaccinationt">
-                                    
                                     <a href="#" class="blink_text">Global Updates on Rabies</a>
                                 </button>
                             </div>
@@ -169,20 +165,17 @@
                                                 @php
                                                     $humanUrl = $human_activites->url_link ?? 'javascript:void(0)';
                                                 @endphp
-
                                                 <div class="latest-lists">
                                                     <a @if ($human_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
                                                     target="_blank" href="{{ $humanUrl }}" @else
                                                         href="{{ url($humanUrl) }}" @endif>
                                                         <strong><i class="fa fa-hand-o-right mx-1"
                                                                 aria-hidden="true"></i> : </strong>
-
                                                         @if (Session::get('Lang') == 'hi')
                                                             {{ $human_activites->recent_activities_hi ?? '' }}
                                                         @else
                                                             {{ $human_activites->recent_activities_en ?? '' }}
                                                         @endif
-
                                                         <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
                                                             alt="">
                                                     </a>
@@ -190,12 +183,10 @@
                                             @endforeach
                                         @else
                                         @endif
-                                        
                                     </div>
                                 </div>
                             </div>
                             <h4 class="title" tabindex="0">Animal Health Sector Activities</h4>
-
                             <div class="marquee marquee-vertical" data-speed="50">
                                 <div class="marquee-wrapper">
                                     <div class="marquee-content">
@@ -204,22 +195,17 @@
                                                 @php
                                                     $animalUrl = $animal_activites->url_link ?? 'javascript:void(0)';
                                                 @endphp
-
                                                 <div class="latest-lists">
                                                     <a @if ($animal_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
                                                     target="_blank" href="{{ $animalUrl }}" @else
                                                         href="{{ url($animalUrl) }}" @endif
-
                                                         ><strong><i class="fa fa-circle-thin mx-1"
                                                                 aria-hidden="true"></i> : </strong>
-
-
                                                         @if (Session::get('Lang') == 'hi')
                                                             {{ $animal_activites->recent_activities_hi ?? '' }}
                                                         @else
                                                             {{ $animal_activites->recent_activities_en ?? '' }}
                                                         @endif
-
                                                         <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
                                                             alt="">
                                                     </a>
@@ -238,8 +224,6 @@
         <!-- Demo new banner design Ends-->
         <!-- Card Section End -->
         <!-- About Section Start -->
-
-
         <div id="rs-about" class="rs-about style8">
             <div class="container">
                 <div class="row">
@@ -678,11 +662,9 @@
             </div>
             <div class="gallery-section clientail">
                 <div class="btns pr-0">
-                   
                     <div id="customPause5"><i class="fa fa-pause" aria-hidden="true"></i></div>
                     <div id="customPlay5" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
                     </div>
-                    
                 </div>
             </div>
         </div>
@@ -690,11 +672,8 @@
     <!-- Partner End -->
     </div>
     </div>
-
     <!-- Modal -->
-
     @include('partials.footer')
     @include('partials.footer-scripts')
 </body>
-
 </html>
