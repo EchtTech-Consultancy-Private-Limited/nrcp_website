@@ -3,7 +3,6 @@
         <div class="logo-cat-wrap">
             <div class="logo-part">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
-
                     @if (isset($logo) && $logo != '')
                         <img src="{{ asset('resources/uploads/WebsiteCoreSettings/' . $logo->header_logo) }}"
                             title="{{ $logo->logo_title }}" alt="{{ $logo->logo_title }}" rel="noopener noreferrer"
@@ -12,7 +11,6 @@
                         <img src="{{ asset(config('constants.brand.default_logo')) }}" alt=""
                             rel="noopener noreferrer" class="logo logo1">
                     @endif
-
                     <div class="pl-2 text-center d-none d-xs-block">
                         <h2 class="title black-color text-center logo-text">National Rabies Control Program</h2>
                         <h5 class="sub-text-l text-center">National Center for Disease control</h5>
@@ -47,7 +45,6 @@
                     <ul>
                         <li tabindex="1">
                             <div class="mobile-number-box pulse">
-
                                 <a href="tel:01206025400" class="phone-number blink"> Rabies Help line No :
                                     <i class="fa fa-phone"></i> 01206025400</a>
                             </div>
@@ -78,7 +75,6 @@
     </div>
 </div>
 </div>
-
 <div class="rs-cta style7">
     <div class="partition-bg-wrap">
         <div class="container">
@@ -106,8 +102,6 @@
         </div>
     </div>
 </div>
-
-
 <div class="nav-bottom">
     <div class="container">
         <div class="row">
@@ -258,20 +252,14 @@
                                             </ul>
                                         </li>
                                     @endif
-
-                                    <!-- //.nav-menu -->
                             </nav>
-                            <!-- //.nav-menu -->
                         </nav>
                     </div>
-                    <!-- //.main-menu -->
                 </div>
             </div>
         </div>
     </div>
-
     <div class="overlay"></div>
-    <!-- Canvas Menu start -->
     <nav class="right_menu_togle hidden-md">
         <div class="close-btn">
             <div id="nav-close">
@@ -296,4 +284,3 @@
         </div>
         <a class="tab-close">&nbsp;</a>
     </nav>
-    <!-- Canvas Menu end -->
