@@ -46,25 +46,4 @@
     </div>
 </div>
 </section>
-<!-- faq Section END -->
-
-{{-- Video Section start--}}
-<!-- <section> 
-<div class="heading-title">
-    <h2 class="title" tabindex="0"> Videos Section</h2>
-</div>
-    <div class="row">
-        <div class="col-md-6">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/TF1_HTwcHLc?si=-ajFiBVNsCCBZYdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-        </div>
-        <div class="col-md-6">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/TF1_HTwcHLc?si=-ajFiBVNsCCBZYdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-        </div>
-                                    
-    </div>
-                
-</section>-->
-{{-- Video Section End --}}
-
-
 @endsection 

@@ -53,17 +53,6 @@
                             </div>
                         </li>
                         <li tabindex="1">
-                            <!-- <div class="top-header-logo">
-                                <a href="https://swachhbharat.mygov.in/" target="_blank" rel="noopener noreferrer"
-                                    class="top-logo">
-                                    <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
-                                        rel="noopener noreferrer">
-                                </a>
-                                <a href="https://www.g20.org/en/" target="_blank" rel="noopener noreferrer"
-                                    class="top-logo">
-                                    <img src="{{ asset('assets/Nrcp_img/g20.png') }}" rel="noopener noreferrer">
-                                </a>
-                            </div> -->
                             <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
                                 data-toggle="modal" data-target="#vaccination"
                                 style="border: solid 4px; display: block !important">
@@ -71,19 +60,6 @@
                                 Know your Rabies Vaccination Schedule
                             </a>
                         </li>
-                        <!-- <li tabindex="1">
-
-                        </li> -->
-                        {{--
-                         <li class="d-xs-none">
-                            <a href="javascript:void();" class="top-logo">
-                              <img src="{{asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
-                            </a>
-                            <a href="javascript:void();" class="top-logo">
-                            <img src="{{asset('assets/Nrcp_img/g20.png') }}">
-                            </a>
-                        </li>
-                        --}}
                     </ul>
                 </div>
             </div>
@@ -96,12 +72,6 @@
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
                     <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="" class="logo logo2"
                         rel="noopener noreferrer">
-                    <!-- <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
-                                            class="logo logo1 d-none" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer"> -->
                 </a>
             </div>
         </div>
@@ -150,8 +120,6 @@
                                     @foreach ($headerMenu as $menuName)
                                         @if (@isset($menuName->children))
                                             <li class="menu-item-has-children ">
-                                                <?php //dd($menuName->route_type);
-                                                ?>
                                                 <a href="{{ url($menuName->url ?? '') }}" class="main-anchor"
                                                     rel="noopener noreferrer">
                                                     @if (Session::get('Lang') == 'hi')

@@ -30,9 +30,6 @@
                                     <h3 class="title">
                                         <a href="{{ url($type.'/event-details/'.$datas->event->uid) }}" title="{{ $datas->event->title_name_en }}">{{ $datas->event->title_name_en }}</a>
                                     </h3>
-                                    <!-- <div class="desc">
-                                        {!! $datas->event->description_en  !!}
-                                    </div> -->
                                 </div>
                               </div>
                         </div>

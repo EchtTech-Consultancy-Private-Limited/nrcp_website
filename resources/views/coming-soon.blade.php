@@ -13,18 +13,6 @@
             </div>
             <div class="breadcrumbs-text white-color padding">
                 <h1 class="page-title">Coming Soon </h1>
-                <!-- <ul>
-                <li>
-                    <a class="active" href="index.html">Home</a>
-                </li>
-                <li>
-                    <a class="active" href="index.html">about</a>
-                </li>
-                <li>
-                   nrcp-board
-                </li>
-                
-            </ul> -->
             </div>
         </div>
         <!-- Breadcrumbs End -->

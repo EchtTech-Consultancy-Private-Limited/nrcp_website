@@ -3,16 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-12 col-sm-12 footer-widget mb-4">
-                    {{-- <div class="footer-logo mb-10">
-                        <a href="{{ url('/') }}">
-                            <img src="{{ asset('assets/Nrcp_img/nrcp_white.png') }}" alt="">
-                        </a>
-                    </div> --}}
                     <div class="textwidget white-color">
                         <h4 class="footer-text-logo">National Rabies Control Program</h4>
-                        {{-- <p class="text-big"> National Center for Disease control </p> --}}
-                        {{-- <p class="text-normal-footer">Directorate General of Health Services, Ministry of
-                            Health & Family Welfare, Government of India </p> --}}
                     </div>
                     <ul class="footer_social">
 
@@ -94,9 +86,6 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 footer-widget md-mb-50">
                     <h3 class="widget-title">Contact Us</h3>
                     <ul class="address-widget">
-                        {{-- <li>
-                            <div class="desc-text-title">Full Mailing Address:</div>
-                        </li> --}}
                         <li>
 
                             <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -121,15 +110,7 @@
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 <a href="mailto:dirnicd@nic.in" rel="noopener noreferrer">napreindia-ncdc[at]ncdc[dot]gov[dot]in</a>
                             </div>
-                        </li>
-
-                        <li>
-                            <!--
-                            <div class="desc">
-                                <i class="fa fa-globe" aria-hidden="true"></i>
-                                <a href="www.ncdc.gov.in">www.ncdc.gov.in</a>
-                            </div> -->
-                        </li>
+                        </li>                        
                     </ul>
                 </div>
 
@@ -226,18 +207,11 @@
                                     {{-- CHoose Yes --}}
                                     <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput">
                                     </div>
-                                    {{-- CHoose Yes End--}}
-                                    <!-- <div class="col-md-12 text-center">
-                                        <p class="text-center">Date of 1st Dose of vaccination (day 0)</p>
-                                    </div> -->
                                 </div>
 
                                 <div class="row form-group">
                                     <div class="col-md-12 text-center">
                                     <input type="submit" name="Submit" class="readon2 modal-btn" onclick="cehckradio()" value="Submit" id="mysbutton" />
-                                        <!-- <button type="submit" class="readon2 modal-btn" name="submit">
-                                            Proceed
-                                        </button> -->
                                     </div>
                                 </div>
                             </fieldset>
