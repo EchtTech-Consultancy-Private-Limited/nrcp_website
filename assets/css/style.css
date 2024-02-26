@@ -1223,8 +1223,13 @@ blockquote p {
 /*Video Icon*/
 .media-icon {
   position: relative;
-  display: inline-block;
+  display: block;
   z-index: 1;
+}
+
+.gallery-box.media-icon.orange-color iframe {
+  height: 280px;
+  width: 100%;
 }
 
 .media-icon .popup-videos {
