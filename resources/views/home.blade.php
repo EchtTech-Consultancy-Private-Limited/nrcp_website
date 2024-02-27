@@ -519,7 +519,7 @@
                                             @if($videoId->public_url)
                                             {!! '<div class="youtube-player" data-video-id="' . $videoId->public_url . '"></div>'!!}
                                             @else
-                                            <p>No images available for this gallery.</p>
+                                            <p>No Video available for this gallery.</p>
                                             @endif
                                         </div>
                                     </div>
