@@ -208,7 +208,6 @@ class HomeController extends Controller
 
     public function commonPagesContent($slug)
     {
-
         $menus = DB::table('website_menu_management')->whereurl($slug)->first();
         if (!empty($menus->uid)) {
             $metacontent = DB::table('dynamic_content_page_metatag')->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->get();

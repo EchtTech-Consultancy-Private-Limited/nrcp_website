@@ -147,8 +147,16 @@
                         <nav class="rs-menu">
                             <nav class="rs-menu">
                                 <ul class="nav-menu">
-                                    @foreach ($headerMenu as $menuName)
+                                   
+                        
+                                    @foreach ($headerMenu as $menuName)                               
+                                    @php
+                                            $url = $headerMenu->url ?? '';
+                                        @endphp
+
                                         @if (@isset($menuName->children))
+                                        
+                                        {{-- @dd($menuName->children) --}}
                                             <li class="menu-item-has-children ">
                                                 <?php //dd($menuName->route_type);
                                                 ?>
@@ -162,6 +170,7 @@
                                                 </a>
                                                 <ul class="sub-menu">
                                                     @foreach ($menuName->children as $suMenu)
+                                                    {{-- @dd($url); --}}
                                                         @if (@isset($suMenu->children))
                                                             <li class="menu-item-has-children">
                                                                 <a @if ($suMenu->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
@@ -238,8 +247,8 @@
                                                         @else
                                                             <li>
                                                                 <a @if ($suMenu->tab_type == 1) target="_blank" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
-                                                                href="{{ url($suMenu->url ?? '') }}" @else
-                                                                    href="{{ url($suMenu->url ?? '') }}" @endif rel="noopener noreferrer">
+                                                                href="{{ url($url .'/'. $suMenu->url ?? '') }}" @else
+                                                                    href="{{ url($url .'/'. $suMenu->url ?? '') }}" @endif rel="noopener noreferrer">
                                                                     @if (Session::get('Lang') == 'hi')
                                                                         {{ $suMenu->name_hi ?? '' }}
                                                                     @else
