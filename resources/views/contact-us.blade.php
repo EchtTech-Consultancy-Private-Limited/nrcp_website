@@ -134,10 +134,10 @@
                                 <div class="text-danger">{{ $errors->first('message') }}</div>
                                 @endif
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 {!! captcha_image_html('ContactCaptcha') !!}
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <input class="form-control" type="text" id="CaptchaCode" name="CaptchaCode"
                                     placeholder="Captcha here" style="margin-top:5px;">
                                 @if ($errors->has('CaptchaCode'))
@@ -163,5 +163,6 @@
     </div>
 </div>
 @push('post-scripts')
+
 @endpush
 @endsection
