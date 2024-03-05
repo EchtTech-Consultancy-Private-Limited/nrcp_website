@@ -1,15 +1,17 @@
 <div class="row y-middle py-2">
     <div class="col-lg-1 pr-0">
         <div class="logo-cat-wrap">
-            <div class="logo-part">
+            <div class="logo-part emblem">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
                     @if (isset($logo) && $logo != '')
                         <img src="{{ asset('resources/uploads/WebsiteCoreSettings/' . $logo->header_logo) }}"
                             title="{{ $logo->logo_title }}" alt="{{ $logo->logo_title }}" rel="noopener noreferrer"
                             class="logo logo1">
+                         
                     @else
                         <img src="{{ asset(config('constants.brand.default_logo')) }}" alt=""
                             rel="noopener noreferrer" class="logo logo1">
+                            <p>Ministry of Health</p>
                     @endif
                     <div class="pl-2 text-center d-none d-xs-block">
                         <h2 class="title black-color text-center logo-text">National Rabies Control Program</h2>
@@ -20,6 +22,7 @@
                         </h6>
                     </div>
                 </a>
+                <p>Ministry of Health</p>
             </div>
         </div>
     </div>
@@ -28,7 +31,7 @@
             <div class="main-menu">
                 <div class="mobile-menu">
                     <a class="rs-menu-toggle">
-                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-bars mr-2"></i>
                     </a>
                 </div>
                 <div class="top-menu-box">
@@ -36,8 +39,8 @@
                         <div class="pl-2 text-center d-xs-none">
                             <h2 class="title black-color logo-text">National Rabies Control Program</h2>
                             <h5 class="sub-text-l text-center">National Center for Disease Control</h5>
-                            <h6 class="sub-text-b-l text-center">Directorate General of Health Services,<br>
-                            Ministry of Health & Family Welfare,
+                            <h6 class="sub-text-b-l text-center">Directorate General of Health Services,
+                            Ministry of Health & Family Welfare, <br>
                             Government of India
                         </h6>
                         </div>
@@ -64,10 +67,14 @@
         </div>
     </div>
     <div class="col-lg-2 text-lg-left pl-0 pr-0">
-        <div class="logo-cat-wrap right-h">
+        <div class="logo-cat-wrap right-h justify-content-end">
             <div class="logo-part mobile-logo-s">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
                     <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="" class="logo logo2"
+                        rel="noopener noreferrer">
+                </a>
+                <a href="{{ url('/') }}" rel="noopener noreferrer" class="logo_kendriya">
+                    <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt="" class="logo logo2"
                         rel="noopener noreferrer">
                 </a>
             </div>

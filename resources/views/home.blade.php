@@ -13,7 +13,7 @@
                     @include('partials.top-header')
                 </div>
             </div>
-            <div class="menu-area menu-sticky">
+            <div class="menu-area " id="menu-sticky">
                 <!-- SVG-CONTENT-DISPLAY NONE -->
                 <div class="svg-cont">
                     <img src="{{ URL::asset('assets/Nrcp_img/svg/blue-svg.png') }}" alt="NRCP">
@@ -80,20 +80,22 @@
                             <div class="top-menu-box">                                
                             </div>
                             <div class="new_btns_cols">
-                                <button class="button-29 text-center blink" role="button">
-                                    <a href="#" class="blink_text"> Rabies Help line No :
-                                        <i class="fa fa-phone"></i> 0120-6025400</a>
+                                <button class="button-29 text-center blink gradients " role="button">
+                                    <a href="#" class=""> Rabies Help line No :
+                                        <i class="fa fa-phone"></i> 
+                                        <!-- <img src="{{ asset('assets/Nrcp_img/gifs/call.gif') }}" alt="call now"> -->
+                                        0120-6025400</a>
                                 </button>
-                                <button class="button-29 text-center " role="button"> <a href="#"
-                                        class="blink_text" data-toggle="modal" data-target="#vaccination">
+                                <button class="button-29 text-center flickering" role="button"> <a href="#"
+                                        class="" data-toggle="modal" data-target="#vaccination">
                                         Have you Bitten by an Animal? <br>
                                         Know your Rabies Vaccination Schedule
                                     </a>
                                 </button>
-                                <button class="button-29 text-center" role="button">
-                                    <a href="{{ url('directories') }}" class="blink_text">Who's who</a>
+                                <button class="button-29 text-center colors" role="button">
+                                    <a href="{{ url('directories') }}" class="">Who's who</a>
                                 </button>
-                                <button class="button-29 text-center" role="button" data-toggle="modal"
+                                <button class="button-29 text-center " role="button" data-toggle="modal"
                                     data-target="#vaccinationt">
                                     <a href="#" class="blink_text">Global Updates on Rabies</a>
                                 </button>

@@ -2109,12 +2109,19 @@ h6.sub-text-b-l {
 
 
     .logo-cat-wrap.right-h .logo-part a {
-        display: flex;
+        display: inline-block;
         height: auto;
         justify-content: space-between !important;
-        width: 100% !important;
+        width: auto !important;
         padding-right: 15px;
         padding-left: 15px;
+        margin-top: 5px;
+    }
+    .full-width-header .rs-header .logo-part.emblem p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 27px;
+        white-space: nowrap;
     }
 
     .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a {
@@ -2610,7 +2617,9 @@ h6.sub-text-b-l {
     .full-width-header .rs-header .logo-part img {
         height: 90px !important;
     }
-
+    .full-width-header .rs-header .logo-part.emblem img {
+        height: 90px !important;
+    }
     .d-xs-none{
         display: none;
     }
