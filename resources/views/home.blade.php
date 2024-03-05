@@ -84,7 +84,7 @@
                                     <a href="#" class=""> Rabies Help line No :
                                         <i class="fa fa-phone"></i> 
                                         <!-- <img src="{{ asset('assets/Nrcp_img/gifs/call.gif') }}" alt="call now"> -->
-                                        0120-6025400</a>
+                                        15400</a>
                                 </button>
                                 <button class="button-29 text-center flickering" role="button"> <a href="#"
                                         class="" data-toggle="modal" data-target="#vaccination">

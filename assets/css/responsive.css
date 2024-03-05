@@ -107,7 +107,11 @@
         height: 105px;
     }
     .full-width-header .rs-header .logo-part .logo_kendriya img {
-        height: 91px !important;
+        /* height: 91px !important; */
+    }
+    .full-width-header .rs-header .logo-part .logo_kendriya img {
+        border-radius: 28px !important;
+        height: 104px !important;
     }
 
 }
