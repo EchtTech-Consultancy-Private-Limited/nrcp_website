@@ -21256,3 +21256,7 @@ iframe ._2qgu._2qgu{
   width: 100% !important;
   height: 66px !important;
 }
+
+.btn-view_play .btns{
+   cursor: pointer ;
+}
