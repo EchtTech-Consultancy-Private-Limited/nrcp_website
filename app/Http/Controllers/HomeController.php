@@ -164,7 +164,7 @@ class HomeController extends Controller
     }
     public function commonPagesContent($slug)
 
-    {      
+       
        
     {
         $menus = DB::table('website_menu_management')->where('status', 3)->whereurl($slug)->first();
