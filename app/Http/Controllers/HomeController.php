@@ -163,8 +163,12 @@ class HomeController extends Controller
         return view('faq-page', ['faqdata' => $faq]);
     }
     public function commonPagesContent($slug)
+
+    {      
+       
     {
         $menus = DB::table('website_menu_management')->where('status', 3)->whereurl($slug)->first();
+
         if (!empty($menus->uid)) {
             $metacontent = DB::table('dynamic_content_page_metatag')->where('status', 3)->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->get();
         } else {
@@ -196,8 +200,13 @@ class HomeController extends Controller
         }
         $objectpass = new \stdclass;
         $objectpass->pageContent = $datas1;
+
+
+        return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs]);
+
         $metaDetails = DB::table('dynamic_content_page_metatag')->where('status', 3)->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->first();
         return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs, 'metaDetails' => $metaDetails]);
+
     }
     public function getDistricts(Request $request)
     {
