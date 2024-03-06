@@ -3059,7 +3059,7 @@ ul.listing-style.modify li:before {
   margin-top: 5px;
 }
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li:first-child a{
-  padding: 2px 16px 2px 0px !important;
+  /* padding: 2px 16px 2px 0px !important; */
 }
 .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li:last-child{
   margin-right: 0 !important;
