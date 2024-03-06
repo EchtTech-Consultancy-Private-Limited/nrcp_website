@@ -140,14 +140,8 @@
                                                             aria-hidden="true"></i> <a href="#"><i
                                                                 class="fa fa-download" aria-hidden="true"></i></a>
                                                     </div>
-
-
-                                                    <!-- <div class="accessible-version">
-                                                <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                                </div> -->
                                                 </td>
                                             </tr>
-
 
                                             <tr>
                                                 <td> National Guidelines for Rabies Prophylaxis, 2019 </td>
@@ -159,10 +153,6 @@
                                                             aria-hidden="true"></i> <a href="#"><i
                                                                 class="fa fa-download" aria-hidden="true"></i></a>
                                                     </div>
-
-
-
-
                                                 </td>
                                             </tr>
 
@@ -177,10 +167,6 @@
                                                             aria-hidden="true"></i> <a href="#"><i
                                                                 class="fa fa-download" aria-hidden="true"></i></a>
                                                     </div>
-
-
-
-
                                                 </td>
                                             </tr>
 
@@ -196,13 +182,8 @@
                                                             aria-hidden="true"></i> <a href="#"><i
                                                                 class="fa fa-download" aria-hidden="true"></i></a>
                                                     </div>
-
-
-
-
                                                 </td>
                                             </tr>
-
                                             <tr>
                                                 <td> Rabies- General Aspects & Laboratory Diagnostic Techniques 2022
                                                 </td>
@@ -228,14 +209,5 @@
             </div>
         </div>
     </div>
-
 </div>
-
-
-
-
-
-
-
-
 @endsection

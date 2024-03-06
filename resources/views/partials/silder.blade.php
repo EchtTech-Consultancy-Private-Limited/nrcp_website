@@ -52,14 +52,6 @@
                               data-wow-duration="3000ms">
                               Publications
                            </h1>
-                           {{-- 
-                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                              data-wow-duration="2000ms">is a public health initiative in India that aims to
-                              prevent and control the spread of rabies,
-                              a deadly viral disease that is transmitted to humans through the bite of an
-                              infected animal.
-                           </div>
-                           --}}
                            <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
                               data-wow-duration="2000ms">
                               <a class="readon green-banner" href="https://ncdc.gov.in/WriteReadData/linkimages/GuidelinesforRabiesProphylaxis.pdf" target="_blank">Read More <i
@@ -86,14 +78,6 @@
                               data-wow-duration="3000ms">
                               Events
                            </h1>
-                           {{-- 
-                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                              data-wow-duration="2000ms">is a public health initiative in India that aims to
-                              prevent and control the spread of rabies,
-                              a deadly viral disease that is transmitted to humans through the bite of an
-                              infected animal.
-                           </div>
-                           --}}
                            <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
                               data-wow-duration="2000ms">
                               <a class="readon green-banner" href="{{ route('event') }}">Read More <i
@@ -120,14 +104,6 @@
                               data-wow-duration="3000ms">
                               Upcoming Activities
                            </h1>
-                           {{-- 
-                           <div class="sl-sub-title wow bounceInLeft text-white" data-wow-delay="300ms"
-                              data-wow-duration="2000ms">is a public health initiative in India that aims to
-                              prevent and control the spread of rabies,
-                              a deadly viral disease that is transmitted to humans through the bite of an
-                              infected animal.
-                           </div>
-                           --}}
                            <div class="banner-btn wow fadeInUp" data-wow-delay="1500ms"
                               data-wow-duration="2000ms">
                               <a class="readon green-banner" href="{{ route('activitie') }}">Read More <i

@@ -14,7 +14,7 @@
                     @include('partials.top-header')
                 </div>
             </div>
-            <div class="menu-area menu-sticky">
+            <div class="menu-area ">
                 <div class="container">
                     @include('partials.menu-header')
                 </div>
@@ -65,27 +65,7 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <!-- <div class="col-lg-6 col-md-6">
-                     <div class="publication-sociol-icon">
-                        <ul class="d-flex justify-content-end">
-                           <li><a href="javascript:void();" id="" onclick="printDiv()" download> <img src="{{ asset('assets/Nrcp_img/sociol-icon/printer.png') }}"
-                              alt="printer Image" aria-label="printer" class="slash"></a></li>
-                           <li><a href="#" target="_blank"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/share.png') }}"
-                              alt="share Image" aria-label="share"></a></li>
-                              @if ($social_media->facebook != '')
-<li><a href="{{ $social_media->facebook }}" target="_blank"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/facebook.png') }}"
-                              alt="facebook Image" aria-label="facebook"></a></li>
-@endif
-                              @if ($social_media->twitter != '')
-<li><a href="{{ $social_media->twitter }}" target="_blank"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/twitter.png') }}"
-                              alt="twitter Image" aria-label="twitter"></a></li>
-@endif
-                           <li><a href="javascript:void();" target="_blank"> <img src="{{ asset('assets/Nrcp_img/sociol-icon/linkedin.png') }}"
-                              alt="linkedin Image" aria-label="linkedin"></a></li>
-                        </ul>
-                     </div>
-                  </div> -->
+                    </div>                    
                 </div>
             </div>
             @yield('content')

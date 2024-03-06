@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
     @include('partials.head-css-scripts')
     <style>
     </style>
 </head>
-
 <body class="defult-home">
-    <!-- <div id="loader" class="loader green-color">
-         <div class="loader-container">
-            <div class='loader-icon'>
-               <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="">
-            </div>
-         </div>
-         </div> -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="AbB7EpYI"></script>
     <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
         <header id="rs-header" class="rs-header">
             <div class="topbar-area home11-topbar">
@@ -22,7 +15,7 @@
                     @include('partials.top-header')
                 </div>
             </div>
-            <div class="menu-area menu-sticky">
+            <div class="menu-area " id="menu-sticky">
                 <!-- SVG-CONTENT-DISPLAY NONE -->
                 <div class="svg-cont">
                     <img src="{{ URL::asset('assets/Nrcp_img/svg/blue-svg.png') }}" alt="NRCP">
@@ -46,47 +39,6 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-9">
-                        <!-- <div class="rs-slider style1">
-                        <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="30"
-                            data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="9000"
-                            data-smart-speed="9000" data-dots="false" data-nav="false" data-nav-speed="false"
-                            data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false"
-                            data-mobile-device-dots="false" data-ipad-device="1" data-ipad-device-nav="false"
-                            data-ipad-device-dots="false" data-ipad-device2="1" data-ipad-device-nav2="true"
-                            data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
-                            data-md-device-dots="false" id="banner2">
-                            <div class="slider-content">
-                                <div class="container-fluid px-0">
-                                    <div class="d-flex align-items-center latest-news-slider-content-text">
-                                        <a href="{{ asset('assets/Nrcp_img/WorldRabiesDayObservationReport.pdf') }}"
-                                            class="text-white" target="_blank" rel="noopener noreferrer">World
-                                            Rabies day 2023 Activities at National level</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-content">
-                                <div class="container-fluid px-0">
-                                    <div class="d-flex align-items-center latest-news-slider-content-text">
-                                        <p>We had celebrated World's Rabies Day on 32th Sept’2023 </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-content">
-                                <div class="container-fluid px-0">
-                                    <div class="d-flex align-items-center latest-news-slider-content-text">
-                                        <p>NRCP Website will be launched soon.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="slider-content">
-                                <div class="container-fluid px-0">
-                                    <div class="d-flex align-items-center latest-news-slider-content-text">
-                                        <p>NCDC Journal for One Health will be launched in December 2023 </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div> -->
                         <div class="ticker_wrap">
                             <div class="ticker__viewport">
                                 <ul class="ticker__list" data-ticker="list" id="banner2">
@@ -126,48 +78,27 @@
             <div class="row">
                 <div class="col-md-3 order-md-1 order-2">
                     <div class="cont_secsns left_dhr mob-item2">
-                        <!-- <h4 class="title" tabindex="0">Quick Information</h4> -->
                         <div class="main_btntop_chnges">
-                            <!-- <div class="mobile-number-box pulse">
-                           <a href="tel:01206025400" class="phone-number blink" tabindex="0"> Rabies Help line No :
-                               <i class="fa fa-phone"></i> 01206025400</a>
-                           </div> -->
-                            <div class="top-menu-box">
-                                <!-- <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
-                              data-toggle="modal" data-target="#vaccination" style="display: block !important"
-                              tabindex="0">
-                              <span class="blink"> Have you Bitten by an Animal? </span> <br>
-                              Know your Rabies Vaccination Schedule
-                              </a> -->
-                                <!-- <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
-                              data-toggle="modal" data-target="#vaccination" style="display: block !important"
-                              tabindex="0">
-                              <span class="blink"> Nearest Human Rabies Laboratory </span> <br>
-                              </a>
-                              <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
-                              data-toggle="modal" data-target="#vaccination" style="display: block !important"
-                              tabindex="0">
-                              <span class="blink"> Nearest Animal Rabies Laboratory </span> <br>
-                              </a> -->
+                            <div class="top-menu-box">                                
                             </div>
                             <div class="new_btns_cols">
-                                <button class="button-29 text-center blink" role="button">
-                                    <a href="#" class="blink_text"> Rabies Help line No :
-                                        <i class="fa fa-phone"></i> 0120-6025400</a>
+                                <button class="button-29 text-center blink gradients " role="button">
+                                    <a href="#" class=""> Rabies Help line No :
+                                        <i class="fa fa-phone"></i> 
+                                        <!-- <img src="{{ asset('assets/Nrcp_img/gifs/call.gif') }}" alt="call now"> -->
+                                        15400</a>
                                 </button>
-                                <button class="button-29 text-center " role="button"> <a href="#"
-                                        class="blink_text" data-toggle="modal" data-target="#vaccination">
+                                <button class="button-29 text-center flickering" role="button"> <a href="#"
+                                        class="" data-toggle="modal" data-target="#vaccination">
                                         Have you Bitten by an Animal? <br>
                                         Know your Rabies Vaccination Schedule
                                     </a>
                                 </button>
-                                <button class="button-29 text-center" role="button">
-                                    <!-- <a href="#" class="blink_text">Nearest Human Rabies Laboratory</a> -->
-                                    <a href="{{ url('directories') }}" class="blink_text">Who's who</a>
+                                <button class="button-29 text-center colors" role="button">
+                                    <a href="{{ url('directories') }}" class="">Who's who</a>
                                 </button>
-                                <button class="button-29 text-center" role="button" data-toggle="modal"
+                                <button class="button-29 text-center " role="button" data-toggle="modal"
                                     data-target="#vaccinationt">
-                                    <!-- <a href="#" class="blink_text">Nearest Animal Rabies Laboratory</a> -->
                                     <a href="#" class="blink_text">Global Updates on Rabies</a>
                                 </button>
                             </div>
@@ -238,20 +169,17 @@
                                                 @php
                                                     $humanUrl = $human_activites->url_link ?? 'javascript:void(0)';
                                                 @endphp
-
                                                 <div class="latest-lists">
                                                     <a @if ($human_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
                                                     target="_blank" href="{{ $humanUrl }}" @else
                                                         href="{{ url($humanUrl) }}" @endif>
                                                         <strong><i class="fa fa-hand-o-right mx-1"
                                                                 aria-hidden="true"></i> : </strong>
-
                                                         @if (Session::get('Lang') == 'hi')
                                                             {{ $human_activites->recent_activities_hi ?? '' }}
                                                         @else
                                                             {{ $human_activites->recent_activities_en ?? '' }}
                                                         @endif
-
                                                         <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
                                                             alt="">
                                                     </a>
@@ -259,59 +187,10 @@
                                             @endforeach
                                         @else
                                         @endif
-                                        {{-- <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-hand-o-right mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab2 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-hand-o-right mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab3 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-hand-o-right mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab4 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-hand-o-right mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab5 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-hand-o-right mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab6 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-hand-o-right mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab7 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div> --}}
                                     </div>
                                 </div>
                             </div>
                             <h4 class="title" tabindex="0">Animal Health Sector Activities</h4>
-
                             <div class="marquee marquee-vertical" data-speed="50">
                                 <div class="marquee-wrapper">
                                     <div class="marquee-content">
@@ -320,22 +199,17 @@
                                                 @php
                                                     $animalUrl = $animal_activites->url_link ?? 'javascript:void(0)';
                                                 @endphp
-
                                                 <div class="latest-lists">
                                                     <a @if ($animal_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
                                                     target="_blank" href="{{ $animalUrl }}" @else
                                                         href="{{ url($animalUrl) }}" @endif
-
                                                         ><strong><i class="fa fa-circle-thin mx-1"
                                                                 aria-hidden="true"></i> : </strong>
-
-
                                                         @if (Session::get('Lang') == 'hi')
                                                             {{ $animal_activites->recent_activities_hi ?? '' }}
                                                         @else
                                                             {{ $animal_activites->recent_activities_en ?? '' }}
                                                         @endif
-
                                                         <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
                                                             alt="">
                                                     </a>
@@ -343,64 +217,6 @@
                                             @endforeach
                                         @else
                                         @endif
-                                        {{-- <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-circle-thin mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab2 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-circle-thin mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab3 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-circle-thin mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab4 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-circle-thin mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab5 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-circle-thin mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab6 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-circle-thin mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab7 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div>
-                                        <div class="latest-lists">
-                                            <a href=""><strong><i class="fa fa-circle-thin mx-1"
-                                                        aria-hidden="true"></i> : </strong> Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit. Sint eos quisquam unde nisi. Illo
-                                                ut dolor ea amet. Cum reiciendis ab8 <img
-                                                    src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                    alt=""></a>
-                                        </div> --}}
-
                                     </div>
                                 </div>
                             </div>
@@ -412,8 +228,6 @@
         <!-- Demo new banner design Ends-->
         <!-- Card Section End -->
         <!-- About Section Start -->
-
-
         <div id="rs-about" class="rs-about style8">
             <div class="container">
                 <div class="row">
@@ -551,31 +365,10 @@
                             <h4 class="title twitter-text-h"><img
                                     src="{{ asset('assets/Nrcp_img/facebook-logo.png') }}" alt="img"
                                     rel="noopener noreferrer" class="facebook-logo"> ( Facebook Feed )</h4>
-                            <div class="marquee-height myslider">
-                                <div class="item a text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/"
-                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
-                                        target="_blank" title="Facebook" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/f1.png') }}" alt="img"
-                                            rel="noopener noreferrer">
-                                    </a>
-                                </div>
-                                <div class="item b text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/"
-                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
-                                        target="_blank" title="Facebook" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/f2.png') }}" alt="img"
-                                            rel="noopener noreferrer">
-                                    </a>
-                                </div>
-                                <div class="item c text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/"
-                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
-                                        target="_blank" title="Facebook" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/f3.png') }}" alt="img"
-                                            rel="noopener noreferrer">
-                                    </a>
-                                </div>
+                            <div class="fbFeed">
+
+                            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61557122245947" data-tabs="timeline" data-width="370" data-height="460" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/profile.php?id=61557122245947" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61557122245947">NRCP-Mohfw</a></blockquote></div>
+                            
                             </div>
                         </div>
                     </div>
@@ -628,137 +421,6 @@
             </div>
         </div>
     </div>
-    {{--
-      <div id="rs-popular-courses" class="rs-popular-courses style1 modify1 pt-60 pb-60">
-         <div class="container">
-            <div class="sec-title6 text-center mb-40">
-               <h2 class="title">Quick Links</h2>
-            </div>
-            <div class="sec-bg-white">
-               <div class="gridFilter style2 text-left mb-40">
-                  <button data-filter=".filter1" class="active">What's New</button>
-                  <button data-filter=".filter2" class="btn2">Budget and Finance</button>
-                  <button data-filter=".filter3" class="btn3">Rabies Clinic</button>
-                  <button data-filter=".filter4" class="btn4">ID Hospitals</button>
-               </div>
-               <div class="row grid">
-                  <div class="col-lg-12 col-md-12 grid-item filter1">
-                     <div class="row">
-                        <div class="col-lg-6">
-                           <div class="img-part">
-                              <img src="{{ asset('assets/Nrcp_img/banner/banner.jpg') }}" alt="Image" rel="noopener
-                                 noreferrer">
-                           </div>
-                        </div>
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
-                           style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                           <div class="content">
-                              <div class="sec-title mb-10">
-                                 <h4 class="coming_soon">Content Coming Soon </h4>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-12 col-md-12 grid-item filter2 d-none">
-                     <div class="row">
-                        <div class="col-lg-6">
-                           <div class="img-part">
-                              <img src="{{ asset('assets/Nrcp_img/Updated_images/DSC_3631.jpg') }}" alt="Image"
-                                 rel="noopener noreferrer">
-                           </div>
-                        </div>
-                        <div class="col-lg-6">
-                           <div class="content">
-                              <div class="sec-title mb-10">
-                                 <h4 class="coming_soon">Content Coming Soon </h4>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-12 col-md-12 grid-item filter3 d-none">
-                     <div class="row align-item-center">
-                        <div class="col-lg-12">
-                           <div class="content">
-                              <div class="sec-title mb-10">
-                                 <div class="blog-button">
-                                    <a class="blog-btn" href="{{ asset('assets/Nrcp_img/Model_Anti_rabies_Clinic.pdf') }}"
-                                       target="_blank" rel="noopener noreferrer">View PDF</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-12 col-md-12 grid-item filter4 d-none">
-                     <div class="row">
-                        <div class="col-lg-12">
-                           <div class="content">
-                              <div class="sec-title mb-10">
-                                 <div class="blog-button">
-                                    <a class="blog-btn" href="{{ asset('assets/Nrcp_img/ID_Hospitals.pdf') }}" target="_blank"
-                                       rel="noopener noreferrer">View
-                                    PDF</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      --}}
-    {{--
-      <div class="rs-cta bg-cta pt-20 pb-10">
-         <div class="container">
-            <div class="sec-title6 text-center pt-60 mb-40">
-               <h2 class="title text-white">Technical Documents and Guidelines</h2>
-            </div>
-            <div class="row rs-blog home9-style pt-20 pb-50">
-               <div class="col-md-4">
-                  <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms"
-                     data-wow-duration="2000ms"
-                     style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                     <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" rel="noopener noreferrer"
-                        />
-                     <div class="content-part">
-                        <p class="txt">
-                           Rabies General Aspects & Laboratory Diagnostic Techniques 2022
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
-                     style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                     <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" rel="noopener noreferrer" />
-                     <div class="content-part">
-                        <p class="txt">
-                           National Guidelines on Diagnosis Case Management and Prevention and Control of
-                           Leptospirosis
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="events-short-top mb-30 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
-                     style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                     <img src="{{ asset('assets/Nrcp_img/pdf-2.png') }}" class="pdf-guidline" rel="noopener noreferrer" />
-                     <div class="content-part">
-                        <p class="txt">
-                           NCDC notified as National Coordinating Centre for Surveillance of Antimicrobial
-                           Resistance
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      --}}
     <div class="gallery-section p-32">
         <div class="px-3">
             <div class="row">
@@ -834,23 +496,19 @@
                                 data-md-device-nav="false" data-md-device-dots="false" id="banner4">
                                 @if (isset($galleryVideo) && !empty($galleryVideo))
                                 @foreach($galleryVideo as $videos)
-                                    @foreach($videos['gallery_details'] as $videoId)
-                                    {{-- @dd($videoId->public_url);                                         --}}
+                                    @foreach($videos['gallery_details'] as $videoId)                                    
                                     <div class="team-item">
                                         <div class="gallery-box media-icon orange-color">
                                             @if($videoId->public_url)
                                             {!! '<div class="youtube-player" data-video-id="' . $videoId->public_url . '"></div>'!!}
                                             @else
-                                            <p>No images available for this gallery.</p>
+                                            <p>No Video available for this gallery.</p>
                                             @endif
                                         </div>
                                     </div>
                                     @endforeach
                                 @endforeach
                                 @endif
-
-
-
                             </div>
                         </div>
                         <div class="btn-view_play">
@@ -987,11 +645,9 @@
             </div>
             <div class="gallery-section clientail">
                 <div class="btns pr-0">
-                    <!-- <div id="customPreviousBtn5"><i class="fa fa-angle-left" aria-hidden="true"></i></div> -->
                     <div id="customPause5"><i class="fa fa-pause" aria-hidden="true"></i></div>
                     <div id="customPlay5" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
                     </div>
-                    <!-- <div id="customNextBtn5"><i class="fa fa-angle-right" aria-hidden="true"></i></div> -->
                 </div>
             </div>
         </div>
@@ -999,11 +655,9 @@
     <!-- Partner End -->
     </div>
     </div>
-
     <!-- Modal -->
-
     @include('partials.footer')
     @include('partials.footer-scripts')
+   
 </body>
-
 </html>

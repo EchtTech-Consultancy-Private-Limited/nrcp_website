@@ -1,37 +1,27 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\feedback;
 use App\Models\contactUs;
 use App, Route, DB;
-
 class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-
     public function index()
     {
-        //news
-        $news = DB::table('news_management')->where('soft_delete', '0')->orderBy('created_at', 'desc')->get();
-
-        $homebanner = DB::table('home_page_banner_management')->where('soft_delete', '0')->orderby('sort_order', 'Asc')->get();
-
+        $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->orderBy('created_at', 'desc')->get();
+        $homebanner = DB::table('home_page_banner_management')->where('status', 3)->where('soft_delete', '0')->orderby('sort_order', 'Asc')->get();
         $photoGallery = DB::table('gallery_management as gm')
             ->join('gallery_details as ged', 'ged.gallery_id', '=', 'gm.uid')
             ->select('gm.*', 'ged.*')
             ->where('gm.soft_delete', '0')
-            // ->orderby('gm.sort_order','Asc')
             ->get();
-        // dd($photoGallery);
         return view('home', ['news' => $news, 'homebanner' => $homebanner, 'photogallery' => $photoGallery]);
     }
-
     public function anumalHealth()
     {
         return view('animal-health');
@@ -43,34 +33,28 @@ class HomeController extends Controller
             ->where('gallery_id', $id)
             ->latest('created_at')
             ->get();
-
-            $gallery = DB::table('gallery_management')
+        $gallery = DB::table('gallery_management')
+            ->where('status', 3)
             ->where('soft_delete', 0)
             ->where('uid', $id)
             ->latest('created_at')
             ->first();
-            
-      
         $breadcrumbs = 'Photo Gallery Images';
-    return view('photo-gallery-details', ['gallery'=>$gallery,'photogallery' => $photogallery, 'breadcrumbs' => $breadcrumbs]);
-
+        return view('photo-gallery-details', ['gallery' => $gallery, 'photogallery' => $photogallery, 'breadcrumbs' => $breadcrumbs]);
     }
     public function comingSoon()
     {
         return view('coming-soon');
     }
-
     public function humanHealth()
     {
         return view('human-health');
     }
-
     public function videoDetail()
     {
         $titleName = 'Video Gallery';
-        return view('videos',['title',$titleName]);
+        return view('videos', ['title', $titleName]);
     }
-
     public function mediaalerts()
     {
         return view('media-alerts');
@@ -81,36 +65,27 @@ class HomeController extends Controller
             ->select('state_name')
             ->groupBy('state_name')
             ->get();
-
         $human_rabies_labs_data_states = DB::table('human_rabies_labs')
             ->select('state_name')
             ->groupBy('state_name')
             ->get();
-
         $animal_rabies_labs_data_states = DB::table('animal_rabies_labs')
             ->select('state_name')
             ->groupBy('state_name')
             ->get();
-
-
         return view('vaccination_dose', ['state' => $rabies_clinics_data_states, 'human_labs_state' => $human_rabies_labs_data_states, 'animal_labs_state' => $animal_rabies_labs_data_states]);
     }
     public function privacyPolicy()
     {
         return view('privacy-policy');
     }
-
-
     //language
     public function SetLang(Request $request)
     {
-        //dd($request->data);
         session()->put('Lang', $request->data);
         App::setLocale($request->data);
         return response()->json(['data' => $request->data, True]);
     }
-
-
     public function downloads()
     {
         return view('downloadPages.downloads');
@@ -119,33 +94,25 @@ class HomeController extends Controller
     {
         return view('publicationsPages.publications');
     }
-
     public function screen_reader_access()
     {
         return view('Screen_reader_access');
     }
-
     public function siteMap()
     {
-
         return view('site-map');
     }
-
     public function newsDetails()
     {
-
         $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->get();
-
         return view('news-details', ['newsList' => $news]);
     }
-
     public function feedbackForm(Request $request)
     {
         return view('feedback');
     }
     public function feedbackStore(Request $request)
     {
-
         $validated = $request->validate([
             'name' => 'required',
             'email' => ['required', 'string', 'email', 'max:50', 'regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix'],
@@ -156,7 +123,6 @@ class HomeController extends Controller
             'message' => 'required',
             'CaptchaCode' => 'required|valid_captcha',
         ]);
-
         $data = new feedback;
         $data->name = $request->name;
         $data->email = $request->email;
@@ -170,15 +136,10 @@ class HomeController extends Controller
     }
     public function contactForm($slug = '')
     {
-
-
         return view('contact-us');
     }
-
     public function contactStroe(Request $request)
     {
-
-
         $validated = $request->validate([
             'name' => 'required',
             'email' => ['required', 'string', 'email', 'max:50', 'regex:/^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix'],
@@ -187,7 +148,6 @@ class HomeController extends Controller
             'message' => 'required',
             'CaptchaCode' => 'required|valid_captcha',
         ]);
-
         $data = new contactUs;
         $data->name = $request->name;
         $data->email = $request->email;
@@ -197,20 +157,20 @@ class HomeController extends Controller
         $data->save();
         return back()->with('success', 'Thanks for contacting us, We have received your query and will get back to you shortly!');
     }
-
     public function getFAQ()
     {
-
         $faq = DB::table('faq')->where('status', 3)->where('soft_delete', '0')->orderBy('short_order', 'asc')->get();
-
         return view('faq-page', ['faqdata' => $faq]);
     }
-
     public function commonPagesContent($slug)
+
     {      
-        $menus = DB::table('website_menu_management')->whereurl($slug)->first();
+       
+    {
+        $menus = DB::table('website_menu_management')->where('status', 3)->whereurl($slug)->first();
+
         if (!empty($menus->uid)) {
-            $metacontent = DB::table('dynamic_content_page_metatag')->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->get();
+            $metacontent = DB::table('dynamic_content_page_metatag')->where('status', 3)->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->get();
         } else {
             abort(404);
         }
@@ -219,7 +179,6 @@ class HomeController extends Controller
         } else {
             $breadcrumbs = '';
         }
-        //dd($metacontent);
         $data1 = [];
         $datas1 = [];
         foreach ($metacontent as $metacontents) {
@@ -229,7 +188,6 @@ class HomeController extends Controller
             if ($content_page) {
                 $newData->content_page = $content_page;
             }
-
             $content_pdf = DB::table('dynamic_content_page_pdf')->where('dcpm_id', $metacontents->uid)->get();
             if ($content_pdf) {
                 $newData->content_pdf = $content_pdf;
@@ -242,11 +200,14 @@ class HomeController extends Controller
         }
         $objectpass = new \stdclass;
         $objectpass->pageContent = $datas1;
-        // dd($objectpass);
+
 
         return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs]);
-    }
 
+        $metaDetails = DB::table('dynamic_content_page_metatag')->where('status', 3)->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->first();
+        return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs, 'metaDetails' => $metaDetails]);
+
+    }
     public function getDistricts(Request $request)
     {
         $statename = $request->state_name;
@@ -261,8 +222,6 @@ class HomeController extends Controller
         }
         return $cityDropDown;
     }
-
-
     public function getDistrictsHuman(Request $request)
     {
         $statename = $request->state_name;
@@ -277,8 +236,6 @@ class HomeController extends Controller
         }
         return $cityDropDown;
     }
-
-
     public function getDistrictsAnimal(Request $request)
     {
         $statename = $request->state_name;
@@ -293,11 +250,6 @@ class HomeController extends Controller
         }
         return $cityDropDown;
     }
-
-
-
-
-
     public function vaccinationSearch(Request $request)
     {
         $statename = $request->state_name;
@@ -306,7 +258,6 @@ class HomeController extends Controller
             ->select(['district_name', 'state_name', 'address'])
             ->where('state_name', 'LIKE', $statename)->where('district_name', 'LIKE', $cityname)
             ->get();
-
         $resultsData = '<table>'
             . '<tbody>'
             . '<tr>'
@@ -314,16 +265,12 @@ class HomeController extends Controller
             . '<th>District Name</th>'
             . '<th>Facility Name</th>'
             . '</tr>';
-
         foreach ($data as $searchData) {
             $resultsData .= '<tr><td>' . $searchData->state_name . '</td><td>' . $searchData->district_name . '</td><td>' . $searchData->address . '</td></tr>';
         }
         $resultsData .= '</tbody></table>';
-        // dd($data);
         return $resultsData;
     }
-
-
     public function vaccinationSearchH(Request $request)
     {
         $statename = $request->state_name;
@@ -332,7 +279,6 @@ class HomeController extends Controller
             ->select(['district_name', 'state_name', 'address'])
             ->where('state_name', 'LIKE', $statename)->where('district_name', 'LIKE', $cityname)
             ->get();
-
         $resultsData = '<table>'
             . '<tbody>'
             . '<tr>'
@@ -340,7 +286,6 @@ class HomeController extends Controller
             . '<th>District Name</th>'
             . '<th>Facility Name</th>'
             . '</tr>';
-
         foreach ($data as $searchData) {
             $resultsData .= '<tr><td>' . $searchData->state_name . '</td><td>' . $searchData->district_name . '</td><td>' . $searchData->address . '</td></tr>';
         }
@@ -356,7 +301,6 @@ class HomeController extends Controller
             ->select(['district_name', 'state_name', 'address'])
             ->where('state_name', 'LIKE', $statename)->where('district_name', 'LIKE', $cityname)
             ->get();
-
         $resultsData = '<table>'
             . '<tbody>'
             . '<tr>'
@@ -364,7 +308,6 @@ class HomeController extends Controller
             . '<th>District Name</th>'
             . '<th>Facility Name</th>'
             . '</tr>';
-
         foreach ($data as $searchData) {
             $resultsData .= '<tr><td>' . $searchData->state_name . '</td><td>' . $searchData->district_name . '</td><td>' . $searchData->address . '</td></tr>';
         }
@@ -372,16 +315,13 @@ class HomeController extends Controller
         // dd($data);
         return $resultsData;
     }
-
     public function getmap()
     {
         $data = DB::table('animal_rabies_labs')->get();
         return view('map', ['data' => $data]);
     }
-
     public function mapAnimalCenter(Request $request)
     {
-
         try {
             if (($request->stateValue) && ($request->cityValue)) {
                 $data = DB::table('animal_rabies_labs')->wherestate_name($request->stateValue)->Where('district_name', '=', $request->cityValue)->get();
@@ -390,20 +330,15 @@ class HomeController extends Controller
                 $data = DB::table('animal_rabies_labs')->wherestate_name($request->stateValue)->get();
                 return response()->json(['data' => $data], 201);
             }
-
             return response()->json(['data' => $data], 200);
         } catch (QueryException $e) {
-
             return response()->json(['error' => 'Database error'], 500);
         } catch (\Exception $e) {
-
             return response()->json(['error' => 'Something went wrong'], 500);
         }
     }
-
     public function mapHumanCenter(Request $request)
     {
-
         try {
             if (($request->stateValue) && ($request->cityValue)) {
                 $data = DB::table('human_rabies_labs')->wherestate_name($request->stateValue)->Where('district_name', '=', $request->cityValue)->get();
@@ -412,20 +347,15 @@ class HomeController extends Controller
                 $data = DB::table('human_rabies_labs')->wherestate_name($request->stateValue)->get();
                 return response()->json(['data' => $data], 201);
             }
-
             return response()->json(['data' => $data], 200);
         } catch (QueryException $e) {
-
             return response()->json(['error' => 'Database error'], 500);
         } catch (\Exception $e) {
-
             return response()->json(['error' => 'Something went wrong'], 500);
         }
     }
-
     public function mapClientCenter(Request $request)
     {
-
         try {
             if ($request->stateValue && $request->cityValue) {
                 $data = DB::table('model_anti_rabies_clinic')
@@ -437,77 +367,55 @@ class HomeController extends Controller
                     ->where('state_name', $request->stateValue)
                     ->get();
             }
-
             return response()->json(['data' => $data], 200);
         } catch (QueryException $e) {
-
             return response()->json(['error' => 'Database error'], 500);
         } catch (\Exception $e) {
-
             return response()->json(['error' => 'Something went wrong'], 500);
         }
     }
-
     public function onloadClientCenter()
     {
         try {
-
             $data = DB::table('model_anti_rabies_clinic')->get();
-
             return response()->json(['data' => $data], 200);
-
         } catch (QueryException $e) {
-
             return response()->json(['error' => 'Database error'], 500);
         } catch (\Exception $e) {
-
             return response()->json(['error' => 'Something went wrong'], 500);
         }
     }
-
     public function onloadAnimalCenter()
     {
-
         try {
             $data = DB::table('animal_rabies_labs')->get();
-
             return response()->json(['data' => $data], 201);
         } catch (QueryException $e) {
-
             return response()->json(['error' => 'Database error'], 500);
         } catch (\Exception $e) {
-
             return response()->json(['error' => 'Something went wrong'], 500);
         }
     }
-
     public function onloadHumanCenter()
     {
         try {
             $data = DB::table('human_rabies_labs')->get();
-
             return response()->json(['data' => $data], 200);
         } catch (QueryException $e) {
-
             return response()->json(['error' => 'Database error'], 500);
         } catch (\Exception $e) {
-
             return response()->json(['error' => 'Something went wrong'], 500);
         }
     }
-
-
     public function photoGalleryCategory()
     {
         try {
-            $galleryData = []; 
-
+            $galleryData = [];
             $gallery = DB::table('gallery_management')
                 ->where('status', 3)
                 ->where('soft_delete', 0)
                 ->latest('created_at')
                 ->get();
-
             if (count($gallery) > 0) {
                 foreach ($gallery as $images) {
                     $gallay_images = DB::table('gallery_details')
@@ -515,7 +423,6 @@ class HomeController extends Controller
                         ->where('gallery_id', $images->uid)
                         ->latest('created_at')
                         ->get();
-
                     if (count($gallay_images) > 0) {
                         $galleryData[] = [
                             'gallery' => $images,
@@ -524,7 +431,6 @@ class HomeController extends Controller
                     }
                 }
             }
-
             return view('galleryCategory', ['galleryData' => $galleryData]);
         } catch (\Exception $e) {
             \Log::error('An exception occurred: ' . $e->getMessage());

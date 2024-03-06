@@ -1,18 +1,18 @@
 <div class="row y-middle py-2">
     <div class="col-lg-1 pr-0">
         <div class="logo-cat-wrap">
-            <div class="logo-part">
+            <div class="logo-part emblem">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
-
                     @if (isset($logo) && $logo != '')
                         <img src="{{ asset('resources/uploads/WebsiteCoreSettings/' . $logo->header_logo) }}"
                             title="{{ $logo->logo_title }}" alt="{{ $logo->logo_title }}" rel="noopener noreferrer"
                             class="logo logo1">
+                         
                     @else
                         <img src="{{ asset(config('constants.brand.default_logo')) }}" alt=""
                             rel="noopener noreferrer" class="logo logo1">
+                            <p>Ministry of Health</p>
                     @endif
-
                     <div class="pl-2 text-center d-none d-xs-block">
                         <h2 class="title black-color text-center logo-text">National Rabies Control Program</h2>
                         <h5 class="sub-text-l text-center">National Center for Disease control</h5>
@@ -22,15 +22,16 @@
                         </h6>
                     </div>
                 </a>
+                <p>Ministry of Health</p>
             </div>
         </div>
     </div>
-    <div class="col-lg-9 text-lg-left pr-0">
+    <div class="col-md-8 col-xl-9 text-lg-left pr-0">
         <div class="rs-menu-area">
             <div class="main-menu">
                 <div class="mobile-menu">
                     <a class="rs-menu-toggle">
-                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-bars mr-2"></i>
                     </a>
                 </div>
                 <div class="top-menu-box">
@@ -38,8 +39,8 @@
                         <div class="pl-2 text-center d-xs-none">
                             <h2 class="title black-color logo-text">National Rabies Control Program</h2>
                             <h5 class="sub-text-l text-center">National Center for Disease Control</h5>
-                            <h6 class="sub-text-b-l text-center">Directorate General of Health Services,<br>
-                            Ministry of Health & Family Welfare,
+                            <h6 class="sub-text-b-l text-center">Directorate General of Health Services,
+                            Ministry of Health & Family Welfare, <br>
                             Government of India
                         </h6>
                         </div>
@@ -47,23 +48,11 @@
                     <ul>
                         <li tabindex="1">
                             <div class="mobile-number-box pulse">
-
                                 <a href="tel:01206025400" class="phone-number blink"> Rabies Help line No :
                                     <i class="fa fa-phone"></i> 01206025400</a>
                             </div>
                         </li>
                         <li tabindex="1">
-                            <!-- <div class="top-header-logo">
-                                <a href="https://swachhbharat.mygov.in/" target="_blank" rel="noopener noreferrer"
-                                    class="top-logo">
-                                    <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
-                                        rel="noopener noreferrer">
-                                </a>
-                                <a href="https://www.g20.org/en/" target="_blank" rel="noopener noreferrer"
-                                    class="top-logo">
-                                    <img src="{{ asset('assets/Nrcp_img/g20.png') }}" rel="noopener noreferrer">
-                                </a>
-                            </div> -->
                             <a href="javascript:void();" rel="noopener noreferrer" class="text-vaccination pulse"
                                 data-toggle="modal" data-target="#vaccination"
                                 style="border: solid 4px; display: block !important">
@@ -71,44 +60,28 @@
                                 Know your Rabies Vaccination Schedule
                             </a>
                         </li>
-                        <!-- <li tabindex="1">
-
-                        </li> -->
-                        {{--
-                         <li class="d-xs-none">
-                            <a href="javascript:void();" class="top-logo">
-                              <img src="{{asset('assets/Nrcp_img/Swach_Bharat.svg') }}">
-                            </a>
-                            <a href="javascript:void();" class="top-logo">
-                            <img src="{{asset('assets/Nrcp_img/g20.png') }}">
-                            </a>
-                        </li>
-                        --}}
                     </ul>
                 </div>
             </div>
             <!-- //.main-menu -->
         </div>
     </div>
-    <div class="col-lg-2 text-lg-left pl-0 pr-0">
-        <div class="logo-cat-wrap right-h">
+    <div class="col-md-3 col-xl-2  text-lg-left pl-0 pr-0">
+        <div class="logo-cat-wrap right-h justify-content-end">
             <div class="logo-part mobile-logo-s">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
                     <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="" class="logo logo2"
                         rel="noopener noreferrer">
-                    <!-- <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt=""
-                                            class="logo logo1 d-none" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/Swach_Bharat.svg') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/g20.png') }}"
-                                            class="logo logo1 extra-logo d-none d-xs-block" rel="noopener noreferrer"> -->
+                </a>
+                <a href="{{ url('/') }}" rel="noopener noreferrer" class="logo_kendriya">
+                    <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt="" class="logo logo2"
+                        rel="noopener noreferrer">
                 </a>
             </div>
         </div>
     </div>
 </div>
 </div>
-
 <div class="rs-cta style7">
     <div class="partition-bg-wrap">
         <div class="container">
@@ -136,8 +109,6 @@
         </div>
     </div>
 </div>
-
-
 <div class="nav-bottom">
     <div class="container">
         <div class="row">
@@ -158,8 +129,6 @@
                                         
                                         {{-- @dd($menuName->children) --}}
                                             <li class="menu-item-has-children ">
-                                                <?php //dd($menuName->route_type);
-                                                ?>
                                                 <a href="{{ url($menuName->url ?? '') }}" class="main-anchor"
                                                     rel="noopener noreferrer">
                                                     @if (Session::get('Lang') == 'hi')
@@ -299,20 +268,14 @@
                                             </ul>
                                         </li>
                                     @endif
-
-                                    <!-- //.nav-menu -->
                             </nav>
-                            <!-- //.nav-menu -->
                         </nav>
                     </div>
-                    <!-- //.main-menu -->
                 </div>
             </div>
         </div>
     </div>
-
     <div class="overlay"></div>
-    <!-- Canvas Menu start -->
     <nav class="right_menu_togle hidden-md">
         <div class="close-btn">
             <div id="nav-close">
@@ -337,4 +300,3 @@
         </div>
         <a class="tab-close">&nbsp;</a>
     </nav>
-    <!-- Canvas Menu end -->
