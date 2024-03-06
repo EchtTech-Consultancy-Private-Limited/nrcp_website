@@ -23,7 +23,7 @@
                                 @foreach ($headerMenu as $menuName)
                                     @if (@isset($menuName->children))
                                         <li class="menu-item-has-children pb-0">
-                                            <a href="{{ url('nrcp/' . $menuName->url) }}"
+                                            <a href="javascript:void()"
                                                 class="main-anchor">{{ $menuName->name_en }}</a>
 
                                             <ul class="unorder-list pt-10">
