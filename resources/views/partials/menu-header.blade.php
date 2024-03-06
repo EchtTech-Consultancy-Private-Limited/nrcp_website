@@ -109,7 +109,7 @@
         </div>
     </div>
 </div>
-<div class="nav-bottom">
+<div class="nav-bottom" id="menu-sticky">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-lg-left pl-0 pr-0">
