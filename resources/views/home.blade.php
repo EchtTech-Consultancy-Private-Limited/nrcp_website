@@ -15,7 +15,7 @@
                     @include('partials.top-header')
                 </div>
             </div>
-            <div class="menu-area " id="menu-sticky">
+            <div class="menu-area " >
                 <!-- SVG-CONTENT-DISPLAY NONE -->
                 <div class="svg-cont">
                     <img src="{{ URL::asset('assets/Nrcp_img/svg/blue-svg.png') }}" alt="NRCP">

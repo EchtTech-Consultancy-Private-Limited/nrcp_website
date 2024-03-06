@@ -1433,7 +1433,7 @@ h6.sub-text-b-l {
         display: none;
     }
     .sticky{
-        background: #fff !important;
+        /* background: #fff !important; */
         position: fixed !important;
         top: 0px;
         z-index: 999;
