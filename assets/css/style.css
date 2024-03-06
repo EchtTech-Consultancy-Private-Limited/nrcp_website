@@ -21239,3 +21239,20 @@ img.twitter-logo-top
     line-height: 27px;
     white-space: nowrap;
 }
+
+.fbFeed iframe ._10b4{
+scrollbar-width: thin !important;
+}
+.fbFeed {
+  padding: 0 12px;
+}
+
+iframe ._2qgu._2qgu{
+  width: auto !important;
+  height: 200px !important;
+}
+
+._2qgu._2qgu {
+  width: 100% !important;
+  height: 66px !important;
+}

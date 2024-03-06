@@ -253,7 +253,20 @@
         min-height: 290px;
     }
 }
+@media (max-width: 1450px) and (min-width: 1350px)   {
+    .full-width-header .rs-header .logo-part.mobile-logo-s img {
+        height: 106px !important;
+    }
+    .full-width-header .rs-header .logo-part .logo_kendriya img {
+        height: 98px !important;
+    }
+}
+
 @media only screen and (max-width: 1450px) {
+    .datetime {
+        width: auto;
+        margin-right: 8px;
+    }
     .full-width-header .rs-header .menu-area .expand-btn-inner li {
         margin-right: 7px;
     }
@@ -1300,18 +1313,19 @@
 }
 
 h2.title.black-color.logo-text {
-    font: normal normal bold 20px/22px Tahoma;
+    font: normal normal bold 30px/28px Tahoma;
 }
 
 h5.sub-text-l {
     text-align: left;
-    font: normal normal normal 17px/27px Tahoma;
+    font: normal normal bold 22px/33px Tahoma;
+   
 }
 
 
 h6.sub-text-b-l {
     text-align: left;
-    font: normal normal normal 13px/16px Tahoma;
+    font: normal normal normal 14px/27px Tahoma;
 }
 
 .rs-testimonial.home1-style .testi-item .author-desc .desc {
@@ -5209,3 +5223,5 @@ ul.topbar-contact li{
             margin: 0% 0% 5% 0%;
         }
     }
+
+ 

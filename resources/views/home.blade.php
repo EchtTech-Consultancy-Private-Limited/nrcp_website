@@ -6,6 +6,8 @@
     </style>
 </head>
 <body class="defult-home">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="AbB7EpYI"></script>
     <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
         <header id="rs-header" class="rs-header">
             <div class="topbar-area home11-topbar">
@@ -363,31 +365,10 @@
                             <h4 class="title twitter-text-h"><img
                                     src="{{ asset('assets/Nrcp_img/facebook-logo.png') }}" alt="img"
                                     rel="noopener noreferrer" class="facebook-logo"> ( Facebook Feed )</h4>
-                            <div class="marquee-height myslider">
-                                <div class="item a text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/"
-                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
-                                        target="_blank" title="Facebook" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/f1.png') }}" alt="img"
-                                            rel="noopener noreferrer">
-                                    </a>
-                                </div>
-                                <div class="item b text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/"
-                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
-                                        target="_blank" title="Facebook" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/f2.png') }}" alt="img"
-                                            rel="noopener noreferrer">
-                                    </a>
-                                </div>
-                                <div class="item c text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/"
-                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
-                                        target="_blank" title="Facebook" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/f3.png') }}" alt="img"
-                                            rel="noopener noreferrer">
-                                    </a>
-                                </div>
+                            <div class="fbFeed">
+
+                            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61557122245947" data-tabs="timeline" data-width="370" data-height="460" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/profile.php?id=61557122245947" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61557122245947">NRCP-Mohfw</a></blockquote></div>
+                            
                             </div>
                         </div>
                     </div>
@@ -677,5 +658,6 @@
     <!-- Modal -->
     @include('partials.footer')
     @include('partials.footer-scripts')
+   
 </body>
 </html>

@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-9 text-lg-left pr-0">
+    <div class="col-md-8 col-xl-9 text-lg-left pr-0">
         <div class="rs-menu-area">
             <div class="main-menu">
                 <div class="mobile-menu">
@@ -66,7 +66,7 @@
             <!-- //.main-menu -->
         </div>
     </div>
-    <div class="col-lg-2 text-lg-left pl-0 pr-0">
+    <div class="col-md-3 col-xl-2  text-lg-left pl-0 pr-0">
         <div class="logo-cat-wrap right-h justify-content-end">
             <div class="logo-part mobile-logo-s">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
