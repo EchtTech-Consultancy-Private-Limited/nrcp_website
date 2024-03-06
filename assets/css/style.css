@@ -21268,3 +21268,10 @@ iframe ._2qgu._2qgu{
 .btn-view_play .btns{
    cursor: pointer ;
 }
+
+.tab-content>.tab-pane {
+  position: relative;
+}
+.tab-content>.active{
+  position: relative;
+}
