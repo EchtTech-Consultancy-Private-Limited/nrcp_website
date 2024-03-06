@@ -26,7 +26,7 @@
             </div>
         </div>
     </div>
-    <div class="col-lg-9 text-lg-left pr-0">
+    <div class="col-md-8 col-xl-9 text-lg-left pr-0">
         <div class="rs-menu-area">
             <div class="main-menu">
                 <div class="mobile-menu">
@@ -66,7 +66,7 @@
             <!-- //.main-menu -->
         </div>
     </div>
-    <div class="col-lg-2 text-lg-left pl-0 pr-0">
+    <div class="col-md-3 col-xl-2  text-lg-left pl-0 pr-0">
         <div class="logo-cat-wrap right-h justify-content-end">
             <div class="logo-part mobile-logo-s">
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
@@ -109,7 +109,7 @@
         </div>
     </div>
 </div>
-<div class="nav-bottom">
+<div class="nav-bottom" id="menu-sticky">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-lg-left pl-0 pr-0">
@@ -118,8 +118,16 @@
                         <nav class="rs-menu">
                             <nav class="rs-menu">
                                 <ul class="nav-menu">
-                                    @foreach ($headerMenu as $menuName)
+                                   
+                        
+                                    @foreach ($headerMenu as $menuName)                               
+                                    @php
+                                            $url = $headerMenu->url ?? '';
+                                        @endphp
+
                                         @if (@isset($menuName->children))
+                                        
+                                        {{-- @dd($menuName->children) --}}
                                             <li class="menu-item-has-children ">
                                                 <a href="{{ url($menuName->url ?? '') }}" class="main-anchor"
                                                     rel="noopener noreferrer">
@@ -131,6 +139,7 @@
                                                 </a>
                                                 <ul class="sub-menu">
                                                     @foreach ($menuName->children as $suMenu)
+                                                    {{-- @dd($url); --}}
                                                         @if (@isset($suMenu->children))
                                                             <li class="menu-item-has-children">
                                                                 <a @if ($suMenu->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
@@ -207,8 +216,8 @@
                                                         @else
                                                             <li>
                                                                 <a @if ($suMenu->tab_type == 1) target="_blank" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
-                                                                href="{{ url($suMenu->url ?? '') }}" @else
-                                                                    href="{{ url($suMenu->url ?? '') }}" @endif rel="noopener noreferrer">
+                                                                href="{{ url($url .'/'. $suMenu->url ?? '') }}" @else
+                                                                    href="{{ url($url .'/'. $suMenu->url ?? '') }}" @endif rel="noopener noreferrer">
                                                                     @if (Session::get('Lang') == 'hi')
                                                                         {{ $suMenu->name_hi ?? '' }}
                                                                     @else
