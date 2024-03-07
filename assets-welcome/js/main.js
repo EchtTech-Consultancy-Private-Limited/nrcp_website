@@ -5,6 +5,7 @@ const curtain = () => {
    $('div.curtain__panel--right').css({'transform':'translateX(100%)'});
 
    $('.main-container').css({'display':'block'})
+   $('.IN-btn-main').css({'display':'none'})
   //  setTimeout( ()=>{
   //  } ,1000);
 }

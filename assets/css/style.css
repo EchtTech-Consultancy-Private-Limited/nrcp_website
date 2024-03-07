@@ -21236,10 +21236,10 @@ img.twitter-logo-top
 100% { background-image: linear-gradient(to right, #f00, #92271d);}
 }
 
-.full-width-header .rs-header .logo-part.emblem img{
+/* .full-width-header .rs-header .logo-part.emblem img{
   height: 136px !important;
 
-}
+} */
 
 .full-width-header .rs-header .logo-part.emblem p{
   margin: 0;
@@ -21275,3 +21275,4 @@ iframe ._2qgu._2qgu{
 .tab-content>.active{
   position: relative;
 }
+
