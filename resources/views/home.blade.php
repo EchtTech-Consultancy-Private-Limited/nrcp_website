@@ -6,6 +6,8 @@
     </style>
 </head>
 <body class="defult-home">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="AbB7EpYI"></script>
     <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
         <header id="rs-header" class="rs-header">
             <div class="topbar-area home11-topbar">
@@ -13,7 +15,7 @@
                     @include('partials.top-header')
                 </div>
             </div>
-            <div class="menu-area menu-sticky">
+            <div class="menu-area " >
                 <!-- SVG-CONTENT-DISPLAY NONE -->
                 <div class="svg-cont">
                     <img src="{{ URL::asset('assets/Nrcp_img/svg/blue-svg.png') }}" alt="NRCP">
@@ -80,20 +82,22 @@
                             <div class="top-menu-box">                                
                             </div>
                             <div class="new_btns_cols">
-                                <button class="button-29 text-center blink" role="button">
-                                    <a href="#" class="blink_text"> Rabies Help line No :
-                                        <i class="fa fa-phone"></i> 0120-6025400</a>
+                                <button class="button-29 text-center blink gradients " role="button">
+                                    <a href="#" class=""> Rabies Help line No :
+                                        <i class="fa fa-phone"></i> 
+                                        <!-- <img src="{{ asset('assets/Nrcp_img/gifs/call.gif') }}" alt="call now"> -->
+                                        15400</a>
                                 </button>
-                                <button class="button-29 text-center " role="button"> <a href="#"
-                                        class="blink_text" data-toggle="modal" data-target="#vaccination">
+                                <button class="button-29 text-center flickering" role="button"> <a href="#"
+                                        class="" data-toggle="modal" data-target="#vaccination">
                                         Have you Bitten by an Animal? <br>
                                         Know your Rabies Vaccination Schedule
                                     </a>
                                 </button>
-                                <button class="button-29 text-center" role="button">
-                                    <a href="{{ url('directories') }}" class="blink_text">Who's who</a>
+                                <button class="button-29 text-center colors" role="button">
+                                    <a href="{{ url('directories') }}" class="">Who's who</a>
                                 </button>
-                                <button class="button-29 text-center" role="button" data-toggle="modal"
+                                <button class="button-29 text-center " role="button" data-toggle="modal"
                                     data-target="#vaccinationt">
                                     <a href="#" class="blink_text">Global Updates on Rabies</a>
                                 </button>
@@ -361,31 +365,10 @@
                             <h4 class="title twitter-text-h"><img
                                     src="{{ asset('assets/Nrcp_img/facebook-logo.png') }}" alt="img"
                                     rel="noopener noreferrer" class="facebook-logo"> ( Facebook Feed )</h4>
-                            <div class="marquee-height myslider">
-                                <div class="item a text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/"
-                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
-                                        target="_blank" title="Facebook" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/f1.png') }}" alt="img"
-                                            rel="noopener noreferrer">
-                                    </a>
-                                </div>
-                                <div class="item b text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/"
-                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
-                                        target="_blank" title="Facebook" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/f2.png') }}" alt="img"
-                                            rel="noopener noreferrer">
-                                    </a>
-                                </div>
-                                <div class="item c text-center">
-                                    <a href="https://www.facebook.com/people/NRCPMohfw/100085207740962/"
-                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
-                                        target="_blank" title="Facebook" rel="noopener noreferrer">
-                                        <img src="{{ asset('assets/Nrcp_img/f3.png') }}" alt="img"
-                                            rel="noopener noreferrer">
-                                    </a>
-                                </div>
+                            <div class="fbFeed">
+
+                            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61557122245947" data-tabs="timeline" data-width="370" data-height="449" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/profile.php?id=61557122245947" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61557122245947">NRCP-Mohfw</a></blockquote></div>
+                            
                             </div>
                         </div>
                     </div>
@@ -675,5 +658,6 @@
     <!-- Modal -->
     @include('partials.footer')
     @include('partials.footer-scripts')
+   
 </body>
 </html>

@@ -14,7 +14,7 @@
                     @include('partials.top-header')
                 </div>
             </div>
-            <div class="menu-area menu-sticky">
+            <div class="menu-area ">
                 <div class="container">
                     @include('partials.menu-header')
                 </div>

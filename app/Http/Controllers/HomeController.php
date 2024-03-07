@@ -11,8 +11,30 @@ class HomeController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function welcomePage(){
+        $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->orderBy('created_at', 'desc')->get();
+        $homebanner = DB::table('home_page_banner_management')->where('status', 3)->where('soft_delete', '0')->orderby('sort_order', 'Asc')->get();
+        $photoGallery = DB::table('gallery_management as gm')
+            ->join('gallery_details as ged', 'ged.gallery_id', '=', 'gm.uid')
+            ->select('gm.*', 'ged.*')
+            ->where('gm.soft_delete', '0')
+            ->get();
+        if(isset($_COOKIE['welcome_cookies']) && $_COOKIE['welcome_cookies'] == 'false'){
+            return view('home', ['news' => $news, 'homebanner' => $homebanner, 'photogallery' => $photoGallery]);
+        }
+        if(isset($_COOKIE['welcome_cookies']) && $_COOKIE['welcome_cookies'] !='true' && $_COOKIE['welcome_cookies'] !='false'){
+            setcookie('welcome_cookies','false');
+            return view('home', ['news' => $news, 'homebanner' => $homebanner, 'photogallery' => $photoGallery]);
+            
+        }else{
+            setcookie('welcome_cookies','true');
+            return view('welcomepage');
+        }
+        
+    }
     public function index()
     {
+        setcookie('welcome_cookies','false');
         $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->orderBy('created_at', 'desc')->get();
         $homebanner = DB::table('home_page_banner_management')->where('status', 3)->where('soft_delete', '0')->orderby('sort_order', 'Asc')->get();
         $photoGallery = DB::table('gallery_management as gm')
@@ -163,8 +185,12 @@ class HomeController extends Controller
         return view('faq-page', ['faqdata' => $faq]);
     }
     public function commonPagesContent($slug)
+
+       
+       
     {
         $menus = DB::table('website_menu_management')->where('status', 3)->whereurl($slug)->first();
+
         if (!empty($menus->uid)) {
             $metacontent = DB::table('dynamic_content_page_metatag')->where('status', 3)->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->get();
         } else {
@@ -196,8 +222,13 @@ class HomeController extends Controller
         }
         $objectpass = new \stdclass;
         $objectpass->pageContent = $datas1;
+
+
+        return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs]);
+
         $metaDetails = DB::table('dynamic_content_page_metatag')->where('status', 3)->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->first();
         return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs, 'metaDetails' => $metaDetails]);
+
     }
     public function getDistricts(Request $request)
     {

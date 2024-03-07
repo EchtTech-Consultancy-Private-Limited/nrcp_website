@@ -53,7 +53,7 @@
       }
 
       h2.title.black-color.logo-text {
-        font: normal normal bold 35px/45px Tahoma
+        /* font: normal normal bold 35px/45px Tahoma */
       }
 
       .top-menu-box a.text-vaccination{font:normal normal 12px/18px Poppins}
@@ -81,19 +81,49 @@
 
 }
 
+@media(max-width:1350px){
+    h6.sub-text-b-l {
+        text-align: left;
+        font: normal normal normal 17px / 24px Tahoma;
+        letter-spacing: 0px;
+        color: #333;
+        opacity: 1;
+        font-weight: 100;
+        margin-bottom: 0;
+    }
+    h5.sub-text-l {
+        text-align: left;
+        font: normal normal bold 27px / 43px Tahoma;
+        letter-spacing: 0px;
+        color: #333;
+        opacity: 1;
+        margin-bottom: 3px;
+    }
+    h2.title.black-color.logo-text {
+        font: normal normal bold 45px/55px Tahoma;
+    }
 
+    .full-width-header .rs-header .logo-part.mobile-logo-s img {
+        height: 105px;
+    }
+    .full-width-header .rs-header .logo-part .logo_kendriya img {
+        /* height: 91px !important; */
+    }
+    .full-width-header .rs-header .logo-part .logo_kendriya img {
+        border-radius: 28px !important;
+        height: 104px !important;
+    }
+
+}
 
 @media only screen and (max-width: 1340px) and (min-width: 1200px) {
 
     .full-width-header .rs-header .logo-part img {
-        height: 50px !important;
+        /* height: 50px !important; */
         padding-right: 5px;
     }
 
-    h2.title.black-color.logo-text {
-        font: normal normal bold 24px/40px Tahoma;
-    }
-
+  
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
         margin-right: 12px !important;
         margin-left: 20px;
@@ -159,6 +189,7 @@
         section.latest-news .rs-slider .btns{
             top: -5px;
         }
+      
 
 }
 
@@ -222,7 +253,20 @@
         min-height: 290px;
     }
 }
+@media (max-width: 1450px) and (min-width: 1350px)   {
+    .full-width-header .rs-header .logo-part.mobile-logo-s img {
+        height: 106px !important;
+    }
+    .full-width-header .rs-header .logo-part .logo_kendriya img {
+        height: 98px !important;
+    }
+}
+
 @media only screen and (max-width: 1450px) {
+    .datetime {
+        width: auto;
+        margin-right: 8px;
+    }
     .full-width-header .rs-header .menu-area .expand-btn-inner li {
         margin-right: 7px;
     }
@@ -275,7 +319,7 @@
     }
 
     .full-width-header .rs-header .logo-part img {
-        height: 134px !important;
+        /* height: 134px !important; */
     }
     .full-width-header .rs-header .logo-part a
     {
@@ -1269,18 +1313,19 @@
 }
 
 h2.title.black-color.logo-text {
-    font: normal normal bold 20px/22px Tahoma;
+    font: normal normal bold 30px/28px Tahoma;
 }
 
 h5.sub-text-l {
     text-align: left;
-    font: normal normal normal 17px/27px Tahoma;
+    font: normal normal bold 22px/33px Tahoma;
+   
 }
 
 
 h6.sub-text-b-l {
     text-align: left;
-    font: normal normal normal 13px/16px Tahoma;
+    font: normal normal normal 14px/27px Tahoma;
 }
 
 .rs-testimonial.home1-style .testi-item .author-desc .desc {
@@ -1388,7 +1433,7 @@ h6.sub-text-b-l {
         display: none;
     }
     .sticky{
-        background: #fff !important;
+        /* background: #fff !important; */
         position: fixed !important;
         top: 0px;
         z-index: 999;
@@ -2109,12 +2154,19 @@ h6.sub-text-b-l {
 
 
     .logo-cat-wrap.right-h .logo-part a {
-        display: flex;
+        display: inline-block;
         height: auto;
         justify-content: space-between !important;
-        width: 100% !important;
+        width: auto !important;
         padding-right: 15px;
         padding-left: 15px;
+        margin-top: 5px;
+    }
+    .full-width-header .rs-header .logo-part.emblem p {
+        margin: 0;
+        font-size: 12px;
+        line-height: 27px;
+        white-space: nowrap;
     }
 
     .full-width-header .rs-header .menu-area .main-menu .rs-menu ul.nav-menu li a {
@@ -2610,7 +2662,9 @@ h6.sub-text-b-l {
     .full-width-header .rs-header .logo-part img {
         height: 90px !important;
     }
-
+    .full-width-header .rs-header .logo-part.emblem img {
+        height: 90px !important;
+    }
     .d-xs-none{
         display: none;
     }
@@ -5169,3 +5223,5 @@ ul.topbar-contact li{
             margin: 0% 0% 5% 0%;
         }
     }
+
+ 
