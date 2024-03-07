@@ -22,13 +22,19 @@
 
 </head>
 
-<body onload="curtain()">
+<body>
 
     <div class="curtain">
 
         <!-- The container that wraps the curtain -->
         <div class="curtain__wrapper">
 
+
+        <!-- Inauguration button -->
+   
+         <a href="javascript:void();" onclick=curtain(); class="IN-btn-main btn">
+         <img src="{{ asset('assets-welcome/img/rope.png') }}" alt="rope" class="ino-rope">
+         </a>
 
             <!-- The left curtain panel -->
             <div class="curtain__panel curtain__panel--left">
