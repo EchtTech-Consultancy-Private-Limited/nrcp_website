@@ -37,12 +37,29 @@
                 <div class="top-menu-box">
                     <div class="main-text-logo">
                         <div class="pl-2 text-center d-xs-none">
-                            <h2 class="title black-color logo-text">National Rabies Control Program</h2>
-                            <h5 class="sub-text-l text-center">National Center for Disease Control</h5>
-                            <h6 class="sub-text-b-l text-center">Directorate General of Health Services,
-                            Ministry of Health & Family Welfare, <br>
-                            Government of India
-                        </h6>
+                            <h2 class="title black-color logo-text">  
+                                @if (Session::get('Lang') == 'hi')
+                                    {{ 'राष्ट्रीय रेबीज़ नियंत्रण कार्यक्रम' }}
+                                @else
+                                    {{ 'National Rabies Control Program'  }}
+                                @endif
+                            </h2>
+                            <h5 class="sub-text-l text-center">
+                                @if (Session::get('Lang') == 'hi')
+                                {{ 'राष्ट्रीय रोग नियंत्रण केंद्र' }}
+                                @else
+                                {{ 'National Center for Disease Control'  }}
+                                @endif
+                            </h5>
+                            <h6 class="sub-text-b-l text-center">
+                                @if (Session::get('Lang') == 'hi')
+                                {{ 'स्वास्थ्य सेवा महानिदेशालय, स्वास्थ्य एवं परिवार कल्याण मंत्रालय,'}} <br> {{  'भारत सरकार' }}
+                                @else
+                                    {{ 'Directorate General of Health Services,
+                                        Ministry of Health & Family Welfare,'}} <br> {{'Government of India'  }}
+                                @endif 
+                            
+                            </h6>
                         </div>
                     </div>
                     <ul>

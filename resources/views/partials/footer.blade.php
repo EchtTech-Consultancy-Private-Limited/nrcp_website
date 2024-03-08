@@ -4,7 +4,13 @@
             <div class="row">
                 <div class="col-lg-2 col-md-12 col-sm-12 footer-widget mb-4">
                     <div class="textwidget white-color">
-                        <h4 class="footer-text-logo">National Rabies Control Program</h4>
+                        <h4 class="footer-text-logo">
+                            @if (Session::get('Lang') == 'hi')
+                            {{ 'राष्ट्रीय रेबीज़ नियंत्रण कार्यक्रम'}}
+                            @else
+                                {{ 'National Rabies Control Program'}} 
+                            @endif 
+                        </h4>
                     </div>
                     <ul class="footer_social">
                     @if(!empty($social_media))
@@ -30,7 +36,13 @@
                 <div class="col-md-12 col-lg-4">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 pl-20 md-pl-20 footer-widget md-mb-50 width-sm-50 mt-s-40">
-                            <h3 class="widget-title">Important Links</h3>
+                            <h3 class="widget-title">
+                                @if (Session::get('Lang') == 'hi')
+                                {{'महत्वपूर्ण लिंक'}}
+                                @else
+                                    {{'Important Links'}}
+                                @endif
+                             </h3>
                             <ul class="site-map border-right-white">
                                 @foreach ($footerMenu->slice(0,5) as $footerMenus)
                                 <li><a @if ($footerMenus->tab_type == 1) @if (Session::get('Lang') == 'hi')  onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')"  @endif   target="_blank" href="{{ url($footerMenus->url  ??'') }}">   @else  href="{{ url($footerMenus->url  ??'') }}" @endif>
@@ -70,14 +82,32 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 footer-widget md-mb-50">
-                    <h3 class="widget-title">Contact Us</h3>
+                    <h3 class="widget-title">
+                        @if (Session::get('Lang') == 'hi')
+                        {{ 'संपर्क करें'}}
+                        @else
+                            {{ 'Contact Us'}} 
+                        @endif 
+                    </h3>
                     <ul class="address-widget">
                         <li>
                             <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                <b> Center for One Health </b><br>
-                                National Centre for Disease Control,<br> Directorate General of Health Services,
-                              <br>  Ministry of Health and Family Welfare,<br> Government of India, <br>
-                                22 – Sham Nath Marg, Delhi - 110054
+                                @if (Session::get('Lang') == 'hi')
+                                    <b>{{ 'सेंटर फॉर वन हेल्थ'}}</b><br> 
+                                       {{'राष्ट्रीय रोग नियंत्रण केंद्र,'}}<br>
+                                       {{'स्वास्थ्य सेवा महानिदेशालय,'}}<br>
+                                       {{'स्वास्थ्य और परिवार कल्याण मंत्रालय,'}}<br>
+                                       {{'भारत सरकार,'}}<br>
+                                       {{ '22 - शाम नाथ मार्ग, दिल्ली - 110054'}}
+                                @else
+                                    <b>{{ 'Center for One Health'}}</b><br> 
+                                       {{'National Centre for Disease Control,'}}<br>
+                                       {{'Directorate General of Health Services,'}}<br>
+                                       {{'Ministry of Health and Family Welfare,'}}<br>
+                                       {{'Government of India,'}}<br>
+                                       {{ '22 – Sham Nath Marg, Delhi - 110054'}}
+                                       
+                                @endif 
                             </div>
                         </li>
                         <li>
@@ -95,7 +125,13 @@
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 footer-widget p-0">
-                    <h3 class="widget-title">Locate Us</h3>
+                    <h3 class="widget-title">
+                        @if (Session::get('Lang') == 'hi')
+                        {{'खोजें'}}
+                        @else
+                            {{'Locate Us'}}
+                        @endif 
+                    </h3>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.343413096401!2d77.22101037444737!3d28.67937218195402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfda49c63895b%3A0xf42dc723f30a63d2!2sNATIONAL%20CENTRE%20FOR%20DISEASE%20CONTROL%2C%20CSU%20INTEGRATED%20DISEASE%20SURVEILLANCE%20PROGRAMME%2C%20Civil%20Lines%2C%20Delhi%2C%20110054!5e0!3m2!1sen!2sin!4v1689766036308!5m2!1sen!2sin"
                          allowfullscreen="" loading="lazy"
@@ -110,7 +146,14 @@
             <div class="row y-middle">
                 <div class="col-lg-6 md-mb-10">
                     <div class="copyright">
-                        <p>© Copyright {{date('Y')}} National Centre for Disease control.</p>
+                        <p>
+                            @if (Session::get('Lang') == 'hi')
+                            {{'© कॉपीराइट'}} {{date('Y')}} {{'राष्ट्रीय रोग नियंत्रण केंद्र'}}
+                            @else
+                                {{'© Copyright'}} {{date('Y')}} {{'National Centre for Disease control.'}}
+                            @endif 
+                            {{-- © Copyright {{date('Y')}} National Centre for Disease control. --}}
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 text-right md-text-left pr-0">
