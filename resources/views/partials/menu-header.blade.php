@@ -11,7 +11,7 @@
                     @else
                         <img src="{{ asset(config('constants.brand.default_logo')) }}" alt=""
                             rel="noopener noreferrer" class="logo logo1">
-                            <p>Ministry of Health</p>
+                            <!-- <p>Ministry of Health</p> -->
                     @endif
                     <div class="pl-2 text-center d-none d-xs-block">
                         <h2 class="title black-color text-center logo-text">National Rabies Control Program</h2>
@@ -22,7 +22,7 @@
                         </h6>
                     </div>
                 </a>
-                <p>Ministry of Health</p>
+                <!-- <p>Ministry of Health</p> -->
             </div>
         </div>
     </div>
