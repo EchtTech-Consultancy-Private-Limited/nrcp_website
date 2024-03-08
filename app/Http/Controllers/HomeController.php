@@ -240,6 +240,7 @@ class HomeController extends Controller
             }
             $datas1[] = $newData;
         }
+        //  @dd($content_page);   
         $objectpass = new \stdclass;
         $objectpass->pageContent = $datas1;
         // dd($objectpass);
