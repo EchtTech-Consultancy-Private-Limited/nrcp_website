@@ -17818,7 +17818,7 @@ color: #333;
 } */
 
 .rs-footer.home9-style.main-home .footer-top .site-map li a {
-  color: #e8e8e8;
+  color: #fff;
 }
 
 .rs-footer.home9-style.main-home .footer-top .site-map li a:hover {
@@ -20820,11 +20820,11 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 .right_dhr .title
 {
   background: #92271d;
-  color: #fff;
-  padding: 12px 12px;
-  border-radius: 12px 12px 0px 0px;
-  margin-bottom: 2px;
-  font-size: 20px;
+    color: #fff;
+    padding: 12px 9px;
+    border-radius: 12px 12px 0px 0px;
+    margin-bottom: 2px;
+    font-size: 17px;
 
 }
 
