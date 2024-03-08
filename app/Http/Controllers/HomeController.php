@@ -209,6 +209,7 @@ class HomeController extends Controller
         return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs, 'metaDetails' => $metaDetails]);
 
     }
+}
     public function getDistricts(Request $request)
     {
         $statename = $request->state_name;

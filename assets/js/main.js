@@ -44,7 +44,8 @@ var baseurl = window.location.origin;
 function setlang(value) {
     // alert(value)
     $.ajax({
-        url: baseurl + "/set-language",
+        // url: baseurl + "/set-language",
+        url : "http://localhost/nrcp-website/set-language",
         data: { data: value },
         success: function (result) {
             //alert(result.data);
