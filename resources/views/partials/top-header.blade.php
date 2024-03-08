@@ -12,7 +12,6 @@
                </li>
             </ul>
          </div>
-
          <div class="col-md-6 text-lg-right pl-0">
             <ul class="toolbar-sl-share rs-inner-blog d-flex align-items-center justify-content-between">
                <li class="opening widget-area">
@@ -58,27 +57,17 @@
                      <option value="hi" @if (Session::get('Lang') == 'hi') selected @endif >Hindi</option>
                   </select>
                </li>
-
             @if(!empty($social_media))
-
                @if($social_media->facebook  != '')
                <li><a href="{{ url($social_media->facebook) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif target="_blank" title="Facebook" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a></li>
                @endif
-
                @if($social_media->twitter  != '')
                <li><a href="{{ url($social_media->twitter) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif  target="_blank" title="twitter" rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}" alt="img" rel="noopener noreferrer" class="twitter-logo-top"></a>
                </li>
                @endif
-               <!-- @if($social_media->linkedin  != '') -->
-               <!-- <li><a href="{{ url($social_media->linkedin) }}" @if (Session::get('Lang') == 'en') onclick="return confirm('This link will take you to an external web site.')"  @else onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @endif title="Linkedin"><i class="fa fa-linkedin"></i></a> -->
-               <!-- </li> -->
-               <!-- @endif -->
-
             @endif
-
                <li><a href="{{ route('sitemap') }}" class="sitemap-cl" title="Site Map" rel="noopener noreferrer"><i class="fa fa-sitemap"></i></a>
                </li>
-
             </ul>
          </div>
       </div>

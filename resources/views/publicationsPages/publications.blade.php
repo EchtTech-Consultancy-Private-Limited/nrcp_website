@@ -74,11 +74,6 @@
                                         <div class="download ">
                                             <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
                                         </div>
-
-                                        
-                                        <!-- <div class="accessible-version">
-                                        <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                        </div> -->
                                        </td>
                                     </tr>
                                   
@@ -132,12 +127,6 @@
                                   </tbody>
                                 </table>
                             </div>
-
-
-
-
-
-
                              </div>
                             <div class="tab-pane fade" id="research-papers" role="tabpanel" aria-labelledby="research-papers-tab">
                               <div class="table">
@@ -153,19 +142,8 @@
                                     <tr>
                                        <td></td>
                                        <td></td>
-                                       <td>
-                                        <!-- <div class="download ">
-                                            <span class="view"></span><span class="size"></span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                        </div> -->
-
-                                        
-                                        <!-- <div class="accessible-version">
-                                        <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                        </div> -->
-                                       </td>
+                                       <td></td>
                                     </tr>
-                                  
-
                                 </table>
                             </div>
                             </div>
@@ -183,23 +161,8 @@
                                     <tr>
                                        <td></td>
                                        <td></td>
-                                       <td>
-                                        <!--  <div class="download ">
-                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
-                                        </div>
-                                     -->
-
-                                        
-                                        <!-- <div class="accessible-version">
-                                        <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                        </div> -->
-                                       </td>
+                                       <td></td>
                                     </tr>
-                                  
-
-
-
-                               
                                 </table>
                             </div>
                             </div>
@@ -217,44 +180,19 @@
                                     <tr>
                                        <td></td>
                                        <td></td>
-                                       <td>
-                                        <!--  <div class="download ">
-                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
-                                        </div>
-                                     -->
-
-                                        
-                                        <!-- <div class="accessible-version">
-                                        <span>Accessible Version:</span><span class="view">View</span><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i><i class="fa fa-download" aria-hidden="true"></i>
-                                        </div> -->
-                                       </td>
+                                       <td></td>
                                     </tr>
-                                  
-
-
                                     <tr>
-                                    <td>	</td>
+                                    <td></td>
 
                                        <td></td>
-                                       <td>
-                                        <!--  <div class="download ">
-                                            <a href="#"><span class="view">View</span></a><span class="size">(7kb)</span><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="#"><i class="fa fa-download" aria-hidden="true"></i></a>
-                                        </div>
-                                     -->
-
-                                        
-                                        
-                                       </td>
+                                       <td></td>
                                     </tr>
-
                                 </table>
                             </div>
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>

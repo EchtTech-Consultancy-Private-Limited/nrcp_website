@@ -1,6 +1,5 @@
 <script src="{{ asset('assets/js/jquery-3.7.0.min.js') }}"></script>
 <script src="{{ asset('assets/js/modernizr-2.8.3.min.js') }}"></script>
-<!-- <script src="{{ asset('assets/js/jquery.min.js') }}"></script> -->
 <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.validate.min.js') }}"></script>
 <script src="{{ asset('assets/js/rsmenu-main.js') }}"></script>
@@ -20,16 +19,12 @@
 <script src="{{ asset('assets/js/contact.form.js') }}"></script>
 <script src="{{ asset('assets/js/jquery.lazyload.min.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
-
 <script src="{{ asset('assets/js/marqueedirection.js') }}"></script>
 <script src="{{ asset('assets/js/custmmarqui.js') }}"></script>
-
 <script src="{{ asset('assets/js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('assets/js/dataTables.buttons.min.js') }}"></script>
 <script src="{{ asset('assets/js/buttons.print.min.js') }}"></script>
 <script src="{{ asset('assets/js/footer.js') }}"></script>
-
 <script src="{{ asset('public/mapFiles/esir.js') }}" ></script>
 <script src="{{ asset('public/mapFiles/init.js') }}"></script>
-
 @stack('post-scripts')

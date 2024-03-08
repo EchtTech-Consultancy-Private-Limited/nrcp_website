@@ -14,25 +14,17 @@
             @if (count($objectpass->pageContent) > 0)
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
-
                         <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
                             @if (!empty($commonsideMenu))
                                 @if (count($commonsideMenu) > 0)
                                     @foreach ($commonsideMenu as $k => $commonsideMenus)
                                         <a href="{{ url($commonsideMenus->url) }}"
                                             @if (request()->path() == $commonsideMenus->url) class="nav-link active" @else class="nav-link" @endif>
-                                            {{-- <button  class="nav-link active" data-toggle="pill"
-                                  type="submit" role="tab" aria-controls="annual-report"
-                                 aria-selected="false"> --}}
-                                            {{-- {{ $commonsideMenus->name_en }} --}}
-
                                             @if (Session::get('Lang') == 'hi')
                                                 {{ $commonsideMenus->name_hi ?? '' }}
                                             @else
                                                 {{ $commonsideMenus->name_en ?? '' }}
                                             @endif
-
-                                            {{-- </button> --}}
                                         </a>
                                     @endforeach
                                 @endif
@@ -43,15 +35,11 @@
                                         id="Master_layout_{{ $k }}" data-toggle="pill"
                                         data-target="#master-layout_{{ $k }}" type="button" role="tab"
                                         aria-controls="annual-report" aria-selected="false">
-                                        {{-- {{ $sidebar->pageTitle->page_title_en  }} --}}
-
                                         @if (Session::get('Lang') == 'hi')
                                             {{ $sidebar->pageTitle->page_title_en ?? '' }}
                                         @else
-                                            {{-- {{ $commonsideMenus->name_en ?? '' }} --}}
                                             {{ $sidebar->pageTitle->page_title_en ?? '' }}
                                         @endif
-
                                     </button>
                                 @endforeach
                             @endif
@@ -66,32 +54,24 @@
                                     <!-- Content and Images -->
                                     <div class="heading-title">
                                         <h2 class="title">
-
                                             @if (Session::get('Lang') == 'hi')
                                                 {{ $sidebar->pageTitle->page_title_hi ?? '' }}
                                             @else
                                                 {{ $sidebar->pageTitle->page_title_en ?? '' }}
                                             @endif
-
                                         </h2>
                                     </div>
                                     @if (count($sidebar->content_page) > 0)
                                         <section>
                                             <div class="heading-title">
-                                                {{-- <h3 class="title">{{ $gallery-> }}</h3>
-                              <a href="javascript:vopid();" class="readon orange-btn"> Archive </a> --}}
                                             </div>
                                             @foreach ($sidebar->content_page as $page)
                                                 <p>
-                                                    {{-- {!! $page->page_content_en !!} --}}
-
                                                     @if (Session::get('Lang') == 'hi')
                                                         {!! $page->page_content_hi !!}
                                                     @else
                                                         {!! $page->page_content_en !!}
                                                     @endif
-
-
                                                 </p>
                                             @endforeach
                                         </section>
@@ -99,8 +79,6 @@
                                     @if (count($sidebar->content_gallery) > 0)
                                         <section>
                                             <div class="heading-title">
-                                                {{-- <h3 class="title">{{ $gallery-> }}</h3>
-                                 <a href="javascript:vopid();" class="readon orange-btn"> Archive </a> --}}
                                             </div>
                                             <div class="row">
                                                 @foreach ($sidebar->content_gallery as $gallery)
@@ -120,8 +98,7 @@
                                     @if (count($sidebar->content_pdf) > 0)
                                         <!-- Table section -->
                                         <section>
-                                            <div class="heading-title table-heading">
-                                                {{-- <h3 class="title">Technical Document and Guideline</h3> --}}
+                                            <div class="heading-title table-heading">                                               
                                                 <a href="javascript:vopid();" class="readon orange-btn"> Archive </a>
                                             </div>
                                             <div class="table">
@@ -145,7 +122,6 @@
                                                                         <a href="{{ asset('resources/uploads/PageContentPdf/' . $pdf->public_url) }}"
                                                                             target="_blank"><span
                                                                                 class="view">View</span></a>
-
                                                                         @if ($pdf->file_extension == 'pdf')
                                                                             <i class="fa fa-file-pdf-o"
                                                                                 aria-hidden="true"></i>
@@ -164,10 +140,9 @@
                                                                                 aria-hidden="true"></i>
                                                                         @endif
                                                                         <span
-                                                                            class="size">({{ $pdf->pdfimage_size ?? '' }})</span>
-                                                                        {{-- <a href="{{ asset('resources/uploads/PageContentPdf/'.$pdf->public_url) }}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a> --}}
+                                                                            class="size">({{ $pdf->pdfimage_size ?? '' }})
+                                                                        </span>
                                                                     </div>
-
                                                                 </td>
                                                             </tr>
                                                         @endforeach

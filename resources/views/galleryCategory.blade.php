@@ -35,9 +35,6 @@
 
                                                         {{ $galleryDatas['gallery']->title_name_en ?? '' }}
                                                     </h3>
-                                                    <!-- <div class="desc">
-                                             
-                                            </div> -->
                                                 </div>
                                             </a>
                                         </div>
