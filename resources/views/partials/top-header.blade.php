@@ -18,7 +18,7 @@
                   <div class="search-widget">
                      <div class="search-wrap">
                      <form action="{{ url('search') }}" method="get" class="font-item">
-                           <input type="search" id="sitewidesearch"  required placeholder="Search" name="search" class="search-input" value="{{ request('search') }}">
+                           <input type="search" id="sitewidesearch" required placeholder="Search" name="search" class="search-input" value="{{ request('search') }}">
                            <button type="submit" id="button" value="Search"><i class=" flaticon-search"></i></button>
                         </form>
                      </div>
