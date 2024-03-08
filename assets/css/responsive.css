@@ -511,8 +511,27 @@
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media (max-width: 1360px) and (min-width:1200px) {
+    .contact-page-section .contact-address-section .contact-info {
+        min-height: 150px !important;
+    }
+}
+@media only screen and (max-width: 1450px){
+    .contact-page-section .contact-address-section .contact-info .content-part .info-title{
+        font-size: 14px;
+    }
+    .contact-page-section .contact-address-section .contact-info {
+        padding: 8px 13px;
+        /* min-height: 178px; */
+    }
+    .contact-page-section .contact-address-section .contact-info .icon-part i {
+        width: 65px;
+        height: 65px;
+    }
 
+}
+@media only screen and (max-width: 1300px) {
+    
     .full-width-header.header-style3.home11-modify2 .rs-header .menu-area .logo-part {
         width: 200px;
     }
@@ -1179,14 +1198,15 @@
         font-size: 20px;
     }
     .contact-page-section .contact-address-section .contact-info {
-        padding: 0 15px;
+        padding: 8px 15px;
+        min-height: 179px;
     }
     .contact-page-section .contact-address-section .contact-info .icon-part {
         margin-right: 15px;
     }
-    .contact-page-section .contact-address-section .contact-info .content-part .info-title {
+    /* .contact-page-section .contact-address-section .contact-info .content-part .info-title {
         font-size: 20px;
-    }
+    } */
 
     .profile-section .content-column .student-list li {
         margin-right: 20px;

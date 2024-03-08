@@ -220,6 +220,7 @@ class HomeController extends Controller
             }
             $datas1[] = $newData;
         }
+        //  @dd($content_page);   
         $objectpass = new \stdclass;
         $objectpass->pageContent = $datas1;
 
@@ -230,6 +231,7 @@ class HomeController extends Controller
         return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs, 'metaDetails' => $metaDetails]);
 
     }
+}
     public function getDistricts(Request $request)
     {
         $statename = $request->state_name;
