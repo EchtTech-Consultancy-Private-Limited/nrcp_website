@@ -93,14 +93,14 @@
                         <li>
                             <div class="desc"> <i class="fa fa-map-marker" aria-hidden="true"></i>
                                 @if (Session::get('Lang') == 'hi')
-                                    <b>{{ 'सेंटर फॉर वन हेल्थ,'}}</b><br> 
+                                    <b>{{ 'सेंटर फॉर वन हेल्थ'}}</b><br> 
                                        {{'राष्ट्रीय रोग नियंत्रण केंद्र,'}}<br>
                                        {{'स्वास्थ्य सेवा महानिदेशालय,'}}<br>
                                        {{'स्वास्थ्य और परिवार कल्याण मंत्रालय,'}}<br>
                                        {{'भारत सरकार,'}}<br>
                                        {{ '22 - शाम नाथ मार्ग, दिल्ली - 110054'}}
                                 @else
-                                    <b>{{ 'Center for One Health,'}}</b><br> 
+                                    <b>{{ 'Center for One Health'}}</b><br> 
                                        {{'National Centre for Disease Control,'}}<br>
                                        {{'Directorate General of Health Services,'}}<br>
                                        {{'Ministry of Health and Family Welfare,'}}<br>
