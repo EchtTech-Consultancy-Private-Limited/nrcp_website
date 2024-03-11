@@ -19867,6 +19867,9 @@ a.top-logo img {
   border-bottom: 1px solid #a4a0a0;
   background-color: #fff;
   border-radius: 0;
+  display: block;
+  width: 100%;
+  word-wrap: break-word;
 }
 .rs-publications-main table{
   width: 100%;
@@ -20357,6 +20360,7 @@ body.nav-expanded .overlay {
 
 .date-width, .download-icon-width {
     width: 20% !important;
+    white-space: nowrap;
 }
 
 .title-data {
@@ -20680,6 +20684,9 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 
 .radio-btn-box label {
   line-height: 20px;
+}
+.nearest-vaccication .radio-btn-box label {
+ font-size: 16px ;
 }
 
 .radio-btn-box {
@@ -21276,3 +21283,6 @@ iframe ._2qgu._2qgu{
   position: relative;
 }
 
+.dataTables_wrapper .dataTables_info {
+  font-size: 14px !important;
+}
