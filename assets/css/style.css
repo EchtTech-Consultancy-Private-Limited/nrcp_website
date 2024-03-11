@@ -19867,6 +19867,9 @@ a.top-logo img {
   border-bottom: 1px solid #a4a0a0;
   background-color: #fff;
   border-radius: 0;
+  display: block;
+  width: 100%;
+  word-wrap: break-word;
 }
 .rs-publications-main table{
   width: 100%;
@@ -20357,6 +20360,7 @@ body.nav-expanded .overlay {
 
 .date-width, .download-icon-width {
     width: 20% !important;
+    white-space: nowrap;
 }
 
 .title-data {
