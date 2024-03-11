@@ -675,7 +675,7 @@
                                                                                             <div
                                                                                                 class="btn-part view-all-btn ">
                                                                                                 <button
-                                                                                                    class="readon2 vaccination-btn mod mt-0 print-button"
+                                                                                                    class="readon2 vaccination-btn mod mt-0"
                                                                                                     id="getSearchResultsA"
                                                                                                     type="button">Search</button>
                                                                                             </div>
