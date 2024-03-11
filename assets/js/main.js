@@ -51,7 +51,7 @@ let hindiStyle = $('#hindiStyle');
 if (language === 'hi') {
   
  
-  hindiStyle.attr("href", `${baseurl}/nrcp_website/nrcp_website/assets/css/hindiStyle.css`)
+  hindiStyle.attr("href", `${baseurl}/assets/css/hindiStyle.css`)
 
 }
 } );
@@ -60,8 +60,8 @@ if (language === 'hi') {
 function setlang(value) {
     // alert(value)
     $.ajax({
-        // url: baseurl + "/set-language",
-        url: "http://localhost/nrcp_website/nrcp_website/set-language",
+         url: baseurl + "/set-language",
+       // url: "http://localhost/nrcp_website/nrcp_website/set-language",
         data: { data: value },
         success: function (result) {
             //alert(result.data);
