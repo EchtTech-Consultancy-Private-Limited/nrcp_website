@@ -56,7 +56,7 @@
                             <div class="header">
                                 <div class="row">
             
-                                    <div class="col-md-2 width-15">
+                                    <div class="col-md-2 ">
                                         <div class="logo">
                                             <a href="#">
             

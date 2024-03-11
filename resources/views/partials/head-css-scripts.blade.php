@@ -28,7 +28,7 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/magnific-popup.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/rsmenu-main.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/rs-spacing.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" id="langStyle">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
 <link rel="stylesheet" type="text/css" id="theme-style" href="">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.dataTables.min.css') }}">
