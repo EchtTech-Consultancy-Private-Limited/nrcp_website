@@ -32,7 +32,7 @@
 
         <!-- Inauguration button -->
    
-         <a href="javascript:void();" onclick=curtain(); class="IN-btn-main btn">
+         <a href="{{ route('index') }}" onclick=curtain(); class="IN-btn-main btn">
          <img src="{{ asset('assets-welcome/img/rope.png') }}" alt="rope" class="ino-rope">
          </a>
 
@@ -48,7 +48,7 @@
 
             </div>
 
-            <div class="curtain__prize">
+            <!-- <div class="curtain__prize">
                 <div class="main-container">
                     <div class="container">
                         <div class="launching-page">
@@ -127,7 +127,8 @@
             
                     </div>
                 </div>
-            </div> <!-- curtain__prize -->
+            </div> -->
+             <!-- curtain__prize -->
 
             <!-- The right curtain panel -->
             <div class="curtain__panel curtain__panel--right">
