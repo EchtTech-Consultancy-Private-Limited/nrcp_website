@@ -20681,6 +20681,9 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 .radio-btn-box label {
   line-height: 20px;
 }
+.nearest-vaccication .radio-btn-box label {
+ font-size: 16px ;
+}
 
 .radio-btn-box {
   display: flex;
