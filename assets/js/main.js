@@ -40,11 +40,28 @@ var tag = document.createElement('script');
 
 var baseurl = window.location.origin;
 
-//alert(baseurl + "/set-language");
+
+$(document).ready(function(){
+    // Check if the language is Hindi
+const language = $('.select-lang').val();
+
+let hindiStyle = $('#hindiStyle');
+// alert(hindiStyle);
+// If language is Hindi and stylesheet is not added, add the stylesheet
+if (language === 'hi') {
+  
+ 
+  hindiStyle.attr("href", `${baseurl}/nrcp_website/nrcp_website/assets/css/hindiStyle.css`)
+
+}
+} );
+
+
 function setlang(value) {
     // alert(value)
     $.ajax({
-        url: baseurl + "/set-language",
+        // url: baseurl + "/set-language",
+        url: "http://localhost/nrcp_website/nrcp_website/set-language",
         data: { data: value },
         success: function (result) {
             //alert(result.data);
