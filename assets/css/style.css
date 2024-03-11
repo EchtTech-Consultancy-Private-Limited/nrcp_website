@@ -21283,3 +21283,6 @@ iframe ._2qgu._2qgu{
   position: relative;
 }
 
+.dataTables_wrapper .dataTables_info {
+  font-size: 14px !important;
+}
