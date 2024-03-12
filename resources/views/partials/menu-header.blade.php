@@ -86,6 +86,10 @@
     <div class="col-md-3 col-xl-2  text-lg-left pl-0 pr-0">
         <div class="logo-cat-wrap right-h justify-content-end">
             <div class="logo-part mobile-logo-s">
+            <a href="{{ url('/') }}" rel="noopener noreferrer" class="mobileEmblem">
+                <img src="{{ asset('resources/uploads/WebsiteCoreSettings/' . $logo->header_logo) }}" alt=""
+                            rel="noopener noreferrer" class="">
+                </a>
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
                     <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="" class="logo logo2"
                         rel="noopener noreferrer">
@@ -94,6 +98,9 @@
                     <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt="" class="logo logo2"
                         rel="noopener noreferrer">
                 </a>
+                
+
+                
             </div>
         </div>
     </div>
