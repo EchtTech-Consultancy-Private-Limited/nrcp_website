@@ -121,6 +121,15 @@
     }
 }
 
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+    .topbar-area.home11-topbar ul.topbar-contact {
+       justify-content: space-between;
+    }
+
+    ul.toolbar-sl-share.rs-inner-blog {
+        gap: 0 10px;
+    }
+}
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
     .marquee-vertical {
         height: 82px;
@@ -5171,6 +5180,7 @@ ul.topbar-contact li{
 .full-width-header .rs-header .topbar-area.home11-topbar .topbar-contact li:last-child {
 
     display: flex;
+    gap: 10px;
 }
     .rs-blog.main-home .blog-item .blog-content.b-t .title{width: 300px !important;}
 
