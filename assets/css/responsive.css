@@ -2349,8 +2349,8 @@ h6.sub-text-b-l {
         display: block;
     }
 
-.full-width-header .rs-header .topbar-area.home11-topbar ul.toolbar-sl-share.rs-inner-blog li{
-    padding-top: 10px;
+.full-width-header .rs-header .topbar-area.home11-topbar ul.toolbar-sl-share.rs-inner-blog{
+    /* padding-top: 10px; */
 }
 
     .topbar-area.home11-topbar ul.topbar-contact {
@@ -3061,9 +3061,14 @@ h6.sub-text-b-l {
     }
 
     ul.toolbar-sl-share.rs-inner-blog {
-        padding-bottom: 10px;
         flex-wrap: wrap;
-
+        padding: 0 4px 9px 0px;
+       justify-content: center !important;
+       align-content: center !important;
+       align-items: center !important;
+    }
+    .topbar-area.home11-topbar ul.topbar-contact{
+        padding: 0 4px 9px 5px;
     }
     .mob-th-
     {
