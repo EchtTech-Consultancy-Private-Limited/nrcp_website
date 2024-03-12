@@ -17870,7 +17870,7 @@ color: #333;
 .rs-footer.home9-style.main-home .footer-bottom .copyright p {
   margin-bottom: 0;
   color: #f3f8f9;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .rs-footer.home9-style.main-home .footer-bottom .copyright a {
@@ -19413,7 +19413,7 @@ ul.site-map.footer-link-withput-h {
 .visitors-sec h5 {
   margin-bottom: 0;
   color: #fff;
-  font: normal normal normal 14px/14px Poppins;
+  font: normal normal normal 13px/14px Poppins;
 }
 span.number-visitor {
   background: #5568D2;
@@ -21285,4 +21285,7 @@ iframe ._2qgu._2qgu{
 
 .dataTables_wrapper .dataTables_info {
   font-size: 14px !important;
+}
+.mobileEmblem{
+  display: none !important;
 }

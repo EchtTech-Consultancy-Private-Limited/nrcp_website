@@ -144,7 +144,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row y-middle">
-                <div class="col-lg-6 md-mb-10">
+                <div class="col-lg-4 md-mb-10">
                     <div class="copyright">
                         <p>
                             @if (Session::get('Lang') == 'hi')
@@ -156,7 +156,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 text-right md-text-left pr-0">
+                <div class="col-lg-4 md-mb-10">
+                    <div class="copyright">
+                        <p>
+                        Developed & Maintained by Centre for Health Informatics
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-right md-text-left pr-0">
                     <div class="visitors-sec">
                         <h5>Website last Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>  &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Visitors :
                             <span class="number-visitor">{{ $visitCounter }}</span>
