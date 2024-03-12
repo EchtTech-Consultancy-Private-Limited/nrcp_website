@@ -3062,13 +3062,13 @@ h6.sub-text-b-l {
 
     ul.toolbar-sl-share.rs-inner-blog {
         flex-wrap: wrap;
-        padding: 0 4px 9px 9px;
+        padding: 0 4px 9px 0px;
        justify-content: center !important;
        align-content: center !important;
        align-items: center !important;
     }
     .topbar-area.home11-topbar ul.topbar-contact{
-        padding: 0 4px 9px 9px;
+        padding: 0 4px 9px 5px;
     }
     .mob-th-
     {
