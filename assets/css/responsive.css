@@ -5386,3 +5386,9 @@ ul.topbar-contact li{
     }
 
  
+
+    @media (min-width: 992px){
+        .modal-dialog.modal-helpline {
+    max-width: 800px !important;
+    margin-top: 2%;
+}}

@@ -82,8 +82,9 @@
                             <div class="top-menu-box">                                
                             </div>
                             <div class="new_btns_cols">
-                                <button class="button-29 text-center blink gradients " role="button">
-                                    <a href="#" class=""> Rabies Help line No :
+                                <button class="button-29 text-center blink gradients" role="button" data-toggle="modal"
+                                    data-target="#helpline">
+                                    <a href="javascript:void();" class=""> Rabies Help line No :
                                         <i class="fa fa-phone"></i> 
                                         <!-- <img src="{{ asset('assets/Nrcp_img/gifs/call.gif') }}" alt="call now"> -->
                                         15400</a>
