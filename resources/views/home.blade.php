@@ -554,16 +554,7 @@
                         rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}"
                             alt="NCDC" title="NCDC" rel="noopener noreferrer"></a>
                 </div>
-                <div class="partner-item">
-                    <a href="https://www.who.int/" target="_blank" role="link" rel="noopener noreferrer"><img
-                            src="{{ asset('assets/Nrcp_img/clients/who.png') }}" alt="World Health Organization"
-                            title="World Health Organization" rel="noopener noreferrer"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="https://www.undp.org/india/" target="_blank" role="link" rel="noopener noreferrer"><img
-                            src="{{ asset('assets/Nrcp_img/clients/UNDP-LOGO.png') }}" alt="World Health Organization"
-                            title="World Health Organization" rel="noopener noreferrer"></a>
-                </div>
+                
                 <div class="partner-item">
                     <a href="http://pgportal.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/pg-portal.png') }}"
@@ -647,6 +638,16 @@
                         <img src="{{ asset('assets/Nrcp_img/clients/mygov_2.png') }}"
                             alt="My Gov, External Link That Will Open in a New Window."
                             title="External Link That Will Open in a New Window." rel="noopener noreferrer"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="https://www.who.int/" target="_blank" role="link" rel="noopener noreferrer"><img
+                            src="{{ asset('assets/Nrcp_img/clients/who.png') }}" alt="World Health Organization"
+                            title="World Health Organization" rel="noopener noreferrer"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="https://www.undp.org/india/" target="_blank" role="link" rel="noopener noreferrer"><img
+                            src="{{ asset('assets/Nrcp_img/clients/UNDP-LOGO.png') }}" alt="World Health Organization"
+                            title="World Health Organization" rel="noopener noreferrer"></a>
                 </div>
             </div>
             <div class="gallery-section clientail">
