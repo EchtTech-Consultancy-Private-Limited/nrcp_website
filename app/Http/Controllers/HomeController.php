@@ -34,7 +34,7 @@ class HomeController extends Controller
     }
     public function index()
     {
-        setcookie('welcome_cookies','false');
+       // setcookie('welcome_cookies','false');
         $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->orderBy('created_at', 'desc')->get();
         $homebanner = DB::table('home_page_banner_management')->where('status', 3)->where('soft_delete', '0')->orderby('sort_order', 'Asc')->get();
         $photoGallery = DB::table('gallery_management as gm')

@@ -65,7 +65,7 @@ class LoginController extends Controller
         $CustomCaptchas = new CustomCaptcha;
         $CustomCaptch = $CustomCaptchas->generateRandomAdditionExpression();
         Session::put('capcode', $CustomCaptch['answer']);
-        return view('cms-view.auth.login',
+        return view('auth.login',
             ['crudUrlTemplate' => $crudUrlTemplate,
             'CustomCaptch' => $CustomCaptch
         ]);

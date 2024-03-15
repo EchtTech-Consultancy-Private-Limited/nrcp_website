@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>National Rabbies Control Programme</title>
+    <title>National Rabies Control Program</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="col-md-8  width-70">
                                       <div class="header_content">
-                                        <h3>Welcome to National Rabbies Control Programme Website (NRCP)</h3>
+                                        <h3>Welcome to National Rabies Control Programme Website (NRCP)</h3>
                                         <h5> National Center for Disease Control</h5>
                                         <p> Directorate General of Health Services,
                                          Ministry of Health & Family Welfare, <br> Government of India</p>
