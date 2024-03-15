@@ -59,6 +59,7 @@ if (language === 'hi') {
 
 function setlang(value) {
     // alert(value)
+    
     $.ajax({
          url: baseurl + "/set-language",
        // url: "http://localhost/nrcp_website/nrcp_website/set-language",
