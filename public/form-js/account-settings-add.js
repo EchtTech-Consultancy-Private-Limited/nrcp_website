@@ -1,10 +1,12 @@
-var KTAppTenderSave = function () {
+var KTAppAccuntSettingsSave = function () {
+    var passwordChange;
+    var passwordCancel;
     var jsonURL = $('#urlListData').attr('data-info');
     var crudUrlTemplate = JSON.parse(jsonURL);
     var _officeAdd;
     var _handleOfficeAddForm = function(e) {
     var validation;
-    var form = document.getElementById('kt_tenders_add_form');
+    var form = document.getElementById('kt_career_add_form');
        // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
        validation = FormValidation.formValidation(
              form,
@@ -28,7 +30,7 @@ var KTAppTenderSave = function () {
                 }
              }
        );
-       $('.submit-tender-btn').click( function(e) {
+       $('.submit-career-btn').click( function(e) {
              e.preventDefault();
              validation.validate().then(function(status) {
                 if (status == 'Valid') {
@@ -37,24 +39,22 @@ var KTAppTenderSave = function () {
                    //$('#examAddModal').modal('hide');
                     $('#loading').addClass('loading');
                     $('#loading-content').addClass('loading-content');
-                   var formData= new FormData(form);
-                   formData.append("kt_description_en", $('#kt_summernote_en').summernote('code'));
-                   formData.append("kt_description_hi", $('#kt_summernote_hi').summernote('code'));
-                axios.post(crudUrlTemplate.create_tender,formData, {
+                axios.post(crudUrlTemplate.create_career,new FormData(form), {
                    }).then(function (response) {
-                   if (response) {
+                    toggleChangePassword();
+                   if (response.data.status ==200) {
                      $('#loading').removeClass('loading');
                      $('#loading-content').removeClass('loading-content');
                       toastr.success(
-                         "New Tender added successfully!", 
-                         "New Tender!", 
+                         "New Career added successfully!", 
+                         "New Career!", 
                          {timeOut: 0, extendedTimeOut: 0, closeButton: true, closeDuration: 0}
                       );
                       setTimeout(function() {
                          if (history.scrollRestoration) {
                             history.scrollRestoration = 'manual';
                          }
-                         location.href = 'tender-create'; // reload page
+                         location.href = 'careers-create'; // reload page
                       }, 1500);
                       
                    } else {
@@ -93,41 +93,35 @@ var KTAppTenderSave = function () {
                 })
              });
        }
-    var demos = function () {
-         $('.summernote').summernote({
-             placeholder: 'Description...',
-             height: 200,
-             tabsize: 2
-         });
-     }
- const initFormRepeater = () => {
-         $('#kt_tender_add_multiple_options').repeater({
-             initEmpty: false,
-             // defaultValues: {
-             //     'text-input': 'foo'
-             // },
-             show: function () {
-                 $(this).slideDown();
-                 // Init select2 on new repeated items
-                 initConditionsSelect2();
-             },
-             hide: function (deleteElement) {
-                 $(this).slideUp(deleteElement);
-             }
-         });
-     }
+    var toggleChangePassword = function () {
+        passwordChange.classList.toggle('d-none');
+    }
+    var initSettings = function () {  
+        if (!signInMainEl) {
+            return;
+        }        
+        passwordChange.querySelector('button').addEventListener('click', function () {
+            toggleChangePassword();
+        });
+
+        passwordCancel.addEventListener('click', function () {
+            toggleChangePassword();
+        });
+    }
  return {
          init: function () {
-             demos();
-             initFormRepeater();
-             _officeAdd = $('#kt_tenders_add_form');
-             _handleOfficeAddForm();
-             submitButton = document.querySelector('#kt_add_tender_submit');
+            _officeAdd = $('#kt_career_add_form');
+            _handleOfficeAddForm();
+            submitButton = document.querySelector('#kt_add_career_submit');
+            passwordChange = document.getElementById('kt_signin_password_button');
+            passwordCancel = document.getElementById('kt_password_cancel');
+            initSettings();
+            handleChangePassword();
              // Handle forms
          }
      };
  }();
  // On document ready
  jQuery(document).ready(function() {
-    KTAppTenderSave.init();
+    KTAppAccuntSettingsSave.init();
  });

@@ -82,8 +82,9 @@
                             <div class="top-menu-box">                                
                             </div>
                             <div class="new_btns_cols">
-                                <button class="button-29 text-center blink gradients " role="button">
-                                    <a href="#" class=""> Rabies Help line No :
+                                <button class="button-29 text-center blink gradients" role="button" data-toggle="modal"
+                                    data-target="#helpline">
+                                    <a href="javascript:void();" class=""> Rabies Help line No :
                                         <i class="fa fa-phone"></i> 
                                         <!-- <img src="{{ asset('assets/Nrcp_img/gifs/call.gif') }}" alt="call now"> -->
                                         15400</a>
@@ -560,16 +561,7 @@
                         rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}"
                             alt="NCDC" title="NCDC" rel="noopener noreferrer"></a>
                 </div>
-                <div class="partner-item">
-                    <a href="https://www.who.int/" target="_blank" role="link" rel="noopener noreferrer"><img
-                            src="{{ asset('assets/Nrcp_img/clients/who.png') }}" alt="World Health Organization"
-                            title="World Health Organization" rel="noopener noreferrer"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="https://www.undp.org/india/" target="_blank" role="link" rel="noopener noreferrer"><img
-                            src="{{ asset('assets/Nrcp_img/clients/UNDP-LOGO.png') }}" alt="World Health Organization"
-                            title="World Health Organization" rel="noopener noreferrer"></a>
-                </div>
+                
                 <div class="partner-item">
                     <a href="http://pgportal.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/pg-portal.png') }}"
@@ -653,6 +645,16 @@
                         <img src="{{ asset('assets/Nrcp_img/clients/mygov_2.png') }}"
                             alt="My Gov, External Link That Will Open in a New Window."
                             title="External Link That Will Open in a New Window." rel="noopener noreferrer"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="https://www.who.int/" target="_blank" role="link" rel="noopener noreferrer"><img
+                            src="{{ asset('assets/Nrcp_img/clients/who.png') }}" alt="World Health Organization"
+                            title="World Health Organization" rel="noopener noreferrer"></a>
+                </div>
+                <div class="partner-item">
+                    <a href="https://www.undp.org/india/" target="_blank" role="link" rel="noopener noreferrer"><img
+                            src="{{ asset('assets/Nrcp_img/clients/UNDP-LOGO.png') }}" alt="World Health Organization"
+                            title="World Health Organization" rel="noopener noreferrer"></a>
                 </div>
             </div>
             <div class="gallery-section clientail">
