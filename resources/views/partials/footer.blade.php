@@ -156,16 +156,16 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 md-mb-10">
+                <div class="col-lg-5 md-mb-10 p-0">
                     <div class="copyright">
                         <p>
-                        Developed & Maintained by Centre for Health Informatics
+                        The portal is designed, developed & hosted by CHI (Centre for Health Informatics)
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 text-right md-text-left pr-0">
+                <div class="col-lg-3 text-right md-text-left pr-0">
                     <div class="visitors-sec">
-                        <h5>Website last Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>  &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Visitors :
+                        <h5>Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>     Visitors :
                             <span class="number-visitor">{{ $visitCounter }}</span>
                         </h5>
                     </div>

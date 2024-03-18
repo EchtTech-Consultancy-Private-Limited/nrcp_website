@@ -549,6 +549,13 @@
                             rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
+                    <a href="https://www.mohfw.gov.in/" target="_blank" role="link"
+                        rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/DAHD.jpg') }}"
+                            alt="Department of Animal Husbandry & Dairying "
+                            title="Department of Animal Husbandry & Dairying "
+                            rel="noopener noreferrer"></a>
+                </div>
+                <div class="partner-item">
                     <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link"
                         rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}"
                             alt="NCDC" title="NCDC" rel="noopener noreferrer"></a>
