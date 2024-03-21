@@ -21289,3 +21289,20 @@ iframe ._2qgu._2qgu{
 .mobileEmblem{
   display: none !important;
 }
+
+
+.container.ownerContent p{
+  font-size: 11.4px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.container.ownerContent{
+
+  margin-bottom: 5px;
+  padding-bottom: 8px;
+  border-bottom:  1px solid #5264c9;
+  text-align: center;
+  
+}
