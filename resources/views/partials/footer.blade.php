@@ -142,7 +142,11 @@
         </div>
     </div>
     <div class="footer-bottom">
+    <div class="container ownerContent">
+        <p>Hosted At NIC Content owned & Provided by "Integrated Disease Surveillance Programme" Ministry of Health & Family Welfare, Government of India Designed and Developed by Center for Health Informatics</p>
+     </div>
         <div class="container">
+        
             <div class="row y-middle">
                 <div class="col-lg-4 md-mb-10">
                     <div class="copyright">
@@ -157,10 +161,10 @@
                     </div>
                 </div>
                 <div class="col-lg-5 md-mb-10 p-0">
-                    <div class="copyright">
-                        <p>
+                    <div class="copyright text-center">
+                        <!-- <p class="text-center">
                         The portal is designed, developed & hosted by CHI (Centre for Health Informatics)
-                        </p>
+                        </p> -->
                     </div>
                 </div>
                 <div class="col-lg-3 text-right md-text-left pr-0">
