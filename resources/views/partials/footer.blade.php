@@ -143,7 +143,7 @@
     </div>
     <div class="footer-bottom">
     <div class="container ownerContent">
-        <p>Hosted At NIC Content owned & Provided by "Integrated Disease Surveillance Programme" Ministry of Health & Family Welfare, Government of India Designed and Developed by Center for Health Informatics</p>
+        <p>Hosted At NIC <img src="{{ asset('assets/Nrcp_img/nic.png') }}" alt="nic"> <br> Content owned & Provided by "Integrated Disease Surveillance Programme" Ministry of Health & Family Welfare, Government of India <br> Designed and Developed by Center for Health Informatics</p>
      </div>
         <div class="container">
         

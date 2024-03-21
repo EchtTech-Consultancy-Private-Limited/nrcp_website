@@ -21292,10 +21292,14 @@ iframe ._2qgu._2qgu{
 
 
 .container.ownerContent p{
-  font-size: 11.4px;
+  font-size: 13px;
   color: #fff;
   margin: 0;
   text-align: center;
+}
+.container.ownerContent p img{
+  width: 37px;
+  border-radius: 100%;
 }
 
 .container.ownerContent{
