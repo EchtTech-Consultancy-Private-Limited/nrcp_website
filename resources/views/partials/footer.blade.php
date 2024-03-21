@@ -156,16 +156,16 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 md-mb-10">
+                <div class="col-lg-5 md-mb-10 p-0">
                     <div class="copyright">
                         <p>
-                        Developed & Maintained by Centre for Health Informatics
+                        The portal is designed, developed & hosted by CHI (Centre for Health Informatics)
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 text-right md-text-left pr-0">
+                <div class="col-lg-3 text-right md-text-left pr-0">
                     <div class="visitors-sec">
-                        <h5>Website last Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>  &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Visitors :
+                        <h5>Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>     Visitors :
                             <span class="number-visitor">{{ $visitCounter }}</span>
                         </h5>
                     </div>
@@ -285,6 +285,9 @@
                     <ul>
                         <li class="d-flex align-item-start" > <div><i class="fa fa-arrow-right mt-4" aria-hidden="true"></i></div>  <a class="highlighted" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif  target="_blank"  href="{{ 'https://www.who.int/news-room/feature-stories/detail/eliminating-rabies-ukraine-journey-from-crisis-to-control' }}"> Eliminating rabies: Ukraine’s journey from crisis to control</a> <div><i class="fa fa-external-link mt-4 " aria-hidden="true"></i></div> </li>
                         <li class="d-flex align-item-start" > <div><i class="fa fa-arrow-right mt-4" aria-hidden="true"></i></div>  <a class="highlighted" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif  target="_blank" href="{{ 'https://www.dvm360.com/view/spca-international-awards-grants-to-vaccinate-12-000-animals-against-rabies' }}"> SPCA International awards grants to vaccinate 12,000 animals against rabies</a> <div><i class="fa fa-external-link mt-4 " aria-hidden="true"></i></div> </li>
+                        <li class="d-flex align-item-start" > <div><i class="fa fa-arrow-right mt-4" aria-hidden="true"></i></div>  <a class="highlighted" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif  target="_blank"  href="{{ 'https://www.who.int/india/health-topics/rabies' }}"> Rabies in India- WHO</a> <div><i class="fa fa-external-link mt-4 " aria-hidden="true"></i></div> </li>
+                        <li class="d-flex align-item-start" > <div><i class="fa fa-arrow-right mt-4" aria-hidden="true"></i></div>  <a class="highlighted" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif  target="_blank" href="{{ 'https://rabiesalliance.org/' }}"> Latest News- Rabies Alliance
+                        </a> <div><i class="fa fa-external-link mt-4 " aria-hidden="true"></i></div> </li>
                     </ul>
                 </div>
             </div>
