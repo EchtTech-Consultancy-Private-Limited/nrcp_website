@@ -84,7 +84,7 @@
                             <div class="new_btns_cols">
                                 <button class="button-29 text-center blink gradients" role="button" data-toggle="modal"
                                     data-target="#helpline">
-                                    <a href="javascript:void();" class=""> Rabies Help line No :
+                                    <a href="javascript:void();" class=""> Rabies Helpline Toll free No :
                                         <i class="fa fa-phone"></i> 
                                         <!-- <img src="{{ asset('assets/Nrcp_img/gifs/call.gif') }}" alt="call now"> -->
                                         15400</a>

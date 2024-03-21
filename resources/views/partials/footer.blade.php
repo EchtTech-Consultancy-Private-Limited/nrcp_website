@@ -188,7 +188,7 @@
         <div class="modal-content modal-content1">
             <div class="modal-body">
                 <div class="d-flex justify-content-between pl-2">
-                    <h4 class="modal-title pt-3">Information About Rabies Helpline</h4>
+                    <h4 class="modal-title pt-3"><b>Information About Rabies Helpline</b></h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="contact-page-section mt-4">
