@@ -142,9 +142,9 @@
         </div>
     </div>
     <div class="footer-bottom">
-    <div class="container ownerContent">
+    <!-- <div class="container ownerContent">
         <p>Hosted At <img src="{{ asset('assets/Nrcp_img/nic.png') }}" alt="nic"> <br> Content owned & Provided by "Integrated Disease Surveillance Programme" Ministry of Health & Family Welfare, Government of India <br> Designed and Developed by Center for Health Informatics</p>
-     </div>
+     </div> -->
         <div class="container">
         
             <div class="row y-middle">
@@ -161,11 +161,11 @@
                     </div>
                 </div>
                 <div class="col-lg-5 md-mb-10 p-0">
-                    <div class="copyright text-center">
-                        <!-- <p class="text-center">
+                    <!-- <div class="copyright text-center">
+                        <p class="text-center">
                         The portal is designed, developed & hosted by CHI (Centre for Health Informatics)
-                        </p> -->
-                    </div>
+                        </p>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 text-right md-text-left pr-0">
                     <div class="visitors-sec">
@@ -188,7 +188,7 @@
         <div class="modal-content modal-content1">
             <div class="modal-body">
                 <div class="d-flex justify-content-between pl-2">
-                    <h4 class="modal-title pt-3">Information About Rabies Helpline</h4>
+                    <h4 class="modal-title pt-3"><b>Information about the Rabies Helpline (Toll-free No. - 15400)</b></h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="contact-page-section mt-4">

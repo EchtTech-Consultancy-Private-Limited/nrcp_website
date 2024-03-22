@@ -28,6 +28,7 @@
                      <thead>
                         <th>Sr.No.</th>
                         <th>News Title</th>
+                        <th> Date</th>
                      </thead>
                      <tbody>
                         <?php $i=1; ?>
@@ -41,6 +42,7 @@
                                 <a href="{{ $newsLists->public_url  }}" >{{ $newsLists->title_name_en  }}</a>
                             @endif
                             </td>
+                            <td>{{ date("d M Y", strtotime($newsLists->start_date)) }}</td>
                         </tr>
                         @endforeach
                      </tbody>
