@@ -142,9 +142,10 @@
         </div>
     </div>
     <div class="footer-bottom">
-    <!-- <div class="container ownerContent">
-        <p>Hosted At <img src="{{ asset('assets/Nrcp_img/nic.png') }}" alt="nic"> <br> Content owned & Provided by "Integrated Disease Surveillance Programme" Ministry of Health & Family Welfare, Government of India <br> Designed and Developed by Center for Health Informatics</p>
-     </div> -->
+    <div class="container ownerContent">
+        <p>Content Owned & Provided by "National Rabies Control Program (NRCP), Center for One Health", National Center for Disease Control (NCDC), Ministry of Health & <br>
+Family Welfare, Government of India;  <br>Designed and Developed by Center for Health Informatics</p>
+     </div>
         <div class="container">
         
             <div class="row y-middle">
