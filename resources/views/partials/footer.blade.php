@@ -161,11 +161,11 @@
                     </div>
                 </div>
                 <div class="col-lg-5 md-mb-10 p-0">
-                    <div class="copyright text-center">
+                    <!-- <div class="copyright text-center">
                         <p class="text-center">
                         The portal is designed, developed & hosted by CHI (Centre for Health Informatics)
                         </p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 text-right md-text-left pr-0">
                     <div class="visitors-sec">
