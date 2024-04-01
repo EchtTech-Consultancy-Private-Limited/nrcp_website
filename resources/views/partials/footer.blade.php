@@ -142,9 +142,14 @@
         </div>
     </div>
     <div class="footer-bottom">
+    <div class="container ownerContent">
+        <p>Content Owned & Provided by "National Rabies Control Program (NRCP), Center for One Health", National Center for Disease Control (NCDC), Ministry of Health & <br>
+Family Welfare, Government of India;  <br>Designed and Developed by Center for Health Informatics</p>
+     </div>
         <div class="container">
+        
             <div class="row y-middle">
-                <div class="col-lg-6 md-mb-10">
+                <div class="col-lg-4 md-mb-10">
                     <div class="copyright">
                         <p>
                             @if (Session::get('Lang') == 'hi')
@@ -156,9 +161,16 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-6 text-right md-text-left pr-0">
+                <div class="col-lg-5 md-mb-10 p-0">
+                    <!-- <div class="copyright text-center">
+                        <p class="text-center">
+                        The portal is designed, developed & hosted by CHI (Centre for Health Informatics)
+                        </p>
+                    </div> -->
+                </div>
+                <div class="col-lg-3 text-right md-text-left pr-0">
                     <div class="visitors-sec">
-                        <h5>Website last Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>  &nbsp; &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Visitors :
+                        <h5>Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>     Visitors :
                             <span class="number-visitor">{{ $visitCounter }}</span>
                         </h5>
                     </div>
@@ -170,6 +182,47 @@
 <div id="scrollUp" class="green-color">
     <i class="fa fa-angle-up"></i>
 </div>
+
+
+<div id="helpline" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-helpline">
+        <div class="modal-content modal-content1">
+            <div class="modal-body">
+                <div class="d-flex justify-content-between pl-2">
+                    <h4 class="modal-title pt-3"><b>Information about the Rabies Helpline : (Toll-free No. - 15400)</b></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="contact-page-section mt-4">
+                    <div class="contact-comment-box tab-content ">
+                       <p class="mb-2"><b>Objectives:</b></p>
+                       <ul>
+                        <li>To provide information regarding first aid following dog bite or animal bite which requires Rabies Post Exposure Prophylaxis. </li>
+                        <li>The helpline also provide information of  the nearby health facilities with the availability of (Anti Rabies Vaccine(ARV)and Anti Rabies Serum (ARS) </li>
+                       </ul>
+                       <p class="mb-2">
+                       The helpline will consist of a team of well-trained agents (Graduate and above) working on inbound and outbound processes, supervised by a Team lead. These agents will be continuously updated with crucial information required to full fill objectives of helpline. 
+                       </p>
+                       <p class="mb-2">
+                       Helpline provides a cloud-based Ticketing system with the features like- generate and resolve tickets, track complete life cycle of the ticket, Real time monitoring & tracking of the ticket, SMS notification to Caller on the ticket status, sharing of Geo location of the vaccination centers. It will also have customized reports with the real time dashboard and Data analytics to understand the pattern. An advanced auto dialer system will be implemented to auto-assign incoming calls to available agents. Helpline also has Quality control mechanism to ensure call quality and appropriate information sharing.
+                       </p>
+                       <p class="mb-2">
+                       All queries on Rabies prevention and control will be handled by a 16*7  dedicated Rabies helpline, with a dedicated number (15400). 
+                       </p>
+                       <p class="mb-2">
+                       Same helpline also handles queries on snakebite.  
+                       </p>
+                       <p class="mb-2">
+                       Presently this helpline will serve five states: <b>Andhra Pradesh, Madhya Pradesh, Assam, Puducherry, and Delhi</b>.
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <div id="vaccination" class="modal fade" role="dialog">
     <div class="modal-dialog modal-vaccination">
         <div class="modal-content modal-content1">

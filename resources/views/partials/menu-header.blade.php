@@ -11,7 +11,7 @@
                     @else
                         <img src="{{ asset(config('constants.brand.default_logo')) }}" alt=""
                             rel="noopener noreferrer" class="logo logo1">
-                            <p>Ministry of Health</p>
+                            <!-- <p>Ministry of Health</p> -->
                     @endif
                     <div class="pl-2 text-center d-none d-xs-block">
                         <h2 class="title black-color text-center logo-text">National Rabies Control Program</h2>
@@ -22,7 +22,7 @@
                         </h6>
                     </div>
                 </a>
-                <p>Ministry of Health</p>
+                <!-- <p>Ministry of Health</p> -->
             </div>
         </div>
     </div>
@@ -86,6 +86,10 @@
     <div class="col-md-3 col-xl-2  text-lg-left pl-0 pr-0">
         <div class="logo-cat-wrap right-h justify-content-end">
             <div class="logo-part mobile-logo-s">
+            <a href="{{ url('/') }}" rel="noopener noreferrer" class="mobileEmblem">
+                <img src="{{ asset('resources/uploads/WebsiteCoreSettings/' . $logo->header_logo) }}" alt=""
+                            rel="noopener noreferrer" class="">
+                </a>
                 <a href="{{ url('/') }}" rel="noopener noreferrer">
                     <img src="{{ asset('assets/Nrcp_img/nrcp.png') }}" alt="" class="logo logo2"
                         rel="noopener noreferrer">
@@ -94,6 +98,9 @@
                     <img src="{{ asset('assets/Nrcp_img/rog_kendra.png') }}" alt="" class="logo logo2"
                         rel="noopener noreferrer">
                 </a>
+                
+
+                
             </div>
         </div>
     </div>
@@ -126,7 +133,7 @@
         </div>
     </div>
 </div>
-<div class="nav-bottom">
+<div class="nav-bottom" id="menu-sticky">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-lg-left pl-0 pr-0">
