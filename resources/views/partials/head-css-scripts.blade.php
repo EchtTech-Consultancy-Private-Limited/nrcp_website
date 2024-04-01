@@ -7,9 +7,9 @@
 <meta name="description" content="">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{{ $metaDetails->meta_tag_description ?? 'NRCP' }}">
-<meta name="keywords" content="{{ $metaDetails->meta_keywords ?? 'NRCP' }}">
-<meta name="tag" content="{{ $metaDetails->meta_tag ?? 'NRCP' }}">
+<meta name="description" content="{{ $metaDetails->meta_tag_description ?? 'National Rabies Control Program' }}">
+<meta name="keywords" content="{{ $metaDetails->meta_keywords ?? 'National Rabies Control Program' }}">
+<meta name="tag" content="{{ $metaDetails->meta_tag ?? 'National Rabies Control Program' }}">
 <meta name="basepath" content="{{ asset('assets/css/') }}">
 <meta name="baseURL" content="{{ asset('/') }}">
 <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -28,9 +28,10 @@
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/magnific-popup.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/rsmenu-main.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/rs-spacing.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" id="langStyle">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/responsive.css') }}">
 <link rel="stylesheet" type="text/css" id="theme-style" href="">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.dataTables.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/buttons.dataTables.min.css') }}">
 <link rel="stylesheet" href="{{ asset('public/mapFiles/esri.css') }}">
+<link rel="stylesheet" href=" " id= "hindiStyle">

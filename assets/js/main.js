@@ -40,12 +40,29 @@ var tag = document.createElement('script');
 
 var baseurl = window.location.origin;
 
-//alert(baseurl + "/set-language");
+
+$(document).ready(function(){
+    // Check if the language is Hindi
+const language = $('.select-lang').val();
+
+let hindiStyle = $('#hindiStyle');
+// alert(hindiStyle);
+// If language is Hindi and stylesheet is not added, add the stylesheet
+if (language === 'hi') {
+  
+ 
+  hindiStyle.attr("href", `${baseurl}/assets/css/hindiStyle.css`)
+
+}
+} );
+
+
 function setlang(value) {
     // alert(value)
     
     $.ajax({
-        url: baseurl + "/set-language",
+         url: baseurl + "/set-language",
+       // url: "http://localhost/nrcp_website/nrcp_website/set-language",
         data: { data: value },
         success: function (result) {
             //alert(result.data);
@@ -573,41 +590,55 @@ $(document).ready(function () {
 
 // Dark mode button
 
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    // Set max-age attribute to maintain cookie after page reload
+    var maxAge = days ? "; max-age=" + (days * 24 * 60 * 60) : "";
+    document.cookie = name + "=" + (value || "") + expires + maxAge + "; path=/";
+}
 
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
 
+// Check if the theme mode cookie is already set
+var themeMode = getCookie('theme-mode');
+if (themeMode) {
+    // Apply the stored theme mode
+    const linkElement = document.getElementById('theme-style');
+    linkElement.href = themeMode;
+    
+}
 
-
-
-// enable dark mode and light mode
+// Enable dark mode and light mode
 function setTheme() {
     var baseURL = $("meta[name='basepath']").attr('content');
 
-
     if (document.getElementById('mode').checked) {
-        $('#mode').attr('checked');
+        // Set dark mode
+        const darkModeURL = baseURL + '/dark-mode.css';
+        setCookie('theme-mode', darkModeURL, 7);
         const linkElement = document.getElementById('theme-style');
-        linkElement.href = localStorage.getItem('theme-mode');
-        linkElement.href = baseURL + `/dark-mode.css`;
-
-
-        // {{asset('assets/css/dark-mode.css')}}
-        //localStorage.getItem('theme-mode')
-        // Store the theme preference in local storage
-        localStorage.setItem('theme-mode', baseURL + `/dark-mode.css`);
-
-
-        // Set the initial theme based on local storage or default to 'light'
-        //   const initialTheme = localStorage.getItem('theme') || 'light';
-        //   setTheme(initialTheme);
-
+        linkElement.href = darkModeURL;
     } else {
+        // Set light mode
+        const lightModeURL = 'assets/css/style.css';
+        setCookie('theme-mode', lightModeURL, 7);
         const linkElement = document.getElementById('theme-style');
-        linkElement.href = `${'assets/css/style'}.css`;
-        $('#mode').removeAttr('checked');
-        // Store the theme preference in local storage
-        localStorage.removeItem('theme-mode');
+        linkElement.href = lightModeURL;
     }
-
 }
 
 
@@ -910,4 +941,16 @@ function printContent(printDivId) {
 
     // Restore the original content of the body
     document.body.innerHTML = originalContents;
+}
+// responsive css for fbfeed (min-width: 991px) and (max-width: 1200px)
+
+// if((window.innerWidth <= 1200) && (window.innerWidth >= 991)){
+//     $('.fbFeed .fb_iframe_widget').attr('data-height', '353')
+//     alert("code excuted")
+// }
+
+if (window.innerWidth >= 991 && window.innerWidth <= 1200) {
+    $('.fbFeed .fb-page').attr('data-height', '353');
+    console.log($('.fb-page').attr('data-height', '353'))
+    alert("code executed");
 }

@@ -644,3 +644,17 @@ div#debt-amount-pos, .publication-sociol-icon a img{
 .rs-breadcrumbs div.breadcrumbs-text.white-color{background: transparent !important;}
 
 .full-width-header.header-style1.home1-modifiy.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu ul.sub-menu li a:hover{color: yellow !important;}
+img.twitter-logo-top {
+    width: 14px;
+    filter: invert(0);
+    background: transparent !important;
+}
+
+img.twitter-logo {
+    width: 12px;
+    background: transparent !important;
+}
+
+.gallery-section .btns div {
+    padding: 3px 7px 13px ;
+}

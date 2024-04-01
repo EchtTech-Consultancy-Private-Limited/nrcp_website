@@ -1,0 +1,22 @@
+body{
+  font-size:85% !important;
+}
+
+
+.full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li a {
+  font: normal normal 14px / 40px Poppins;
+}
+
+h2.title.black-color.logo-text {
+  font: normal normal bold 32px / 55px Tahoma;
+}
+
+h5.sub-text-l {
+  font: normal normal bold 24px / 43px Tahoma;
+}
+h6.sub-text-b-l {
+  font: normal normal normal 16px / 30px Tahoma;
+}
+.latest-lists a {
+  font-size: 13px;
+}
