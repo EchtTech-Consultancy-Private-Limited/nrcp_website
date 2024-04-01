@@ -126,7 +126,7 @@ class HomeController extends Controller
     }
     public function newsDetails()
     {
-        $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->get();
+        $news = DB::table('news_management')->where('status', 3)->where('soft_delete', '0')->orderBy('created_at', 'desc')->get();
         return view('news-details', ['newsList' => $news]);
     }
     public function feedbackForm(Request $request)
