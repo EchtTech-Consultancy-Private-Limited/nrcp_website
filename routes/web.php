@@ -40,6 +40,7 @@ require __DIR__ .'/cms_web.php';
 Route::middleware(['visitingcounter'])->group(function () {
 
 Route::get('/',[HomeController::class,'index'])->name('/');
+//Route::get('index',[HomeController::class,'index'])->name('index');
 
 //map 
  Route::get('map-client-center',[HomeController::class,'mapClientCenter']);

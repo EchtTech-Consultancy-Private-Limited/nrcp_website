@@ -14,7 +14,7 @@
                     @include('partials.top-header')
                 </div>
             </div>
-            <div class="menu-area menu-sticky">
+            <div class="menu-area ">
                 <div class="container">
                     @include('partials.menu-header')
                 </div>
@@ -24,7 +24,7 @@
     <div class="main-content">
         <div class="rs-breadcrumbs breadcrumbs-overlay">
             <div class="breadcrumbs-img">
-                <img src="https://dev.nrcp.staggings.in/assets/Nrcp_img/banner.png" alt="Breadcrumbs Image">
+                <img src="https://rabiesfreeindia.mohfw.gov.in/assets/Nrcp_img/banner.png\" alt="Breadcrumbs Image">
             </div>
             <div class="breadcrumbs-text white-color">
                 <h1 class="page-title">
