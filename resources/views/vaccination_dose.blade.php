@@ -55,7 +55,7 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12">
                             <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-                                <button class="nav-link
+                                {{-- <button class="nav-link
 
                                 {{ request('tab') == 'nhrl' || request('tab') == 'narl' ? '' : 'active' }}"
 
@@ -64,13 +64,14 @@
                                     data-target="#master-layout_0" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="true" tabindex="0">
                                     Know Your Vaccination Schedule
-                                </button>
+                                </button> --}}
                                 <button class="nav-link " id="Master_layout_4" data-toggle="pill"
                                     data-target="#master-layout_4" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Know Your RIG Dose
                                 </button>
-                                <button class="nav-link" id="Master_layout_1" data-toggle="pill"
+                                <button class="nav-link
+                                {{ request('tab') == 'nhrl' || request('tab') == 'narl' ? '' : 'active' }}" id="Master_layout_1" data-toggle="pill"
                                     data-target="#master-layout_1" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Nearest Health Facility Where Rabies Vaccine Available

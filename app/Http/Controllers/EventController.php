@@ -54,8 +54,8 @@ class EventController extends Controller
         return view('events.event-national',['data'=>$objectpass,'type'=>$type]); 
     }
 
-    public function getStateEventDetails($slug, $id){
-
+    public function getStateEventDetails($slug, $id)
+    {
             if($slug == 'state'){
                 $events= DB::table('events_management')->where('status', 3)->where('event_type','1')->where('uid',$id)->where('soft_delete',0)->first();
                 $eventImag= DB::table('events_details')->where('events_id',$id)->where('soft_delete',0)->get();

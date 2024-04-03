@@ -876,7 +876,6 @@ $('.myslider').slick({
 
 function fun() {
 
-
     var calculate = $('#calculate').val();
     var selectedRIG = $('input[name="RIG"]:checked').val();
 
