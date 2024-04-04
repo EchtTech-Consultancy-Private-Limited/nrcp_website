@@ -21310,3 +21310,8 @@ iframe ._2qgu._2qgu{
   text-align: center;
   
 }
+
+.sec-bg-white.vaccination-tab.vaccinationMOdal {
+    box-shadow: none;
+    border: 1px solid #ddd;
+}

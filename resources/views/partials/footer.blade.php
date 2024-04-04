@@ -274,7 +274,7 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                         </form>
                     </div>
                 </div>
-                <div class="sec-bg-white vaccination-tab">
+                <div class="sec-bg-white vaccination-tab vaccinationMOdal">
                     <div class="row nearest-vaccication">
 
                         <div class="col-lg-12 col-md-12 ">
@@ -283,15 +283,13 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                                     <form method="get" action="">
                                         <div class="search-widget mb-20">
                                             <div class="row">
-                                                <div class="col-lg-8 row align-items-center">
-                                                    <label for=""
-                                                        class="col-md-5 mb-0 some-bold-l">Enter
-                                                        Weight of Patient : </label>
-                                                    <input type="number" id="calculate"
-                                                        class="form-control col-md-6" required
-                                                        placeholder="Enter Weight">
+                                                <div class="col-md-12  align-items-center">
+                                                   <div class="">
+                                                   <label for=""  class=" mb-0 some-bold-l">Enter  Weight of Patient : </label>
+                                                    <input type="number" id="calculate"  class="form-control my-2" required  placeholder="Enter Weight">
+                                                   </div>
                                                 </div>
-                                                <div class="col-lg-4">
+                                                <div class="col-md-12">
                                                     <div class="radio-btn-box pt-7">
                                                         <div class="d-flex">
                                                             <input type="radio"
