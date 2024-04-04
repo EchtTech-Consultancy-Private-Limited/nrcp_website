@@ -17167,7 +17167,7 @@ color: #171717;
 }
 
 .contact-comment-box label {
-    font: normal normal 17px/20px Poppins;
+    font: normal normal 15px/20px Poppins;
 }
 
 .contact-page-section .contact-map3 {
@@ -20287,8 +20287,8 @@ body.nav-expanded .overlay {
 /* Radio button css */
 
 .radio.button {
-  display: flex;
-  justify-content: center;
+  display: flex; 
+  /* justify-content: center; */
   margin-bottom: 20px;
   margin-top: 10px;
 }
@@ -21313,5 +21313,5 @@ iframe ._2qgu._2qgu{
 
 .sec-bg-white.vaccination-tab.vaccinationMOdal {
     box-shadow: none;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
 }
