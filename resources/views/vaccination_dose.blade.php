@@ -70,8 +70,7 @@
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Know Your RIG Dose
                                 </button> --}}
-                                <button class="nav-link
-                                {{ request('tab') == 'nhrl' || request('tab') == 'narl' ? '' : 'active' }}" id="Master_layout_1" data-toggle="pill"
+                                <button class="nav-link {{ request('tab') == 'nhf' ? ' active' : '' }}" id="Master_layout_1" data-toggle="pill"
                                     data-target="#master-layout_1" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Nearest Health Facility Where Rabies Vaccine Available
@@ -92,7 +91,7 @@
                         </div>
                         <div class="col-lg-9 col-md-12">
                             <div class="tab-content sub-tab" id="tabContent">
-                                <div class="tab-pane  fade active show" id="master-layout_0" role="tabpanel"
+                                <div class="tab-pane  fade" id="master-layout_0" role="tabpanel"
                                     aria-labelledby="Master_layout_0">
                                     <!-- Content and Images -->
                                     <div class="row">
@@ -295,7 +294,7 @@
                                 </div> --}}
                                 <!-- Know Your Dose Tab End-->
 
-                                <div class="tab-pane  fade" id="master-layout_1" role="tabpanel"
+                                <div class="tab-pane fade active show" id="master-layout_1" role="tabpanel"
                                     aria-labelledby="Master_layout_1">
                                     <!-- tab content start -->
                                     <div class="tab-content" id="myTabContent">

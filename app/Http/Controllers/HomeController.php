@@ -87,6 +87,7 @@ class HomeController extends Controller
             ->select('state_name')
             ->groupBy('state_name')
             ->get();
+
         $human_rabies_labs_data_states = DB::table('human_rabies_labs')
             ->select('state_name')
             ->groupBy('state_name')
