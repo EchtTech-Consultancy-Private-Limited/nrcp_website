@@ -914,16 +914,6 @@ function fun() {
     }
 }
 
-// function printDiv(newMapA) {
-//     var printContents = document.getElementById(newMapA).innerHTML;
-//     var originalContents = document.body.innerHTML;
-//     document.body.innerHTML = printContents;
-//     window.print();
-//     document.body.innerHTML = originalContents;
-// }
-
-
-
 
 function printContent(printDivId) {
     // Get the content of the element to be printed
