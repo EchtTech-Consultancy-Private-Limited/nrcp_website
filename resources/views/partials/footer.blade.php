@@ -274,6 +274,9 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                         </form>
                     </div>
                 </div>
+                <div class="d-flex justify-content-between pl-2">
+                    <h4 class="modal-title pt-3">Know Your RIG Dose</h4>
+                </div><br>
                 <div class="sec-bg-white vaccination-tab vaccinationMOdal">
                     <div class="row nearest-vaccication">
 
