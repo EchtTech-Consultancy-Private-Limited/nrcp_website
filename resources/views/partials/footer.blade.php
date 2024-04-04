@@ -236,19 +236,27 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                         <form method="get" action="{{ url('vaccination_dose') }}" id="myform" novalidate="novalidate">
                             <fieldset>
                                 <div class="row">
-                                    <div class="col-lg-12 mb-25 mt-10 col-md-12 col-sm-12">
-                                        <label class="pl-2">Date of Animal Bites</label>
+                                    <div class="col-md-6 mb-25 ">
+                                        <label class="pl-2 form-label ">Date of Animal Bites</label>
                                         <input class="from-control mt-2" type="date" name="date" id="txtDate" placeholder="Name" required/>
                                     </div>
-                                </div>
-                                <div class="row form-group">
-                                    <div class="col-md-11 mx-auto">
-                                        <a class="readon2 modal-btn text-white">
-                                            Have you taken Rabies Vaccine after animal bite
-                                        </a>
+                                    <div class="col-md-6 mx-auto">
+                                    <label class="pl-2 form-label mb-0"> Have you taken Rabies Vaccine after animal bite</label>
+                                    <div class="radio button">
+                                           <div class="radio-box">
+                                            <input type="radio" onclick="checkYesNo('1')" name="animal_bite" value="yes" id="yes-dogbite" required />
+                                            <label for="yes-dogbite">Yes</label>
+                                           </div>
+                                           <div class="radio-box">
+                                            <input type="radio" onclick="checkYesNo('0')" name="animal_bite" value="no" id="no-bite" required />
+                                            <label for="no-bite">No</label>
+                                           </div>
+                                       </div>
+                                       <p class="text-center text-danger" id="radio_error"></p>
                                     </div>
                                 </div>
-                                <div class="row">
+                               
+                                <!-- <div class="row">
                                     <div class="col-md-12">
                                        <div class="radio button">
                                            <div class="radio-box">
@@ -264,7 +272,7 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput">
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="row form-group">
                                     <div class="col-md-12 text-center">
                                     <input type="submit" name="Submit" class="readon2 modal-btn" onclick="cehckradio()" value="Submit" id="mysbutton" />
@@ -274,6 +282,9 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                         </form>
                     </div>
                 </div>
+                <div class="d-flex justify-content-between pl-2">
+                    <h4 class="modal-title pt-3">Know Your RIG Dose</h4>
+                </div><br>
                 <div class="sec-bg-white vaccination-tab vaccinationMOdal">
                     <div class="row nearest-vaccication">
 
@@ -281,32 +292,28 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                             <div class="row">
                                 <div class="col-lg-12">
                                     <form method="get" action="">
+                                    <h4 class="modal-title pb-3">Know Your RIG</h4>
                                         <div class="search-widget mb-20">
+                                     
                                             <div class="row">
-                                                <div class="col-md-12  align-items-center">
+                                                <div class="col-md-6  align-items-center">
                                                    <div class="">
-                                                   <label for=""  class=" mb-0 some-bold-l">Enter  Weight of Patient : </label>
+                                                   <label for=""  class="form-label mb-0 some-bold-l">Enter  Weight of Patient : </label>
                                                     <input type="number" id="calculate"  class="form-control my-2" required  placeholder="Enter Weight">
                                                    </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div class="radio-btn-box pt-7">
-                                                        <div class="d-flex">
-                                                            <input type="radio"
-                                                                id="Equine" name="RIG"
-                                                                class="form-control radio RIG"
-                                                                value="40">
-                                                            <label for="Equine">Equine
-                                                                RIG</label>
+                                                <div class="col-md-6">
+                                                    <div class="radio-btn-box ">
+                                                        <div class="">
+                                                        <label for="Equine" class="form-label mb-0 some-bold-l">Equine  RIG :</label>
+                                                            <input type="radio"  id="Equine" name="RIG" class="form-control radio RIG my-2"   value="40">
+                                                          
                                                         </div>
 
-                                                        <div class="d-flex">
-                                                            <input type="radio"
-                                                                id="Human" name="RIG"
-                                                                class="form-control radio RIG"
-                                                                value="20">
-                                                            <label for="Human">Human
-                                                                RIG</label>
+                                                        <div class="">
+                                                        <label for="Human" class="form-label mb-0 some-bold-l">Human  RIG :</label>
+                                                            <input type="radio" id="Human" name="RIG"    class="form-control radio RIG my-2"  value="20">
+                                                           
                                                         </div>
                                                     </div>
                                                 </div>

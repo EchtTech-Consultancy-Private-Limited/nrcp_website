@@ -92,7 +92,7 @@
                                 <button class="button-29 text-center flickering" role="button"> <a href="#"
                                         class="" data-toggle="modal" data-target="#vaccination">
                                         Have you Bitten by an Animal? <br>
-                                        Know your Rabies Vaccination Schedule Know Your RIG Dose
+                                        Know your Rabies Vaccination Schedule & Know Your RIG Dose
                                     </a>
                                 </button>
                                 <button class="button-29 text-center colors" role="button">
