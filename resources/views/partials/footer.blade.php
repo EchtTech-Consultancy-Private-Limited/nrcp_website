@@ -274,6 +274,69 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                         </form>
                     </div>
                 </div>
+                <div class="sec-bg-white vaccination-tab">
+                    <div class="row nearest-vaccication">
+
+                        <div class="col-lg-12 col-md-12 ">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form method="get" action="">
+                                        <div class="search-widget mb-20">
+                                            <div class="row">
+                                                <div class="col-lg-8 row align-items-center">
+                                                    <label for=""
+                                                        class="col-md-5 mb-0 some-bold-l">Enter
+                                                        Weight of Patient : </label>
+                                                    <input type="number" id="calculate"
+                                                        class="form-control col-md-6" required
+                                                        placeholder="Enter Weight">
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="radio-btn-box pt-7">
+                                                        <div class="d-flex">
+                                                            <input type="radio"
+                                                                id="Equine" name="RIG"
+                                                                class="form-control radio RIG"
+                                                                value="40">
+                                                            <label for="Equine">Equine
+                                                                RIG</label>
+                                                        </div>
+
+                                                        <div class="d-flex">
+                                                            <input type="radio"
+                                                                id="Human" name="RIG"
+                                                                class="form-control radio RIG"
+                                                                value="20">
+                                                            <label for="Human">Human
+                                                                RIG</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-12">
+                                                    <div
+                                                        class="btn-part view-all-btn mt-30 mt-smm-0">
+                                                        <button
+                                                            class="readon2 vaccination-btn mod mb-0"
+                                                            id="calculate" onclick="fun()"
+                                                            type="button">Calculate
+                                                            Dose</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </form>
+
+                                    <div class="calculate_dosse">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

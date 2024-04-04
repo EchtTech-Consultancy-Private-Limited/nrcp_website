@@ -65,11 +65,11 @@
                                     aria-controls="annual-report" aria-selected="true" tabindex="0">
                                     Know Your Vaccination Schedule
                                 </button> --}}
-                                <button class="nav-link " id="Master_layout_4" data-toggle="pill"
+                                {{-- <button class="nav-link " id="Master_layout_4" data-toggle="pill"
                                     data-target="#master-layout_4" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Know Your RIG Dose
-                                </button>
+                                </button> --}}
                                 <button class="nav-link
                                 {{ request('tab') == 'nhrl' || request('tab') == 'narl' ? '' : 'active' }}" id="Master_layout_1" data-toggle="pill"
                                     data-target="#master-layout_1" type="button" role="tab"
@@ -213,7 +213,7 @@
                                 </div>
 
                                 <!-- Know Your Dose Tab -->
-                                <div class="tab-pane  fade" id="master-layout_4" role="tabpanel"
+                                {{-- <div class="tab-pane  fade" id="master-layout_4" role="tabpanel"
                                     aria-labelledby="Master_layout_4">
                                     <div id="rs-popular-courses" class="rs-popular-courses style1 modify1">
                                         <div class="container">
@@ -279,11 +279,7 @@
                                                                 </form>
 
                                                                 <div class="calculate_dosse">
-
                                                                 </div>
-
-
-
                                                             </div>
 
                                                         </div>
@@ -296,7 +292,7 @@
                                         </div>
                                     </div>
 
-                                </div>
+                                </div> --}}
                                 <!-- Know Your Dose Tab End-->
 
                                 <div class="tab-pane  fade" id="master-layout_1" role="tabpanel"
