@@ -268,7 +268,7 @@ $(document).ready(function () {
                 success: function (response) {
                     var map;
                     var data = response.data;
-                    //console.log(data);
+                    // console.log(data);
 
                     require([
                         "esri/map",
@@ -286,10 +286,7 @@ $(document).ready(function () {
                             zoom: 7
                         });
 
-                        var graphicsLayer = new GraphicsLayer();
-
-
-
+                        var graphicsLayer = new GraphicsLayer();                        
                         for (var i = 0; i < data.length; i++) {
                             var point = new Point(data[i].longitude, data[i]
                                 .latitude);

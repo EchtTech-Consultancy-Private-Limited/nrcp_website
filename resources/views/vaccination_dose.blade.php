@@ -28,7 +28,7 @@
     {{ __('Home') }}
 @endsection
 @section('breadcrumbs')
-    {{ __('Vaccination Dose') }}
+    {{ __('Locate Services') }}
 @endsection
 
 @section('content')
