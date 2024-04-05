@@ -5,7 +5,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\feedback;
 use App\Models\contactUs;
-use App, Route, DB;
+use App, Route;
+use Illuminate\Support\Facades\DB;
 class HomeController extends Controller
 {
     /**
