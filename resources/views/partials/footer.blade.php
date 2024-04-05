@@ -308,7 +308,6 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                                                         <div class="">
                                                         <label for="Equine" class="form-label mb-0 some-bold-l">Equine  RIG :</label>
                                                             <input type="radio"  id="Equine" name="RIG" class="form-control radio RIG my-2"   value="40">
-                                                          
                                                         </div>
 
                                                         <div class="">
