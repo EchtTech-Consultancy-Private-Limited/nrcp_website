@@ -227,8 +227,8 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
     <div class="modal-dialog modal-vaccination">
         <div class="modal-content modal-content1">
             <div class="modal-body">
-                <div class="d-flex justify-content-between pl-2">
-                    <h4 class="modal-title pt-3">Know Your Vaccination Schedule</h4>
+                <div class="pl-2">
+                    <h4 class="modal-title pt-3 text-center">Know Your Vaccination Schedule</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="contact-page-section mt-4">
@@ -282,8 +282,9 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                         </form>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between pl-2">
-                    <h4 class="modal-title pt-3">Know Your RIG Dose</h4>
+                <hr></hr>
+                <div class="pl-2">
+                    <h4 class="modal-title pt-3 text-center">Know Your RIG Dose</h4>
                 </div><br>
                 <div class="sec-bg-white vaccination-tab vaccinationMOdal">
                     <div class="row nearest-vaccication">

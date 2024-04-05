@@ -901,7 +901,7 @@ function fun() {
             var valData = `Human RIG: 150 IU = ${Math.ceil(total/150)} ml`;
         }
         $('.calculate_dosse').html(`
-        <h3>Calculated Dosage of ERIG is:
+        <span>Calculated Dosage of ERIG is:
             <span class="dose_unit measurement">
                 <span id='dosageValue'>${total}</span>
 
@@ -909,7 +909,7 @@ function fun() {
             <ul class="measurement" >
                   <li>${valData}</li>
             </ul>
-        </h3>
+        </span>
     `);
     }
 }
