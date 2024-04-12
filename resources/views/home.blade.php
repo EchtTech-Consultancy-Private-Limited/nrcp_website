@@ -6,8 +6,12 @@
     </style>
 </head>
 <body class="defult-home">
+
+
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="AbB7EpYI"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="gxf7bGc6"></script>
+
+
     <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
         <header id="rs-header" class="rs-header">
             <div class="topbar-area home11-topbar">
@@ -368,8 +372,12 @@
                                     rel="noopener noreferrer" class="facebook-logo"> ( Facebook Feed )</h4>
                             <div class="fbFeed">
 
-                            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=61557122245947" data-tabs="timeline" data-width="370" data-height="449" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/profile.php?id=61557122245947" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61557122245947">NRCP-Mohfw</a></blockquote></div>
-                            
+                            <div class="fb-page" style="width: 100%;" data-href="https://www.facebook.com/profile.php?id=61558145345947" data-tabs="timeline" data-width="360" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=61558145345947" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61558145345947">National Rabies Control Program </a></blockquote></div>
+           
+
+                             <!-- <div class="work-in-p">
+                                Work in Progress
+                             </div> -->
                             </div>
                         </div>
                     </div>
