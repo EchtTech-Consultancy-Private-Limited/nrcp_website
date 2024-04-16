@@ -258,7 +258,7 @@
                                             monkeys are other important reservoirs of rabies in India. Bat rabies has
                                             not been conclusively reported from the country.
                                             <br><br>
-                                            <b>Evolution of National Rabies Control Program</b>
+                                            <b>Evolution of National Rabies Control Program</b> 
                                             <br><br>
                                             In the 11th five-year plan (2007–2012) Rabies control efforts in India
                                             gained momentum and the Ministry of Health and Family Welfare, Govt of India
@@ -326,7 +326,7 @@
                         <div class="notice-bord style1">
                             <h4 class="title twitter-text-h"><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}"
                                     alt="img" rel="noopener noreferrer" class="twitter-logo"> ( Twitter Feed )</h4>
-                            <div class="marquee-height myslider">
+                            <!-- <div class="marquee-height myslider">
                                 <div class="item a text-center">
                                     <a href="https://twitter.com/nrcpmohfw"
                                         onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
@@ -375,6 +375,10 @@
                                             rel="noopener noreferrer">
                                     </a>
                                 </div>
+                            </div> -->
+
+                            <div class="twitter-feed">
+                            <blockquote class="twitter-tweet"><p lang="qme" dir="ltr"><a href="https://t.co/F27ye0G28S">https://t.co/F27ye0G28S</a><a href="https://twitter.com/hashtag/MoHFW?src=hash&amp;ref_src=twsrc%5Etfw">#MoHFW</a> <a href="https://twitter.com/hashtag/NCDC?src=hash&amp;ref_src=twsrc%5Etfw">#NCDC</a> <a href="https://t.co/c8lEeR9xSi">pic.twitter.com/c8lEeR9xSi</a></p>&mdash; NRCP (@nrcpmohfw) <a href="https://twitter.com/nrcpmohfw/status/1767856947666317328?ref_src=twsrc%5Etfw">March 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </div>
                         </div>
                     </div>
@@ -386,7 +390,7 @@
 
                                 <div class="fb-page" style="width: 100%;"
                                     data-href="https://www.facebook.com/profile.php?id=61558145345947"
-                                    data-tabs="timeline" data-width="360" data-height="450" data-small-header="true"
+                                    data-tabs="timeline" data-width="360" data-height="445" data-small-header="true"
                                     data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
                                     <blockquote cite="https://www.facebook.com/profile.php?id=61558145345947"
                                         class="fb-xfbml-parse-ignore"><a
