@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     @include('partials.head-css-scripts')
     <style>
     </style>
 </head>
+
 <body class="defult-home">
 
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0" nonce="gxf7bGc6"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v19.0"
+        nonce="gxf7bGc6"></script>
 
 
     <div class="full-width-header header-style1 home1-modifiy home12-modifiy">
@@ -19,7 +22,7 @@
                     @include('partials.top-header')
                 </div>
             </div>
-            <div class="menu-area " >
+            <div class="menu-area ">
                 <!-- SVG-CONTENT-DISPLAY NONE -->
                 <div class="svg-cont">
                     <img src="{{ URL::asset('assets/Nrcp_img/svg/blue-svg.png') }}" alt="NRCP">
@@ -83,18 +86,18 @@
                 <div class="col-md-3 order-md-1 order-2">
                     <div class="cont_secsns left_dhr mob-item2">
                         <div class="main_btntop_chnges">
-                            <div class="top-menu-box">                                
+                            <div class="top-menu-box">
                             </div>
                             <div class="new_btns_cols">
                                 <button class="button-29 text-center blink gradients" role="button" data-toggle="modal"
                                     data-target="#helpline">
                                     <a href="javascript:void();" class=""> Rabies Help line No :
-                                        <i class="fa fa-phone"></i> 
+                                        <i class="fa fa-phone"></i>
                                         <!-- <img src="{{ asset('assets/Nrcp_img/gifs/call.gif') }}" alt="call now"> -->
                                         15400</a>
                                 </button>
-                                <button class="button-29 text-center flickering" role="button"> <a href="#"
-                                        class="" data-toggle="modal" data-target="#vaccination">
+                                <button class="button-29 text-center flickering" role="button"> <a href="#" class=""
+                                        data-toggle="modal" data-target="#vaccination">
                                         Have you Bitten by an Animal? <br>
                                         Know your Rabies Vaccination Schedule & Know Your RIG Dose
                                     </a>
@@ -122,34 +125,33 @@
                                 data-ipad-device-dots2="false" data-md-device="1" data-md-device-nav="true"
                                 data-md-device-dots="false" id="banner1">
                                 @if (count($homebanner) > 0)
-                                    @foreach ($homebanner as $k => $value)
-                                        <div class="slider-content">
-                                            <div class="container-fluid px-0">
-                                                <div class="row banner-mobile">
-                                                    <div class="col-lg-12 order-last p-0">
-                                                        <div class="img-part banner-image">
-                                                            <img src="{{ asset('resources/uploads/banner/' . $value->public_url) }}"
-                                                                alt="{{ $value->banner_title }}"
-                                                                rel="noopener noreferrer">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
-                                @else
-                                    <div class="slider-content">
-                                        <div class="container-fluid px-0">
-                                            <div class="row banner-mobile">
-                                                <div class="col-lg-12 order-last p-0">
-                                                    <div class="img-part banner-image">
-                                                        <img src="{{ asset(config('constants.brand.default_banner')) }}"
-                                                            alt="Banner" rel="noopener noreferrer">
-                                                    </div>
+                                @foreach ($homebanner as $k => $value)
+                                <div class="slider-content">
+                                    <div class="container-fluid px-0">
+                                        <div class="row banner-mobile">
+                                            <div class="col-lg-12 order-last p-0">
+                                                <div class="img-part banner-image">
+                                                    <img src="{{ asset('resources/uploads/banner/' . $value->public_url) }}"
+                                                        alt="{{ $value->banner_title }}" rel="noopener noreferrer">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                @endforeach
+                                @else
+                                <div class="slider-content">
+                                    <div class="container-fluid px-0">
+                                        <div class="row banner-mobile">
+                                            <div class="col-lg-12 order-last p-0">
+                                                <div class="img-part banner-image">
+                                                    <img src="{{ asset(config('constants.brand.default_banner')) }}"
+                                                        alt="Banner" rel="noopener noreferrer">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 @endif
                             </div>
                             <div class="btns">
@@ -170,26 +172,28 @@
                                 <div class="marquee-wrapper">
                                     <div class="marquee-content">
                                         @if (isset($human_activite) && count($human_activite) > 0)
-                                            @foreach ($human_activite as $human_activites)
-                                                @php
-                                                    $humanUrl = $human_activites->url_link ?? 'javascript:void(0)';
-                                                @endphp
-                                                <div class="latest-lists">
-                                                    <a @if ($human_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
-                                                    target="_blank" href="{{ $humanUrl }}" @else
-                                                        href="{{ url($humanUrl) }}" @endif>
-                                                        <strong><i class="fa fa-hand-o-right mx-1"
-                                                                aria-hidden="true"></i> : </strong>
-                                                        @if (Session::get('Lang') == 'hi')
-                                                            {{ $human_activites->recent_activities_hi ?? '' }}
-                                                        @else
-                                                            {{ $human_activites->recent_activities_en ?? '' }}
-                                                        @endif
-                                                        <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                            alt="">
-                                                    </a>
-                                                </div>
-                                            @endforeach
+                                        @foreach ($human_activite as $human_activites)
+                                        @php
+                                        $humanUrl = $human_activites->url_link ?? 'javascript:void(0)';
+                                        @endphp
+                                        <div class="latest-lists">
+                                            <a @if ($human_activites->tab_type == 1) @if (Session::get('Lang') == 'hi')
+                                                onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
+                                                @else onclick="return confirm('This link will take you to an external
+                                                web site.')" @endif
+                                                target="_blank" href="{{ $humanUrl }}" @else
+                                                href="{{ url($humanUrl) }}" @endif>
+                                                <strong><i class="fa fa-hand-o-right mx-1" aria-hidden="true"></i> :
+                                                </strong>
+                                                @if (Session::get('Lang') == 'hi')
+                                                {{ $human_activites->recent_activities_hi ?? '' }}
+                                                @else
+                                                {{ $human_activites->recent_activities_en ?? '' }}
+                                                @endif
+                                                <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                                            </a>
+                                        </div>
+                                        @endforeach
                                         @else
                                         @endif
                                     </div>
@@ -200,26 +204,28 @@
                                 <div class="marquee-wrapper">
                                     <div class="marquee-content">
                                         @if (isset($animal_activite) && count($animal_activite) > 0)
-                                            @foreach ($animal_activite as $animal_activites)
-                                                @php
-                                                    $animalUrl = $animal_activites->url_link ?? 'javascript:void(0)';
-                                                @endphp
-                                                <div class="latest-lists">
-                                                    <a @if ($animal_activites->tab_type == 1) @if (Session::get('Lang') == 'hi') onclick="return  confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"  @else onclick="return confirm('This link will take you to an external web site.')" @endif
-                                                    target="_blank" href="{{ $animalUrl }}" @else
-                                                        href="{{ url($animalUrl) }}" @endif
-                                                        ><strong><i class="fa fa-circle-thin mx-1"
-                                                                aria-hidden="true"></i> : </strong>
-                                                        @if (Session::get('Lang') == 'hi')
-                                                            {{ $animal_activites->recent_activities_hi ?? '' }}
-                                                        @else
-                                                            {{ $animal_activites->recent_activities_en ?? '' }}
-                                                        @endif
-                                                        <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}"
-                                                            alt="">
-                                                    </a>
-                                                </div>
-                                            @endforeach
+                                        @foreach ($animal_activite as $animal_activites)
+                                        @php
+                                        $animalUrl = $animal_activites->url_link ?? 'javascript:void(0)';
+                                        @endphp
+                                        <div class="latest-lists">
+                                            <a @if ($animal_activites->tab_type == 1) @if (Session::get('Lang') == 'hi')
+                                                onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
+                                                @else onclick="return confirm('This link will take you to an external
+                                                web site.')" @endif
+                                                target="_blank" href="{{ $animalUrl }}" @else
+                                                href="{{ url($animalUrl) }}" @endif
+                                                ><strong><i class="fa fa-circle-thin mx-1" aria-hidden="true"></i> :
+                                                </strong>
+                                                @if (Session::get('Lang') == 'hi')
+                                                {{ $animal_activites->recent_activities_hi ?? '' }}
+                                                @else
+                                                {{ $animal_activites->recent_activities_en ?? '' }}
+                                                @endif
+                                                <img src="{{ asset('Nrcp_img/gifs/new-gif-new.gif') }}" alt="">
+                                            </a>
+                                        </div>
+                                        @endforeach
                                         @else
                                         @endif
                                     </div>
@@ -252,7 +258,7 @@
                                             monkeys are other important reservoirs of rabies in India. Bat rabies has
                                             not been conclusively reported from the country.
                                             <br><br>
-                                            <b>Evolution of National Rabies Control Program</b>
+                                            <b>Evolution of National Rabies Control Program</b> 
                                             <br><br>
                                             In the 11th five-year plan (2007–2012) Rabies control efforts in India
                                             gained momentum and the Ministry of Health and Family Welfare, Govt of India
@@ -290,8 +296,8 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="pdf-image">
-                                        <a href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}"
-                                            target="_blank" title="National Action Plan" rel="noopener noreferrer">
+                                        <a href="{{ asset('assets/Nrcp_img/NationalActiopPlan.pdf') }}" target="_blank"
+                                            title="National Action Plan" rel="noopener noreferrer">
                                             <img src="{{ asset('assets/Nrcp_img/pdf-frtontpage.PNG') }}"
                                                 alt="National Action Plan" title="National Action Plan"
                                                 rel="noopener noreferrer" />
@@ -318,10 +324,17 @@
                 <div class="row ">
                     <div class="col-md-4">
                         <div class="notice-bord style1">
-                            <h4 class="title twitter-text-h"><img
-                                    src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}" alt="img"
-                                    rel="noopener noreferrer" class="twitter-logo"> ( Twitter Feed )</h4>
-                            <div class="marquee-height myslider">
+                            <h4 class="title twitter-text-h"><img src="{{ asset('assets/Nrcp_img/twitter-logo.png') }}"
+                                    alt="img" rel="noopener noreferrer" class="twitter-logo"> ( Twitter Feed )</h4>
+                            <!-- <div class="marquee-height myslider">
+                                <div class="item a text-center">
+                                    <a href="https://twitter.com/nrcpmohfw"
+                                        onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
+                                        target="_blank" title="Twitter" rel="noopener noreferrer">
+                                        <img src="{{ asset('assets/Nrcp_img/t7.png') }}" alt="img"
+                                            rel="noopener noreferrer">
+                                    </a>
+                                </div>
                                 <div class="item a text-center">
                                     <a href="https://twitter.com/nrcpmohfw"
                                         onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')"
@@ -362,20 +375,31 @@
                                             rel="noopener noreferrer">
                                     </a>
                                 </div>
+                            </div> -->
+
+                            <div class="twitter-feed">
+                            <blockquote class="twitter-tweet"><p lang="qme" dir="ltr"><a href="https://t.co/F27ye0G28S">https://t.co/F27ye0G28S</a><a href="https://twitter.com/hashtag/MoHFW?src=hash&amp;ref_src=twsrc%5Etfw">#MoHFW</a> <a href="https://twitter.com/hashtag/NCDC?src=hash&amp;ref_src=twsrc%5Etfw">#NCDC</a> <a href="https://t.co/c8lEeR9xSi">pic.twitter.com/c8lEeR9xSi</a></p>&mdash; NRCP (@nrcpmohfw) <a href="https://twitter.com/nrcpmohfw/status/1767856947666317328?ref_src=twsrc%5Etfw">March 13, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="notice-bord style1">
-                            <h4 class="title twitter-text-h"><img
-                                    src="{{ asset('assets/Nrcp_img/facebook-logo.png') }}" alt="img"
-                                    rel="noopener noreferrer" class="facebook-logo"> ( Facebook Feed )</h4>
+                            <h4 class="title twitter-text-h"><img src="{{ asset('assets/Nrcp_img/facebook-logo.png') }}"
+                                    alt="img" rel="noopener noreferrer" class="facebook-logo"> ( Facebook Feed )</h4>
                             <div class="fbFeed">
 
-                            <div class="fb-page" style="width: 100%;" data-href="https://www.facebook.com/profile.php?id=61558145345947" data-tabs="timeline" data-width="360" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=61558145345947" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=61558145345947">National Rabies Control Program </a></blockquote></div>
-           
+                                <div class="fb-page" style="width: 100%;"
+                                    data-href="https://www.facebook.com/profile.php?id=61558145345947"
+                                    data-tabs="timeline" data-width="360" data-height="445" data-small-header="true"
+                                    data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
+                                    <blockquote cite="https://www.facebook.com/profile.php?id=61558145345947"
+                                        class="fb-xfbml-parse-ignore"><a
+                                            href="https://www.facebook.com/profile.php?id=61558145345947">National
+                                            Rabies Control Program </a></blockquote>
+                                </div>
 
-                             <!-- <div class="work-in-p">
+
+                                <!-- <div class="work-in-p">
                                 Work in Progress
                              </div> -->
                             </div>
@@ -387,41 +411,39 @@
                             <div class="marquee-height">
                                 <ul class="Latest-news-slider marquee--inner ">
                                     @if (Count($news) > 0)
-                                        @foreach ($news as $item)
-                                            <li class="wow fadeInUp" data-wow-delay="300ms"
-                                                data-wow-duration="2000ms"
-                                                style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                                                <div class="date">{{ date('d M', strtotime($item->start_date)) }}
-                                                </div>
-                                                <div class='desc'>
-                                                    @if (Session::get('Lang') == 'hi')
-                                                        @if ($item->tab_type == '1')
-                                                            <a href="{{ $item->public_url }}" target="_blank"
-                                                                onclick="return confirm('This link will take you to an external web site.')"
-                                                                rel="noopener noreferrer">{!! $item->title_name_hi !!}</a>
-                                                        @else
-                                                            <a href="{{ $item->public_url }}"
-                                                                rel="noopener noreferrer">{!! $item->title_name_hi !!}</a>
-                                                        @endif
-                                                    @else
-                                                        @if ($item->tab_type == '1')
-                                                            <a href="{{ $item->public_url }}" target="_blank"
-                                                                onclick="return confirm('This link will take you to an external web site.')"
-                                                                rel="noopener noreferrer">{!! $item->title_name_en !!}</a>
-                                                        @else
-                                                            <a href="{{ $item->public_url }}"
-                                                                rel="noopener noreferrer">{!! $item->title_name_en !!}</a>
-                                                        @endif
-                                                    @endif
-                                                </div>
-                                            </li>
-                                        @endforeach
+                                    @foreach ($news as $item)
+                                    <li class="wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
+                                        style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
+                                        <div class="date">{{ date('d M', strtotime($item->start_date)) }}
+                                        </div>
+                                        <div class='desc'>
+                                            @if (Session::get('Lang') == 'hi')
+                                            @if ($item->tab_type == '1')
+                                            <a href="{{ $item->public_url }}" target="_blank"
+                                                onclick="return confirm('This link will take you to an external web site.')"
+                                                rel="noopener noreferrer">{!! $item->title_name_hi !!}</a>
+                                            @else
+                                            <a href="{{ $item->public_url }}" rel="noopener noreferrer">{!!
+                                                $item->title_name_hi !!}</a>
+                                            @endif
+                                            @else
+                                            @if ($item->tab_type == '1')
+                                            <a href="{{ $item->public_url }}" target="_blank"
+                                                onclick="return confirm('This link will take you to an external web site.')"
+                                                rel="noopener noreferrer">{!! $item->title_name_en !!}</a>
+                                            @else
+                                            <a href="{{ $item->public_url }}" rel="noopener noreferrer">{!!
+                                                $item->title_name_en !!}</a>
+                                            @endif
+                                            @endif
+                                        </div>
+                                    </li>
+                                    @endforeach
                                     @endif
                                 </ul>
                             </div>
                             <div class="btn-part view-all-btn">
-                                <a class="readon2 mod" href="{{ route('news-details') }}"
-                                    rel="noopener noreferrer">View
+                                <a class="readon2 mod" href="{{ route('news-details') }}" rel="noopener noreferrer">View
                                     All</a>
                             </div>
                         </div>
@@ -443,29 +465,31 @@
                         <div class="col-md-12">
                             <div class="rs-carousel owl-carousel nav-style2 gallery-carausel" data-loop="true"
                                 data-items="4" data-margin="10" data-autoplay="true" data-hoverpause="true"
-                                data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false"
-                                data-nav="false" data-nav-speed="false" data-center-mode="false"
-                                data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="false"
-                                data-ipad-device="2" data-ipad-device-nav="false" data-ipad-device-dots="false"
-                                data-ipad-device2="2" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
-                                data-md-device="2" data-md-device-nav="false" data-md-device-dots="false"
-                                id="banner3">
+                                data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false" data-nav="false"
+                                data-nav-speed="false" data-center-mode="false" data-mobile-device="1"
+                                data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="2"
+                                data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="2"
+                                data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="2"
+                                data-md-device-nav="false" data-md-device-dots="false" id="banner3">
                                 @if (isset($galleryData) && !empty($galleryData))
-                                    @foreach ($galleryData as $k => $galleryDatas)
-                                        <div class="team-item">
-                                            <div class="gallery-box">
-                                                @if (count($galleryDatas['gallery_details']) > 0)
-                                                    <img @if (isset($galleryDatas['gallery_details'][0]->public_url) && !blank($galleryDatas['gallery_details'][0]->public_url)) src="{{ asset('resources/uploads/GalleryManagement/' . $galleryDatas['gallery_details'][0]->public_url) }}" @endif
-                                                        alt="" rel="noopener noreferrer">
-                                                    <div class="text-gallery">
-                                                        {{ $galleryDatas['gallery']->title_name_en ?? '' }}
-                                                    </div>
-                                                @else
-                                                    <p>No images available for this gallery.</p>
-                                                @endif
-                                            </div>
+                                @foreach ($galleryData as $k => $galleryDatas)
+                                <div class="team-item">
+                                    <div class="gallery-box">
+                                        @if (count($galleryDatas['gallery_details']) > 0)
+                                        <img @if (isset($galleryDatas['gallery_details'][0]->public_url) &&
+                                        !blank($galleryDatas['gallery_details'][0]->public_url))
+                                        src="{{ asset('resources/uploads/GalleryManagement/' . $galleryDatas['gallery_details'][0]->public_url) }}"
+                                        @endif
+                                        alt="" rel="noopener noreferrer">
+                                        <div class="text-gallery">
+                                            {{ $galleryDatas['gallery']->title_name_en ?? '' }}
                                         </div>
-                                    @endforeach
+                                        @else
+                                        <p>No images available for this gallery.</p>
+                                        @endif
+                                    </div>
+                                </div>
+                                @endforeach
                                 @endif
                             </div>
                         </div>
@@ -479,8 +503,7 @@
                                 <div id="customPreviousBtn3"><i class="fa fa-angle-left" aria-hidden="true"></i>
                                 </div>
                                 <div id="customPause3"><i class="fa fa-pause" aria-hidden="true"></i></div>
-                                <div id="customPlay3" class="customPlay2"><i class="fa fa-play"
-                                        aria-hidden="true"></i>
+                                <div id="customPlay3" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
                                 </div>
                                 <div id="customNextBtn3"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                             </div>
@@ -505,17 +528,18 @@
                                 data-md-device-nav="false" data-md-device-dots="false" id="banner4">
                                 @if (isset($galleryVideo) && !empty($galleryVideo))
                                 @foreach($galleryVideo as $videos)
-                                    @foreach($videos['gallery_details'] as $videoId)                                    
-                                    <div class="team-item">
-                                        <div class="gallery-box media-icon orange-color">
-                                            @if($videoId->public_url)
-                                            {!! '<div class="youtube-player" data-video-id="' . $videoId->public_url . '"></div>'!!}
-                                            @else
-                                            <p>No Video available for this gallery.</p>
-                                            @endif
-                                        </div>
+                                @foreach($videos['gallery_details'] as $videoId)
+                                <div class="team-item">
+                                    <div class="gallery-box media-icon orange-color">
+                                        @if($videoId->public_url)
+                                        {!! '<div class="youtube-player" data-video-id="' . $videoId->public_url . '">
+                                        </div>'!!}
+                                        @else
+                                        <p>No Video available for this gallery.</p>
+                                        @endif
                                     </div>
-                                    @endforeach
+                                </div>
+                                @endforeach
                                 @endforeach
                                 @endif
                             </div>
@@ -529,8 +553,7 @@
                                 <div id="customPreviousBtn4"><i class="fa fa-angle-left" aria-hidden="true"></i>
                                 </div>
                                 <div id="customPause4"><i class="fa fa-pause" aria-hidden="true"></i></div>
-                                <div id="customPlay4" class="customPlay2"><i class="fa fa-play"
-                                        aria-hidden="true"></i>
+                                <div id="customPlay4" class="customPlay2"><i class="fa fa-play" aria-hidden="true"></i>
                                 </div>
                                 <div id="customNextBtn4"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                             </div>
@@ -543,27 +566,27 @@
     <!-- Partner Start -->
     <div class="rs-partner p-32 gray-bg-color">
         <div class="container">
-            <div class="rs-carousel owl-carousel" data-loop="true" data-items="6" data-margin="15"
-                data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800"
-                data-dots="false" data-nav="true" data-nav-speed="false" data-center-mode="false"
-                data-mobile-device="2" data-mobile-device-nav="true" data-mobile-device-dots="false"
-                data-ipad-device="3" data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="3"
-                data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6"
-                data-md-device-nav="true" data-md-device-dots="false" id="banner5">
+            <div class="rs-carousel owl-carousel" data-loop="true" data-items="6" data-margin="15" data-autoplay="true"
+                data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="false"
+                data-nav="true" data-nav-speed="false" data-center-mode="false" data-mobile-device="2"
+                data-mobile-device-nav="true" data-mobile-device-dots="false" data-ipad-device="3"
+                data-ipad-device-nav="true" data-ipad-device-dots="false" data-ipad-device2="3"
+                data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6" data-md-device-nav="true"
+                data-md-device-dots="false" id="banner5">
                 <div class="partner-item">
-                    <a href="https://www.mohfw.gov.in/" target="_blank" role="link"
-                        rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/MHFW.png') }}"
+                    <a href="https://www.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
+                            src="{{ asset('assets/Nrcp_img/clients/MHFW.png') }}"
                             alt="Ministry of Health and Family Welfare Government of India"
                             title="Ministry of Health and Family Welfare Government of India"
                             rel="noopener noreferrer"></a>
                 </div>
-                
+
                 <div class="partner-item">
-                    <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link"
-                        rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}"
-                            alt="NCDC" title="NCDC" rel="noopener noreferrer"></a>
+                    <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
+                            src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}" alt="NCDC" title="NCDC"
+                            rel="noopener noreferrer"></a>
                 </div>
-                
+
                 <div class="partner-item">
                     <a href="http://pgportal.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/pg-portal.png') }}"
@@ -571,16 +594,15 @@
                             rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://www.mohfw.gov.in/" target="_blank" role="link"
-                        rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/DAHD.jpg') }}"
+                    <a href="https://www.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
+                            src="{{ asset('assets/Nrcp_img/clients/DAHD.jpg') }}"
                             alt="Department of Animal Husbandry & Dairying "
-                            title="Department of Animal Husbandry & Dairying "
-                            rel="noopener noreferrer"></a>
+                            title="Department of Animal Husbandry & Dairying " rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
                     <a href="https://notto.gov.in/" target="_blank" role="link" rel="noopener noreferrer">
-                        <img src="{{ asset('assets/Nrcp_img/clients/logo-(1)_0_0.png') }}" alt="NOTTO"
-                            title="NOTTO" rel="noopener noreferrer">
+                        <img src="{{ asset('assets/Nrcp_img/clients/logo-(1)_0_0.png') }}" alt="NOTTO" title="NOTTO"
+                            rel="noopener noreferrer">
                     </a>
                 </div>
                 <div class="partner-item">
@@ -600,8 +622,7 @@
                     <a href="https://www.nikshay.in" target="_blank" role="link" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/nikshay.png') }}"
                             alt="Nikshay, External link that will open in a new window"
-                            title="Nikshay, External link that will open in a new window"
-                            rel="noopener noreferrer"></a>
+                            title="Nikshay, External link that will open in a new window" rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
                     <a href="https://cgewho.in/" target="_blank" rel="noopener noreferrer">
@@ -611,15 +632,13 @@
                             rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://main.mohfw.gov.in/major-programmes/poor-patients-financial-support"
-                        target="_blank" role="link" rel="noopener noreferrer"><img
-                            src="{{ asset('assets/Nrcp_img/clients/poor.png') }}"
+                    <a href="https://main.mohfw.gov.in/major-programmes/poor-patients-financial-support" target="_blank"
+                        role="link" rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/poor.png') }}"
                             alt="Poor Patients-Financial Support" title="Poor Patients-Financial Support"
                             rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://www.nhp.gov.in/quit-tobacco" target="_blank" role="link"
-                        rel="noopener noreferrer">
+                    <a href="https://www.nhp.gov.in/quit-tobacco" target="_blank" role="link" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/quittobacco.jpg') }}"
                             alt="Quit Tabacoo, External link that will open in a new window"
                             title="Quit Tabacoo, External link that will open in a new window"
@@ -681,6 +700,7 @@
     <!-- Modal -->
     @include('partials.footer')
     @include('partials.footer-scripts')
-   
+
 </body>
+
 </html>
