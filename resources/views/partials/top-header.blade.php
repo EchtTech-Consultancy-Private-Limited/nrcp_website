@@ -66,6 +66,9 @@
                </li>
                @endif
             @endif
+            <li class="youtube">
+               <a href="https://www.youtube.com/@NRCPMohfw/videos" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </li>
                <li><a href="{{ route('sitemap') }}" class="sitemap-cl" title="Site Map" rel="noopener noreferrer"><i class="fa fa-sitemap"></i></a>
                </li>
             </ul>
