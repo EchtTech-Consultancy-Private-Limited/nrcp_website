@@ -21316,12 +21316,6 @@ iframe ._2qgu._2qgu{
     /* border: 1px solid #ddd; */
 }
 
-.twitter-feed {
-  padding: 0px 15px;
-}
-
-.twitter-feed .twitter-tweet.twitter-tweet-rendered {
-  margin-top: 0 !important;
-  height: 435px;
-  overflow-x: hidden;
+.youtube i {
+  color: red !important;
 }
