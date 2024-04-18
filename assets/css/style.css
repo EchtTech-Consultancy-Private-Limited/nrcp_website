@@ -6384,7 +6384,7 @@ body .modal-backdrop {
 }
 
 img.twitter-logo {
-  width: 12px;
+  width: 18px;
 }
 
 .rs-about.style1 .notice-bord.style1 .title.twitter-text-h{
@@ -21058,8 +21058,8 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 img.facebook-logo
 {
   filter: invert(1);
-  width: 23px;
-  height: 22px;
+  width: 30px;
+  height: 28px;
 }
 
 .print-button{
