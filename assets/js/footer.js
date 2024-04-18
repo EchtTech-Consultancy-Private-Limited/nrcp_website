@@ -332,18 +332,18 @@ function checkYesNo(e){
         $("#txtDate").removeAttr('required', 'true'); 
         html =`<label class="pl-2">Date of 1st Dose of vaccination (day 0)</label>`;
         html +=`<input class="from-control mt-2 mb-4" type="date" name="v-date" placeholder="Name" id="txtDate1" required>`;
-$(function(){
-    var dtToday = new Date();
-    var month = dtToday.getMonth() + 1;
-    var day = dtToday.getDate();
-    var year = dtToday.getFullYear();
-    if(month < 10)
-        month = '0' + month.toString();
-    if(day < 10)
-        day = '0' + day.toString();
-    var maxDate = year + '-' + month + '-' + day;
-    $('#txtDate1').attr('max', maxDate);
-});
+        $(function(){
+            var dtToday = new Date();
+            var month = dtToday.getMonth() + 1;
+            var day = dtToday.getDate();
+            var year = dtToday.getFullYear();
+            if(month < 10)
+                month = '0' + month.toString();
+            if(day < 10)
+                day = '0' + day.toString();
+            var maxDate = year + '-' + month + '-' + day;
+            $('#txtDate1').attr('max', maxDate);
+        });
     }else{
         $("#txtDate").attr('required', 'true'); 
         html +=``;

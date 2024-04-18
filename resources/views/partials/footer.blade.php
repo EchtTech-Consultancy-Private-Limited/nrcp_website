@@ -258,25 +258,8 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                                        </div>
                                        <p class="text-center text-danger" id="radio_error"></p>
                                     </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput"></div>
                                 </div>
-                               
-                                <!-- <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="radio button">
-                                           <div class="radio-box">
-                                            <input type="radio" onclick="checkYesNo('1')" name="animal_bite" value="yes" id="yes-dogbite" required />
-                                            <label for="yes-dogbite">Yes</label>
-                                           </div>
-                                           <div class="radio-box">
-                                            <input type="radio" onclick="checkYesNo('0')" name="animal_bite" value="no" id="no-bite" required />
-                                            <label for="no-bite">No</label>
-                                           </div>
-                                       </div>
-                                       <p class="text-center text-danger" id="radio_error"></p>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput">
-                                    </div>
-                                </div> -->
                                 <div class="row form-group">
                                     <div class="col-md-12 text-center">
                                     <input type="submit" name="Submit" class="readon2 modal-btn" onclick="cehckradio()" value="Submit" id="mysbutton" />
