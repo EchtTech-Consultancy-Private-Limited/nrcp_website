@@ -21319,3 +21319,13 @@ iframe ._2qgu._2qgu{
 .youtube i {
   color: red !important;
 }
+
+.twitter-feed {
+  padding: 0px 15px;
+}
+
+.twitter-feed .twitter-tweet.twitter-tweet-rendered {
+  margin-top: 0 !important;
+  height: 440px;
+  overflow-x: hidden;
+}
