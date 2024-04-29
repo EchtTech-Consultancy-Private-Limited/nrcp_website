@@ -19,8 +19,6 @@
     }
 </style>
 {{-- map js --}}
-
-
 @section('title')
     {{ __('National Rabies Control Programme (NRCP)') }}
 @endsection
