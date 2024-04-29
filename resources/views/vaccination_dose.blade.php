@@ -67,7 +67,7 @@
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Know Your RIG Dose
                                 </button> --}}
-                                <button class="nav-link {{ request('tab') == 'nhf' ? ' active' : '' }}" id="Master_layout_1" data-toggle="pill"
+                                <!-- <button class="nav-link {{ request('tab') == 'nhf' ? ' active' : '' }}" id="Master_layout_1" data-toggle="pill"
                                     data-target="#master-layout_1" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Nearest Health Facility Where Rabies Vaccine Available
@@ -83,7 +83,7 @@
                                     data-target="#master-layout_3" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Nearest Animal Rabies Laboratory
-                                </button>
+                                </button> -->
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-12">
