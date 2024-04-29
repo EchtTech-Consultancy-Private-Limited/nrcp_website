@@ -55,16 +55,13 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-12">
                             <div class="nav flex-column nav-pills" id="tab" role="tablist" aria-orientation="vertical">
-                                {{-- <button class="nav-link
-
-                                {{ request('tab') == 'nhrl' || request('tab') == 'narl' ? '' : 'active' }}"
-
-
-                                 id="Master_layout_0" data-toggle="pill"
+                                @if(request('tab') == 'nvs')
+                                <button class="nav-link {{ request('tab') == 'nvs' ? ' active' : '' }}" id="Master_layout_0" data-toggle="pill"
                                     data-target="#master-layout_0" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="true" tabindex="0">
                                     Know Your Vaccination Schedule
-                                </button> --}}
+                                </button>
+                                @endif
                                 {{-- <button class="nav-link " id="Master_layout_4" data-toggle="pill"
                                     data-target="#master-layout_4" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
@@ -91,7 +88,7 @@
                         </div>
                         <div class="col-lg-9 col-md-12">
                             <div class="tab-content sub-tab" id="tabContent">
-                                <div class="tab-pane  fade" id="master-layout_0" role="tabpanel"
+                                <div class="tab-pane fade {{ request('tab') == 'nvs' ? ' active show' : '' }}" id="master-layout_0" role="tabpanel"
                                     aria-labelledby="Master_layout_0">
                                     <!-- Content and Images -->
                                     <div class="row">
@@ -294,7 +291,7 @@
                                 </div> --}}
                                 <!-- Know Your Dose Tab End-->
 
-                                <div class="tab-pane fade active show" id="master-layout_1" role="tabpanel"
+                                <div class="tab-pane fade {{ request('tab') == 'nhf' ? ' active show' : '' }}" id="master-layout_1" role="tabpanel"
                                     aria-labelledby="Master_layout_1">
                                     <!-- tab content start -->
                                     <div class="tab-content" id="myTabContent">

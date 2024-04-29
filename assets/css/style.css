@@ -6384,7 +6384,7 @@ body .modal-backdrop {
 }
 
 img.twitter-logo {
-  width: 12px;
+  width: 18px;
 }
 
 .rs-about.style1 .notice-bord.style1 .title.twitter-text-h{
@@ -21058,8 +21058,8 @@ select:focus-visible, select:focus, input:focus-visible, input:focus {
 img.facebook-logo
 {
   filter: invert(1);
-  width: 23px;
-  height: 22px;
+  width: 30px;
+  height: 28px;
 }
 
 .print-button{
@@ -21314,4 +21314,18 @@ iframe ._2qgu._2qgu{
 .sec-bg-white.vaccination-tab.vaccinationMOdal {
     box-shadow: none;
     /* border: 1px solid #ddd; */
+}
+
+.youtube i {
+  color: red !important;
+}
+
+.twitter-feed {
+  padding: 0px 15px;
+}
+
+.twitter-feed .twitter-tweet.twitter-tweet-rendered {
+  margin-top: 0 !important;
+  height: 440px;
+  overflow-x: hidden;
 }

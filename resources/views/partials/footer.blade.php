@@ -31,6 +31,9 @@
                         </li>
                         @endif -->
                     @endif
+                    <li>
+                        <a href="https://www.youtube.com/@NRCPMohfw/videos" @if (Session::get('Lang') == 'hi') onclick="return confirm('यह लिंक आपको एक बाहरी वेब साइट पर ले जाएगा।')" @else  onclick="return confirm('This link will take you to an external web site.')"  @endif target="_blank" rel="noopener noreferrer"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                     </li>
                     </ul>
                 </div>
                 <div class="col-md-12 col-lg-4">
@@ -237,6 +240,7 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                             <fieldset>
                                 <div class="row">
                                     <div class="col-md-6 mb-25 ">
+                                        <input type="hidden" value="nvs" name="tab">
                                         <label class="pl-2 form-label ">Date of Animal Bites</label>
                                         <input class="from-control mt-2" type="date" name="date" id="txtDate" placeholder="Name" required/>
                                     </div>
@@ -254,25 +258,8 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                                        </div>
                                        <p class="text-center text-danger" id="radio_error"></p>
                                     </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput"></div>
                                 </div>
-                               
-                                <!-- <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="radio button">
-                                           <div class="radio-box">
-                                            <input type="radio" onclick="checkYesNo('1')" name="animal_bite" value="yes" id="yes-dogbite" required />
-                                            <label for="yes-dogbite">Yes</label>
-                                           </div>
-                                           <div class="radio-box">
-                                            <input type="radio" onclick="checkYesNo('0')" name="animal_bite" value="no" id="no-bite" required />
-                                            <label for="no-bite">No</label>
-                                           </div>
-                                       </div>
-                                       <p class="text-center text-danger" id="radio_error"></p>
-                                    </div>
-                                    <div class="col-lg-12 col-md-12 col-sm-12" id="yesINput">
-                                    </div>
-                                </div> -->
                                 <div class="row form-group">
                                     <div class="col-md-12 text-center">
                                     <input type="submit" name="Submit" class="readon2 modal-btn" onclick="cehckradio()" value="Submit" id="mysbutton" />
