@@ -25,8 +25,15 @@
 @section('pageTitle')
     {{ __('Home') }}
 @endsection
+<?php
+    if(request('tab') == 'nhf') {
+        $breadcum = "Locate Services";
+    }else {
+        $breadcum = 'Know Your Vaccination Schedule';
+    }
+?>
 @section('breadcrumbs')
-    {{ __('Know Your Vaccination Schedule') }}
+    {{ __($breadcum) }}
 @endsection
 
 @section('content')
@@ -65,7 +72,8 @@
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Know Your RIG Dose
                                 </button> --}}
-                                <!-- <button class="nav-link {{ request('tab') == 'nhf' ? ' active' : '' }}" id="Master_layout_1" data-toggle="pill"
+                                @if(request('tab') == 'nhf')
+                                <button class="nav-link {{ request('tab') == 'nhf' ? ' active' : '' }}" id="Master_layout_1" data-toggle="pill"
                                     data-target="#master-layout_1" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Nearest Health Facility Where Rabies Vaccine Available
@@ -81,7 +89,8 @@
                                     data-target="#master-layout_3" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Nearest Animal Rabies Laboratory
-                                </button> -->
+                                </button>
+                                @endif
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-12">
