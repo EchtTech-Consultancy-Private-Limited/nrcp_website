@@ -28,7 +28,7 @@
     {{ __('Home') }}
 @endsection
 @section('breadcrumbs')
-    {{ __('Locate Services') }}
+    {{ __('Know Your Vaccination Schedule') }}
 @endsection
 
 @section('content')
