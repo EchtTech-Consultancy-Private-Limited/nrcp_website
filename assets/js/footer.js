@@ -111,7 +111,7 @@ $(document).ready(function() {
     function changeURL(e) {
         var temp = new Array();
         var temp = e.split(',');
-        document.location.href = "vaccination_dose?type=" + temp[0] + '&' + 'date=' + temp[1]+'&'+'animal_bite=' + temp[2]+'&'+'v-date=' + temp[3];
+        document.location.href = "vaccination_dose?tab=nvs&type=" + temp[0] + '&' + 'date=' + temp[1]+'&'+'animal_bite=' + temp[2]+'&'+'v-date=' + temp[3];
     }
     $(document).ready(function() {
         $(".btn2").click(function() {
