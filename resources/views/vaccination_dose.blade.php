@@ -19,16 +19,21 @@
     }
 </style>
 {{-- map js --}}
-
-
 @section('title')
     {{ __('National Rabies Control Programme (NRCP)') }}
 @endsection
 @section('pageTitle')
     {{ __('Home') }}
 @endsection
+<?php
+    if(request('tab') == 'nhf') {
+        $breadcum = "Locate Services";
+    }else {
+        $breadcum = 'Know Your Vaccination Schedule';
+    }
+?>
 @section('breadcrumbs')
-    {{ __('Locate Services') }}
+    {{ __($breadcum) }}
 @endsection
 
 @section('content')
@@ -67,6 +72,7 @@
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Know Your RIG Dose
                                 </button> --}}
+                                @if(request('tab') == 'nhf')
                                 <button class="nav-link {{ request('tab') == 'nhf' ? ' active' : '' }}" id="Master_layout_1" data-toggle="pill"
                                     data-target="#master-layout_1" type="button" role="tab"
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
@@ -84,6 +90,7 @@
                                     aria-controls="annual-report" aria-selected="false" tabindex="0">
                                     Nearest Animal Rabies Laboratory
                                 </button>
+                                @endif
                             </div>
                         </div>
                         <div class="col-lg-9 col-md-12">

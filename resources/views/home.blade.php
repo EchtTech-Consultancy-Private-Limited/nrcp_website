@@ -574,7 +574,14 @@
                 data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6" data-md-device-nav="true"
                 data-md-device-dots="false" id="banner5">
                 <div class="partner-item">
-                    <a href="https://www.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
+                    <a href="https://www.mygov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer">
+                        <img src="{{ asset('assets/Nrcp_img/clients/mygov_2.png') }}"
+                            alt="My Gov, External Link That Will Open in a New Window."
+                            title="External Link That Will Open in a New Window." rel="noopener noreferrer"></a>
+                </div>
+                
+                <div class="partner-item">
+                    <a href="https://www.mohfw.gov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/MHFW.png') }}"
                             alt="Ministry of Health and Family Welfare Government of India"
                             title="Ministry of Health and Family Welfare Government of India"
@@ -582,63 +589,63 @@
                 </div>
 
                 <div class="partner-item">
-                    <a href="https://ncdc.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
+                    <a href="https://ncdc.mohfw.gov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/ncdc.jpg') }}" alt="NCDC" title="NCDC"
                             rel="noopener noreferrer"></a>
                 </div>
 
                 <div class="partner-item">
-                    <a href="http://pgportal.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
+                    <a href="http://pgportal.gov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/pg-portal.png') }}"
                             alt="PORTAL FOR PUBLIC GRIEVANCES" title="PORTAL FOR PUBLIC GRIEVANCES"
                             rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://www.mohfw.gov.in/" target="_blank" role="link" rel="noopener noreferrer"><img
+                    <a href="https://dahd.nic.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/DAHD.jpg') }}"
                             alt="Department of Animal Husbandry & Dairying "
                             title="Department of Animal Husbandry & Dairying " rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://notto.gov.in/" target="_blank" role="link" rel="noopener noreferrer">
+                    <a href="https://notto.gov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/logo-(1)_0_0.png') }}" alt="NOTTO" title="NOTTO"
                             rel="noopener noreferrer">
                     </a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://www.nhp.gov.in/" target="_blank" role="link" rel="noopener noreferrer">
+                    <a href="https://www.nhp.gov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/nhp-india.png') }}" alt="National Health Portal"
                             title="National Health Portal" rel="noopener noreferrer">
                     </a>
                 </div>
                 <div class="partner-item">
-                    <a href="http://nhm.gov.in/" target="_blank" role="link" rel="noopener noreferrer">
+                    <a href="http://nhm.gov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/RashtriyaBalSwasthyaKaryakram.jpg') }}"
                             alt="Rashtriya Bal Swasthya Karyakram (RBSK)"
                             title="Rashtriya Bal Swasthya Karyakram (RBSK)" rel="noopener noreferrer">
                     </a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://www.nikshay.in" target="_blank" role="link" rel="noopener noreferrer">
+                    <a href="https://www.nikshay.in" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/nikshay.png') }}"
                             alt="Nikshay, External link that will open in a new window"
                             title="Nikshay, External link that will open in a new window" rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://cgewho.in/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://cgewho.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/CENTRALGOVERNMENTEMPLOYEES.jpg') }}"
                             alt="CENTRAL GOVERNMENT EMPLOYEES, External link that will open in a new window"
                             title="CENTRAL GOVERNMENT EMPLOYEES, External link that will open in a new window"
                             rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://main.mohfw.gov.in/major-programmes/poor-patients-financial-support" target="_blank"
+                    <a href="https://main.mohfw.gov.in/major-programmes/poor-patients-financial-support" target="_blank" onclick="return confirm('This link will take you to an external web site.')"
                         role="link" rel="noopener noreferrer"><img src="{{ asset('assets/Nrcp_img/clients/poor.png') }}"
                             alt="Poor Patients-Financial Support" title="Poor Patients-Financial Support"
                             rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://www.nhp.gov.in/quit-tobacco" target="_blank" role="link" rel="noopener noreferrer">
+                    <a href="https://www.nhp.gov.in/quit-tobacco" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/quittobacco.jpg') }}"
                             alt="Quit Tabacoo, External link that will open in a new window"
                             title="Quit Tabacoo, External link that will open in a new window"
@@ -646,7 +653,7 @@
                     </a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://www.incometaxindia.gov.in/Pages/income-declaration-scheme.aspx" target="_blank"
+                    <a href="https://www.incometaxindia.gov.in/Pages/income-declaration-scheme.aspx" target="_blank" onclick="return confirm('This link will take you to an external web site.')"
                         role="link" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/IncomeTaxDepartment.jpg') }}"
                             alt="Income Tax Department, External link that will open in a new window"
@@ -656,31 +663,26 @@
                 </div>
                 <div class="partner-item">
                     <a href="https://www.mygov.in/group-issue/inviting-ideas-pm-narendra-modis-mann-ki-baat-august-2016/"
-                        target="_blank" rel="noopener noreferrer" role="link" rel="noopener noreferrer">
+                        target="_blank" onclick="return confirm('This link will take you to an external web site.')" rel="noopener noreferrer" role="link" rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/8956354581471930117.jpg') }}" alt="mann ki baat"
                             title="mann ki baat" rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://main.mohfw.gov.in/my-hospital" target="_blank" role="link"
+                    <a href="https://main.mohfw.gov.in/my-hospital" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link"
                         rel="noopener noreferrer">
                         <img src="{{ asset('assets/Nrcp_img/clients/mera_aspatal.png') }}"
                             alt="My Hospital, External Link That Will Open in a New Window."
                             title="External Link That Will Open in a New Window." rel="noopener noreferrer">
                     </a>
                 </div>
+               
                 <div class="partner-item">
-                    <a href="https://www.mygov.in/" target="_blank" role="link" rel="noopener noreferrer">
-                        <img src="{{ asset('assets/Nrcp_img/clients/mygov_2.png') }}"
-                            alt="My Gov, External Link That Will Open in a New Window."
-                            title="External Link That Will Open in a New Window." rel="noopener noreferrer"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="https://www.who.int/" target="_blank" role="link" rel="noopener noreferrer"><img
+                    <a href="https://www.who.int/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/who.png') }}" alt="World Health Organization"
                             title="World Health Organization" rel="noopener noreferrer"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="https://www.undp.org/india/" target="_blank" role="link" rel="noopener noreferrer"><img
+                    <a href="https://www.undp.org/india/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/UNDP-LOGO.png') }}" alt="World Health Organization"
                             title="World Health Organization" rel="noopener noreferrer"></a>
                 </div>
