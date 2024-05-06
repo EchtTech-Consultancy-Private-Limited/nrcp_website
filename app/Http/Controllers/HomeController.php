@@ -97,7 +97,9 @@ class HomeController extends Controller
             ->select('state_name')
             ->groupBy('state_name')
             ->get();
-        return view('vaccination_dose', ['state' => $rabies_clinics_data_states, 'human_labs_state' => $human_rabies_labs_data_states, 'animal_labs_state' => $animal_rabies_labs_data_states]);
+        return view('vaccination_dose', ['state' => $rabies_clinics_data_states,
+                    'human_labs_state' => $human_rabies_labs_data_states, 
+                    'animal_labs_state' => $animal_rabies_labs_data_states]);
     }
     public function privacyPolicy()
     {
@@ -271,10 +273,15 @@ class HomeController extends Controller
     }
     public function vaccinationSearch(Request $request)
     {
+        if($request->state_name == 'Delhi'){
+            $extraCol = '<th>Block Administrative</th>'. '<th>Pin Code</th>';
+        }else{
+            $extraCol='';
+        }
         $statename = $request->state_name;
         $cityname = $request->city_name;
         $data = DB::table('model_anti_rabies_clinic')
-            ->select(['district_name', 'state_name', 'address'])
+            ->select(['district_name', 'state_name', 'address','block_administrative','pincode'])
             ->where('state_name', 'LIKE', $statename)->where('district_name', 'LIKE', $cityname)
             ->get();
         $resultsData = '<table>'
@@ -283,9 +290,21 @@ class HomeController extends Controller
             . '<th>State Name</th>'
             . '<th>District Name</th>'
             . '<th>Facility Name</th>'
+            .$extraCol
             . '</tr>';
         foreach ($data as $searchData) {
-            $resultsData .= '<tr><td>' . $searchData->state_name . '</td><td>' . $searchData->district_name . '</td><td>' . $searchData->address . '</td></tr>';
+            if($request->state_name == 'Delhi'){
+            $addon = '<td>'.$searchData->block_administrative.'</td>
+                    <td>'.$searchData->pincode.'</td>';
+            }else{
+                $addon='';
+            }
+            $resultsData .= '<tr>
+            <td>' . $searchData->state_name .'</td>
+            <td>'.$searchData->district_name .'</td>
+            <td>'.$searchData->address .'</td>
+            '.$addon.'
+            </tr>';
         }
         $resultsData .= '</tbody></table>';
         return $resultsData;
