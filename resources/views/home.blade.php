@@ -574,6 +574,13 @@
                 data-ipad-device-nav2="true" data-ipad-device-dots2="false" data-md-device="6" data-md-device-nav="true"
                 data-md-device-dots="false" id="banner5">
                 <div class="partner-item">
+                    <a href="https://www.mygov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer">
+                        <img src="{{ asset('assets/Nrcp_img/clients/mygov_2.png') }}"
+                            alt="My Gov, External Link That Will Open in a New Window."
+                            title="External Link That Will Open in a New Window." rel="noopener noreferrer"></a>
+                </div>
+                
+                <div class="partner-item">
                     <a href="https://www.mohfw.gov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/MHFW.png') }}"
                             alt="Ministry of Health and Family Welfare Government of India"
@@ -668,12 +675,7 @@
                             title="External Link That Will Open in a New Window." rel="noopener noreferrer">
                     </a>
                 </div>
-                <div class="partner-item">
-                    <a href="https://www.mygov.in/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer">
-                        <img src="{{ asset('assets/Nrcp_img/clients/mygov_2.png') }}"
-                            alt="My Gov, External Link That Will Open in a New Window."
-                            title="External Link That Will Open in a New Window." rel="noopener noreferrer"></a>
-                </div>
+               
                 <div class="partner-item">
                     <a href="https://www.who.int/" target="_blank" onclick="return confirm('This link will take you to an external web site.')" role="link" rel="noopener noreferrer"><img
                             src="{{ asset('assets/Nrcp_img/clients/who.png') }}" alt="World Health Organization"

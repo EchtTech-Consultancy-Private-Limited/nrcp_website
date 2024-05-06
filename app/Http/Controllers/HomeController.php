@@ -220,7 +220,7 @@ class HomeController extends Controller
             }
             $datas1[] = $newData;
         }
-        //  @dd($content_page);   
+        //  @dd($content_pdf);   
         $objectpass = new \stdclass;
         $objectpass->pageContent = $datas1;
         return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs]);
