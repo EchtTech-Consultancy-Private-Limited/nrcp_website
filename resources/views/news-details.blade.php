@@ -34,7 +34,7 @@
                         <?php $i=1; ?>
                         @foreach($newsList as $newsLists)
                         <tr>
-                           <td>{{ $i++ }}</td>
+                           <td class="text-center">{{ $i++ }}</td>
                            <td>
                            @if($newsLists->tab_type == '1')
                                 <a href="{{ $newsLists->public_url  }}" target="_blank" onclick="return confirm('This link will take you to an external web site.')">{{ $newsLists->title_name_en  }}</a>
