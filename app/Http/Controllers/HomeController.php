@@ -273,11 +273,11 @@ class HomeController extends Controller
     }
     public function vaccinationSearch(Request $request)
     {
-        if($request->state_name == 'Delhi'){
-            $extraCol = '<th>Block Administrative</th>'. '<th>Pin Code</th>';
-        }else{
-            $extraCol='';
-        }
+        // if($request->state_name == 'Delhi'){
+        //     $extraCol = '<th>Block Administrative</th>'. '<th>Pin Code</th>';
+        // }else{
+        //     $extraCol='';
+        // }
         $statename = $request->state_name;
         $cityname = $request->city_name;
         $data = DB::table('model_anti_rabies_clinic')
@@ -290,21 +290,25 @@ class HomeController extends Controller
             . '<th>State Name</th>'
             . '<th>District Name</th>'
             . '<th>Facility Name</th>'
-            .$extraCol
+            . '<th>Block Administrative</th>'. '<th>Pin Code</th>'
+            // .$extraCol
             . '</tr>';
         foreach ($data as $searchData) {
-            if($request->state_name == 'Delhi'){
-            $addon = '<td>'.$searchData->block_administrative.'</td>
-                    <td>'.$searchData->pincode.'</td>';
-            }else{
-                $addon='';
-            }
+            // if($request->state_name == 'Delhi'){
+            // $addon = '<td>'.$searchData->block_administrative.'</td>
+            //         <td>'.$searchData->pincode.'</td>';
+            // }else{
+            //     $addon='';
+            // }
             $resultsData .= '<tr>
             <td>' . $searchData->state_name .'</td>
             <td>'.$searchData->district_name .'</td>
             <td>'.$searchData->address .'</td>
-            '.$addon.'
+            <td>'.$searchData->block_administrative .'</td>
+            <td>'.$searchData->pincode .'</td>
             </tr>';
+            // '.$addon.'
+            
         }
         $resultsData .= '</tbody></table>';
         return $resultsData;
@@ -314,7 +318,6 @@ class HomeController extends Controller
         $statename = $request->state_name;
         $cityname = $request->city_name;
         $data = DB::table('human_rabies_labs')
-            ->select(['district_name', 'state_name', 'address'])
             ->where('state_name', 'LIKE', $statename)->where('district_name', 'LIKE', $cityname)
             ->get();
         $resultsData = '<table>'
@@ -323,9 +326,12 @@ class HomeController extends Controller
             . '<th>State Name</th>'
             . '<th>District Name</th>'
             . '<th>Facility Name</th>'
+            . '<th>Person Name</th>'
+            . '<th>Person Name</th>'
+            . '<th>Phone Number</th>'
             . '</tr>';
         foreach ($data as $searchData) {
-            $resultsData .= '<tr><td>' . $searchData->state_name . '</td><td>' . $searchData->district_name . '</td><td>' . $searchData->address . '</td></tr>';
+            $resultsData .= '<tr><td>' . $searchData->state_name . '</td><td>' . $searchData->district_name . '</td><td>' . $searchData->address . '</td><td>' .$searchData->person_name. '</td><td>' . $searchData->person_email . '</td><td>' . $searchData->phone_number . '</td></tr>';
         }
         $resultsData .= '</tbody></table>';
         // dd($data);
