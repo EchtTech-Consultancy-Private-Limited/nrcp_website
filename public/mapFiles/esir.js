@@ -345,11 +345,8 @@ $(document).ready(function () {
         url: baseUrl + '/onload-animal-center',
         type: 'get',
         success: function (response) {
-            //console.log(response);
             var map;
             var data = response.data;
-
-            //  console.log(data)
 
             require([
                 "esri/map",
