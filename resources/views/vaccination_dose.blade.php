@@ -409,8 +409,8 @@
                                                                 aria-labelledby="map-tab">
 
 
-                                                                <div class="row">
                                                                 <a class="readon2 mod float-right mt-0 print-button" href="javascript:void();" rel="noopener noreferrer" tabindex="0" onclick="printContent('printMap1')" id="btn-print-map"><i class="fa fa-print"></i> Print</a>
+                                                                <div class="row">
                                                                     <div class="col-lg-12" id="printMap1">
                                                                         <div class="map">
                                                                             <div id="newMapC"></div>

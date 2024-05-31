@@ -283,7 +283,7 @@ $(document).ready(function () {
                         map = new Map("newMapC", {
                             basemap: "topo-vector",
                             center: [data[0].longitude, data[0].latitude],
-                            zoom: 7
+                            zoom: 7,
                         });
 
                         var graphicsLayer = new GraphicsLayer();                        
@@ -345,11 +345,8 @@ $(document).ready(function () {
         url: baseUrl + '/onload-animal-center',
         type: 'get',
         success: function (response) {
-            //console.log(response);
             var map;
             var data = response.data;
-
-            //  console.log(data)
 
             require([
                 "esri/map",
