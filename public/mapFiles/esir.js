@@ -283,7 +283,7 @@ $(document).ready(function () {
                         map = new Map("newMapC", {
                             basemap: "topo-vector",
                             center: [data[0].longitude, data[0].latitude],
-                            zoom: 7
+                            zoom: 7,
                         });
 
                         var graphicsLayer = new GraphicsLayer();                        
