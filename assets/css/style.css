@@ -21329,3 +21329,7 @@ iframe ._2qgu._2qgu{
   height: 440px;
   overflow-x: hidden;
 }
+
+.table{
+  overflow: auto;
+}
