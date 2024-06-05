@@ -11,7 +11,7 @@
 @section('content')
 <div id="rs-about" class="rs-about style1 pt-80 pb-40 md-pt-70 md-pb-70">
 <div class="container">
-   <div class="row">
+   <div class="row"> 
       <div class="col-lg">
          <div class="tab-content">
             <!-- Content and Images -->
