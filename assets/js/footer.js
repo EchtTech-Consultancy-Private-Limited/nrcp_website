@@ -78,6 +78,22 @@ $(document).ready(function() {
             ]
         } );
     });
+    
+    $(document).ready(function() {
+        $('.master-page-datatable').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                {              
+                    extend: 'print',
+                        title: function() {
+                            return "<div style='font-size: 25px;'>National Rabies Control Program</div>";
+                           ;
+                        }                    
+                       
+               }
+            ]
+        } );
+    });
 
 
     $(document).ready(function() {
