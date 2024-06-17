@@ -206,15 +206,15 @@ class HomeController extends Controller
         foreach ($metacontent as $metacontents) {
             $newData = new \stdclass;
             $newData->pageTitle = $metacontents;
-            $content_page = DB::table('dynamic_page_content')->where('dcpm_id', $metacontents->uid)->get();
+            $content_page = DB::table('dynamic_page_content')->where([['soft_delete', 0]])->where('dcpm_id', $metacontents->uid)->get();
             if ($content_page) {
                 $newData->content_page = $content_page;
             }
-            $content_pdf = DB::table('dynamic_content_page_pdf')->where('dcpm_id', $metacontents->uid)->get();
+            $content_pdf = DB::table('dynamic_content_page_pdf')->where([['soft_delete', 0]])->where('dcpm_id', $metacontents->uid)->get();
             if ($content_pdf) {
                 $newData->content_pdf = $content_pdf;
             }
-            $content_gallery = DB::table('dynamic_content_page_gallery')->where('dcpm_id', $metacontents->uid)->get();
+            $content_gallery = DB::table('dynamic_content_page_gallery')->where([['soft_delete', 0]])->where('dcpm_id', $metacontents->uid)->get();
             if ($content_gallery) {
                 $newData->content_gallery = $content_gallery;
             }
