@@ -210,7 +210,7 @@ class HomeController extends Controller
             if ($content_page) {
                 $newData->content_page = $content_page;
             }
-            $content_pdf = DB::table('dynamic_content_page_pdf')->where([['soft_delete', 0]])->where('dcpm_id', $metacontents->uid)->get();
+            $content_pdf = DB::table('dynamic_content_page_pdf')->where([['soft_delete', 0]])->where('dcpm_id', $metacontents->uid)->orderBy('start_date','desc')->get();
             if ($content_pdf) {
                 $newData->content_pdf = $content_pdf;
             }
@@ -223,6 +223,7 @@ class HomeController extends Controller
         //  @dd($content_pdf);   
         $objectpass = new \stdclass;
         $objectpass->pageContent = $datas1;
+        // dd($objectpass);
         return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs]);
         $metaDetails = DB::table('dynamic_content_page_metatag')->where('status', 3)->where('menu_uid', $menus->uid)->orderBy('sort_order', 'ASC')->first();
         return view('master_layout', ['objectpass' => $objectpass, 'breadcrumbs' => $breadcrumbs, 'metaDetails' => $metaDetails]);

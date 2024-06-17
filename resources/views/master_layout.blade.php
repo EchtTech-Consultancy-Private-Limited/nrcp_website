@@ -102,7 +102,7 @@
                                                 <a href="javascript:vopid();" class="readon orange-btn"> Archive </a>
                                             </div>
                                             <div class="table">
-                                                <table class="example">
+                                                <table id="master-page-datatable">
                                                     <thead>
                                                         <tr>
                                                             <th class="title-data">Title</th>
