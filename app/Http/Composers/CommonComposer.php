@@ -121,7 +121,9 @@ class CommonComposer
         'toogleMenu'=>$toogleMenu,
         'time'=>$this->getLocalTime(),
         'visitCounter'=>isset($visitCounter)?$visitCounter:'0',
-        'commonsideMenu'=>isset($commonsideMenu)?$commonsideMenu:'']);
+        'commonsideMenu'=>isset($commonsideMenu)?$commonsideMenu:'',
+        'LastUpdateRecordDate'=> $this->getLastUpdateRecordDate()??'00-00-0000'
+        ]);
 
     }
 
@@ -140,6 +142,29 @@ class CommonComposer
     }
     function getLocalTime(){
         return Carbon::now()->timezone('Asia/Kolkata')->format('H:m:s');
+    }
+
+    public function getLastUpdateRecordDate(){
+
+        $tables = DB::select("SHOW TABLES");
+        $latestUpdate = null;
+
+        foreach ($tables as $table) {
+            $tableName = array_values((array)$table)[0];
+
+            // Check if the table has an 'updated_at' column
+            $columns = DB::getSchemaBuilder()->getColumnListing($tableName);
+            if (in_array('updated_at', $columns)) {
+                $tableUpdate = DB::table($tableName)->max('updated_at');
+                if ($tableUpdate) {
+                    $tableUpdate = new Carbon($tableUpdate);
+                    if (!$latestUpdate || $tableUpdate->greaterThan($latestUpdate)) {
+                        $latestUpdate = $tableUpdate;
+                    }
+                }
+            }
+        }
+        return $latestUpdate;
     }
 
 }

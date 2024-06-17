@@ -173,8 +173,8 @@ Family Welfare, Government of India;  <br>Designed and Developed by Center for H
                 </div>
                 <div class="col-lg-3 text-right md-text-left pr-0">
                     <div class="visitors-sec">
-                        <h5>Updated on: <?php echo date("d F Y", strtotime(date('y-m-d'))); ?>     Visitors :
-                            <span class="number-visitor">{{ $visitCounter }}</span>
+                        <h5>Updated on: {{ $LastUpdateRecordDate->format('j F, Y') }}   
+                         Visitors : <span class="number-visitor">{{ $visitCounter }}</span>
                         </h5>
                     </div>
                 </div>
